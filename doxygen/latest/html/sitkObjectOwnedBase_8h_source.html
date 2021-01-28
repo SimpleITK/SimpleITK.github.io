@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev115</span>
+   &#160;<span id="projectnumber">2.1.0.dev123</span>
    </div>
   </td>
  </tr>
@@ -134,43 +134,47 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classitk_1_1simple_1_1ObjectOwnedBase.html">ObjectOwnedBase</a>(<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1ObjectOwnedBase.html">ObjectOwnedBase</a> &amp; o);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifndef SWIG</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  AddObjectCallback(<a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">itk::Object</a> *o, std::function&lt;<span class="keywordtype">void</span>()&gt; onDelete);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  RemoveObject(<span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">itk::Object</a> *);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifndef SWIG</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  AddObjectCallback(<a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">itk::Object</a> *o, std::function&lt;<span class="keywordtype">void</span>()&gt; onDelete);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  RemoveObject(<span class="keyword">const</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">itk::Object</a> *);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  SetOwnedByObjects(<span class="keywordtype">bool</span> o);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  GetOwnedByObjects() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  OwnedByObjectsOn();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  OwnedByObjectsOff();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  SetOwnedByObjects(<span class="keywordtype">bool</span> o);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  GetOwnedByObjects() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  OwnedByObjectsOn();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  OwnedByObjectsOff();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ObjectOwnedBase.html#a638ff3971d864074e0a1dfa524382889">  113</a></span>&#160;  <span class="keywordtype">bool</span>                                                m_OwnedByObjects{ <span class="keyword">false</span> };</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ObjectOwnedBase.html#aa128f72c5224b57e9cd3a7476c85d4d9">  114</a></span>&#160;  std::multimap&lt;<a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">itk::Object</a> *, std::function&lt;void()&gt;&gt; <a class="code" href="classitk_1_1simple_1_1ObjectOwnedBase.html#aa128f72c5224b57e9cd3a7476c85d4d9">m_ReferencedObjectsCallbacks</a>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ObjectOwnedBase.html#abc17ed9a80ffdc13b4d94857fe36ddd3">  115</a></span>&#160;  std::string                                         <a class="code" href="classitk_1_1simple_1_1ObjectOwnedBase.html#abc17ed9a80ffdc13b4d94857fe36ddd3">m_Name</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;} <span class="comment">// namespace simple</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;} <span class="comment">// namespace itk</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">void</span> ExecuteCallbacks(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ObjectOwnedBase.html#a638ff3971d864074e0a1dfa524382889">  117</a></span>&#160;  <span class="keywordtype">bool</span>                                                m_OwnedByObjects{ <span class="keyword">false</span> };</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ObjectOwnedBase.html#aa128f72c5224b57e9cd3a7476c85d4d9">  118</a></span>&#160;  std::multimap&lt;<a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">itk::Object</a> *, std::function&lt;void()&gt;&gt; <a class="code" href="classitk_1_1simple_1_1ObjectOwnedBase.html#aa128f72c5224b57e9cd3a7476c85d4d9">m_ReferencedObjectsCallbacks</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1ObjectOwnedBase.html#abc17ed9a80ffdc13b4d94857fe36ddd3">  119</a></span>&#160;  std::string                                         <a class="code" href="classitk_1_1simple_1_1ObjectOwnedBase.html#abc17ed9a80ffdc13b4d94857fe36ddd3">m_Name</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;} <span class="comment">// namespace simple</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;} <span class="comment">// namespace itk</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="asitkNonCopyable_8h_html"><div class="ttname"><a href="sitkNonCopyable_8h.html">sitkNonCopyable.h</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html"><div class="ttname"><a href="sitkCommon_8h.html">sitkCommon.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ObjectOwnedBase_html_abc17ed9a80ffdc13b4d94857fe36ddd3"><div class="ttname"><a href="classitk_1_1simple_1_1ObjectOwnedBase.html#abc17ed9a80ffdc13b4d94857fe36ddd3">itk::simple::ObjectOwnedBase::m_Name</a></div><div class="ttdeci">std::string m_Name</div><div class="ttdef"><b>Definition:</b> <a href="sitkObjectOwnedBase_8h_source.html#l00115">sitkObjectOwnedBase.h:115</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ObjectOwnedBase_html_abc17ed9a80ffdc13b4d94857fe36ddd3"><div class="ttname"><a href="classitk_1_1simple_1_1ObjectOwnedBase.html#abc17ed9a80ffdc13b4d94857fe36ddd3">itk::simple::ObjectOwnedBase::m_Name</a></div><div class="ttdeci">std::string m_Name</div><div class="ttdef"><b>Definition:</b> <a href="sitkObjectOwnedBase_8h_source.html#l00119">sitkObjectOwnedBase.h:119</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html_ab09867679406ccae193848f08fdc3444"><div class="ttname"><a href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a></div><div class="ttdeci">#define SITKCommon_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommon_8h_source.html#l00041">sitkCommon.h:41</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1NonCopyable_html"><div class="ttname"><a href="classitk_1_1simple_1_1NonCopyable.html">itk::simple::NonCopyable</a></div><div class="ttdoc">An inheritable class to disable copying of a class.</div><div class="ttdef"><b>Definition:</b> <a href="sitkNonCopyable_8h_source.html#l00051">sitkNonCopyable.h:51</a></div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ObjectOwnedBase_html_aa128f72c5224b57e9cd3a7476c85d4d9"><div class="ttname"><a href="classitk_1_1simple_1_1ObjectOwnedBase.html#aa128f72c5224b57e9cd3a7476c85d4d9">itk::simple::ObjectOwnedBase::m_ReferencedObjectsCallbacks</a></div><div class="ttdeci">std::multimap&lt; itk::Object *, std::function&lt; void()&gt; &gt; m_ReferencedObjectsCallbacks</div><div class="ttdef"><b>Definition:</b> <a href="sitkObjectOwnedBase_8h_source.html#l00114">sitkObjectOwnedBase.h:114</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ObjectOwnedBase_html_aa128f72c5224b57e9cd3a7476c85d4d9"><div class="ttname"><a href="classitk_1_1simple_1_1ObjectOwnedBase.html#aa128f72c5224b57e9cd3a7476c85d4d9">itk::simple::ObjectOwnedBase::m_ReferencedObjectsCallbacks</a></div><div class="ttdeci">std::multimap&lt; itk::Object *, std::function&lt; void()&gt; &gt; m_ReferencedObjectsCallbacks</div><div class="ttdef"><b>Definition:</b> <a href="sitkObjectOwnedBase_8h_source.html#l00118">sitkObjectOwnedBase.h:118</a></div></div>
 <div class="ttc" id="aclassitk_1_1Object_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">itk::Object</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ObjectOwnedBase_html"><div class="ttname"><a href="classitk_1_1simple_1_1ObjectOwnedBase.html">itk::simple::ObjectOwnedBase</a></div><div class="ttdoc">An abstract base class to connect this object with the lifetime of another.</div><div class="ttdef"><b>Definition:</b> <a href="sitkObjectOwnedBase_8h_source.html#l00047">sitkObjectOwnedBase.h:47</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
