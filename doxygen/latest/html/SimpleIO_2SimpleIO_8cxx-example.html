@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev209</span>
+   &#160;<span id="projectnumber">2.1.0.dev211</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,7 @@ $(function() {
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="SimpleITK_8h.html">SimpleITK.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;assert.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span> example1(std::string inputImageFileName, std::string outputImageFileName)</div>
@@ -131,9 +132,8 @@ $(function() {
 <div class="line">  <a name="a13"></a><a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">itk::simple::WriteTransform</a>(basic_transform, <span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
 <div class="line">  <a name="_a14"></a><a class="code" href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a> read_result = <a name="a15"></a><a class="code" href="namespaceitk_1_1simple.html#a2c0bd020eb148e4d2595f603c9d884b8">itk::simple::ReadTransform</a>(<span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">  assert(type(basic_transform) != type(read_result));</div>
+<div class="line">  assert(<span class="keyword">typeid</span>(basic_transform) != <span class="keyword">typeid</span>(read_result));</div>
 <div class="line">  }</div>
-<div class="line"><span class="keyword">namespace </span><a class="code" href="namespaceitk_1_1simple.html">sitk</a> = <a class="code" href="namespaceitk_1_1simple.html">itk::simple</a>;</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main ( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[] ) {</div>
@@ -169,7 +169,6 @@ $(function() {
 <div class="ttc" id="anamespaceitk_1_1simple_html_af50ad403a7aa88acbb78e5b2d1099b9c"><div class="ttname"><a href="namespaceitk_1_1simple.html#af50ad403a7aa88acbb78e5b2d1099b9c">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::string &amp;filename, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageFileReader class which is convenient for most image r...</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ab8d91d4ca4ee13f704d72205d344837e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">itk::simple::ImageFileReader::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_ae9f93b6f08b8f13d75e8700fe0c36c8a"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#ae9f93b6f08b8f13d75e8700fe0c36c8a">itk::simple::ImageReaderBase::SetImageIO</a></div><div class="ttdeci">virtual Self &amp; SetImageIO(const std::string &amp;imageio)</div><div class="ttdoc">Set/Get name of ImageIO to use.</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a2c0bd020eb148e4d2595f603c9d884b8"><div class="ttname"><a href="namespaceitk_1_1simple.html#a2c0bd020eb148e4d2595f603c9d884b8">itk::simple::ReadTransform</a></div><div class="ttdeci">SITKCommon_EXPORT Transform ReadTransform(const std::string &amp;filename)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a></div><div class="ttdeci">@ sitkUnknown</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00091">sitkPixelIDValues.h:91</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html">itk::simple::ImageFileWriter</a></div><div class="ttdoc">Write out a SimpleITK image to the specified file location.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileWriter_8h_source.html#l00048">sitkImageFileWriter.h:48</a></div></div>
