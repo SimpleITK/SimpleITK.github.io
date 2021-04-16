@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0.dev236</span>
+   &#160;<span id="projectnumber">2.1.0.dev245</span>
    </div>
   </td>
  </tr>
@@ -131,13 +131,13 @@ $(function() {
 <div class="line">    corrector$SetMaximumNumberOfIterations( rep(strtoi( args[[5]], numberFittingLevels)) )</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">output &lt;- corrector$Execute( image, maskImage )</div>
+<div class="line">correctedImage &lt;- corrector$Execute( image, maskImage )</div>
 <div class="line"> </div>
 <div class="line">logBiasField &lt;- corrector$GetLogBiasFieldAsImage(inputImage)</div>
 <div class="line"> </div>
-<div class="line">output &lt;- inputImage / Exp( logBiasField )</div>
+<div class="line">biasField &lt;- inputImage / Exp( logBiasField )</div>
 <div class="line"> </div>
-<div class="line">WriteImage(output, args[[2]])</div>
+<div class="line">WriteImage(correctedImage, args[[2]])</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
