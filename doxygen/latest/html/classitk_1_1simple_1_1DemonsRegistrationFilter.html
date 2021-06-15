@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0rc1.post20</span>
+   &#160;<span id="projectnumber">2.1.0rc1.post24</span>
    </div>
   </td>
  </tr>
@@ -193,6 +193,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8503a555cbbc2553d3978cef0b0a6685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2aa35a896ac22967aa393dd3c59f05c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#ab2aa35a896ac22967aa393dd3c59f05c">SmoothUpdateFieldOn</a> ()</td></tr>
 <tr class="separator:ab2aa35a896ac22967aa393dd3c59f05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dd9eea41ea0eddd0f3b73e962f18d2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#a2dd9eea41ea0eddd0f3b73e962f18d2a">StopRegistration</a> ()</td></tr>
+<tr class="separator:a2dd9eea41ea0eddd0f3b73e962f18d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae878b68cf393907f347d32a9cc81af7f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#ae878b68cf393907f347d32a9cc81af7f">ToString</a> () const</td></tr>
 <tr class="separator:ae878b68cf393907f347d32a9cc81af7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a331926ca7b5be1ce7e655e25b133f79e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#a331926ca7b5be1ce7e655e25b133f79e">UseImageSpacingOff</a> ()</td></tr>
@@ -280,6 +282,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a291d6aa5dc70532da186d7b509b85569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6294236c079946f8edfb41c9ff0aade"><td class="memItemLeft" align="right" valign="top">std::function&lt; double()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#ad6294236c079946f8edfb41c9ff0aade">m_pfGetMetric</a></td></tr>
 <tr class="separator:ad6294236c079946f8edfb41c9ff0aade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1248c0944c19ec66cdc0f4475884e2b0"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#a1248c0944c19ec66cdc0f4475884e2b0">m_pfGetStopRegistration</a></td></tr>
+<tr class="separator:a1248c0944c19ec66cdc0f4475884e2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f2d23988501c93764b3cbada11c0db"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#ad1f2d23988501c93764b3cbada11c0db">m_RMSChange</a> {0.0}</td></tr>
 <tr class="separator:ad1f2d23988501c93764b3cbada11c0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dc5aa3fdec78d9a063acc68ce45ccdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#a6dc5aa3fdec78d9a063acc68ce45ccdb">m_SmoothDisplacementField</a> {true}</td></tr>
@@ -434,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00241">241</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00250">250</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -823,7 +827,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00226">226</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00235">235</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1541,6 +1545,34 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a2dd9eea41ea0eddd0f3b73e962f18d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dd9eea41ea0eddd0f3b73e962f18d2a">&#9670;&nbsp;</a></span>StopRegistration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::DemonsRegistrationFilter::StopRegistration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00231">231</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="ae878b68cf393907f347d32a9cc81af7f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae878b68cf393907f347d32a9cc81af7f">&#9670;&nbsp;</a></span>ToString()</h2>
 
@@ -1700,7 +1732,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00245">245</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00254">254</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1725,7 +1757,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00282">282</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00293">293</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1749,7 +1781,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00270">270</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00279">279</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1773,7 +1805,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00268">268</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00277">277</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1797,7 +1829,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00266">266</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00275">275</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1821,7 +1853,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00256">256</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00265">265</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1845,7 +1877,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00247">247</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00256">256</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1869,7 +1901,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00253">253</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00262">262</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1893,7 +1925,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00275">275</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00284">284</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1917,7 +1949,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00279">279</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00288">288</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a1248c0944c19ec66cdc0f4475884e2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1248c0944c19ec66cdc0f4475884e2b0">&#9670;&nbsp;</a></span>m_pfGetStopRegistration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; itk::simple::DemonsRegistrationFilter::m_pfGetStopRegistration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00290">290</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1941,7 +1997,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00277">277</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00286">286</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1965,7 +2021,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00260">260</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00269">269</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1989,7 +2045,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00262">262</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00271">271</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2013,7 +2069,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00250">250</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00259">259</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2037,7 +2093,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00264">264</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00273">273</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2061,7 +2117,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00272">272</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00281">281</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -2085,7 +2141,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00258">258</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00267">267</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>

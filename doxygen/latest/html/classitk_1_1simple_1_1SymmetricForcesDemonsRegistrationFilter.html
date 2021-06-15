@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0rc1.post20</span>
+   &#160;<span id="projectnumber">2.1.0rc1.post24</span>
    </div>
   </td>
  </tr>
@@ -186,6 +186,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a56095c4477c153d618faf2b5c0260147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a1471c633a95aff340c7da6b7133a50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html#a1a1471c633a95aff340c7da6b7133a50">SmoothUpdateFieldOn</a> ()</td></tr>
 <tr class="separator:a1a1471c633a95aff340c7da6b7133a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a590aca2bad28a730094ff28b7703f31e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html#a590aca2bad28a730094ff28b7703f31e">StopRegistration</a> ()</td></tr>
+<tr class="separator:a590aca2bad28a730094ff28b7703f31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c93dc8966be5ba278df6ca6b28265e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html#ae4c93dc8966be5ba278df6ca6b28265e">SymmetricForcesDemonsRegistrationFilter</a> ()</td></tr>
 <tr class="separator:ae4c93dc8966be5ba278df6ca6b28265e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1affa8e0a251d5121e17b619d0a0734a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html#a1affa8e0a251d5121e17b619d0a0734a">ToString</a> () const</td></tr>
@@ -271,6 +273,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aabfaab9c46a8fe951add45eac94a390c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab592011f25b44ab7a722c72d5852246e"><td class="memItemLeft" align="right" valign="top">std::function&lt; double()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html#ab592011f25b44ab7a722c72d5852246e">m_pfGetMetric</a></td></tr>
 <tr class="separator:ab592011f25b44ab7a722c72d5852246e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e945a2285674cd0be04408dee31543"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html#ac3e945a2285674cd0be04408dee31543">m_pfGetStopRegistration</a></td></tr>
+<tr class="separator:ac3e945a2285674cd0be04408dee31543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94c46cb7cbcd1350bf205aab94575f9b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html#a94c46cb7cbcd1350bf205aab94575f9b">m_RMSChange</a> {0.0}</td></tr>
 <tr class="separator:a94c46cb7cbcd1350bf205aab94575f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ae5d77ccd0e87c148aaaf72d5e5e83"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SymmetricForcesDemonsRegistrationFilter.html#a70ae5d77ccd0e87c148aaaf72d5e5e83">m_SmoothDisplacementField</a> {true}</td></tr>
@@ -426,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00235">235</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00244">244</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -811,7 +815,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00220">220</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00229">229</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1465,6 +1469,34 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a590aca2bad28a730094ff28b7703f31e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a590aca2bad28a730094ff28b7703f31e">&#9670;&nbsp;</a></span>StopRegistration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::SymmetricForcesDemonsRegistrationFilter::StopRegistration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00225">225</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+
+</div>
+</div>
 <a id="a1affa8e0a251d5121e17b619d0a0734a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1affa8e0a251d5121e17b619d0a0734a">&#9670;&nbsp;</a></span>ToString()</h2>
 
@@ -1569,7 +1601,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00239">239</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00248">248</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1594,7 +1626,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00274">274</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00285">285</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1618,7 +1650,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00262">262</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00271">271</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1642,7 +1674,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00260">260</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00269">269</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1666,7 +1698,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00258">258</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00267">267</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1722,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00250">250</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00259">259</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1714,7 +1746,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00241">241</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00250">250</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1738,7 +1770,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00247">247</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00256">256</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1762,7 +1794,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00267">267</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00276">276</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1786,7 +1818,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00271">271</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00280">280</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ac3e945a2285674cd0be04408dee31543"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e945a2285674cd0be04408dee31543">&#9670;&nbsp;</a></span>m_pfGetStopRegistration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; itk::simple::SymmetricForcesDemonsRegistrationFilter::m_pfGetStopRegistration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00282">282</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1810,7 +1866,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00269">269</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00278">278</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1834,7 +1890,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00252">252</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00261">261</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1858,7 +1914,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00254">254</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00263">263</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1882,7 +1938,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00244">244</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00253">253</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1906,7 +1962,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00256">256</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00265">265</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1930,7 +1986,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00264">264</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00273">273</a> of file <a class="el" href="sitkSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
