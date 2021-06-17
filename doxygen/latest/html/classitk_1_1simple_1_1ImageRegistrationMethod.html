@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.1.0rc1.post26</span>
+   &#160;<span id="projectnumber">2.1.0rc1.post29</span>
    </div>
   </td>
  </tr>
@@ -253,6 +253,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0aea868182491c8d6900129955b4f5b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ae243e549c853648a3e5600ed49b630ce">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a0aea868182491c8d6900129955b4f5b4">SetSmoothingSigmasPerLevel</a> (const std::vector&lt; double &gt; &amp;smoothingSigmas)</td></tr>
 <tr class="memdesc:a0aea868182491c8d6900129955b4f5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sigmas of Gaussian used for smoothing.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a0aea868182491c8d6900129955b4f5b4">More...</a><br /></td></tr>
 <tr class="separator:a0aea868182491c8d6900129955b4f5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f375591206475a66ab440a17d69d1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad2f375591206475a66ab440a17d69d1e">StopRegistration</a> ()</td></tr>
+<tr class="separator:ad2f375591206475a66ab440a17d69d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a2518f8217539f7aa1f263ac3ad8bff"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a5a2518f8217539f7aa1f263ac3ad8bff">ToString</a> () const override</td></tr>
 <tr class="memdesc:a5a2518f8217539f7aa1f263ac3ad8bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the information about the object to a string.  <a href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a5a2518f8217539f7aa1f263ac3ad8bff">More...</a><br /></td></tr>
 <tr class="separator:a5a2518f8217539f7aa1f263ac3ad8bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -646,6 +648,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a571ed853d861eaf7492ec868ab8de232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6fa2359904f3a967cd1eef6b9b11195"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::string()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#ad6fa2359904f3a967cd1eef6b9b11195">m_pfGetOptimizerStopConditionDescription</a></td></tr>
 <tr class="separator:ad6fa2359904f3a967cd1eef6b9b11195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c619a1ce9283956a5da2741f43c8db4"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a1c619a1ce9283956a5da2741f43c8db4">m_pfOptimizerStopRegistration</a></td></tr>
+<tr class="separator:a1c619a1ce9283956a5da2741f43c8db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42b8c0ec375dd91297446b1c3caf77d3"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#aad7d99b5b2fe2dbf1d5e67a1917bf40a">itk::TransformBase</a> *outTransform)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a42b8c0ec375dd91297446b1c3caf77d3">m_pfUpdateWithBestValue</a></td></tr>
 <tr class="separator:a42b8c0ec375dd91297446b1c3caf77d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69d360bdc8de44e52d9a94677370c36a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a69d360bdc8de44e52d9a94677370c36a">m_ShrinkFactorsPerLevel</a></td></tr>
@@ -774,7 +778,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00699">699</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00711">711</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -798,7 +802,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00698">698</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00710">710</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -910,7 +914,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a5f76ee76e3d6d4b0461e824850ec0a2ba3374b78c26281f127c1e55f63eef450a"></a>MattesMutualInformation&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00788">788</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00800">800</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -940,7 +944,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="adf831a242fe8a065e7af5935108551b9ac2fa3e1d7f19d8ec1c083f8e054ff201"></a>PhysicalShift&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00776">776</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00788">788</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -976,7 +980,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a8a5df8ec8beeb89cfabf17250765314fab1b207583d2bff82903f2ba46f429e2d"></a>LBFGS2&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00716">716</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00728">728</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3438,6 +3442,26 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
+<a id="ad2f375591206475a66ab440a17d69d1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f375591206475a66ab440a17d69d1e">&#9670;&nbsp;</a></span>StopRegistration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::ImageRegistrationMethod::StopRegistration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stop Registration if actively running.</p>
+<p>This is an active method which can be called during a callback. Invoking this method will halt the registration at the current iteration, if supported by the optimizer. The LBFGSB, LBFGS2, and the Amoeba optimizers do not support user stopping.</p>
+<p>If user stopping is not supported or the optimizer is available ( not executed ), then false will be returned. </p>
+
+</div>
+</div>
 <a id="a5a2518f8217539f7aa1f263ac3ad8bff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5a2518f8217539f7aa1f263ac3ad8bff">&#9670;&nbsp;</a></span>ToString()</h2>
 
@@ -3489,7 +3513,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00700">700</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00712">712</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3514,7 +3538,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00820">820</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00832">832</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3538,7 +3562,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00702">702</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00714">714</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3562,7 +3586,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00708">708</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00720">720</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3586,7 +3610,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00705">705</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00717">717</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3610,7 +3634,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00706">706</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00718">718</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3634,7 +3658,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00704">704</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00716">716</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3658,7 +3682,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00817">817</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00829">829</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3682,7 +3706,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00701">701</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00713">713</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3706,7 +3730,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00801">801</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00813">813</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3730,7 +3754,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00797">797</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00809">809</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3754,7 +3778,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00802">802</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00814">814</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3778,7 +3802,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00798">798</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00810">810</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3802,7 +3826,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00796">796</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00808">808</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3826,7 +3850,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00804">804</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00816">816</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3850,7 +3874,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00806">806</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00818">818</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3874,7 +3898,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00805">805</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00817">817</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3898,7 +3922,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00795">795</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00807">807</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3922,7 +3946,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00808">808</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00820">820</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3946,7 +3970,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00809">809</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00821">821</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3970,7 +3994,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00816">816</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00828">828</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -3994,7 +4018,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00799">799</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00811">811</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4018,7 +4042,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00707">707</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00719">719</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4042,7 +4066,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00818">818</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00830">830</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4066,7 +4090,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00739">739</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00751">751</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4090,7 +4114,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00740">740</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00752">752</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4114,7 +4138,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00744">744</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00756">756</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4138,7 +4162,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00764">764</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00776">776</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4162,7 +4186,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00765">765</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00777">777</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4186,7 +4210,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00757">757</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00769">769</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4210,7 +4234,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00735">735</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00747">747</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4234,7 +4258,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00752">752</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00764">764</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4258,7 +4282,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00741">741</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00753">753</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4282,7 +4306,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00738">738</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00750">750</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4306,7 +4330,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00759">759</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00771">771</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4330,7 +4354,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00763">763</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00775">775</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4354,7 +4378,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00758">758</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00770">770</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4378,7 +4402,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00728">728</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00740">740</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4402,7 +4426,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00769">769</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00781">781</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4426,7 +4450,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00733">733</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00745">745</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4450,7 +4474,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00731">731</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00743">743</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4474,7 +4498,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00766">766</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00778">778</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4498,7 +4522,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00734">734</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00746">746</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4522,7 +4546,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00768">768</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00780">780</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4546,7 +4570,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00767">767</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00779">779</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4570,7 +4594,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00732">732</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00744">744</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4594,7 +4618,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00745">745</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00757">757</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4618,7 +4642,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00754">754</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00766">766</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4642,7 +4666,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00742">742</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00754">754</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4666,7 +4690,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00743">743</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00755">755</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4690,7 +4714,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00736">736</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00748">748</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4714,7 +4738,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00729">729</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00741">741</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4738,7 +4762,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00730">730</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00742">742</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4762,7 +4786,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00748">748</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00760">760</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4786,7 +4810,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00751">751</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00763">763</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4810,7 +4834,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00737">737</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00749">749</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4834,7 +4858,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00783">783</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00795">795</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4858,7 +4882,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00784">784</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00796">796</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4882,7 +4906,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00785">785</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00797">797</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4906,7 +4930,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00782">782</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00794">794</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4930,7 +4954,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00761">761</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00773">773</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4954,7 +4978,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00760">760</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00772">772</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -4978,7 +5002,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00750">750</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00762">762</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5002,7 +5026,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00762">762</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00774">774</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5026,7 +5050,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00749">749</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00761">761</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5050,7 +5074,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00755">755</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00767">767</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5074,7 +5098,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00747">747</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00759">759</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5098,7 +5122,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00727">727</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00739">739</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5122,7 +5146,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00746">746</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00758">758</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5146,7 +5170,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00756">756</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00768">768</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5170,7 +5194,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00774">774</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00786">786</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5194,7 +5218,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00753">753</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00765">765</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5218,7 +5242,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00682">682</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00694">694</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5242,7 +5266,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00677">677</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00688">688</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5266,7 +5290,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00676">676</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00687">687</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5290,7 +5314,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00675">675</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00686">686</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5314,7 +5338,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00672">672</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00683">683</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5338,7 +5362,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00674">674</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00685">685</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5362,7 +5386,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00673">673</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00684">684</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5386,7 +5410,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00678">678</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00689">689</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5410,7 +5434,31 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00679">679</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00690">690</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+
+</div>
+</div>
+<a id="a1c619a1ce9283956a5da2741f43c8db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c619a1ce9283956a5da2741f43c8db4">&#9670;&nbsp;</a></span>m_pfOptimizerStopRegistration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void()&gt; itk::simple::ImageRegistrationMethod::m_pfOptimizerStopRegistration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00691">691</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5434,7 +5482,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00684">684</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00696">696</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5458,7 +5506,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00811">811</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00823">823</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5482,7 +5530,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00813">813</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00825">825</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5506,7 +5554,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00812">812</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00824">824</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5530,7 +5578,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00815">815</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00827">827</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5554,7 +5602,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00772">772</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00784">784</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5578,7 +5626,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00713">713</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00725">725</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5602,7 +5650,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00711">711</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00723">723</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5626,7 +5674,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00710">710</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00722">722</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
@@ -5650,7 +5698,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00712">712</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageRegistrationMethod_8h_source.html#l00724">724</a> of file <a class="el" href="sitkImageRegistrationMethod_8h_source.html">sitkImageRegistrationMethod.h</a>.</p>
 
 </div>
 </div>
