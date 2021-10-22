@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev45</span>
+   &#160;<span id="projectnumber">2.2.0.dev58</span>
    </div>
   </td>
  </tr>
@@ -123,11 +123,15 @@ $(function() {
 <div class="line"> </div>
 <div class="line">  <a name="a6"></a><a class="code" href="namespaceitk_1_1simple.html#aee1844ed9be481d8ed9cc4c7049d588d">sitk::WriteImage</a>( image, argv[2] );</div>
 <div class="line"> </div>
+<div class="line">  <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;SITK_NOSHOW&quot;</span>) == NULL)</div>
+<div class="line">    <a name="a7"></a><a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk::Show</a>( image, <span class="stringliteral">&quot;Hello World: C++&quot;</span>, <span class="keyword">true</span> );</div>
+<div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00075">sitkImage.h:75</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a0c494d1a8b50bd0639927767f25247c0"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a0c494d1a8b50bd0639927767f25247c0">itk::simple::ImageSeriesReader::SetFileNames</a></div><div class="ttdeci">Self &amp; SetFileNames(const std::vector&lt; std::string &gt; &amp;fileNames)</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageSeriesReader_html_a148badf23595d59e34b1d9360c79b539"><div class="ttname"><a href="classitk_1_1simple_1_1ImageSeriesReader.html#a148badf23595d59e34b1d9360c79b539">itk::simple::ImageSeriesReader::GetGDCMSeriesFileNames</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; GetGDCMSeriesFileNames(const std::string &amp;directory, const std::string &amp;seriesID=&quot;&quot;, bool useSeriesDetails=false, bool recursive=false, bool loadSequences=false)</div><div class="ttdoc">Generate a sequence of filenames from a directory with a DICOM data set and a series ID.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html_ade45738b2c906a51f23532aa972f6169"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">itk::simple::Image::GetSize</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; GetSize() const</div></div>

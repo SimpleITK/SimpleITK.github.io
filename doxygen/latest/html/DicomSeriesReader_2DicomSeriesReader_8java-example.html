@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev45</span>
+   &#160;<span id="projectnumber">2.2.0.dev58</span>
    </div>
   </td>
  </tr>
@@ -114,6 +114,11 @@ $(function() {
 <div class="line">    System.out.println(<span class="stringliteral">&quot;Writing &quot;</span> + args[1]);</div>
 <div class="line"> </div>
 <div class="line">    SimpleITK.writeImage(image, args[1]);</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (System.getenv(<span class="stringliteral">&quot;SITK_NOSHOW&quot;</span>) == <span class="keyword">null</span>) {</div>
+<div class="line">      SimpleITK.show( image, <span class="stringliteral">&quot;Hello World: Java&quot;</span>, <span class="keyword">true</span> );</div>
+<div class="line">    }</div>
+<div class="line"> </div>
 <div class="line">  }</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
