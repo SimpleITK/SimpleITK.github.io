@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev65</span>
+   &#160;<span id="projectnumber">2.2.0.dev67</span>
    </div>
   </td>
  </tr>
@@ -135,8 +135,11 @@ $(function() {
 <div class="line">    {</div>
 <div class="line">    <a name="_a5"></a><a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> image = reader.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">Execute</a>();</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Read image: &quot;</span> &lt;&lt; argv[1] &lt;&lt; std::endl;</div>
+<div class="line"> </div>
+<div class="line">    std::vector&lt;unsigned int&gt; size = image.<a name="a7"></a><a class="code" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a>();</div>
+<div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Image size: &quot;</span> &lt;&lt; size[0] &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; size[1] &lt;&lt; std::endl;</div>
 <div class="line">    }</div>
-<div class="line">  <span class="keywordflow">catch</span> (std::exception&amp; <a name="a7"></a>e)</div>
+<div class="line">  <span class="keywordflow">catch</span> (std::exception&amp; <a name="a8"></a>e)</div>
 <div class="line">    {</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Read failed: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
 <div class="line">    }</div>
@@ -148,6 +151,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_a4cbb7db3eb3796eee8d89a1aaf011511"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#a4cbb7db3eb3796eee8d89a1aaf011511">itk::simple::ImageReaderBase::GetRegisteredImageIOs</a></div><div class="ttdeci">virtual std::vector&lt; std::string &gt; GetRegisteredImageIOs() const</div><div class="ttdoc">Get a vector of the names of registered itk ImageIOs.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00060">sitkImageFileReader.h:60</a></div></div>
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1Image_html_ade45738b2c906a51f23532aa972f6169"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">itk::simple::Image::GetSize</a></div><div class="ttdeci">std::vector&lt; unsigned int &gt; GetSize() const</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ad5f34a4f287eee8979bbfafa34901072"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">itk::simple::ImageFileReader::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fn)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ab8d91d4ca4ee13f704d72205d344837e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">itk::simple::ImageFileReader::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageReaderBase_html_ae9f93b6f08b8f13d75e8700fe0c36c8a"><div class="ttname"><a href="classitk_1_1simple_1_1ImageReaderBase.html#ae9f93b6f08b8f13d75e8700fe0c36c8a">itk::simple::ImageReaderBase::SetImageIO</a></div><div class="ttdeci">virtual Self &amp; SetImageIO(const std::string &amp;imageio)</div><div class="ttdoc">Set/Get name of ImageIO to use.</div></div>

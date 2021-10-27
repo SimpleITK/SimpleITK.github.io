@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev65</span>
+   &#160;<span id="projectnumber">2.2.0.dev67</span>
    </div>
   </td>
  </tr>
@@ -118,8 +118,11 @@ $(function() {
 <div class="line">    reader.setFileName(argv[0]);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">try</span> {</div>
-<div class="line">      Image img = reader.execute();</div>
+<div class="line">      Image image = reader.execute();</div>
 <div class="line">      System.out.println(<span class="stringliteral">&quot;Read image: &quot;</span> + argv[0]);</div>
+<div class="line"> </div>
+<div class="line">      VectorUInt32 size = image.getSize();</div>
+<div class="line">      System.out.println(<span class="stringliteral">&quot;Image size: &quot;</span> + size.get(0) + <span class="stringliteral">&quot; &quot;</span> + size.get(1));</div>
 <div class="line">    } <span class="keywordflow">catch</span>(Exception <a name="a0"></a>e) {</div>
 <div class="line">      System.out.println(<span class="stringliteral">&quot;Read failed: &quot;</span> + e);</div>
 <div class="line">    }</div>

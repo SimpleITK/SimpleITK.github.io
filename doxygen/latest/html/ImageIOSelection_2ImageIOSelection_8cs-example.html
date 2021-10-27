@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev65</span>
+   &#160;<span id="projectnumber">2.2.0.dev67</span>
    </div>
   </td>
  </tr>
@@ -121,6 +121,9 @@ $(function() {
 <div class="line">                reader.SetFileName(args[0]);</div>
 <div class="line">                Image image = reader.Execute();</div>
 <div class="line">                Console.WriteLine(<span class="stringliteral">&quot;Read image: &quot;</span> + args[0]);</div>
+<div class="line"> </div>
+<div class="line">                VectorUInt32 size = image.GetSize();</div>
+<div class="line">                Console.WriteLine( <span class="stringliteral">&quot;Image size: &quot;</span> + size[0] + <span class="stringliteral">&quot; &quot;</span> + size[1] );</div>
 <div class="line"> </div>
 <div class="line">            } <span class="keywordflow">catch</span> (Exception ex) {</div>
 <div class="line">                Console.WriteLine(<span class="stringliteral">&quot;Read failed: &quot;</span> + ex);</div>

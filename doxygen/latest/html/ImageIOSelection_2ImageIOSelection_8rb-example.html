@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev65</span>
+   &#160;<span id="projectnumber">2.2.0.dev67</span>
    </div>
   </td>
  </tr>
@@ -119,6 +119,9 @@ $(function() {
 <div class="line">begin</div>
 <div class="line">  image = reader.execute</div>
 <div class="line">  puts &quot;Read image: &quot; + ARGV[0]</div>
+<div class="line"> </div>
+<div class="line">  size = image.get_size</div>
+<div class="line">  puts &quot;Image size: &quot; + size[0] +  &quot; &quot; + size[1]</div>
 <div class="line">rescue StandardError =&gt; e</div>
 <div class="line">  puts &quot;Read failed: &quot; + e.message</div>
 <div class="line">end</div>

@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev65</span>
+   &#160;<span id="projectnumber">2.2.0.dev67</span>
    </div>
   </td>
  </tr>
@@ -127,6 +127,10 @@ $(function() {
 <div class="line">                  }</div>
 <div class="line">                  )</div>
 <div class="line">cat(&#39;Read image:&#39;,args[1],&#39;\n&#39;)</div>
+<div class="line"> </div>
+<div class="line">size &lt;- image$GetSize()</div>
+<div class="line">cat (&quot;Image size:&quot;, size[1], size[2])</div>
+<div class="line"> </div>
 <div class="line">quit(save=&quot;no&quot;, status=0)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->

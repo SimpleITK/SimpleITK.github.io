@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev65</span>
+   &#160;<span id="projectnumber">2.2.0.dev67</span>
    </div>
   </td>
  </tr>
@@ -117,11 +117,14 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordflow">try</span>:</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    image = file_reader.Execute()</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    print(<span class="stringliteral">&#39;Read image: &#39;</span> + sys.argv[1])</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordflow">except</span> Exception <span class="keyword">as</span> err:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    print(<span class="stringliteral">&#39;Reading failed: &#39;</span>, err)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    sys.exit(1)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;sys.exit(0)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    size = image.GetSize()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    print(<span class="stringliteral">&quot;Image size:&quot;</span>, size[0], size[1])</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordflow">except</span> Exception <span class="keyword">as</span> err:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    print(<span class="stringliteral">&#39;Reading failed: &#39;</span>, err)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    sys.exit(1)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;sys.exit(0)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00060">sitkImageFileReader.h:60</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
