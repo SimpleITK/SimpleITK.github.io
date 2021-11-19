@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev102</span>
+   &#160;<span id="projectnumber">2.2.0.dev104</span>
    </div>
   </td>
  </tr>
@@ -116,6 +116,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af5c224f1f5173836258dbb983341a2f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#af5c224f1f5173836258dbb983341a2f9">EraseMetaData</a> (const std::string &amp;key)</td></tr>
 <tr class="memdesc:af5c224f1f5173836258dbb983341a2f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an entry from the meta-data dictionary.  <a href="classitk_1_1simple_1_1Image.html#af5c224f1f5173836258dbb983341a2f9">More...</a><br /></td></tr>
 <tr class="separator:af5c224f1f5173836258dbb983341a2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ae69cd325efec2cd9992cb1750db84"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a70ae69cd325efec2cd9992cb1750db84">EvaluateAtContinuousIndex</a> (const std::vector&lt; double &gt; &amp;index, <a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> interp=<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">sitkLinear</a>) const</td></tr>
+<tr class="memdesc:a70ae69cd325efec2cd9992cb1750db84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolate pixel value at a continuous index.  <a href="classitk_1_1simple_1_1Image.html#a70ae69cd325efec2cd9992cb1750db84">More...</a><br /></td></tr>
+<tr class="separator:a70ae69cd325efec2cd9992cb1750db84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4678f5ce1424c712e35d5c510e515da5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a4678f5ce1424c712e35d5c510e515da5">EvaluateAtPhysicalPoint</a> (const std::vector&lt; double &gt; &amp;point, <a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> interp=<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">sitkLinear</a>) const</td></tr>
+<tr class="separator:a4678f5ce1424c712e35d5c510e515da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e9d6f84e457f7f6e59665c26a02cd4e"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a0e9d6f84e457f7f6e59665c26a02cd4e">GetDepth</a> () const</td></tr>
 <tr class="separator:a0e9d6f84e457f7f6e59665c26a02cd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43163c72ca1a49abf615b3dc71e01a36"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">GetDimension</a> () const</td></tr>
@@ -472,7 +477,7 @@ Private Attributes</h2></td></tr>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="BufferImportExport_8cxx-example.html#_a5">BufferImportExport.cxx</a>, <a class="el" href="CppCMake_2Source_2sitk_example_8cxx-example.html#_a1">CppCMake/Source/sitk_example.cxx</a>, <a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#_a0">CppInPlace/CppInPlace.cxx</a>, <a class="el" href="DemonsRegistration1_2DemonsRegistration1_8cxx-example.html#_a3">DemonsRegistration1/DemonsRegistration1.cxx</a>, <a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a3">DemonsRegistration2/DemonsRegistration2.cxx</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#_a3">DicomSeriesReader/DicomSeriesReader.cxx</a>, <a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a0">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#_a5">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="HelloWorld_2HelloWorld_8cxx-example.html#_a1">HelloWorld/HelloWorld.cxx</a>, <a class="el" href="ImageIOSelection_2ImageIOSelection_8cxx-example.html#_a5">ImageIOSelection/ImageIOSelection.cxx</a>, <a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#_a3">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#_a3">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#_a3">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#_a4">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a3">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#_a2">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a2">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a2">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#_a2">SimpleGaussian/SimpleGaussian.cxx</a>, <a class="el" href="SimpleGaussianFunctional_8cxx-example.html#_a0">SimpleGaussianFunctional.cxx</a>, <a class="el" href="SimpleIO_2SimpleIO_8cxx-example.html#_a3">SimpleIO/SimpleIO.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#_a0">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00075">75</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00076">76</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5f3a8beb0170782f77853b044ddd02a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f3a8beb0170782f77853b044ddd02a4">&#9670;&nbsp;</a></span>Self</h2>
@@ -486,7 +491,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00078">78</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00079">79</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -741,7 +746,7 @@ template&lt;typename TImageType &gt; </div>
 <p>If simpleITK does not support the image type, a compile-time error or assertion will fail.</p>
 <p>The ITK image must be fully buffered, and must have a zero starting index for the Buffered/Largest regions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00140">140</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00141">141</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -776,7 +781,7 @@ template&lt;typename TImageType &gt; </div>
 <p>If simpleITK does not support the image type, a compile-time error or assertion will fail.</p>
 <p>The ITK image must be fully buffered, and must have a zero starting index for the Buffered/Largest regions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00145">145</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00146">146</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 <p class="reference">References <a class="el" href="sitkPixelIDValues_8h_source.html#l00091">itk::simple::sitkUnknown</a>.</p>
 
@@ -978,7 +983,7 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Dispatched from the InternalInitialization method. The "enable-if" idiom is used here for method overloading. The second method is for non-instantiated image, which turn into a void pointer for the parameter. However, this second method should never be executed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00529">529</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00556">556</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -1053,6 +1058,85 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 
 <p>Remove an entry from the meta-data dictionary. </p>
 <p>Returns true, when the value exists in the dictionary and is removed, false otherwise. </p>
+
+</div>
+</div>
+<a id="a70ae69cd325efec2cd9992cb1750db84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ae69cd325efec2cd9992cb1750db84">&#9670;&nbsp;</a></span>EvaluateAtContinuousIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::Image::EvaluateAtContinuousIndex </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td>
+          <td class="paramname"><em>interp</em> = <code><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">sitkLinear</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interpolate pixel value at a continuous index. </p>
+<p>This method is not supported for <a class="elRef" href="https://www.itk.org/Doxygen/html/classLabel.html">Label</a> pixel types.</p>
+<p>The valid range of continuous index is [-0.5, size-0.5] for each dimension. An exception is thrown if index is out of bounds.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The continuous index must be at least the length of the image dimension. </td></tr>
+    <tr><td class="paramname">interp</td><td>The interpolation type to use, only sitkNearest and sitkLinear are supported for <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">Vector</a> and Complex pixel types.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>All supported pixel types are returned as an array, where complex numbers are returned with the real followed by the complex component. </dd></dl>
+
+</div>
+</div>
+<a id="a4678f5ce1424c712e35d5c510e515da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4678f5ce1424c712e35d5c510e515da5">&#9670;&nbsp;</a></span>EvaluateAtPhysicalPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::Image::EvaluateAtPhysicalPoint </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td>
+          <td class="paramname"><em>interp</em> = <code><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">sitkLinear</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Interpolate pixel value at a physical point.</p>
+<p>This method is not supported for <a class="elRef" href="https://www.itk.org/Doxygen/html/classLabel.html">Label</a> pixel types.</p>
+<p>An exception is thrown if the point is out of the defined region for the image.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The physical point at which the interpolation is computed. </td></tr>
+    <tr><td class="paramname">interp</td><td>The interpolation type to use, only sitkNearest and sitkLinear are supported for <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">Vector</a> and Complex pixel types.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>All supported pixel types are returned as an array, where complex numbers are returned with the real followed by the complex component. </dd></dl>
 
 </div>
 </div>
@@ -3802,7 +3886,7 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00547">547</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00574">574</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>

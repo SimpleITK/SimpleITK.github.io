@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev102</span>
+   &#160;<span id="projectnumber">2.2.0.dev104</span>
    </div>
   </td>
  </tr>
@@ -89,6 +89,8 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9e209fecdd7632e0815c954b3df74d8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html">PimpleImageBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html#ac9e209fecdd7632e0815c954b3df74d8">DeepCopy</a> () const =0</td></tr>
 <tr class="separator:ac9e209fecdd7632e0815c954b3df74d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ca658d27cf5786982d6918855f0411d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html#a8ca658d27cf5786982d6918855f0411d">EvaluateAtContinuousIndex</a> (const std::vector&lt; double &gt; &amp;index, <a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> interp) const =0</td></tr>
+<tr class="separator:a8ca658d27cf5786982d6918855f0411d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09ebe93e3bb9bb3177604fdae285c4dc"><td class="memItemLeft" align="right" valign="top">virtual const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html#a09ebe93e3bb9bb3177604fdae285c4dc">GetBufferAsDouble</a> () const =0</td></tr>
 <tr class="separator:a09ebe93e3bb9bb3177604fdae285c4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76cabd8e6ddd83ee0b2bcd724572a565"><td class="memItemLeft" align="right" valign="top">virtual double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html#a76cabd8e6ddd83ee0b2bcd724572a565">GetBufferAsDouble</a> ()=0</td></tr>
@@ -319,6 +321,42 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8ca658d27cf5786982d6918855f0411d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ca658d27cf5786982d6918855f0411d">&#9670;&nbsp;</a></span>EvaluateAtContinuousIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;double&gt; itk::simple::PimpleImageBase::EvaluateAtContinuousIndex </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td>
+          <td class="paramname"><em>interp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
