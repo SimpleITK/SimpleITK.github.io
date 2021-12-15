@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev140</span>
+   &#160;<span id="projectnumber">2.2.0.dev148</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acdb837f8c7ff786eeb2258e3e68af7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace0ad26349e343a147f1ce0bf7a91066"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#ace0ad26349e343a147f1ce0bf7a91066">GetUseImageSpacing</a> () const</td></tr>
 <tr class="separator:ace0ad26349e343a147f1ce0bf7a91066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3bf56494ac88cfe1110ac9c31f1e524"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#af3bf56494ac88cfe1110ac9c31f1e524">GetVectorDistanceMap</a> () const</td></tr>
+<tr class="separator:af3bf56494ac88cfe1110ac9c31f1e524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58f889416ae8a8ef373040380e8b29f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#ad58f889416ae8a8ef373040380e8b29f">GetVoronoiMap</a> () const</td></tr>
+<tr class="separator:ad58f889416ae8a8ef373040380e8b29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a154bcde34c5fddafe6701c43154701d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#a154bcde34c5fddafe6701c43154701d8">InputIsBinaryOff</a> ()</td></tr>
 <tr class="separator:a154bcde34c5fddafe6701c43154701d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6538ab5fe90b268d1e39790d69795f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#a6538ab5fe90b268d1e39790d69795f06">InputIsBinaryOn</a> ()</td></tr>
@@ -220,6 +224,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1457a34573f1397d384f4af7fdad9e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94eddcd48d744893077e8d2629888c42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#a94eddcd48d744893077e8d2629888c42">m_UseImageSpacing</a> {false}</td></tr>
 <tr class="separator:a94eddcd48d744893077e8d2629888c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b4908d23dfe8a5f39ced80789811e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#ae8b4908d23dfe8a5f39ced80789811e8">m_VectorDistanceMap</a> {<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>()}</td></tr>
+<tr class="separator:ae8b4908d23dfe8a5f39ced80789811e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a827fc9482e921633237e07fffe7e937e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#a827fc9482e921633237e07fffe7e937e">m_VoronoiMap</a> {<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>()}</td></tr>
+<tr class="separator:a827fc9482e921633237e07fffe7e937e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -306,6 +314,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:af780ef8c7fc1b712f585bbb04deb6221 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplParams" colspan="2">template&lt;class TPixelType , unsigned int VImageDimension, unsigned int VLength, template&lt; typename, unsigned int &gt; class TVector&gt; </td></tr>
 <tr class="memitem:af780ef8c7fc1b712f585bbb04deb6221 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#af780ef8c7fc1b712f585bbb04deb6221">CastITKToImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; TVector&lt; TPixelType, VLength &gt;, VImageDimension &gt; *img)</td></tr>
 <tr class="separator:af780ef8c7fc1b712f585bbb04deb6221 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2914d301d5d12f0fdd979f64e69ed864 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplParams" colspan="2">template&lt;unsigned int VImageDimension, unsigned int VLength, template&lt; unsigned int &gt; class TVector&gt; </td></tr>
+<tr class="memitem:a2914d301d5d12f0fdd979f64e69ed864 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2914d301d5d12f0fdd979f64e69ed864">CastITKToImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; TVector&lt; VLength &gt;, VImageDimension &gt; *img)</td></tr>
+<tr class="separator:a2914d301d5d12f0fdd979f64e69ed864 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf3d80da77d09da69a35af6dfadf234 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplParams" colspan="2">template&lt;class TImageType &gt; </td></tr>
 <tr class="memitem:adaf3d80da77d09da69a35af6dfadf234 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#adaf3d80da77d09da69a35af6dfadf234">CastITKToImage</a> (TImageType *img)</td></tr>
 <tr class="separator:adaf3d80da77d09da69a35af6dfadf234 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -367,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -551,7 +562,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -608,6 +619,64 @@ template&lt;class TImageType &gt; </div>
 <p>Get whether spacing is used. </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="af3bf56494ac88cfe1110ac9c31f1e524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3bf56494ac88cfe1110ac9c31f1e524">&#9670;&nbsp;</a></span>GetVectorDistanceMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::DanielssonDistanceMapImageFilter::GetVectorDistanceMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get Distance map image. The distance map is shown as a gray value image depending on the pixel type of the output image. Regarding the source image, background should be dark (gray value = 0) and object should have a gray value larger than 0. The minimal distance is calculated on the object frontier, and the output image gives for each pixel its minimal distance from the object (if there is more than one object the closest object is considered).</p>
+<p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ad58f889416ae8a8ef373040380e8b29f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad58f889416ae8a8ef373040380e8b29f">&#9670;&nbsp;</a></span>GetVoronoiMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::DanielssonDistanceMapImageFilter::GetVoronoiMap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get Voronoi Map This map shows for each pixel what object is closest to it. Each object should be labeled by a number (larger than 0), so the map has a value for each pixel corresponding to the label of the closest object.</p>
+<p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +981,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -937,7 +1006,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -961,7 +1030,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -985,7 +1054,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1009,7 +1078,55 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ae8b4908d23dfe8a5f39ced80789811e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8b4908d23dfe8a5f39ced80789811e8">&#9670;&nbsp;</a></span>m_VectorDistanceMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::DanielssonDistanceMapImageFilter::m_VectorDistanceMap {<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>()}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="a827fc9482e921633237e07fffe7e937e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a827fc9482e921633237e07fffe7e937e">&#9670;&nbsp;</a></span>m_VoronoiMap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::DanielssonDistanceMapImageFilter::m_VoronoiMap {<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>()}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>

@@ -48,7 +48,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev140</span>
+   &#160;<span id="projectnumber">2.2.0.dev148</span>
    </div>
   </td>
  </tr>
@@ -104,6 +104,8 @@ $(function() {
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CovariantVector.html">itk::CovariantVector&lt; T, NVectorDimension &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Offset.html">itk::Offset&lt; VDimension &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector&lt; T, NVectorDimension &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -123,6 +125,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7f4bad0cd1102850677cf85f08caa8e2"><td class="memTemplParams" colspan="2">template&lt;class TPixelType , unsigned int NImageDimension, unsigned int NLength&gt; </td></tr>
 <tr class="memitem:a7f4bad0cd1102850677cf85f08caa8e2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#a7306f868468a6850e24ebf74ecf832ab">SITKCommon_HIDDEN</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a>&lt; TPixelType, NImageDimension &gt;::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a7f4bad0cd1102850677cf85f08caa8e2">itk::simple::GetVectorImageFromImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CovariantVector.html">itk::CovariantVector</a>&lt; TPixelType, NLength &gt;, NImageDimension &gt; *img, bool transferOwnership=false)</td></tr>
 <tr class="separator:a7f4bad0cd1102850677cf85f08caa8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96dc4db5f92152e0229005b1aa4ac62"><td class="memTemplParams" colspan="2">template&lt;unsigned int NImageDimension, unsigned int NLength&gt; </td></tr>
+<tr class="memitem:ab96dc4db5f92152e0229005b1aa4ac62"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#a7306f868468a6850e24ebf74ecf832ab">SITKCommon_HIDDEN</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a>&lt; typename std::conditional&lt; sizeof(typename <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Offset.html">itk::Offset</a>&lt; NLength &gt;::<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a5380bc8696311d1e1cfa5b350e440839">OffsetValueType</a>)==sizeof(<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#aea2aea829b465b971c0a8edeb5d01568">int64_t</a>), <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#aea2aea829b465b971c0a8edeb5d01568">int64_t</a>, FalseType &gt;::type, NImageDimension &gt;::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#ab96dc4db5f92152e0229005b1aa4ac62">itk::simple::GetVectorImageFromImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Offset.html">itk::Offset</a>&lt; NLength &gt;, NImageDimension &gt; *img, bool transferOwnership=false)</td></tr>
+<tr class="separator:ab96dc4db5f92152e0229005b1aa4ac62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a447983820b6cc20cb1fb53fd1d5b0940"><td class="memTemplParams" colspan="2">template&lt;class TPixelType , unsigned int NImageDimension, unsigned int NLength&gt; </td></tr>
 <tr class="memitem:a447983820b6cc20cb1fb53fd1d5b0940"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#a7306f868468a6850e24ebf74ecf832ab">SITKCommon_HIDDEN</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a>&lt; TPixelType, NImageDimension &gt;::Pointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a447983820b6cc20cb1fb53fd1d5b0940">itk::simple::GetVectorImageFromImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector</a>&lt; TPixelType, NLength &gt;, NImageDimension &gt; *img, bool transferOwnership=false)</td></tr>
 <tr class="separator:a447983820b6cc20cb1fb53fd1d5b0940"><td class="memSeparator" colspan="2">&#160;</td></tr>
