@@ -26,7 +26,7 @@
     jax: ["input/TeX","output/HTML-CSS"],
 });
 </script>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
+<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="customdoxygen.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -36,11 +36,7 @@
                   height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
-<script>
-  $(function(){
-  $("#datetime").load("datetime.txt");
-  });
-</script>
+<script type="text/javascript" src="build_text.js"></script>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -48,7 +44,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SimpleITK
-   &#160;<span id="projectnumber">2.2.0.dev160</span>
+   &#160;<span id="projectnumber">unknown</span>
    </div>
   </td>
  </tr>
@@ -4639,6 +4635,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa75d73d15b5d61d1b3b9f6fc829f037d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a55eea7d8d2452afa4c77eb6bd8d4a"><td class="memItemLeft" align="right" valign="top">TOutputImage::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#af1a55eea7d8d2452afa4c77eb6bd8d4a">ReadImage</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:af1a55eea7d8d2452afa4c77eb6bd8d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc9146ff67b72bc4e802b4d16006c10e"><td class="memItemLeft" align="right" valign="top">TOutputMesh::Pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#acc9146ff67b72bc4e802b4d16006c10e">ReadMesh</a> (const std::string &amp;filename)</td></tr>
+<tr class="separator:acc9146ff67b72bc4e802b4d16006c10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add972cd48ddc149f0efa576544afcd08"><td class="memItemLeft" align="right" valign="top">ITKIOImageBase_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#add972cd48ddc149f0efa576544afcd08">ReadRawBytesAfterSwapping</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CommonEnums.html#a479ceef53f78a1a07f00cb867284fdd5">IOComponentEnum</a> componentType, void *buffer, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CommonEnums.html#a506a879e3ac4ba894511ac426ee768be">IOByteOrderEnum</a> byteOrder, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#ab7ab0be12978d8285c89179db3969651">SizeValueType</a> numberOfComponents)</td></tr>
 <tr class="separator:add972cd48ddc149f0efa576544afcd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8370633c3db21595a87aa315be2f012b"><td class="memItemLeft" align="right" valign="top">TIterator *&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a8370633c3db21595a87aa315be2f012b">setConnectivity</a> (TIterator *it, bool fullyConnected=false)</td></tr>
@@ -4693,6 +4691,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac388126942865ff2f78f957dd0309908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73c8aba19472c8eca81c9e9b2b01241d"><td class="memItemLeft" align="right" valign="top">ITK_TEMPLATE_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a73c8aba19472c8eca81c9e9b2b01241d">WriteImage</a> (TImagePointer &amp;&amp;image, const std::string &amp;filename, bool compress=false)</td></tr>
 <tr class="separator:a73c8aba19472c8eca81c9e9b2b01241d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007cfdc8784b497ff2261dd8a91d7168"><td class="memItemLeft" align="right" valign="top">ITK_TEMPLATE_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a007cfdc8784b497ff2261dd8a91d7168">WriteMesh</a> (TMeshPointer &amp;&amp;mesh, const std::string &amp;filename, bool compress=false)</td></tr>
+<tr class="separator:a007cfdc8784b497ff2261dd8a91d7168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75552fbf03eee18f890cd9dc8d5b376a"><td class="memItemLeft" align="right" valign="top">ITKIOImageBase_EXPORT void&#160;</td><td class="memItemRight" valign="bottom"><a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a75552fbf03eee18f890cd9dc8d5b376a">WriteRawBytesAfterSwapping</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CommonEnums.html#a479ceef53f78a1a07f00cb867284fdd5">IOComponentEnum</a> componentType, const void *buffer, std::ofstream &amp;file, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CommonEnums.html#a506a879e3ac4ba894511ac426ee768be">IOByteOrderEnum</a> byteOrder, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#ab7ab0be12978d8285c89179db3969651">SizeValueType</a> numberOfBytes, <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#ab7ab0be12978d8285c89179db3969651">SizeValueType</a> numberOfComponents)</td></tr>
 <tr class="separator:a75552fbf03eee18f890cd9dc8d5b376a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
