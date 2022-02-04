@@ -129,7 +129,7 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;log_bias_field = corrector.GetLogBiasFieldAsImage(inputImage)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;bias_field = inputImage / <a class="code" href="namespaceitk_1_1simple.html#a75ec11bb87416d3280188ab4269fecf1">sitk.Exp</a>( log_bias_field )</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;corrected_image_full_resolution = inputImage / <a class="code" href="namespaceitk_1_1simple.html#a75ec11bb87416d3280188ab4269fecf1">sitk.Exp</a>( log_bias_field )</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">sitk.WriteImage</a>(corrected_image, sys.argv[2])</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>

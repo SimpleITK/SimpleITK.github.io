@@ -131,7 +131,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">logBiasField &lt;- corrector$GetLogBiasFieldAsImage(inputImage)</div>
 <div class="line"> </div>
-<div class="line">biasField &lt;- inputImage / Exp( logBiasField )</div>
+<div class="line">correctedImageFullResolution &lt;- inputImage / Exp( logBiasField )</div>
 <div class="line"> </div>
 <div class="line">WriteImage(correctedImage, args[[2]])</div>
 <div class="line"> </div>
