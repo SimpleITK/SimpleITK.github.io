@@ -129,7 +129,7 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">sitk.WriteTransform</a>(basic_transform, <span class="stringliteral">&#39;euler2D.tfm&#39;</span>)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  read_result = <a class="code" href="namespaceitk_1_1simple.html#a2c0bd020eb148e4d2595f603c9d884b8">sitk.ReadTransform</a>(<span class="stringliteral">&#39;euler2D.tfm&#39;</span>)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  assert(str(type(read_result) != type(basic_transform)))</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  assert(type(read_result) == type(basic_transform))</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">import</span> sys</div>
