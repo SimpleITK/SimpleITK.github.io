@@ -156,7 +156,7 @@ $(function() {
 <div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SITK__FINAL.html">  110</a></span>&#160;<span class="keyword">class </span><a class="code" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a> ITKLogger <a class="code" href="classitk_1_1simple_1_1SITK__FINAL.html">SITK_FINAL</a> : <span class="keyword">public</span> <a class="code" href="classitk_1_1simple_1_1LoggerBase.html">LoggerBase</a></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">explicit</span> ITKLogger(<a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a> *);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">explicit</span> ITKLogger(itk::OutputWindow *);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  ~ITKLogger() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  ITKLogger() = <span class="keywordflow">default</span>;</div>
@@ -183,7 +183,7 @@ $(function() {
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SITK__FINAL.html#a09fec39ea6d9bd8e92d2125b6d9dc13a">  146</a></span>&#160;  <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a> * m_OutputWindow{ <span class="keyword">nullptr</span> };</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1SITK__FINAL.html#a09fec39ea6d9bd8e92d2125b6d9dc13a">  146</a></span>&#160;  itk::OutputWindow * m_OutputWindow{ <span class="keyword">nullptr</span> };</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;};</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;} <span class="comment">// namespace simple</span></div>
@@ -193,11 +193,10 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1SITK__FINAL_html"><div class="ttname"><a href="classitk_1_1simple_1_1SITK__FINAL.html">itk::simple::SITK_FINAL</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkLogger_8h_source.html#l00110">sitkLogger.h:110</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html"><div class="ttname"><a href="sitkCommon_8h.html">sitkCommon.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1OutputWindow_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a></div></div>
 <div class="ttc" id="asitkObjectOwnedBase_8h_html"><div class="ttname"><a href="sitkObjectOwnedBase_8h.html">sitkObjectOwnedBase.h</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html_ab09867679406ccae193848f08fdc3444"><div class="ttname"><a href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a></div><div class="ttdeci">#define SITKCommon_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommon_8h_source.html#l00041">sitkCommon.h:41</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1LoggerBase_html"><div class="ttname"><a href="classitk_1_1simple_1_1LoggerBase.html">itk::simple::LoggerBase</a></div><div class="ttdoc">A base class to handle SimpleITK and ITK messages and logging.</div><div class="ttdef"><b>Definition:</b> <a href="sitkLogger_8h_source.html#l00048">sitkLogger.h:48</a></div></div>
-<div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
+<div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div><div class="ttdef"><b>Definition:</b> <a href="itkHashImageFilter_8h_source.html#l00028">itkHashImageFilter.h:28</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ObjectOwnedBase_html"><div class="ttname"><a href="classitk_1_1simple_1_1ObjectOwnedBase.html">itk::simple::ObjectOwnedBase</a></div><div class="ttdoc">An abstract base class to connect this object with the lifetime of another.</div><div class="ttdef"><b>Definition:</b> <a href="sitkObjectOwnedBase_8h_source.html#l00047">sitkObjectOwnedBase.h:47</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
