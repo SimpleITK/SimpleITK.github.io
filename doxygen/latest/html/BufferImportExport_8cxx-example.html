@@ -100,7 +100,7 @@ $(function() {
 <div class="line">  <span class="comment">// construct and initialize an image buffer, this buffer could have</span></div>
 <div class="line">  <span class="comment">// just as well come from the rest of an application we are trying</span></div>
 <div class="line">  <span class="comment">// to integrate simpleITK with.</span></div>
-<div class="line">  uint8_t *in = <span class="keyword">new</span> uint8_t[100*100*100];</div>
+<div class="line">  <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a7f475fc7c9afc4fd9e2564f00149e9e7">uint8_t</a> *in = <span class="keyword">new</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a7f475fc7c9afc4fd9e2564f00149e9e7">uint8_t</a>[100*100*100];</div>
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 100*100*100; ++i )</div>
 <div class="line">    {</div>
 <div class="line">    in[i] = i%255;</div>
@@ -132,7 +132,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">  <span class="comment">// The method which matches the actual pixel type of the image must</span></div>
 <div class="line">  <span class="comment">// be called.</span></div>
-<div class="line">  uint8_t *out = img.<a name="a11"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a23c033eda3bbd6f37eba8cad254e2cc8">GetBufferAsUInt8</a>();</div>
+<div class="line">  <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a7f475fc7c9afc4fd9e2564f00149e9e7">uint8_t</a> *out = img.<a name="a11"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a23c033eda3bbd6f37eba8cad254e2cc8">GetBufferAsUInt8</a>();</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> ( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; 10; ++i)</div>
 <div class="line">    {</div>
@@ -152,6 +152,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html_a780923bec6a71b14be35d81069f343f6"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html#a780923bec6a71b14be35d81069f343f6">itk::simple::Image::GetPixelID</a></div><div class="ttdeci">PixelIDValueEnum GetPixelID() const</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_ab9eca69658af4258ad54d438f2d37d03"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#ab9eca69658af4258ad54d438f2d37d03">itk::simple::ImportImageFilter::SetBufferAsUInt8</a></div><div class="ttdeci">Self &amp; SetBufferAsUInt8(uint8_t *buffer, unsigned int numberOfComponents=1)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html">itk::simple::ImportImageFilter</a></div><div class="ttdoc">Compose a 2D or 3D image and return a smart pointer to a SimpleITK image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImportImageFilter_8h_source.html#l00047">sitkImportImageFilter.h:47</a></div></div>
+<div class="ttc" id="anamespaceitk_html_a7f475fc7c9afc4fd9e2564f00149e9e7"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk.html#a7f475fc7c9afc4fd9e2564f00149e9e7">uint8_t</a></div><div class="ttdeci">std::uint8_t uint8_t</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a07153aa69823432ba773112b71f31813">itk::simple::sitkUInt8</a></div><div class="ttdeci">@ sitkUInt8</div><div class="ttdoc">Unsigned 8 bit integer.</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00092">sitkPixelIDValues.h:92</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_a8500809633172066aa925ca2b5ea7a41"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#a8500809633172066aa925ca2b5ea7a41">itk::simple::ImportImageFilter::SetOrigin</a></div><div class="ttdeci">Self &amp; SetOrigin(const std::vector&lt; double &gt; &amp;origin)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImportImageFilter_html_afb166d8101e46d63ebed7b6592dc71e3"><div class="ttname"><a href="classitk_1_1simple_1_1ImportImageFilter.html#afb166d8101e46d63ebed7b6592dc71e3">itk::simple::ImportImageFilter::SetSpacing</a></div><div class="ttdeci">Self &amp; SetSpacing(const std::vector&lt; double &gt; &amp;spacing)</div></div>
