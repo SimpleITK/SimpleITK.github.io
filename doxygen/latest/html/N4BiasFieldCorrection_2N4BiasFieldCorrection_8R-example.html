@@ -108,9 +108,11 @@ $(function() {
 <div class="line">    maskImage &lt;- OtsuThreshold( inputImage, 0, 1, 200 )</div>
 <div class="line">}</div>
 <div class="line"> </div>
+<div class="line">shrinkFactor = 1</div>
 <div class="line">if (length( args ) &gt; 3) {</div>
-<div class="line">    image &lt;- Shrink( inputImage, rep(strtoi(args[3]), inputImage$GetDimension()) )</div>
-<div class="line">    maskImage &lt;- Shrink( maskImage, rep(strtoi(args[3]), inputImage$GetDimension()) )</div>
+<div class="line">    shrinkFactor = strtoi(args[3])</div>
+<div class="line">    image &lt;- Shrink( inputImage, rep(shrinkFactor, inputImage$GetDimension()) )</div>
+<div class="line">    maskImage &lt;- Shrink( maskImage, rep(shrinkFactor, inputImage$GetDimension()) )</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">inputImage &lt;- Cast( inputImage, &#39;sitkFloat32&#39; )</div>
@@ -133,7 +135,11 @@ $(function() {
 <div class="line"> </div>
 <div class="line">correctedImageFullResolution &lt;- inputImage / Exp( logBiasField )</div>
 <div class="line"> </div>
-<div class="line">WriteImage(correctedImage, args[[2]])</div>
+<div class="line">WriteImage(correctedImageFullResolution, args[[2]])</div>
+<div class="line"> </div>
+<div class="line">if (shrinkFactor &gt; 1) {</div>
+<div class="line">    WriteImage(correctedImage, &quot;R-Example-N4BiasFieldCorrection-shrunk.nrrd&quot;)</div>
+<div class="line">}</div>
 <div class="line"> </div>
 <div class="line">if(Sys.getenv(&quot;SITK_NOSHOW&quot;) == &quot;&quot;) {</div>
 <div class="line">    Show(correctedImage, &quot;N4 Corrected&quot;)</div>

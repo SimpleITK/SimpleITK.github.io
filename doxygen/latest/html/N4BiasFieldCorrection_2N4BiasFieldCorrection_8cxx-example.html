@@ -112,9 +112,10 @@ $(function() {
 <div class="line">    maskImage = <a name="a4"></a><a class="code" href="namespaceitk_1_1simple.html#a7efbdfc62b7e29c61bef1bcc8e4ba8ef">sitk::OtsuThreshold</a>( image, 0, 1, 200 );</div>
 <div class="line">  }</div>
 <div class="line"> </div>
+<div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> shrinkFactor = 1;</div>
 <div class="line">  <span class="keywordflow">if</span> ( argc &gt; 3 ) {</div>
-<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> s = atoi( argv[3] );</div>
-<div class="line">    std::vector&lt;unsigned int&gt; shrink( inputImage.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">GetDimension</a>(), s );</div>
+<div class="line">    shrinkFactor = atoi( argv[3] );</div>
+<div class="line">    std::vector&lt;unsigned int&gt; shrink( inputImage.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">GetDimension</a>(), shrinkFactor );</div>
 <div class="line">    image = <a name="a6"></a><a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk::Shrink</a>( inputImage, shrink );</div>
 <div class="line">    maskImage = <a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk::Shrink</a>( maskImage, shrink );</div>
 <div class="line">  }</div>
@@ -140,7 +141,11 @@ $(function() {
 <div class="line"> </div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> corrected_image_full_resolution = <a name="a11"></a><a class="code" href="namespaceitk_1_1simple.html#ad7d7b5ae7dffba67348d2e608c654e6d">sitk::Divide</a>( inputImage, <a name="a12"></a><a class="code" href="namespaceitk_1_1simple.html#a89142196d367fa4958be64aee1ca75a6">sitk::Exp</a>( log_bias_field ) );</div>
 <div class="line"> </div>
-<div class="line">  <a name="a13"></a><a class="code" href="namespaceitk_1_1simple.html#aee1844ed9be481d8ed9cc4c7049d588d">sitk::WriteImage</a>( corrected_image, argv[2] );</div>
+<div class="line">  <a name="a13"></a><a class="code" href="namespaceitk_1_1simple.html#aee1844ed9be481d8ed9cc4c7049d588d">sitk::WriteImage</a>( corrected_image_full_resolution, argv[2] );</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">if</span> (shrinkFactor &gt; 1) {</div>
+<div class="line">    <a class="code" href="namespaceitk_1_1simple.html#aee1844ed9be481d8ed9cc4c7049d588d">sitk::WriteImage</a>( corrected_image, <span class="stringliteral">&quot;CXX-Example-N4BiasFieldCorrection-shrunk.nrrd&quot;</span> );</div>
+<div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;SITK_NOSHOW&quot;</span>) == NULL)</div>
 <div class="line">    <a name="a14"></a><a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk::Show</a>(corrected_image, <span class="stringliteral">&quot;N4 Corrected&quot;</span>);</div>
