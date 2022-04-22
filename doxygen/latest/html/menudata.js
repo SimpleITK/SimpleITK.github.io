@@ -199,7 +199,8 @@ var menudata={children:[
 {text:"w",url:"functions_eval.html#index_w"},
 {text:"z",url:"functions_eval.html#index_z"}]},
 {text:"Related Functions",url:"functions_rela.html",children:[
-{text:"d",url:"functions_rela.html#index_d"},
+{text:"a",url:"functions_rela.html#index_a"},
+{text:"d",url:"functions_rela_d.html#index_d"},
 {text:"i",url:"functions_rela_i.html#index_i"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},

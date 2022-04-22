@@ -69,12 +69,12 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1Image-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">itk::simple::Image Class Reference</div>  </div>
@@ -94,11 +94,6 @@ $(function() {
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1Image_1_1AllocateMemberFunctionAddressor.html">AllocateMemberFunctionAddressor</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a5f3a8beb0170782f77853b044ddd02a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a5f3a8beb0170782f77853b044ddd02a4">Self</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a></td></tr>
@@ -448,21 +443,23 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a6ad2b5c0e5f9d94d953e8e4469bbfa1e"><td class="memTemplParams" colspan="2">template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </td></tr>
-<tr class="memitem:a6ad2b5c0e5f9d94d953e8e4469bbfa1e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a6ad2b5c0e5f9d94d953e8e4469bbfa1e">InternalInitialization</a> (typename <a class="el" href="structitk_1_1simple_1_1PixelIDToImageType.html">PixelIDToImageType</a>&lt; typename typelist::TypeAt&lt; <a class="el" href="namespaceitk_1_1simple.html#aca9bcea069d3753ee0303e2d0b9270af">InstantiatedPixelIDTypeList</a>, VPixelIDValue &gt;::Result, VImageDimension &gt;::ImageType *i)</td></tr>
-<tr class="separator:a6ad2b5c0e5f9d94d953e8e4469bbfa1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ae714751ce40c393d3d63f8ad965fbde4"><td class="memTemplParams" colspan="2">template&lt;int VPixelIDValue, typename TImageType &gt; </td></tr>
-<tr class="memitem:ae714751ce40c393d3d63f8ad965fbde4"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt;!std::is_same&lt; TImageType, void &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ae714751ce40c393d3d63f8ad965fbde4">ConditionalInternalInitialization</a> (TImageType *i)</td></tr>
-<tr class="separator:ae714751ce40c393d3d63f8ad965fbde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36620dd941d7609fee07110780517e44"><td class="memTemplParams" colspan="2">template&lt;int VPixelIDValue, typename TImageType &gt; </td></tr>
-<tr class="memitem:a36620dd941d7609fee07110780517e44"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; TImageType, void &gt;::value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a36620dd941d7609fee07110780517e44">ConditionalInternalInitialization</a> (TImageType *)</td></tr>
-<tr class="separator:a36620dd941d7609fee07110780517e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7656644c344bd92bd5b5c3ff93a76a9"><td class="memTemplParams" colspan="2">template&lt;typename TImageType &gt; </td></tr>
+<tr class="memitem:ac7656644c344bd92bd5b5c3ff93a76a9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html">PimpleImageBase</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ac7656644c344bd92bd5b5c3ff93a76a9">DispatchedInternalInitialization</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DataObject.html">itk::DataObject</a> *image)</td></tr>
+<tr class="separator:ac7656644c344bd92bd5b5c3ff93a76a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b1318ae056ca7ccda06025b2c775db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a8b1318ae056ca7ccda06025b2c775db4">InternalInitialization</a> (<a class="el" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> type, unsigned int dimension, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DataObject.html">itk::DataObject</a> *image)</td></tr>
+<tr class="separator:a8b1318ae056ca7ccda06025b2c775db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a76b5c98046d927e528a449442420a448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html">PimpleImageBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a76b5c98046d927e528a449442420a448">m_PimpleImage</a></td></tr>
 <tr class="separator:a76b5c98046d927e528a449442420a448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aaf84f462b2cb8fd9088d79765360285a"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aaf84f462b2cb8fd9088d79765360285a">AllocateMemberFunctionAddressor</a></td></tr>
+<tr class="separator:aaf84f462b2cb8fd9088d79765360285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9abddb4e526202df2e9408f7437d250"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aa9abddb4e526202df2e9408f7437d250">DispatchedInternalInitialiationAddressor</a></td></tr>
+<tr class="separator:aa9abddb4e526202df2e9408f7437d250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> class for SimpleITK. </p>
@@ -779,7 +776,7 @@ template&lt;typename TImageType &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00146">146</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPixelIDValues_8h_source.html#l00091">itk::simple::sitkUnknown</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfigure_8h_source.html#l00030">SITK_MAX_DIMENSION</a>, and <a class="el" href="sitkPixelIDValues_8h_source.html#l00094">itk::simple::sitkUnknown</a>.</p>
 
 </div>
 </div>
@@ -952,66 +949,6 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a36620dd941d7609fee07110780517e44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36620dd941d7609fee07110780517e44">&#9670;&nbsp;</a></span>ConditionalInternalInitialization() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int VPixelIDValue, typename TImageType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;std::is_same&lt;TImageType, void&gt;::value&gt;::type itk::simple::Image::ConditionalInternalInitialization </td>
-          <td>(</td>
-          <td class="paramtype">TImageType *&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Dispatched from the InternalInitialization method. The "enable-if" idiom is used here for method overloading. The second method is for non-instantiated image, which turn into a void pointer for the parameter. However, this second method should never be executed. </p>
-
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00556">556</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
-
-</div>
-</div>
-<a id="ae714751ce40c393d3d63f8ad965fbde4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae714751ce40c393d3d63f8ad965fbde4">&#9670;&nbsp;</a></span>ConditionalInternalInitialization() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int VPixelIDValue, typename TImageType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if&lt;!std::is_same&lt;TImageType, void&gt;::value&gt;::type itk::simple::Image::ConditionalInternalInitialization </td>
-          <td>(</td>
-          <td class="paramtype">TImageType *&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Dispatched from the InternalInitialization method. The "enable-if" idiom is used here for method overloading. The second method is for non-instantiated image, which turn into a void pointer for the parameter. However, this second method should never be executed. </p>
-
-</div>
-</div>
 <a id="afa8a4757400c414e809d1767ee616bd0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa8a4757400c414e809d1767ee616bd0">&#9670;&nbsp;</a></span>CopyInformation()</h2>
 
@@ -1033,6 +970,34 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 <p>It is required for the source <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a>'s dimension and size to match, this image's attributes, otherwise an exception will be generated. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a32">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="ac7656644c344bd92bd5b5c3ff93a76a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7656644c344bd92bd5b5c3ff93a76a9">&#9670;&nbsp;</a></span>DispatchedInternalInitialization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TImageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html">PimpleImageBase</a>* itk::simple::Image::DispatchedInternalInitialization </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DataObject.html">itk::DataObject</a> *&#160;</td>
+          <td class="paramname"><em>image</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2706,13 +2671,11 @@ template&lt;int VPixelIDValue, typename TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a6ad2b5c0e5f9d94d953e8e4469bbfa1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ad2b5c0e5f9d94d953e8e4469bbfa1e">&#9670;&nbsp;</a></span>InternalInitialization()</h2>
+<a id="a8b1318ae056ca7ccda06025b2c775db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1318ae056ca7ccda06025b2c775db4">&#9670;&nbsp;</a></span>InternalInitialization()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -2720,9 +2683,25 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
         <tr>
           <td class="memname">void itk::simple::Image::InternalInitialization </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="structitk_1_1simple_1_1PixelIDToImageType.html">PixelIDToImageType</a>&lt; typename typelist::TypeAt&lt; <a class="el" href="namespaceitk_1_1simple.html#aca9bcea069d3753ee0303e2d0b9270af">InstantiatedPixelIDTypeList</a>, VPixelIDValue &gt;::Result, VImageDimension &gt;::ImageType *&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>dimension</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DataObject.html">itk::DataObject</a> *&#160;</td>
+          <td class="paramname"><em>image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2731,7 +2710,7 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Method called by certain constructors to convert ITK images into simpleITK ones.</p>
+<p>Method called by certain constructors to convert ITK images into SimpleITK ones.</p>
 <p>This is the single method which needs to be explicitly instantiated to separate the internal ITK and Pimple image from the external SimpleITK interface. Template parameters have been chosen carefully to flexibly enable this. </p>
 
 </div>
@@ -3861,6 +3840,55 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="aaf84f462b2cb8fd9088d79765360285a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf84f462b2cb8fd9088d79765360285a">&#9670;&nbsp;</a></span>AllocateMemberFunctionAddressor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct AllocateMemberFunctionAddressor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00549">549</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+
+</div>
+</div>
+<a id="aa9abddb4e526202df2e9408f7437d250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9abddb4e526202df2e9408f7437d250">&#9670;&nbsp;</a></span>DispatchedInternalInitialiationAddressor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct DispatchedInternalInitialiationAddressor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00548">548</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a76b5c98046d927e528a449442420a448"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76b5c98046d927e528a449442420a448">&#9670;&nbsp;</a></span>m_PimpleImage</h2>
@@ -3882,7 +3910,7 @@ template&lt;int VPixelIDValue, unsigned int VImageDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00574">574</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00552">552</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
