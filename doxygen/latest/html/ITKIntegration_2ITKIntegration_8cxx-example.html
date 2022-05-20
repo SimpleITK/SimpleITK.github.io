@@ -163,8 +163,8 @@ $(function() {
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <span class="comment">// Extract the itk image from the SimpleITK image</span></div>
 <div class="line">  <span class="comment">//</span></div>
-<div class="line">  InternalImageType::Pointer itkImage =</div>
-<div class="line">    <span class="keyword">dynamic_cast &lt;</span>InternalImageType*<span class="keyword">&gt;</span>( image.<a name="a13"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a5642d24314cdf67121ce9130805d7195">GetITKBase</a>() );</div>
+<div class="line">  <a name="a13"></a>InternalImageType::Pointer itkImage =</div>
+<div class="line">    <span class="keyword">dynamic_cast &lt;</span>InternalImageType*<span class="keyword">&gt;</span>( image.<a name="a14"></a><a class="code" href="classitk_1_1simple_1_1Image.html#a5642d24314cdf67121ce9130805d7195">GetITKBase</a>() );</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <span class="comment">// Always check the results of dynamic_casts</span></div>
@@ -178,8 +178,8 @@ $(function() {
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <span class="comment">// Set up the blur filter and attach it to the pipeline.</span></div>
 <div class="line">  <span class="comment">//</span></div>
-<div class="line">  <span class="keyword">using</span> BlurFilterType = <a name="_a14"></a><a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowImageFilter.html">itk::CurvatureFlowImageFilter&lt; InternalImageType, InternalImageType &gt;</a>;</div>
-<div class="line">  BlurFilterType::Pointer blurFilter = BlurFilterType::New();</div>
+<div class="line">  <span class="keyword">using</span> BlurFilterType = <a name="_a15"></a><a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowImageFilter.html">itk::CurvatureFlowImageFilter&lt; InternalImageType, InternalImageType &gt;</a>;</div>
+<div class="line">  BlurFilterType::Pointer blurFilter = <a name="a16"></a>BlurFilterType::New();</div>
 <div class="line">  blurFilter-&gt;SetInput( itkImage );</div>
 <div class="line">  blurFilter-&gt;SetNumberOfIterations( 5 );</div>
 <div class="line">  blurFilter-&gt;SetTimeStep( 0.125 );</div>
@@ -205,15 +205,15 @@ $(function() {
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <span class="comment">// Set up ConnectedThresholdImageFilter for segmentation</span></div>
 <div class="line">  <span class="comment">//</span></div>
-<div class="line">  <a name="_a15"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html">sitk::ConnectedThresholdImageFilter</a> segmentationFilter;</div>
-<div class="line">  segmentationFilter.<a name="a16"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a1f88253eeb10ca9f857562108ada0c74">SetLower</a>( atof( argv[3] ) );</div>
-<div class="line">  segmentationFilter.<a name="a17"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a487db7325f429c382f318b8d4a824718">SetUpper</a>( atof( argv[4] ) );</div>
-<div class="line">  segmentationFilter.<a name="a18"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ac26a2add7b26efb5ae761013482a1096">SetReplaceValue</a>( 255 );</div>
+<div class="line">  <a name="_a17"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html">sitk::ConnectedThresholdImageFilter</a> segmentationFilter;</div>
+<div class="line">  segmentationFilter.<a name="a18"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a1f88253eeb10ca9f857562108ada0c74">SetLower</a>( atof( argv[3] ) );</div>
+<div class="line">  segmentationFilter.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a487db7325f429c382f318b8d4a824718">SetUpper</a>( atof( argv[4] ) );</div>
+<div class="line">  segmentationFilter.<a name="a20"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ac26a2add7b26efb5ae761013482a1096">SetReplaceValue</a>( 255 );</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 5; i+1 &lt; argc; i+=2)</div>
 <div class="line">    {</div>
 <div class="line">    std::vector&lt;unsigned int&gt; seed = { (<span class="keywordtype">unsigned</span> int) atoi(argv[i]), (<span class="keywordtype">unsigned</span> int) atoi(argv[i+1]) };</div>
-<div class="line">    segmentationFilter.<a name="a19"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ad182a2deee51f29390fd11498af654a0">AddSeed</a>(seed);</div>
+<div class="line">    segmentationFilter.<a name="a21"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ad182a2deee51f29390fd11498af654a0">AddSeed</a>(seed);</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Adding a seed at &quot;</span>;</div>
 <div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; seed.size(); ++i )</div>
 <div class="line">      {</div>
@@ -222,13 +222,13 @@ $(function() {
 <div class="line">    std::cout &lt;&lt; std::endl;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> outImage = segmentationFilter.<a name="a20"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ae0178b61cf3ced1f00f362ef858ee297">Execute</a>(blurredImage);</div>
+<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> outImage = segmentationFilter.<a name="a22"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ae0178b61cf3ced1f00f362ef858ee297">Execute</a>(blurredImage);</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <span class="comment">// Write out the resulting file</span></div>
 <div class="line">  <span class="comment">//</span></div>
-<div class="line">  writer.<a name="a21"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#a7f0091401d89ab256870b93d88cb0a6e">Execute</a>(outImage);</div>
+<div class="line">  writer.<a name="a23"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#a7f0091401d89ab256870b93d88cb0a6e">Execute</a>(outImage);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
