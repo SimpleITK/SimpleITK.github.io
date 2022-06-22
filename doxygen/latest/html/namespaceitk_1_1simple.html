@@ -21203,7 +21203,9 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>When reading a series of images that have meta-data associated with them (e.g. a DICOM series) the resulting image will have an empty meta-data dictionary. If you need the meta-data dictionaries associated with each slice then you should use the <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html" title="Read series of image files into a SimpleITK image.">ImageSeriesReader</a> class.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>When reading a series of images that have meta-data associated with them (e.g. a DICOM series) the resulting image will have an empty meta-data dictionary. If you need the meta-data dictionaries associated with each slice then you should use the <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html" title="Read series of image files into a SimpleITK image.">ImageSeriesReader</a> class.</dd>
+<dd>
+If the pixel type for the returned image is not specified it is deduced from the first image in the series. This approach is computationally efficient and assumes that all images in a series have the same pixel type. If this is not the case, explicitly specify the widest pixel type in the series as the outputPixelType.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ImageFileReader.html" title="Read an image file and return a SimpleITK Image.">itk::simple::ImageFileReader</a> for reading a single file. </dd>
 <dd>
 <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html" title="Read series of image files into a SimpleITK image.">itk::simple::ImageSeriesReader</a> for reading a series and meta-data dictionaries. </dd></dl>
