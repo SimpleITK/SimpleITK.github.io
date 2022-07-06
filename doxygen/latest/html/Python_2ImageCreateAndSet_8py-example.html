@@ -105,9 +105,9 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;xImg = <a class="code" href="namespaceitk_1_1simple.html#a2b23a9e2d633d72925d25ea802a1cc72">sitk.Subtract</a>(xImg, xImg.GetSize()[0] / 2)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;yImg = yImg - yImg.GetSize()[1] / 2</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;gaussianImg = <a class="code" href="namespaceitk_1_1simple.html#a75ec11bb87416d3280188ab4269fecf1">sitk.Exp</a>(-1 * (xImg ** 2 + yImg ** 2) / (2.0 * sigma ** 2))</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;gaussianImg = <a class="code" href="namespaceitk_1_1simple.html#a75ec11bb87416d3280188ab4269fecf1">sitk.Exp</a>(-1 * (xImg**2 + yImg**2) / (2.0 * sigma**2))</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordflow">if</span> (<span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ):</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(gaussianImg, <span class="stringliteral">&quot;Gaussian Blob&quot;</span>)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00076">sitkImage.h:76</a></div></div>

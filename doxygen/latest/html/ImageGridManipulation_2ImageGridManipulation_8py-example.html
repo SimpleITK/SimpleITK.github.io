@@ -111,26 +111,28 @@ $(function() {
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"># Recompose image (should be same as joined_image)</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;compose = <a class="code" href="classitk_1_1simple_1_1ComposeImageFilter.html">sitk.ComposeImageFilter</a>()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;composed_image = compose.Execute(channel1_image, channel2_image,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                 channel3_image)</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"># Select same subregion using image slicing operator</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;sliced_image = composed_image[100:400, 100:400, 0]</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"># Select same subregion using ExtractImageFilter</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;extract = <a class="code" href="classitk_1_1simple_1_1ExtractImageFilter.html">sitk.ExtractImageFilter</a>()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;extract.SetSize([300, 300, 0])</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;extract.SetIndex([100, 100, 0])</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;extracted_image = extract.Execute(composed_image)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"># Select same sub-region using CropImageFilter (NOTE: CropImageFilter cannot</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"># reduce dimensions unlike ExtractImageFilter, so cropped_image is a three</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"># dimensional image with depth of 1)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;crop = <a class="code" href="classitk_1_1simple_1_1CropImageFilter.html">sitk.CropImageFilter</a>()</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;crop.SetLowerBoundaryCropSize([100, 100, 0])</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;crop.SetUpperBoundaryCropSize([composed_image.GetWidth() - 400,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                               composed_image.GetHeight() - 400, 1])</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;cropped_image = crop.Execute(composed_image)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;composed_image = compose.Execute(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    channel1_image, channel2_image, channel3_image</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"># Select same subregion using image slicing operator</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;sliced_image = composed_image[100:400, 100:400, 0]</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"># Select same subregion using ExtractImageFilter</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;extract = <a class="code" href="classitk_1_1simple_1_1ExtractImageFilter.html">sitk.ExtractImageFilter</a>()</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;extract.SetSize([300, 300, 0])</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;extract.SetIndex([100, 100, 0])</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;extracted_image = extract.Execute(composed_image)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"># Select same sub-region using CropImageFilter (NOTE: CropImageFilter cannot</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"># reduce dimensions unlike ExtractImageFilter, so cropped_image is a three</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"># dimensional image with depth of 1)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;crop = <a class="code" href="classitk_1_1simple_1_1CropImageFilter.html">sitk.CropImageFilter</a>()</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;crop.SetLowerBoundaryCropSize([100, 100, 0])</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;crop.SetUpperBoundaryCropSize(</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    [composed_image.GetWidth() - 400, composed_image.GetHeight() - 400, 1]</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;cropped_image = crop.Execute(composed_image)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1JoinSeriesImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1JoinSeriesImageFilter.html">itk::simple::JoinSeriesImageFilter</a></div><div class="ttdoc">Join N-D images into an (N+1)-D image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkJoinSeriesImageFilter_8h_source.html#l00048">sitkJoinSeriesImageFilter.h:48</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>

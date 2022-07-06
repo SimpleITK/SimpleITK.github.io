@@ -131,13 +131,15 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"># Where spaces are added is not specified and thus may vary</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"># (&quot;DERIVED\SECONDARY &quot;, &quot;DERIVED\ SECONDARY&quot; are equivalent).</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;modified_image = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[2])</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordflow">if</span> modified_image.GetMetaData(<span class="stringliteral">&quot;0008|0008&quot;</span>).replace(<span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot;&quot;</span>) \</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        != <span class="stringliteral">&quot;DERIVED\\SECONDARY&quot;</span> <span class="keywordflow">or</span> \</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        modified_image.GetMetaData(<span class="stringliteral">&quot;0008|0031&quot;</span>) != modification_time <span class="keywordflow">or</span> \</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        modified_image.GetMetaData(<span class="stringliteral">&quot;0008|0021&quot;</span>) != modification_date:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    sys.exit(1)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;sys.exit(0)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordflow">if</span> (</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    modified_image.GetMetaData(<span class="stringliteral">&quot;0008|0008&quot;</span>).replace(<span class="stringliteral">&quot; &quot;</span>, <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    != <span class="stringliteral">&quot;DERIVED\\SECONDARY&quot;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">or</span> modified_image.GetMetaData(<span class="stringliteral">&quot;0008|0031&quot;</span>) != modification_time</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">or</span> modified_image.GetMetaData(<span class="stringliteral">&quot;0008|0021&quot;</span>) != modification_date</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;):</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    sys.exit(1)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;sys.exit(0)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="anamespaceitk_1_1simple_html_a8537644286a43ff1566326c2109057ab"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div><div class="ttdoc">WriteImage is a procedural interface to the ImageSeriesWriter. class which is convenient for many ima...</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
