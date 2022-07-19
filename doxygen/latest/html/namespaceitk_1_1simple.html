@@ -361,6 +361,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1EdgePotentialImageFilter.html">EdgePotentialImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the edge potential of an image from the image gradient.  <a href="classitk_1_1simple_1_1EdgePotentialImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ElastixImageFilter.html">ElastixImageFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class that wraps the elastix registration library.  <a href="classitk_1_1simple_1_1ElastixImageFilter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1EqualImageFilter.html">EqualImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements pixel-wise generic operation of two images, or of an image and a constant.  <a href="classitk_1_1simple_1_1EqualImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1061,6 +1064,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TransformGeometryImageFilter.html">TransformGeometryImageFilter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TransformixImageFilter.html">TransformixImageFilter</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TransformToDisplacementFieldFilter.html">TransformToDisplacementFieldFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a displacement field from a coordinate transform.  <a href="classitk_1_1simple_1_1TransformToDisplacementFieldFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1152,6 +1157,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:aa26808ea63056369dfa2c8696b7633ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa07d5193cc9798b88d976fd6a8d9ab62"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#aa07d5193cc9798b88d976fd6a8d9ab62">FalseType</a> = std::false_type</td></tr>
 <tr class="separator:aa07d5193cc9798b88d976fd6a8d9ab62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b67d119307ac47017331cb467229b52"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a3b67d119307ac47017331cb467229b52">FloatPixelIDTypeList</a> = typelist2::typelist&lt; <a class="el" href="structitk_1_1simple_1_1BasicPixelID.html">BasicPixelID</a>&lt; float &gt; &gt;</td></tr>
+<tr class="separator:a3b67d119307ac47017331cb467229b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9bcea069d3753ee0303e2d0b9270af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#aca9bcea069d3753ee0303e2d0b9270af">InstantiatedPixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a046538b4a402b6996e72ea13fe4ca9fe">AllPixelIDTypeList</a></td></tr>
 <tr class="separator:aca9bcea069d3753ee0303e2d0b9270af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa983ee2d48d8c1c7ca5f92bf82a7377a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#aa983ee2d48d8c1c7ca5f92bf82a7377a">IntegerLabelPixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ab27906fabfd0993dd3f146b0fb577195">UnsignedIntegerPixelIDTypeList</a></td></tr>
@@ -1437,6 +1444,22 @@ Functions</h2></td></tr>
 <tr class="separator:a335c98d606ab3804defabcdc53bc51a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3aa7efa299035aa17fb41843ed6e23b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a3aa7efa299035aa17fb41843ed6e23b6">DivideReal</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, double constant)</td></tr>
 <tr class="separator:a3aa7efa299035aa17fb41843ed6e23b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab476f3163814881845a6999e6999a7ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#ab476f3163814881845a6999e6999a7ed">Elastix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const bool logToConsole=false, const bool logToFile=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:ab476f3163814881845a6999e6999a7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112018b64a3797342d51a5fdb3a973b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a112018b64a3797342d51a5fdb3a973b3">Elastix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedMask, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingMask, const bool logToConsole=false, const bool logToFile=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:a112018b64a3797342d51a5fdb3a973b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90d1023c9f96e40eb3fc080a72bbb79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#ad90d1023c9f96e40eb3fc080a72bbb79">Elastix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; parameterMap, const bool logToConsole=false, const bool logToFile=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:ad90d1023c9f96e40eb3fc080a72bbb79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd501a806aca16742c32cf863c39dc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a2bd501a806aca16742c32cf863c39dc4">Elastix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedMask, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingMask, const bool logToConsole=false, const bool logToFile=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:a2bd501a806aca16742c32cf863c39dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaca4d4a945a3f835c2acc7dc97b69e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#acaca4d4a945a3f835c2acc7dc97b69e7">Elastix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const std::string defaultParameterMapName, const bool logToConsole=false, const bool logToFile=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:acaca4d4a945a3f835c2acc7dc97b69e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3a9e4680ca2d6b382650a19b24c147"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a5f3a9e4680ca2d6b382650a19b24c147">Elastix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const std::string defaultParameterMapName, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedMask, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingMask, const bool logToConsole=false, const bool logToFile=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:a5f3a9e4680ca2d6b382650a19b24c147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9b99f7c9e0abc567a139d3a73f5cd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#afa9b99f7c9e0abc567a139d3a73f5cd5">Elastix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt; parameterMapVector, const bool logToConsole=false, const bool logToFile=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:afa9b99f7c9e0abc567a139d3a73f5cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad43c691bf5df407bfce9d6998653868"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#aad43c691bf5df407bfce9d6998653868">Elastix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt; parameterMapVector, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;fixedMask, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingMask, const bool logToConsole=false, const bool logToFile=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:aad43c691bf5df407bfce9d6998653868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ce5b16632d9282d1ed0bca1c7a985e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a5ce5b16632d9282d1ed0bca1c7a985e8">Equal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, double constant, uint8_t backgroundValue=0u, uint8_t foregroundValue=1u)</td></tr>
 <tr class="separator:a5ce5b16632d9282d1ed0bca1c7a985e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfd99e43499b5062f70e2f3680b1f298"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#adfd99e43499b5062f70e2f3680b1f298">Equal</a> (double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, uint8_t backgroundValue=0u, uint8_t foregroundValue=1u)</td></tr>
@@ -1449,6 +1472,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a01437b37d92c605393fa2fa04b335144"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a01437b37d92c605393fa2fa04b335144">GaussianSource</a> (<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> outputPixelType=<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a31ef682ba5b93b71ceeb7b9c084834f7">itk::simple::sitkFloat32</a>, std::vector&lt; unsigned int &gt; size=std::vector&lt; unsigned int &gt;(3, 64), std::vector&lt; double &gt; sigma=std::vector&lt; double &gt;(3, 16.0), std::vector&lt; double &gt; mean=std::vector&lt; double &gt;(3, 32.0), double scale=255, std::vector&lt; double &gt; origin=std::vector&lt; double &gt;(3, 0.0), std::vector&lt; double &gt; spacing=std::vector&lt; double &gt;(3, 1.0), std::vector&lt; double &gt; direction=std::vector&lt; double &gt;(), bool normalized=false)</td></tr>
 <tr class="memdesc:a01437b37d92c605393fa2fa04b335144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an n-dimensional image of a Gaussian.  <a href="namespaceitk_1_1simple.html#a01437b37d92c605393fa2fa04b335144">More...</a><br /></td></tr>
 <tr class="separator:a01437b37d92c605393fa2fa04b335144"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4ea500f21996ee65d25f248317a2ad0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#ac4ea500f21996ee65d25f248317a2ad0">GetDefaultParameterMap</a> (const std::string transform, const unsigned int numberOfResolutions=4, const double finalGridSpacingInPhysicalUnits=8.0)</td></tr>
+<tr class="separator:ac4ea500f21996ee65d25f248317a2ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaee7252721e281d761711d955ae75741"><td class="memTemplParams" colspan="2">template&lt;typename TPixelType , unsigned int ImageDimension&gt; </td></tr>
 <tr class="memitem:aaee7252721e281d761711d955ae75741"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#a7306f868468a6850e24ebf74ecf832ab">SITKCommon_HIDDEN</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector</a>&lt; TPixelType, ImageDimension &gt;, ImageDimension &gt;::<a class="elRef" href="https://www.itk.org/Doxygen/html/itkAddImageFilter_8h.html#ac831674d6d3f7cd2148ae944cbaa7c9d">Pointer</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#aaee7252721e281d761711d955ae75741">GetImageFromVectorImage</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a>&lt; TPixelType, ImageDimension &gt; *img, bool transferOwnership=false)</td></tr>
 <tr class="memdesc:aaee7252721e281d761711d955ae75741"><td class="mdescLeft">&#160;</td><td class="mdescRight">A utility method to help convert between itk image types efficiently.  <a href="namespaceitk_1_1simple.html#aaee7252721e281d761711d955ae75741">More...</a><br /></td></tr>
@@ -1592,12 +1617,18 @@ Functions</h2></td></tr>
 <tr class="separator:a59eacd3aef504e1a2317c7733ae647ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d61df7c5bd43a52834b228535e5ecc4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a1d61df7c5bd43a52834b228535e5ecc4">Pow</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, double constant)</td></tr>
 <tr class="separator:a1d61df7c5bd43a52834b228535e5ecc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b03f9b1153a32298d789301f4d600d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#af0b03f9b1153a32298d789301f4d600d">PrintParameterMap</a> (const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; parameterMap)</td></tr>
+<tr class="separator:af0b03f9b1153a32298d789301f4d600d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d0761ec01774e1f688f85e326c6414d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a9d0761ec01774e1f688f85e326c6414d">PrintParameterMap</a> (const std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt; parameterMapVector)</td></tr>
+<tr class="separator:a9d0761ec01774e1f688f85e326c6414d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50ad403a7aa88acbb78e5b2d1099b9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkIO_8h.html#aef9ccf1c7e28e86fbc79f1a7cd0fd0d5">SITKIO_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#af50ad403a7aa88acbb78e5b2d1099b9c">ReadImage</a> (const std::string &amp;filename, <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> outputPixelType=<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">sitkUnknown</a>, const std::string &amp;imageIO=&quot;&quot;)</td></tr>
 <tr class="memdesc:af50ad403a7aa88acbb78e5b2d1099b9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadImage is a procedural interface to the <a class="el" href="classitk_1_1simple_1_1ImageFileReader.html" title="Read an image file and return a SimpleITK Image.">ImageFileReader</a> class which is convenient for most image reading tasks.  <a href="namespaceitk_1_1simple.html#af50ad403a7aa88acbb78e5b2d1099b9c">More...</a><br /></td></tr>
 <tr class="separator:af50ad403a7aa88acbb78e5b2d1099b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62a1be75703e22b14339e6409858ab61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkIO_8h.html#aef9ccf1c7e28e86fbc79f1a7cd0fd0d5">SITKIO_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">ReadImage</a> (const std::vector&lt; std::string &gt; &amp;fileNames, <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> outputPixelType=<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">sitkUnknown</a>, const std::string &amp;imageIO=&quot;&quot;)</td></tr>
 <tr class="memdesc:a62a1be75703e22b14339e6409858ab61"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadImage is a procedural interface to the <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html" title="Read series of image files into a SimpleITK image.">ImageSeriesReader</a> class which is convenient for most image reading tasks.  <a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">More...</a><br /></td></tr>
 <tr class="separator:a62a1be75703e22b14339e6409858ab61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8cfb71201b4797e0d956ae38ad30153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#af8cfb71201b4797e0d956ae38ad30153">ReadParameterFile</a> (const std::string filename)</td></tr>
+<tr class="separator:af8cfb71201b4797e0d956ae38ad30153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c0bd020eb148e4d2595f603c9d884b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a2c0bd020eb148e4d2595f603c9d884b8">ReadTransform</a> (const std::string &amp;filename)</td></tr>
 <tr class="separator:a2c0bd020eb148e4d2595f603c9d884b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86cb9e226d455efca3ba034dc2154605"><td class="memItemLeft" align="right" valign="top">void <a class="el" href="sitkIO_8h.html#aef9ccf1c7e28e86fbc79f1a7cd0fd0d5">SITKIO_EXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">Show</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=<a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a80afc0c06779af36ac5e31d945fbe586">ProcessObject::GetGlobalDefaultDebug</a>())</td></tr>
@@ -1651,6 +1682,10 @@ Functions</h2></td></tr>
 <tr class="separator:a2b23a9e2d633d72925d25ea802a1cc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a502337977ce1c11914fb2eca30099b04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a502337977ce1c11914fb2eca30099b04">Subtract</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, double constant)</td></tr>
 <tr class="separator:a502337977ce1c11914fb2eca30099b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62379a147150eef02d5c809354ce27aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a62379a147150eef02d5c809354ce27aa">Transformix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; parameterMap, const bool logToConsole=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:a62379a147150eef02d5c809354ce27aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d3a970e911dc3d389f21e40d308cb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a59d3a970e911dc3d389f21e40d308cb3">Transformix</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;movingImage, const std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt; parameterMapVector, const bool logToConsole=false, const std::string outputDirectory=&quot;.&quot;)</td></tr>
+<tr class="separator:a59d3a970e911dc3d389f21e40d308cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac037b8fcd0a86fb14b20ac7a21e6105a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#ac037b8fcd0a86fb14b20ac7a21e6105a">TransformToDisplacementField</a> (const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> &amp;transform, <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> outputPixelType=<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a624d95835b3688632be3dad3a7d9e7e0">itk::simple::sitkVectorFloat64</a>, std::vector&lt; unsigned int &gt; size=std::vector&lt; unsigned int &gt;(3, 64), std::vector&lt; double &gt; outputOrigin=std::vector&lt; double &gt;(3, 0.0), std::vector&lt; double &gt; outputSpacing=std::vector&lt; double &gt;(3, 1.0), std::vector&lt; double &gt; outputDirection=std::vector&lt; double &gt;())</td></tr>
 <tr class="memdesc:ac037b8fcd0a86fb14b20ac7a21e6105a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a displacement field from a coordinate transform.  <a href="namespaceitk_1_1simple.html#ac037b8fcd0a86fb14b20ac7a21e6105a">More...</a><br /></td></tr>
 <tr class="separator:ac037b8fcd0a86fb14b20ac7a21e6105a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1664,6 +1699,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a8537644286a43ff1566326c2109057ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkIO_8h.html#aef9ccf1c7e28e86fbc79f1a7cd0fd0d5">SITKIO_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">WriteImage</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</td></tr>
 <tr class="memdesc:a8537644286a43ff1566326c2109057ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">WriteImage is a procedural interface to the <a class="el" href="classitk_1_1simple_1_1ImageSeriesWriter.html" title="Writer series of image from a SimpleITK image.">ImageSeriesWriter</a>. class which is convenient for many image writing tasks.  <a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">More...</a><br /></td></tr>
 <tr class="separator:a8537644286a43ff1566326c2109057ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae40f6fe00c93f37e397ea39b5b3a2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#afae40f6fe00c93f37e397ea39b5b3a2d">WriteParameterFile</a> (const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; parameterMap, const std::string filename)</td></tr>
+<tr class="separator:afae40f6fe00c93f37e397ea39b5b3a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa096d3d36b98fb95bf5eb12e24821f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">WriteTransform</a> (const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> &amp;transform, const std::string &amp;filename)</td></tr>
 <tr class="separator:aaa096d3d36b98fb95bf5eb12e24821f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe5cb704e894f3f9b5e75ad9f7073b68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#afe5cb704e894f3f9b5e75ad9f7073b68">Xor</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, int constant)</td></tr>
@@ -1747,6 +1784,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="sitkPixelIDTokens_8h_source.html#l00032">32</a> of file <a class="el" href="sitkPixelIDTokens_8h_source.html">sitkPixelIDTokens.h</a>.</p>
+
+</div>
+</div>
+<a id="a3b67d119307ac47017331cb467229b52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b67d119307ac47017331cb467229b52">&#9670;&nbsp;</a></span>FloatPixelIDTypeList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceitk_1_1simple.html#a3b67d119307ac47017331cb467229b52">itk::simple::FloatPixelIDTypeList</a> = typedef typelist2::typelist&lt;<a class="el" href="structitk_1_1simple_1_1BasicPixelID.html">BasicPixelID</a>&lt;float&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>SimpleElastix and SimpleTransformix is compiled with float pixel type only. This saves compile time and reduces binary size. Images are automatically casted to and from float before and after registration. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkInternalUtilities_8h_source.html#l00013">13</a> of file <a class="el" href="sitkInternalUtilities_8h_source.html">sitkInternalUtilities.h</a>.</p>
 
 </div>
 </div>
@@ -7621,6 +7675,458 @@ template&lt;unsigned int VImageDimension&gt; </div>
 
 </div>
 </div>
+<a id="ab476f3163814881845a6999e6999a7ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab476f3163814881845a6999e6999a7ed">&#9670;&nbsp;</a></span>Elastix() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Elastix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToFile</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a112018b64a3797342d51a5fdb3a973b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112018b64a3797342d51a5fdb3a973b3">&#9670;&nbsp;</a></span>Elastix() <span class="overload">[2/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Elastix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToFile</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad90d1023c9f96e40eb3fc080a72bbb79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad90d1023c9f96e40eb3fc080a72bbb79">&#9670;&nbsp;</a></span>Elastix() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Elastix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parameterMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToFile</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2bd501a806aca16742c32cf863c39dc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bd501a806aca16742c32cf863c39dc4">&#9670;&nbsp;</a></span>Elastix() <span class="overload">[4/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Elastix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToFile</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acaca4d4a945a3f835c2acc7dc97b69e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaca4d4a945a3f835c2acc7dc97b69e7">&#9670;&nbsp;</a></span>Elastix() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Elastix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>defaultParameterMapName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToFile</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f3a9e4680ca2d6b382650a19b24c147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f3a9e4680ca2d6b382650a19b24c147">&#9670;&nbsp;</a></span>Elastix() <span class="overload">[6/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Elastix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>defaultParameterMapName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToFile</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa9b99f7c9e0abc567a139d3a73f5cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9b99f7c9e0abc567a139d3a73f5cd5">&#9670;&nbsp;</a></span>Elastix() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Elastix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parameterMapVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToFile</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad43c691bf5df407bfce9d6998653868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad43c691bf5df407bfce9d6998653868">&#9670;&nbsp;</a></span>Elastix() <span class="overload">[8/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Elastix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parameterMapVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>fixedMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToFile</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a833f915f4205733cdbd38d16d386ceef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a833f915f4205733cdbd38d16d386ceef">&#9670;&nbsp;</a></span>Equal() <span class="overload">[1/5]</span></h2>
 
@@ -8778,6 +9284,40 @@ template&lt;unsigned int VImageDimension&gt; </div>
 <p>Segments structures in images based on a user supplied edge potential map. </p>
 <p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1GeodesicActiveContourLevelSetImageFilter.html" title="Segments structures in images based on a user supplied edge potential map.">GeodesicActiveContourLevelSetImageFilter</a> in order to support a procedural API</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1GeodesicActiveContourLevelSetImageFilter.html" title="Segments structures in images based on a user supplied edge potential map.">itk::simple::GeodesicActiveContourLevelSetImageFilter</a> for the object oriented interface </dd></dl>
+
+</div>
+</div>
+<a id="ac4ea500f21996ee65d25f248317a2ad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4ea500f21996ee65d25f248317a2ad0">&#9670;&nbsp;</a></span>GetDefaultParameterMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; itk::simple::GetDefaultParameterMap </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>numberOfResolutions</em> = <code>4</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>finalGridSpacingInPhysicalUnits</em> = <code>8.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -21011,6 +21551,42 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="af0b03f9b1153a32298d789301f4d600d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b03f9b1153a32298d789301f4d600d">&#9670;&nbsp;</a></span>PrintParameterMap() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> void itk::simple::PrintParameterMap </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parameterMap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d0761ec01774e1f688f85e326c6414d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d0761ec01774e1f688f85e326c6414d">&#9670;&nbsp;</a></span>PrintParameterMap() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> void itk::simple::PrintParameterMap </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parameterMapVector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2f789d3635e1d87b465552fe110eb4a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f789d3635e1d87b465552fe110eb4a7">&#9670;&nbsp;</a></span>ProjectedLandweberDeconvolution()</h2>
 
@@ -21209,6 +21785,26 @@ If the pixel type for the returned image is not specified it is deduced from the
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ImageFileReader.html" title="Read an image file and return a SimpleITK Image.">itk::simple::ImageFileReader</a> for reading a single file. </dd>
 <dd>
 <a class="el" href="classitk_1_1simple_1_1ImageSeriesReader.html" title="Read series of image files into a SimpleITK image.">itk::simple::ImageSeriesReader</a> for reading a series and meta-data dictionaries. </dd></dl>
+
+</div>
+</div>
+<a id="af8cfb71201b4797e0d956ae38ad30153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8cfb71201b4797e0d956ae38ad30153">&#9670;&nbsp;</a></span>ReadParameterFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; itk::simple::ReadParameterFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="elx_8cxx-example.html#a7">elx.cxx</a>, and <a class="el" href="tfx_8cxx-example.html#a7">tfx.cxx</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -25705,6 +26301,86 @@ template&lt;typename TType , typename TVectorOfITKVector &gt; </div>
 
 </div>
 </div>
+<a id="a62379a147150eef02d5c809354ce27aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62379a147150eef02d5c809354ce27aa">&#9670;&nbsp;</a></span>Transformix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Transformix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parameterMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59d3a970e911dc3d389f21e40d308cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d3a970e911dc3d389f21e40d308cb3">&#9670;&nbsp;</a></span>Transformix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Transformix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>movingImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parameterMapVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>logToConsole</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>outputDirectory</em> = <code>&quot;.&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac037b8fcd0a86fb14b20ac7a21e6105a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac037b8fcd0a86fb14b20ac7a21e6105a">&#9670;&nbsp;</a></span>TransformToDisplacementField()</h2>
 
@@ -26743,6 +27419,34 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ImageFileWriter.html" title="Write out a SimpleITK image to the specified file location.">itk::simple::ImageFileWriter</a> for writing a single file. </dd></dl>
+
+</div>
+</div>
+<a id="afae40f6fe00c93f37e397ea39b5b3a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae40f6fe00c93f37e397ea39b5b3a2d">&#9670;&nbsp;</a></span>WriteParameterFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="sitkElastixTransformixWrappers_8h.html#a5d124e0e57d6ec60ca94b13194b2bf30">SITKElastix_EXPORT</a> void itk::simple::WriteParameterFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt;&#160;</td>
+          <td class="paramname"><em>parameterMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
