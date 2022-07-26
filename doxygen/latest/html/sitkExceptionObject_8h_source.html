@@ -95,89 +95,91 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sitkMacro_8h.html">sitkMacro.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sitkCommon_8h.html">sitkCommon.h</a>&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef sitkMacro_h</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#error &quot;sitkMacro.h must be included before sitkExceptionObject.h&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif // sitkMacro_h</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifndef sitkCommon_h</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#error &quot;sitkCommon.h must be included before sitkExceptionObject.h&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif // sitkCommon_h</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceitk.html">itk</a></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// forward declaration for encapsulation</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span>ExceptionObject;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>simple</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// Ignore the following warning:</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// sitkExceptionObject.h(46,1): warning C4275: non dll-interface class</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// &#39;std::exception&#39; used as base for dll-interface class</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// &#39;itk::simple::GenericException&#39;</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#pragma warning( push )</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#pragma warning(disable:4275)</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1GenericException.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> :</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span> std::exception</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>()  noexcept;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp;e )  noexcept;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber) noexcept;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> std::string &amp; file, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber) noexcept;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> std::string &amp; file,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                   <span class="keyword">const</span> std::string &amp; desc) noexcept;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  ~<a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>() noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp; orig);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a8f6a863d7a10110048b4b5a579b5b534">operator==</a>(<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp; orig) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  std::string ToString() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> * what() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span> <span class="comment">// For shared_ptr.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef sitkMacro_h</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#error &quot;sitkMacro.h must be included before sitkExceptionObject.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // sitkMacro_h</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef sitkCommon_h</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#error &quot;sitkCommon.h must be included before sitkExceptionObject.h&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // sitkCommon_h</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceitk.html">itk</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// forward declaration for encapsulation</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>ExceptionObject;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>simple</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// Ignore the following warning:</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// sitkExceptionObject.h(46,1): warning C4275: non dll-interface class</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// &#39;std::exception&#39; used as base for dll-interface class</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// &#39;itk::simple::GenericException&#39;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#pragma warning( push )</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#pragma warning(disable:4275)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1GenericException.html">   55</a></span>&#160;<span class="keyword">class </span><a class="code" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> :</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span> std::exception</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>()  noexcept;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp;e )  noexcept;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber) noexcept;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> std::string &amp; file, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber) noexcept;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>(<span class="keyword">const</span> std::string &amp; file,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lineNumber,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                   <span class="keyword">const</span> std::string &amp; desc) noexcept;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  ~<a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a>() noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp; operator=(<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp; orig);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a8f6a863d7a10110048b4b5a579b5b534">operator==</a>(<span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1GenericException.html">GenericException</a> &amp; orig) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::string ToString() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="codeRef" href="https://www.itk.org/Doxygen/html/itkAddImageFilter_8h.html#a578bd1f524a4ec3127924ea06b89475a">GetNameOfClass</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> * what() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * GetLocation()    <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * <a class="codeRef" href="https://www.itk.org/Doxygen/html/itkAddImageFilter_8h.html#a578bd1f524a4ec3127924ea06b89475a">GetNameOfClass</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * GetDescription() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * GetLocation()    <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * GetFile()    <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetLine() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1GenericException.html#a20cdbd5ef6f556801964ea2b560cc109">  101</a></span>&#160;  <span class="keyword">const</span> ExceptionObject *<a class="code" href="classitk_1_1simple_1_1GenericException.html#a20cdbd5ef6f556801964ea2b560cc109">m_PimpleException</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#pragma warning( pop )</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif // sitkExceptionObject_h</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * GetDescription() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> * GetFile()    <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> GetLine() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1GenericException.html#a9a414d3250f44049251a7367b543f114">  103</a></span>&#160;  std::shared_ptr&lt;const ExceptionObject&gt; <a class="code" href="classitk_1_1simple_1_1GenericException.html#a9a414d3250f44049251a7367b543f114">m_PimpleException</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#pragma warning( pop )</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // sitkExceptionObject_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1GenericException_html_a20cdbd5ef6f556801964ea2b560cc109"><div class="ttname"><a href="classitk_1_1simple_1_1GenericException.html#a20cdbd5ef6f556801964ea2b560cc109">itk::simple::GenericException::m_PimpleException</a></div><div class="ttdeci">const ExceptionObject * m_PimpleException</div><div class="ttdef"><b>Definition:</b> <a href="sitkExceptionObject_8h_source.html#l00101">sitkExceptionObject.h:101</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html"><div class="ttname"><a href="sitkCommon_8h.html">sitkCommon.h</a></div></div>
 <div class="ttc" id="asitkMacro_8h_html"><div class="ttname"><a href="sitkMacro_8h.html">sitkMacro.h</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html_ab09867679406ccae193848f08fdc3444"><div class="ttname"><a href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a></div><div class="ttdeci">#define SITKCommon_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommon_8h_source.html#l00041">sitkCommon.h:41</a></div></div>
 <div class="ttc" id="aitkAddImageFilter_8h_html_a578bd1f524a4ec3127924ea06b89475a"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/itkAddImageFilter_8h.html#a578bd1f524a4ec3127924ea06b89475a">GetNameOfClass</a></div><div class="ttdeci">virtual const char * GetNameOfClass() const</div></div>
 <div class="ttc" id="anamespaceitk_html_a8f6a863d7a10110048b4b5a579b5b534"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/namespaceitk.html#a8f6a863d7a10110048b4b5a579b5b534">itk::operator==</a></div><div class="ttdeci">bool operator==(const Index&lt; VDimension &gt; &amp;one, const Index&lt; VDimension &gt; &amp;two)</div></div>
 <div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1GenericException_html"><div class="ttname"><a href="classitk_1_1simple_1_1GenericException.html">itk::simple::GenericException</a></div><div class="ttdoc">The base SimpleITK exception class.</div><div class="ttdef"><b>Definition:</b> <a href="sitkExceptionObject_8h_source.html#l00053">sitkExceptionObject.h:53</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1GenericException_html_a9a414d3250f44049251a7367b543f114"><div class="ttname"><a href="classitk_1_1simple_1_1GenericException.html#a9a414d3250f44049251a7367b543f114">itk::simple::GenericException::m_PimpleException</a></div><div class="ttdeci">std::shared_ptr&lt; const ExceptionObject &gt; m_PimpleException</div><div class="ttdef"><b>Definition:</b> <a href="sitkExceptionObject_8h_source.html#l00103">sitkExceptionObject.h:103</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1GenericException_html"><div class="ttname"><a href="classitk_1_1simple_1_1GenericException.html">itk::simple::GenericException</a></div><div class="ttdoc">The base SimpleITK exception class.</div><div class="ttdef"><b>Definition:</b> <a href="sitkExceptionObject_8h_source.html#l00055">sitkExceptionObject.h:55</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

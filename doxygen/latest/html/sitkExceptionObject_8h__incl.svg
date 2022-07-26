@@ -13,8 +13,8 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="146,-168.5 146,-187.5 269,-187.5 269,-168.5 146,-168.5"/>
-<text text-anchor="middle" x="207.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">sitkExceptionObject.h</text>
+<polygon fill="#bfbfbf" stroke="black" points="182,-168.5 182,-187.5 305,-187.5 305,-168.5 182,-168.5"/>
+<text text-anchor="middle" x="243.5" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00">sitkExceptionObject.h</text>
 </a>
 </g>
 </g>
@@ -30,8 +30,8 @@
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M203.13,-168.31C198.94,-159.44 192.9,-145.14 190.5,-132 187.56,-115.88 192.96,-97.89 198.44,-84.92"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="201.67,-86.28 202.69,-75.74 195.31,-83.34 201.67,-86.28"/>
+<path fill="none" stroke="midnightblue" d="M227.17,-168.39C214.54,-160.72 198,-148.21 190.5,-132 183.47,-116.82 189.66,-98.24 196.45,-84.84"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="199.72,-86.18 201.56,-75.75 193.61,-82.75 199.72,-86.18"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
@@ -45,8 +45,23 @@
 <!-- Node1&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node1&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M213.44,-168.08C218.48,-160.53 225.84,-149.49 232.01,-140.23"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="235.03,-142.01 237.67,-131.75 229.21,-138.13 235.03,-142.01"/>
+<path fill="none" stroke="midnightblue" d="M243.5,-168.08C243.5,-161.01 243.5,-150.86 243.5,-141.99"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="247,-141.75 243.5,-131.75 240,-141.75 247,-141.75"/>
+</g>
+<!-- Node10 -->
+<g id="node10" class="node">
+<title>Node10</title>
+<g id="a_node10"><a xlink:title=" ">
+<polygon fill="white" stroke="#bfbfbf" points="305.5,-112.5 305.5,-131.5 363.5,-131.5 363.5,-112.5 305.5,-112.5"/>
+<text text-anchor="middle" x="334.5" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">memory</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node10 -->
+<g id="edge10" class="edge">
+<title>Node1&#45;&gt;Node10</title>
+<path fill="none" stroke="midnightblue" d="M258.12,-168.32C272.45,-159.82 294.51,-146.73 311.25,-136.8"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="313.1,-139.77 319.92,-131.65 309.53,-133.75 313.1,-139.77"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
