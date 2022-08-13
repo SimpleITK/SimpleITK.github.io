@@ -81,7 +81,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>geodesic gray scale dilation of an image  
+<p>Geodesic grayscale dilation of an image.  
  <a href="classitk_1_1simple_1_1GrayscaleGeodesicDilateImageFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sitkGrayscaleGeodesicDilateImageFilter_8h_source.html">sitkGrayscaleGeodesicDilateImageFilter.h</a>&gt;</code></p>
@@ -311,15 +311,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>geodesic gray scale dilation of an image </p>
+<div class="textblock"><p>Geodesic grayscale dilation of an image. </p>
 <p>Geodesic dilation operates on a "marker" image and a "mask" image. The marker image is dilated using an elementary structuring element (neighborhood of radius one using only the face connected neighbors). The resulting image is then compared with the mask image. The output image is the pixelwise minimum of the dilated marker image and the mask image.</p>
 <p>Geodesic dilation is run either one iteration or until convergence. In the convergence case, the filter is equivalent to "reconstruction by dilation". This filter is implemented to handle both scenarios. The one iteration case is multi-threaded. The convergence case is delegated to another instance of the same filter (but configured to run a single iteration).</p>
 <p>The marker image must be less than or equal to the mask image (on a pixel by pixel basis).</p>
 <p>Geodesic morphology is described in Chapter 6 of Pierre Soille's book "Morphological Image Analysis: Principles and Applications", Second Edition, Springer, 2003.</p>
-<p>A noniterative version of this algorithm can be found in the <a class="el" href="classitk_1_1simple_1_1ReconstructionByDilationImageFilter.html" title="grayscale reconstruction by dilation of an image">ReconstructionByDilationImageFilter</a> . This noniterative solution is much faster than the implementation provided here. All ITK filters that previously used GrayscaleGeodesicDiliateImageFilter as part of their implementation have been converted to use the <a class="el" href="classitk_1_1simple_1_1ReconstructionByDilationImageFilter.html" title="grayscale reconstruction by dilation of an image">ReconstructionByDilationImageFilter</a> . The <a class="el" href="classitk_1_1simple_1_1GrayscaleGeodesicDilateImageFilter.html" title="geodesic gray scale dilation of an image">GrayscaleGeodesicDilateImageFilter</a> is maintained for backward compatibility.</p>
+<p>A noniterative version of this algorithm can be found in the <a class="el" href="classitk_1_1simple_1_1ReconstructionByDilationImageFilter.html" title="grayscale reconstruction by dilation of an image">ReconstructionByDilationImageFilter</a> . This noniterative solution is much faster than the implementation provided here. All ITK filters that previously used GrayscaleGeodesicDiliateImageFilter as part of their implementation have been converted to use the <a class="el" href="classitk_1_1simple_1_1ReconstructionByDilationImageFilter.html" title="grayscale reconstruction by dilation of an image">ReconstructionByDilationImageFilter</a> . The <a class="el" href="classitk_1_1simple_1_1GrayscaleGeodesicDilateImageFilter.html" title="Geodesic grayscale dilation of an image.">GrayscaleGeodesicDilateImageFilter</a> is maintained for backward compatibility.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologyImageFilter.html">MorphologyImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleDilateImageFilter.html" title="Grayscale dilation of an image.">GrayscaleDilateImageFilter</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GrayscaleFunctionDilateImageFilter.html">GrayscaleFunctionDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image.">BinaryDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ReconstructionByDilationImageFilter.html" title="grayscale reconstruction by dilation of an image">ReconstructionByDilationImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a93166b431d46614d1e6269b30f673e7e" title="geodesic gray scale dilation of an image">itk::simple::GrayscaleGeodesicDilate</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a93166b431d46614d1e6269b30f673e7e" title="Geodesic grayscale dilation of an image.">itk::simple::GrayscaleGeodesicDilate</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GrayscaleGeodesicDilateImageFilter.html">itk::GrayscaleGeodesicDilateImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 

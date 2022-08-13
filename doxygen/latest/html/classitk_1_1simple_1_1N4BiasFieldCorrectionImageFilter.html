@@ -361,7 +361,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the N4 bias field correction algorithm. </p>
-<p>The nonparametric nonuniform intensity normalization (N3) algorithm, as introduced by Sled et al. in 1998 is a method for correcting nonuniformity associated with MR images. The algorithm assumes a simple parametric model (Gaussian) for the bias field and does not require tissue class segmentation. In addition, there are only a couple of parameters to tune with the default values performing quite well. N3 has been publicly available as a set of perl scripts (<a href="http://www.bic.mni.mcgill.ca/ServicesSoftwareAdvancedImageProcessingTools/HomePage">http://www.bic.mni.mcgill.ca/ServicesSoftwareAdvancedImageProcessingTools/HomePage</a> )</p>
+<p>The nonparametric nonuniform intensity normalization (N3) algorithm, as introduced by Sled et al. in 1998 is a method for correcting nonuniformity associated with MR images. The algorithm assumes a simple parametric model (Gaussian) for the bias field and does not require tissue class segmentation. In addition, there are only a couple of parameters to tune with the default values performing quite well. N3 has been publicly available as a set of perl scripts (<a href="https://www.bic.mni.mcgill.ca/ServicesSoftwareAdvancedImageProcessingTools/HomePage">https://www.bic.mni.mcgill.ca/ServicesSoftwareAdvancedImageProcessingTools/HomePage</a> )</p>
 <p>The N4 algorithm, encapsulated with this class, is a variation of the original N3 algorithm with the additional benefits of an improved B-spline fitting routine which allows for multiple resolutions to be used during the correction process. We also modify the iterative update component of algorithm such that the residual bias field is continually updated</p>
 <p>Notes for the user: </p><ul>
 <li>Since much of the image manipulation is done in the log space of the intensities, input images with negative and small values (&lt; 1) can produce poor results.</li>
@@ -380,7 +380,7 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 <p>The basic algorithm iterates between sharpening the intensity histogram of the corrected input image and spatially smoothing those results with a B-spline scalar field estimate of the bias field.</p>
 <dl class="section author"><dt>Author</dt><dd>Nicholas J. Tustison</dd></dl>
-<p>Contributed by Nicholas J. Tustison, James C. Gee in the Insight Journal paper: <a href="https://hdl.handle.net/10380/3053">https://hdl.handle.net/10380/3053</a></p>
+<p>Contributed by Nicholas J. Tustison, James C. Gee in the Insight Journal paper: <a href="https://www.insight-journal.org/browse/publication/640">https://www.insight-journal.org/browse/publication/640</a></p>
 <dl class="section user"><dt>REFERENCE</dt><dd></dd></dl>
 <p>J.G. Sled, A.P. Zijdenbos and A.C. Evans. "A Nonparametric Method for
 Automatic Correction of Intensity Nonuniformity in Data" IEEE Transactions on Medical Imaging, Vol 17, No 1. Feb 1998.</p>
@@ -696,7 +696,7 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>DeprecatedSet/Get mask label value. If a binary mask image is specified and if UseMaskValue is true, only those input image voxels corresponding with mask image values equal to MaskLabel are used in estimating the bias field. If a MaskImage is specified and UseMaskLabel is false, all input image voxels corresponding to non-zero voxels in the MaskImage are used in estimating the bias field. Default = 1. </p>
+<p>Set/Get mask label value. If a binary mask image is specified and if UseMaskValue is true, only those input image voxels corresponding with mask image values equal to MaskLabel are used in estimating the bias field. If a MaskImage is specified and UseMaskLabel is false, all input image voxels corresponding to non-zero voxels in the MaskImage are used in estimating the bias field. Default = 1. </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkN4BiasFieldCorrectionImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkN4BiasFieldCorrectionImageFilter_8h_source.html">sitkN4BiasFieldCorrectionImageFilter.h</a>.</p>
 

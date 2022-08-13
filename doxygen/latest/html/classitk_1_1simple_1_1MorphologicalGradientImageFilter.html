@@ -81,7 +81,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>gray scale dilation of an image  
+<p>Compute the gradient of a grayscale image.  
  <a href="classitk_1_1simple_1_1MorphologicalGradientImageFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>&gt;</code></p>
@@ -305,16 +305,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>gray scale dilation of an image </p>
-<p>Dilate an image using grayscale morphology. Dilation takes the maximum of all the pixels identified by the structuring element.</p>
+<div class="textblock"><p>Compute the gradient of a grayscale image. </p>
 <p>The structuring element is assumed to be composed of binary values (zero or one). Only elements of the structuring element having values &gt; 0 are candidates for affecting the center pixel.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologyImageFilter.html">MorphologyImageFilter</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GrayscaleFunctionDilateImageFilter.html">GrayscaleFunctionDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image.">BinaryDilateImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a65d0c5bbe550300fee68580339a6cf47" title="gray scale dilation of an image">itk::simple::MorphologicalGradient</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a65d0c5bbe550300fee68580339a6cf47" title="Compute the gradient of a grayscale image.">itk::simple::MorphologicalGradient</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologicalGradientImageFilter.html">itk::MorphologicalGradientImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00044">44</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab1dd978875ed0adac992dd7f45ac5fdc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1dd978875ed0adac992dd7f45ac5fdc">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -337,7 +336,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -354,7 +353,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -491,7 +490,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Get the radius of the kernel structuring element. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -519,7 +518,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Get the kernel or structuring element used for the morphology. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -549,7 +548,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +577,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the radius of the kernel structuring element. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -607,7 +606,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the KernelRadius vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -636,7 +635,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the kernel or structuring element used for the morphology. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -689,7 +688,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +713,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -738,7 +737,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -762,7 +761,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkMorphologicalGradientImageFilter_8h_source.html">sitkMorphologicalGradientImageFilter.h</a>.</p>
 
 </div>
 </div>

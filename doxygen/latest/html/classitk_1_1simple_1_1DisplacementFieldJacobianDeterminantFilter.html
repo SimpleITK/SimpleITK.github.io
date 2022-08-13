@@ -313,7 +313,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section user"><dt>Template Parameters (Input and Output)</dt><dd>This filter has one required template parameter which defines the input image type. The pixel type of the input image is assumed to be a vector (e.g., <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RGBPixel.html">itk::RGBPixel</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FixedArray.html">itk::FixedArray</a> ). The scalar type of the vector components must be castable to floating point. Instantiating with an image of RGBPixel&lt;unsigned short&gt;, for example, is allowed, but the filter will convert it to an image of Vector&lt;float,3&gt; for processing.</dd></dl>
 <p>The second template parameter, TRealType, can be optionally specified to define the scalar numerical type used in calculations. This is the component type of the output image, which will be of itk::Vector&lt;TRealType, N&gt;, where N is the number of channels in the multiple component input image. The default type of TRealType is float. For extra precision, you may safely change this parameter to double.</p>
 <p>The third template parameter is the output image type. The third parameter will be automatically constructed from the first and second parameters, so it is not necessary (or advisable) to set this parameter explicitly. Given an M-channel input image with dimensionality N, and a numerical type specified as TRealType, the output image will be of type itk::Image&lt;TRealType, N&gt;.</p>
-<dl class="section user"><dt>Filter Parameters</dt><dd>The method SetUseImageSpacingOn will cause derivatives in the image to be scaled (inversely) with the pixel size of the input image, effectively taking derivatives in world coordinates (versus isotropic image space). SetUseImageSpacingOff turns this functionality off. Default is UseImageSpacingOn. The parameter UseImageSpacing can be set directly with the method <a class="el" href="classitk_1_1simple_1_1DisplacementFieldJacobianDeterminantFilter.html#a3229a313e92938d28acd77da0f46c36b">SetUseImageSpacing(bool)</a> .</dd></dl>
+<dl class="section user"><dt>Filter Parameters</dt><dd>The method UseImageSpacingOn will cause derivatives in the image to be scaled (inversely) with the pixel size of the input image, effectively taking derivatives in world coordinates (versus isotropic image space). UseImageSpacingOff turns this functionality off. Default is UseImageSpacingOn. The parameter UseImageSpacing can be set directly with the method <a class="el" href="classitk_1_1simple_1_1DisplacementFieldJacobianDeterminantFilter.html#a3229a313e92938d28acd77da0f46c36b">SetUseImageSpacing(bool)</a> .</dd></dl>
 <p>Weights can be applied to the derivatives directly using the SetDerivativeWeights method. Note that if UseImageSpacing is set to TRUE (ON), then these weights will be overridden by weights derived from the image spacing when the filter is updated. The argument to this method is a C array of TRealValue type.</p>
 <dl class="section user"><dt>Constraints</dt><dd>We use vnl_det for determinant computation, which only supports square matrices. So the vector dimension of the input image values must be equal to the image dimensions, which is trivially true for a deformation field that maps an n-dimensional space onto itself.</dd></dl>
 <p>Currently, dimensions up to and including 4 are supported. This limitation comes from the presence of vnl_det() functions for matrices of dimension up to 4x4.</p>
@@ -358,7 +358,7 @@ Torsten Rohlfing, Neuroscience Program, SRI International. </dd></dl>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +512,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Directly Set/Get the array of weights used in the gradient calculations. Note that calling UseImageSpacingOn will clobber these values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -542,7 +542,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -568,8 +568,9 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Set/Get whether or not the filter will use the spacing of the input image (1/spacing) in the calculation of the Jacobian determinant. Use On to compute the Jacobian determinant in the space in which the data was acquired; use Off to reset the derivative weights, ignore the image spacing, and to compute the Jacobian determinant in the image space. Default is On. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -598,7 +599,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Directly Set/Get the array of weights used in the gradient calculations. Note that calling UseImageSpacingOn will clobber these values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -625,7 +626,7 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set/Get whether or not the filter will use the spacing of the input image in its calculations </p>
+<p>Set/Get whether or not the filter will use the spacing of the input image (1/spacing) in the calculation of the Jacobian determinant. Use On to compute the Jacobian determinant in the space in which the data was acquired; use Off to reset the derivative weights, ignore the image spacing, and to compute the Jacobian determinant in the image space. Default is On. </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
@@ -735,7 +736,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -760,7 +761,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -784,7 +785,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>
@@ -808,7 +809,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkDisplacementFieldJacobianDeterminantFilter_8h_source.html">sitkDisplacementFieldJacobianDeterminantFilter.h</a>.</p>
 
 </div>
 </div>

@@ -81,6 +81,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This filter performs anisotropic diffusion on a scalar <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> using the modified curvature diffusion equation (MCDE).  
+ <a href="classitk_1_1simple_1_1CurvatureAnisotropicDiffusionImageFilter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for itk::simple::CurvatureAnisotropicDiffusionImageFilter:</div>
@@ -318,7 +321,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This filter performs anisotropic diffusion on a scalar <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> using the modified curvature diffusion equation (MCDE) implemented in itkCurvatureNDAnisotropicDiffusionFunction. For detailed information on anisotropic diffusion and the MCDE see itkAnisotropicDiffusionFunction and itkCurvatureNDAnisotropicDiffusionFunction.</p>
+<div class="textblock"><p>This filter performs anisotropic diffusion on a scalar <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> using the modified curvature diffusion equation (MCDE). </p>
+<p>For detailed information on anisotropic diffusion and the MCDE see itkAnisotropicDiffusionFunction and itkCurvatureNDAnisotropicDiffusionFunction.</p>
 <dl class="section user"><dt>Inputs and Outputs</dt><dd>The input and output to this filter must be a scalar <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> with numerical pixel types (float or double). A user defined type which correctly defines arithmetic operations with floating point accuracy should also give correct results.</dd></dl>
 <dl class="section user"><dt>Parameters</dt><dd>Please first read all the documentation found in <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AnisotropicDiffusionImageFilter.html">AnisotropicDiffusionImageFilter</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AnisotropicDiffusionFunction.html">AnisotropicDiffusionFunction</a> . Also see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureNDAnisotropicDiffusionFunction.html">CurvatureNDAnisotropicDiffusionFunction</a> .</dd></dl>
 <p>The default time step for this filter is set to the maximum theoretically stable value: 0.5 / 2^N, where N is the dimensionality of the image. For a 2D image, this means valid time steps are below 0.1250. For a 3D image, valid time steps are below 0.0625.</p>
@@ -328,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureNDAnisotropicDiffusionFunction.html">CurvatureNDAnisotropicDiffusionFunction</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a4535c714692c2ce7b6ecec4400a0edd8" title="itk::simple::CurvatureAnisotropicDiffusionImageFilter Procedural Interface">itk::simple::CurvatureAnisotropicDiffusion</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a4535c714692c2ce7b6ecec4400a0edd8" title="This filter performs anisotropic diffusion on a scalar itk::Image using the modified curvature diffus...">itk::simple::CurvatureAnisotropicDiffusion</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureAnisotropicDiffusionImageFilter.html">itk::CurvatureAnisotropicDiffusionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a3">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>

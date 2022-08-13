@@ -340,17 +340,17 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements pixel-wise intensity-&gt;rgb mapping operation on one image. </p>
 <p>This class is parameterized over the type of the input image and the type of the output image.</p>
-<p>The input image's scalar pixel values are mapped into a color map. The color map is specified by passing the SetColormap function one of the predefined maps. The following selects the "RGBColormapFilterEnum::Hot" colormap:</p><div class="fragment"><div class="line">RGBFilterType::Pointer colormapImageFilter = RGBFilterType::New();</div>
+<p>The input image's scalar pixel values are mapped into a color map. The color map is specified by passing the SetColormap function one of the predefined maps. The following selects the "RGBColormapFilterEnum::Hot" colormap:</p><div class="fragment"><div class="line"><span class="keyword">auto</span> colormapImageFilter = RGBFilterType::New ();</div>
 <div class="line"> </div>
 <div class="line">colormapImageFilter-&gt;SetColormap( RGBFilterType::Hot );</div>
 </div><!-- fragment --><p>You can also specify a custom color map. This is done by creating a CustomColormapFunction, and then creating lists of values for the red, green, and blue channel. An example of setting the red channel of a colormap with only 2 colors is given below. The blue and green channels should be specified in the same manner.</p>
 <div class="fragment"><div class="line"><span class="comment">// Create the custom colormap</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1ScalarToRGBColormapImageFilter.html#ad6f89e6e076652b4debdfbfd82234c6f">ColormapType</a> = <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Function_1_1CustomColormapFunction.html">itk::Function::CustomColormapFunction</a>&lt;RealImageType::PixelType,</div>
+<div class="line"><span class="keyword">using</span> <a class="code" href="classitk_1_1simple_1_1ScalarToRGBColormapImageFilter.html#ad6f89e6e076652b4debdfbfd82234c6f">ColormapType</a> = <a class="codeRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Function_1_1CustomColormapFunction.html">itk::Function::CustomColormapFunction</a> &lt;RealImageType::PixelType,</div>
 <div class="line"> </div>
 <div class="line">RGBImageType::PixelType&gt;;</div>
 <div class="line"> </div>
-<div class="line">ColormapType::Pointer colormap = ColormapType::New();</div>
+<div class="line"><span class="keyword">auto</span> colormap = ColormapType::New ();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Setup the red channel of the colormap</span></div>
 <div class="line"> </div>
@@ -360,7 +360,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"> </div>
 <div class="line">colormap-&gt;SetRedChannel( channel );</div>
 </div><!-- fragment --><p>The range of values present in the input image is the range that is mapped to the entire range of colors.</p>
-<p>This code was contributed in the Insight Journal paper: "Meeting Andy Warhol Somewhere Over the Rainbow: RGB Colormapping and ITK" by Tustison N., Zhang H., Lehmann G., Yushkevich P., Gee J. <a href="https://hdl.handle.net/1926/1452">https://hdl.handle.net/1926/1452</a> <a href="http://www.insight-journal.org/browse/publication/285">http://www.insight-journal.org/browse/publication/285</a></p>
+<p>This code was contributed in the Insight Journal paper: "Meeting Andy Warhol Somewhere Over the Rainbow: RGB Colormapping and ITK" by Tustison N., Zhang H., Lehmann G., Yushkevich P., Gee J. <a href="https://www.insight-journal.org/browse/publication/285">https://www.insight-journal.org/browse/publication/285</a></p>
 <dl class="section see"><dt>See also</dt><dd>BinaryFunctionImageFilter TernaryFunctionImageFilter </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#af16f0f3b05cf3a87f5af9bafc34b091e" title="Implements pixel-wise intensity-&gt;rgb mapping operation on one image.">itk::simple::ScalarToRGBColormap</a> for the procedural interface </dd>

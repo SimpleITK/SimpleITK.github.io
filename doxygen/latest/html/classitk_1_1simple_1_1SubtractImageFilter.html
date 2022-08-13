@@ -323,14 +323,14 @@ Additional Inherited Members</h2></td></tr>
 <p>Subtract each pixel from image2 from its corresponding pixel in image1:</p>
 <div class="fragment"><div class="line">Output = Input1 - Input2.</div>
 </div><!-- fragment --><p>This is done using</p>
-<div class="fragment"><div class="line">SetInput1( image1 );</div>
+<div class="fragment"><div class="line">SetInput1 ( image1 );</div>
 <div class="line"> </div>
-<div class="line">SetInput2( image2 );</div>
+<div class="line">SetInput2 ( image2 );</div>
 </div><!-- fragment --><p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
 <p>Additionally, a constant can be subtracted from every pixel in an image using:</p>
-<div class="fragment"><div class="line">SetInput1( image1 );</div>
+<div class="fragment"><div class="line">SetInput1 ( image1 );</div>
 <div class="line"> </div>
-<div class="line">SetConstant2( constant );</div>
+<div class="line">SetConstant2 ( constant );</div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The result of <a class="el" href="classitk_1_1simple_1_1AddImageFilter.html" title="Pixel-wise addition of two images.">AddImageFilter</a> with a negative constant is not necessarily the same as <a class="el" href="classitk_1_1simple_1_1SubtractImageFilter.html" title="Pixel-wise subtraction of two images.">SubtractImageFilter</a> . This would be the case when the PixelType defines an <a class="el" href="namespaceitk_1_1simple.html#a46dfc0d7148d01cf80a1f203d59357e1" title="Performs the operator on a per pixel basis.">operator-()</a> that is not the inverse of <a class="el" href="namespaceitk_1_1simple.html#a8ffc1beb923ff1d305983ac1ad36a325" title="Performs the operator on a per pixel basis.">operator+()</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aaeaa0f0cea7ff314c4081e0981858f00" title="Pixel-wise subtraction of two images.">itk::simple::Subtract</a> for the procedural interface </dd>
 <dd>
