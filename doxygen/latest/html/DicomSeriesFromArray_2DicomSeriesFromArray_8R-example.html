@@ -108,7 +108,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">    # (0020, 0032) image position patient determines the 3D spacing between slices.</div>
 <div class="line">    image_slice$SetMetaData(&quot;0020|0032&quot;, paste(new_img$TransformIndexToPhysicalPoint(c(0,0,i)), collapse=&#39;\\&#39;)) # Image Position (Patient)</div>
-<div class="line">    image_slice$SetMetaData(&quot;0020,0013&quot;, i-1) # Instance Number</div>
+<div class="line">    image_slice$SetMetaData(&quot;0020|0013&quot;, i-1) # Instance Number</div>
 <div class="line"> </div>
 <div class="line">    # Write to the output directory and add the extension dcm, to force writing in DICOM format.</div>
 <div class="line">    writer$SetFileName(file.path(out_dir, paste(i-1, &#39;.dcm&#39;, sep=&quot;&quot;)))</div>
