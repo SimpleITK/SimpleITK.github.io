@@ -16,7 +16,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SimpleITK: elx.cxx</title>
+<title>SimpleITK: Elastix/tfx.cxx</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">elx.cxx</div>  </div>
+<div class="title">Elastix/tfx.cxx</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">// This one header will include all SimpleITK filters and external</span></div>
@@ -78,48 +78,45 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main ( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[] ) {</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">if</span> ( argc &lt; 4 ) {</div>
-<div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;Usage: &quot;</span> &lt;&lt; argv[0] &lt;&lt; <span class="stringliteral">&quot; &lt;fixedImage&gt; &lt;movingImage&gt; &lt;parameterFile&gt; &lt;outputImage&gt;\n&quot;</span>;</div>
+<div class="line">  <span class="keywordflow">if</span> ( argc &lt; 3 ) {</div>
+<div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;Usage: &quot;</span> &lt;&lt; argv[0] &lt;&lt; <span class="stringliteral">&quot; &lt;inputImage&gt; &lt;parameterFile&gt; &lt;outputImage&gt;\n&quot;</span>;</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">// Instantiate SimpleElastix</span></div>
-<div class="line">  <a name="_a0"></a><a class="code" href="classitk_1_1simple_1_1ElastixImageFilter.html">sitk::ElastixImageFilter</a> elastixImageFilter;</div>
+<div class="line">  <span class="comment">// Instantiate transformix</span></div>
+<div class="line">  <a name="_a0"></a><a class="code" href="classitk_1_1simple_1_1TransformixImageFilter.html">sitk::TransformixImageFilter</a> transformixImageFilter;</div>
+<div class="line">  transformixImageFilter.<a name="a1"></a><a class="code" href="classitk_1_1simple_1_1TransformixImageFilter.html#a2a3237ed74efbd062ee72b49c2ec2403">LogToConsoleOn</a>();</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Read input</span></div>
-<div class="line">  <a name="_a1"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html">sitk::ImageFileReader</a> reader;</div>
-<div class="line">  reader.<a name="a2"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">SetFileName</a>( std::string( argv[1] ) );</div>
-<div class="line">  elastixImageFilter.<a name="a3"></a><a class="code" href="classitk_1_1simple_1_1ElastixImageFilter.html#a6e98fa56bda3b57f46beaf032726e9e7">SetFixedImage</a>( reader.<a name="a4"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">Execute</a>() );</div>
-<div class="line">  reader.<a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">SetFileName</a>( std::string( argv[2] ) );</div>
-<div class="line">  elastixImageFilter.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1ElastixImageFilter.html#aa62f9afb3303f3e4bf5c6d8f01652184">SetMovingImage</a>( reader.<a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">Execute</a>() );</div>
-<div class="line">  elastixImageFilter.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1ElastixImageFilter.html#ad82d402aa0aeffb19ea5994f35c3a2ed">SetParameterMap</a>( <a name="a7"></a><a class="code" href="namespaceitk_1_1simple.html#af8cfb71201b4797e0d956ae38ad30153">sitk::ReadParameterFile</a>( std::string( argv[3] ) ) );</div>
-<div class="line">  elastixImageFilter.<a name="a8"></a><a class="code" href="classitk_1_1simple_1_1ElastixImageFilter.html#ae43966fe06fc6e253467cc6b8f058cc3">LogToConsoleOn</a>();</div>
+<div class="line">  <a name="_a2"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html">sitk::ImageFileReader</a> reader;</div>
+<div class="line">  reader.<a name="a3"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">SetFileName</a>( std::string( argv[1] ) );</div>
+<div class="line">  transformixImageFilter.<a name="a4"></a><a class="code" href="classitk_1_1simple_1_1TransformixImageFilter.html#a8869ed613088d5ae1defd45f3435838c">SetMovingImage</a>( reader.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">Execute</a>() );</div>
+<div class="line">  transformixImageFilter.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1TransformixImageFilter.html#aec1a4edbd2f0affbd2941ae6d4b13c62">SetTransformParameterMap</a>( <a name="a7"></a><a class="code" href="namespaceitk_1_1simple.html#af8cfb71201b4797e0d956ae38ad30153">sitk::ReadParameterFile</a>( argv[2] ) );</div>
 <div class="line"> </div>
-<div class="line">  <span class="comment">// Run registration</span></div>
-<div class="line">  elastixImageFilter.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1ElastixImageFilter.html#ae8702f0ea519d913b0093ee300568557">Execute</a>();</div>
+<div class="line">  <span class="comment">// Run warp</span></div>
+<div class="line">  transformixImageFilter.<a name="a8"></a><a class="code" href="classitk_1_1simple_1_1TransformixImageFilter.html#a3a0c02fc89cec8f4d9aa1c9be1a16e5a">Execute</a>();</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Write result image</span></div>
-<div class="line">  <a name="_a10"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html">sitk::ImageFileWriter</a> writer;</div>
-<div class="line">  writer.<a name="a11"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#abb96ddbf0ed9c182bb105c6f3f3f08d0">SetFileName</a>( std::string( argv[4] ) );</div>
-<div class="line">  writer.<a name="a12"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#a7f0091401d89ab256870b93d88cb0a6e">Execute</a>( elastixImageFilter.<a name="a13"></a><a class="code" href="classitk_1_1simple_1_1ElastixImageFilter.html#adb6958b7530f1e7bebfe461e7827c55a">GetResultImage</a>() );</div>
+<div class="line">  <a name="_a9"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html">sitk::ImageFileWriter</a> writer;</div>
+<div class="line">  writer.<a name="a10"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#abb96ddbf0ed9c182bb105c6f3f3f08d0">SetFileName</a>( std::string( argv[3] ) );</div>
+<div class="line">  writer.<a name="a11"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#a7f0091401d89ab256870b93d88cb0a6e">Execute</a>( transformixImageFilter.<a name="a12"></a><a class="code" href="classitk_1_1simple_1_1TransformixImageFilter.html#a871abbd21336325aba35da9eb8c19aa1">GetResultImage</a>() );</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html_abb96ddbf0ed9c182bb105c6f3f3f08d0"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html#abb96ddbf0ed9c182bb105c6f3f3f08d0">itk::simple::ImageFileWriter::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fileName)</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ElastixImageFilter_html_adb6958b7530f1e7bebfe461e7827c55a"><div class="ttname"><a href="classitk_1_1simple_1_1ElastixImageFilter.html#adb6958b7530f1e7bebfe461e7827c55a">itk::simple::ElastixImageFilter::GetResultImage</a></div><div class="ttdeci">Image GetResultImage()</div><div class="ttdoc">Returns the result image.</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1TransformixImageFilter_html_a2a3237ed74efbd062ee72b49c2ec2403"><div class="ttname"><a href="classitk_1_1simple_1_1TransformixImageFilter.html#a2a3237ed74efbd062ee72b49c2ec2403">itk::simple::TransformixImageFilter::LogToConsoleOn</a></div><div class="ttdeci">Self &amp; LogToConsoleOn()</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1TransformixImageFilter_html_a3a0c02fc89cec8f4d9aa1c9be1a16e5a"><div class="ttname"><a href="classitk_1_1simple_1_1TransformixImageFilter.html#a3a0c02fc89cec8f4d9aa1c9be1a16e5a">itk::simple::TransformixImageFilter::Execute</a></div><div class="ttdeci">Image Execute()</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_af8cfb71201b4797e0d956ae38ad30153"><div class="ttname"><a href="namespaceitk_1_1simple.html#af8cfb71201b4797e0d956ae38ad30153">itk::simple::ReadParameterFile</a></div><div class="ttdeci">SITKElastix_EXPORT std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; ReadParameterFile(const std::string filename)</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1TransformixImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1TransformixImageFilter.html">itk::simple::TransformixImageFilter</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkTransformixImageFilter_8h_source.html#l00033">sitkTransformixImageFilter.h:33</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html_a7f0091401d89ab256870b93d88cb0a6e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html#a7f0091401d89ab256870b93d88cb0a6e">itk::simple::ImageFileWriter::Execute</a></div><div class="ttdeci">Self &amp; Execute(const Image &amp;)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00060">sitkImageFileReader.h:60</a></div></div>
 <div class="ttc" id="aSimpleITK_8h_html"><div class="ttname"><a href="SimpleITK_8h.html">SimpleITK.h</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ElastixImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ElastixImageFilter.html">itk::simple::ElastixImageFilter</a></div><div class="ttdoc">The class that wraps the elastix registration library.</div><div class="ttdef"><b>Definition:</b> <a href="sitkElastixImageFilter_8h_source.html#l00036">sitkElastixImageFilter.h:36</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ad5f34a4f287eee8979bbfafa34901072"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">itk::simple::ImageFileReader::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fn)</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ElastixImageFilter_html_aa62f9afb3303f3e4bf5c6d8f01652184"><div class="ttname"><a href="classitk_1_1simple_1_1ElastixImageFilter.html#aa62f9afb3303f3e4bf5c6d8f01652184">itk::simple::ElastixImageFilter::SetMovingImage</a></div><div class="ttdeci">Self &amp; SetMovingImage(const Image &amp;movingImages)</div><div class="ttdoc">Sets a moving image. Stores the image into the container of moving images.</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ElastixImageFilter_html_ae8702f0ea519d913b0093ee300568557"><div class="ttname"><a href="classitk_1_1simple_1_1ElastixImageFilter.html#ae8702f0ea519d913b0093ee300568557">itk::simple::ElastixImageFilter::Execute</a></div><div class="ttdeci">Image Execute()</div><div class="ttdoc">Executes the registration, and returns the result image.</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1TransformixImageFilter_html_a871abbd21336325aba35da9eb8c19aa1"><div class="ttname"><a href="classitk_1_1simple_1_1TransformixImageFilter.html#a871abbd21336325aba35da9eb8c19aa1">itk::simple::TransformixImageFilter::GetResultImage</a></div><div class="ttdeci">Image GetResultImage()</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1TransformixImageFilter_html_a8869ed613088d5ae1defd45f3435838c"><div class="ttname"><a href="classitk_1_1simple_1_1TransformixImageFilter.html#a8869ed613088d5ae1defd45f3435838c">itk::simple::TransformixImageFilter::SetMovingImage</a></div><div class="ttdeci">Self &amp; SetMovingImage(const Image &amp;movingImage)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ab8d91d4ca4ee13f704d72205d344837e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">itk::simple::ImageFileReader::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ElastixImageFilter_html_a6e98fa56bda3b57f46beaf032726e9e7"><div class="ttname"><a href="classitk_1_1simple_1_1ElastixImageFilter.html#a6e98fa56bda3b57f46beaf032726e9e7">itk::simple::ElastixImageFilter::SetFixedImage</a></div><div class="ttdeci">Self &amp; SetFixedImage(const Image &amp;fixedImage)</div><div class="ttdoc">Sets a fixed image. Stores the image into the container of fixed images.</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ElastixImageFilter_html_ae43966fe06fc6e253467cc6b8f058cc3"><div class="ttname"><a href="classitk_1_1simple_1_1ElastixImageFilter.html#ae43966fe06fc6e253467cc6b8f058cc3">itk::simple::ElastixImageFilter::LogToConsoleOn</a></div><div class="ttdeci">Self &amp; LogToConsoleOn()</div><div class="ttdoc">Switches logging to console on.</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ElastixImageFilter_html_ad82d402aa0aeffb19ea5994f35c3a2ed"><div class="ttname"><a href="classitk_1_1simple_1_1ElastixImageFilter.html#ad82d402aa0aeffb19ea5994f35c3a2ed">itk::simple::ElastixImageFilter::SetParameterMap</a></div><div class="ttdeci">Self &amp; SetParameterMap(const std::string transformName, const unsigned int numberOfResolutions=4u, const double finalGridSpacingInPhysicalUnits=10.0)</div><div class="ttdoc">Specifies the parameter map by a transformName (&quot;translation&quot;, &quot;rigid&quot; , &quot;affine&quot;,...</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1TransformixImageFilter_html_aec1a4edbd2f0affbd2941ae6d4b13c62"><div class="ttname"><a href="classitk_1_1simple_1_1TransformixImageFilter.html#aec1a4edbd2f0affbd2941ae6d4b13c62">itk::simple::TransformixImageFilter::SetTransformParameterMap</a></div><div class="ttdeci">Self &amp; SetTransformParameterMap(const std::vector&lt; std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &gt; parameterMapVector)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00029">sitkAdditionalProcedures.h:29</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html">itk::simple::ImageFileWriter</a></div><div class="ttdoc">Write out a SimpleITK image to the specified file location.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileWriter_8h_source.html#l00048">sitkImageFileWriter.h:48</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
