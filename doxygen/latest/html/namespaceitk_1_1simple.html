@@ -719,6 +719,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MagnitudeAndPhaseToComplexImageFilter.html">MagnitudeAndPhaseToComplexImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements pixel-wise conversion of magnitude and phase data into complex voxels.  <a href="classitk_1_1simple_1_1MagnitudeAndPhaseToComplexImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskedAssignImageFilter.html">MaskedAssignImageFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask an image with a mask.  <a href="classitk_1_1simple_1_1MaskedAssignImageFilter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskedFFTNormalizedCorrelationImageFilter.html">MaskedFFTNormalizedCorrelationImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate masked normalized cross correlation using FFTs.  <a href="classitk_1_1simple_1_1MaskedFFTNormalizedCorrelationImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -14882,6 +14885,82 @@ template&lt;typename F &gt; </div>
 <p>Mask an image with a mask. </p>
 <p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1MaskImageFilter.html" title="Mask an image with a mask.">MaskImageFilter</a> in order to support a procedural API</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1MaskImageFilter.html" title="Mask an image with a mask.">itk::simple::MaskImageFilter</a> for the object oriented interface </dd></dl>
+
+</div>
+</div>
+<a id="ab84b577902e51b6fe261795b8c2bcb3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84b577902e51b6fe261795b8c2bcb3e">&#9670;&nbsp;</a></span>MaskedAssign() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::MaskedAssign </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>maskImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>assignImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mask an image with a mask. </p>
+<p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1MaskedAssignImageFilter.html" title="Mask an image with a mask.">MaskedAssignImageFilter</a> in order to support a procedural API</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1MaskedAssignImageFilter.html" title="Mask an image with a mask.">itk::simple::MaskedAssignImageFilter</a> for the object oriented interface </dd></dl>
+
+</div>
+</div>
+<a id="ae6746141fded05dc7d40f5de975a65e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6746141fded05dc7d40f5de975a65e6">&#9670;&nbsp;</a></span>MaskedAssign() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::MaskedAssign </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>maskImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>assignImage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mask an image with a mask. </p>
+<p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1MaskedAssignImageFilter.html" title="Mask an image with a mask.">MaskedAssignImageFilter</a> in order to support a procedural API</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1MaskedAssignImageFilter.html" title="Mask an image with a mask.">itk::simple::MaskedAssignImageFilter</a> for the object oriented interface </dd></dl>
 
 </div>
 </div>
