@@ -100,8 +100,8 @@ $(function() {
 <div class="line">      function(tag_index){image_slice$SetMetaData(series_tag_values[tag_index, 1], series_tag_values[tag_index, 2])})</div>
 <div class="line"> </div>
 <div class="line">    # Slice specific tags.</div>
-<div class="line">    image_slice$SetMetaData(&quot;0008|0012&quot;, format(Sys.time(), &quot;%H%M%S&quot;)) # Instance Creation Date</div>
-<div class="line">    image_slice$SetMetaData(&quot;0008|0013&quot;, format(Sys.time(), &quot;%Y%m%d&quot;)) # Instance Creation Time</div>
+<div class="line">    image_slice$SetMetaData(&quot;0008|0012&quot;, format(Sys.time(), &quot;%Y%m%d&quot;)) # Instance Creation Date</div>
+<div class="line">    image_slice$SetMetaData(&quot;0008|0013&quot;, format(Sys.time(), &quot;%H%M%S&quot;)) # Instance Creation Time</div>
 <div class="line"> </div>
 <div class="line">    # Setting the type to CT preserves the slice location.</div>
 <div class="line">    image_slice$SetMetaData(&quot;0008|0060&quot;, &quot;CT&quot;)  # set the type to CT so the thickness is carried over</div>
