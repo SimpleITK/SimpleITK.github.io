@@ -111,24 +111,24 @@
 <path fill="none" stroke="midnightblue" d="M306.24,-947.89C333.12,-942.49 364.7,-936.14 390.15,-931.02"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="305.31,-944.51 296.19,-949.91 306.69,-951.37 305.31,-944.51"/>
 </g>
-<!-- Node304 -->
+<!-- Node306 -->
 <g id="node47" class="node">
-<title>Node304</title>
+<title>Node306</title>
 <g id="a_node47"><a xlink:href="classitk_1_1simple_1_1ImageReaderBase.html" target="_top" xlink:title="An abstract base class for image readers.">
 <polygon fill="white" stroke="red" points="356.5,-874 356.5,-893 520.5,-893 520.5,-874 356.5,-874"/>
 <text text-anchor="middle" x="438.5" y="-881" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::ImageReaderBase</text>
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node304 -->
+<!-- Node1&#45;&gt;Node306 -->
 <g id="edge46" class="edge">
-<title>Node1&#45;&gt;Node304</title>
+<title>Node1&#45;&gt;Node306</title>
 <path fill="none" stroke="midnightblue" d="M271.99,-944.58C293.02,-931.8 325.07,-913.73 355,-902.5 364.91,-898.78 375.77,-895.65 386.26,-893.08"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="270.09,-941.63 263.42,-949.86 273.77,-947.59 270.09,-941.63"/>
 </g>
-<!-- Node308 -->
+<!-- Node310 -->
 <g id="node48" class="node">
-<title>Node308</title>
+<title>Node310</title>
 <g id="a_node48"><a xlink:href="classitk_1_1simple_1_1ImageRegistrationMethod.html" target="_top" xlink:title="An interface method to the modular ITKv4 registration framework.">
 <polygon fill="white" stroke="black" points="356.5,-824.5 356.5,-854.5 520.5,-854.5 520.5,-824.5 356.5,-824.5"/>
 <text text-anchor="start" x="364.5" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::ImageRegistration</text>
@@ -136,15 +136,15 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node308 -->
+<!-- Node1&#45;&gt;Node310 -->
 <g id="edge47" class="edge">
-<title>Node1&#45;&gt;Node308</title>
+<title>Node1&#45;&gt;Node310</title>
 <path fill="none" stroke="midnightblue" d="M263.32,-942.32C282.47,-921.13 317.8,-885.37 355,-864.5 361.79,-860.69 369.22,-857.4 376.76,-854.57"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="260.6,-940.11 256.58,-949.92 265.84,-944.76 260.6,-940.11"/>
 </g>
-<!-- Node309 -->
+<!-- Node311 -->
 <g id="node49" class="node">
-<title>Node309</title>
+<title>Node311</title>
 <g id="a_node49"><a xlink:href="classitk_1_1simple_1_1ImageSeriesWriter.html" target="_top" xlink:title="Writer series of image from a SimpleITK image.">
 <polygon fill="white" stroke="black" points="371,-775.5 371,-805.5 506,-805.5 506,-775.5 371,-775.5"/>
 <text text-anchor="start" x="379" y="-793.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::ImageSeries</text>
@@ -152,9 +152,9 @@
 </a>
 </g>
 </g>
-<!-- Node1&#45;&gt;Node309 -->
+<!-- Node1&#45;&gt;Node311 -->
 <g id="edge48" class="edge">
-<title>Node1&#45;&gt;Node309</title>
+<title>Node1&#45;&gt;Node311</title>
 <path fill="none" stroke="midnightblue" d="M257.36,-940.36C272.75,-909.23 307.39,-847.79 355,-814.5 359.89,-811.08 365.27,-808.14 370.86,-805.62"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="254.06,-939.14 252.89,-949.67 260.37,-942.17 254.06,-939.14"/>
 </g>
@@ -326,124 +326,124 @@
 <!-- Node8&#45;&gt;Node18 -->
 <g id="edge17" class="edge">
 <title>Node8&#45;&gt;Node18</title>
-<path fill="none" stroke="midnightblue" d="M512.65,-932.39C516.09,-934.67 519.25,-937.35 522,-940.5 579.27,-1006.03 502.35,-1263.58 558,-1330.5 561.16,-1334.31 564.86,-1337.56 568.91,-1340.33"/>
+<path fill="none" stroke="midnightblue" d="M512.65,-932.39C516.09,-934.67 519.25,-937.35 522,-940.5 579.41,-1006.21 501.86,-1264.7 558,-1331.5 560.87,-1334.91 564.17,-1337.87 567.77,-1340.42"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="514.05,-929.17 503.59,-927.5 510.73,-935.33 514.05,-929.17"/>
 </g>
 <!-- Node19 -->
 <g id="node19" class="node">
 <title>Node19</title>
-<g id="a_node19"><a xlink:href="classitk_1_1simple_1_1AsinImageFilter.html" target="_top" xlink:title="Computes the sine of each pixel.">
-<polygon fill="white" stroke="black" points="572,-1302 572,-1321 723,-1321 723,-1302 572,-1302"/>
-<text text-anchor="middle" x="647.5" y="-1309" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::AsinImageFilter</text>
+<g id="a_node19"><a xlink:href="classitk_1_1simple_1_1AreaClosingImageFilter.html" target="_top" xlink:title="Morphological closing by attributes.">
+<polygon fill="white" stroke="black" points="581,-1291.5 581,-1321.5 714,-1321.5 714,-1291.5 581,-1291.5"/>
+<text text-anchor="start" x="589" y="-1309.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::AreaClosing</text>
+<text text-anchor="middle" x="647.5" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node19 -->
 <g id="edge18" class="edge">
 <title>Node8&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M512.62,-932.42C516.06,-934.69 519.23,-937.37 522,-940.5 626.07,-1058.4 453.06,-1175.38 558,-1292.5 561.99,-1296.95 566.74,-1300.49 571.94,-1303.31"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="514,-929.19 503.54,-927.55 510.69,-935.36 514,-929.19"/>
+<path fill="none" stroke="midnightblue" d="M512.6,-932.43C516.06,-934.7 519.23,-937.37 522,-940.5 623.31,-1054.94 458.9,-1166.14 558,-1282.5 564.09,-1289.65 572.07,-1294.78 580.75,-1298.44"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="513.99,-929.2 503.52,-927.57 510.68,-935.37 513.99,-929.2"/>
 </g>
 <!-- Node20 -->
 <g id="node20" class="node">
 <title>Node20</title>
-<g id="a_node20"><a xlink:href="classitk_1_1simple_1_1Atan2ImageFilter.html" target="_top" xlink:title="Computes two argument inverse tangent.">
-<polygon fill="white" stroke="black" points="568.5,-1264 568.5,-1283 726.5,-1283 726.5,-1264 568.5,-1264"/>
-<text text-anchor="middle" x="647.5" y="-1271" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::Atan2ImageFilter</text>
+<g id="a_node20"><a xlink:href="classitk_1_1simple_1_1AreaOpeningImageFilter.html" target="_top" xlink:title="Morphological opening by attributes.">
+<polygon fill="white" stroke="black" points="579,-1242.5 579,-1272.5 716,-1272.5 716,-1242.5 579,-1242.5"/>
+<text text-anchor="start" x="587" y="-1260.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::AreaOpening</text>
+<text text-anchor="middle" x="647.5" y="-1249.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node20 -->
 <g id="edge19" class="edge">
 <title>Node8&#45;&gt;Node20</title>
-<path fill="none" stroke="midnightblue" d="M512.77,-932.59C516.15,-934.83 519.27,-937.44 522,-940.5 615.6,-1045.24 463.62,-1150.46 558,-1254.5 561.38,-1258.22 565.3,-1261.31 569.56,-1263.87"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="514.33,-929.46 503.87,-927.79 511.01,-935.62 514.33,-929.46"/>
+<path fill="none" stroke="midnightblue" d="M512.74,-932.62C516.13,-934.85 519.26,-937.46 522,-940.5 609.55,-1037.63 472.86,-1133.26 558,-1232.5 563.61,-1239.04 570.8,-1243.94 578.64,-1247.59"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="514.29,-929.48 503.83,-927.83 510.98,-935.65 514.29,-929.48"/>
 </g>
 <!-- Node21 -->
 <g id="node21" class="node">
 <title>Node21</title>
-<g id="a_node21"><a xlink:href="classitk_1_1simple_1_1AtanImageFilter.html" target="_top" xlink:title="Computes the one&#45;argument inverse tangent of each pixel.">
-<polygon fill="white" stroke="black" points="571.5,-1226 571.5,-1245 723.5,-1245 723.5,-1226 571.5,-1226"/>
-<text text-anchor="middle" x="647.5" y="-1233" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::AtanImageFilter</text>
+<g id="a_node21"><a xlink:href="classitk_1_1simple_1_1AsinImageFilter.html" target="_top" xlink:title="Computes the sine of each pixel.">
+<polygon fill="white" stroke="black" points="572,-1204 572,-1223 723,-1223 723,-1204 572,-1204"/>
+<text text-anchor="middle" x="647.5" y="-1211" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::AsinImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node21 -->
 <g id="edge20" class="edge">
 <title>Node8&#45;&gt;Node21</title>
-<path fill="none" stroke="midnightblue" d="M512.71,-932.64C516.11,-934.87 519.24,-937.46 522,-940.5 605.15,-1032.1 474.18,-1125.52 558,-1216.5 561.83,-1220.66 566.34,-1224.03 571.25,-1226.74"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="514.26,-929.5 503.79,-927.86 510.95,-935.67 514.26,-929.5"/>
+<path fill="none" stroke="midnightblue" d="M512.67,-932.68C516.08,-934.89 519.23,-937.48 522,-940.5 599.1,-1024.5 480.28,-1111.08 558,-1194.5 561.96,-1198.75 566.63,-1202.18 571.71,-1204.92"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="514.2,-929.53 503.73,-927.91 510.91,-935.71 514.2,-929.53"/>
 </g>
 <!-- Node22 -->
 <g id="node22" class="node">
 <title>Node22</title>
-<g id="a_node22"><a xlink:href="classitk_1_1simple_1_1BilateralImageFilter.html" target="_top" xlink:title="Blurs an image while preserving edges.">
-<polygon fill="white" stroke="black" points="574.5,-1176.5 574.5,-1206.5 720.5,-1206.5 720.5,-1176.5 574.5,-1176.5"/>
-<text text-anchor="start" x="582.5" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BilateralImage</text>
-<text text-anchor="middle" x="647.5" y="-1183.5" font-family="Helvetica,sans-Serif" font-size="10.00">Filter</text>
+<g id="a_node22"><a xlink:href="classitk_1_1simple_1_1Atan2ImageFilter.html" target="_top" xlink:title="Computes two argument inverse tangent.">
+<polygon fill="white" stroke="black" points="568.5,-1166 568.5,-1185 726.5,-1185 726.5,-1166 568.5,-1166"/>
+<text text-anchor="middle" x="647.5" y="-1173" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::Atan2ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node22 -->
 <g id="edge21" class="edge">
 <title>Node8&#45;&gt;Node22</title>
-<path fill="none" stroke="midnightblue" d="M512.61,-932.73C516.04,-934.93 519.2,-937.5 522,-940.5 591.69,-1015.18 489.76,-1091.49 558,-1167.5 562.57,-1172.59 568.11,-1176.65 574.15,-1179.88"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="514.12,-929.57 503.64,-928 510.85,-935.76 514.12,-929.57"/>
+<path fill="none" stroke="midnightblue" d="M512.59,-932.76C516.02,-934.95 519.19,-937.51 522,-940.5 588.68,-1011.39 490.79,-1086.11 558,-1156.5 561.58,-1160.25 565.71,-1163.35 570.18,-1165.9"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="514.08,-929.59 503.6,-928.03 510.82,-935.79 514.08,-929.59"/>
 </g>
 <!-- Node23 -->
 <g id="node23" class="node">
 <title>Node23</title>
-<g id="a_node23"><a xlink:href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html" target="_top" xlink:title="binary closing by reconstruction of an image.">
-<polygon fill="white" stroke="black" points="568.5,-1127.5 568.5,-1157.5 726.5,-1157.5 726.5,-1127.5 568.5,-1127.5"/>
-<text text-anchor="start" x="576.5" y="-1145.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryClosing</text>
-<text text-anchor="middle" x="647.5" y="-1134.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByReconstructionImageFilter</text>
+<g id="a_node23"><a xlink:href="classitk_1_1simple_1_1AtanImageFilter.html" target="_top" xlink:title="Computes the one&#45;argument inverse tangent of each pixel.">
+<polygon fill="white" stroke="black" points="571.5,-1128 571.5,-1147 723.5,-1147 723.5,-1128 571.5,-1128"/>
+<text text-anchor="middle" x="647.5" y="-1135" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::AtanImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node23 -->
 <g id="edge22" class="edge">
 <title>Node8&#45;&gt;Node23</title>
-<path fill="none" stroke="midnightblue" d="M512.96,-933.19C516.23,-935.28 519.28,-937.7 522,-940.5 578.3,-998.33 502.82,-1059.6 558,-1118.5 561.16,-1121.87 564.73,-1124.78 568.59,-1127.3"/>
+<path fill="none" stroke="midnightblue" d="M512.96,-933.19C516.23,-935.28 519.28,-937.7 522,-940.5 578.3,-998.33 501.27,-1061.09 558,-1118.5 561.87,-1122.41 566.33,-1125.61 571.15,-1128.22"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="514.31,-929.94 503.83,-928.38 511.05,-936.14 514.31,-929.94"/>
 </g>
 <!-- Node24 -->
 <g id="node24" class="node">
 <title>Node24</title>
-<g id="a_node24"><a xlink:href="classitk_1_1simple_1_1BinaryContourImageFilter.html" target="_top" xlink:title="Labels the pixels on the border of the objects in a binary image.">
-<polygon fill="white" stroke="black" points="575.5,-1078.5 575.5,-1108.5 719.5,-1108.5 719.5,-1078.5 575.5,-1078.5"/>
-<text text-anchor="start" x="583.5" y="-1096.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryContour</text>
-<text text-anchor="middle" x="647.5" y="-1085.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
+<g id="a_node24"><a xlink:href="classitk_1_1simple_1_1BilateralImageFilter.html" target="_top" xlink:title="Blurs an image while preserving edges.">
+<polygon fill="white" stroke="black" points="574.5,-1078.5 574.5,-1108.5 720.5,-1108.5 720.5,-1078.5 574.5,-1078.5"/>
+<text text-anchor="start" x="582.5" y="-1096.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BilateralImage</text>
+<text text-anchor="middle" x="647.5" y="-1085.5" font-family="Helvetica,sans-Serif" font-size="10.00">Filter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node24 -->
 <g id="edge23" class="edge">
 <title>Node8&#45;&gt;Node24</title>
-<path fill="none" stroke="midnightblue" d="M512.92,-933.55C516.18,-935.56 519.23,-937.86 522,-940.5 565.04,-981.62 515.76,-1027.56 558,-1069.5 562.97,-1074.43 568.85,-1078.38 575.17,-1081.54"/>
+<path fill="none" stroke="midnightblue" d="M512.92,-933.55C516.18,-935.56 519.23,-937.86 522,-940.5 565.04,-981.62 515.76,-1027.56 558,-1069.5 562.75,-1074.21 568.32,-1078.02 574.31,-1081.1"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="514.37,-930.37 503.87,-928.92 511.18,-936.6 514.37,-930.37"/>
 </g>
 <!-- Node25 -->
 <g id="node25" class="node">
 <title>Node25</title>
-<g id="a_node25"><a xlink:href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" target="_top" xlink:title="Fast binary dilation of a single intensity value in the image.">
-<polygon fill="white" stroke="black" points="580,-1029.5 580,-1059.5 715,-1059.5 715,-1029.5 580,-1029.5"/>
-<text text-anchor="start" x="588" y="-1047.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryDilate</text>
-<text text-anchor="middle" x="647.5" y="-1036.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
+<g id="a_node25"><a xlink:href="classitk_1_1simple_1_1BinaryClosingByReconstructionImageFilter.html" target="_top" xlink:title="binary closing by reconstruction of an image.">
+<polygon fill="white" stroke="black" points="568.5,-1029.5 568.5,-1059.5 726.5,-1059.5 726.5,-1029.5 568.5,-1029.5"/>
+<text text-anchor="start" x="576.5" y="-1047.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryClosing</text>
+<text text-anchor="middle" x="647.5" y="-1036.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByReconstructionImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node25 -->
 <g id="edge24" class="edge">
 <title>Node8&#45;&gt;Node25</title>
-<path fill="none" stroke="midnightblue" d="M512.66,-934.19C515.96,-936.03 519.1,-938.12 522,-940.5 552.14,-965.23 528.34,-995.19 558,-1020.5 564.42,-1025.98 571.97,-1030.21 579.92,-1033.49"/>
+<path fill="none" stroke="midnightblue" d="M512.66,-934.19C515.96,-936.03 519.1,-938.12 522,-940.5 552.14,-965.23 528.34,-995.19 558,-1020.5 562,-1023.91 566.43,-1026.84 571.13,-1029.36"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="514.12,-931.01 503.59,-929.88 511.12,-937.33 514.12,-931.01"/>
 </g>
 <!-- Node26 -->
 <g id="node26" class="node">
 <title>Node26</title>
-<g id="a_node26"><a xlink:href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" target="_top" xlink:title="Fast binary erosion of a single intensity value in the image.">
-<polygon fill="white" stroke="black" points="580.5,-980.5 580.5,-1010.5 714.5,-1010.5 714.5,-980.5 580.5,-980.5"/>
-<text text-anchor="start" x="588.5" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryErode</text>
+<g id="a_node26"><a xlink:href="classitk_1_1simple_1_1BinaryContourImageFilter.html" target="_top" xlink:title="Labels the pixels on the border of the objects in a binary image.">
+<polygon fill="white" stroke="black" points="575.5,-980.5 575.5,-1010.5 719.5,-1010.5 719.5,-980.5 575.5,-980.5"/>
+<text text-anchor="start" x="583.5" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryContour</text>
 <text text-anchor="middle" x="647.5" y="-987.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
@@ -451,15 +451,15 @@
 <!-- Node8&#45;&gt;Node26 -->
 <g id="edge25" class="edge">
 <title>Node8&#45;&gt;Node26</title>
-<path fill="none" stroke="midnightblue" d="M507.39,-934.28C512.44,-936.09 517.37,-938.15 522,-940.5 540.84,-950.04 539.35,-961.6 558,-971.5 565.03,-975.23 572.69,-978.42 580.47,-981.14"/>
+<path fill="none" stroke="midnightblue" d="M507.39,-934.28C512.44,-936.09 517.37,-938.15 522,-940.5 540.84,-950.04 539.35,-961.6 558,-971.5 564.47,-974.93 571.47,-977.91 578.6,-980.48"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="508.16,-930.85 497.57,-931.11 506,-937.51 508.16,-930.85"/>
 </g>
 <!-- Node27 -->
 <g id="node27" class="node">
 <title>Node27</title>
-<g id="a_node27"><a xlink:href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html" target="_top" xlink:title="Remove holes not connected to the boundary of the image.">
-<polygon fill="white" stroke="black" points="577,-931.5 577,-961.5 718,-961.5 718,-931.5 577,-931.5"/>
-<text text-anchor="start" x="585" y="-949.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryFillhole</text>
+<g id="a_node27"><a xlink:href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" target="_top" xlink:title="Fast binary dilation of a single intensity value in the image.">
+<polygon fill="white" stroke="black" points="580,-931.5 580,-961.5 715,-961.5 715,-931.5 580,-931.5"/>
+<text text-anchor="start" x="588" y="-949.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryDilate</text>
 <text text-anchor="middle" x="647.5" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
@@ -467,32 +467,32 @@
 <!-- Node8&#45;&gt;Node27 -->
 <g id="edge26" class="edge">
 <title>Node8&#45;&gt;Node27</title>
-<path fill="none" stroke="midnightblue" d="M513.57,-930.45C534.22,-932.94 556.59,-935.64 576.97,-938.1"/>
+<path fill="none" stroke="midnightblue" d="M513.69,-930.46C535.29,-933.07 558.75,-935.9 579.86,-938.45"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="513.93,-926.96 503.58,-929.24 513.09,-933.91 513.93,-926.96"/>
 </g>
 <!-- Node28 -->
 <g id="node28" class="node">
 <title>Node28</title>
-<g id="a_node28"><a xlink:href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html" target="_top" xlink:title="Remove the objects not connected to the boundary of the image.">
-<polygon fill="white" stroke="black" points="581.5,-882.5 581.5,-912.5 713.5,-912.5 713.5,-882.5 581.5,-882.5"/>
-<text text-anchor="start" x="589.5" y="-900.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryGrind</text>
-<text text-anchor="middle" x="647.5" y="-889.5" font-family="Helvetica,sans-Serif" font-size="10.00">PeakImageFilter</text>
+<g id="a_node28"><a xlink:href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" target="_top" xlink:title="Fast binary erosion of a single intensity value in the image.">
+<polygon fill="white" stroke="black" points="580.5,-882.5 580.5,-912.5 714.5,-912.5 714.5,-882.5 580.5,-882.5"/>
+<text text-anchor="start" x="588.5" y="-900.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryErode</text>
+<text text-anchor="middle" x="647.5" y="-889.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node28 -->
 <g id="edge27" class="edge">
 <title>Node8&#45;&gt;Node28</title>
-<path fill="none" stroke="midnightblue" d="M513.59,-912.91C535.71,-910.35 559.79,-907.55 581.3,-905.06"/>
+<path fill="none" stroke="midnightblue" d="M513.74,-912.89C535.45,-910.38 559.04,-907.64 580.22,-905.18"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="513.11,-909.44 503.58,-914.07 513.92,-916.4 513.11,-909.44"/>
 </g>
 <!-- Node29 -->
 <g id="node29" class="node">
 <title>Node29</title>
-<g id="a_node29"><a xlink:href="classitk_1_1simple_1_1BinaryImageToLabelMapFilter.html" target="_top" xlink:title="Label the connected components in a binary image and produce a collection of label objects.">
-<polygon fill="white" stroke="black" points="579,-833.5 579,-863.5 716,-863.5 716,-833.5 579,-833.5"/>
-<text text-anchor="start" x="587" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryImage</text>
-<text text-anchor="middle" x="647.5" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToLabelMapFilter</text>
+<g id="a_node29"><a xlink:href="classitk_1_1simple_1_1BinaryFillholeImageFilter.html" target="_top" xlink:title="Remove holes not connected to the boundary of the image.">
+<polygon fill="white" stroke="black" points="577,-833.5 577,-863.5 718,-863.5 718,-833.5 577,-833.5"/>
+<text text-anchor="start" x="585" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryFillhole</text>
+<text text-anchor="middle" x="647.5" y="-840.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
@@ -505,233 +505,233 @@
 <!-- Node30 -->
 <g id="node30" class="node">
 <title>Node30</title>
-<g id="a_node30"><a xlink:href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html" target="_top" xlink:title="Computes the square root of the sum of squares of corresponding input pixels.">
-<polygon fill="white" stroke="black" points="568.5,-784.5 568.5,-814.5 726.5,-814.5 726.5,-784.5 568.5,-784.5"/>
-<text text-anchor="start" x="576.5" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMagnitude</text>
-<text text-anchor="middle" x="647.5" y="-791.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
+<g id="a_node30"><a xlink:href="classitk_1_1simple_1_1BinaryGrindPeakImageFilter.html" target="_top" xlink:title="Remove the objects not connected to the boundary of the image.">
+<polygon fill="white" stroke="black" points="581.5,-784.5 581.5,-814.5 713.5,-814.5 713.5,-784.5 581.5,-784.5"/>
+<text text-anchor="start" x="589.5" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryGrind</text>
+<text text-anchor="middle" x="647.5" y="-791.5" font-family="Helvetica,sans-Serif" font-size="10.00">PeakImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node30 -->
 <g id="edge29" class="edge">
 <title>Node8&#45;&gt;Node30</title>
-<path fill="none" stroke="midnightblue" d="M512.65,-908.79C515.95,-906.96 519.1,-904.87 522,-902.5 551.89,-878.09 528.59,-848.48 558,-823.5 562,-820.1 566.45,-817.18 571.15,-814.67"/>
+<path fill="none" stroke="midnightblue" d="M512.65,-908.79C515.95,-906.96 519.1,-904.87 522,-902.5 551.89,-878.09 528.59,-848.48 558,-823.5 564.8,-817.73 572.85,-813.34 581.29,-809.99"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="511.11,-905.65 503.56,-913.09 514.1,-911.98 511.11,-905.65"/>
 </g>
 <!-- Node31 -->
 <g id="node31" class="node">
 <title>Node31</title>
-<g id="a_node31"><a xlink:href="classitk_1_1simple_1_1BinaryMedianImageFilter.html" target="_top" xlink:title="Applies a version of the median filter optimized for binary images.">
-<polygon fill="white" stroke="black" points="576.5,-735.5 576.5,-765.5 718.5,-765.5 718.5,-735.5 576.5,-735.5"/>
-<text text-anchor="start" x="584.5" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMedian</text>
-<text text-anchor="middle" x="647.5" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
+<g id="a_node31"><a xlink:href="classitk_1_1simple_1_1BinaryImageToLabelMapFilter.html" target="_top" xlink:title="Label the connected components in a binary image and produce a collection of label objects.">
+<polygon fill="white" stroke="black" points="579,-735.5 579,-765.5 716,-765.5 716,-735.5 579,-735.5"/>
+<text text-anchor="start" x="587" y="-753.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryImage</text>
+<text text-anchor="middle" x="647.5" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToLabelMapFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node31 -->
 <g id="edge30" class="edge">
 <title>Node8&#45;&gt;Node31</title>
-<path fill="none" stroke="midnightblue" d="M512.91,-909.44C516.17,-907.44 519.23,-905.14 522,-902.5 564.77,-861.72 516.02,-816.09 558,-774.5 563.32,-769.23 569.66,-765.09 576.48,-761.84"/>
+<path fill="none" stroke="midnightblue" d="M512.91,-909.44C516.17,-907.44 519.23,-905.14 522,-902.5 564.77,-861.72 516.02,-816.09 558,-774.5 563.88,-768.67 571.02,-764.22 578.67,-760.83"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="511.17,-906.4 503.86,-914.07 514.36,-912.63 511.17,-906.4"/>
 </g>
 <!-- Node32 -->
 <g id="node32" class="node">
 <title>Node32</title>
-<g id="a_node32"><a xlink:href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" target="_top" xlink:title="Denoise a binary image using min/max curvature flow.">
-<polygon fill="white" stroke="black" points="575,-686.5 575,-716.5 720,-716.5 720,-686.5 575,-686.5"/>
-<text text-anchor="start" x="583" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMinMax</text>
-<text text-anchor="middle" x="647.5" y="-693.5" font-family="Helvetica,sans-Serif" font-size="10.00">CurvatureFlowImageFilter</text>
+<g id="a_node32"><a xlink:href="classitk_1_1simple_1_1BinaryMagnitudeImageFilter.html" target="_top" xlink:title="Computes the square root of the sum of squares of corresponding input pixels.">
+<polygon fill="white" stroke="black" points="568.5,-686.5 568.5,-716.5 726.5,-716.5 726.5,-686.5 568.5,-686.5"/>
+<text text-anchor="start" x="576.5" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMagnitude</text>
+<text text-anchor="middle" x="647.5" y="-693.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node32 -->
 <g id="edge31" class="edge">
 <title>Node8&#45;&gt;Node32</title>
-<path fill="none" stroke="midnightblue" d="M512.95,-909.81C516.23,-907.72 519.28,-905.3 522,-902.5 578.03,-845.01 503.09,-784.06 558,-725.5 562.79,-720.39 568.55,-716.33 574.8,-713.1"/>
+<path fill="none" stroke="midnightblue" d="M512.95,-909.81C516.23,-907.72 519.28,-905.3 522,-902.5 578.03,-845.01 503.09,-784.06 558,-725.5 561.16,-722.13 564.74,-719.22 568.6,-716.7"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="511.04,-906.86 503.82,-914.61 514.3,-913.05 511.04,-906.86"/>
 </g>
 <!-- Node33 -->
 <g id="node33" class="node">
 <title>Node33</title>
-<g id="a_node33"><a xlink:href="classitk_1_1simple_1_1BinaryMorphologicalClosingImageFilter.html" target="_top" xlink:title="binary morphological closing of an image.">
-<polygon fill="white" stroke="black" points="560,-637.5 560,-667.5 735,-667.5 735,-637.5 560,-637.5"/>
-<text text-anchor="start" x="568" y="-655.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMorphological</text>
-<text text-anchor="middle" x="647.5" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">ClosingImageFilter</text>
+<g id="a_node33"><a xlink:href="classitk_1_1simple_1_1BinaryMedianImageFilter.html" target="_top" xlink:title="Applies a version of the median filter optimized for binary images.">
+<polygon fill="white" stroke="black" points="576.5,-637.5 576.5,-667.5 718.5,-667.5 718.5,-637.5 576.5,-637.5"/>
+<text text-anchor="start" x="584.5" y="-655.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMedian</text>
+<text text-anchor="middle" x="647.5" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node33 -->
 <g id="edge32" class="edge">
 <title>Node8&#45;&gt;Node33</title>
-<path fill="none" stroke="midnightblue" d="M512.61,-910.26C516.03,-908.06 519.2,-905.5 522,-902.5 591.42,-828.16 490.02,-752.16 558,-676.5 561.09,-673.07 564.61,-670.1 568.43,-667.55"/>
+<path fill="none" stroke="midnightblue" d="M512.61,-910.26C516.03,-908.06 519.2,-905.5 522,-902.5 591.42,-828.16 490.02,-752.16 558,-676.5 563.11,-670.82 569.41,-666.42 576.28,-663.03"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.85,-907.24 503.64,-915 514.12,-913.43 510.85,-907.24"/>
 </g>
 <!-- Node34 -->
 <g id="node34" class="node">
 <title>Node34</title>
-<g id="a_node34"><a xlink:href="classitk_1_1simple_1_1BinaryMorphologicalOpeningImageFilter.html" target="_top" xlink:title="binary morphological opening of an image.">
-<polygon fill="white" stroke="black" points="560,-588.5 560,-618.5 735,-618.5 735,-588.5 560,-588.5"/>
-<text text-anchor="start" x="568" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMorphological</text>
-<text text-anchor="middle" x="647.5" y="-595.5" font-family="Helvetica,sans-Serif" font-size="10.00">OpeningImageFilter</text>
+<g id="a_node34"><a xlink:href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" target="_top" xlink:title="Denoise a binary image using min/max curvature flow.">
+<polygon fill="white" stroke="black" points="575,-588.5 575,-618.5 720,-618.5 720,-588.5 575,-588.5"/>
+<text text-anchor="start" x="583" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMinMax</text>
+<text text-anchor="middle" x="647.5" y="-595.5" font-family="Helvetica,sans-Serif" font-size="10.00">CurvatureFlowImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node34 -->
 <g id="edge33" class="edge">
 <title>Node8&#45;&gt;Node34</title>
-<path fill="none" stroke="midnightblue" d="M512.71,-910.36C516.11,-908.13 519.24,-905.53 522,-902.5 604.87,-811.25 476.9,-720.33 558,-627.5 560.93,-624.14 564.28,-621.23 567.92,-618.71"/>
+<path fill="none" stroke="midnightblue" d="M512.71,-910.36C516.11,-908.13 519.24,-905.53 522,-902.5 604.87,-811.25 476.9,-720.33 558,-627.5 562.71,-622.11 568.5,-617.87 574.85,-614.54"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.95,-907.33 503.79,-915.14 514.25,-913.5 510.95,-907.33"/>
 </g>
 <!-- Node35 -->
 <g id="node35" class="node">
 <title>Node35</title>
-<g id="a_node35"><a xlink:href="classitk_1_1simple_1_1BinaryNotImageFilter.html" target="_top" xlink:title="Implements the BinaryNot logical operator pixel&#45;wise between two images.">
-<polygon fill="white" stroke="black" points="570.5,-539.5 570.5,-569.5 724.5,-569.5 724.5,-539.5 570.5,-539.5"/>
-<text text-anchor="start" x="578.5" y="-557.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryNotImage</text>
-<text text-anchor="middle" x="647.5" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">Filter</text>
+<g id="a_node35"><a xlink:href="classitk_1_1simple_1_1BinaryMorphologicalClosingImageFilter.html" target="_top" xlink:title="binary morphological closing of an image.">
+<polygon fill="white" stroke="black" points="560,-539.5 560,-569.5 735,-569.5 735,-539.5 560,-539.5"/>
+<text text-anchor="start" x="568" y="-557.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMorphological</text>
+<text text-anchor="middle" x="647.5" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">ClosingImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node35 -->
 <g id="edge34" class="edge">
 <title>Node8&#45;&gt;Node35</title>
-<path fill="none" stroke="midnightblue" d="M512.78,-910.42C516.16,-908.18 519.27,-905.56 522,-902.5 618.36,-794.3 463.74,-688.53 558,-578.5 561.52,-574.39 565.67,-570.95 570.21,-568.07"/>
+<path fill="none" stroke="midnightblue" d="M512.78,-910.42C516.16,-908.18 519.27,-905.56 522,-902.5 618.36,-794.3 463.74,-688.53 558,-578.5 560.9,-575.11 564.22,-572.18 567.85,-569.65"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="511.02,-907.39 503.89,-915.23 514.35,-913.55 511.02,-907.39"/>
 </g>
 <!-- Node36 -->
 <g id="node36" class="node">
 <title>Node36</title>
-<g id="a_node36"><a xlink:href="classitk_1_1simple_1_1BinaryOpeningByReconstructionImageFilter.html" target="_top" xlink:title="binary morphological closing of an image.">
-<polygon fill="white" stroke="black" points="568.5,-490.5 568.5,-520.5 726.5,-520.5 726.5,-490.5 568.5,-490.5"/>
-<text text-anchor="start" x="576.5" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryOpening</text>
-<text text-anchor="middle" x="647.5" y="-497.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByReconstructionImageFilter</text>
+<g id="a_node36"><a xlink:href="classitk_1_1simple_1_1BinaryMorphologicalOpeningImageFilter.html" target="_top" xlink:title="binary morphological opening of an image.">
+<polygon fill="white" stroke="black" points="560,-490.5 560,-520.5 735,-520.5 735,-490.5 560,-490.5"/>
+<text text-anchor="start" x="568" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryMorphological</text>
+<text text-anchor="middle" x="647.5" y="-497.5" font-family="Helvetica,sans-Serif" font-size="10.00">OpeningImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node36 -->
 <g id="edge35" class="edge">
 <title>Node8&#45;&gt;Node36</title>
-<path fill="none" stroke="midnightblue" d="M512.64,-910.6C516.08,-908.32 519.24,-905.64 522,-902.5 576.93,-839.91 504.28,-593.13 558,-529.5 560.98,-525.97 564.42,-522.94 568.17,-520.32"/>
+<path fill="none" stroke="midnightblue" d="M512.64,-910.6C516.08,-908.32 519.24,-905.64 522,-902.5 576.93,-839.91 504.28,-593.13 558,-529.5 560.88,-526.09 564.18,-523.15 567.79,-520.6"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.72,-907.66 503.57,-915.48 514.03,-913.82 510.72,-907.66"/>
 </g>
 <!-- Node37 -->
 <g id="node37" class="node">
 <title>Node37</title>
-<g id="a_node37"><a xlink:href="classitk_1_1simple_1_1BinaryProjectionImageFilter.html" target="_top" xlink:title="Binary projection.">
-<polygon fill="white" stroke="black" points="570,-441.5 570,-471.5 725,-471.5 725,-441.5 570,-441.5"/>
-<text text-anchor="start" x="578" y="-459.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryProjection</text>
-<text text-anchor="middle" x="647.5" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
+<g id="a_node37"><a xlink:href="classitk_1_1simple_1_1BinaryNotImageFilter.html" target="_top" xlink:title="Implements the BinaryNot logical operator pixel&#45;wise between two images.">
+<polygon fill="white" stroke="black" points="570.5,-441.5 570.5,-471.5 724.5,-471.5 724.5,-441.5 570.5,-441.5"/>
+<text text-anchor="start" x="578.5" y="-459.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryNotImage</text>
+<text text-anchor="middle" x="647.5" y="-448.5" font-family="Helvetica,sans-Serif" font-size="10.00">Filter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node37 -->
 <g id="edge36" class="edge">
 <title>Node8&#45;&gt;Node37</title>
-<path fill="none" stroke="midnightblue" d="M512.68,-910.63C516.11,-908.35 519.26,-905.66 522,-902.5 583.69,-831.42 497.69,-552.76 558,-480.5 561.37,-476.47 565.34,-473.07 569.7,-470.23"/>
+<path fill="none" stroke="midnightblue" d="M512.68,-910.63C516.11,-908.35 519.26,-905.66 522,-902.5 583.69,-831.42 497.69,-552.76 558,-480.5 561.57,-476.22 565.82,-472.67 570.49,-469.71"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.76,-907.69 503.63,-915.53 514.09,-913.85 510.76,-907.69"/>
 </g>
 <!-- Node38 -->
 <g id="node38" class="node">
 <title>Node38</title>
-<g id="a_node38"><a xlink:href="classitk_1_1simple_1_1BinaryPruningImageFilter.html" target="_top" xlink:title="This filter removes &quot;spurs&quot; of less than a certain length in the input image.">
-<polygon fill="white" stroke="black" points="576,-392.5 576,-422.5 719,-422.5 719,-392.5 576,-392.5"/>
-<text text-anchor="start" x="584" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryPruning</text>
-<text text-anchor="middle" x="647.5" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
+<g id="a_node38"><a xlink:href="classitk_1_1simple_1_1BinaryOpeningByReconstructionImageFilter.html" target="_top" xlink:title="binary morphological closing of an image.">
+<polygon fill="white" stroke="black" points="568.5,-392.5 568.5,-422.5 726.5,-422.5 726.5,-392.5 568.5,-392.5"/>
+<text text-anchor="start" x="576.5" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryOpening</text>
+<text text-anchor="middle" x="647.5" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByReconstructionImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node38 -->
 <g id="edge37" class="edge">
 <title>Node8&#45;&gt;Node38</title>
-<path fill="none" stroke="midnightblue" d="M512.71,-910.66C516.14,-908.37 519.27,-905.67 522,-902.5 590.45,-822.92 491.09,-512.38 558,-431.5 562.87,-425.61 569.03,-421.09 575.81,-417.62"/>
+<path fill="none" stroke="midnightblue" d="M512.71,-910.66C516.14,-908.37 519.27,-905.67 522,-902.5 590.45,-822.92 491.09,-512.38 558,-431.5 561.04,-427.82 564.59,-424.67 568.48,-421.98"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.79,-907.72 503.68,-915.57 514.13,-913.87 510.79,-907.72"/>
 </g>
 <!-- Node39 -->
 <g id="node39" class="node">
 <title>Node39</title>
-<g id="a_node39"><a xlink:href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter.html" target="_top" xlink:title="binary reconstruction by dilation of an image">
-<polygon fill="white" stroke="black" points="558,-343.5 558,-373.5 737,-373.5 737,-343.5 558,-343.5"/>
-<text text-anchor="start" x="566" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryReconstruction</text>
-<text text-anchor="middle" x="647.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByDilationImageFilter</text>
+<g id="a_node39"><a xlink:href="classitk_1_1simple_1_1BinaryProjectionImageFilter.html" target="_top" xlink:title="Binary projection.">
+<polygon fill="white" stroke="black" points="570,-343.5 570,-373.5 725,-373.5 725,-343.5 570,-343.5"/>
+<text text-anchor="start" x="578" y="-361.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryProjection</text>
+<text text-anchor="middle" x="647.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node39 -->
 <g id="edge38" class="edge">
 <title>Node8&#45;&gt;Node39</title>
-<path fill="none" stroke="midnightblue" d="M512.74,-910.69C516.16,-908.39 519.29,-905.68 522,-902.5 597.22,-814.41 484.49,-472.02 558,-382.5 560.83,-379.06 564.1,-376.08 567.68,-373.5"/>
+<path fill="none" stroke="midnightblue" d="M512.74,-910.69C516.16,-908.39 519.29,-905.68 522,-902.5 597.22,-814.41 484.49,-472.02 558,-382.5 561.33,-378.44 565.28,-375.03 569.62,-372.16"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.82,-907.75 503.72,-915.61 514.17,-913.89 510.82,-907.75"/>
 </g>
 <!-- Node40 -->
 <g id="node40" class="node">
 <title>Node40</title>
-<g id="a_node40"><a xlink:href="classitk_1_1simple_1_1BinaryReconstructionByErosionImageFilter.html" target="_top" xlink:title="binary reconstruction by erosion of an image">
-<polygon fill="white" stroke="black" points="558,-294.5 558,-324.5 737,-324.5 737,-294.5 558,-294.5"/>
-<text text-anchor="start" x="566" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryReconstruction</text>
-<text text-anchor="middle" x="647.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByErosionImageFilter</text>
+<g id="a_node40"><a xlink:href="classitk_1_1simple_1_1BinaryPruningImageFilter.html" target="_top" xlink:title="This filter removes &quot;spurs&quot; of less than a certain length in the input image.">
+<polygon fill="white" stroke="black" points="576,-294.5 576,-324.5 719,-324.5 719,-294.5 576,-294.5"/>
+<text text-anchor="start" x="584" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryPruning</text>
+<text text-anchor="middle" x="647.5" y="-301.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node40 -->
 <g id="edge39" class="edge">
 <title>Node8&#45;&gt;Node40</title>
-<path fill="none" stroke="midnightblue" d="M512.76,-910.7C516.17,-908.4 519.3,-905.69 522,-902.5 603.99,-805.91 477.88,-431.65 558,-333.5 560.72,-330.17 563.85,-327.28 567.27,-324.76"/>
+<path fill="none" stroke="midnightblue" d="M512.76,-910.7C516.17,-908.4 519.3,-905.69 522,-902.5 603.99,-805.91 477.88,-431.65 558,-333.5 562.83,-327.58 568.96,-323.04 575.74,-319.56"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.84,-907.76 503.75,-915.63 514.2,-913.91 510.84,-907.76"/>
 </g>
 <!-- Node41 -->
 <g id="node41" class="node">
 <title>Node41</title>
-<g id="a_node41"><a xlink:href="classitk_1_1simple_1_1BinaryThinningImageFilter.html" target="_top" xlink:title="This filter computes one&#45;pixel&#45;wide edges of the input image.">
-<polygon fill="white" stroke="black" points="573.5,-245.5 573.5,-275.5 721.5,-275.5 721.5,-245.5 573.5,-245.5"/>
-<text text-anchor="start" x="581.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryThinning</text>
-<text text-anchor="middle" x="647.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
+<g id="a_node41"><a xlink:href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter.html" target="_top" xlink:title="binary reconstruction by dilation of an image">
+<polygon fill="white" stroke="black" points="558,-245.5 558,-275.5 737,-275.5 737,-245.5 558,-245.5"/>
+<text text-anchor="start" x="566" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryReconstruction</text>
+<text text-anchor="middle" x="647.5" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByDilationImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node41 -->
 <g id="edge40" class="edge">
 <title>Node8&#45;&gt;Node41</title>
-<path fill="none" stroke="midnightblue" d="M512.78,-910.72C516.19,-908.41 519.3,-905.69 522,-902.5 610.76,-797.4 471.28,-391.29 558,-284.5 562.22,-279.31 567.43,-275.18 573.2,-271.89"/>
+<path fill="none" stroke="midnightblue" d="M512.78,-910.72C516.19,-908.41 519.3,-905.69 522,-902.5 610.76,-797.4 471.28,-391.29 558,-284.5 560.71,-281.16 563.83,-278.26 567.25,-275.75"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.86,-907.78 503.78,-915.66 514.23,-913.92 510.86,-907.78"/>
 </g>
 <!-- Node42 -->
 <g id="node42" class="node">
 <title>Node42</title>
-<g id="a_node42"><a xlink:href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html" target="_top" xlink:title="Binarize an input image by thresholding.">
-<polygon fill="white" stroke="black" points="570.5,-196.5 570.5,-226.5 724.5,-226.5 724.5,-196.5 570.5,-196.5"/>
-<text text-anchor="start" x="578.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryThreshold</text>
-<text text-anchor="middle" x="647.5" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
+<g id="a_node42"><a xlink:href="classitk_1_1simple_1_1BinaryReconstructionByErosionImageFilter.html" target="_top" xlink:title="binary reconstruction by erosion of an image">
+<polygon fill="white" stroke="black" points="558,-196.5 558,-226.5 737,-226.5 737,-196.5 558,-196.5"/>
+<text text-anchor="start" x="566" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryReconstruction</text>
+<text text-anchor="middle" x="647.5" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00">ByErosionImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node42 -->
 <g id="edge41" class="edge">
 <title>Node8&#45;&gt;Node42</title>
-<path fill="none" stroke="midnightblue" d="M512.8,-910.73C516.2,-908.42 519.31,-905.7 522,-902.5 617.53,-788.89 464.67,-350.93 558,-235.5 561.5,-231.17 565.7,-227.57 570.34,-224.59"/>
+<path fill="none" stroke="midnightblue" d="M512.8,-910.73C516.2,-908.42 519.31,-905.7 522,-902.5 617.53,-788.89 464.67,-350.93 558,-235.5 560.7,-232.16 563.82,-229.25 567.23,-226.73"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.88,-907.79 503.8,-915.68 514.25,-913.93 510.88,-907.79"/>
 </g>
 <!-- Node43 -->
 <g id="node43" class="node">
 <title>Node43</title>
-<g id="a_node43"><a xlink:href="classitk_1_1simple_1_1BinaryThresholdProjectionImageFilter.html" target="_top" xlink:title="BinaryThreshold projection.">
-<polygon fill="white" stroke="black" points="570.5,-147.5 570.5,-177.5 724.5,-177.5 724.5,-147.5 570.5,-147.5"/>
-<text text-anchor="start" x="578.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryThreshold</text>
-<text text-anchor="middle" x="647.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">ProjectionImageFilter</text>
+<g id="a_node43"><a xlink:href="classitk_1_1simple_1_1BinaryThinningImageFilter.html" target="_top" xlink:title="This filter computes one&#45;pixel&#45;wide edges of the input image.">
+<polygon fill="white" stroke="black" points="573.5,-147.5 573.5,-177.5 721.5,-177.5 721.5,-147.5 573.5,-147.5"/>
+<text text-anchor="start" x="581.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryThinning</text>
+<text text-anchor="middle" x="647.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node43 -->
 <g id="edge42" class="edge">
 <title>Node8&#45;&gt;Node43</title>
-<path fill="none" stroke="midnightblue" d="M512.81,-910.75C516.21,-908.43 519.32,-905.7 522,-902.5 624.31,-780.38 458.06,-310.57 558,-186.5 561.5,-182.16 565.69,-178.56 570.33,-175.58"/>
+<path fill="none" stroke="midnightblue" d="M512.81,-910.75C516.21,-908.43 519.32,-905.7 522,-902.5 624.31,-780.38 458.06,-310.57 558,-186.5 562.19,-181.29 567.39,-177.15 573.16,-173.86"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.89,-907.81 503.82,-915.69 514.27,-913.94 510.89,-907.81"/>
 </g>
 <!-- Node44 -->
 <g id="node44" class="node">
 <title>Node44</title>
-<g id="a_node44"><a xlink:href="classitk_1_1simple_1_1BinomialBlurImageFilter.html" target="_top" xlink:title="Performs a separable blur on each dimension of an image.">
-<polygon fill="white" stroke="black" points="579,-98.5 579,-128.5 716,-128.5 716,-98.5 579,-98.5"/>
-<text text-anchor="start" x="587" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinomialBlur</text>
+<g id="a_node44"><a xlink:href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html" target="_top" xlink:title="Binarize an input image by thresholding.">
+<polygon fill="white" stroke="black" points="570.5,-98.5 570.5,-128.5 724.5,-128.5 724.5,-98.5 570.5,-98.5"/>
+<text text-anchor="start" x="578.5" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryThreshold</text>
 <text text-anchor="middle" x="647.5" y="-105.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
@@ -739,39 +739,39 @@
 <!-- Node8&#45;&gt;Node44 -->
 <g id="edge43" class="edge">
 <title>Node8&#45;&gt;Node44</title>
-<path fill="none" stroke="midnightblue" d="M512.82,-910.76C516.22,-908.44 519.32,-905.71 522,-902.5 576.54,-837.18 504.73,-203.85 558,-137.5 563.48,-130.67 570.69,-125.67 578.64,-122.03"/>
+<path fill="none" stroke="midnightblue" d="M512.82,-910.76C516.22,-908.44 519.32,-905.71 522,-902.5 576.54,-837.18 504.73,-203.85 558,-137.5 561.49,-133.16 565.68,-129.55 570.31,-126.56"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.91,-907.82 503.84,-915.71 514.29,-913.95 510.91,-907.82"/>
 </g>
 <!-- Node45 -->
 <g id="node45" class="node">
 <title>Node45</title>
-<g id="a_node45"><a xlink:href="classitk_1_1simple_1_1BinShrinkImageFilter.html" target="_top" xlink:title="Reduce the size of an image by an integer factor in each dimension while performing averaging of an i...">
-<polygon fill="white" stroke="black" points="571.5,-49.5 571.5,-79.5 723.5,-79.5 723.5,-49.5 571.5,-49.5"/>
-<text text-anchor="start" x="579.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinShrinkImage</text>
-<text text-anchor="middle" x="647.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Filter</text>
+<g id="a_node45"><a xlink:href="classitk_1_1simple_1_1BinaryThresholdProjectionImageFilter.html" target="_top" xlink:title="BinaryThreshold projection.">
+<polygon fill="white" stroke="black" points="570.5,-49.5 570.5,-79.5 724.5,-79.5 724.5,-49.5 570.5,-49.5"/>
+<text text-anchor="start" x="578.5" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinaryThreshold</text>
+<text text-anchor="middle" x="647.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">ProjectionImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node45 -->
 <g id="edge44" class="edge">
 <title>Node8&#45;&gt;Node45</title>
-<path fill="none" stroke="midnightblue" d="M512.83,-910.77C516.23,-908.44 519.33,-905.71 522,-902.5 579.93,-832.93 501.42,-159.17 558,-88.5 561.78,-83.78 566.39,-79.93 571.5,-76.8"/>
+<path fill="none" stroke="midnightblue" d="M512.83,-910.77C516.23,-908.44 519.33,-905.71 522,-902.5 579.93,-832.93 501.42,-159.17 558,-88.5 561.48,-84.15 565.67,-80.54 570.3,-77.55"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.92,-907.82 503.85,-915.72 514.3,-913.95 510.92,-907.82"/>
 </g>
 <!-- Node46 -->
 <g id="node46" class="node">
 <title>Node46</title>
-<g id="a_node46"><a xlink:href="classitk_1_1simple_1_1BitwiseNotImageFilter.html" target="_top" xlink:title="Implements pixel&#45;wise generic operation on one image.">
-<polygon fill="white" stroke="black" points="568.5,-0.5 568.5,-30.5 726.5,-30.5 726.5,-0.5 568.5,-0.5"/>
-<text text-anchor="start" x="576.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BitwiseNotImage</text>
-<text text-anchor="middle" x="647.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">Filter</text>
+<g id="a_node46"><a xlink:href="classitk_1_1simple_1_1BinomialBlurImageFilter.html" target="_top" xlink:title="Performs a separable blur on each dimension of an image.">
+<polygon fill="white" stroke="black" points="579,-0.5 579,-30.5 716,-30.5 716,-0.5 579,-0.5"/>
+<text text-anchor="start" x="587" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::BinomialBlur</text>
+<text text-anchor="middle" x="647.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageFilter</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node46 -->
 <g id="edge45" class="edge">
 <title>Node8&#45;&gt;Node46</title>
-<path fill="none" stroke="midnightblue" d="M512.84,-910.77C516.23,-908.45 519.33,-905.72 522,-902.5 583.32,-828.67 498.11,-114.5 558,-39.5 560.98,-35.77 564.48,-32.58 568.33,-29.86"/>
+<path fill="none" stroke="midnightblue" d="M512.84,-910.77C516.23,-908.45 519.33,-905.72 522,-902.5 583.32,-828.67 498.11,-114.5 558,-39.5 563.46,-32.66 570.66,-27.65 578.6,-24"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="510.93,-907.83 503.87,-915.73 514.31,-913.96 510.93,-907.83"/>
 </g>
 </g>

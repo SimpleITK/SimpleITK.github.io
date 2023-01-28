@@ -121,6 +121,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter.html">ApproximateSignedDistanceMapImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a map of the approximate signed distance from the boundaries of a binary image.  <a href="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AreaClosingImageFilter.html">AreaClosingImageFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Morphological closing by attributes.  <a href="classitk_1_1simple_1_1AreaClosingImageFilter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AreaOpeningImageFilter.html">AreaOpeningImageFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Morphological opening by attributes.  <a href="classitk_1_1simple_1_1AreaOpeningImageFilter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AsinImageFilter.html">AsinImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sine of each pixel.  <a href="classitk_1_1simple_1_1AsinImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3248,6 +3254,94 @@ Functions</h2></td></tr>
 <p>Create a map of the approximate signed distance from the boundaries of a binary image. </p>
 <p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter.html" title="Create a map of the approximate signed distance from the boundaries of a binary image.">ApproximateSignedDistanceMapImageFilter</a> in order to support a procedural API</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter.html" title="Create a map of the approximate signed distance from the boundaries of a binary image.">itk::simple::ApproximateSignedDistanceMapImageFilter</a> for the object oriented interface </dd></dl>
+
+</div>
+</div>
+<a id="a2904cc921dd86fa1680d9560a8985d03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2904cc921dd86fa1680d9560a8985d03">&#9670;&nbsp;</a></span>AreaClosing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::AreaClosing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lambda</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useImageSpacing</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fullyConnected</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Morphological closing by attributes. </p>
+<p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1AreaClosingImageFilter.html" title="Morphological closing by attributes.">AreaClosingImageFilter</a> in order to support a procedural API</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1AreaClosingImageFilter.html" title="Morphological closing by attributes.">itk::simple::AreaClosingImageFilter</a> for the object oriented interface </dd></dl>
+
+</div>
+</div>
+<a id="a49fc5d48d3a9970b557c58db59a8c3a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49fc5d48d3a9970b557c58db59a8c3a2">&#9670;&nbsp;</a></span>AreaOpening()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::AreaOpening </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>lambda</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useImageSpacing</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fullyConnected</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Morphological opening by attributes. </p>
+<p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1AreaOpeningImageFilter.html" title="Morphological opening by attributes.">AreaOpeningImageFilter</a> in order to support a procedural API</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1AreaOpeningImageFilter.html" title="Morphological opening by attributes.">itk::simple::AreaOpeningImageFilter</a> for the object oriented interface </dd></dl>
 
 </div>
 </div>

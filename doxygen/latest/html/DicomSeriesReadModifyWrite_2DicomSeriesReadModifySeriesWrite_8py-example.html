@@ -133,7 +133,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"># Write the 3D image as a series</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"># IMPORTANT: There are many DICOM tags that need to be updated when you modify</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">#            an original image. This is a delicate opration and requires</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">#            an original image. This is a delicate operation and requires</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">#            knowledge of the DICOM standard. This example only modifies some.</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">#            For a more complete list of tags that need to be modified see:</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">#                http://gdcm.sourceforge.net/wiki/index.php/Writing_DICOM</span></div>
@@ -222,7 +222,7 @@ $(function() {
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            map(str, filtered_image.TransformIndexToPhysicalPoint((0, 0, i)))</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        ),</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    )</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">#   Instace Number</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">#   Instance Number</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    image_slice.SetMetaData(<span class="stringliteral">&quot;0020|0013&quot;</span>, str(i))</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment"># Write to the output directory and add the extension dcm, to force writing</span></div>
