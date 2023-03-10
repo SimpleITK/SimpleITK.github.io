@@ -154,13 +154,18 @@ $(function() {
 <div class="line"># by the Filter.</div>
 <div class="line"># For the series instance UID (0020|000e), each of the components is a number, cannot start</div>
 <div class="line"># with zero, and separated by a &#39;.&#39; We create a unique series ID using the date and time.</div>
-<div class="line"># tags of interest:</div>
+<div class="line"># NOTE: DICOM tags represent hexadecimal numbers, so 0020|000D and 0020|000d</div>
+<div class="line">#       are equivalent. The ITK/SimpleITK dictionary is string based, so these</div>
+<div class="line">#       are two different keys, case sensitive. When read from a DICOM file the</div>
+<div class="line">#       hexadecimal string representations are in lower case, so we check for</div>
+<div class="line">#       existence and get the value after converting to lower case.</div>
+<div class="line"># Tags of interest:</div>
 <div class="line">direction &lt;- filtered_image$GetDirection()</div>
 <div class="line">series_tag_values &lt;- c(Filter(Negate(is.null),</div>
 <div class="line">                             lapply(tags_to_copy,</div>
 <div class="line">                             function(k) {</div>
-<div class="line">                               if(series_reader$HasMetaDataKey(0,k)) {</div>
-<div class="line">                                 list(k, series_reader$GetMetaData(0,k))</div>
+<div class="line">                               if(series_reader$HasMetaDataKey(0,tolower(k))) {</div>
+<div class="line">                                 list(k, series_reader$GetMetaData(0,tolower(k)))</div>
 <div class="line">                                }</div>
 <div class="line">                             })),</div>
 <div class="line">                        list(list(&quot;0008|0031&quot;,modification_time), # Series Time</div>
@@ -169,7 +174,7 @@ $(function() {
 <div class="line">                             list(&quot;0020|000e&quot;, paste0(&quot;1.2.826.0.1.3680043.2.1125.&quot;,modification_date,&quot;.1&quot;,modification_time)), # Series Instance UID</div>
 <div class="line">                             list(&quot;0020|0037&quot;, paste(c(direction[1], direction[4], direction[7],</div>
 <div class="line">                                                       direction[2],direction[5],direction[8]), collapse=&quot;\\&quot;)), # Image Orientation (Patient)</div>
-<div class="line">                             list(&quot;0008|103e&quot;, paste0(series_reader$GetMetaData(0,&quot;0008|103e&quot;), &quot; Processed-SimpleITK&quot;)))) # Series Description</div>
+<div class="line">                             list(&quot;0008|103e&quot;, paste0(if(series_reader$HasMetaDataKey(0,&quot;0008|103e&quot;)) series_reader$GetMetaData(0,&quot;0008|103e&quot;) else &quot;&quot;, &quot; Processed-SimpleITK&quot;)))) # Series Description is an optional tag, so may not exist</div>
 <div class="line"> </div>
 <div class="line">for(i in 1:filtered_image$GetDepth()) {</div>
 <div class="line">  image_slice &lt;- filtered_image[,,i]</div>
