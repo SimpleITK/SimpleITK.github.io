@@ -8941,8 +8941,8 @@ template&lt;unsigned int VImageDimension&gt; </div>
 
 </div>
 </div>
-<a id="aa94f8ad544587222bff5e5d0cdc72560"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa94f8ad544587222bff5e5d0cdc72560">&#9670;&nbsp;</a></span>FFTNormalizedCorrelation()</h2>
+<a id="a7689f39ef44497a1afb76dba5c0f8ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7689f39ef44497a1afb76dba5c0f8ee1">&#9670;&nbsp;</a></span>FFTNormalizedCorrelation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8951,19 +8951,25 @@ template&lt;unsigned int VImageDimension&gt; </div>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::FFTNormalizedCorrelation </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image1</em>, </td>
+          <td class="paramname"><em>fixedImage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
-          <td class="paramname"><em>image2</em>, </td>
+          <td class="paramname"><em>movingImage</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>requiredNumberOfOverlappingPixels</em> = <code>0u</code>&#160;</td>
+          <td class="paramname"><em>requiredNumberOfOverlappingPixels</em> = <code>0u</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>requiredFractionOfOverlappingPixels</em> = <code>0.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
