@@ -81,7 +81,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This filter implements a zero-crossing based edge detecor.  
+<p>This filter implements a zero-crossing based edge detector.  
  <a href="classitk_1_1simple_1_1ZeroCrossingBasedEdgeDetectionImageFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="sitkZeroCrossingBasedEdgeDetectionImageFilter_8h_source.html">sitkZeroCrossingBasedEdgeDetectionImageFilter.h</a>&gt;</code></p>
@@ -315,7 +315,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This filter implements a zero-crossing based edge detecor. </p>
+<div class="textblock"><p>This filter implements a zero-crossing based edge detector. </p>
 <p>The zero-crossing based edge detector looks for pixels in the Laplacian of an image where the value of the Laplacian passes through zero points where the Laplacian changes sign. Such points often occur at "edges" in images i.e. points where the intensity of the image changes rapidly, but they also occur at places that are not as easy to associate with edges. It is best to think of the zero crossing detector as some sort of feature detector rather than as a specific edge detector.</p>
 <dl class="section user"><dt></dt><dd>Zero crossings always lie on closed contours and so the output from the zero crossing detector is usually a binary image with single pixel thickness lines showing the positions of the zero crossing points.</dd></dl>
 <dl class="section user"><dt></dt><dd>In this implementation, the input image is first smoothed with a Gaussian filter, then the <a class="el" href="classitk_1_1simple_1_1LaplacianImageFilter.html" title="This filter computes the Laplacian of a scalar-valued image.">LaplacianImageFilter</a> is applied to smoothed image. Finally the zero-crossing of the Laplacian of the smoothed image is detected. The output is a binary image.</dd></dl>
@@ -327,7 +327,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="el" href="classitk_1_1simple_1_1ZeroCrossingImageFilter.html" title="This filter finds the closest pixel to the zero-crossings (sign changes) in a signed itk::Image .">ZeroCrossingImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a4c86107425f17cd66ac3f8a6bb065740" title="This filter implements a zero-crossing based edge detecor.">itk::simple::ZeroCrossingBasedEdgeDetection</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a4c86107425f17cd66ac3f8a6bb065740" title="This filter implements a zero-crossing based edge detector.">itk::simple::ZeroCrossingBasedEdgeDetection</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ZeroCrossingBasedEdgeDetectionImageFilter.html">itk::ZeroCrossingBasedEdgeDetectionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 

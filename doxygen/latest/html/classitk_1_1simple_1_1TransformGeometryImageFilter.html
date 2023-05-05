@@ -296,10 +296,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Modify an image's geometric meta-data, changing its "physical" extent. </p>
-<p>The <a class="el" href="classitk_1_1simple_1_1TransformGeometryImageFilter.html" title="Modify an image&#39;s geometric meta-data, changing its &quot;physical&quot; extent.">TransformGeometryImageFilter</a> "physically" changes the image in space using the given transformation. The specific transformation type can be any type derived from the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MatrixOffsetTransformBase.html">MatrixOffsetTransformBase</a> and the <a class="el" href="classitk_1_1simple_1_1TranslationTransform.html" title="Translation of a 2D or 3D coordinate space.">TranslationTransform</a> . The modification of the geometric meta-data is an alternative to resampling the moving image onto the fixed image grid, after registration. The advantages of using this approach over resampling are two-fold, it does not introduce artifacts into the result because the original intensity information is not modified, and it is computationally more efficient.</p>
+<p>The <a class="el" href="classitk_1_1simple_1_1TransformGeometryImageFilter.html" title="Modify an image&#39;s geometric meta-data, changing its &quot;physical&quot; extent.">TransformGeometryImageFilter</a> "physically" changes the image in space using the given transformation. The resulting image is an image with the same voxel values as the input, but with different physical space representation as affected by the transform.</p>
+<p>The specific transformation type can be any type derived from the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MatrixOffsetTransformBase.html">MatrixOffsetTransformBase</a> and the <a class="el" href="classitk_1_1simple_1_1TranslationTransform.html" title="Translation of a 2D or 3D coordinate space.">TranslationTransform</a> . The modification of the geometric meta-data is an alternative to resampling the moving image onto the fixed image grid, after registration. The advantages of using this approach over resampling are two-fold, it does not introduce artifacts into the result because the original intensity information is not modified, and it is computationally more efficient.</p>
 <p>When the filter is used with a rigid or translation transformation the resulting image can be saved in any desired format. When the filter is used with an affine transformation the resulting image should be saved in a format that supports a non ortho-normal direction cosine matrix (e.g. nrrd).</p>
-<p>c <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> Any transform derived from <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MatrixOffsetTransformBase.html">MatrixOffsetTransformBase</a> or <a class="el" href="classitk_1_1simple_1_1TranslationTransform.html" title="Translation of a 2D or 3D coordinate space.">TranslationTransform</a> .</p>
-<p>c InputImage The image to be duplicated and modified to incorporate the transform. </p><dl class="section return"><dt>Returns</dt><dd>An image with the same voxel values as the input, but with different physical space representation affected by the transform.</dd></dl>
 <p>Let us call the transform operation from the fixed image to moving image TfmF2M . Given a set of points from the fixed image in physical space (i.e. physicalFixedImagePoints ), the aim is to convert those points into the moving image physical space as physicalMovingImagePoints = TfmF2M( physicalFixedImagePoints ) , and then be able to get the image values as movingContinuousIndexPoints = movingImage-&gt;TransformPhysicalPointToContinuousIndex( physicalMovingImagePoints ) .</p>
 <p>We desire to change the moving image direction cosine \(\mathbf{D}\) and origin \(\mathbf{o}\) such that we can compute the moving image points as movingContinuousIndexPoints = newMovingImage-&gt;TransformPhysicalPointToContinuousIndex( physicalFixedImagePoints )</p>
 <p>Let us introduce the notation that will be used to formalize the transformation:</p>
@@ -351,7 +350,7 @@ Additional Inherited Members</h2></td></tr>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformGeometryImageFilter.html">itk::TransformGeometryImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aac00adccfe10e557462dd08e887acb81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac00adccfe10e557462dd08e887acb81">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
@@ -374,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -407,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -578,7 +577,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -631,7 +630,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -656,7 +655,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -680,7 +679,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
