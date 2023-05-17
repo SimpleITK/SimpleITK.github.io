@@ -164,6 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0e9fc07fb70d1166ca7d5c3301f5a8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa14e2225b27b693b454185f194bed18a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aa14e2225b27b693b454185f194bed18a">operator=</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;img) noexcept</td></tr>
 <tr class="separator:aa14e2225b27b693b454185f194bed18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f8edfcd47f578d5e6cd48b76550caf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a3f8edfcd47f578d5e6cd48b76550caf8">ProxyForInPlaceOperation</a> ()</td></tr>
+<tr class="memdesc:a3f8edfcd47f578d5e6cd48b76550caf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advanced method not commonly needed.  <a href="classitk_1_1simple_1_1Image.html#a3f8edfcd47f578d5e6cd48b76550caf8">More...</a><br /></td></tr>
+<tr class="separator:a3f8edfcd47f578d5e6cd48b76550caf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1663c39bf013511f30a632a6b4290d83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a1663c39bf013511f30a632a6b4290d83">SetMetaData</a> (const std::string &amp;key, const std::string &amp;value)</td></tr>
 <tr class="memdesc:a1663c39bf013511f30a632a6b4290d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an entry in the meta-data dictionary.  <a href="classitk_1_1simple_1_1Image.html#a1663c39bf013511f30a632a6b4290d83">More...</a><br /></td></tr>
 <tr class="separator:a1663c39bf013511f30a632a6b4290d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -446,6 +449,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac7656644c344bd92bd5b5c3ff93a76a9"><td class="memTemplParams" colspan="2">template&lt;typename TImageType &gt; </td></tr>
 <tr class="memitem:ac7656644c344bd92bd5b5c3ff93a76a9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html">PimpleImageBase</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ac7656644c344bd92bd5b5c3ff93a76a9">DispatchedInternalInitialization</a> (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DataObject.html">itk::DataObject</a> *image)</td></tr>
 <tr class="separator:ac7656644c344bd92bd5b5c3ff93a76a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132d8e75efaac108242665c48150f343"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a132d8e75efaac108242665c48150f343">Image</a> (std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html">PimpleImageBase</a> &gt; pimpleImage)</td></tr>
+<tr class="separator:a132d8e75efaac108242665c48150f343"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b1318ae056ca7ccda06025b2c775db4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a8b1318ae056ca7ccda06025b2c775db4">InternalInitialization</a> (<a class="el" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a> type, unsigned int dimension, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DataObject.html">itk::DataObject</a> *image)</td></tr>
 <tr class="separator:a8b1318ae056ca7ccda06025b2c775db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -515,7 +520,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a42a8055958ef17e5fd3602e68e28fcc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42a8055958ef17e5fd3602e68e28fcc7">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a42a8055958ef17e5fd3602e68e28fcc7">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,7 +539,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="ae3a51dbe990dae1370afe39a65103527"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3a51dbe990dae1370afe39a65103527">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3a51dbe990dae1370afe39a65103527">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +557,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="af92e6ec5a7b76f66671d14480906aef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af92e6ec5a7b76f66671d14480906aef0">&#9670;&nbsp;</a></span>Image() <span class="overload">[3/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af92e6ec5a7b76f66671d14480906aef0">&#9670;&nbsp;</a></span>Image() <span class="overload">[3/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -586,7 +591,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a14b96e088ce9f8d72f3c71663b376476"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14b96e088ce9f8d72f3c71663b376476">&#9670;&nbsp;</a></span>Image() <span class="overload">[4/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b96e088ce9f8d72f3c71663b376476">&#9670;&nbsp;</a></span>Image() <span class="overload">[4/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -625,7 +630,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a619f5f36459b477581b3d7f0c99d1f9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a619f5f36459b477581b3d7f0c99d1f9c">&#9670;&nbsp;</a></span>Image() <span class="overload">[5/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a619f5f36459b477581b3d7f0c99d1f9c">&#9670;&nbsp;</a></span>Image() <span class="overload">[5/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -670,7 +675,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="affc77be35235acbc1b67e60e7670194c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affc77be35235acbc1b67e60e7670194c">&#9670;&nbsp;</a></span>Image() <span class="overload">[6/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#affc77be35235acbc1b67e60e7670194c">&#9670;&nbsp;</a></span>Image() <span class="overload">[6/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -709,7 +714,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a1b10a5a2f14a9bec516ff47bcba96761"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b10a5a2f14a9bec516ff47bcba96761">&#9670;&nbsp;</a></span>Image() <span class="overload">[7/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b10a5a2f14a9bec516ff47bcba96761">&#9670;&nbsp;</a></span>Image() <span class="overload">[7/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,12 +744,12 @@ template&lt;typename TImageType &gt; </div>
 <p>If simpleITK does not support the image type, a compile-time error or assertion will fail.</p>
 <p>The ITK image must be fully buffered, and must have a zero starting index for the Buffered/Largest regions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00141">141</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00162">162</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
 <a id="a135e55d13e3baf01d3cd906d40558605"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a135e55d13e3baf01d3cd906d40558605">&#9670;&nbsp;</a></span>Image() <span class="overload">[8/8]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a135e55d13e3baf01d3cd906d40558605">&#9670;&nbsp;</a></span>Image() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -774,9 +779,35 @@ template&lt;typename TImageType &gt; </div>
 <p>If simpleITK does not support the image type, a compile-time error or assertion will fail.</p>
 <p>The ITK image must be fully buffered, and must have a zero starting index for the Buffered/Largest regions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00146">146</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00167">167</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 <p class="reference">References <a class="el" href="sitkConfigure_8h_source.html#l00030">SITK_MAX_DIMENSION</a>, and <a class="el" href="sitkPixelIDValues_8h_source.html#l00094">itk::simple::sitkUnknown</a>.</p>
+
+</div>
+</div>
+<a id="a132d8e75efaac108242665c48150f343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132d8e75efaac108242665c48150f343">&#9670;&nbsp;</a></span>Image() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">itk::simple::Image::Image </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1PimpleImageBase.html">PimpleImageBase</a> &gt;&#160;</td>
+          <td class="paramname"><em>pimpleImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2798,6 +2829,31 @@ template&lt;typename TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a3f8edfcd47f578d5e6cd48b76550caf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f8edfcd47f578d5e6cd48b76550caf8">&#9670;&nbsp;</a></span>ProxyForInPlaceOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Image::ProxyForInPlaceOperation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Advanced method not commonly needed. </p>
+<p>This method is designed to support implementations "in-place" object behavior for methods which operate on r-value references. The returned image is a new image which has a low level pointer to this object's image buffer, without the SimpleITK or ITK reference counting. This is implemented by setting the new ITK <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a>'s buffer to the same as this objects without ownership.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This method bypasses the SimpleITK reference counting, and the reference needs to be manually maintained in the scope. The resulting object is designed only to be a temporary.</dd></dl>
+<p>In the following example this method is used instead of an <code>std::move</code> call when the filter's first argument takes an r-value reference. The <code>img</code> object will container the results of the filter execution, and the <code>img</code> image buffer will be preserved in case of exceptions, and the meta-data will remain in the img object. </p><div class="fragment"><div class="line">filter.Execute( img.ProxyForInPlaceOperation() );</div>
+</div><!-- fragment --><p>The meta-data dictionary is not copied to the returned proxy image. </p>
+
+<p class="reference">Referenced by <a class="el" href="sitkImageOperators_8h_source.html#l00104">itk::simple::operator%=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00106">itk::simple::operator&amp;=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00100">itk::simple::operator*=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00096">itk::simple::operator+=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00098">itk::simple::operator-=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00102">itk::simple::operator/=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00110">itk::simple::operator^=()</a>, and <a class="el" href="sitkImageOperators_8h_source.html#l00108">itk::simple::operator|=()</a>.</p>
+
+</div>
+</div>
 <a id="a04d6c8b3777b454b6da1ee1d3e7ed56f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04d6c8b3777b454b6da1ee1d3e7ed56f">&#9670;&nbsp;</a></span>SetDirection()</h2>
 
@@ -3861,7 +3917,7 @@ template&lt;typename TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00549">549</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00573">573</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -3885,7 +3941,7 @@ template&lt;typename TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00548">548</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00572">572</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -3910,7 +3966,7 @@ template&lt;typename TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00552">552</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00576">576</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
