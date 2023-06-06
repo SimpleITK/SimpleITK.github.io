@@ -170,8 +170,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1663c39bf013511f30a632a6b4290d83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a1663c39bf013511f30a632a6b4290d83">SetMetaData</a> (const std::string &amp;key, const std::string &amp;value)</td></tr>
 <tr class="memdesc:a1663c39bf013511f30a632a6b4290d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an entry in the meta-data dictionary.  <a href="classitk_1_1simple_1_1Image.html#a1663c39bf013511f30a632a6b4290d83">More...</a><br /></td></tr>
 <tr class="separator:a1663c39bf013511f30a632a6b4290d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6648c0273680255f7d75e5608fe78f74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a6648c0273680255f7d75e5608fe78f74">ToScalarImage</a> (bool inPlace=true)</td></tr>
+<tr class="memdesc:a6648c0273680255f7d75e5608fe78f74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a image of vector pixel type to a scalar image with N+1 dimensions.  <a href="classitk_1_1simple_1_1Image.html#a6648c0273680255f7d75e5608fe78f74">More...</a><br /></td></tr>
+<tr class="separator:a6648c0273680255f7d75e5608fe78f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47c9fa1902dae8f984bda1bdeafa4a3c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a47c9fa1902dae8f984bda1bdeafa4a3c">ToString</a> () const</td></tr>
 <tr class="separator:a47c9fa1902dae8f984bda1bdeafa4a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ee03fbbfe962cd2b5b39ef9fc4df44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ad6ee03fbbfe962cd2b5b39ef9fc4df44">ToVectorImage</a> (bool inPlace=true)</td></tr>
+<tr class="memdesc:ad6ee03fbbfe962cd2b5b39ef9fc4df44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the first dimension to the components for image with vector pixel type.  <a href="classitk_1_1simple_1_1Image.html#ad6ee03fbbfe962cd2b5b39ef9fc4df44">More...</a><br /></td></tr>
+<tr class="separator:ad6ee03fbbfe962cd2b5b39ef9fc4df44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639da24d8df6d41989447d2ec95cb51d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a639da24d8df6d41989447d2ec95cb51d">TransformContinuousIndexToPhysicalPoint</a> (const std::vector&lt; double &gt; &amp;index) const</td></tr>
 <tr class="separator:a639da24d8df6d41989447d2ec95cb51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87c1a1ecaa5bd379d3132c7e95619aaa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a87c1a1ecaa5bd379d3132c7e95619aaa">TransformIndexToPhysicalPoint</a> (const std::vector&lt; int64_t &gt; &amp;index) const</td></tr>
@@ -443,6 +449,23 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aded505c0bcdf9245136b1996fa4073b5"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; <a class="el" href="structitk_1_1simple_1_1IsLabel.html">IsLabel</a>&lt; TImageType &gt;::Value &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aded505c0bcdf9245136b1996fa4073b5">AllocateInternal</a> (const std::vector&lt; unsigned int &gt; &amp;size, unsigned int numberOfComponents)</td></tr>
 <tr class="memdesc:aded505c0bcdf9245136b1996fa4073b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatched methods for allocating images.  <a href="classitk_1_1simple_1_1Image.html#aded505c0bcdf9245136b1996fa4073b5">More...</a><br /></td></tr>
 <tr class="separator:aded505c0bcdf9245136b1996fa4073b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a8f8138aa8ad00e13ecf2d867aa81dc8f"><td class="memTemplParams" colspan="2">template&lt;class TImageType &gt; </td></tr>
+<tr class="memitem:a8f8138aa8ad00e13ecf2d867aa81dc8f"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structitk_1_1simple_1_1IsVector.html">IsVector</a>&lt; TImageType &gt;::Value, <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a8f8138aa8ad00e13ecf2d867aa81dc8f">ToVectorInternal</a> (bool inPlace)</td></tr>
+<tr class="memdesc:a8f8138aa8ad00e13ecf2d867aa81dc8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal methods for converting images between vectors and scalars.  <a href="classitk_1_1simple_1_1Image.html#a8f8138aa8ad00e13ecf2d867aa81dc8f">More...</a><br /></td></tr>
+<tr class="separator:a8f8138aa8ad00e13ecf2d867aa81dc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4458337a488201528a6753fc53cd284d"><td class="memTemplParams" colspan="2">template&lt;class TImageType &gt; </td></tr>
+<tr class="memitem:a4458337a488201528a6753fc53cd284d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structitk_1_1simple_1_1IsBasic.html">IsBasic</a>&lt; TImageType &gt;::Value, <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a4458337a488201528a6753fc53cd284d">ToVectorInternal</a> (bool inPlace)</td></tr>
+<tr class="memdesc:a4458337a488201528a6753fc53cd284d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal methods for converting images between vectors and scalars.  <a href="classitk_1_1simple_1_1Image.html#a4458337a488201528a6753fc53cd284d">More...</a><br /></td></tr>
+<tr class="separator:a4458337a488201528a6753fc53cd284d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e772bf23fa06261a64b4f2da8a25b9"><td class="memTemplParams" colspan="2">template&lt;class TImageType &gt; </td></tr>
+<tr class="memitem:a82e772bf23fa06261a64b4f2da8a25b9"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structitk_1_1simple_1_1IsVector.html">IsVector</a>&lt; TImageType &gt;::Value, <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a82e772bf23fa06261a64b4f2da8a25b9">ToScalarInternal</a> (bool inPlace)</td></tr>
+<tr class="memdesc:a82e772bf23fa06261a64b4f2da8a25b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal methods for converting images between vectors and scalars.  <a href="classitk_1_1simple_1_1Image.html#a82e772bf23fa06261a64b4f2da8a25b9">More...</a><br /></td></tr>
+<tr class="separator:a82e772bf23fa06261a64b4f2da8a25b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7b07c8172bcab6765296021ec62a95"><td class="memTemplParams" colspan="2">template&lt;class TImageType &gt; </td></tr>
+<tr class="memitem:adf7b07c8172bcab6765296021ec62a95"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structitk_1_1simple_1_1IsBasic.html">IsBasic</a>&lt; TImageType &gt;::Value, <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#adf7b07c8172bcab6765296021ec62a95">ToScalarInternal</a> (bool inPlace)</td></tr>
+<tr class="memdesc:adf7b07c8172bcab6765296021ec62a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal methods for converting images between vectors and scalars.  <a href="classitk_1_1simple_1_1Image.html#adf7b07c8172bcab6765296021ec62a95">More...</a><br /></td></tr>
+<tr class="separator:adf7b07c8172bcab6765296021ec62a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -465,6 +488,10 @@ Friends</h2></td></tr>
 <tr class="separator:aaf84f462b2cb8fd9088d79765360285a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9abddb4e526202df2e9408f7437d250"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aa9abddb4e526202df2e9408f7437d250">DispatchedInternalInitialiationAddressor</a></td></tr>
 <tr class="separator:aa9abddb4e526202df2e9408f7437d250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9de5bb1d9d0940a24c82985d120d403e"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a9de5bb1d9d0940a24c82985d120d403e">ToScalarAddressor</a></td></tr>
+<tr class="separator:a9de5bb1d9d0940a24c82985d120d403e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3f2c20fd85558f113d50dd7e8c385a"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a5a3f2c20fd85558f113d50dd7e8c385a">ToVectorAddressor</a></td></tr>
+<tr class="separator:a5a3f2c20fd85558f113d50dd7e8c385a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> class for SimpleITK. </p>
@@ -3803,6 +3830,96 @@ template&lt;typename TImageType &gt; </div>
 
 </div>
 </div>
+<a id="a6648c0273680255f7d75e5608fe78f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6648c0273680255f7d75e5608fe78f74">&#9670;&nbsp;</a></span>ToScalarImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Image::ToScalarImage </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inPlace</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a image of vector pixel type to a scalar image with N+1 dimensions. </p>
+<p>This method will convert a vector image to a scalar image with the size of the first dimension equal to the number of components. If the image is already a scalar image then the image is returned.</p>
+<p>For the additional dimension the origin is set to zero, the spacing to one, and the new components of the direction cosine to the identity matrix.</p>
+<p>An exception is thrown if the image is has SITK_MAX_DIMENSION dimensions or if the pixel type is a label or complex pixel type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inPlace</td><td>If true then the image is made unique and converted in place updating this image, otherwise a copy of the image is made and returned.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html#ad6ee03fbbfe962cd2b5b39ef9fc4df44" title="Convert the first dimension to the components for image with vector pixel type.">ToVectorImage</a> </dd></dl>
+
+</div>
+</div>
+<a id="a82e772bf23fa06261a64b4f2da8a25b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e772bf23fa06261a64b4f2da8a25b9">&#9670;&nbsp;</a></span>ToScalarInternal() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TImageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="structitk_1_1simple_1_1IsVector.html">IsVector</a>&lt;TImageType&gt;::Value, <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&gt; itk::simple::Image::ToScalarInternal </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inPlace</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal methods for converting images between vectors and scalars. </p>
+
+</div>
+</div>
+<a id="adf7b07c8172bcab6765296021ec62a95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf7b07c8172bcab6765296021ec62a95">&#9670;&nbsp;</a></span>ToScalarInternal() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TImageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="structitk_1_1simple_1_1IsBasic.html">IsBasic</a>&lt;TImageType&gt;::Value, <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&gt; itk::simple::Image::ToScalarInternal </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inPlace</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal methods for converting images between vectors and scalars. </p>
+
+</div>
+</div>
 <a id="a47c9fa1902dae8f984bda1bdeafa4a3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47c9fa1902dae8f984bda1bdeafa4a3c">&#9670;&nbsp;</a></span>ToString()</h2>
 
@@ -3817,6 +3934,96 @@ template&lt;typename TImageType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6ee03fbbfe962cd2b5b39ef9fc4df44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6ee03fbbfe962cd2b5b39ef9fc4df44">&#9670;&nbsp;</a></span>ToVectorImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::Image::ToVectorImage </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inPlace</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert the first dimension to the components for image with vector pixel type. </p>
+<p>This method will convert a scalar image to a vector image with the number of components equal to the size of the first dimension. If the image is already a vector image then the image is returned.</p>
+<p>The components of the direction cosine matrix for the first dimension must be the identity matrix, or else an exception is thrown.</p>
+<p>An exception is thrown if the image is 2D or if the pixel type is a label or complex pixel type.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inPlace</td><td>If true then the image is made unique and converted in place updating this image, otherwise a copy of the image is made and returned.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html#a6648c0273680255f7d75e5608fe78f74" title="Convert a image of vector pixel type to a scalar image with N+1 dimensions.">ToScalarImage</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8f8138aa8ad00e13ecf2d867aa81dc8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8138aa8ad00e13ecf2d867aa81dc8f">&#9670;&nbsp;</a></span>ToVectorInternal() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TImageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="structitk_1_1simple_1_1IsVector.html">IsVector</a>&lt;TImageType&gt;::Value, <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&gt; itk::simple::Image::ToVectorInternal </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inPlace</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal methods for converting images between vectors and scalars. </p>
+
+</div>
+</div>
+<a id="a4458337a488201528a6753fc53cd284d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4458337a488201528a6753fc53cd284d">&#9670;&nbsp;</a></span>ToVectorInternal() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TImageType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt;<a class="el" href="structitk_1_1simple_1_1IsBasic.html">IsBasic</a>&lt;TImageType&gt;::Value, <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&gt; itk::simple::Image::ToVectorInternal </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>inPlace</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Internal methods for converting images between vectors and scalars. </p>
 
 </div>
 </div>
@@ -3917,7 +4124,7 @@ template&lt;typename TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00573">573</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00632">632</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -3941,7 +4148,55 @@ template&lt;typename TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00572">572</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00631">631</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a9de5bb1d9d0940a24c82985d120d403e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9de5bb1d9d0940a24c82985d120d403e">&#9670;&nbsp;</a></span>ToScalarAddressor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct ToScalarAddressor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00634">634</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+
+</div>
+</div>
+<a id="a5a3f2c20fd85558f113d50dd7e8c385a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a3f2c20fd85558f113d50dd7e8c385a">&#9670;&nbsp;</a></span>ToVectorAddressor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct ToVectorAddressor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00633">633</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -3966,7 +4221,7 @@ template&lt;typename TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00576">576</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00637">637</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>

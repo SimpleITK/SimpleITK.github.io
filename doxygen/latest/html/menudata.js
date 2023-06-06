@@ -201,7 +201,8 @@ var menudata={children:[
 {text:"Related Functions",url:"functions_rela.html",children:[
 {text:"a",url:"functions_rela.html#index_a"},
 {text:"d",url:"functions_rela_d.html#index_d"},
-{text:"i",url:"functions_rela_i.html#index_i"}]}]}]},
+{text:"i",url:"functions_rela_i.html#index_i"},
+{text:"t",url:"functions_rela_t.html#index_t"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[
