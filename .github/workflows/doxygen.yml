@@ -1,0 +1,47 @@
+name: Doxygen Update from SimpleITK/SimpleITK latest
+
+on:
+  push: { branches: [ gh-actions ] }
+  schedule:
+    # Every day at 9:11 AM UTC or 5:11 AM EST
+    - cron: '11 9 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: master
+      - name: Download Doxygen from SimpleITK lastest release
+        run: |
+          gh release download latest -R SimpleITK/SimpleITK -p SimpleITKDoxygen\*.tar.gz
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update GitHub Pages
+        run: |
+          [ ! -z "${doxygen_path}" ] || exit -1
+          git rm -rf ${doxygen_path}
+          mkdir -p ${doxygen_path}
+          gzip -dc SimpleITKDoxygen-*.tar.gz | tar -zxvf - -C ${doxygen_path}
+
+          git config --global user.email "simpleitk_github_io@itk.org"
+          git config --global user.name "GitHub Actions bot for SimpleITK.github.io"
+
+          if ( git diff --quiet ${doxygen_path} ); then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git add ${doxygen_path}
+          git commit -m "Update Doxygen to ${TAG}"
+
+          git push origin ${TARGET_BRANCH}
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_BRANCH: 'master'
+          doxygen_path: "doxygen/latest"
