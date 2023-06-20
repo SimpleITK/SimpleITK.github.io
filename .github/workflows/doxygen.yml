@@ -26,7 +26,8 @@ jobs:
           [ ! -z "${doxygen_path}" ] || exit -1
           git rm -rf ${doxygen_path}
           mkdir -p ${doxygen_path}
-          tar -zxvf - -C ${doxygen_path}
+          tar -zxvf SimpleITKDoxygen-*.tar.gz -C ${doxygen_path}
+
 
           git config --global user.email "simpleitk_github_io@itk.org"
           git config --global user.name "GitHub Actions bot for SimpleITK.github.io"
