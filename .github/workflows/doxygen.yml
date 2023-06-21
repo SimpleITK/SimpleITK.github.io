@@ -8,7 +8,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  doxygen_update:
+
+    env:
+      doxygen_path: "doxygen/latest"
 
     runs-on: ubuntu-latest
 
@@ -21,23 +24,24 @@ jobs:
           gh release download latest -R SimpleITK/SimpleITK -p SimpleITKDoxygen\*.tar.gz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Update GitHub Pages
+      - name: Update latest doxygen
         run: |
           [ ! -z "${doxygen_path}" ] || exit -1
           git rm -rf ${doxygen_path}
           mkdir -p ${doxygen_path}
           tar -zxvf SimpleITKDoxygen-*.tar.gz -C ${doxygen_path}
 
+      - name: Commit Pages update
 
           git config --global user.email "simpleitk_github_io@itk.org"
           git config --global user.name "GitHub Actions bot for SimpleITK.github.io"
 
-          if ( git diff --quiet ${doxygen_path} ); then
+          git add ${doxygen_path}
+          if ( git diff --cached --quiet ${doxygen_path} ); then
             echo "No changes to commit"
             exit 0
           fi
 
-          git add ${doxygen_path}
           git commit -m "Update Doxygen to ${TAG}"
 
           git push origin ${TARGET_BRANCH}
@@ -45,4 +49,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TARGET_BRANCH: 'master'
-          doxygen_path: "doxygen/latest"
