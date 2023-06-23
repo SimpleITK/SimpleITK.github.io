@@ -13,9 +13,6 @@ jobs:
     env:
       doxygen_path: "doxygen/latest"
 
-    env:
-      doxygen_path: "doxygen/latest"
-
     runs-on: ubuntu-latest
 
     steps:
