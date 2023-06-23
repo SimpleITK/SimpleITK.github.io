@@ -5706,6 +5706,8 @@ Functions</h2></td></tr>
 <p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html" title="Casts input pixels to output pixel type and clamps the output pixel values to a specified range.">ClampImageFilter</a> in order to support a procedural API</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ClampImageFilter.html" title="Casts input pixels to output pixel type and clamps the output pixel values to a specified range.">itk::simple::ClampImageFilter</a> for the object oriented interface </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00107">itk::simple::UnsharpMaskImageFilter::SetClamp()</a>.</p>
+
 </div>
 </div>
 <a id="a7ffa6346ed26b7d215ea858b4912f21f"></a>
@@ -26934,8 +26936,8 @@ template&lt;typename TType , typename TVectorOfITKVector &gt; </div>
 
 </div>
 </div>
-<a id="a2ec3fa7f93fabe763df741d45219eb6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ec3fa7f93fabe763df741d45219eb6b">&#9670;&nbsp;</a></span>UnsharpMask()</h2>
+<a id="a8ff616ef135d4f1e8fd0af23d1fe685c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ff616ef135d4f1e8fd0af23d1fe685c">&#9670;&nbsp;</a></span>UnsharpMask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -26962,7 +26964,13 @@ template&lt;typename TType , typename TVectorOfITKVector &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>threshold</em> = <code>0.0</code>&#160;</td>
+          <td class="paramname"><em>threshold</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>clamp</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
