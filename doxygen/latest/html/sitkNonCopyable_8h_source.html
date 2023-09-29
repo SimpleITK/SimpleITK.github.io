@@ -94,30 +94,27 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sitkCommon_8h.html">sitkCommon.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceitk.html">itk</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceitk_1_1simple.html">itk::simple</a></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>simple</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1NonCopyable.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a> &amp;operator=( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a> &amp; ) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a>( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a> &amp; ) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classitk_1_1simple_1_1NonCopyable.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a> <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a> &amp;operator=( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a> &amp; ) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a>( <span class="keyword">const</span> <a class="code" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a> &amp; ) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// end namespace itk</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// end namespace simple</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// end namespace itk</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif //  sitkNonCopyable_h</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif //  sitkNonCopyable_h</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="asitkCommon_8h_html"><div class="ttname"><a href="sitkCommon_8h.html">sitkCommon.h</a></div></div>
 <div class="ttc" id="asitkCommon_8h_html_ab09867679406ccae193848f08fdc3444"><div class="ttname"><a href="sitkCommon_8h.html#ab09867679406ccae193848f08fdc3444">SITKCommon_EXPORT</a></div><div class="ttdeci">#define SITKCommon_EXPORT</div><div class="ttdef"><b>Definition:</b> <a href="sitkCommon_8h_source.html#l00041">sitkCommon.h:41</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1NonCopyable_html"><div class="ttname"><a href="classitk_1_1simple_1_1NonCopyable.html">itk::simple::NonCopyable</a></div><div class="ttdoc">An inheritable class to disable copying of a class.</div><div class="ttdef"><b>Definition:</b> <a href="sitkNonCopyable_8h_source.html#l00051">sitkNonCopyable.h:51</a></div></div>
-<div class="ttc" id="anamespaceitk_html"><div class="ttname"><a href="namespaceitk.html">itk</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1NonCopyable_html"><div class="ttname"><a href="classitk_1_1simple_1_1NonCopyable.html">itk::simple::NonCopyable</a></div><div class="ttdoc">An inheritable class to disable copying of a class.</div><div class="ttdef"><b>Definition:</b> <a href="sitkNonCopyable_8h_source.html#l00049">sitkNonCopyable.h:49</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00028">sitkAdditionalProcedures.h:28</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
