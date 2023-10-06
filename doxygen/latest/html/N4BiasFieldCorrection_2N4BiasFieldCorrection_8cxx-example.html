@@ -120,8 +120,7 @@ $(function() {
 <div class="line">    maskImage = <a class="code" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa">sitk::Shrink</a>( maskImage, shrink );</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a name="_a7"></a><a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html">sitk::N4BiasFieldCorrectionImageFilter</a> *corrector</div>
-<div class="line">    = <span class="keyword">new</span> <a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html">sitk::N4BiasFieldCorrectionImageFilter</a>();</div>
+<div class="line">  <a name="_a7"></a><a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html">sitk::N4BiasFieldCorrectionImageFilter</a> corrector;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numFittingLevels = 4;</div>
 <div class="line"> </div>
@@ -132,12 +131,12 @@ $(function() {
 <div class="line">  <span class="keywordflow">if</span> ( argc &gt; 5 ) {</div>
 <div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> it = atoi( argv[5] );</div>
 <div class="line">    std::vector&lt;unsigned int&gt; iterations( numFittingLevels, it );</div>
-<div class="line">    corrector-&gt;<a name="a8"></a><a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html#a8be571cfff61079e8cda1ea82a32fb68">SetMaximumNumberOfIterations</a>( iterations );</div>
+<div class="line">    corrector.<a name="a8"></a><a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html#a8be571cfff61079e8cda1ea82a32fb68">SetMaximumNumberOfIterations</a>( iterations );</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> corrected_image = corrector-&gt;<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html#a1af488134cbd47ecf66ff4272df9b189">Execute</a>( image, maskImage );</div>
+<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> corrected_image = corrector.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html#a1af488134cbd47ecf66ff4272df9b189">Execute</a>( image, maskImage );</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> log_bias_field = corrector-&gt;<a name="a10"></a><a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html#a405000fe1143b35777c2e07de78149fb">GetLogBiasFieldAsImage</a>( inputImage );</div>
+<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> log_bias_field = corrector.<a name="a10"></a><a class="code" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html#a405000fe1143b35777c2e07de78149fb">GetLogBiasFieldAsImage</a>( inputImage );</div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> corrected_image_full_resolution = <a name="a11"></a><a class="code" href="namespaceitk_1_1simple.html#ad7d7b5ae7dffba67348d2e608c654e6d">sitk::Divide</a>( inputImage, <a name="a12"></a><a class="code" href="namespaceitk_1_1simple.html#a89142196d367fa4958be64aee1ca75a6">sitk::Exp</a>( log_bias_field ) );</div>
 <div class="line"> </div>
