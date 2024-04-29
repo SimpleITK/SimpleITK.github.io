@@ -98,14 +98,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ad03be68c2f1c1512b2ce673739d280b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkCreateKernel_8h.html#ad03be68c2f1c1512b2ce673739d280b1">sitkKernelPolygonCreateMacro</a>(n)&#160;&#160;&#160;case sitkPolygon##n: return ITKKernelType::Polygon( radius, n )</td></tr>
+<tr class="memitem:ad03be68c2f1c1512b2ce673739d280b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkCreateKernel_8h.html#ad03be68c2f1c1512b2ce673739d280b1">sitkKernelPolygonCreateMacro</a>(n)</td></tr>
 <tr class="separator:ad03be68c2f1c1512b2ce673739d280b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3d6b7618d396e43d22771f98aa372618"><td class="memTemplParams" colspan="2">template&lt;unsigned int VImageDimension&gt; </td></tr>
-<tr class="memitem:a3d6b7618d396e43d22771f98aa372618"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FlatStructuringElement.html">itk::FlatStructuringElement</a>&lt; VImageDimension &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a3d6b7618d396e43d22771f98aa372618">itk::simple::CreateKernel</a> (KernelEnum kernelType, const std::vector&lt; uint32_t &gt; &amp;size)</td></tr>
-<tr class="separator:a3d6b7618d396e43d22771f98aa372618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7d9a72f3a1f6262005436690646cbb"><td class="memTemplParams" colspan="2">template&lt;unsigned int VImageDimension&gt; </td></tr>
+<tr class="memitem:a7f7d9a72f3a1f6262005436690646cbb"><td class="memTemplItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FlatStructuringElement.html">itk::FlatStructuringElement</a>&lt; VImageDimension &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceitk_1_1simple.html#a7f7d9a72f3a1f6262005436690646cbb">itk::simple::CreateKernel</a> (KernelEnum kernelType, const std::vector&lt; uint32_t &gt; &amp;size)</td></tr>
+<tr class="separator:a7f7d9a72f3a1f6262005436690646cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ad03be68c2f1c1512b2ce673739d280b1"></a>
@@ -119,11 +119,13 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">n</td><td>)</td>
-          <td>&#160;&#160;&#160;case sitkPolygon##n: return ITKKernelType::Polygon( radius, n )</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Value:</b><div class="fragment"><div class="line">  <span class="keywordflow">case</span> sitkPolygon##n:                  \</div>
+<div class="line">    return ITKKernelType::Polygon(radius, n)</div>
+</div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="sitkCreateKernel_8h_source.html#l00028">28</a> of file <a class="el" href="sitkCreateKernel_8h_source.html">sitkCreateKernel.h</a>.</p>
 
 </div>

@@ -116,22 +116,21 @@ $(function() {
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    writer.SetFileName(args[3])</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    writer.Execute(blur_image)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    return_dict = {<span class="stringliteral">&quot;input_image&quot;</span>: input_image,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                   <span class="stringliteral">&quot;blur_image&quot;</span>: blur_image}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> return_dict</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    return_dict = {<span class="stringliteral">&quot;input_image&quot;</span>: input_image, <span class="stringliteral">&quot;blur_image&quot;</span>: blur_image}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> return_dict</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"># Display the results</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    in_image, out_image = main(sys.argv)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(out_image, <span class="stringliteral">&quot;Simple Gaussian&quot;</span>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"># Display the results</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    in_image, out_image = main(sys.argv)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(out_image, <span class="stringliteral">&quot;Simple Gaussian&quot;</span>)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html">itk::simple::SmoothingRecursiveGaussianImageFilter</a></div><div class="ttdoc">Computes the smoothing of an image by convolution with the Gaussian kernels implemented as IIR filter...</div><div class="ttdef"><b>Definition:</b> <a href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00043">sitkSmoothingRecursiveGaussianImageFilter.h:43</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00060">sitkImageFileReader.h:60</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00074">sitkImageFileReader.h:74</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CastImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CastImageFilter.html">itk::simple::CastImageFilter</a></div><div class="ttdoc">A hybrid cast image filter to convert images to other types of images.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCastImageFilter_8h_source.html#l00039">sitkCastImageFilter.h:39</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html">itk::simple::ImageFileWriter</a></div><div class="ttdoc">Write out a SimpleITK image to the specified file location.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileWriter_8h_source.html#l00048">sitkImageFileWriter.h:48</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html">itk::simple::ImageFileWriter</a></div><div class="ttdoc">Write out a SimpleITK image to the specified file location.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileWriter_8h_source.html#l00051">sitkImageFileWriter.h:51</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

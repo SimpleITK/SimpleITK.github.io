@@ -100,129 +100,126 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    print(f<span class="stringliteral">&quot;\tMetric Value: {method.GetMetricValue():10.5f}&quot;</span>)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    print(f<span class="stringliteral">&quot;\tLearningRate: {method.GetOptimizerLearningRate():10.5f}&quot;</span>)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> method.GetOptimizerConvergenceValue() != sys.float_info.max:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        print(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="stringliteral">&quot;\tConvergence Value: &quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            + f<span class="stringliteral">&quot;{method.GetOptimizerConvergenceValue():.5e}&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        )</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">def </span>command_multiresolution_iteration(method):</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    print(f<span class="stringliteral">&quot;\tStop Condition: {method.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    print(<span class="stringliteral">&quot;============= Resolution Change =============&quot;</span>)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &lt; 4:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    print(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="stringliteral">&quot;Usage:&quot;</span>,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        sys.argv[0],</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="stringliteral">&quot;&lt;fixedImageFilter&gt; &lt;movingImageFile&gt;&quot;</span>,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="stringliteral">&quot;&lt;outputTransformFile&gt;&quot;</span>,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    )</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    sys.exit(1)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;fixed = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[1], sitk.sitkFloat32)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;moving = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[2], sitk.sitkFloat32)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;initialTx = <a class="code" href="namespaceitk_1_1simple.html#aaf9e4fbf1f3315fc240973a58a9d5cf5">sitk.CenteredTransformInitializer</a>(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    fixed, moving, <a class="code" href="classitk_1_1simple_1_1AffineTransform.html">sitk.AffineTransform</a>(fixed.GetDimension())</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;R = <a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html">sitk.ImageRegistrationMethod</a>()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        print(<span class="stringliteral">&quot;\tConvergence Value: &quot;</span> + f<span class="stringliteral">&quot;{method.GetOptimizerConvergenceValue():.5e}&quot;</span>)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">def </span>command_multiresolution_iteration(method):</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    print(f<span class="stringliteral">&quot;\tStop Condition: {method.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    print(<span class="stringliteral">&quot;============= Resolution Change =============&quot;</span>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordflow">if</span> len(sys.argv) &lt; 4:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    print(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="stringliteral">&quot;Usage:&quot;</span>,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        sys.argv[0],</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="stringliteral">&quot;&lt;fixedImageFilter&gt; &lt;movingImageFile&gt;&quot;</span>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="stringliteral">&quot;&lt;outputTransformFile&gt;&quot;</span>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    )</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    sys.exit(1)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;fixed = <a class="code" href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">sitk.ReadImage</a>(sys.argv[1], sitk.sitkFloat32)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;moving = <a class="code" href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">sitk.ReadImage</a>(sys.argv[2], sitk.sitkFloat32)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;initialTx = <a class="code" href="namespaceitk_1_1simple.html#aaf9e4fbf1f3315fc240973a58a9d5cf5">sitk.CenteredTransformInitializer</a>(</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    fixed, moving, <a class="code" href="classitk_1_1simple_1_1AffineTransform.html">sitk.AffineTransform</a>(fixed.GetDimension())</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;R = <a class="code" href="classitk_1_1simple_1_1ImageRegistrationMethod.html">sitk.ImageRegistrationMethod</a>()</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;R.SetShrinkFactorsPerLevel([3, 2, 1])</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;R.SetSmoothingSigmasPerLevel([2, 1, 1])</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;R.SetShrinkFactorsPerLevel([3, 2, 1])</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;R.SetSmoothingSigmasPerLevel([2, 1, 1])</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;R.SetMetricAsJointHistogramMutualInformation(20)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;R.MetricUseFixedImageGradientFilterOff()</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;R.SetMetricAsJointHistogramMutualInformation(20)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;R.MetricUseFixedImageGradientFilterOff()</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;R.SetOptimizerAsGradientDescent(</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    learningRate=1.0,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    numberOfIterations=100,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    estimateLearningRate=R.EachIteration,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;)</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;R.SetOptimizerScalesFromPhysicalShift()</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;R.SetInitialTransform(initialTx)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;R.SetInterpolator(sitk.sitkLinear)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;R.AddCommand(sitk.sitkIterationEvent, <span class="keyword">lambda</span>: command_iteration(R))</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;R.AddCommand(</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    sitk.sitkMultiResolutionIterationEvent,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">lambda</span>: command_multiresolution_iteration(R),</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;outTx1 = R.Execute(fixed, moving)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;print(outTx1)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;print(f<span class="stringliteral">&quot;Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;print(f<span class="stringliteral">&quot; Iteration: {R.GetOptimizerIteration()}&quot;</span>)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;print(f<span class="stringliteral">&quot; Metric value: {R.GetMetricValue()}&quot;</span>)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;displacementField = <a class="code" href="classitk_1_1simple_1_1Image.html">sitk.Image</a>(fixed.GetSize(), sitk.sitkVectorFloat64)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;displacementField.CopyInformation(fixed)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;displacementTx = <a class="code" href="classitk_1_1simple_1_1DisplacementFieldTransform.html">sitk.DisplacementFieldTransform</a>(displacementField)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;del displacementField</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;displacementTx.SetSmoothingGaussianOnUpdate(</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    varianceForUpdateField=0.0, varianceForTotalField=1.5</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;R.SetOptimizerAsGradientDescent(</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    learningRate=1.0,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    numberOfIterations=100,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    estimateLearningRate=R.EachIteration,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;R.SetOptimizerScalesFromPhysicalShift()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;R.SetInitialTransform(initialTx)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;R.SetInterpolator(sitk.sitkLinear)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;R.AddCommand(sitk.sitkIterationEvent, <span class="keyword">lambda</span>: command_iteration(R))</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;R.AddCommand(</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    sitk.sitkMultiResolutionIterationEvent,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">lambda</span>: command_multiresolution_iteration(R),</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;outTx1 = R.Execute(fixed, moving)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;print(outTx1)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;print(f<span class="stringliteral">&quot;Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;print(f<span class="stringliteral">&quot; Iteration: {R.GetOptimizerIteration()}&quot;</span>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;print(f<span class="stringliteral">&quot; Metric value: {R.GetMetricValue()}&quot;</span>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;displacementField = <a class="code" href="classitk_1_1simple_1_1Image.html">sitk.Image</a>(fixed.GetSize(), sitk.sitkVectorFloat64)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;displacementField.CopyInformation(fixed)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;displacementTx = <a class="code" href="classitk_1_1simple_1_1DisplacementFieldTransform.html">sitk.DisplacementFieldTransform</a>(displacementField)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;del displacementField</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;displacementTx.SetSmoothingGaussianOnUpdate(</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    varianceForUpdateField=0.0, varianceForTotalField=1.5</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;R.SetMovingInitialTransform(outTx1)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;R.SetInitialTransform(displacementTx, inPlace=<span class="keyword">True</span>)</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;R.SetMovingInitialTransform(outTx1)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;R.SetInitialTransform(displacementTx, inPlace=<span class="keyword">True</span>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;R.SetMetricAsANTSNeighborhoodCorrelation(4)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;R.MetricUseFixedImageGradientFilterOff()</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;R.SetMetricAsANTSNeighborhoodCorrelation(4)</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;R.MetricUseFixedImageGradientFilterOff()</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;R.SetShrinkFactorsPerLevel([3, 2, 1])</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;R.SetSmoothingSigmasPerLevel([2, 1, 1])</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;R.SetShrinkFactorsPerLevel([3, 2, 1])</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;R.SetSmoothingSigmasPerLevel([2, 1, 1])</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;R.SetOptimizerScalesFromPhysicalShift()</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;R.SetOptimizerAsGradientDescent(</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    learningRate=1,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    numberOfIterations=300,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    estimateLearningRate=R.EachIteration,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;R.Execute(fixed, moving)</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;print(displacementTx)</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;print(f<span class="stringliteral">&quot;Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;print(f<span class="stringliteral">&quot; Iteration: {R.GetOptimizerIteration()}&quot;</span>)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;print(f<span class="stringliteral">&quot; Metric value: {R.GetMetricValue()}&quot;</span>)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;R.SetOptimizerScalesFromPhysicalShift()</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;R.SetOptimizerAsGradientDescent(</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    learningRate=1,</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    numberOfIterations=300,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    estimateLearningRate=R.EachIteration,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;R.Execute(fixed, moving)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;print(<span class="stringliteral">&quot;-------&quot;</span>)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;print(displacementTx)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;print(f<span class="stringliteral">&quot;Optimizer stop condition: {R.GetOptimizerStopConditionDescription()}&quot;</span>)</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;print(f<span class="stringliteral">&quot; Iteration: {R.GetOptimizerIteration()}&quot;</span>)</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;print(f<span class="stringliteral">&quot; Metric value: {R.GetMetricValue()}&quot;</span>)</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;compositeTx = <a class="code" href="classitk_1_1simple_1_1CompositeTransform.html">sitk.CompositeTransform</a>([outTx1, displacementTx])</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#af2a634ba9346fcf9c601ff1c676e5ac8">sitk.WriteTransform</a>(compositeTx, sys.argv[3])</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;compositeTx = <a class="code" href="classitk_1_1simple_1_1CompositeTransform.html">sitk.CompositeTransform</a>([outTx1, displacementTx])</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">sitk.WriteTransform</a>(compositeTx, sys.argv[3])</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(displacementTx.GetDisplacementField(), <span class="stringliteral">&quot;Displacement Field&quot;</span>)</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(displacementTx.GetDisplacementField(), <span class="stringliteral">&quot;Displacement Field&quot;</span>)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    resampler = <a class="code" href="classitk_1_1simple_1_1ResampleImageFilter.html">sitk.ResampleImageFilter</a>()</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    resampler.SetReferenceImage(fixed)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    resampler.SetInterpolator(sitk.sitkLinear)</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    resampler.SetDefaultPixelValue(100)</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    resampler.SetTransform(compositeTx)</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    out = resampler.Execute(moving)</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    simg1 = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">sitk.RescaleIntensity</a>(fixed), sitk.sitkUInt8)</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    simg2 = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">sitk.RescaleIntensity</a>(out), sitk.sitkUInt8)</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    cimg = <a class="code" href="namespaceitk_1_1simple.html#a598a7e0680ee92d0f8f50c51ef1c15b1">sitk.Compose</a>(simg1, simg2, simg1 // 2.0 + simg2 // 2.0)</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(cimg, <span class="stringliteral">&quot;ImageRegistration1 Composition&quot;</span>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    resampler = <a class="code" href="classitk_1_1simple_1_1ResampleImageFilter.html">sitk.ResampleImageFilter</a>()</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    resampler.SetReferenceImage(fixed)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    resampler.SetInterpolator(sitk.sitkLinear)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    resampler.SetDefaultPixelValue(100)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    resampler.SetTransform(compositeTx)</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    out = resampler.Execute(moving)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    simg1 = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">sitk.RescaleIntensity</a>(fixed), sitk.sitkUInt8)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    simg2 = <a class="code" href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">sitk.Cast</a>(<a class="code" href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">sitk.RescaleIntensity</a>(out), sitk.sitkUInt8)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    cimg = <a class="code" href="namespaceitk_1_1simple.html#a598a7e0680ee92d0f8f50c51ef1c15b1">sitk.Compose</a>(simg1, simg2, simg1 // 2.0 + simg2 // 2.0)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(cimg, <span class="stringliteral">&quot;ImageRegistration1 Composition&quot;</span>)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00076">sitkImage.h:76</a></div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_aaa096d3d36b98fb95bf5eb12e24821f3"><div class="ttname"><a href="namespaceitk_1_1simple.html#aaa096d3d36b98fb95bf5eb12e24821f3">itk::simple::WriteTransform</a></div><div class="ttdeci">SITKCommon_EXPORT void WriteTransform(const Transform &amp;transform, const std::string &amp;filename)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1DisplacementFieldTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1DisplacementFieldTransform.html">itk::simple::DisplacementFieldTransform</a></div><div class="ttdoc">A dense deformable transform over a bounded spatial domain for 2D or 3D coordinates space.</div><div class="ttdef"><b>Definition:</b> <a href="sitkDisplacementFieldTransform_8h_source.html#l00034">sitkDisplacementFieldTransform.h:34</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a8d78adbcb368cae2d47c09df908d5398"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8d78adbcb368cae2d47c09df908d5398">itk::simple::RescaleIntensity</a></div><div class="ttdeci">Image RescaleIntensity(const Image &amp;image1, double outputMinimum=0, double outputMaximum=255)</div><div class="ttdoc">Applies a linear transformation to the intensity levels of the input Image .</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_af8c9d7cc96a299a05890e9c3db911885"><div class="ttname"><a href="namespaceitk_1_1simple.html#af8c9d7cc96a299a05890e9c3db911885">itk::simple::Cast</a></div><div class="ttdeci">Image Cast(const Image &amp;image, PixelIDValueEnum pixelID)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ResampleImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ResampleImageFilter.html">itk::simple::ResampleImageFilter</a></div><div class="ttdoc">Resample an image via a coordinate transform.</div><div class="ttdef"><b>Definition:</b> <a href="sitkResampleImageFilter_8h_source.html#l00052">sitkResampleImageFilter.h:52</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_af2a634ba9346fcf9c601ff1c676e5ac8"><div class="ttname"><a href="namespaceitk_1_1simple.html#af2a634ba9346fcf9c601ff1c676e5ac8">itk::simple::WriteTransform</a></div><div class="ttdeci">SITKCommon_EXPORT void WriteTransform(const Transform &amp;transform, const PathType &amp;filename)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CompositeTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1CompositeTransform.html">itk::simple::CompositeTransform</a></div><div class="ttdoc">This class contains a stack of transforms and concatenates them by composition.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCompositeTransform_8h_source.html#l00058">sitkCompositeTransform.h:58</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a598a7e0680ee92d0f8f50c51ef1c15b1"><div class="ttname"><a href="namespaceitk_1_1simple.html#a598a7e0680ee92d0f8f50c51ef1c15b1">itk::simple::Compose</a></div><div class="ttdeci">Image Compose(const Image &amp;image1, const Image &amp;image2, const Image &amp;image3, const Image &amp;image4, const Image &amp;image5)</div><div class="ttdoc">ComposeImageFilter combine several scalar images into a multicomponent image.</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html">itk::simple::ImageRegistrationMethod</a></div><div class="ttdoc">An interface method to the modular ITKv4 registration framework.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00089">sitkImageRegistrationMethod.h:89</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageRegistrationMethod_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageRegistrationMethod.html">itk::simple::ImageRegistrationMethod</a></div><div class="ttdoc">An interface method to the modular ITKv4 registration framework.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageRegistrationMethod_8h_source.html#l00088">sitkImageRegistrationMethod.h:88</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1AffineTransform_html"><div class="ttname"><a href="classitk_1_1simple_1_1AffineTransform.html">itk::simple::AffineTransform</a></div><div class="ttdoc">An affine transformation about a fixed center with translation for a 2D or 3D coordinate.</div><div class="ttdef"><b>Definition:</b> <a href="sitkAffineTransform_8h_source.html#l00033">sitkAffineTransform.h:33</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a5e2d8cb994e585790c0bb1a1dd816adc"><div class="ttname"><a href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; PathType &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_aaf9e4fbf1f3315fc240973a58a9d5cf5"><div class="ttname"><a href="namespaceitk_1_1simple.html#aaf9e4fbf1f3315fc240973a58a9d5cf5">itk::simple::CenteredTransformInitializer</a></div><div class="ttdeci">Transform CenteredTransformInitializer(const Image &amp;fixedImage, const Image &amp;movingImage, const Transform &amp;transform, CenteredTransformInitializerFilter::OperationModeType operationMode=itk::simple::CenteredTransformInitializerFilter::MOMENTS)</div><div class="ttdoc">CenteredTransformInitializer is a helper class intended to initialize the center of rotation and the ...</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

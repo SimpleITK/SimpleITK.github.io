@@ -153,22 +153,20 @@ $(function() {
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    print(<span class="stringliteral">&quot;Usage: SubDimensionProcess inputImage outputImage&quot;</span>, file=sys.stderr)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    sys.exit(1)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;inputImage = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(sys.argv[1])</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;inputImage = <a class="code" href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">sitk.ReadImage</a>(sys.argv[1])</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"># Decorate the function</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;adaptive_histogram_equalization_2d = slice_by_slice_decorator(</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    sitk.AdaptiveHistogramEqualization</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;adaptive_histogram_equalization_2d(</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    inputImage, radius=[20] * 2, alpha=0.3, beta=0.3</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">sitk.WriteImage</a>(inputImage, sys.argv[2])</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;adaptive_histogram_equalization_2d(inputImage, radius=[20] * 2, alpha=0.3, beta=0.3)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#ac513c4e2b3c63cc1231c07bcf561ec19">sitk.WriteImage</a>(inputImage, sys.argv[2])</div>
 </div><!-- fragment --> </div><!-- contents -->
-<div class="ttc" id="anamespaceitk_1_1simple_html_a8537644286a43ff1566326c2109057ab"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div><div class="ttdoc">WriteImage is a procedural interface to the ImageSeriesWriter. class which is convenient for many ima...</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html">itk::simple::ExtractImageFilter</a></div><div class="ttdoc">Decrease the image size by cropping the image to the selected region bounds.</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00071">sitkExtractImageFilter.h:71</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html">itk::simple::ExtractImageFilter</a></div><div class="ttdoc">Decrease the image size by cropping the image to the selected region bounds.</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00072">sitkExtractImageFilter.h:72</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_ac513c4e2b3c63cc1231c07bcf561ec19"><div class="ttname"><a href="namespaceitk_1_1simple.html#ac513c4e2b3c63cc1231c07bcf561ec19">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; PathType &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div><div class="ttdoc">WriteImage is a procedural interface to the ImageSeriesWriter. class which is convenient for many ima...</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a5e2d8cb994e585790c0bb1a1dd816adc"><div class="ttname"><a href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; PathType &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

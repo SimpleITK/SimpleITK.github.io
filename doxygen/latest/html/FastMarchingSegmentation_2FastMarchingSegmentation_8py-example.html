@@ -99,7 +99,7 @@ $(function() {
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="stringliteral">&quot;FastMarchingSegmentation&quot;</span>,</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="stringliteral">&quot;&lt;inputImage&gt; &lt;outputImage&gt; &lt;seedX&gt; &lt;seedY&gt; &lt;Sigma&gt;&quot;</span>,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="stringliteral">&quot;&lt;SigmoidAlpha&gt; &lt;SigmoidBeta&gt; &lt;TimeThreshold&gt;&quot;</span>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="stringliteral">&quot;&lt;StoppingTime&gt;&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="stringliteral">&quot;&lt;StoppingTime&gt;&quot;</span>,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        )</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        sys.exit(1)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
@@ -114,7 +114,7 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    timeThreshold = float(args[8])</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    stoppingTime = float(args[9])</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    inputImage = <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(inputFilename, sitk.sitkFloat32)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    inputImage = <a class="code" href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">sitk.ReadImage</a>(inputFilename, sitk.sitkFloat32)</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    smoothing = <a class="code" href="classitk_1_1simple_1_1CurvatureAnisotropicDiffusionImageFilter.html">sitk.CurvatureAnisotropicDiffusionImageFilter</a>()</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    smoothing.SetTimeStep(0.125)</div>
@@ -152,26 +152,27 @@ $(function() {
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    result = thresholder.Execute(fastMarchingOutput)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">sitk.WriteImage</a>(result, outputFilename)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="namespaceitk_1_1simple.html#ac513c4e2b3c63cc1231c07bcf561ec19">sitk.WriteImage</a>(result, outputFilename)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    image_dict = {<span class="stringliteral">&quot;InputImage&quot;</span>: inputImage,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                  <span class="stringliteral">&quot;SpeedImage&quot;</span>: sigmoidOutput,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                  <span class="stringliteral">&quot;TimeCrossingMap&quot;</span>: fastMarchingOutput,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                  <span class="stringliteral">&quot;Segmentation&quot;</span>: result,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                  }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> image_dict</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    image_dict = {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="stringliteral">&quot;InputImage&quot;</span>: inputImage,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="stringliteral">&quot;SpeedImage&quot;</span>: sigmoidOutput,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="stringliteral">&quot;TimeCrossingMap&quot;</span>: fastMarchingOutput,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="stringliteral">&quot;Segmentation&quot;</span>: result,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> image_dict</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    return_dict = main(sys.argv)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordflow">if</span> __name__ == <span class="stringliteral">&quot;__main__&quot;</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    return_dict = main(sys.argv)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1SigmoidImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1SigmoidImageFilter.html">itk::simple::SigmoidImageFilter</a></div><div class="ttdoc">Computes the sigmoid function pixel-wise.</div><div class="ttdef"><b>Definition:</b> <a href="sitkSigmoidImageFilter_8h_source.html#l00045">sitkSigmoidImageFilter.h:45</a></div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a8537644286a43ff1566326c2109057ab"><div class="ttname"><a href="namespaceitk_1_1simple.html#a8537644286a43ff1566326c2109057ab">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; std::string &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div><div class="ttdoc">WriteImage is a procedural interface to the ImageSeriesWriter. class which is convenient for many ima...</div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1FastMarchingImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1FastMarchingImageFilter.html">itk::simple::FastMarchingImageFilter</a></div><div class="ttdoc">Solve an Eikonal equation using Fast Marching.</div><div class="ttdef"><b>Definition:</b> <a href="sitkFastMarchingImageFilter_8h_source.html#l00068">sitkFastMarchingImageFilter.h:68</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1GradientMagnitudeRecursiveGaussianImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1GradientMagnitudeRecursiveGaussianImageFilter.html">itk::simple::GradientMagnitudeRecursiveGaussianImageFilter</a></div><div class="ttdoc">Computes the Magnitude of the Gradient of an image by convolution with the first derivative of a Gaus...</div><div class="ttdef"><b>Definition:</b> <a href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00041">sitkGradientMagnitudeRecursiveGaussianImageFilter.h:41</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1BinaryThresholdImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html">itk::simple::BinaryThresholdImageFilter</a></div><div class="ttdoc">Binarize an input image by thresholding.</div><div class="ttdef"><b>Definition:</b> <a href="sitkBinaryThresholdImageFilter_8h_source.html#l00049">sitkBinaryThresholdImageFilter.h:49</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CurvatureAnisotropicDiffusionImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CurvatureAnisotropicDiffusionImageFilter.html">itk::simple::CurvatureAnisotropicDiffusionImageFilter</a></div><div class="ttdoc">This filter performs anisotropic diffusion on a scalar itk::Image using the modified curvature diffus...</div><div class="ttdef"><b>Definition:</b> <a href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00059">sitkCurvatureAnisotropicDiffusionImageFilter.h:59</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_ac513c4e2b3c63cc1231c07bcf561ec19"><div class="ttname"><a href="namespaceitk_1_1simple.html#ac513c4e2b3c63cc1231c07bcf561ec19">itk::simple::WriteImage</a></div><div class="ttdeci">SITKIO_EXPORT void WriteImage(const Image &amp;image, const std::vector&lt; PathType &gt; &amp;fileNames, bool useCompression=false, int compressionLevel=-1)</div><div class="ttdoc">WriteImage is a procedural interface to the ImageSeriesWriter. class which is convenient for many ima...</div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a5e2d8cb994e585790c0bb1a1dd816adc"><div class="ttname"><a href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; PathType &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

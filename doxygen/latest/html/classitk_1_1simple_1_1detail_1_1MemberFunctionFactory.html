@@ -169,7 +169,7 @@ class itk::simple::detail::MemberFunctionFactory&lt; TMemberFunctionPointer &gt;
 </div><!-- fragment --><p>The RegisterMemberFunctions instantiate the templated member functions and registers the member function pointer, so that it be used for dispatch later. Later they can be retrieve with the GetMemberFunction methods, which return a function object with the same arguments as the templated member function pointer.</p>
 <p>An instance of a <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions.">MemberFunctionFactory</a> is bound to a specific instance of an object, so that the returned function object does not need to have the calling object specified. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00050">50</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00051">51</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a659b0b1809fcadc0608727f8e6dec6c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a659b0b1809fcadc0608727f8e6dec6c8">&#9670;&nbsp;</a></span>FunctionObjectType</h2>
@@ -185,7 +185,7 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00061">61</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00060">60</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 </div>
 </div>
@@ -203,7 +203,7 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00059">59</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00058">58</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 </div>
 </div>
@@ -221,7 +221,7 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00060">60</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00059">59</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 </div>
 </div>
@@ -239,7 +239,7 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00057">57</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00056">56</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00056">56</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00055">55</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +443,7 @@ template&lt;typename TPixelIDTypeList , unsigned int VImageDimension, typename T
 <div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2 &gt; ();</div>
 </div><!-- fragment --><p>A range can also be used: </p><div class="fragment"><div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2, 3 &gt; ();</div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00139">itk::simple::detail::MemberFunctionFactory&lt; MemberFunctionType &gt;::RegisterMemberFunctions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00138">itk::simple::detail::MemberFunctionFactory&lt; MemberFunctionType &gt;::RegisterMemberFunctions()</a>.</p>
 
 </div>
 </div>
@@ -614,7 +614,7 @@ template&lt;typename TPixelIDTypeList , unsigned int VImageDimension, unsigned i
 <div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2 &gt; ();</div>
 </div><!-- fragment --><p>A range can also be used: </p><div class="fragment"><div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2, 3 &gt; ();</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00139">139</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00138">138</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 </div>
 </div>
@@ -671,7 +671,7 @@ template&lt;typename TPixelIDTypeList , unsigned int VImageDimension, unsigned i
 <div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2 &gt; ();</div>
 </div><!-- fragment --><p>A range can also be used: </p><div class="fragment"><div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2, 3 &gt; ();</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00149">149</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00148">148</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 </div>
 </div>
@@ -706,9 +706,9 @@ template&lt;typename TMemberFunctionPointer &gt; </div>
 <li><a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactory_html_ac5a38df978fb2d44e9c04db52b288ec9"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac5a38df978fb2d44e9c04db52b288ec9">itk::simple::detail::MemberFunctionFactory::Self</a></div><div class="ttdeci">MemberFunctionFactory Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactory_8h_source.html#l00057">sitkMemberFunctionFactory.h:57</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactory_html_ac1966e20ec8d3f92671bf20f6395ff02"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac1966e20ec8d3f92671bf20f6395ff02">itk::simple::detail::MemberFunctionFactory::MemberFunctionType</a></div><div class="ttdeci">TMemberFunctionPointer MemberFunctionType</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactory_8h_source.html#l00059">sitkMemberFunctionFactory.h:59</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactory_html_a14acd04604cd5b9312c9087b6958091a"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#a14acd04604cd5b9312c9087b6958091a">itk::simple::detail::MemberFunctionFactory::ObjectType</a></div><div class="ttdeci">typename ::detail::FunctionTraits&lt; MemberFunctionType &gt;::ClassType ObjectType</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactory_8h_source.html#l00060">sitkMemberFunctionFactory.h:60</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactory_html_ac5a38df978fb2d44e9c04db52b288ec9"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac5a38df978fb2d44e9c04db52b288ec9">itk::simple::detail::MemberFunctionFactory::Self</a></div><div class="ttdeci">MemberFunctionFactory Self</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactory_8h_source.html#l00056">sitkMemberFunctionFactory.h:56</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactory_html_ac1966e20ec8d3f92671bf20f6395ff02"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac1966e20ec8d3f92671bf20f6395ff02">itk::simple::detail::MemberFunctionFactory::MemberFunctionType</a></div><div class="ttdeci">TMemberFunctionPointer MemberFunctionType</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactory_8h_source.html#l00058">sitkMemberFunctionFactory.h:58</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1detail_1_1MemberFunctionFactory_html_a14acd04604cd5b9312c9087b6958091a"><div class="ttname"><a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#a14acd04604cd5b9312c9087b6958091a">itk::simple::detail::MemberFunctionFactory::ObjectType</a></div><div class="ttdeci">typename ::detail::FunctionTraits&lt; MemberFunctionType &gt;::ClassType ObjectType</div><div class="ttdef"><b>Definition:</b> <a href="sitkMemberFunctionFactory_8h_source.html#l00059">sitkMemberFunctionFactory.h:59</a></div></div>
 <div class="ttc" id="aclassAddImageFilter_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classAddImageFilter.html">AddImageFilter</a></div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_ae47036246a9a1312411ce2fc6d296d1d"><div class="ttname"><a href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">itk::simple::PixelIDValueType</a></div><div class="ttdeci">int PixelIDValueType</div><div class="ttdef"><b>Definition:</b> <a href="sitkPixelIDValues_8h_source.html#l00030">sitkPixelIDValues.h:30</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->

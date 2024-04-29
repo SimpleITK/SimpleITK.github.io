@@ -125,15 +125,15 @@ Macros</h2></td></tr>
 <tr class="separator:a932e85e78e260d1a438b042c6ff8eda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3456496e5451ed4d8687d75b1aca8af4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#a3456496e5451ed4d8687d75b1aca8af4">sitkDebugMacro</a>(x)</td></tr>
 <tr class="separator:a3456496e5451ed4d8687d75b1aca8af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bc5fc58a97257aaf24f31c899e96d30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">sitkDoMacroJoin</a>(X,  Y)&#160;&#160;&#160;<a class="el" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">sitkDoMacroJoin2</a>(X,Y)</td></tr>
+<tr class="memitem:a9bc5fc58a97257aaf24f31c899e96d30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">sitkDoMacroJoin</a>(X,  Y)&#160;&#160;&#160;<a class="el" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">sitkDoMacroJoin2</a>(X, Y)</td></tr>
 <tr class="separator:a9bc5fc58a97257aaf24f31c899e96d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1a757ecfbf753db042794d71c3f59fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">sitkDoMacroJoin2</a>(X,  Y)&#160;&#160;&#160;X##Y</td></tr>
 <tr class="separator:ab1a757ecfbf753db042794d71c3f59fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc17b496b9aad95a46e678d306aed675"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#abc17b496b9aad95a46e678d306aed675">sitkExceptionMacro</a>(x)</td></tr>
 <tr class="separator:abc17b496b9aad95a46e678d306aed675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a638c3a115877a0999103203144a26ebc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#a638c3a115877a0999103203144a26ebc">sitkMacroJoin</a>(X,  Y)&#160;&#160;&#160;<a class="el" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">sitkDoMacroJoin</a>( X, Y )</td></tr>
+<tr class="memitem:a638c3a115877a0999103203144a26ebc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#a638c3a115877a0999103203144a26ebc">sitkMacroJoin</a>(X,  Y)&#160;&#160;&#160;<a class="el" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">sitkDoMacroJoin</a>(X, Y)</td></tr>
 <tr class="separator:a638c3a115877a0999103203144a26ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe0e6b7e6ae16addcb67df3a23df098f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#abe0e6b7e6ae16addcb67df3a23df098f">sitkPragma</a>(x)&#160;&#160;&#160;_Pragma (#x)</td></tr>
+<tr class="memitem:abe0e6b7e6ae16addcb67df3a23df098f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#abe0e6b7e6ae16addcb67df3a23df098f">sitkPragma</a>(x)&#160;&#160;&#160;_Pragma(#x)</td></tr>
 <tr class="separator:abe0e6b7e6ae16addcb67df3a23df098f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e07d5afa25a5a8898829554e72b5a5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sitkMacro_8h.html#a5e07d5afa25a5a8898829554e72b5a5d">sitkWarningMacro</a>(x)</td></tr>
 <tr class="separator:a5e07d5afa25a5a8898829554e72b5a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,17 +276,16 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {\</div>
-<div class="line">  if (this-&gt;GetDebug())                                                 \</div>
-<div class="line">      {                                                                 \</div>
-<div class="line">      std::ostringstream msg;                                           \</div>
-<div class="line">      msg &lt;&lt; <span class="stringliteral">&quot;Debug: &quot;</span> &lt;&lt; this-&gt;GetName() &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span> x    \</div>
-<div class="line">          &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span>;                                                    \</div>
-<div class="line">      ::itk::OutputWindowDisplayDebugText( msg.str().c_str() );         \</div>
-<div class="line">      }                                                                 \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                             \</div>
+<div class="line">    if (this-&gt;GetDebug())                                                       \</div>
+<div class="line">    {                                                                           \</div>
+<div class="line">      std::ostringstream msg;                                                   \</div>
+<div class="line">      msg &lt;&lt; <span class="stringliteral">&quot;Debug: &quot;</span> &lt;&lt; this-&gt;GetName() &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span> x &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span>; \</div>
+<div class="line">      ::itk::OutputWindowDisplayDebugText(msg.str().c_str());                   \</div>
+<div class="line">    }                                                                           \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sitkMacro_8h_source.html#l00084">84</a> of file <a class="el" href="sitkMacro_8h_source.html">sitkMacro.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMacro_8h_source.html#l00085">85</a> of file <a class="el" href="sitkMacro_8h_source.html">sitkMacro.h</a>.</p>
 
 </div>
 </div>
@@ -311,7 +310,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">sitkDoMacroJoin2</a>(X,Y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="sitkMacro_8h.html#ab1a757ecfbf753db042794d71c3f59fc">sitkDoMacroJoin2</a>(X, Y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -365,13 +364,13 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                     \</div>
-<div class="line">    std::ostringstream message;                                         \</div>
-<div class="line">    message &lt;&lt; <span class="stringliteral">&quot;sitk::ERROR: &quot;</span> x;                                       \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                                                   \</div>
+<div class="line">    std::ostringstream message;                                                       \</div>
+<div class="line">    message &lt;&lt; <span class="stringliteral">&quot;sitk::ERROR: &quot;</span> x;                                                     \</div>
 <div class="line">    throw ::itk::simple::GenericException(__FILE__, __LINE__, message.str().c_str()); \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sitkMacro_8h_source.html#l00069">69</a> of file <a class="el" href="sitkMacro_8h_source.html">sitkMacro.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMacro_8h_source.html#l00070">70</a> of file <a class="el" href="sitkMacro_8h_source.html">sitkMacro.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +395,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">sitkDoMacroJoin</a>( X, Y )</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="sitkMacro_8h.html#a9bc5fc58a97257aaf24f31c899e96d30">sitkDoMacroJoin</a>(X, Y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -416,7 +415,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;_Pragma (#x)</td>
+          <td>&#160;&#160;&#160;_Pragma(#x)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -440,13 +439,13 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  {                                                                                                                    \</div>
-<div class="line">    std::ostringstream msg;                                                                                            \</div>
-<div class="line">    msg &lt;&lt; this-&gt;GetName() &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span> x;                                                                 \</div>
-<div class="line">    itk::OutputWindowDisplayWarningText(msg.str().c_str());                                                            \</div>
+<b>Value:</b><div class="fragment"><div class="line">  {                                                         \</div>
+<div class="line">    std::ostringstream msg;                                 \</div>
+<div class="line">    msg &lt;&lt; this-&gt;GetName() &lt;&lt; <span class="stringliteral">&quot; (&quot;</span> &lt;&lt; <span class="keyword">this</span> &lt;&lt; <span class="stringliteral">&quot;): &quot;</span> x;      \</div>
+<div class="line">    itk::OutputWindowDisplayWarningText(msg.str().c_str()); \</div>
 <div class="line">  }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="sitkMacro_8h_source.html#l00076">76</a> of file <a class="el" href="sitkMacro_8h_source.html">sitkMacro.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMacro_8h_source.html#l00077">77</a> of file <a class="el" href="sitkMacro_8h_source.html">sitkMacro.h</a>.</p>
 
 </div>
 </div>

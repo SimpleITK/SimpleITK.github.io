@@ -108,23 +108,19 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;image_viewer.Execute(grid_image)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"># Change viewer, and display again.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;image_viewer.SetApplication(</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="stringliteral">&quot;/Applications/ITK-SNAP.app/Contents/MacOS/ITK-SNAP&quot;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;image_viewer.Execute(grid_image)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"># Change the viewer command, (use ITK-SNAP&#39;s -z option to open the image in</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"># zoomed mode)</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;image_viewer.SetCommand(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="stringliteral">&quot;/Applications/ITK-SNAP.app/Contents/MacOS/ITK-SNAP -z 2&quot;</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;image_viewer.Execute(grid_image)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;sys.exit(0)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;image_viewer.SetApplication(<span class="stringliteral">&quot;/Applications/ITK-SNAP.app/Contents/MacOS/ITK-SNAP&quot;</span>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;image_viewer.Execute(grid_image)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"># Change the viewer command, (use ITK-SNAP&#39;s -z option to open the image in</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"># zoomed mode)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;image_viewer.SetCommand(<span class="stringliteral">&quot;/Applications/ITK-SNAP.app/Contents/MacOS/ITK-SNAP -z 2&quot;</span>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;image_viewer.Execute(grid_image)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;sys.exit(0)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="anamespaceitk_1_1simple_html_a524b7eb3bcc687146f236d2e3fa60884"><div class="ttname"><a href="namespaceitk_1_1simple.html#a524b7eb3bcc687146f236d2e3fa60884">itk::simple::GridSource</a></div><div class="ttdeci">Image GridSource(PixelIDValueEnum outputPixelType=itk::simple::sitkFloat32, std::vector&lt; unsigned int &gt; size=std::vector&lt; unsigned int &gt;(3, 64), std::vector&lt; double &gt; sigma=std::vector&lt; double &gt;(3, 0.5), std::vector&lt; double &gt; gridSpacing=std::vector&lt; double &gt;(3, 4.0), std::vector&lt; double &gt; gridOffset=std::vector&lt; double &gt;(3, 0.0), double scale=255.0, std::vector&lt; double &gt; origin=std::vector&lt; double &gt;(3, 0.0), std::vector&lt; double &gt; spacing=std::vector&lt; double &gt;(3, 1.0), std::vector&lt; double &gt; direction=std::vector&lt; double &gt;(), std::vector&lt; bool &gt; whichDimensions=std::vector&lt; bool &gt;(3, true))</div><div class="ttdoc">Generate an n-dimensional image of a grid.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageViewer_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageViewer.html">itk::simple::ImageViewer</a></div><div class="ttdoc">Display an image in an external viewer (Fiji by default)</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageViewer_8h_source.html#l00050">sitkImageViewer.h:50</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageViewer_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageViewer.html">itk::simple::ImageViewer</a></div><div class="ttdoc">Display an image in an external viewer (Fiji by default)</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageViewer_8h_source.html#l00051">sitkImageViewer.h:51</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -86,7 +86,7 @@ $(function() {
 <div class="line"><span class="comment"> *</span></div>
 <div class="line"><span class="comment"> *=========================================================================*/</span></div>
 <div class="line"><span class="preprocessor">#if defined(_MSC_VER)</span></div>
-<div class="line"><span class="preprocessor">#pragma warning ( disable : 4786 )</span></div>
+<div class="line"><span class="preprocessor">#  pragma warning(disable : 4786)</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"> </div>
 <div class="line"> </div>
@@ -101,19 +101,20 @@ $(function() {
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span><a class="code" href="namespaceitk_1_1simple.html">sitk</a> = <a class="code" href="namespaceitk_1_1simple.html">itk::simple</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main( <span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> *argv[])</div>
+<div class="line"><span class="keywordtype">int</span></div>
+<div class="line">main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[])</div>
 <div class="line">{</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <span class="comment">// Check command line parameters</span></div>
 <div class="line">  <span class="comment">//</span></div>
-<div class="line">  <span class="keywordflow">if</span>( argc &lt; 7 )</div>
-<div class="line">    {</div>
+<div class="line">  <span class="keywordflow">if</span> (argc &lt; 7)</div>
+<div class="line">  {</div>
 <div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;Missing Parameters &quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot;Usage: &quot;</span> &lt;&lt; argv[0];</div>
 <div class="line">    std::cerr &lt;&lt; <span class="stringliteral">&quot; inputImage outputImage lowerThreshold upperThreshold seedX seedY [seed2X seed2Y ... ]&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
-<div class="line">    }</div>
+<div class="line">  }</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//</span></div>
@@ -121,7 +122,7 @@ $(function() {
 <div class="line">  <span class="comment">//</span></div>
 <div class="line"> </div>
 <div class="line">  <a name="_a0"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html">sitk::ImageFileReader</a> reader;</div>
-<div class="line">  reader.<a name="a1"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">SetFileName</a>( std::string( argv[1] ) );</div>
+<div class="line">  reader.<a name="a1"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ae286d965b6412daf1ac597ae5d4b0028">SetFileName</a>(std::string(argv[1]));</div>
 <div class="line">  <a name="_a2"></a><a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> image = reader.<a name="a3"></a><a class="code" href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">Execute</a>();</div>
 <div class="line"> </div>
 <div class="line"> </div>
@@ -129,30 +130,30 @@ $(function() {
 <div class="line">  <span class="comment">// Blur using CurvatureFlowImageFilter</span></div>
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <a name="_a4"></a><a class="code" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html">sitk::CurvatureFlowImageFilter</a> blurFilter;</div>
-<div class="line">  blurFilter.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#af563173a3483ce40b1e11940d3e82d35">SetNumberOfIterations</a>( 5 );</div>
-<div class="line">  blurFilter.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a8fd35a6d053e8c342f6fdf545ee42d4c">SetTimeStep</a>( 0.125 );</div>
-<div class="line">  image = blurFilter.<a name="a7"></a><a class="code" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a4eaa5843da4be15a3b1502426c56bada">Execute</a>( image );</div>
+<div class="line">  blurFilter.<a name="a5"></a><a class="code" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#af563173a3483ce40b1e11940d3e82d35">SetNumberOfIterations</a>(5);</div>
+<div class="line">  blurFilter.<a name="a6"></a><a class="code" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a8fd35a6d053e8c342f6fdf545ee42d4c">SetTimeStep</a>(0.125);</div>
+<div class="line">  image = blurFilter.<a name="a7"></a><a class="code" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a4eaa5843da4be15a3b1502426c56bada">Execute</a>(image);</div>
 <div class="line"> </div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <span class="comment">// Set up ConnectedThresholdImageFilter for segmentation</span></div>
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <a name="_a8"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html">sitk::ConnectedThresholdImageFilter</a> segmentationFilter;</div>
-<div class="line">  segmentationFilter.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a1f88253eeb10ca9f857562108ada0c74">SetLower</a>( atof( argv[3] ) );</div>
-<div class="line">  segmentationFilter.<a name="a10"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a487db7325f429c382f318b8d4a824718">SetUpper</a>( atof( argv[4] ) );</div>
-<div class="line">  segmentationFilter.<a name="a11"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ac26a2add7b26efb5ae761013482a1096">SetReplaceValue</a>( 255 );</div>
+<div class="line">  segmentationFilter.<a name="a9"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a1f88253eeb10ca9f857562108ada0c74">SetLower</a>(atof(argv[3]));</div>
+<div class="line">  segmentationFilter.<a name="a10"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a487db7325f429c382f318b8d4a824718">SetUpper</a>(atof(argv[4]));</div>
+<div class="line">  segmentationFilter.<a name="a11"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ac26a2add7b26efb5ae761013482a1096">SetReplaceValue</a>(255);</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 5; i+1 &lt; argc; i+=2)</div>
-<div class="line">    {</div>
-<div class="line">    std::vector&lt;unsigned int&gt; seed = { (<span class="keywordtype">unsigned</span> int) atoi(argv[i]), (<span class="keywordtype">unsigned</span> int) atoi(argv[i+1]) };</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 5; i + 1 &lt; argc; i += 2)</div>
+<div class="line">  {</div>
+<div class="line">    std::vector&lt;unsigned int&gt; seed = { (<span class="keywordtype">unsigned</span> int)atoi(argv[i]), (<span class="keywordtype">unsigned</span> int)atoi(argv[i + 1]) };</div>
 <div class="line">    segmentationFilter.<a name="a12"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ad182a2deee51f29390fd11498af654a0">AddSeed</a>(seed);</div>
 <div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Adding a seed at: &quot;</span>;</div>
-<div class="line">    <span class="keywordflow">for</span>( <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; seed.size(); ++j )</div>
-<div class="line">      {</div>
+<div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> j = 0; j &lt; seed.size(); ++j)</div>
+<div class="line">    {</div>
 <div class="line">      std::cout &lt;&lt; seed[j] &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line">      }</div>
-<div class="line">    std::cout &lt;&lt; std::endl;</div>
 <div class="line">    }</div>
+<div class="line">    std::cout &lt;&lt; std::endl;</div>
+<div class="line">  }</div>
 <div class="line"> </div>
 <div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> outImage = segmentationFilter.<a name="a13"></a><a class="code" href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ae0178b61cf3ced1f00f362ef858ee297">Execute</a>(image);</div>
 <div class="line"> </div>
@@ -161,7 +162,7 @@ $(function() {
 <div class="line">  <span class="comment">// Write out the resulting file</span></div>
 <div class="line">  <span class="comment">//</span></div>
 <div class="line">  <a name="_a14"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html">sitk::ImageFileWriter</a> writer;</div>
-<div class="line">  writer.<a name="a15"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#abb96ddbf0ed9c182bb105c6f3f3f08d0">SetFileName</a>( std::string( argv[2] ) );</div>
+<div class="line">  writer.<a name="a15"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#a49b10ba67464551288967757fb445b6a">SetFileName</a>(std::string(argv[2]));</div>
 <div class="line">  writer.<a name="a16"></a><a class="code" href="classitk_1_1simple_1_1ImageFileWriter.html#a7f0091401d89ab256870b93d88cb0a6e">Execute</a>(outImage);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
@@ -170,17 +171,16 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00076">sitkImage.h:76</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CurvatureFlowImageFilter_html_a4eaa5843da4be15a3b1502426c56bada"><div class="ttname"><a href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a4eaa5843da4be15a3b1502426c56bada">itk::simple::CurvatureFlowImageFilter::Execute</a></div><div class="ttdeci">Image Execute(Image &amp;&amp;image1)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_a1f88253eeb10ca9f857562108ada0c74"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a1f88253eeb10ca9f857562108ada0c74">itk::simple::ConnectedThresholdImageFilter::SetLower</a></div><div class="ttdeci">Self &amp; SetLower(double Lower)</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00074">sitkConnectedThresholdImageFilter.h:74</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html_abb96ddbf0ed9c182bb105c6f3f3f08d0"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html#abb96ddbf0ed9c182bb105c6f3f3f08d0">itk::simple::ImageFileWriter::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fileName)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_ae0178b61cf3ced1f00f362ef858ee297"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ae0178b61cf3ced1f00f362ef858ee297">itk::simple::ConnectedThresholdImageFilter::Execute</a></div><div class="ttdeci">Image Execute(const Image &amp;image1)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_ac26a2add7b26efb5ae761013482a1096"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ac26a2add7b26efb5ae761013482a1096">itk::simple::ConnectedThresholdImageFilter::SetReplaceValue</a></div><div class="ttdeci">Self &amp; SetReplaceValue(uint8_t ReplaceValue)</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00094">sitkConnectedThresholdImageFilter.h:94</a></div></div>
 <div class="ttc" id="asitkImageFileWriter_8h_html"><div class="ttname"><a href="sitkImageFileWriter_8h.html">sitkImageFileWriter.h</a></div></div>
 <div class="ttc" id="asitkImage_8h_html"><div class="ttname"><a href="sitkImage_8h.html">sitkImage.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html_a7f0091401d89ab256870b93d88cb0a6e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html#a7f0091401d89ab256870b93d88cb0a6e">itk::simple::ImageFileWriter::Execute</a></div><div class="ttdeci">Self &amp; Execute(const Image &amp;)</div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00060">sitkImageFileReader.h:60</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00074">sitkImageFileReader.h:74</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_ad182a2deee51f29390fd11498af654a0"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#ad182a2deee51f29390fd11498af654a0">itk::simple::ConnectedThresholdImageFilter::AddSeed</a></div><div class="ttdeci">Self &amp; AddSeed(std::vector&lt; unsigned int &gt; point)</div><div class="ttdoc">Add SeedList point.</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00066">sitkConnectedThresholdImageFilter.h:66</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ad5f34a4f287eee8979bbfafa34901072"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ad5f34a4f287eee8979bbfafa34901072">itk::simple::ImageFileReader::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const std::string &amp;fn)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CurvatureFlowImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html">itk::simple::CurvatureFlowImageFilter</a></div><div class="ttdoc">Denoise an image using curvature driven flow.</div><div class="ttdef"><b>Definition:</b> <a href="sitkCurvatureFlowImageFilter_8h_source.html#l00071">sitkCurvatureFlowImageFilter.h:71</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CurvatureFlowImageFilter_html_af563173a3483ce40b1e11940d3e82d35"><div class="ttname"><a href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#af563173a3483ce40b1e11940d3e82d35">itk::simple::CurvatureFlowImageFilter::SetNumberOfIterations</a></div><div class="ttdeci">Self &amp; SetNumberOfIterations(uint32_t NumberOfIterations)</div><div class="ttdef"><b>Definition:</b> <a href="sitkCurvatureFlowImageFilter_8h_source.html#l00098">sitkCurvatureFlowImageFilter.h:98</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ae286d965b6412daf1ac597ae5d4b0028"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ae286d965b6412daf1ac597ae5d4b0028">itk::simple::ImageFileReader::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const PathType &amp;fn)</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CurvatureFlowImageFilter_html_a8fd35a6d053e8c342f6fdf545ee42d4c"><div class="ttname"><a href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a8fd35a6d053e8c342f6fdf545ee42d4c">itk::simple::CurvatureFlowImageFilter::SetTimeStep</a></div><div class="ttdeci">Self &amp; SetTimeStep(double TimeStep)</div><div class="ttdef"><b>Definition:</b> <a href="sitkCurvatureFlowImageFilter_8h_source.html#l00089">sitkCurvatureFlowImageFilter.h:89</a></div></div>
 <div class="ttc" id="asitkImageFileReader_8h_html"><div class="ttname"><a href="sitkImageFileReader_8h.html">sitkImageFileReader.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html">itk::simple::ConnectedThresholdImageFilter</a></div><div class="ttdoc">Label pixels that are connected to a seed and lie within a range of values.</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00041">sitkConnectedThresholdImageFilter.h:41</a></div></div>
@@ -188,8 +188,9 @@ $(function() {
 <div class="ttc" id="asitkConnectedThresholdImageFilter_8h_html"><div class="ttname"><a href="sitkConnectedThresholdImageFilter_8h.html">sitkConnectedThresholdImageFilter.h</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ConnectedThresholdImageFilter_html_a487db7325f429c382f318b8d4a824718"><div class="ttname"><a href="classitk_1_1simple_1_1ConnectedThresholdImageFilter.html#a487db7325f429c382f318b8d4a824718">itk::simple::ConnectedThresholdImageFilter::SetUpper</a></div><div class="ttdeci">Self &amp; SetUpper(double Upper)</div><div class="ttdef"><b>Definition:</b> <a href="sitkConnectedThresholdImageFilter_8h_source.html#l00084">sitkConnectedThresholdImageFilter.h:84</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html_ab8d91d4ca4ee13f704d72205d344837e"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html#ab8d91d4ca4ee13f704d72205d344837e">itk::simple::ImageFileReader::Execute</a></div><div class="ttdeci">Image Execute() override</div><div class="ttdoc">Set/Get The output PixelType of the image.</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html_a49b10ba67464551288967757fb445b6a"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html#a49b10ba67464551288967757fb445b6a">itk::simple::ImageFileWriter::SetFileName</a></div><div class="ttdeci">Self &amp; SetFileName(const PathType &amp;fileName)</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00028">sitkAdditionalProcedures.h:28</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html">itk::simple::ImageFileWriter</a></div><div class="ttdoc">Write out a SimpleITK image to the specified file location.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileWriter_8h_source.html#l00048">sitkImageFileWriter.h:48</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileWriter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileWriter.html">itk::simple::ImageFileWriter</a></div><div class="ttdoc">Write out a SimpleITK image to the specified file location.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileWriter_8h_source.html#l00051">sitkImageFileWriter.h:51</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

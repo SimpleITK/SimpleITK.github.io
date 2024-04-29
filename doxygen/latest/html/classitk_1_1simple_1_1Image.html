@@ -71,6 +71,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -136,8 +137,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad195963d0b257560819b833b9cfe18d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c27e845c3327ae8cf133db1750fd18b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae47036246a9a1312411ce2fc6d296d1d">PixelIDValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a3c27e845c3327ae8cf133db1750fd18b">GetPixelIDValue</a> () const</td></tr>
 <tr class="separator:a3c27e845c3327ae8cf133db1750fd18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade45738b2c906a51f23532aa972f6169"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ade45738b2c906a51f23532aa972f6169">GetSize</a> () const</td></tr>
-<tr class="separator:ade45738b2c906a51f23532aa972f6169"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a28fedb230bf4384109405f7120713"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a18a28fedb230bf4384109405f7120713">GetSize</a> () const</td></tr>
+<tr class="separator:a18a28fedb230bf4384109405f7120713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4705e6e3ad0dcec4a8230462af81c19"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#af4705e6e3ad0dcec4a8230462af81c19">GetSizeOfPixelComponent</a> () const</td></tr>
 <tr class="memdesc:af4705e6e3ad0dcec4a8230462af81c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of bytes per component of a pixel.  <a href="classitk_1_1simple_1_1Image.html#af4705e6e3ad0dcec4a8230462af81c19">More...</a><br /></td></tr>
 <tr class="separator:af4705e6e3ad0dcec4a8230462af81c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +155,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af92e6ec5a7b76f66671d14480906aef0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#af92e6ec5a7b76f66671d14480906aef0">Image</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;img) noexcept</td></tr>
 <tr class="memdesc:af92e6ec5a7b76f66671d14480906aef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor and assignment.  <a href="classitk_1_1simple_1_1Image.html#af92e6ec5a7b76f66671d14480906aef0">More...</a><br /></td></tr>
 <tr class="separator:af92e6ec5a7b76f66671d14480906aef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69467355f435bc8ec5749402679ce0b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a69467355f435bc8ec5749402679ce0b1">IsCongruentImageGeometry</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;otherImage, double coordinateTolerance, double directionTolerance) const</td></tr>
+<tr class="separator:a69467355f435bc8ec5749402679ce0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5422fe56eb946fc813b85d134a36da13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a5422fe56eb946fc813b85d134a36da13">IsSameImageGeometryAs</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;otherImage, double=<a class="el" href="classitk_1_1simple_1_1Image.html#a62caf35a0504c5c761abdf71d4018a89">DefaultImageCoordinateTolerance</a>, double=<a class="el" href="classitk_1_1simple_1_1Image.html#aa0f5123f49cd495f86349f7e06a49c3d">DefaultImageDirectionTolerance</a>) const</td></tr>
+<tr class="separator:a5422fe56eb946fc813b85d134a36da13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec5b1f66e3812a286b3e9f4ac8ed976f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aec5b1f66e3812a286b3e9f4ac8ed976f">IsUnique</a> () const</td></tr>
 <tr class="memdesc:aec5b1f66e3812a286b3e9f4ac8ed976f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if no other SimpleITK <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> object refers to the same internal data structure.  <a href="classitk_1_1simple_1_1Image.html#aec5b1f66e3812a286b3e9f4ac8ed976f">More...</a><br /></td></tr>
 <tr class="separator:aec5b1f66e3812a286b3e9f4ac8ed976f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,14 +183,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6ee03fbbfe962cd2b5b39ef9fc4df44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ad6ee03fbbfe962cd2b5b39ef9fc4df44">ToVectorImage</a> (bool inPlace=true)</td></tr>
 <tr class="memdesc:ad6ee03fbbfe962cd2b5b39ef9fc4df44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the first dimension to the components for image with vector pixel type.  <a href="classitk_1_1simple_1_1Image.html#ad6ee03fbbfe962cd2b5b39ef9fc4df44">More...</a><br /></td></tr>
 <tr class="separator:ad6ee03fbbfe962cd2b5b39ef9fc4df44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a639da24d8df6d41989447d2ec95cb51d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a639da24d8df6d41989447d2ec95cb51d">TransformContinuousIndexToPhysicalPoint</a> (const std::vector&lt; double &gt; &amp;index) const</td></tr>
-<tr class="separator:a639da24d8df6d41989447d2ec95cb51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87c1a1ecaa5bd379d3132c7e95619aaa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a87c1a1ecaa5bd379d3132c7e95619aaa">TransformIndexToPhysicalPoint</a> (const std::vector&lt; int64_t &gt; &amp;index) const</td></tr>
-<tr class="separator:a87c1a1ecaa5bd379d3132c7e95619aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2aa3f19b31f54ec9fc2846a29428adb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#af2aa3f19b31f54ec9fc2846a29428adb">TransformPhysicalPointToContinuousIndex</a> (const std::vector&lt; double &gt; &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#abf959f34e6a412061bbddd15cdd23f47">point</a>) const</td></tr>
-<tr class="separator:af2aa3f19b31f54ec9fc2846a29428adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9474e4ded374c8350418fe5329187704"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a9474e4ded374c8350418fe5329187704">TransformPhysicalPointToIndex</a> (const std::vector&lt; double &gt; &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#abf959f34e6a412061bbddd15cdd23f47">point</a>) const</td></tr>
-<tr class="separator:a9474e4ded374c8350418fe5329187704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff54ba49824cbed012a7db6bfc342ec1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aff54ba49824cbed012a7db6bfc342ec1">TransformContinuousIndexToPhysicalPoint</a> (const std::vector&lt; double &gt; &amp;index) const</td></tr>
+<tr class="separator:aff54ba49824cbed012a7db6bfc342ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab721a1932167c6ab559ff0cfb87c8023"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ab721a1932167c6ab559ff0cfb87c8023">TransformIndexToPhysicalPoint</a> (const std::vector&lt; int64_t &gt; &amp;index) const</td></tr>
+<tr class="separator:ab721a1932167c6ab559ff0cfb87c8023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6eed53ed2cc49c86c672bacffe7775a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#ab6eed53ed2cc49c86c672bacffe7775a">TransformPhysicalPointToContinuousIndex</a> (const std::vector&lt; double &gt; &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#abf959f34e6a412061bbddd15cdd23f47">point</a>) const</td></tr>
+<tr class="separator:ab6eed53ed2cc49c86c672bacffe7775a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d5b1498b2aab62b7d0a926967ffe63"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a61d5b1498b2aab62b7d0a926967ffe63">TransformPhysicalPointToIndex</a> (const std::vector&lt; double &gt; &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#abf959f34e6a412061bbddd15cdd23f47">point</a>) const</td></tr>
+<tr class="separator:a61d5b1498b2aab62b7d0a926967ffe63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adef33af720d7ce65533fbb10b2b53f51"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#adef33af720d7ce65533fbb10b2b53f51">~Image</a> ()</td></tr>
 <tr class="separator:adef33af720d7ce65533fbb10b2b53f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
@@ -213,19 +218,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9856709f944e0ea47ad206c89dd06857"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DataObject.html">itk::DataObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a9856709f944e0ea47ad206c89dd06857">GetITKBase</a> () const</td></tr>
 <tr class="separator:a9856709f944e0ea47ad206c89dd06857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a622920d3325ee831eba2ddad89d7eb3d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a622920d3325ee831eba2ddad89d7eb3d">GetOrigin</a> () const</td></tr>
-<tr class="separator:a622920d3325ee831eba2ddad89d7eb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f7e344c34aec748618c6dd2a77e1276"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a2f7e344c34aec748618c6dd2a77e1276">GetOrigin</a> () const</td></tr>
+<tr class="separator:a2f7e344c34aec748618c6dd2a77e1276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9648b61b714ddd980d3b7b78bf5562ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a9648b61b714ddd980d3b7b78bf5562ed">SetOrigin</a> (const std::vector&lt; double &gt; &amp;origin)</td></tr>
 <tr class="separator:a9648b61b714ddd980d3b7b78bf5562ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a669907e56274c6ca2838be3bf4a5ac9f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a669907e56274c6ca2838be3bf4a5ac9f">GetSpacing</a> () const</td></tr>
-<tr class="separator:a669907e56274c6ca2838be3bf4a5ac9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68b00f103de325e3e4519b4d15d73535"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a68b00f103de325e3e4519b4d15d73535">GetSpacing</a> () const</td></tr>
+<tr class="separator:a68b00f103de325e3e4519b4d15d73535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b285752e1a79e123c055dc6fa95a50a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a1b285752e1a79e123c055dc6fa95a50a">SetSpacing</a> (const std::vector&lt; double &gt; &amp;spacing)</td></tr>
 <tr class="separator:a1b285752e1a79e123c055dc6fa95a50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a7bd35f108a2df5c966285405af409548"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a7bd35f108a2df5c966285405af409548">GetDirection</a> () const</td></tr>
-<tr class="memdesc:a7bd35f108a2df5c966285405af409548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the Direction.  <a href="classitk_1_1simple_1_1Image.html#a7bd35f108a2df5c966285405af409548">More...</a><br /></td></tr>
-<tr class="separator:a7bd35f108a2df5c966285405af409548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dcecb07c8724b13283e97c56e0d6517"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a8dcecb07c8724b13283e97c56e0d6517">GetDirection</a> () const</td></tr>
+<tr class="memdesc:a8dcecb07c8724b13283e97c56e0d6517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the Direction.  <a href="classitk_1_1simple_1_1Image.html#a8dcecb07c8724b13283e97c56e0d6517">More...</a><br /></td></tr>
+<tr class="separator:a8dcecb07c8724b13283e97c56e0d6517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04d6c8b3777b454b6da1ee1d3e7ed56f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a04d6c8b3777b454b6da1ee1d3e7ed56f">SetDirection</a> (const std::vector&lt; double &gt; &amp;direction)</td></tr>
 <tr class="memdesc:a04d6c8b3777b454b6da1ee1d3e7ed56f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set/Get the Direction.  <a href="classitk_1_1simple_1_1Image.html#a04d6c8b3777b454b6da1ee1d3e7ed56f">More...</a><br /></td></tr>
 <tr class="separator:a04d6c8b3777b454b6da1ee1d3e7ed56f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,6 +436,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4b3d91dadbef9a407dd3c56561c660b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to the image buffer.  <a href="classitk_1_1simple_1_1Image.html#a4b3d91dadbef9a407dd3c56561c660b4">More...</a><br /></td></tr>
 <tr class="separator:a4b3d91dadbef9a407dd3c56561c660b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a62caf35a0504c5c761abdf71d4018a89"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a62caf35a0504c5c761abdf71d4018a89">DefaultImageCoordinateTolerance</a> = 1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</td></tr>
+<tr class="separator:a62caf35a0504c5c761abdf71d4018a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f5123f49cd495f86349f7e06a49c3d"><td class="memItemLeft" align="right" valign="top">static constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#aa0f5123f49cd495f86349f7e06a49c3d">DefaultImageDirectionTolerance</a> = 1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</td></tr>
+<tr class="separator:aa0f5123f49cd495f86349f7e06a49c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1cd9b3cdfa9e9159f48cf84ef4461d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Image.html#a1cd9b3cdfa9e9159f48cf84ef4461d55">Allocate</a> (const std::vector&lt; unsigned int &gt; &amp;size, <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> valueEnum, unsigned int numberOfComponents)</td></tr>
@@ -499,7 +511,7 @@ Friends</h2></td></tr>
 <p>A fundamental concept of ITK images is that they occupy physical space where the image is defined by an origin, spacing, and direction cosine matrix. The attributes are taken into consideration when doing most operations on an image. A meta-data dictionary is also associated with the image, which may contain additional fields from reading but these attributes are not propagated by image filters.</p>
 <p>The SimpleITK <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> provides a single facade interface to several ITK image types. Internally, the SimpleITK <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> maintains a pointer to the ITK image class, and performs reference counting and lazy copying. This means that deep copying of an image including it's buffer is delayed until the image is modified. This removes the need to use pointers to SimpleITK <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> class, as copying and returning by value do not unnecessarily duplicate the data.</p>
 <p>/sa <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorImage.html">itk::VectorImage</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LabelMap.html">itk::LabelMap</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageBase.html">itk::ImageBase</a> </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="BufferImportExport_8cxx-example.html#_a5">BufferImportExport.cxx</a>, <a class="el" href="CppCMake_2Source_2sitk_example_8cxx-example.html#_a1">CppCMake/Source/sitk_example.cxx</a>, <a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#_a0">CppInPlace/CppInPlace.cxx</a>, <a class="el" href="DemonsRegistration1_2DemonsRegistration1_8cxx-example.html#_a3">DemonsRegistration1/DemonsRegistration1.cxx</a>, <a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a3">DemonsRegistration2/DemonsRegistration2.cxx</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#_a3">DicomSeriesReader/DicomSeriesReader.cxx</a>, <a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a0">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#_a5">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="HelloWorld_2HelloWorld_8cxx-example.html#_a1">HelloWorld/HelloWorld.cxx</a>, <a class="el" href="ImageIOSelection_2ImageIOSelection_8cxx-example.html#_a5">ImageIOSelection/ImageIOSelection.cxx</a>, <a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#_a3">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#_a3">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#_a3">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#_a4">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a3">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#_a2">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="N4BiasFieldCorrection_2N4BiasFieldCorrection_8cxx-example.html#_a0">N4BiasFieldCorrection/N4BiasFieldCorrection.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a2">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a2">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#_a2">SimpleGaussian/SimpleGaussian.cxx</a>, <a class="el" href="SimpleGaussianFunctional_8cxx-example.html#_a0">SimpleGaussianFunctional.cxx</a>, <a class="el" href="SimpleIO_2SimpleIO_8cxx-example.html#_a3">SimpleIO/SimpleIO.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#_a0">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="BufferImportExport_8cxx-example.html#_a5">BufferImportExport.cxx</a>, <a class="el" href="CppCMake_2Source_2sitk_example_8cxx-example.html#_a0">CppCMake/Source/sitk_example.cxx</a>, <a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#_a0">CppInPlace/CppInPlace.cxx</a>, <a class="el" href="DemonsRegistration1_2DemonsRegistration1_8cxx-example.html#_a3">DemonsRegistration1/DemonsRegistration1.cxx</a>, <a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a3">DemonsRegistration2/DemonsRegistration2.cxx</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#_a3">DicomSeriesReader/DicomSeriesReader.cxx</a>, <a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a0">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#_a5">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="HelloWorld_2HelloWorld_8cxx-example.html#_a0">HelloWorld/HelloWorld.cxx</a>, <a class="el" href="ImageIOSelection_2ImageIOSelection_8cxx-example.html#_a5">ImageIOSelection/ImageIOSelection.cxx</a>, <a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#_a3">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#_a3">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#_a3">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#_a4">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a3">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#_a2">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="N4BiasFieldCorrection_2N4BiasFieldCorrection_8cxx-example.html#_a0">N4BiasFieldCorrection/N4BiasFieldCorrection.cxx</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a2">Segmentation/ConnectedThresholdImageFilter.cxx</a>, <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a2">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>, <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#_a2">SimpleGaussian/SimpleGaussian.cxx</a>, <a class="el" href="SimpleGaussianFunctional_8cxx-example.html#_a0">SimpleGaussianFunctional.cxx</a>, <a class="el" href="SimpleIO_2SimpleIO_8cxx-example.html#_a3">SimpleIO/SimpleIO.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#_a0">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00076">76</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
@@ -771,7 +783,7 @@ template&lt;typename TImageType &gt; </div>
 <p>If simpleITK does not support the image type, a compile-time error or assertion will fail.</p>
 <p>The ITK image must be fully buffered, and must have a zero starting index for the Buffered/Largest regions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00162">162</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00165">165</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -806,9 +818,9 @@ template&lt;typename TImageType &gt; </div>
 <p>If simpleITK does not support the image type, a compile-time error or assertion will fail.</p>
 <p>The ITK image must be fully buffered, and must have a zero starting index for the Buffered/Largest regions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00167">167</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00170">170</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfigure_8h_source.html#l00030">SITK_MAX_DIMENSION</a>, and <a class="el" href="sitkPixelIDValues_8h_source.html#l00092">itk::simple::sitkUnknown</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfigure_8h_source.html#l00030">SITK_MAX_DIMENSION</a>, and <a class="el" href="sitkPixelIDValues_8h_source.html#l00102">itk::simple::sitkUnknown</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1038,7 @@ template&lt;class TImageType &gt; </div>
 <p>Copy common meta-data from an image to this one. </p>
 <p>Copies the Origin, Spacing, and Direction from the source image to this image. The meta-data dictionary is <b>not</b> copied.</p>
 <p>It is required for the source <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a>'s dimension and size to match, this image's attributes, otherwise an exception will be generated. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a32">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a30">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -1650,7 +1662,7 @@ template&lt;typename TImageType &gt; </div>
 <p><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">Vector</a> and Complex pixel types are both accessed via the appropriate component type method.</p>
 <p>The correct method for the current pixel type of the image must be called or else an exception will be generated. For vector pixel types the type of the component of the vector must be called.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html#a3c27e845c3327ae8cf133db1750fd18b">Image::GetPixelIDValue</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="BufferImportExport_8cxx-example.html#a11">BufferImportExport.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="BufferImportExport_8cxx-example.html#a10">BufferImportExport.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -1767,21 +1779,21 @@ template&lt;typename TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Get the number of physical dimensions.</p>
 <p>Only the spatial dimensions are considered here. These are the dimensions the origin, spacing and direction cosine matrix are applicable to. This does not include the pixels' vector index as a dimension. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a10">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a13">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a6">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a7">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a9">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a8">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="N4BiasFieldCorrection_2N4BiasFieldCorrection_8cxx-example.html#a5">N4BiasFieldCorrection/N4BiasFieldCorrection.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a2">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#a9">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#a12">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#a5">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#a6">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a8">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, <a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a8">ITKIntegration/ITKIntegration.cxx</a>, <a class="el" href="N4BiasFieldCorrection_2N4BiasFieldCorrection_8cxx-example.html#a3">N4BiasFieldCorrection/N4BiasFieldCorrection.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a2">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00342">itk::simple::ProcessObject::CastImageToITK()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00391">itk::simple::ProcessObject::CastImageToITK()</a>.</p>
 
 </div>
 </div>
-<a id="a7bd35f108a2df5c966285405af409548"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bd35f108a2df5c966285405af409548">&#9670;&nbsp;</a></span>GetDirection()</h2>
+<a id="a8dcecb07c8724b13283e97c56e0d6517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dcecb07c8724b13283e97c56e0d6517">&#9670;&nbsp;</a></span>GetDirection()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; double &gt; itk::simple::Image::GetDirection </td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::Image::GetDirection </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1830,10 +1842,10 @@ template&lt;typename TImageType &gt; </div>
 <p>The return value should immediately be assigned to as <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">itk::SmartPointer</a>.</p>
 <p>In many cases the value may need to be dynamically casted to the actual image type. The <a class="el" href="classitk_1_1simple_1_1Image.html#a3c27e845c3327ae8cf133db1750fd18b">GetPixelIDValue()</a> method should return an PixelID which identifies the image type which the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DataObject.html">DataObject</a> points to.</p>
 <p>If this object has been moved, then nullptr is returned. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a14">ITKIntegration/ITKIntegration.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ITKIntegration_2ITKIntegration_8cxx-example.html#a13">ITKIntegration/ITKIntegration.cxx</a>.</dd>
 </dl>
 
-<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00342">itk::simple::ProcessObject::CastImageToITK()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00391">itk::simple::ProcessObject::CastImageToITK()</a>.</p>
 
 </div>
 </div>
@@ -1940,14 +1952,14 @@ template&lt;typename TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a622920d3325ee831eba2ddad89d7eb3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a622920d3325ee831eba2ddad89d7eb3d">&#9670;&nbsp;</a></span>GetOrigin()</h2>
+<a id="a2f7e344c34aec748618c6dd2a77e1276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f7e344c34aec748618c6dd2a77e1276">&#9670;&nbsp;</a></span>GetOrigin()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; double &gt; itk::simple::Image::GetOrigin </td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::Image::GetOrigin </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2611,7 +2623,7 @@ template&lt;typename TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Return the pixel type as a human readable string value. </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00342">itk::simple::ProcessObject::CastImageToITK()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkProcessObject_8h_source.html#l00391">itk::simple::ProcessObject::CastImageToITK()</a>.</p>
 
 </div>
 </div>
@@ -2632,14 +2644,14 @@ template&lt;typename TImageType &gt; </div>
 
 </div>
 </div>
-<a id="ade45738b2c906a51f23532aa972f6169"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade45738b2c906a51f23532aa972f6169">&#9670;&nbsp;</a></span>GetSize()</h2>
+<a id="a18a28fedb230bf4384109405f7120713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a28fedb230bf4384109405f7120713">&#9670;&nbsp;</a></span>GetSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; unsigned int &gt; itk::simple::Image::GetSize </td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::Image::GetSize </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2647,7 +2659,7 @@ template&lt;typename TImageType &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Get the number of pixels the <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> is in each dimension as a std::vector. The size of the vector is equal to the number of dimensions for the image. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a5">DicomSeriesReader/DicomSeriesReader.cxx</a>, <a class="el" href="ImageIOSelection_2ImageIOSelection_8cxx-example.html#a7">ImageIOSelection/ImageIOSelection.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a30">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a1">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a5">DicomSeriesReader/DicomSeriesReader.cxx</a>, <a class="el" href="ImageIOSelection_2ImageIOSelection_8cxx-example.html#a7">ImageIOSelection/ImageIOSelection.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#a29">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a1">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -2672,14 +2684,14 @@ template&lt;typename TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a669907e56274c6ca2838be3bf4a5ac9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a669907e56274c6ca2838be3bf4a5ac9f">&#9670;&nbsp;</a></span>GetSpacing()</h2>
+<a id="a68b00f103de325e3e4519b4d15d73535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68b00f103de325e3e4519b4d15d73535">&#9670;&nbsp;</a></span>GetSpacing()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; double &gt; itk::simple::Image::GetSpacing </td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::Image::GetSpacing </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -2770,6 +2782,80 @@ template&lt;typename TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Method called by certain constructors to convert ITK images into SimpleITK ones.</p>
 <p>This is the single method which needs to be explicitly instantiated to separate the internal ITK and Pimple image from the external SimpleITK interface. Template parameters have been chosen carefully to flexibly enable this. </p>
+
+</div>
+</div>
+<a id="a69467355f435bc8ec5749402679ce0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69467355f435bc8ec5749402679ce0b1">&#9670;&nbsp;</a></span>IsCongruentImageGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::Image::IsCongruentImageGeometry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>otherImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>coordinateTolerance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>directionTolerance</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Checks whether the images' pixels at the same index occupy the same physical space.</p>
+<p>Compares the origin, spacing, and direction for equality within provided tolerances. There is no check for matching regions in between the images.</p>
+<p>If The dimensions of the images do not match, false is returned. </p>
+
+</div>
+</div>
+<a id="a5422fe56eb946fc813b85d134a36da13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5422fe56eb946fc813b85d134a36da13">&#9670;&nbsp;</a></span>IsSameImageGeometryAs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::Image::IsSameImageGeometryAs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>otherImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> = <code><a class="el" href="classitk_1_1simple_1_1Image.html#a62caf35a0504c5c761abdf71d4018a89">DefaultImageCoordinateTolerance</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"> = <code><a class="el" href="classitk_1_1simple_1_1Image.html#aa0f5123f49cd495f86349f7e06a49c3d">DefaultImageDirectionTolerance</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Check whether the images have the same grid in physical space.</p>
+<p>Compares largest possible regions for equality, and the origin, spacing, and direction cosines for equality within provided tolerances.</p>
+<p>If the dimensions of the images do not match, false is returned. </p>
 
 </div>
 </div>
@@ -2877,7 +2963,7 @@ template&lt;typename TImageType &gt; </div>
 <p>In the following example this method is used instead of an <code>std::move</code> call when the filter's first argument takes an r-value reference. The <code>img</code> object will container the results of the filter execution, and the <code>img</code> image buffer will be preserved in case of exceptions, and the meta-data will remain in the img object. </p><div class="fragment"><div class="line">filter.Execute( img.ProxyForInPlaceOperation() );</div>
 </div><!-- fragment --><p>The meta-data dictionary is not copied to the returned proxy image. </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageOperators_8h_source.html#l00103">itk::simple::operator%=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00105">itk::simple::operator&amp;=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00099">itk::simple::operator*=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00095">itk::simple::operator+=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00097">itk::simple::operator-=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00101">itk::simple::operator/=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00109">itk::simple::operator^=()</a>, and <a class="el" href="sitkImageOperators_8h_source.html#l00107">itk::simple::operator|=()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageOperators_8h_source.html#l00321">itk::simple::operator%=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00333">itk::simple::operator&amp;=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00297">itk::simple::operator*=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00273">itk::simple::operator+=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00285">itk::simple::operator-=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00309">itk::simple::operator/=()</a>, <a class="el" href="sitkImageOperators_8h_source.html#l00357">itk::simple::operator^=()</a>, and <a class="el" href="sitkImageOperators_8h_source.html#l00345">itk::simple::operator|=()</a>.</p>
 
 </div>
 </div>
@@ -4027,14 +4113,14 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a639da24d8df6d41989447d2ec95cb51d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a639da24d8df6d41989447d2ec95cb51d">&#9670;&nbsp;</a></span>TransformContinuousIndexToPhysicalPoint()</h2>
+<a id="aff54ba49824cbed012a7db6bfc342ec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff54ba49824cbed012a7db6bfc342ec1">&#9670;&nbsp;</a></span>TransformContinuousIndexToPhysicalPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; double &gt; itk::simple::Image::TransformContinuousIndexToPhysicalPoint </td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::Image::TransformContinuousIndexToPhysicalPoint </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -4046,14 +4132,14 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a87c1a1ecaa5bd379d3132c7e95619aaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87c1a1ecaa5bd379d3132c7e95619aaa">&#9670;&nbsp;</a></span>TransformIndexToPhysicalPoint()</h2>
+<a id="ab721a1932167c6ab559ff0cfb87c8023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab721a1932167c6ab559ff0cfb87c8023">&#9670;&nbsp;</a></span>TransformIndexToPhysicalPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; double &gt; itk::simple::Image::TransformIndexToPhysicalPoint </td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::Image::TransformIndexToPhysicalPoint </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; int64_t &gt; &amp;&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
@@ -4065,14 +4151,14 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="af2aa3f19b31f54ec9fc2846a29428adb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2aa3f19b31f54ec9fc2846a29428adb">&#9670;&nbsp;</a></span>TransformPhysicalPointToContinuousIndex()</h2>
+<a id="ab6eed53ed2cc49c86c672bacffe7775a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6eed53ed2cc49c86c672bacffe7775a">&#9670;&nbsp;</a></span>TransformPhysicalPointToContinuousIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; double &gt; itk::simple::Image::TransformPhysicalPointToContinuousIndex </td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::Image::TransformPhysicalPointToContinuousIndex </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
@@ -4084,14 +4170,14 @@ template&lt;class TImageType &gt; </div>
 
 </div>
 </div>
-<a id="a9474e4ded374c8350418fe5329187704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9474e4ded374c8350418fe5329187704">&#9670;&nbsp;</a></span>TransformPhysicalPointToIndex()</h2>
+<a id="a61d5b1498b2aab62b7d0a926967ffe63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d5b1498b2aab62b7d0a926967ffe63">&#9670;&nbsp;</a></span>TransformPhysicalPointToIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; int64_t &gt; itk::simple::Image::TransformPhysicalPointToIndex </td>
+          <td class="memname">std::vector&lt;int64_t&gt; itk::simple::Image::TransformPhysicalPointToIndex </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>point</em></td><td>)</td>
@@ -4124,7 +4210,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00632">632</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00769">769</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -4148,7 +4234,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00631">631</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00768">768</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -4172,7 +4258,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00634">634</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00771">771</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
@@ -4196,11 +4282,59 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00633">633</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00770">770</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a62caf35a0504c5c761abdf71d4018a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62caf35a0504c5c761abdf71d4018a89">&#9670;&nbsp;</a></span>DefaultImageCoordinateTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double itk::simple::Image::DefaultImageCoordinateTolerance = 1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00694">694</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+
+</div>
+</div>
+<a id="aa0f5123f49cd495f86349f7e06a49c3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f5123f49cd495f86349f7e06a49c3d">&#9670;&nbsp;</a></span>DefaultImageDirectionTolerance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr double itk::simple::Image::DefaultImageDirectionTolerance = 1<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#af105436026645171db6a4a3000ee8482">e</a>-6</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00695">695</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+
+</div>
+</div>
 <a id="a58d8e24a3e9421653f5550a3d191ee58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58d8e24a3e9421653f5550a3d191ee58">&#9670;&nbsp;</a></span>m_PimpleImage</h2>
 
@@ -4221,7 +4355,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00637">637</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImage_8h_source.html#l00774">774</a> of file <a class="el" href="sitkImage_8h_source.html">sitkImage.h</a>.</p>
 
 </div>
 </div>

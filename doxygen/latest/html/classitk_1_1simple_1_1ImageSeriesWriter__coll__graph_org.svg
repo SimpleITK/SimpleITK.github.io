@@ -609,15 +609,15 @@
 <g id="node44" class="node">
 <title>Node44</title>
 <g id="a_node44"><a xlink:title=" ">
-<polygon fill="white" stroke="#bfbfbf" points="1742.5,-363 1742.5,-382 1882.5,-382 1882.5,-363 1742.5,-363"/>
-<text text-anchor="middle" x="1812.5" y="-370" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; std::string &gt;</text>
+<polygon fill="white" stroke="#bfbfbf" points="1745.5,-363 1745.5,-382 1879.5,-382 1879.5,-363 1745.5,-363"/>
+<text text-anchor="middle" x="1812.5" y="-370" font-family="Helvetica,sans-Serif" font-size="10.00">std::vector&lt; PathType &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node21&#45;&gt;Node44 -->
 <g id="edge67" class="edge">
 <title>Node21&#45;&gt;Node44</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1507,-352.29C1565.46,-356.17 1672.07,-363.24 1742.35,-367.91"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1506.78,-352.27C1566.03,-356.21 1675.07,-363.44 1745.37,-368.11"/>
 <polygon fill="#9a32cd" stroke="#9a32cd" points="1506.88,-348.77 1496.67,-351.6 1506.41,-355.76 1506.88,-348.77"/>
 <text text-anchor="middle" x="1643.5" y="-369.5" font-family="Helvetica,sans-Serif" font-size="10.00"> elements</text>
 </g>
@@ -757,7 +757,7 @@
 <title>Node34&#45;&gt;Node44</title>
 <path fill="none" stroke="orange" stroke-dasharray="5,2" d="M1522.79,-477.11C1573.33,-468.64 1648.11,-453.38 1710,-429.5 1743,-416.77 1778.31,-394.81 1797.36,-382.18"/>
 <polygon fill="orange" stroke="orange" points="1522,-473.69 1512.7,-478.76 1523.14,-480.6 1522,-473.69"/>
-<text text-anchor="middle" x="1643.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; std::string &gt;</text>
+<text text-anchor="middle" x="1643.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; PathType &gt;</text>
 </g>
 <!-- Node35&#45;&gt;Node27 -->
 <g id="edge51" class="edge">
@@ -911,8 +911,8 @@
 <!-- Node44&#45;&gt;Node1 -->
 <g id="edge66" class="edge">
 <title>Node44&#45;&gt;Node1</title>
-<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1892.86,-369.88C1959.8,-367.89 2058.16,-365.5 2144,-365.5 2144,-365.5 2144,-365.5 3455.5,-365.5 3525.73,-365.5 3590.42,-300.43 3616.88,-269.93"/>
-<polygon fill="#9a32cd" stroke="#9a32cd" points="1892.7,-366.38 1882.81,-370.18 1892.91,-373.38 1892.7,-366.38"/>
+<path fill="none" stroke="#9a32cd" stroke-dasharray="5,2" d="M1889.69,-369.97C1956.67,-367.97 2056.79,-365.5 2144,-365.5 2144,-365.5 2144,-365.5 3455.5,-365.5 3525.73,-365.5 3590.42,-300.43 3616.88,-269.93"/>
+<polygon fill="#9a32cd" stroke="#9a32cd" points="1889.54,-366.47 1879.65,-370.28 1889.75,-373.47 1889.54,-366.47"/>
 <text text-anchor="middle" x="2796.5" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00"> m_FileNames</text>
 </g>
 </g>

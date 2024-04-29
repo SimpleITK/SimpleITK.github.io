@@ -157,18 +157,16 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"># Check that our iterative approach is equivalent to reading the whole images.</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keywordflow">if</span> np.any(</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    sitk.GetArrayViewFromImage(</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        result_img</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        - <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(image1_file_name)</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        + <a class="code" href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">sitk.ReadImage</a>(image2_file_name)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    )</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;):</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    print(<span class="stringliteral">&quot;Subtraction error.&quot;</span>)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    sys.exit(1)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;sys.exit(0)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        result_img - <a class="code" href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">sitk.ReadImage</a>(image1_file_name) + <a class="code" href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">sitk.ReadImage</a>(image2_file_name)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    )</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;):</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    print(<span class="stringliteral">&quot;Subtraction error.&quot;</span>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    sys.exit(1)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;sys.exit(0)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImage_8h_source.html#l00076">sitkImage.h:76</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00060">sitkImageFileReader.h:60</a></div></div>
-<div class="ttc" id="anamespaceitk_1_1simple_html_a62a1be75703e22b14339e6409858ab61"><div class="ttname"><a href="namespaceitk_1_1simple.html#a62a1be75703e22b14339e6409858ab61">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; std::string &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ImageFileReader_html"><div class="ttname"><a href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a></div><div class="ttdoc">Read an image file and return a SimpleITK Image.</div><div class="ttdef"><b>Definition:</b> <a href="sitkImageFileReader_8h_source.html#l00074">sitkImageFileReader.h:74</a></div></div>
+<div class="ttc" id="anamespaceitk_1_1simple_html_a5e2d8cb994e585790c0bb1a1dd816adc"><div class="ttname"><a href="namespaceitk_1_1simple.html#a5e2d8cb994e585790c0bb1a1dd816adc">itk::simple::ReadImage</a></div><div class="ttdeci">SITKIO_EXPORT Image ReadImage(const std::vector&lt; PathType &gt; &amp;fileNames, PixelIDValueEnum outputPixelType=sitkUnknown, const std::string &amp;imageIO=&quot;&quot;)</div><div class="ttdoc">ReadImage is a procedural interface to the ImageSeriesReader class which is convenient for most image...</div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
