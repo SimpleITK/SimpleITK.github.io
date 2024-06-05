@@ -101,7 +101,26 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1NotImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements the NOT logical operator pixel-wise on an image. </p>
+<p>This class is templated over the type of an input image and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
+<p>Since the logical NOT operation operates only on boolean types, the input type must be implicitly convertible to bool, which is only defined in C++ for integer types, the images passed to this filter must comply with the requirement of using integer pixel type.</p>
+<p>The total operation over one pixel will be</p>
+<div class="fragment"><div class="line"><span class="keywordflow">if</span>( !A )</div>
+<div class="line"> </div>
+<div class="line"> {</div>
+<div class="line"> </div>
+<div class="line"> <span class="keywordflow">return</span> this-&gt;m_ForegroundValue;</div>
+<div class="line"> </div>
+<div class="line"> }</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">return</span> this-&gt;m_BackgroundValue;</div>
+</div><!-- fragment --><p>Where "!" is the unary Logical NOT operator in C++. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a63311bca8b602f74f4aed3186ba822ac" title="Implements the NOT logical operator pixel-wise on an image.">itk::simple::Not</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NotImageFilter.html">itk::NotImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae24718899782cacc929a9abf2add7807"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1NotImageFilter.html#ae24718899782cacc929a9abf2add7807">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -294,26 +313,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implements the NOT logical operator pixel-wise on an image. </p>
-<p>This class is templated over the type of an input image and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
-<p>Since the logical NOT operation operates only on boolean types, the input type must be implicitly convertible to bool, which is only defined in C++ for integer types, the images passed to this filter must comply with the requirement of using integer pixel type.</p>
-<p>The total operation over one pixel will be</p>
-<div class="fragment"><div class="line"><span class="keywordflow">if</span>( !A )</div>
-<div class="line"> </div>
-<div class="line"> {</div>
-<div class="line"> </div>
-<div class="line"> <span class="keywordflow">return</span> this-&gt;m_ForegroundValue;</div>
-<div class="line"> </div>
-<div class="line"> }</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordflow">return</span> this-&gt;m_BackgroundValue;</div>
-</div><!-- fragment --><p>Where "!" is the unary Logical NOT operator in C++. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a63311bca8b602f74f4aed3186ba822ac" title="Implements the NOT logical operator pixel-wise on an image.">itk::simple::Not</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NotImageFilter.html">itk::NotImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a90f06529525fe22487106402f9443202"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90f06529525fe22487106402f9443202">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

@@ -101,7 +101,16 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Derived class implementing a specific patch-based denoising algorithm, as detailed below. </p>
+<p>This class is derived from the base class <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PatchBasedDenoisingBaseImageFilter.html">PatchBasedDenoisingBaseImageFilter</a> ; please refer to the documentation of the base class first. This class implements a denoising filter that uses iterative non-local, or semi-local, weighted averaging of image patches for image denoising. The intensity at each pixel 'p' gets updated as a weighted average of intensities of a chosen subset of pixels from the image.</p>
+<p>This class implements the denoising algorithm using a Gaussian kernel function for nonparametric density estimation. The class implements a scheme to automatically estimated the kernel bandwidth parameter (namely, sigma) using leave-one-out cross validation. It implements schemes for random sampling of patches non-locally (from the entire image) as well as semi-locally (from the spatial proximity of the pixel being denoised at the specific point in time). It implements a specific scheme for defining patch weights (mask) as described in Awate and Whitaker 2005 IEEE CVPR and 2006 IEEE TPAMI.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PatchBasedDenoisingBaseImageFilter.html">PatchBasedDenoisingBaseImageFilter</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PatchBasedDenoisingImageFilter.html">itk::PatchBasedDenoisingImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a557b8bea001e946b87c7a3ef86a01018"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PatchBasedDenoisingImageFilter.html#a557b8bea001e946b87c7a3ef86a01018">NoiseModelType</a> { <br />
@@ -387,16 +396,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Derived class implementing a specific patch-based denoising algorithm, as detailed below. </p>
-<p>This class is derived from the base class <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PatchBasedDenoisingBaseImageFilter.html">PatchBasedDenoisingBaseImageFilter</a> ; please refer to the documentation of the base class first. This class implements a denoising filter that uses iterative non-local, or semi-local, weighted averaging of image patches for image denoising. The intensity at each pixel 'p' gets updated as a weighted average of intensities of a chosen subset of pixels from the image.</p>
-<p>This class implements the denoising algorithm using a Gaussian kernel function for nonparametric density estimation. The class implements a scheme to automatically estimated the kernel bandwidth parameter (namely, sigma) using leave-one-out cross validation. It implements schemes for random sampling of patches non-locally (from the entire image) as well as semi-locally (from the spatial proximity of the pixel being denoised at the specific point in time). It implements a specific scheme for defining patch weights (mask) as described in Awate and Whitaker 2005 IEEE CVPR and 2006 IEEE TPAMI.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PatchBasedDenoisingBaseImageFilter.html">PatchBasedDenoisingBaseImageFilter</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PatchBasedDenoisingImageFilter.html">itk::PatchBasedDenoisingImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkPatchBasedDenoisingImageFilter_8h_source.html">sitkPatchBasedDenoisingImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ada1dde99001489e86792388f25e3df00"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ada1dde99001489e86792388f25e3df00">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

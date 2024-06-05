@@ -101,7 +101,15 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ImportImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Compose a 2D or 3D image and return a smart pointer to a SimpleITK image. </p>
+<p>This filter is intended to interface SimpleITK to other image processing libraries and applications that may have their own representation of an image class. It creates a SimpleITK image which shares the bulk data buffer as what is set. SimpleITK will not responsible to delete the buffer afterwards, and it buffer must remain valid while in use.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab78dfa6f81a3053ef0d4cfbc69edebb7">itk::simple::ImportAsInt8</a>, <a class="el" href="namespaceitk_1_1simple.html#a27bb6ea82d901149b561ec04ae64a87f">itk::simple::ImportAsUInt8</a>, <a class="el" href="namespaceitk_1_1simple.html#ad24ff9ed3a9695bf82fc25cf51fdbc2e">itk::simple::ImportAsInt16</a>, <a class="el" href="namespaceitk_1_1simple.html#adbafa38a74ef04e3d7b3eb3577fb9a68">itk::simple::ImportAsUInt16</a>, <a class="el" href="namespaceitk_1_1simple.html#a081239c51bc3dc7f79ef77a3f03a1372">itk::simple::ImportAsInt32</a>, <a class="el" href="namespaceitk_1_1simple.html#ae21b1793bfae2b4bf5475d5ec720046e">itk::simple::ImportAsUInt32</a>, <a class="el" href="namespaceitk_1_1simple.html#aef7a01924c87fdb6777f73e994baab56">itk::simple::ImportAsInt64</a>, <a class="el" href="namespaceitk_1_1simple.html#adb70f52ad12205dfbda0c2fc14b26580">itk::simple::ImportAsUInt64</a>, <a class="el" href="namespaceitk_1_1simple.html#a6e01fb83a96006a857bd363473b9a235">itk::simple::ImportAsFloat</a>,<a class="el" href="namespaceitk_1_1simple.html#a58273b2fb839063b8dd3ead2fc8f3c5e">itk::simple::ImportAsDouble</a> for the procedural interfaces. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="BufferImportExport_8cxx-example.html#_a0">BufferImportExport.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3e1d716cadc5a0bd13f51d91aad51f73"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImportImageFilter.html#a3e1d716cadc5a0bd13f51d91aad51f73">Self</a> = <a class="el" href="classitk_1_1simple_1_1ImportImageFilter.html">ImportImageFilter</a></td></tr>
@@ -381,15 +389,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Compose a 2D or 3D image and return a smart pointer to a SimpleITK image. </p>
-<p>This filter is intended to interface SimpleITK to other image processing libraries and applications that may have their own representation of an image class. It creates a SimpleITK image which shares the bulk data buffer as what is set. SimpleITK will not responsible to delete the buffer afterwards, and it buffer must remain valid while in use.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab78dfa6f81a3053ef0d4cfbc69edebb7">itk::simple::ImportAsInt8</a>, <a class="el" href="namespaceitk_1_1simple.html#a27bb6ea82d901149b561ec04ae64a87f">itk::simple::ImportAsUInt8</a>, <a class="el" href="namespaceitk_1_1simple.html#ad24ff9ed3a9695bf82fc25cf51fdbc2e">itk::simple::ImportAsInt16</a>, <a class="el" href="namespaceitk_1_1simple.html#adbafa38a74ef04e3d7b3eb3577fb9a68">itk::simple::ImportAsUInt16</a>, <a class="el" href="namespaceitk_1_1simple.html#a081239c51bc3dc7f79ef77a3f03a1372">itk::simple::ImportAsInt32</a>, <a class="el" href="namespaceitk_1_1simple.html#ae21b1793bfae2b4bf5475d5ec720046e">itk::simple::ImportAsUInt32</a>, <a class="el" href="namespaceitk_1_1simple.html#aef7a01924c87fdb6777f73e994baab56">itk::simple::ImportAsInt64</a>, <a class="el" href="namespaceitk_1_1simple.html#adb70f52ad12205dfbda0c2fc14b26580">itk::simple::ImportAsUInt64</a>, <a class="el" href="namespaceitk_1_1simple.html#a6e01fb83a96006a857bd363473b9a235">itk::simple::ImportAsFloat</a>,<a class="el" href="namespaceitk_1_1simple.html#a58273b2fb839063b8dd3ead2fc8f3c5e">itk::simple::ImportAsDouble</a> for the procedural interfaces. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="BufferImportExport_8cxx-example.html#_a0">BufferImportExport.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0e2ac65186f1f393dd717c0207cbd2a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e2ac65186f1f393dd717c0207cbd2a0">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

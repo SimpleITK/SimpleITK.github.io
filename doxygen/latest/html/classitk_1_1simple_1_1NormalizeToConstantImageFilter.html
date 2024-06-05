@@ -101,7 +101,25 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1NormalizeToConstantImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Scales image pixel intensities to make the sum of all pixels equal a user-defined constant. </p>
+<p>The default value of the constant is 1. It can be changed with <a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html#ade2328059b0717690985cb4359354373">SetConstant()</a> .</p>
+<p>This transform is especially useful for normalizing a convolution kernel.</p>
+<p>This code was contributed in the Insight Journal paper: "FFT based
+convolution" by Lehmann G. <a href="https://insight-journal.org/browse/publication/717">https://insight-journal.org/browse/publication/717</a></p>
+<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeImageFilter.html" title="Normalize an image by setting its mean to zero and variance to one.">NormalizeImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1DivideImageFilter.html" title="Pixel-wise division of two images.">DivideImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#ab57887dc1f1783396c670d95d03529b1" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">itk::simple::NormalizeToConstant</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NormalizeToConstantImageFilter.html">itk::NormalizeToConstantImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeToConstantImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkNormalizeToConstantImageFilter_8h_source.html">sitkNormalizeToConstantImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aafc1a0d9ac9b4b1fb7d88c947da95ab0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html#aafc1a0d9ac9b4b1fb7d88c947da95ab0">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -301,25 +319,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Scales image pixel intensities to make the sum of all pixels equal a user-defined constant. </p>
-<p>The default value of the constant is 1. It can be changed with <a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html#ade2328059b0717690985cb4359354373">SetConstant()</a> .</p>
-<p>This transform is especially useful for normalizing a convolution kernel.</p>
-<p>This code was contributed in the Insight Journal paper: "FFT based
-convolution" by Lehmann G. <a href="https://insight-journal.org/browse/publication/717">https://insight-journal.org/browse/publication/717</a></p>
-<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeImageFilter.html" title="Normalize an image by setting its mean to zero and variance to one.">NormalizeImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1DivideImageFilter.html" title="Pixel-wise division of two images.">DivideImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#ab57887dc1f1783396c670d95d03529b1" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">itk::simple::NormalizeToConstant</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NormalizeToConstantImageFilter.html">itk::NormalizeToConstantImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeToConstantImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkNormalizeToConstantImageFilter_8h_source.html">sitkNormalizeToConstantImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a95b5876cbfa4de97e7aa32ce9b06342b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95b5876cbfa4de97e7aa32ce9b06342b">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

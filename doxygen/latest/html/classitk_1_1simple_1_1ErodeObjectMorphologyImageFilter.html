@@ -101,7 +101,20 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ErodeObjectMorphologyImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Erosion of an object in an image. </p>
+<p>Erosion of an image using binary morphology. Pixel values matching the object value are considered the "object" and all other pixels are "background". This is useful in processing mask images containing only one object.</p>
+<p>If the pixel covered by the center of the kernel has the pixel value ObjectValue and the pixel is adjacent to a non-object valued pixel, then the kernel is centered on the object-value pixel and neighboring pixels covered by the kernel are assigned the background value. The structuring element is assumed to be composed of binary values (zero or one).</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ObjectMorphologyImageFilter.html">ObjectMorphologyImageFilter</a> , BinaryFunctionErodeImageFilter</dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image.">BinaryErodeImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a1713d3c595cb01e55b8cf907037e6c73" title="Erosion of an object in an image.">itk::simple::ErodeObjectMorphology</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ErodeObjectMorphologyImageFilter.html">itk::ErodeObjectMorphologyImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkErodeObjectMorphologyImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkErodeObjectMorphologyImageFilter_8h_source.html">sitkErodeObjectMorphologyImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a092bc0e4e40d3b7ea5e0e7a29d1eb4aa"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ErodeObjectMorphologyImageFilter.html#a092bc0e4e40d3b7ea5e0e7a29d1eb4aa">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -316,20 +329,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Erosion of an object in an image. </p>
-<p>Erosion of an image using binary morphology. Pixel values matching the object value are considered the "object" and all other pixels are "background". This is useful in processing mask images containing only one object.</p>
-<p>If the pixel covered by the center of the kernel has the pixel value ObjectValue and the pixel is adjacent to a non-object valued pixel, then the kernel is centered on the object-value pixel and neighboring pixels covered by the kernel are assigned the background value. The structuring element is assumed to be composed of binary values (zero or one).</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ObjectMorphologyImageFilter.html">ObjectMorphologyImageFilter</a> , BinaryFunctionErodeImageFilter</dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image.">BinaryErodeImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a1713d3c595cb01e55b8cf907037e6c73" title="Erosion of an object in an image.">itk::simple::ErodeObjectMorphology</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ErodeObjectMorphologyImageFilter.html">itk::ErodeObjectMorphologyImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkErodeObjectMorphologyImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkErodeObjectMorphologyImageFilter_8h_source.html">sitkErodeObjectMorphologyImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad8d3a6938be84eec523efe3873b1d25d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8d3a6938be84eec523efe3873b1d25d">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

@@ -101,7 +101,21 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1IsoDataThresholdImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Threshold an image using the IsoData Threshold. </p>
+<p>This filter creates a binary thresholded image that separates an image into foreground and background components. The filter computes the threshold using the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsoDataThresholdCalculator.html">IsoDataThresholdCalculator</a> and applies that threshold to the input image using the <a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html" title="Binarize an input image by thresholding.">BinaryThresholdImageFilter</a> .</p>
+<dl class="section author"><dt>Author</dt><dd>Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.</dd>
+<dd>
+Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
+<p>This implementation was taken from the Insight Journal paper: <a href="https://www.insight-journal.org/browse/publication/811">https://www.insight-journal.org/browse/publication/811</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1HistogramThresholdImageFilter.html">HistogramThresholdImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a66ddf419af13bb7d20a41f2a1c13ae1f" title="Threshold an image using the IsoData Threshold.">itk::simple::IsoDataThreshold</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsoDataThresholdImageFilter.html">itk::IsoDataThresholdImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkIsoDataThresholdImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkIsoDataThresholdImageFilter_8h_source.html">sitkIsoDataThresholdImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a6186e123768ab46703813edee8166ae6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsoDataThresholdImageFilter.html#a6186e123768ab46703813edee8166ae6">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -331,21 +345,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Threshold an image using the IsoData Threshold. </p>
-<p>This filter creates a binary thresholded image that separates an image into foreground and background components. The filter computes the threshold using the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsoDataThresholdCalculator.html">IsoDataThresholdCalculator</a> and applies that threshold to the input image using the <a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html" title="Binarize an input image by thresholding.">BinaryThresholdImageFilter</a> .</p>
-<dl class="section author"><dt>Author</dt><dd>Richard Beare. Department of Medicine, Monash University, Melbourne, Australia.</dd>
-<dd>
-Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
-<p>This implementation was taken from the Insight Journal paper: <a href="https://www.insight-journal.org/browse/publication/811">https://www.insight-journal.org/browse/publication/811</a></p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1HistogramThresholdImageFilter.html">HistogramThresholdImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a66ddf419af13bb7d20a41f2a1c13ae1f" title="Threshold an image using the IsoData Threshold.">itk::simple::IsoDataThreshold</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsoDataThresholdImageFilter.html">itk::IsoDataThresholdImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkIsoDataThresholdImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkIsoDataThresholdImageFilter_8h_source.html">sitkIsoDataThresholdImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad5005f655183b797b579af3322bdf6a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5005f655183b797b579af3322bdf6a6">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

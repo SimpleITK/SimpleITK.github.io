@@ -101,7 +101,20 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1DoubleThresholdImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Binarize an input image using double thresholding. </p>
+<p>Double threshold addresses the difficulty in selecting a threshold that will select the objects of interest without selecting extraneous objects. Double threshold considers two threshold ranges: a narrow range and a wide range (where the wide range encompasses the narrow range). If the wide range was used for a traditional threshold (where values inside the range map to the foreground and values outside the range map to the background), many extraneous pixels may survive the threshold operation. If the narrow range was used for a traditional threshold, then too few pixels may survive the threshold.</p>
+<p>Double threshold uses the narrow threshold image as a marker image and the wide threshold image as a mask image in the geodesic dilation. Essentially, the marker image (narrow threshold) is dilated but constrained to lie within the mask image (wide threshold). Thus, only the objects of interest (those pixels that survived the narrow threshold) are extracted but the those objects appear in the final image as they would have if the wide threshold was used.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1GrayscaleGeodesicDilateImageFilter.html" title="Geodesic grayscale dilation of an image.">GrayscaleGeodesicDilateImageFilter</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologyImageFilter.html">MorphologyImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleDilateImageFilter.html" title="Grayscale dilation of an image.">GrayscaleDilateImageFilter</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GrayscaleFunctionDilateImageFilter.html">GrayscaleFunctionDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image.">BinaryDilateImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#ac911fc243a331c456427a3df21e15164" title="Binarize an input image using double thresholding.">itk::simple::DoubleThreshold</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DoubleThresholdImageFilter.html">itk::DoubleThresholdImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a07ae13d336b96b6d32f7bba4e89c1dbb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DoubleThresholdImageFilter.html#a07ae13d336b96b6d32f7bba4e89c1dbb">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -336,20 +349,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Binarize an input image using double thresholding. </p>
-<p>Double threshold addresses the difficulty in selecting a threshold that will select the objects of interest without selecting extraneous objects. Double threshold considers two threshold ranges: a narrow range and a wide range (where the wide range encompasses the narrow range). If the wide range was used for a traditional threshold (where values inside the range map to the foreground and values outside the range map to the background), many extraneous pixels may survive the threshold operation. If the narrow range was used for a traditional threshold, then too few pixels may survive the threshold.</p>
-<p>Double threshold uses the narrow threshold image as a marker image and the wide threshold image as a mask image in the geodesic dilation. Essentially, the marker image (narrow threshold) is dilated but constrained to lie within the mask image (wide threshold). Thus, only the objects of interest (those pixels that survived the narrow threshold) are extracted but the those objects appear in the final image as they would have if the wide threshold was used.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1GrayscaleGeodesicDilateImageFilter.html" title="Geodesic grayscale dilation of an image.">GrayscaleGeodesicDilateImageFilter</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologyImageFilter.html">MorphologyImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleDilateImageFilter.html" title="Grayscale dilation of an image.">GrayscaleDilateImageFilter</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GrayscaleFunctionDilateImageFilter.html">GrayscaleFunctionDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image.">BinaryDilateImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#ac911fc243a331c456427a3df21e15164" title="Binarize an input image using double thresholding.">itk::simple::DoubleThreshold</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DoubleThresholdImageFilter.html">itk::DoubleThresholdImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9c212ab935c7235c27726ffe6faac35e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c212ab935c7235c27726ffe6faac35e">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

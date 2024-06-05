@@ -101,7 +101,24 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1DemonsRegistrationFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Deformably register two images using the demons algorithm. </p>
+<p><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html" title="Deformably register two images using the demons algorithm.">DemonsRegistrationFilter</a> implements the demons deformable algorithm that register two images by computing the displacement field which will map a moving image onto a fixed image.</p>
+<p>A displacement field is represented as a image whose pixel type is some vector type with at least N elements, where N is the dimension of the fixed image. The vector type must support element access via operator []. It is assumed that the vector elements behave like floating point scalars.</p>
+<p>This class is templated over the fixed image type, moving image type and the displacement field type.</p>
+<p>The input fixed and moving images are set via methods SetFixedImage and SetMovingImage respectively. An initial displacement field maybe set via SetInitialDisplacementField or SetInput. If no initial field is set, a zero field is used as the initial condition.</p>
+<p>The algorithm has one parameters: the number of iteration to be performed.</p>
+<p>The output displacement field can be obtained via methods GetOutput or GetDisplacementField.</p>
+<p>This class make use of the finite difference solver hierarchy. Update for each iteration is computed in <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DemonsRegistrationFunction.html">DemonsRegistrationFunction</a> .</p>
+<dl class="section warning"><dt>Warning</dt><dd>This filter assumes that the fixed image type, moving image type and displacement field type all have the same number of dimensions.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DemonsRegistrationFunction.html">DemonsRegistrationFunction</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DemonsRegistrationFilter.html">itk::DemonsRegistrationFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration1_2DemonsRegistration1_8cxx-example.html#_a1">DemonsRegistration1/DemonsRegistration1.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ab6dceb659f40f92f2f6a0e36e28b8f86"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html#ab6dceb659f40f92f2f6a0e36e28b8f86">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -398,24 +415,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Deformably register two images using the demons algorithm. </p>
-<p><a class="el" href="classitk_1_1simple_1_1DemonsRegistrationFilter.html" title="Deformably register two images using the demons algorithm.">DemonsRegistrationFilter</a> implements the demons deformable algorithm that register two images by computing the displacement field which will map a moving image onto a fixed image.</p>
-<p>A displacement field is represented as a image whose pixel type is some vector type with at least N elements, where N is the dimension of the fixed image. The vector type must support element access via operator []. It is assumed that the vector elements behave like floating point scalars.</p>
-<p>This class is templated over the fixed image type, moving image type and the displacement field type.</p>
-<p>The input fixed and moving images are set via methods SetFixedImage and SetMovingImage respectively. An initial displacement field maybe set via SetInitialDisplacementField or SetInput. If no initial field is set, a zero field is used as the initial condition.</p>
-<p>The algorithm has one parameters: the number of iteration to be performed.</p>
-<p>The output displacement field can be obtained via methods GetOutput or GetDisplacementField.</p>
-<p>This class make use of the finite difference solver hierarchy. Update for each iteration is computed in <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DemonsRegistrationFunction.html">DemonsRegistrationFunction</a> .</p>
-<dl class="section warning"><dt>Warning</dt><dd>This filter assumes that the fixed image type, moving image type and displacement field type all have the same number of dimensions.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DemonsRegistrationFunction.html">DemonsRegistrationFunction</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DemonsRegistrationFilter.html">itk::DemonsRegistrationFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration1_2DemonsRegistration1_8cxx-example.html#_a1">DemonsRegistration1/DemonsRegistration1.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkDemonsRegistrationFilter_8h_source.html">sitkDemonsRegistrationFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a25b32aa4362476d35d7f2059ad3e9153"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25b32aa4362476d35d7f2059ad3e9153">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

@@ -97,7 +97,14 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1LoggerBase__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A base class to handle SimpleITK and ITK messages and logging. </p>
+<p>In ITK this function is implemented by the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a>, but in SimpleITK it is called a logger.</p>
+<p>Provides a base class for SimpleITK to provide the "DisplayText" methods that match the interface of <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a>. Derived instances of <a class="el" href="classitk_1_1simple_1_1LoggerBase.html" title="A base class to handle SimpleITK and ITK messages and logging.">LoggerBase</a> are used by an internal adaptor derived from the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a> so that this object instances can be used in ITK.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkLogger_8h_source.html#l00048">48</a> of file <a class="el" href="sitkLogger_8h_source.html">sitkLogger.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ca6bf9d8048130b3b4d230c07404947"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LoggerBase.html#a8ca6bf9d8048130b3b4d230c07404947">DisplayDebugText</a> (const char *t)</td></tr>
@@ -159,14 +166,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a553a2d36c86ee3b31cabdc79a393c8d3 inherit pro_methods_classitk_1_1simple_1_1NonCopyable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1NonCopyable.html#a553a2d36c86ee3b31cabdc79a393c8d3">NonCopyable</a> ()=default</td></tr>
 <tr class="separator:a553a2d36c86ee3b31cabdc79a393c8d3 inherit pro_methods_classitk_1_1simple_1_1NonCopyable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A base class to handle SimpleITK and ITK messages and logging. </p>
-<p>In ITK this function is implemented by the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a>, but in SimpleITK it is called a logger.</p>
-<p>Provides a base class for SimpleITK to provide the "DisplayText" methods that match the interface of <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a>. Derived instances of <a class="el" href="classitk_1_1simple_1_1LoggerBase.html" title="A base class to handle SimpleITK and ITK messages and logging.">LoggerBase</a> are used by an internal adaptor derived from the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a> so that this object instances can be used in ITK.</p>
-<p>/sa <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OutputWindow.html">itk::OutputWindow</a> </p>
-
-<p class="definition">Definition at line <a class="el" href="sitkLogger_8h_source.html#l00048">48</a> of file <a class="el" href="sitkLogger_8h_source.html">sitkLogger.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7ee734b3901eb373817d4f9080238806"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ee734b3901eb373817d4f9080238806">&#9670;&nbsp;</a></span>LoggerBase()</h2>
 

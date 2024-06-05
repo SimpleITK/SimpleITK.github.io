@@ -101,7 +101,20 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1CollidingFrontsImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Selects a region of space where two independent fronts run towards each other. </p>
+<p>The filter can be used to quickly segment anatomical structures (e.g. for level set initialization).</p>
+<p>The filter uses two instances of <a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html" title="Generates the upwind gradient field of fast marching arrival times.">FastMarchingUpwindGradientImageFilter</a> to compute the gradients of arrival times of two wavefronts propagating from two sets of seeds. The input of the filter is used as the speed of the two wavefronts. The output is the dot product between the two gradient vector fields.</p>
+<p>The filter works on the following basic idea. In the regions where the dot product between the two gradient fields is negative, the two fronts propagate in opposite directions. In the regions where the dot product is positive, the two fronts propagate in the same direction. This can be used to extract the region of space between two sets of points.</p>
+<p>If StopOnTargets is On, then each front will stop as soon as all seeds of the other front have been reached. This can markedly speed up the execution of the filter, since wave propagation does not take place on the complete image.</p>
+<p>Optionally, a connectivity criterion can be applied to the resulting dot product image. In this case, the only negative region in the output image is the one connected to the seeds.</p>
+<dl class="section author"><dt>Author</dt><dd>Luca Antiga Ph.D. Biomedical Technologies Laboratory, Bioengineering Department, Mario Negri Institute, Italy. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ba7b947a2e9654bb7ebfbab7be70c5b" title="Selects a region of space where two independent fronts run towards each other.">itk::simple::CollidingFronts</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CollidingFrontsImageFilter.html">itk::CollidingFrontsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aa7a20fe21aa1f008d62d1d40a7f6f4db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CollidingFrontsImageFilter.html#aa7a20fe21aa1f008d62d1d40a7f6f4db">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -340,20 +353,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Selects a region of space where two independent fronts run towards each other. </p>
-<p>The filter can be used to quickly segment anatomical structures (e.g. for level set initialization).</p>
-<p>The filter uses two instances of <a class="el" href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter.html" title="Generates the upwind gradient field of fast marching arrival times.">FastMarchingUpwindGradientImageFilter</a> to compute the gradients of arrival times of two wavefronts propagating from two sets of seeds. The input of the filter is used as the speed of the two wavefronts. The output is the dot product between the two gradient vector fields.</p>
-<p>The filter works on the following basic idea. In the regions where the dot product between the two gradient fields is negative, the two fronts propagate in opposite directions. In the regions where the dot product is positive, the two fronts propagate in the same direction. This can be used to extract the region of space between two sets of points.</p>
-<p>If StopOnTargets is On, then each front will stop as soon as all seeds of the other front have been reached. This can markedly speed up the execution of the filter, since wave propagation does not take place on the complete image.</p>
-<p>Optionally, a connectivity criterion can be applied to the resulting dot product image. In this case, the only negative region in the output image is the one connected to the seeds.</p>
-<dl class="section author"><dt>Author</dt><dd>Luca Antiga Ph.D. Biomedical Technologies Laboratory, Bioengineering Department, Mario Negri Institute, Italy. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ba7b947a2e9654bb7ebfbab7be70c5b" title="Selects a region of space where two independent fronts run towards each other.">itk::simple::CollidingFronts</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CollidingFrontsImageFilter.html">itk::CollidingFrontsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a40e308cb207377ed6ab1350454b54177"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a40e308cb207377ed6ab1350454b54177">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

@@ -101,7 +101,18 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1HalfHermitianToRealInverseFFTImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for specialized complex-to-real inverse Fast Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . </p>
+<p>This is a base class for the "inverse" or "reverse" Discrete Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . This is an abstract base class: the actual implementation is provided by the best child class available on the system when the object is created via the object factory system.</p>
+<p>The input to this filter is assumed to have the same format as the output of the <a class="el" href="classitk_1_1simple_1_1RealToHalfHermitianForwardFFTImageFilter.html" title="Base class for specialized real-to-complex forward Fast Fourier Transform .">RealToHalfHermitianForwardFFTImageFilter</a> . That is, the input is assumed to consist of roughly half the full complex image resulting from a real-to-complex discrete Fourier transform. This half is expected to be the first half of the image in the X-dimension. Because this filter assumes that the input stores only about half of the non-redundant complex pixels, the output is larger in the X-dimension than it is in the input. To determine the actual size of the output image, this filter needs additional information in the form of a flag indicating whether the output image has an odd size in the X-dimension. Use <a class="el" href="classitk_1_1simple_1_1HalfHermitianToRealInverseFFTImageFilter.html#a20ebefac1f82a6f5cfa69f97e80aeedc">SetActualXDimensionIsOdd()</a> to set this flag.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ForwardFFTImageFilter.html" title="Base class for forward Fast Fourier Transform .">ForwardFFTImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1HalfHermitianToRealInverseFFTImageFilter.html" title="Base class for specialized complex-to-real inverse Fast Fourier Transform .">HalfHermitianToRealInverseFFTImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#affbb06bb7f298ed994e0f8bdf7fcf0a5" title="Base class for specialized complex-to-real inverse Fast Fourier Transform .">itk::simple::HalfHermitianToRealInverseFFT</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1HalfHermitianToRealInverseFFTImageFilter.html">itk::HalfHermitianToRealInverseFFTImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkHalfHermitianToRealInverseFFTImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkHalfHermitianToRealInverseFFTImageFilter_8h_source.html">sitkHalfHermitianToRealInverseFFTImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a75237b3b5a457dd90218b6c3241ddb5e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1HalfHermitianToRealInverseFFTImageFilter.html#a75237b3b5a457dd90218b6c3241ddb5e">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a04b5c4ea11652f9a94862aee75216e13">ComplexPixelIDTypeList</a></td></tr>
@@ -300,18 +311,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for specialized complex-to-real inverse Fast Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . </p>
-<p>This is a base class for the "inverse" or "reverse" Discrete Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . This is an abstract base class: the actual implementation is provided by the best child class available on the system when the object is created via the object factory system.</p>
-<p>The input to this filter is assumed to have the same format as the output of the <a class="el" href="classitk_1_1simple_1_1RealToHalfHermitianForwardFFTImageFilter.html" title="Base class for specialized real-to-complex forward Fast Fourier Transform .">RealToHalfHermitianForwardFFTImageFilter</a> . That is, the input is assumed to consist of roughly half the full complex image resulting from a real-to-complex discrete Fourier transform. This half is expected to be the first half of the image in the X-dimension. Because this filter assumes that the input stores only about half of the non-redundant complex pixels, the output is larger in the X-dimension than it is in the input. To determine the actual size of the output image, this filter needs additional information in the form of a flag indicating whether the output image has an odd size in the X-dimension. Use <a class="el" href="classitk_1_1simple_1_1HalfHermitianToRealInverseFFTImageFilter.html#a20ebefac1f82a6f5cfa69f97e80aeedc">SetActualXDimensionIsOdd()</a> to set this flag.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ForwardFFTImageFilter.html" title="Base class for forward Fast Fourier Transform .">ForwardFFTImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1HalfHermitianToRealInverseFFTImageFilter.html" title="Base class for specialized complex-to-real inverse Fast Fourier Transform .">HalfHermitianToRealInverseFFTImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#affbb06bb7f298ed994e0f8bdf7fcf0a5" title="Base class for specialized complex-to-real inverse Fast Fourier Transform .">itk::simple::HalfHermitianToRealInverseFFT</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1HalfHermitianToRealInverseFFTImageFilter.html">itk::HalfHermitianToRealInverseFFTImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkHalfHermitianToRealInverseFFTImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkHalfHermitianToRealInverseFFTImageFilter_8h_source.html">sitkHalfHermitianToRealInverseFFTImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa5328b704a33c5546253cc8838fda5ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5328b704a33c5546253cc8838fda5ae">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

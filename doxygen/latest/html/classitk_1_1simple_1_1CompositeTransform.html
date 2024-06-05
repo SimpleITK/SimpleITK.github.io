@@ -101,7 +101,18 @@ $(function() {
 <div class="center"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1CompositeTransform__coll__graph.svg" width="311" height="396"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class contains a stack of transforms and concatenates them by composition. </p>
+<p>The transforms are composed in <b>reverse</b> order with the back being applied first: \( T_0 o T_1 = T_0(T_1(x)) \) Transforms are stored in a queue, in the following order: \( T_0, T_1, ... , T_N-1 \)</p>
+<p>Transforms are added via <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#a24f967744063024d165afb60ebef0dad" title="Add a transform to the back of the stack.">AddTransform()</a>. This adds the transforms to the back of the queue.</p>
+<p>The only parameters of the transform at the back of the queue are exposed and optimizable for registration.</p>
+<p>Inverse: The inverse transform is created by retrieving the inverse from each sub transform and adding them to a composite transform in reverse order. The m_TransformsToOptimizeFlags is copied in reverse for the inverse.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CompositeTransform.html">itk::CompositeTransform</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a34">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkCompositeTransform_8h_source.html#l00058">58</a> of file <a class="el" href="sitkCompositeTransform_8h_source.html">sitkCompositeTransform.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1CompositeTransform_1_1MyVisitor.html">MyVisitor</a></td></tr>
@@ -261,18 +272,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a1b11ff59854a92426d10ff17dfc223fa"><td class="memItemLeft" align="right" valign="top">std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#a1b11ff59854a92426d10ff17dfc223fa">m_pfRemoveTransform</a></td></tr>
 <tr class="separator:a1b11ff59854a92426d10ff17dfc223fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class contains a stack of transforms and concatenates them by composition. </p>
-<p>The transforms are composed in <b>reverse</b> order with the back being applied first: \( T_0 o T_1 = T_0(T_1(x)) \) Transforms are stored in a queue, in the following order: \( T_0, T_1, ... , T_N-1 \)</p>
-<p>Transforms are added via <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html#a24f967744063024d165afb60ebef0dad" title="Add a transform to the back of the stack.">AddTransform()</a>. This adds the transforms to the back of the queue.</p>
-<p>The only parameters of the transform at the back of the queue are exposed and optimizable for registration.</p>
-<p>Inverse: The inverse transform is created by retrieving the inverse from each sub transform and adding them to a composite transform in reverse order. The m_TransformsToOptimizeFlags is copied in reverse for the inverse.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CompositeTransform.html">itk::CompositeTransform</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a34">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkCompositeTransform_8h_source.html#l00058">58</a> of file <a class="el" href="sitkCompositeTransform_8h_source.html">sitkCompositeTransform.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad60e2639560d211fdd2fb49f7219f23c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad60e2639560d211fdd2fb49f7219f23c">&#9670;&nbsp;</a></span>Self</h2>
 

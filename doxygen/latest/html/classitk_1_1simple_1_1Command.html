@@ -98,7 +98,16 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1Command__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An implementation of the <a class="el" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback.">Command</a> design pattern for callback. </p>
+<p>This class provides a callback mechanism for event that occur from the <a class="el" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject.">ProcessObject</a>. These commands can be utilized to observe these events.</p>
+<p>The <a class="el" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback.">Command</a> can be created on the stack, and will automatically unregistered it's self when destroyed.</p>
+<p>For more information see the page CommandPage. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration1_2DemonsRegistration1_8cxx-example.html#_a0">DemonsRegistration1/DemonsRegistration1.cxx</a>, <a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a0">DemonsRegistration2/DemonsRegistration2.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#_a0">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#_a0">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#_a0">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#_a0">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#_a0">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a0">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkCommand_8h_source.html#l00044">44</a> of file <a class="el" href="sitkCommand_8h_source.html">sitkCommand.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a938d78bb9f0e5740c068f432547eaa62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Command.html#a938d78bb9f0e5740c068f432547eaa62">Command</a> ()</td></tr>
@@ -155,16 +164,7 @@ Friends</h2></td></tr>
 <tr class="memitem:ad0cc7706ec80c55b48685333c02d2578"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Command.html#ad0cc7706ec80c55b48685333c02d2578">itk::simple::ProcessObject</a></td></tr>
 <tr class="separator:ad0cc7706ec80c55b48685333c02d2578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An implementation of the <a class="el" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback.">Command</a> design pattern for callback. </p>
-<p>This class provides a callback mechanism for event that occur from the <a class="el" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject.">ProcessObject</a>. These commands can be utilized to observe these events.</p>
-<p>The <a class="el" href="classitk_1_1simple_1_1Command.html" title="An implementation of the Command design pattern for callback.">Command</a> can be created on the stack, and will automatically unregistered it's self when destroyed.</p>
-<p>For more information see the page CommandPage. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration1_2DemonsRegistration1_8cxx-example.html#_a0">DemonsRegistration1/DemonsRegistration1.cxx</a>, <a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a0">DemonsRegistration2/DemonsRegistration2.cxx</a>, <a class="el" href="FilterProgressReporting_2FilterProgressReporting_8cxx-example.html#_a0">FilterProgressReporting/FilterProgressReporting.cxx</a>, <a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#_a0">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#_a0">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#_a0">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#_a0">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, and <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a0">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkCommand_8h_source.html#l00044">44</a> of file <a class="el" href="sitkCommand_8h_source.html">sitkCommand.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a938d78bb9f0e5740c068f432547eaa62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a938d78bb9f0e5740c068f432547eaa62">&#9670;&nbsp;</a></span>Command()</h2>
 

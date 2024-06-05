@@ -101,7 +101,20 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1MirrorPadImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Increase the image size by padding with replicants of the input image value. </p>
+<p><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html" title="Increase the image size by padding with replicants of the input image value.">MirrorPadImageFilter</a> changes the image bounds of an image. Any added pixels are filled in with a mirrored replica of the input image. For instance, if the output image needs a pixel that is two pixels to the left of the LargestPossibleRegion of the input image, the value assigned will be from the pixel two pixels inside the left boundary of the LargestPossibleRegion. The image bounds of the output must be specified.</p>
+<p>Visual explanation of padding regions.</p>
+<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation.</p>
+<p>Exponential decay in the bounds is enabled when DecayBase has to be in the range (0.0, 1.0]. When it is 1.0 it is disabled. The decay rate is based on the Manhattan distance.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1WrapPadImageFilter.html" title="Increase the image size by padding with replicants of the input image value.">WrapPadImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ConstantPadImageFilter.html" title="Increase the image size by padding with a constant value.">ConstantPadImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a985c0c8e1c4cbf5d17457157dc79e9f4" title="Increase the image size by padding with replicants of the input image value.">itk::simple::MirrorPad</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MirrorPadImageFilter.html">itk::MirrorPadImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkMirrorPadImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkMirrorPadImageFilter_8h_source.html">sitkMirrorPadImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a42b1244cee111213a558db3bcd8270bc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html#a42b1244cee111213a558db3bcd8270bc">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a26f1fa18c366fbfc2438f387f17fae31">NonLabelPixelIDTypeList</a></td></tr>
@@ -308,20 +321,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Increase the image size by padding with replicants of the input image value. </p>
-<p><a class="el" href="classitk_1_1simple_1_1MirrorPadImageFilter.html" title="Increase the image size by padding with replicants of the input image value.">MirrorPadImageFilter</a> changes the image bounds of an image. Any added pixels are filled in with a mirrored replica of the input image. For instance, if the output image needs a pixel that is two pixels to the left of the LargestPossibleRegion of the input image, the value assigned will be from the pixel two pixels inside the left boundary of the LargestPossibleRegion. The image bounds of the output must be specified.</p>
-<p>Visual explanation of padding regions.</p>
-<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation.</p>
-<p>Exponential decay in the bounds is enabled when DecayBase has to be in the range (0.0, 1.0]. When it is 1.0 it is disabled. The decay rate is based on the Manhattan distance.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1WrapPadImageFilter.html" title="Increase the image size by padding with replicants of the input image value.">WrapPadImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ConstantPadImageFilter.html" title="Increase the image size by padding with a constant value.">ConstantPadImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a985c0c8e1c4cbf5d17457157dc79e9f4" title="Increase the image size by padding with replicants of the input image value.">itk::simple::MirrorPad</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MirrorPadImageFilter.html">itk::MirrorPadImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkMirrorPadImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkMirrorPadImageFilter_8h_source.html">sitkMirrorPadImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae4ed9ec5a0519a9cb08cc440f7e79863"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4ed9ec5a0519a9cb08cc440f7e79863">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

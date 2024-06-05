@@ -101,7 +101,29 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1LandweberDeconvolutionImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Deconvolve an image using the Landweber deconvolution algorithm. </p>
+<p>This filter implements the Landweber deconvolution algorithm as defined in Bertero M and Boccacci P, "Introduction to Inverse
+Problems in Imaging", 1998. The algorithm assumes that the input image has been formed by a linear shift-invariant system with a known kernel.</p>
+<p>The Landweber algorithm converges to a solution that minimizes the sum of squared errors \(||f \otimes h - g||\) where \(f\) is the estimate of the unblurred image, \(\otimes\) is the convolution operator, \(h\) is the blurring kernel, and \(g\) is the blurred input image. As such, it is best suited for images that have zero-mean Gaussian white noise.</p>
+<p>This is the base implementation of the Landweber algorithm. It may produce results with negative values. For a version of this algorithm that enforces a positivity constraint on each intermediate solution, see <a class="el" href="classitk_1_1simple_1_1ProjectedLandweberDeconvolutionImageFilter.html" title="Deconvolve an image using the projected Landweber deconvolution algorithm.">ProjectedLandweberDeconvolutionImageFilter</a> .</p>
+<p>This code was adapted from the Insight Journal contribution:</p>
+<p>"Deconvolution: infrastructure and reference algorithms" by Gaetan Lehmann <a href="https://www.insight-journal.org/browse/publication/753">https://www.insight-journal.org/browse/publication/753</a></p>
+<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann, Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France</dd>
+<dd>
+Cory Quammen, The University of North Carolina at Chapel Hill</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IterativeDeconvolutionImageFilter.html">IterativeDeconvolutionImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html" title="Deconvolve an image using the Richardson-Lucy deconvolution algorithm.">RichardsonLucyDeconvolutionImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1ProjectedLandweberDeconvolutionImageFilter.html" title="Deconvolve an image using the projected Landweber deconvolution algorithm.">ProjectedLandweberDeconvolutionImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#aebf7accccbfb4ee968cac18e3022108f" title="Deconvolve an image using the Landweber deconvolution algorithm.">itk::simple::LandweberDeconvolution</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LandweberDeconvolutionImageFilter.html">itk::LandweberDeconvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:abc1660f455209b91ee0625353eec74ef"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LandweberDeconvolutionImageFilter.html#abc1660f455209b91ee0625353eec74ef">BoundaryConditionType</a> { <br />
@@ -340,29 +362,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Deconvolve an image using the Landweber deconvolution algorithm. </p>
-<p>This filter implements the Landweber deconvolution algorithm as defined in Bertero M and Boccacci P, "Introduction to Inverse
-Problems in Imaging", 1998. The algorithm assumes that the input image has been formed by a linear shift-invariant system with a known kernel.</p>
-<p>The Landweber algorithm converges to a solution that minimizes the sum of squared errors \(||f \otimes h - g||\) where \(f\) is the estimate of the unblurred image, \(\otimes\) is the convolution operator, \(h\) is the blurring kernel, and \(g\) is the blurred input image. As such, it is best suited for images that have zero-mean Gaussian white noise.</p>
-<p>This is the base implementation of the Landweber algorithm. It may produce results with negative values. For a version of this algorithm that enforces a positivity constraint on each intermediate solution, see <a class="el" href="classitk_1_1simple_1_1ProjectedLandweberDeconvolutionImageFilter.html" title="Deconvolve an image using the projected Landweber deconvolution algorithm.">ProjectedLandweberDeconvolutionImageFilter</a> .</p>
-<p>This code was adapted from the Insight Journal contribution:</p>
-<p>"Deconvolution: infrastructure and reference algorithms" by Gaetan Lehmann <a href="https://www.insight-journal.org/browse/publication/753">https://www.insight-journal.org/browse/publication/753</a></p>
-<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann, Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France</dd>
-<dd>
-Cory Quammen, The University of North Carolina at Chapel Hill</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IterativeDeconvolutionImageFilter.html">IterativeDeconvolutionImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1RichardsonLucyDeconvolutionImageFilter.html" title="Deconvolve an image using the Richardson-Lucy deconvolution algorithm.">RichardsonLucyDeconvolutionImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1ProjectedLandweberDeconvolutionImageFilter.html" title="Deconvolve an image using the projected Landweber deconvolution algorithm.">ProjectedLandweberDeconvolutionImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#aebf7accccbfb4ee968cac18e3022108f" title="Deconvolve an image using the Landweber deconvolution algorithm.">itk::simple::LandweberDeconvolution</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LandweberDeconvolutionImageFilter.html">itk::LandweberDeconvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6be344527070e9a5237f9df7bda216ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6be344527070e9a5237f9df7bda216ab">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

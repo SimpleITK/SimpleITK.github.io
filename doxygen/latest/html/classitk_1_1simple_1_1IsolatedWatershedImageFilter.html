@@ -101,7 +101,14 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1IsolatedWatershedImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Isolate watershed basins using two seeds. </p>
+<p><a class="el" href="classitk_1_1simple_1_1IsolatedWatershedImageFilter.html" title="Isolate watershed basins using two seeds.">IsolatedWatershedImageFilter</a> labels pixels with ReplaceValue1 that are in the same watershed basin as Seed1 AND NOT the same as Seed2. The filter adjusts the waterlevel until the two seeds are not in different basins. The user supplies a Watershed threshold. The algorithm uses a binary search to adjust the upper waterlevel, starting at UpperValueLimit. UpperValueLimit defaults to the 1.0. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab917f800c60b16f65ddf429fabac9052" title="Isolate watershed basins using two seeds.">itk::simple::IsolatedWatershed</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsolatedWatershedImageFilter.html">itk::IsolatedWatershedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00041">41</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a193c6e3c377866ddcd613e22f236fdc2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IsolatedWatershedImageFilter.html#a193c6e3c377866ddcd613e22f236fdc2">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -332,14 +339,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Isolate watershed basins using two seeds. </p>
-<p><a class="el" href="classitk_1_1simple_1_1IsolatedWatershedImageFilter.html" title="Isolate watershed basins using two seeds.">IsolatedWatershedImageFilter</a> labels pixels with ReplaceValue1 that are in the same watershed basin as Seed1 AND NOT the same as Seed2. The filter adjusts the waterlevel until the two seeds are not in different basins. The user supplies a Watershed threshold. The algorithm uses a binary search to adjust the upper waterlevel, starting at UpperValueLimit. UpperValueLimit defaults to the 1.0. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab917f800c60b16f65ddf429fabac9052" title="Isolate watershed basins using two seeds.">itk::simple::IsolatedWatershed</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsolatedWatershedImageFilter.html">itk::IsolatedWatershedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00041">41</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3077c82b7cf0dfab7d0f3654648285b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3077c82b7cf0dfab7d0f3654648285b9">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

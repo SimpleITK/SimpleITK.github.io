@@ -101,7 +101,30 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Denoise a binary image using min/max curvature flow. </p>
+<p><a class="el" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" title="Denoise a binary image using min/max curvature flow.">BinaryMinMaxCurvatureFlowImageFilter</a> implements a curvature driven image denoising algorithm. This filter assumes that the image is essentially binary: consisting of two classes. Iso-brightness contours in the input image are viewed as a level set. The level set is then evolved using a curvature-based speed function:</p>
+<p class="formulaDsp">
+\[ I_t = F_{\mbox{minmax}} |\nabla I| \]
+</p>
+<p>where \( F_{\mbox{minmax}} = \min(\kappa,0) \) if \( \mbox{Avg}_{\mbox{stencil}}(x) \) is less than or equal to \( T_{threshold} \) and \( \max(\kappa,0) \) , otherwise. \( \kappa \) is the mean curvature of the iso-brightness contour at point \( x \) .</p>
+<p>In min/max curvature flow, movement is turned on or off depending on the scale of the noise one wants to remove. Switching depends on the average image value of a region of radius \( R \) around each point. The choice of \( R \) , the stencil radius, governs the scale of the noise to be removed.</p>
+<p>The threshold value \( T_{threshold} \) is a user specified value which discriminates between the two pixel classes.</p>
+<p>This filter make use of the multi-threaded finite difference solver hierarchy. Updates are computed using a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMinMaxCurvatureFlowFunction.html">BinaryMinMaxCurvatureFlowFunction</a> object. A zero flux Neumann boundary condition is used when computing derivatives near the data boundary.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This filter assumes that the input and output types have the same dimensions. This filter also requires that the output image pixels are of a real type. This filter works for any dimensional images.</dd></dl>
+<p>Reference: "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Chapter 16, Second edition, 1999.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMinMaxCurvatureFlowFunction.html">BinaryMinMaxCurvatureFlowFunction</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html" title="Denoise an image using curvature driven flow.">CurvatureFlowImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html" title="Denoise an image using min/max curvature flow.">MinMaxCurvatureFlowImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a3c94ea1cd4310a970dfaeef8ed6093f6" title="Denoise a binary image using min/max curvature flow.">itk::simple::BinaryMinMaxCurvatureFlow</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMinMaxCurvatureFlowImageFilter.html">itk::BinaryMinMaxCurvatureFlowImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a6a2bb7192dc4aa908b7e78d9ae5b3564"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html#a6a2bb7192dc4aa908b7e78d9ae5b3564">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae2afc490313982b43e05c1bee439ce42">RealPixelIDTypeList</a></td></tr>
@@ -318,30 +341,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Denoise a binary image using min/max curvature flow. </p>
-<p><a class="el" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" title="Denoise a binary image using min/max curvature flow.">BinaryMinMaxCurvatureFlowImageFilter</a> implements a curvature driven image denoising algorithm. This filter assumes that the image is essentially binary: consisting of two classes. Iso-brightness contours in the input image are viewed as a level set. The level set is then evolved using a curvature-based speed function:</p>
-<p class="formulaDsp">
-\[ I_t = F_{\mbox{minmax}} |\nabla I| \]
-</p>
-<p>where \( F_{\mbox{minmax}} = \min(\kappa,0) \) if \( \mbox{Avg}_{\mbox{stencil}}(x) \) is less than or equal to \( T_{threshold} \) and \( \max(\kappa,0) \) , otherwise. \( \kappa \) is the mean curvature of the iso-brightness contour at point \( x \) .</p>
-<p>In min/max curvature flow, movement is turned on or off depending on the scale of the noise one wants to remove. Switching depends on the average image value of a region of radius \( R \) around each point. The choice of \( R \) , the stencil radius, governs the scale of the noise to be removed.</p>
-<p>The threshold value \( T_{threshold} \) is a user specified value which discriminates between the two pixel classes.</p>
-<p>This filter make use of the multi-threaded finite difference solver hierarchy. Updates are computed using a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMinMaxCurvatureFlowFunction.html">BinaryMinMaxCurvatureFlowFunction</a> object. A zero flux Neumann boundary condition is used when computing derivatives near the data boundary.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This filter assumes that the input and output types have the same dimensions. This filter also requires that the output image pixels are of a real type. This filter works for any dimensional images.</dd></dl>
-<p>Reference: "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Chapter 16, Second edition, 1999.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMinMaxCurvatureFlowFunction.html">BinaryMinMaxCurvatureFlowFunction</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html" title="Denoise an image using curvature driven flow.">CurvatureFlowImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html" title="Denoise an image using min/max curvature flow.">MinMaxCurvatureFlowImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a3c94ea1cd4310a970dfaeef8ed6093f6" title="Denoise a binary image using min/max curvature flow.">itk::simple::BinaryMinMaxCurvatureFlow</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMinMaxCurvatureFlowImageFilter.html">itk::BinaryMinMaxCurvatureFlowImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkBinaryMinMaxCurvatureFlowImageFilter_8h_source.html">sitkBinaryMinMaxCurvatureFlowImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af98737c0794171981cb2ba989704b64f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af98737c0794171981cb2ba989704b64f">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

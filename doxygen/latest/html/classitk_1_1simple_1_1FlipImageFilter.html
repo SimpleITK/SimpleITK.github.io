@@ -101,7 +101,16 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1FlipImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Flips an image across user specified axes. </p>
+<p><a class="el" href="classitk_1_1simple_1_1FlipImageFilter.html" title="Flips an image across user specified axes.">FlipImageFilter</a> flips an image across user specified axes. The flip axes are set via method SetFlipAxes( array ) where the input is a FixedArray&lt;bool,ImageDimension&gt;. The image is flipped across axes for which array[i] is true.</p>
+<p>In terms of grid coordinates the image is flipped within the LargestPossibleRegion of the input image. As such, the LargestPossibleRegion of the output image is the same as the input.</p>
+<p>In terms of geometric coordinates, the output origin is such that the image is flipped with respect to the coordinate axes. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a562fd5ef5c190f50d7212af463d2c850" title="Flips an image across user specified axes.">itk::simple::Flip</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FlipImageFilter.html">itk::FlipImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkFlipImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkFlipImageFilter_8h_source.html">sitkFlipImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3b1341d6fd0788bb8b3c4c007a6f91fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FlipImageFilter.html#a3b1341d6fd0788bb8b3c4c007a6f91fe">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a26f1fa18c366fbfc2438f387f17fae31">NonLabelPixelIDTypeList</a></td></tr>
@@ -306,16 +315,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Flips an image across user specified axes. </p>
-<p><a class="el" href="classitk_1_1simple_1_1FlipImageFilter.html" title="Flips an image across user specified axes.">FlipImageFilter</a> flips an image across user specified axes. The flip axes are set via method SetFlipAxes( array ) where the input is a FixedArray&lt;bool,ImageDimension&gt;. The image is flipped across axes for which array[i] is true.</p>
-<p>In terms of grid coordinates the image is flipped within the LargestPossibleRegion of the input image. As such, the LargestPossibleRegion of the output image is the same as the input.</p>
-<p>In terms of geometric coordinates, the output origin is such that the image is flipped with respect to the coordinate axes. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a562fd5ef5c190f50d7212af463d2c850" title="Flips an image across user specified axes.">itk::simple::Flip</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FlipImageFilter.html">itk::FlipImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkFlipImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkFlipImageFilter_8h_source.html">sitkFlipImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab10e2a6a28a281769f71d3b0b7bba6e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab10e2a6a28a281769f71d3b0b7bba6e9">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

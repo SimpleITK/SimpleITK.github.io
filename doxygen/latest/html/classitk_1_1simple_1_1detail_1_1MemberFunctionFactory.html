@@ -98,7 +98,23 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory__coll__graph.svg" width="100%" height="368"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename TMemberFunctionPointer&gt;<br />
+class itk::simple::detail::MemberFunctionFactory&lt; TMemberFunctionPointer &gt;</h3>
+
+<p>A class used to instantiate and generate function object to templated member functions. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TMemberFunctionPointer</td><td>is the type of pointer to member function</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Example member function pointer: </p><div class="fragment"><div class="line">type alias <a class="codeRef" href="https://www.itk.org/Doxygen/html/classAddImageFilter.html">Self</a>&amp; (<a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac5a38df978fb2d44e9c04db52b288ec9">Self</a>::*<a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac1966e20ec8d3f92671bf20f6395ff02">MemberFunctionType</a>)( Image* );</div>
+</div><!-- fragment --><p>The RegisterMemberFunctions instantiate the templated member functions and registers the member function pointer, so that it be used for dispatch later. Later they can be retrieve with the GetMemberFunction methods, which return a function object with the same arguments as the templated member function pointer.</p>
+<p>An instance of a <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions.">MemberFunctionFactory</a> is bound to a specific instance of an object, so that the returned function object does not need to have the calling object specified. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00051">51</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a659b0b1809fcadc0608727f8e6dec6c8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#a659b0b1809fcadc0608727f8e6dec6c8">FunctionObjectType</a> = typename Superclass::FunctionObjectType</td></tr>
@@ -154,23 +170,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a20d6399eaa5548d9b93c21e20be615ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#a14acd04604cd5b9312c9087b6958091a">ObjectType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#a20d6399eaa5548d9b93c21e20be615ea">m_ObjectPointer</a></td></tr>
 <tr class="separator:a20d6399eaa5548d9b93c21e20be615ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename TMemberFunctionPointer&gt;<br />
-class itk::simple::detail::MemberFunctionFactory&lt; TMemberFunctionPointer &gt;</h3>
-
-<p>A class used to instantiate and generate function object to templated member functions. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TMemberFunctionPointer</td><td>is the type of pointer to member function</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Example member function pointer: </p><div class="fragment"><div class="line">type alias <a class="codeRef" href="https://www.itk.org/Doxygen/html/classAddImageFilter.html">Self</a>&amp; (<a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac5a38df978fb2d44e9c04db52b288ec9">Self</a>::*<a class="code" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html#ac1966e20ec8d3f92671bf20f6395ff02">MemberFunctionType</a>)( Image* );</div>
-</div><!-- fragment --><p>The RegisterMemberFunctions instantiate the templated member functions and registers the member function pointer, so that it be used for dispatch later. Later they can be retrieve with the GetMemberFunction methods, which return a function object with the same arguments as the templated member function pointer.</p>
-<p>An instance of a <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html" title="A class used to instantiate and generate function object to templated member functions.">MemberFunctionFactory</a> is bound to a specific instance of an object, so that the returned function object does not need to have the calling object specified. </p>
-
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00051">51</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a659b0b1809fcadc0608727f8e6dec6c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a659b0b1809fcadc0608727f8e6dec6c8">&#9670;&nbsp;</a></span>FunctionObjectType</h2>
 

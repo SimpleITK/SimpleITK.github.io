@@ -101,7 +101,35 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1AbsoluteValueDifferenceImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements pixel-wise the computation of absolute value difference. </p>
+<p>This filter is parameterized over the types of the two input images and the type of the output image.</p>
+<p>Numeric conversions (castings) are done by the C++ defaults.</p>
+<p>The filter will walk over all the pixels in the two input images, and for each one of them it will do the following:</p>
+<ul>
+<li>Cast the input 1 pixel value to double .</li>
+</ul>
+<ul>
+<li>Cast the input 2 pixel value to double .</li>
+</ul>
+<ul>
+<li>Compute the difference of the two pixel values.</li>
+</ul>
+<ul>
+<li>Compute the absolute value of the difference.</li>
+</ul>
+<ul>
+<li>Cast the double value resulting from the absolute value to the pixel type of the output image.</li>
+</ul>
+<ul>
+<li>Store the casted value into the output image.</li>
+</ul>
+<p>The filter expects all images to have the same dimension (e.g. all 2D, or all 3D, or all ND). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#acdf0744e37d4f8e521affcea2a67e8e4" title="Implements pixel-wise the computation of absolute value difference.">itk::simple::AbsoluteValueDifference</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AbsoluteValueDifferenceImageFilter.html">itk::AbsoluteValueDifferenceImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:abf52445c8a7d2a9efb2480bbd20c73fd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AbsoluteValueDifferenceImageFilter.html#abf52445c8a7d2a9efb2480bbd20c73fd">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -318,35 +346,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implements pixel-wise the computation of absolute value difference. </p>
-<p>This filter is parameterized over the types of the two input images and the type of the output image.</p>
-<p>Numeric conversions (castings) are done by the C++ defaults.</p>
-<p>The filter will walk over all the pixels in the two input images, and for each one of them it will do the following:</p>
-<ul>
-<li>Cast the input 1 pixel value to double .</li>
-</ul>
-<ul>
-<li>Cast the input 2 pixel value to double .</li>
-</ul>
-<ul>
-<li>Compute the difference of the two pixel values.</li>
-</ul>
-<ul>
-<li>Compute the absolute value of the difference.</li>
-</ul>
-<ul>
-<li>Cast the double value resulting from the absolute value to the pixel type of the output image.</li>
-</ul>
-<ul>
-<li>Store the casted value into the output image.</li>
-</ul>
-<p>The filter expects all images to have the same dimension (e.g. all 2D, or all 3D, or all ND). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#acdf0744e37d4f8e521affcea2a67e8e4" title="Implements pixel-wise the computation of absolute value difference.">itk::simple::AbsoluteValueDifference</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AbsoluteValueDifferenceImageFilter.html">itk::AbsoluteValueDifferenceImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a64be28cab9316612e2be05db0ba0e062"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64be28cab9316612e2be05db0ba0e062">&#9670;&nbsp;</a></span>MemberFunction1Type</h2>
 

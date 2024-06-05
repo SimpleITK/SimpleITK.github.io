@@ -101,7 +101,18 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1OrImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements the OR bitwise operator pixel-wise between two images. </p>
+<p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
+<p>Since the bitwise OR operation is only defined in C++ for integer types, the images passed to this filter must comply with the requirement of using integer pixel type.</p>
+<p>The total operation over one pixel will be</p>
+<div class="fragment"><div class="line">output_pixel = <span class="keyword">static_cast&lt;</span>OutputPixelType<span class="keyword">&gt;</span>( input1_pixel | input2_pixel )</div>
+</div><!-- fragment --><p>Where "|" is the boolean OR operator in C++. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3b499c59bafc3a6cba719da373e257d7" title="Implements the OR bitwise operator pixel-wise between two images.">itk::simple::Or</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OrImageFilter.html">itk::OrImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkOrImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkOrImageFilter_8h_source.html">sitkOrImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aeb72d320ad83ea09b10af4655f8fa8e0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1OrImageFilter.html#aeb72d320ad83ea09b10af4655f8fa8e0">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -318,18 +329,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implements the OR bitwise operator pixel-wise between two images. </p>
-<p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
-<p>Since the bitwise OR operation is only defined in C++ for integer types, the images passed to this filter must comply with the requirement of using integer pixel type.</p>
-<p>The total operation over one pixel will be</p>
-<div class="fragment"><div class="line">output_pixel = <span class="keyword">static_cast&lt;</span>OutputPixelType<span class="keyword">&gt;</span>( input1_pixel | input2_pixel )</div>
-</div><!-- fragment --><p>Where "|" is the boolean OR operator in C++. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3b499c59bafc3a6cba719da373e257d7" title="Implements the OR bitwise operator pixel-wise between two images.">itk::simple::Or</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OrImageFilter.html">itk::OrImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkOrImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkOrImageFilter_8h_source.html">sitkOrImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab64f604177d0b0c17da88afccebb661c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab64f604177d0b0c17da88afccebb661c">&#9670;&nbsp;</a></span>MemberFunction1Type</h2>
 

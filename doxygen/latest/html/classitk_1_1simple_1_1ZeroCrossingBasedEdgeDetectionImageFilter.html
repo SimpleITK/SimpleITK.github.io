@@ -101,7 +101,25 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ZeroCrossingBasedEdgeDetectionImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This filter implements a zero-crossing based edge detector. </p>
+<p>The zero-crossing based edge detector looks for pixels in the Laplacian of an image where the value of the Laplacian passes through zero points where the Laplacian changes sign. Such points often occur at "edges" in images i.e. points where the intensity of the image changes rapidly, but they also occur at places that are not as easy to associate with edges. It is best to think of the zero crossing detector as some sort of feature detector rather than as a specific edge detector.</p>
+<dl class="section user"><dt></dt><dd>Zero crossings always lie on closed contours and so the output from the zero crossing detector is usually a binary image with single pixel thickness lines showing the positions of the zero crossing points.</dd></dl>
+<dl class="section user"><dt></dt><dd>In this implementation, the input image is first smoothed with a Gaussian filter, then the <a class="el" href="classitk_1_1simple_1_1LaplacianImageFilter.html" title="This filter computes the Laplacian of a scalar-valued image.">LaplacianImageFilter</a> is applied to smoothed image. Finally the zero-crossing of the Laplacian of the smoothed image is detected. The output is a binary image.</dd></dl>
+<dl class="section user"><dt>Inputs and Outputs</dt><dd>The input to the filter should be a scalar, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> of arbitrary dimension. The output image is a binary, labeled image. See itkZeroCrossingImageFilter for more information on requirements of the data type of the output.</dd></dl>
+<dl class="section user"><dt></dt><dd>To use this filter, first set the parameters (variance and maximum error) needed by the embedded <a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a> , i.e. See <a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a> for information about these parameters. Optionally, you may also set foreground and background values for the zero-crossing filter. The default label values are Zero for the background and One for the foreground, as defined in <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html">NumericTraits</a> for the data type of the output image.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1LaplacianImageFilter.html" title="This filter computes the Laplacian of a scalar-valued image.">LaplacianImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1ZeroCrossingImageFilter.html" title="This filter finds the closest pixel to the zero-crossings (sign changes) in a signed itk::Image .">ZeroCrossingImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a4c86107425f17cd66ac3f8a6bb065740" title="This filter implements a zero-crossing based edge detector.">itk::simple::ZeroCrossingBasedEdgeDetection</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ZeroCrossingBasedEdgeDetectionImageFilter.html">itk::ZeroCrossingBasedEdgeDetectionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkZeroCrossingBasedEdgeDetectionImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkZeroCrossingBasedEdgeDetectionImageFilter_8h_source.html">sitkZeroCrossingBasedEdgeDetectionImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:aaeb1900642c33fd3ad52f51fbe17b21c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ZeroCrossingBasedEdgeDetectionImageFilter.html#aaeb1900642c33fd3ad52f51fbe17b21c">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae2afc490313982b43e05c1bee439ce42">RealPixelIDTypeList</a></td></tr>
@@ -314,25 +332,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This filter implements a zero-crossing based edge detector. </p>
-<p>The zero-crossing based edge detector looks for pixels in the Laplacian of an image where the value of the Laplacian passes through zero points where the Laplacian changes sign. Such points often occur at "edges" in images i.e. points where the intensity of the image changes rapidly, but they also occur at places that are not as easy to associate with edges. It is best to think of the zero crossing detector as some sort of feature detector rather than as a specific edge detector.</p>
-<dl class="section user"><dt></dt><dd>Zero crossings always lie on closed contours and so the output from the zero crossing detector is usually a binary image with single pixel thickness lines showing the positions of the zero crossing points.</dd></dl>
-<dl class="section user"><dt></dt><dd>In this implementation, the input image is first smoothed with a Gaussian filter, then the <a class="el" href="classitk_1_1simple_1_1LaplacianImageFilter.html" title="This filter computes the Laplacian of a scalar-valued image.">LaplacianImageFilter</a> is applied to smoothed image. Finally the zero-crossing of the Laplacian of the smoothed image is detected. The output is a binary image.</dd></dl>
-<dl class="section user"><dt>Inputs and Outputs</dt><dd>The input to the filter should be a scalar, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> of arbitrary dimension. The output image is a binary, labeled image. See itkZeroCrossingImageFilter for more information on requirements of the data type of the output.</dd></dl>
-<dl class="section user"><dt></dt><dd>To use this filter, first set the parameters (variance and maximum error) needed by the embedded <a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a> , i.e. See <a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a> for information about these parameters. Optionally, you may also set foreground and background values for the zero-crossing filter. The default label values are Zero for the background and One for the foreground, as defined in <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html">NumericTraits</a> for the data type of the output image.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1LaplacianImageFilter.html" title="This filter computes the Laplacian of a scalar-valued image.">LaplacianImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1ZeroCrossingImageFilter.html" title="This filter finds the closest pixel to the zero-crossings (sign changes) in a signed itk::Image .">ZeroCrossingImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a4c86107425f17cd66ac3f8a6bb065740" title="This filter implements a zero-crossing based edge detector.">itk::simple::ZeroCrossingBasedEdgeDetection</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ZeroCrossingBasedEdgeDetectionImageFilter.html">itk::ZeroCrossingBasedEdgeDetectionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkZeroCrossingBasedEdgeDetectionImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkZeroCrossingBasedEdgeDetectionImageFilter_8h_source.html">sitkZeroCrossingBasedEdgeDetectionImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a19e1041c1097eebdd05d40d1f92a942f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19e1041c1097eebdd05d40d1f92a942f">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

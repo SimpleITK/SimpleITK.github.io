@@ -101,7 +101,15 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1CropImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Decrease the image size by cropping the image by an <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">itk::Size</a> at both the upper and lower bounds of the largest possible region. </p>
+<p><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">CropImageFilter</a> changes the image boundary of an image by removing pixels outside the target region. The target region is not specified in advance, but calculated in BeforeThreadedGenerateData() .</p>
+<p>This filter uses <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html" title="Decrease the image size by cropping the image to the selected region bounds.">ExtractImageFilter</a> to perform the cropping. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0427db78361b5f99dc4cbb155619dc48" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">itk::simple::Crop</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CropImageFilter.html">itk::CropImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ac6cc85449c72733dcd774328688448d4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html#ac6cc85449c72733dcd774328688448d4">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a26f1fa18c366fbfc2438f387f17fae31">NonLabelPixelIDTypeList</a></td></tr>
@@ -306,15 +314,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Decrease the image size by cropping the image by an <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">itk::Size</a> at both the upper and lower bounds of the largest possible region. </p>
-<p><a class="el" href="classitk_1_1simple_1_1CropImageFilter.html" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">CropImageFilter</a> changes the image boundary of an image by removing pixels outside the target region. The target region is not specified in advance, but calculated in BeforeThreadedGenerateData() .</p>
-<p>This filter uses <a class="el" href="classitk_1_1simple_1_1ExtractImageFilter.html" title="Decrease the image size by cropping the image to the selected region bounds.">ExtractImageFilter</a> to perform the cropping. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0427db78361b5f99dc4cbb155619dc48" title="Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...">itk::simple::Crop</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CropImageFilter.html">itk::CropImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aaf3e1b0a5bb545f0922b3494a3ef606d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf3e1b0a5bb545f0922b3494a3ef606d">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

@@ -101,7 +101,28 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1VotingBinaryIterativeHoleFillingImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Fills in holes and cavities by iteratively applying a voting operation. </p>
+<p>This filter uses internally the <a class="el" href="classitk_1_1simple_1_1VotingBinaryHoleFillingImageFilter.html" title="Fills in holes and cavities by applying a voting operation on each pixel.">VotingBinaryHoleFillingImageFilter</a> , and runs it iteratively until no pixels are being changed or until it reaches the maximum number of iterations. The purpose of the filter is to fill in holes of medium size (tens of pixels in radius). In principle the number of iterations is related to the size of the holes to be filled in. The larger the holes, the more iteration must be run with this filter in order to fill in the full hole. The size of the neighborhood is also related to the curvature of the hole borders and therefore the hole size. Note that as a collateral effect this filter may also fill in cavities in the external side of structures.</p>
+<p>This filter is templated over a single image type because the output image type must be the same as the input image type. This is required in order to make the iterations possible, since the output image of one iteration is taken as the input image for the next iteration.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1VotingBinaryImageFilter.html" title="Applies a voting operation in a neighborhood of each pixel.">VotingBinaryImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1VotingBinaryHoleFillingImageFilter.html" title="Fills in holes and cavities by applying a voting operation on each pixel.">VotingBinaryHoleFillingImageFilter</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Neighborhood.html">Neighborhood</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodOperator.html">NeighborhoodOperator</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodIterator.html">NeighborhoodIterator</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a122e22f95a93b59200171cbda0651ddb" title="Fills in holes and cavities by iteratively applying a voting operation.">itk::simple::VotingBinaryIterativeHoleFilling</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VotingBinaryIterativeHoleFillingImageFilter.html">itk::VotingBinaryIterativeHoleFillingImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkVotingBinaryIterativeHoleFillingImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkVotingBinaryIterativeHoleFillingImageFilter_8h_source.html">sitkVotingBinaryIterativeHoleFillingImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a5c92c51dc94e41ca6e323f5d0b159d9d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VotingBinaryIterativeHoleFillingImageFilter.html#a5c92c51dc94e41ca6e323f5d0b159d9d">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -322,28 +343,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Fills in holes and cavities by iteratively applying a voting operation. </p>
-<p>This filter uses internally the <a class="el" href="classitk_1_1simple_1_1VotingBinaryHoleFillingImageFilter.html" title="Fills in holes and cavities by applying a voting operation on each pixel.">VotingBinaryHoleFillingImageFilter</a> , and runs it iteratively until no pixels are being changed or until it reaches the maximum number of iterations. The purpose of the filter is to fill in holes of medium size (tens of pixels in radius). In principle the number of iterations is related to the size of the holes to be filled in. The larger the holes, the more iteration must be run with this filter in order to fill in the full hole. The size of the neighborhood is also related to the curvature of the hole borders and therefore the hole size. Note that as a collateral effect this filter may also fill in cavities in the external side of structures.</p>
-<p>This filter is templated over a single image type because the output image type must be the same as the input image type. This is required in order to make the iterations possible, since the output image of one iteration is taken as the input image for the next iteration.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1VotingBinaryImageFilter.html" title="Applies a voting operation in a neighborhood of each pixel.">VotingBinaryImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1VotingBinaryHoleFillingImageFilter.html" title="Fills in holes and cavities by applying a voting operation on each pixel.">VotingBinaryHoleFillingImageFilter</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Neighborhood.html">Neighborhood</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodOperator.html">NeighborhoodOperator</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodIterator.html">NeighborhoodIterator</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a122e22f95a93b59200171cbda0651ddb" title="Fills in holes and cavities by iteratively applying a voting operation.">itk::simple::VotingBinaryIterativeHoleFilling</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VotingBinaryIterativeHoleFillingImageFilter.html">itk::VotingBinaryIterativeHoleFillingImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkVotingBinaryIterativeHoleFillingImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkVotingBinaryIterativeHoleFillingImageFilter_8h_source.html">sitkVotingBinaryIterativeHoleFillingImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab5276a93237d0b882056db31027d4611"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5276a93237d0b882056db31027d4611">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

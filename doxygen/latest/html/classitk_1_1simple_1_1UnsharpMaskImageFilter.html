@@ -101,7 +101,24 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1UnsharpMaskImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Edge enhancement filter. </p>
+<p>This filter subtracts a smoothed version of the image from the image to achieve the edge enhancing effect. <a href="https://en.wikipedia.org/w/index.php?title=Unsharp_masking&oldid=750486803#Photographic_unsharp_masking">https://en.wikipedia.org/w/index.php?title=Unsharp_masking&amp;oldid=750486803#Photographic_unsharp_masking</a></p>
+<p>It has configurable amount, radius (sigma) and threshold, and whether to clamp the resulting values to the range of output type.</p>
+<p>Formula: sharpened=original+[<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#a8d36e9e43216f0a0d76e74bfd02e882e">itk::Math::abs</a> (original-blurred)-threshold]*amount</p>
+<p>If clamping is turned off (it is on by default), casting to output pixel format is done using C++ defaults, meaning that values are not clamped but rather wrap around e.g. 260 -&gt; 4 (unsigned char).</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html">ImageToImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html" title="Computes the smoothing of an image by convolution with the Gaussian kernels implemented as IIR filter...">SmoothingRecursiveGaussianImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html" title="Applies a linear transformation to the intensity levels of the input Image .">RescaleIntensityImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a8ff616ef135d4f1e8fd0af23d1fe685c" title="Edge enhancement filter.">itk::simple::UnsharpMask</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnsharpMaskImageFilter.html">itk::UnsharpMaskImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a8d22e179c8c31aa855dd0774b96965a7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1UnsharpMaskImageFilter.html#a8d22e179c8c31aa855dd0774b96965a7">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae2afc490313982b43e05c1bee439ce42">RealPixelIDTypeList</a></td></tr>
@@ -321,24 +338,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Edge enhancement filter. </p>
-<p>This filter subtracts a smoothed version of the image from the image to achieve the edge enhancing effect. <a href="https://en.wikipedia.org/w/index.php?title=Unsharp_masking&oldid=750486803#Photographic_unsharp_masking">https://en.wikipedia.org/w/index.php?title=Unsharp_masking&amp;oldid=750486803#Photographic_unsharp_masking</a></p>
-<p>It has configurable amount, radius (sigma) and threshold, and whether to clamp the resulting values to the range of output type.</p>
-<p>Formula: sharpened=original+[<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html#a8d36e9e43216f0a0d76e74bfd02e882e">itk::Math::abs</a> (original-blurred)-threshold]*amount</p>
-<p>If clamping is turned off (it is on by default), casting to output pixel format is done using C++ defaults, meaning that values are not clamped but rather wrap around e.g. 260 -&gt; 4 (unsigned char).</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html">ImageToImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html" title="Computes the smoothing of an image by convolution with the Gaussian kernels implemented as IIR filter...">SmoothingRecursiveGaussianImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1RescaleIntensityImageFilter.html" title="Applies a linear transformation to the intensity levels of the input Image .">RescaleIntensityImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a8ff616ef135d4f1e8fd0af23d1fe685c" title="Edge enhancement filter.">itk::simple::UnsharpMask</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1UnsharpMaskImageFilter.html">itk::UnsharpMaskImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkUnsharpMaskImageFilter_8h_source.html">sitkUnsharpMaskImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af83baf217d08b3cb5a6f8b6bbd623694"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af83baf217d08b3cb5a6f8b6bbd623694">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

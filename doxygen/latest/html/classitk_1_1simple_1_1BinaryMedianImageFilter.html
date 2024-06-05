@@ -101,7 +101,25 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1BinaryMedianImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Applies a version of the median filter optimized for binary images. </p>
+<p>This filter was contributed by Bjorn Hanch Sollie after identifying that the generic Median filter performed unnecessary operations when the input image is binary.</p>
+<p>This filter computes an image where a given pixel is the median value of the pixels in a neighborhood about the corresponding input pixel. For the case of binary images the median can be obtained by simply counting the neighbors that are foreground.</p>
+<p>A median filter is one of the family of nonlinear filters. It is used to smooth an image without being biased by outliers or shot noise.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Neighborhood.html">Neighborhood</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodOperator.html">NeighborhoodOperator</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodIterator.html">NeighborhoodIterator</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#ab9fcbdc0f48fa3c2a04de766e499e198" title="Applies a version of the median filter optimized for binary images.">itk::simple::BinaryMedian</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMedianImageFilter.html">itk::BinaryMedianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a67821e1809d9d5a649305fc0290b4510"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMedianImageFilter.html#a67821e1809d9d5a649305fc0290b4510">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -310,25 +328,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Applies a version of the median filter optimized for binary images. </p>
-<p>This filter was contributed by Bjorn Hanch Sollie after identifying that the generic Median filter performed unnecessary operations when the input image is binary.</p>
-<p>This filter computes an image where a given pixel is the median value of the pixels in a neighborhood about the corresponding input pixel. For the case of binary images the median can be obtained by simply counting the neighbors that are foreground.</p>
-<p>A median filter is one of the family of nonlinear filters. It is used to smooth an image without being biased by outliers or shot noise.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Neighborhood.html">Neighborhood</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodOperator.html">NeighborhoodOperator</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodIterator.html">NeighborhoodIterator</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#ab9fcbdc0f48fa3c2a04de766e499e198" title="Applies a version of the median filter optimized for binary images.">itk::simple::BinaryMedian</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMedianImageFilter.html">itk::BinaryMedianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae8b0948ffddc3c2354012ce41aad18a9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8b0948ffddc3c2354012ce41aad18a9">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

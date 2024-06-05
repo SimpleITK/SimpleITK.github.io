@@ -101,7 +101,21 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1MorphologicalWatershedImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Watershed segmentation implementation with morphological operators. </p>
+<p>Watershed pixel are labeled 0. TOutputImage should be an integer type. Labels of output image are in no particular order. You can reorder the labels such that object labels are consecutive and sorted based on object size by passing the output of this filter to a <a class="el" href="classitk_1_1simple_1_1RelabelComponentImageFilter.html" title="Relabel the components in an image such that consecutive labels are used.">RelabelComponentImageFilter</a> .</p>
+<p>The morphological watershed transform algorithm is described in Chapter 9.2 of Pierre Soille's book "Morphological Image Analysis:
+Principles and Applications", Second Edition, Springer, 2003.</p>
+<p>This code was contributed in the Insight Journal paper: "The watershed transform in ITK - discussion and new developments" by Beare R., Lehmann G. <a href="https://www.insight-journal.org/browse/publication/92">https://www.insight-journal.org/browse/publication/92</a></p>
+<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WatershedImageFilter.html">WatershedImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedFromMarkersImageFilter.html" title="Morphological watershed transform from markers.">MorphologicalWatershedFromMarkersImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a5e7213afe94f1fdb6a8f6d5b9972e910" title="Watershed segmentation implementation with morphological operators.">itk::simple::MorphologicalWatershed</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologicalWatershedImageFilter.html">itk::MorphologicalWatershedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:af1e83d484c349faa754fa2968db7a7f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedImageFilter.html#af1e83d484c349faa754fa2968db7a7f1">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a7f2c4da9a98c4e86dd156896984f9292">ScalarPixelIDTypeList</a></td></tr>
@@ -316,21 +330,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Watershed segmentation implementation with morphological operators. </p>
-<p>Watershed pixel are labeled 0. TOutputImage should be an integer type. Labels of output image are in no particular order. You can reorder the labels such that object labels are consecutive and sorted based on object size by passing the output of this filter to a <a class="el" href="classitk_1_1simple_1_1RelabelComponentImageFilter.html" title="Relabel the components in an image such that consecutive labels are used.">RelabelComponentImageFilter</a> .</p>
-<p>The morphological watershed transform algorithm is described in Chapter 9.2 of Pierre Soille's book "Morphological Image Analysis:
-Principles and Applications", Second Edition, Springer, 2003.</p>
-<p>This code was contributed in the Insight Journal paper: "The watershed transform in ITK - discussion and new developments" by Beare R., Lehmann G. <a href="https://www.insight-journal.org/browse/publication/92">https://www.insight-journal.org/browse/publication/92</a></p>
-<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WatershedImageFilter.html">WatershedImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1MorphologicalWatershedFromMarkersImageFilter.html" title="Morphological watershed transform from markers.">MorphologicalWatershedFromMarkersImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a5e7213afe94f1fdb6a8f6d5b9972e910" title="Watershed segmentation implementation with morphological operators.">itk::simple::MorphologicalWatershed</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologicalWatershedImageFilter.html">itk::MorphologicalWatershedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkMorphologicalWatershedImageFilter_8h_source.html">sitkMorphologicalWatershedImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5373421e34c2dfd86f5f6c7adcada57c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5373421e34c2dfd86f5f6c7adcada57c">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

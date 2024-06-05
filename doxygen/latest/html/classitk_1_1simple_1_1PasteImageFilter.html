@@ -101,7 +101,16 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1PasteImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Paste an image (or a constant value) into another image. </p>
+<p><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html" title="Paste an image (or a constant value) into another image.">PasteImageFilter</a> allows a region in a destination image to be filled with a source image or a constant pixel value. The <a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#ab9ddb8d36c357d3a4914ef1a8a168e5f">SetDestinationIndex()</a> method prescribes where in the destination input to start pasting data from the source input. The SetSourceRegion method prescribes the section of the second image to paste into the first. When a constant pixel value is set, the SourceRegion describes the size of the region filled. If the output requested region does not include the SourceRegion after it has been repositioned to DestinationIndex, then the output will just be a copy of the input.</p>
+<p>This filter supports running "InPlace" to efficiently reuses the destination image buffer for the output, removing the need to copy the destination pixels to the output.</p>
+<p>When the source image is a lower dimension than the destination image then the DestinationSkipAxes parameter specifies which axes in the destination image are set to 1 when copying the region or filling with a constant. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#_a5">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a15ffe821330dbad1f5611ef207c430d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#a15ffe821330dbad1f5611ef207c430d8">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a26f1fa18c366fbfc2438f387f17fae31">NonLabelPixelIDTypeList</a></td></tr>
@@ -337,16 +346,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Paste an image (or a constant value) into another image. </p>
-<p><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html" title="Paste an image (or a constant value) into another image.">PasteImageFilter</a> allows a region in a destination image to be filled with a source image or a constant pixel value. The <a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html#ab9ddb8d36c357d3a4914ef1a8a168e5f">SetDestinationIndex()</a> method prescribes where in the destination input to start pasting data from the source input. The SetSourceRegion method prescribes the section of the second image to paste into the first. When a constant pixel value is set, the SourceRegion describes the size of the region filled. If the output requested region does not include the SourceRegion after it has been repositioned to DestinationIndex, then the output will just be a copy of the input.</p>
-<p>This filter supports running "InPlace" to efficiently reuses the destination image buffer for the output, removing the need to copy the destination pixels to the output.</p>
-<p>When the source image is a lower dimension than the destination image then the DestinationSkipAxes parameter specifies which axes in the destination image are set to 1 when copying the region or filling with a constant. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#_a5">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af495c589b7e409ba57f4e135759c93cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af495c589b7e409ba57f4e135759c93cb">&#9670;&nbsp;</a></span>MemberFunction2Type</h2>
 

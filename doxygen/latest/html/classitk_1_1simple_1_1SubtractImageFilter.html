@@ -101,7 +101,26 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1SubtractImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Pixel-wise subtraction of two images. </p>
+<p>Subtract each pixel from image2 from its corresponding pixel in image1:</p>
+<div class="fragment"><div class="line">Output = Input1 - Input2.</div>
+</div><!-- fragment --><p>This is done using</p>
+<div class="fragment"><div class="line">SetInput1 ( image1 );</div>
+<div class="line"> </div>
+<div class="line">SetInput2 ( image2 );</div>
+</div><!-- fragment --><p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
+<p>Additionally, a constant can be subtracted from every pixel in an image using:</p>
+<div class="fragment"><div class="line">SetInput1 ( image1 );</div>
+<div class="line"> </div>
+<div class="line">SetConstant2 ( constant );</div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The result of <a class="el" href="classitk_1_1simple_1_1AddImageFilter.html" title="Pixel-wise addition of two images.">AddImageFilter</a> with a negative constant is not necessarily the same as <a class="el" href="classitk_1_1simple_1_1SubtractImageFilter.html" title="Pixel-wise subtraction of two images.">SubtractImageFilter</a> . This would be the case when the PixelType defines an <a class="el" href="namespaceitk_1_1simple.html#a46dfc0d7148d01cf80a1f203d59357e1" title="Performs the operator on a per pixel basis.">operator-()</a> that is not the inverse of <a class="el" href="namespaceitk_1_1simple.html#a8ffc1beb923ff1d305983ac1ad36a325" title="Performs the operator on a per pixel basis.">operator+()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aaeaa0f0cea7ff314c4081e0981858f00" title="Pixel-wise subtraction of two images.">itk::simple::Subtract</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SubtractImageFilter.html">itk::SubtractImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkSubtractImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkSubtractImageFilter_8h_source.html">sitkSubtractImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae30c37aaff7f6ffcc5f2984ee9b51f38"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SubtractImageFilter.html#ae30c37aaff7f6ffcc5f2984ee9b51f38">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a26f1fa18c366fbfc2438f387f17fae31">NonLabelPixelIDTypeList</a></td></tr>
@@ -318,26 +337,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Pixel-wise subtraction of two images. </p>
-<p>Subtract each pixel from image2 from its corresponding pixel in image1:</p>
-<div class="fragment"><div class="line">Output = Input1 - Input2.</div>
-</div><!-- fragment --><p>This is done using</p>
-<div class="fragment"><div class="line">SetInput1 ( image1 );</div>
-<div class="line"> </div>
-<div class="line">SetInput2 ( image2 );</div>
-</div><!-- fragment --><p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
-<p>Additionally, a constant can be subtracted from every pixel in an image using:</p>
-<div class="fragment"><div class="line">SetInput1 ( image1 );</div>
-<div class="line"> </div>
-<div class="line">SetConstant2 ( constant );</div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The result of <a class="el" href="classitk_1_1simple_1_1AddImageFilter.html" title="Pixel-wise addition of two images.">AddImageFilter</a> with a negative constant is not necessarily the same as <a class="el" href="classitk_1_1simple_1_1SubtractImageFilter.html" title="Pixel-wise subtraction of two images.">SubtractImageFilter</a> . This would be the case when the PixelType defines an <a class="el" href="namespaceitk_1_1simple.html#a46dfc0d7148d01cf80a1f203d59357e1" title="Performs the operator on a per pixel basis.">operator-()</a> that is not the inverse of <a class="el" href="namespaceitk_1_1simple.html#a8ffc1beb923ff1d305983ac1ad36a325" title="Performs the operator on a per pixel basis.">operator+()</a> </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aaeaa0f0cea7ff314c4081e0981858f00" title="Pixel-wise subtraction of two images.">itk::simple::Subtract</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SubtractImageFilter.html">itk::SubtractImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkSubtractImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkSubtractImageFilter_8h_source.html">sitkSubtractImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad925f01b6c88805457baaceb7ff8c6d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad925f01b6c88805457baaceb7ff8c6d7">&#9670;&nbsp;</a></span>MemberFunction1Type</h2>
 

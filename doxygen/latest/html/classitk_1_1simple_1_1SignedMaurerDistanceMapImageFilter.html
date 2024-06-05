@@ -101,7 +101,17 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1SignedMaurerDistanceMapImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This filter calculates the Euclidean distance transform of a binary image in linear time for arbitrary dimensions. </p>
+<dl class="section user"><dt>Inputs and Outputs</dt><dd>This is an image-to-image filter. The dimensionality is arbitrary. The only dimensionality constraint is that the input and output images be of the same dimensions and size. To maintain integer arithmetic within the filter, the default output is the signed squared distance. This implies that the input image should be of type "unsigned int" or "int" whereas the output image is of type "int". Obviously, if the user wishes to utilize the image spacing or to have a filter with the Euclidean distance (as opposed to the squared distance), output image types of float or double should be used.</dd></dl>
+<p>The inside is considered as having negative distances. Outside is treated as having positive distances. To change the convention, use the InsideIsPositive(bool) function.</p>
+<dl class="section user"><dt>Parameters</dt><dd>Set/GetBackgroundValue specifies the background of the value of the input binary image. Normally this is zero and, as such, zero is the default value. Other than that, the usage is completely analogous to the itk::DanielssonDistanceImageFilter class except it does not return the Voronoi map.</dd></dl>
+<p>Reference: C. R. Maurer, Jr., R. Qi, and V. Raghavan, "A Linear Time <a class="elRef" href="https://www.itk.org/Doxygen/html/classAlgorithm.html">Algorithm</a> for Computing Exact Euclidean Distance Transforms of Binary Images in Arbitrary Dimensions", IEEE - Transactions on Pattern Analysis and Machine Intelligence, 25(2): 265-270, 2003. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a756e4bd805e8f8fc75091162f1f2c1fb" title="This filter calculates the Euclidean distance transform of a binary image in linear time for arbitrar...">itk::simple::SignedMaurerDistanceMap</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SignedMaurerDistanceMapImageFilter.html">itk::SignedMaurerDistanceMapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkSignedMaurerDistanceMapImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkSignedMaurerDistanceMapImageFilter_8h_source.html">sitkSignedMaurerDistanceMapImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae5687aad2fca02a2b22e4128db93d360"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SignedMaurerDistanceMapImageFilter.html#ae5687aad2fca02a2b22e4128db93d360">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -326,17 +336,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This filter calculates the Euclidean distance transform of a binary image in linear time for arbitrary dimensions. </p>
-<dl class="section user"><dt>Inputs and Outputs</dt><dd>This is an image-to-image filter. The dimensionality is arbitrary. The only dimensionality constraint is that the input and output images be of the same dimensions and size. To maintain integer arithmetic within the filter, the default output is the signed squared distance. This implies that the input image should be of type "unsigned int" or "int" whereas the output image is of type "int". Obviously, if the user wishes to utilize the image spacing or to have a filter with the Euclidean distance (as opposed to the squared distance), output image types of float or double should be used.</dd></dl>
-<p>The inside is considered as having negative distances. Outside is treated as having positive distances. To change the convention, use the InsideIsPositive(bool) function.</p>
-<dl class="section user"><dt>Parameters</dt><dd>Set/GetBackgroundValue specifies the background of the value of the input binary image. Normally this is zero and, as such, zero is the default value. Other than that, the usage is completely analogous to the itk::DanielssonDistanceImageFilter class except it does not return the Voronoi map.</dd></dl>
-<p>Reference: C. R. Maurer, Jr., R. Qi, and V. Raghavan, "A Linear Time <a class="elRef" href="https://www.itk.org/Doxygen/html/classAlgorithm.html">Algorithm</a> for Computing Exact Euclidean Distance Transforms of Binary Images in Arbitrary Dimensions", IEEE - Transactions on Pattern Analysis and Machine Intelligence, 25(2): 265-270, 2003. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a756e4bd805e8f8fc75091162f1f2c1fb" title="This filter calculates the Euclidean distance transform of a binary image in linear time for arbitrar...">itk::simple::SignedMaurerDistanceMap</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SignedMaurerDistanceMapImageFilter.html">itk::SignedMaurerDistanceMapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkSignedMaurerDistanceMapImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkSignedMaurerDistanceMapImageFilter_8h_source.html">sitkSignedMaurerDistanceMapImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a3c640929de1a1a4d276fd94fc4d87e32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c640929de1a1a4d276fd94fc4d87e32">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

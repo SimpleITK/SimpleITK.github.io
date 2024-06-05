@@ -101,7 +101,31 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This filter computes the distance map of the input image as an approximation with pixel accuracy to the Euclidean distance. </p>
+<p>TInputImage</p>
+<p>Input <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Type</p>
+<p>TOutputImage</p>
+<p>Output <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Type</p>
+<p>TVoronoiImage</p>
+<p>Voronoi <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Type. Note the default value is TInputImage.</p>
+<p>The input is assumed to contain numeric codes defining objects. The filter will produce as output the following images:</p>
+<ul>
+<li>A Voronoi partition using the same numeric codes as the input.</li>
+</ul>
+<ul>
+<li>A distance map with the approximation to the euclidean distance. from a particular pixel to the nearest object to this pixel in the input image.</li>
+</ul>
+<ul>
+<li>A vector map containing the component of the vector relating the current pixel with the closest point of the closest object to this pixel. Given that the components of the distance are computed in "pixels", the vector is represented by an <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Offset.html">itk::Offset</a> . That is, physical coordinates are not used.</li>
+</ul>
+<p>This filter is N-dimensional and known to be efficient in computational time. The algorithm is the N-dimensional version of the 4SED algorithm given for two dimensions in:</p>
+<p>Danielsson, Per-Erik. Euclidean Distance Mapping. Computer Graphics and <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Processing 14, 227-248 (1980). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab5f271ef7c905720f2d369b21297a634" title="This filter computes the distance map of the input image as an approximation with pixel accuracy to t...">itk::simple::DanielssonDistanceMap</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DanielssonDistanceMapImageFilter.html">itk::DanielssonDistanceMapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a4060ce36689bbfde9065efbcacb4e1e2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html#a4060ce36689bbfde9065efbcacb4e1e2">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -328,31 +352,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This filter computes the distance map of the input image as an approximation with pixel accuracy to the Euclidean distance. </p>
-<p>TInputImage</p>
-<p>Input <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Type</p>
-<p>TOutputImage</p>
-<p>Output <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Type</p>
-<p>TVoronoiImage</p>
-<p>Voronoi <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Type. Note the default value is TInputImage.</p>
-<p>The input is assumed to contain numeric codes defining objects. The filter will produce as output the following images:</p>
-<ul>
-<li>A Voronoi partition using the same numeric codes as the input.</li>
-</ul>
-<ul>
-<li>A distance map with the approximation to the euclidean distance. from a particular pixel to the nearest object to this pixel in the input image.</li>
-</ul>
-<ul>
-<li>A vector map containing the component of the vector relating the current pixel with the closest point of the closest object to this pixel. Given that the components of the distance are computed in "pixels", the vector is represented by an <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Offset.html">itk::Offset</a> . That is, physical coordinates are not used.</li>
-</ul>
-<p>This filter is N-dimensional and known to be efficient in computational time. The algorithm is the N-dimensional version of the 4SED algorithm given for two dimensions in:</p>
-<p>Danielsson, Per-Erik. Euclidean Distance Mapping. Computer Graphics and <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Processing 14, 227-248 (1980). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab5f271ef7c905720f2d369b21297a634" title="This filter computes the distance map of the input image as an approximation with pixel accuracy to t...">itk::simple::DanielssonDistanceMap</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DanielssonDistanceMapImageFilter.html">itk::DanielssonDistanceMapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkDanielssonDistanceMapImageFilter_8h_source.html">sitkDanielssonDistanceMapImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae04a076acc32f2242457218f5ba95d0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae04a076acc32f2242457218f5ba95d0d">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

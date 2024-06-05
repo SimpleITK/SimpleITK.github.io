@@ -101,7 +101,18 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1BSplineDecompositionImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Calculates the B-Spline coefficients of an image. Spline order may be from 0 to 5. </p>
+<p>This class defines N-Dimension B-Spline transformation. It is based on: [1] M. Unser, "Splines: A Perfect Fit for Signal and Image Processing," IEEE Signal Processing Magazine, vol. 16, no. 6, pp. 22-38, November 1999. [2] M. Unser, A. Aldroubi and M. Eden, "B-Spline Signal Processing: Part I--Theory," IEEE Transactions on Signal Processing, vol. 41, no. 2, pp. 821-832, February 1993. [3] M. Unser, A. Aldroubi and M. Eden, "B-Spline Signal Processing: Part II--Efficient Design and Applications," IEEE Transactions on Signal Processing, vol. 41, no. 2, pp. 834-848, February 1993. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1And.html">And</a> code obtained from bigwww.epfl.ch by Philippe Thevenaz</p>
+<p>Limitations: Spline order must be between 0 and 5. Spline order must be set before setting the image. Uses mirror boundary conditions. Requires the same order of Spline for each dimension. Can only process LargestPossibleRegion</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BSplineResampleImageFunction.html">BSplineResampleImageFunction</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#adac22044540321e90eb6acf22b073b1c" title="Calculates the B-Spline coefficients of an image. Spline order may be from 0 to 5.">itk::simple::BSplineDecomposition</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BSplineDecompositionImageFilter.html">itk::BSplineDecompositionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkBSplineDecompositionImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkBSplineDecompositionImageFilter_8h_source.html">sitkBSplineDecompositionImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:af97fdc1137da35440fb54b26cd661b12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BSplineDecompositionImageFilter.html#af97fdc1137da35440fb54b26cd661b12">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae2afc490313982b43e05c1bee439ce42">RealPixelIDTypeList</a></td></tr>
@@ -300,18 +311,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Calculates the B-Spline coefficients of an image. Spline order may be from 0 to 5. </p>
-<p>This class defines N-Dimension B-Spline transformation. It is based on: [1] M. Unser, "Splines: A Perfect Fit for Signal and Image Processing," IEEE Signal Processing Magazine, vol. 16, no. 6, pp. 22-38, November 1999. [2] M. Unser, A. Aldroubi and M. Eden, "B-Spline Signal Processing: Part I--Theory," IEEE Transactions on Signal Processing, vol. 41, no. 2, pp. 821-832, February 1993. [3] M. Unser, A. Aldroubi and M. Eden, "B-Spline Signal Processing: Part II--Efficient Design and Applications," IEEE Transactions on Signal Processing, vol. 41, no. 2, pp. 834-848, February 1993. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1And.html">And</a> code obtained from bigwww.epfl.ch by Philippe Thevenaz</p>
-<p>Limitations: Spline order must be between 0 and 5. Spline order must be set before setting the image. Uses mirror boundary conditions. Requires the same order of Spline for each dimension. Can only process LargestPossibleRegion</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BSplineResampleImageFunction.html">BSplineResampleImageFunction</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#adac22044540321e90eb6acf22b073b1c" title="Calculates the B-Spline coefficients of an image. Spline order may be from 0 to 5.">itk::simple::BSplineDecomposition</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BSplineDecompositionImageFilter.html">itk::BSplineDecompositionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkBSplineDecompositionImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkBSplineDecompositionImageFilter_8h_source.html">sitkBSplineDecompositionImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aaf8a9e76a35121e3f427d47baf14173f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf8a9e76a35121e3f427d47baf14173f">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

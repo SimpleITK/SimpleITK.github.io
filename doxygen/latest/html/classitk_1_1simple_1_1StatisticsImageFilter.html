@@ -101,7 +101,15 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1StatisticsImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Compute min, max, variance and mean of an <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> . </p>
+<p><a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a> computes the minimum, maximum, sum, sum of squares, mean, variance sigma of an image. The filter needs all of its input image. It behaves as a filter with an input and output. Thus it can be inserted in a pipeline with other filters and the statistics will only be recomputed if a downstream filter changes.</p>
+<p>This filter is automatically multi-threaded and can stream its input when NumberOfStreamDivisions is set to more than one. <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Statistics.html">Statistics</a> are independently computed for each streamed and threaded region then merged.</p>
+<p>Internally a compensated summation algorithm is used for the accumulation of intensities to improve accuracy for large images.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1StatisticsImageFilter.html">itk::StatisticsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a0d97667bce3ed9ddb36e32d9b975d8ca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html#a0d97667bce3ed9ddb36e32d9b975d8ca">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -314,15 +322,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Compute min, max, variance and mean of an <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> . </p>
-<p><a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a> computes the minimum, maximum, sum, sum of squares, mean, variance sigma of an image. The filter needs all of its input image. It behaves as a filter with an input and output. Thus it can be inserted in a pipeline with other filters and the statistics will only be recomputed if a downstream filter changes.</p>
-<p>This filter is automatically multi-threaded and can stream its input when NumberOfStreamDivisions is set to more than one. <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Statistics.html">Statistics</a> are independently computed for each streamed and threaded region then merged.</p>
-<p>Internally a compensated summation algorithm is used for the accumulation of intensities to improve accuracy for large images.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1StatisticsImageFilter.html">itk::StatisticsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkStatisticsImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkStatisticsImageFilter_8h_source.html">sitkStatisticsImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a903665bb2c6cbc8ae96cd1c505bc0a98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a903665bb2c6cbc8ae96cd1c505bc0a98">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

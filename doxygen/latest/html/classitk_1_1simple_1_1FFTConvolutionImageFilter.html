@@ -101,7 +101,24 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1FFTConvolutionImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Convolve a given image with an arbitrary image kernel using multiplication in the Fourier domain. </p>
+<p>This filter produces output equivalent to the output of the <a class="el" href="classitk_1_1simple_1_1ConvolutionImageFilter.html" title="Convolve a given image with an arbitrary image kernel.">ConvolutionImageFilter</a> . However, it takes advantage of the convolution theorem to accelerate the convolution computation when the kernel is large.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This filter ignores the spacing, origin, and orientation of the kernel image and treats them as identical to those in the input image.</dd></dl>
+<p>This code was adapted from the Insight Journal contribution:</p>
+<p>"FFT Based Convolution" by Gaetan Lehmann <a href="https://www.insight-journal.org/browse/publication/717">https://www.insight-journal.org/browse/publication/717</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ConvolutionImageFilter.html" title="Convolve a given image with an arbitrary image kernel.">ConvolutionImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IterativeDeconvolutionImageFilter.html">IterativeDeconvolutionImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#ad85c57efa143f122f648e7d880311c7d" title="Convolve a given image with an arbitrary image kernel using multiplication in the Fourier domain.">itk::simple::FFTConvolution</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FFTConvolutionImageFilter.html">itk::FFTConvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkFFTConvolutionImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkFFTConvolutionImageFilter_8h_source.html">sitkFFTConvolutionImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ac16ddd0f2804f014496e8d7d63ea1952"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FFTConvolutionImageFilter.html#ac16ddd0f2804f014496e8d7d63ea1952">BoundaryConditionType</a> { <br />
@@ -328,24 +345,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Convolve a given image with an arbitrary image kernel using multiplication in the Fourier domain. </p>
-<p>This filter produces output equivalent to the output of the <a class="el" href="classitk_1_1simple_1_1ConvolutionImageFilter.html" title="Convolve a given image with an arbitrary image kernel.">ConvolutionImageFilter</a> . However, it takes advantage of the convolution theorem to accelerate the convolution computation when the kernel is large.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This filter ignores the spacing, origin, and orientation of the kernel image and treats them as identical to those in the input image.</dd></dl>
-<p>This code was adapted from the Insight Journal contribution:</p>
-<p>"FFT Based Convolution" by Gaetan Lehmann <a href="https://www.insight-journal.org/browse/publication/717">https://www.insight-journal.org/browse/publication/717</a></p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ConvolutionImageFilter.html" title="Convolve a given image with an arbitrary image kernel.">ConvolutionImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IterativeDeconvolutionImageFilter.html">IterativeDeconvolutionImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#ad85c57efa143f122f648e7d880311c7d" title="Convolve a given image with an arbitrary image kernel using multiplication in the Fourier domain.">itk::simple::FFTConvolution</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FFTConvolutionImageFilter.html">itk::FFTConvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkFFTConvolutionImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkFFTConvolutionImageFilter_8h_source.html">sitkFFTConvolutionImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a34a0933ed48c4cd9d8ab367103580f99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a34a0933ed48c4cd9d8ab367103580f99">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

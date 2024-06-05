@@ -101,7 +101,22 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ConvolutionImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Convolve a given image with an arbitrary image kernel. </p>
+<p>This filter operates by centering the flipped kernel at each pixel in the image and computing the inner product between pixel values in the image and pixel values in the kernel. The center of the kernel is defined as \( \lfloor (2*i+s-1)/2 \rfloor \) where \(i\) is the index and \(s\) is the size of the largest possible region of the kernel image. For kernels with odd sizes in all dimensions, this corresponds to the center pixel. If a dimension of the kernel image has an even size, then the center index of the kernel in that dimension will be the largest integral index that is less than the continuous index of the image center.</p>
+<p>The kernel can optionally be normalized to sum to 1 using <a class="el" href="classitk_1_1simple_1_1ConvolutionImageFilter.html#ac5c5dfd56dbdc96c1916c67b2501bb60">NormalizeOn()</a> . Normalization is off by default.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This filter ignores the spacing, origin, and orientation of the kernel image and treats them as identical to those in the input image.</dd></dl>
+<p>This code was contributed in the Insight Journal paper:</p>
+<p>"Image Kernel Convolution" by Tustison N., Gee J. <a href="https://insight-journal.org/browse/publication/208">https://insight-journal.org/browse/publication/208</a></p>
+<dl class="section author"><dt>Author</dt><dd>Nicholas J. Tustison</dd>
+<dd>
+James C. Gee </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a55c2905c56f7529bd342b84173256485" title="Convolve a given image with an arbitrary image kernel.">itk::simple::Convolution</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ConvolutionImageFilter.html">itk::ConvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a554b83360d6ae7a805bc3a510889631e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ConvolutionImageFilter.html#a554b83360d6ae7a805bc3a510889631e">BoundaryConditionType</a> { <br />
@@ -328,22 +343,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Convolve a given image with an arbitrary image kernel. </p>
-<p>This filter operates by centering the flipped kernel at each pixel in the image and computing the inner product between pixel values in the image and pixel values in the kernel. The center of the kernel is defined as \( \lfloor (2*i+s-1)/2 \rfloor \) where \(i\) is the index and \(s\) is the size of the largest possible region of the kernel image. For kernels with odd sizes in all dimensions, this corresponds to the center pixel. If a dimension of the kernel image has an even size, then the center index of the kernel in that dimension will be the largest integral index that is less than the continuous index of the image center.</p>
-<p>The kernel can optionally be normalized to sum to 1 using <a class="el" href="classitk_1_1simple_1_1ConvolutionImageFilter.html#ac5c5dfd56dbdc96c1916c67b2501bb60">NormalizeOn()</a> . Normalization is off by default.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This filter ignores the spacing, origin, and orientation of the kernel image and treats them as identical to those in the input image.</dd></dl>
-<p>This code was contributed in the Insight Journal paper:</p>
-<p>"Image Kernel Convolution" by Tustison N., Gee J. <a href="https://insight-journal.org/browse/publication/208">https://insight-journal.org/browse/publication/208</a></p>
-<dl class="section author"><dt>Author</dt><dd>Nicholas J. Tustison</dd>
-<dd>
-James C. Gee </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a55c2905c56f7529bd342b84173256485" title="Convolve a given image with an arbitrary image kernel.">itk::simple::Convolution</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ConvolutionImageFilter.html">itk::ConvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a79d228d3defe925edfbb73f9af7b3fb1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79d228d3defe925edfbb73f9af7b3fb1">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

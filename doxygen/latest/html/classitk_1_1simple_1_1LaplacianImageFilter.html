@@ -101,7 +101,28 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1LaplacianImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This filter computes the Laplacian of a scalar-valued image. </p>
+<p>The Laplacian is an isotropic measure of the 2nd spatial derivative of an image. The Laplacian of an image highlights regions of rapid intensity change and is therefore often used for edge detection. Often, the Laplacian is applied to an image that has first been smoothed with a Gaussian filter in order to reduce its sensitivity to noise.</p>
+<dl class="section user"><dt></dt><dd>The Laplacian at each pixel location is computed by convolution with the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LaplacianOperator.html">itk::LaplacianOperator</a> .</dd></dl>
+<dl class="section user"><dt>Inputs and Outputs</dt><dd>The input to this filter is a scalar-valued <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> of arbitrary dimension. The output is a scalar-valued <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> .</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>The pixel type of the input and output images must be of real type (float or double). ConceptChecking is used here to enforce the input pixel type. You will get a compilation error if the pixel type of the input and output images is not float or double.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Neighborhood.html">Neighborhood</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodOperator.html">NeighborhoodOperator</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodIterator.html">NeighborhoodIterator</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LaplacianOperator.html">LaplacianOperator</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a4b566b8feacf3443bb00f393b21f1524" title="This filter computes the Laplacian of a scalar-valued image.">itk::simple::Laplacian</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LaplacianImageFilter.html">itk::LaplacianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkLaplacianImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkLaplacianImageFilter_8h_source.html">sitkLaplacianImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a77f4c1f3a24ecccdb195dea4769246ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1LaplacianImageFilter.html#a77f4c1f3a24ecccdb195dea4769246ce">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae2afc490313982b43e05c1bee439ce42">RealPixelIDTypeList</a></td></tr>
@@ -300,28 +321,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This filter computes the Laplacian of a scalar-valued image. </p>
-<p>The Laplacian is an isotropic measure of the 2nd spatial derivative of an image. The Laplacian of an image highlights regions of rapid intensity change and is therefore often used for edge detection. Often, the Laplacian is applied to an image that has first been smoothed with a Gaussian filter in order to reduce its sensitivity to noise.</p>
-<dl class="section user"><dt></dt><dd>The Laplacian at each pixel location is computed by convolution with the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LaplacianOperator.html">itk::LaplacianOperator</a> .</dd></dl>
-<dl class="section user"><dt>Inputs and Outputs</dt><dd>The input to this filter is a scalar-valued <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> of arbitrary dimension. The output is a scalar-valued <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a> .</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>The pixel type of the input and output images must be of real type (float or double). ConceptChecking is used here to enforce the input pixel type. You will get a compilation error if the pixel type of the input and output images is not float or double.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Neighborhood.html">Neighborhood</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodOperator.html">NeighborhoodOperator</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodIterator.html">NeighborhoodIterator</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LaplacianOperator.html">LaplacianOperator</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a4b566b8feacf3443bb00f393b21f1524" title="This filter computes the Laplacian of a scalar-valued image.">itk::simple::Laplacian</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LaplacianImageFilter.html">itk::LaplacianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkLaplacianImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkLaplacianImageFilter_8h_source.html">sitkLaplacianImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="af6fc87f473d1d136f4f9b183768ffbac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6fc87f473d1d136f4f9b183768ffbac">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

@@ -101,7 +101,39 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implementation of the N4 bias field correction algorithm. </p>
+<p>The nonparametric nonuniform intensity normalization (N3) algorithm, as introduced by Sled et al. in 1998 is a method for correcting nonuniformity associated with MR images. The algorithm assumes a simple parametric model (Gaussian) for the bias field and does not require tissue class segmentation. In addition, there are only a couple of parameters to tune with the default values performing quite well. N3 has been publicly available as a set of perl scripts (<a href="https://www.bic.mni.mcgill.ca/ServicesSoftwareAdvancedImageProcessingTools/HomePage">https://www.bic.mni.mcgill.ca/ServicesSoftwareAdvancedImageProcessingTools/HomePage</a> )</p>
+<p>The N4 algorithm, encapsulated with this class, is a variation of the original N3 algorithm with the additional benefits of an improved B-spline fitting routine which allows for multiple resolutions to be used during the correction process. We also modify the iterative update component of algorithm such that the residual bias field is continually updated</p>
+<p>Notes for the user: </p><ul>
+<li>Since much of the image manipulation is done in the log space of the intensities, input images with negative and small values (&lt; 1) can produce poor results.</li>
+</ul>
+<ul>
+<li>The original authors recommend performing the bias field correction on a downsampled version of the original image.</li>
+</ul>
+<ul>
+<li>A binary mask or a weighted image can be supplied. If a binary mask is specified, those voxels in the input image which correspond to the voxels in the mask image are used to estimate the bias field. If a UseMaskLabel value is set to false (the default), all non-zero voxels in the MaskImage will be masked; otherwise only voxels in the MaskImage that match the MaskLabel will be used. If a confidence image is specified, the input voxels are weighted in the b-spline fitting routine according to the confidence voxel values.</li>
+</ul>
+<ul>
+<li>The filter returns the corrected image. If the bias field is wanted, one can reconstruct it using the class itkBSplineControlPointImageFilter. See the IJ article and the test file for an example.</li>
+</ul>
+<ul>
+<li>The 'Z' parameter in Sled's 1998 paper is the square root of the class variable 'm_WienerFilterNoise'.</li>
+</ul>
+<p>The basic algorithm iterates between sharpening the intensity histogram of the corrected input image and spatially smoothing those results with a B-spline scalar field estimate of the bias field.</p>
+<dl class="section author"><dt>Author</dt><dd>Nicholas J. Tustison</dd></dl>
+<p>Contributed by Nicholas J. Tustison, James C. Gee in the Insight Journal paper: <a href="https://www.insight-journal.org/browse/publication/640">https://www.insight-journal.org/browse/publication/640</a></p>
+<dl class="section user"><dt>REFERENCE</dt><dd></dd></dl>
+<p>J.G. Sled, A.P. Zijdenbos and A.C. Evans. "A Nonparametric Method for
+Automatic Correction of Intensity Nonuniformity in Data" IEEE Transactions on Medical Imaging, Vol 17, No 1. Feb 1998.</p>
+<p>N.J. Tustison, B.B. Avants, P.A. Cook, Y. Zheng, A. Egan, P.A. Yushkevich, and J.C. Gee. "N4ITK: Improved N3 Bias Correction" IEEE Transactions on Medical Imaging, 29(6):1310-1320, June 2010. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab88a30e75bd572c0cb03ebf410f6f61c" title="Implementation of the N4 bias field correction algorithm.">itk::simple::N4BiasFieldCorrection</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1N4BiasFieldCorrectionImageFilter.html">itk::N4BiasFieldCorrectionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="N4BiasFieldCorrection_2N4BiasFieldCorrection_8cxx-example.html#_a5">N4BiasFieldCorrection/N4BiasFieldCorrection.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkN4BiasFieldCorrectionImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkN4BiasFieldCorrectionImageFilter_8h_source.html">sitkN4BiasFieldCorrectionImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:acbc13aabb254ce11d80c1ac7b91cba6b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1N4BiasFieldCorrectionImageFilter.html#acbc13aabb254ce11d80c1ac7b91cba6b">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae2afc490313982b43e05c1bee439ce42">RealPixelIDTypeList</a></td></tr>
@@ -371,39 +403,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of the N4 bias field correction algorithm. </p>
-<p>The nonparametric nonuniform intensity normalization (N3) algorithm, as introduced by Sled et al. in 1998 is a method for correcting nonuniformity associated with MR images. The algorithm assumes a simple parametric model (Gaussian) for the bias field and does not require tissue class segmentation. In addition, there are only a couple of parameters to tune with the default values performing quite well. N3 has been publicly available as a set of perl scripts (<a href="https://www.bic.mni.mcgill.ca/ServicesSoftwareAdvancedImageProcessingTools/HomePage">https://www.bic.mni.mcgill.ca/ServicesSoftwareAdvancedImageProcessingTools/HomePage</a> )</p>
-<p>The N4 algorithm, encapsulated with this class, is a variation of the original N3 algorithm with the additional benefits of an improved B-spline fitting routine which allows for multiple resolutions to be used during the correction process. We also modify the iterative update component of algorithm such that the residual bias field is continually updated</p>
-<p>Notes for the user: </p><ul>
-<li>Since much of the image manipulation is done in the log space of the intensities, input images with negative and small values (&lt; 1) can produce poor results.</li>
-</ul>
-<ul>
-<li>The original authors recommend performing the bias field correction on a downsampled version of the original image.</li>
-</ul>
-<ul>
-<li>A binary mask or a weighted image can be supplied. If a binary mask is specified, those voxels in the input image which correspond to the voxels in the mask image are used to estimate the bias field. If a UseMaskLabel value is set to false (the default), all non-zero voxels in the MaskImage will be masked; otherwise only voxels in the MaskImage that match the MaskLabel will be used. If a confidence image is specified, the input voxels are weighted in the b-spline fitting routine according to the confidence voxel values.</li>
-</ul>
-<ul>
-<li>The filter returns the corrected image. If the bias field is wanted, one can reconstruct it using the class itkBSplineControlPointImageFilter. See the IJ article and the test file for an example.</li>
-</ul>
-<ul>
-<li>The 'Z' parameter in Sled's 1998 paper is the square root of the class variable 'm_WienerFilterNoise'.</li>
-</ul>
-<p>The basic algorithm iterates between sharpening the intensity histogram of the corrected input image and spatially smoothing those results with a B-spline scalar field estimate of the bias field.</p>
-<dl class="section author"><dt>Author</dt><dd>Nicholas J. Tustison</dd></dl>
-<p>Contributed by Nicholas J. Tustison, James C. Gee in the Insight Journal paper: <a href="https://www.insight-journal.org/browse/publication/640">https://www.insight-journal.org/browse/publication/640</a></p>
-<dl class="section user"><dt>REFERENCE</dt><dd></dd></dl>
-<p>J.G. Sled, A.P. Zijdenbos and A.C. Evans. "A Nonparametric Method for
-Automatic Correction of Intensity Nonuniformity in Data" IEEE Transactions on Medical Imaging, Vol 17, No 1. Feb 1998.</p>
-<p>N.J. Tustison, B.B. Avants, P.A. Cook, Y. Zheng, A. Egan, P.A. Yushkevich, and J.C. Gee. "N4ITK: Improved N3 Bias Correction" IEEE Transactions on Medical Imaging, 29(6):1310-1320, June 2010. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab88a30e75bd572c0cb03ebf410f6f61c" title="Implementation of the N4 bias field correction algorithm.">itk::simple::N4BiasFieldCorrection</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1N4BiasFieldCorrectionImageFilter.html">itk::N4BiasFieldCorrectionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="N4BiasFieldCorrection_2N4BiasFieldCorrection_8cxx-example.html#_a5">N4BiasFieldCorrection/N4BiasFieldCorrection.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkN4BiasFieldCorrectionImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkN4BiasFieldCorrectionImageFilter_8h_source.html">sitkN4BiasFieldCorrectionImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0c8d156cba51015429efa01d235bec6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c8d156cba51015429efa01d235bec6e">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

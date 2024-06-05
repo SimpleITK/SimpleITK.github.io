@@ -101,7 +101,23 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1BinaryDilateImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Fast binary dilation of a single intensity value in the image. </p>
+<p><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image.">BinaryDilateImageFilter</a> is a binary dilation morphologic operation on the foreground of an image. Only the value designated by the intensity value "SetForegroundValue()" (alias as SetDilateValue() ) is considered as foreground, and other intensity values are considered background.</p>
+<p>Grayscale images can be processed as binary images by selecting a "ForegroundValue" (alias "DilateValue"). Pixel values matching the dilate value are considered the "foreground" and all other pixels are "background". This is useful in processing segmented images where all pixels in segment #1 have value 1 and pixels in segment #2 have value 2, etc. A particular "segment number" can be processed. ForegroundValue defaults to the maximum possible value of the PixelType.</p>
+<p>The structuring element is assumed to be composed of binary values (zero or one). Only elements of the structuring element having values &gt; 0 are candidates for affecting the center pixel. A reasonable choice of structuring element is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryBallStructuringElement.html">itk::BinaryBallStructuringElement</a> .</p>
+<p>This implementation is based on the papers:</p>
+<p>L.Vincent "Morphological transformations of binary images with
+arbitrary structuring elements", and</p>
+<p>N.Nikopoulos et al. "An efficient algorithm for 3d binary morphological transformations with 3d structuring elements for arbitrary size and shape". IEEE Transactions on <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Processing. Vol. 9. No. 3. 2000. pp. 283-286.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html">ImageToImageFilter</a> <a class="el" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image.">BinaryErodeImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMorphologyImageFilter.html">BinaryMorphologyImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a066294ceb0336d8cb49013b32e5c9a01" title="Fast binary dilation of a single intensity value in the image.">itk::simple::BinaryDilate</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryDilateImageFilter.html">itk::BinaryDilateImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3cd7cf4d7ccea822f5688b9494a2f97c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html#a3cd7cf4d7ccea822f5688b9494a2f97c">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -326,23 +342,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Fast binary dilation of a single intensity value in the image. </p>
-<p><a class="el" href="classitk_1_1simple_1_1BinaryDilateImageFilter.html" title="Fast binary dilation of a single intensity value in the image.">BinaryDilateImageFilter</a> is a binary dilation morphologic operation on the foreground of an image. Only the value designated by the intensity value "SetForegroundValue()" (alias as SetDilateValue() ) is considered as foreground, and other intensity values are considered background.</p>
-<p>Grayscale images can be processed as binary images by selecting a "ForegroundValue" (alias "DilateValue"). Pixel values matching the dilate value are considered the "foreground" and all other pixels are "background". This is useful in processing segmented images where all pixels in segment #1 have value 1 and pixels in segment #2 have value 2, etc. A particular "segment number" can be processed. ForegroundValue defaults to the maximum possible value of the PixelType.</p>
-<p>The structuring element is assumed to be composed of binary values (zero or one). Only elements of the structuring element having values &gt; 0 are candidates for affecting the center pixel. A reasonable choice of structuring element is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryBallStructuringElement.html">itk::BinaryBallStructuringElement</a> .</p>
-<p>This implementation is based on the papers:</p>
-<p>L.Vincent "Morphological transformations of binary images with
-arbitrary structuring elements", and</p>
-<p>N.Nikopoulos et al. "An efficient algorithm for 3d binary morphological transformations with 3d structuring elements for arbitrary size and shape". IEEE Transactions on <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Processing. Vol. 9. No. 3. 2000. pp. 283-286.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageToImageFilter.html">ImageToImageFilter</a> <a class="el" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image.">BinaryErodeImageFilter</a> <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMorphologyImageFilter.html">BinaryMorphologyImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a066294ceb0336d8cb49013b32e5c9a01" title="Fast binary dilation of a single intensity value in the image.">itk::simple::BinaryDilate</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryDilateImageFilter.html">itk::BinaryDilateImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryDilateImageFilter_8h_source.html">sitkBinaryDilateImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a32efe68d305864a679bb4f829951ba77"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32efe68d305864a679bb4f829951ba77">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

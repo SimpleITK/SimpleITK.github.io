@@ -101,7 +101,17 @@ $(function() {
 <div class="center"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1Transform__coll__graph.svg" width="311" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simplified wrapper around a variety of ITK transforms. </p>
+<p>The interface to ITK transform objects to be used with the <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html" title="An interface method to the modular ITKv4 registration framework.">ImageRegistrationMethod</a>, <a class="el" href="classitk_1_1simple_1_1ResampleImageFilter.html" title="Resample an image via a coordinate transform.">ResampleImageFilter</a> and other SimpleITK process objects. The transforms are designed to have a serialized array of parameters to facilitate optimization for registration.</p>
+<p>Provides a base class interface to any type of ITK transform. Objects of this type may have their interface converted to a derived interface while keeping the same reference to the ITK object.</p>
+<p>Additionally, this class provides a basic interface to a composite transforms.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CompositeTransform.html">itk::CompositeTransform</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a15">DemonsRegistration2/DemonsRegistration2.cxx</a>, <a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#_a14">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#_a17">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#_a17">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#_a20">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a5">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, and <a class="el" href="SimpleIO_2SimpleIO_8cxx-example.html#_a14">SimpleIO/SimpleIO.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkTransform_8h_source.html#l00086">86</a> of file <a class="el" href="sitkTransform_8h_source.html">sitkTransform.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1Transform_1_1DisplacementInitializationMemberFunctionAddressor.html">DisplacementInitializationMemberFunctionAddressor</a></td></tr>
@@ -217,17 +227,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0e66dbdbe0f207083373e52f43813ba8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; PimpleTransformBase &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1Transform.html#a0e66dbdbe0f207083373e52f43813ba8">m_PimpleTransform</a></td></tr>
 <tr class="separator:a0e66dbdbe0f207083373e52f43813ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simplified wrapper around a variety of ITK transforms. </p>
-<p>The interface to ITK transform objects to be used with the <a class="el" href="classitk_1_1simple_1_1ImageRegistrationMethod.html" title="An interface method to the modular ITKv4 registration framework.">ImageRegistrationMethod</a>, <a class="el" href="classitk_1_1simple_1_1ResampleImageFilter.html" title="Resample an image via a coordinate transform.">ResampleImageFilter</a> and other SimpleITK process objects. The transforms are designed to have a serialized array of parameters to facilitate optimization for registration.</p>
-<p>Provides a base class interface to any type of ITK transform. Objects of this type may have their interface converted to a derived interface while keeping the same reference to the ITK object.</p>
-<p>Additionally, this class provides a basic interface to a composite transforms.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CompositeTransform.html">itk::CompositeTransform</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a15">DemonsRegistration2/DemonsRegistration2.cxx</a>, <a class="el" href="ImageRegistrationMethod1_2ImageRegistrationMethod1_8cxx-example.html#_a14">ImageRegistrationMethod1/ImageRegistrationMethod1.cxx</a>, <a class="el" href="ImageRegistrationMethod2_2ImageRegistrationMethod2_8cxx-example.html#_a17">ImageRegistrationMethod2/ImageRegistrationMethod2.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline1_2ImageRegistrationMethodBSpline1_8cxx-example.html#_a17">ImageRegistrationMethodBSpline1/ImageRegistrationMethodBSpline1.cxx</a>, <a class="el" href="ImageRegistrationMethodBSpline3_2ImageRegistrationMethodBSpline3_8cxx-example.html#_a20">ImageRegistrationMethodBSpline3/ImageRegistrationMethodBSpline3.cxx</a>, <a class="el" href="ImageRegistrationMethodDisplacement1_2ImageRegistrationMethodDisplacement1_8cxx-example.html#_a5">ImageRegistrationMethodDisplacement1/ImageRegistrationMethodDisplacement1.cxx</a>, and <a class="el" href="SimpleIO_2SimpleIO_8cxx-example.html#_a14">SimpleIO/SimpleIO.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkTransform_8h_source.html#l00086">86</a> of file <a class="el" href="sitkTransform_8h_source.html">sitkTransform.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a37c521e4b42407697a08b864ee61061f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a37c521e4b42407697a08b864ee61061f">&#9670;&nbsp;</a></span>Self</h2>
 

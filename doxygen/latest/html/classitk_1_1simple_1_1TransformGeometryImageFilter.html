@@ -101,7 +101,64 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1TransformGeometryImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Modify an image's geometric meta-data, changing its "physical" extent. </p>
+<p>The <a class="el" href="classitk_1_1simple_1_1TransformGeometryImageFilter.html" title="Modify an image&#39;s geometric meta-data, changing its &quot;physical&quot; extent.">TransformGeometryImageFilter</a> "physically" changes the image in space using the given transformation. The resulting image is an image with the same voxel values as the input, but with different physical space representation as affected by the transform.</p>
+<p>The specific transformation type can be any type derived from the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MatrixOffsetTransformBase.html">MatrixOffsetTransformBase</a> and the <a class="el" href="classitk_1_1simple_1_1TranslationTransform.html" title="Translation of a 2D or 3D coordinate space.">TranslationTransform</a> . The modification of the geometric meta-data is an alternative to resampling the moving image onto the fixed image grid, after registration. The advantages of using this approach over resampling are two-fold, it does not introduce artifacts into the result because the original intensity information is not modified, and it is computationally more efficient.</p>
+<p>When the filter is used with a rigid or translation transformation the resulting image can be saved in any desired format. When the filter is used with an affine transformation the resulting image should be saved in a format that supports a non ortho-normal direction cosine matrix (e.g. nrrd).</p>
+<p>Let us call the transform operation from the fixed image to moving image TfmF2M . Given a set of points from the fixed image in physical space (i.e. physicalFixedImagePoints ), the aim is to convert those points into the moving image physical space as physicalMovingImagePoints = TfmF2M( physicalFixedImagePoints ) , and then be able to get the image values as movingContinuousIndexPoints = movingImage-&gt;TransformPhysicalPointToContinuousIndex( physicalMovingImagePoints ) .</p>
+<p>We desire to change the moving image direction cosine \(\mathbf{D}\) and origin \(\mathbf{o}\) such that we can compute the moving image points as movingContinuousIndexPoints = newMovingImage-&gt;TransformPhysicalPointToContinuousIndex( physicalFixedImagePoints )</p>
+<p>Let us introduce the notation that will be used to formalize the transformation:</p>
+<ul>
+<li>Image-related parameters:</li>
+</ul>
+<ul>
+<li>\(\mathbf{D}\) : direction cosine matrix</li>
+</ul>
+<ul>
+<li>\(\mathbf{o}\) : origin vector</li>
+</ul>
+<ul>
+<li>\(\mathbf{S}\) : spacing</li>
+</ul>
+<ul>
+<li>\(\mathbf{ci}\) : continuous index</li>
+</ul>
+<ul>
+<li>\(\mathbf{D}^{&#39;}\) : new direction cosine matrix</li>
+</ul>
+<ul>
+<li>\(\mathbf{o}^{&#39;}\) : new origin vector</li>
+</ul>
+<ul>
+<li><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> content in corresponding space:</li>
+</ul>
+<ul>
+<li>\(\mathbf{f}_{p}\) : fixed image points in physical space</li>
+</ul>
+<ul>
+<li>\(\mathbf{m}_{p}\) : moving image points in physical space</li>
+</ul>
+<ul>
+<li>Rigid transform-related parameters:</li>
+</ul>
+<ul>
+<li>\(\mathbf{R}\) : rotation matrix</li>
+</ul>
+<ul>
+<li>\(\mathbf{c}\) : center of rotation vector</li>
+</ul>
+<ul>
+<li>\(\mathbf{t}\) : translation vector</li>
+</ul>
+<p>The TransformPhysicalPointToContinuousIndex method performs then: \begin{eqnarray*} \mathbf{ci} &amp;= \mathbf{S}^{-1}\mathbf{D}^{-1}( \mathbf{m}_{p} - \mathbf{o} ) \ \mathbf{m}_{p} &amp;= \mathbf{R}(\mathbf{f}_{p} - \mathbf{c}) + \mathbf{c} + \mathbf{t} \end{eqnarray*}</p>
+<p>After substitution:</p>
+<p>\begin{eqnarray*} \mathbf{m}_{c} &amp;= \underbrace{\mathbf{R}^{-1}\mathbf{D}}_\text{new cosine}\mathbf{S} * \mathbf{i} + \underbrace{\mathbf{R}^{-1} * \mathbf{o} - \mathbf{R}^{-1} * \mathbf{c} - \mathbf{R}^{-1}*t}_\text{new origin} + \mathbf{c} \ \ \mathbf{D}^{'} &amp;= \mathbf{R}^{-1}\mathbf{D} \ \mathbf{o}^{'} &amp;= \mathbf{R}^{-1} * ( \mathbf{o} - \mathbf{c} - \mathbf{t} ) + \mathbf{c} \end{eqnarray*} </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a04ad561182689674c27bd53041e25ec5" title="Modify an image&#39;s geometric meta-data, changing its &quot;physical&quot; extent.">itk::simple::TransformGeometry</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformGeometryImageFilter.html">itk::TransformGeometryImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a89f0aa04929fc0f8dcb3aa4621476aca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TransformGeometryImageFilter.html#a89f0aa04929fc0f8dcb3aa4621476aca">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a26f1fa18c366fbfc2438f387f17fae31">NonLabelPixelIDTypeList</a></td></tr>
@@ -294,64 +351,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Modify an image's geometric meta-data, changing its "physical" extent. </p>
-<p>The <a class="el" href="classitk_1_1simple_1_1TransformGeometryImageFilter.html" title="Modify an image&#39;s geometric meta-data, changing its &quot;physical&quot; extent.">TransformGeometryImageFilter</a> "physically" changes the image in space using the given transformation. The resulting image is an image with the same voxel values as the input, but with different physical space representation as affected by the transform.</p>
-<p>The specific transformation type can be any type derived from the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MatrixOffsetTransformBase.html">MatrixOffsetTransformBase</a> and the <a class="el" href="classitk_1_1simple_1_1TranslationTransform.html" title="Translation of a 2D or 3D coordinate space.">TranslationTransform</a> . The modification of the geometric meta-data is an alternative to resampling the moving image onto the fixed image grid, after registration. The advantages of using this approach over resampling are two-fold, it does not introduce artifacts into the result because the original intensity information is not modified, and it is computationally more efficient.</p>
-<p>When the filter is used with a rigid or translation transformation the resulting image can be saved in any desired format. When the filter is used with an affine transformation the resulting image should be saved in a format that supports a non ortho-normal direction cosine matrix (e.g. nrrd).</p>
-<p>Let us call the transform operation from the fixed image to moving image TfmF2M . Given a set of points from the fixed image in physical space (i.e. physicalFixedImagePoints ), the aim is to convert those points into the moving image physical space as physicalMovingImagePoints = TfmF2M( physicalFixedImagePoints ) , and then be able to get the image values as movingContinuousIndexPoints = movingImage-&gt;TransformPhysicalPointToContinuousIndex( physicalMovingImagePoints ) .</p>
-<p>We desire to change the moving image direction cosine \(\mathbf{D}\) and origin \(\mathbf{o}\) such that we can compute the moving image points as movingContinuousIndexPoints = newMovingImage-&gt;TransformPhysicalPointToContinuousIndex( physicalFixedImagePoints )</p>
-<p>Let us introduce the notation that will be used to formalize the transformation:</p>
-<ul>
-<li>Image-related parameters:</li>
-</ul>
-<ul>
-<li>\(\mathbf{D}\) : direction cosine matrix</li>
-</ul>
-<ul>
-<li>\(\mathbf{o}\) : origin vector</li>
-</ul>
-<ul>
-<li>\(\mathbf{S}\) : spacing</li>
-</ul>
-<ul>
-<li>\(\mathbf{ci}\) : continuous index</li>
-</ul>
-<ul>
-<li>\(\mathbf{D}^{&#39;}\) : new direction cosine matrix</li>
-</ul>
-<ul>
-<li>\(\mathbf{o}^{&#39;}\) : new origin vector</li>
-</ul>
-<ul>
-<li><a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> content in corresponding space:</li>
-</ul>
-<ul>
-<li>\(\mathbf{f}_{p}\) : fixed image points in physical space</li>
-</ul>
-<ul>
-<li>\(\mathbf{m}_{p}\) : moving image points in physical space</li>
-</ul>
-<ul>
-<li>Rigid transform-related parameters:</li>
-</ul>
-<ul>
-<li>\(\mathbf{R}\) : rotation matrix</li>
-</ul>
-<ul>
-<li>\(\mathbf{c}\) : center of rotation vector</li>
-</ul>
-<ul>
-<li>\(\mathbf{t}\) : translation vector</li>
-</ul>
-<p>The TransformPhysicalPointToContinuousIndex method performs then: \begin{eqnarray*} \mathbf{ci} &amp;= \mathbf{S}^{-1}\mathbf{D}^{-1}( \mathbf{m}_{p} - \mathbf{o} ) \ \mathbf{m}_{p} &amp;= \mathbf{R}(\mathbf{f}_{p} - \mathbf{c}) + \mathbf{c} + \mathbf{t} \end{eqnarray*}</p>
-<p>After substitution:</p>
-<p>\begin{eqnarray*} \mathbf{m}_{c} &amp;= \underbrace{\mathbf{R}^{-1}\mathbf{D}}_\text{new cosine}\mathbf{S} * \mathbf{i} + \underbrace{\mathbf{R}^{-1} * \mathbf{o} - \mathbf{R}^{-1} * \mathbf{c} - \mathbf{R}^{-1}*t}_\text{new origin} + \mathbf{c} \ \ \mathbf{D}^{'} &amp;= \mathbf{R}^{-1}\mathbf{D} \ \mathbf{o}^{'} &amp;= \mathbf{R}^{-1} * ( \mathbf{o} - \mathbf{c} - \mathbf{t} ) + \mathbf{c} \end{eqnarray*} </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a04ad561182689674c27bd53041e25ec5" title="Modify an image&#39;s geometric meta-data, changing its &quot;physical&quot; extent.">itk::simple::TransformGeometry</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformGeometryImageFilter.html">itk::TransformGeometryImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aac00adccfe10e557462dd08e887acb81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac00adccfe10e557462dd08e887acb81">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

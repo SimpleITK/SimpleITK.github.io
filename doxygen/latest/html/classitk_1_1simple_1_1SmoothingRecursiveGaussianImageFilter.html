@@ -101,7 +101,17 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Computes the smoothing of an image by convolution with the Gaussian kernels implemented as IIR filters. </p>
+<p>This filter is implemented using the recursive gaussian filters. For multi-component images, the filter works on each component independently.</p>
+<p>For this filter to be able to run in-place the input and output image types need to be the same and/or the same type as the RealImageType. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5c138e58c3521cd52f8caaec77d368a5" title="Computes the smoothing of an image by convolution with the Gaussian kernels implemented as IIR filter...">itk::simple::SmoothingRecursiveGaussian</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmoothingRecursiveGaussianImageFilter.html">itk::SmoothingRecursiveGaussianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#_a6">CppInPlace/CppInPlace.cxx</a>, and <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#_a4">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a68e45ca3a92550a24ea451ef7be7622b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SmoothingRecursiveGaussianImageFilter.html#a68e45ca3a92550a24ea451ef7be7622b">PixelIDTypeList</a> = typelist2::append&lt; <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a>, <a class="el" href="namespaceitk_1_1simple.html#a40fe06902d56d1227dbf12e4a347f750">VectorPixelIDTypeList</a> &gt;::type</td></tr>
@@ -312,17 +322,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Computes the smoothing of an image by convolution with the Gaussian kernels implemented as IIR filters. </p>
-<p>This filter is implemented using the recursive gaussian filters. For multi-component images, the filter works on each component independently.</p>
-<p>For this filter to be able to run in-place the input and output image types need to be the same and/or the same type as the RealImageType. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5c138e58c3521cd52f8caaec77d368a5" title="Computes the smoothing of an image by convolution with the Gaussian kernels implemented as IIR filter...">itk::simple::SmoothingRecursiveGaussian</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmoothingRecursiveGaussianImageFilter.html">itk::SmoothingRecursiveGaussianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CppInPlace_2CppInPlace_8cxx-example.html#_a6">CppInPlace/CppInPlace.cxx</a>, and <a class="el" href="SimpleGaussian_2SimpleGaussian_8cxx-example.html#_a4">SimpleGaussian/SimpleGaussian.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkSmoothingRecursiveGaussianImageFilter_8h_source.html">sitkSmoothingRecursiveGaussianImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a0ffacba311cc4235e096c5871c6a0393"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ffacba311cc4235e096c5871c6a0393">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

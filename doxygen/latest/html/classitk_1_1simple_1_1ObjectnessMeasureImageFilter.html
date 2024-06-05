@@ -101,7 +101,27 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ObjectnessMeasureImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Enhance M-dimensional objects in N-dimensional images. </p>
+<p>This filter is a generalization of Frangi's vesselness measurement for detecting M-dimensional object in N-dimensional space. For example a vessel is a 1-D object in 3-D space. The filter can enhance blob-like structures (M=0), vessel-like structures (M=1), 2D plate-like structures (M=2), hyper-plate-like structures (M=3) in N-dimensional images, with M&lt;N.</p>
+<p>This filter takes a scalar image as input and produces a real valued image as output which contains the objectness measure at each pixel. Internally, it computes a Hessian via discrete central differences. Before applying this filter it is expected that a Gaussian smoothing filter at an appropriate scale (sigma) was applied to the input image.</p>
+<p>The enhancement is based on the eigenvalues of the Hessian matrix. For the Frangi's vesselness case were M=1 and N=3 we have the 3 eigenvalues such that \( | \lambda_1 | &lt; | \lambda_2 | &lt; |\lambda_3 | \) . The formula follows:</p>
+<p class="formulaDsp">
+\[ R_A = \frac{|\lambda_2|}{|\lambda_3|}, \; R_B = \frac{|\lambda_2|}{|\lambda_2\lambda_3|}, \; S = \sqrt{\lambda_1^2+\lambda_2^2+\lambda_3^2} \]
+</p>
+ <p class="formulaDsp">
+\[ V_{\sigma}= \begin{cases} (1-e^{-\frac{R_A^2}{2\alpha^2}}) \cdot e^{\frac{R_B^2}{2\beta^2}} \cdot (1-e^{-\frac{S^2}{2\gamma^2}}) &amp; \text{if } \lambda_2&lt;0 \text{ and } \lambda_3&lt;0 \text{,}\\ 0 &amp; \text{otherwise} \end{cases} \]
+</p>
+<dl class="section user"><dt>References</dt><dd>Antiga, L. Generalizing vesselness with respect to dimensionality and shape. <a href="https://hdl.handle.net/1926/576">https://hdl.handle.net/1926/576</a></dd></dl>
+<dl class="section user"><dt></dt><dd>Frangi, AF, Niessen, WJ, Vincken, KL, &amp; Viergever, MA (1998). Multiscale Vessel Enhancement Filtering. In Wells, WM, Colchester, A, &amp; Delp, S, Editors, MICCAI '98 Medical <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Computing and Computer-Assisted Intervention, Lecture Notes in Computer Science, pages 130-137, Springer Verlag, 1998.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1HessianToObjectnessMeasureImageFilter.html">itk::HessianToObjectnessMeasureImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a1c8d3199aa35eac70686cded13697b9f" title="Enhance M-dimensional objects in N-dimensional images.">itk::simple::ObjectnessMeasure</a> for the procedural interface </dd>
+<dd>
+itk::ObjectnessMeasureImageFilter for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a55190761899e1177fafd1e606e738d99"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ObjectnessMeasureImageFilter.html#a55190761899e1177fafd1e606e738d99">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae2afc490313982b43e05c1bee439ce42">RealPixelIDTypeList</a></td></tr>
@@ -334,27 +354,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Enhance M-dimensional objects in N-dimensional images. </p>
-<p>This filter is a generalization of Frangi's vesselness measurement for detecting M-dimensional object in N-dimensional space. For example a vessel is a 1-D object in 3-D space. The filter can enhance blob-like structures (M=0), vessel-like structures (M=1), 2D plate-like structures (M=2), hyper-plate-like structures (M=3) in N-dimensional images, with M&lt;N.</p>
-<p>This filter takes a scalar image as input and produces a real valued image as output which contains the objectness measure at each pixel. Internally, it computes a Hessian via discrete central differences. Before applying this filter it is expected that a Gaussian smoothing filter at an appropriate scale (sigma) was applied to the input image.</p>
-<p>The enhancement is based on the eigenvalues of the Hessian matrix. For the Frangi's vesselness case were M=1 and N=3 we have the 3 eigenvalues such that \( | \lambda_1 | &lt; | \lambda_2 | &lt; |\lambda_3 | \) . The formula follows:</p>
-<p class="formulaDsp">
-\[ R_A = \frac{|\lambda_2|}{|\lambda_3|}, \; R_B = \frac{|\lambda_2|}{|\lambda_2\lambda_3|}, \; S = \sqrt{\lambda_1^2+\lambda_2^2+\lambda_3^2} \]
-</p>
- <p class="formulaDsp">
-\[ V_{\sigma}= \begin{cases} (1-e^{-\frac{R_A^2}{2\alpha^2}}) \cdot e^{\frac{R_B^2}{2\beta^2}} \cdot (1-e^{-\frac{S^2}{2\gamma^2}}) &amp; \text{if } \lambda_2&lt;0 \text{ and } \lambda_3&lt;0 \text{,}\\ 0 &amp; \text{otherwise} \end{cases} \]
-</p>
-<dl class="section user"><dt>References</dt><dd>Antiga, L. Generalizing vesselness with respect to dimensionality and shape. <a href="https://hdl.handle.net/1926/576">https://hdl.handle.net/1926/576</a></dd></dl>
-<dl class="section user"><dt></dt><dd>Frangi, AF, Niessen, WJ, Vincken, KL, &amp; Viergever, MA (1998). Multiscale Vessel Enhancement Filtering. In Wells, WM, Colchester, A, &amp; Delp, S, Editors, MICCAI '98 Medical <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Computing and Computer-Assisted Intervention, Lecture Notes in Computer Science, pages 130-137, Springer Verlag, 1998.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1HessianToObjectnessMeasureImageFilter.html">itk::HessianToObjectnessMeasureImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a1c8d3199aa35eac70686cded13697b9f" title="Enhance M-dimensional objects in N-dimensional images.">itk::simple::ObjectnessMeasure</a> for the procedural interface </dd>
-<dd>
-itk::ObjectnessMeasureImageFilter for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkObjectnessMeasureImageFilter_8h_source.html">sitkObjectnessMeasureImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a06d28c48b7326052657f7b815126e3f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06d28c48b7326052657f7b815126e3f8">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

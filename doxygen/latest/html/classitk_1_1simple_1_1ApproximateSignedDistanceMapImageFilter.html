@@ -101,7 +101,30 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Create a map of the approximate signed distance from the boundaries of a binary image. </p>
+<p>The <a class="el" href="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter.html" title="Create a map of the approximate signed distance from the boundaries of a binary image.">ApproximateSignedDistanceMapImageFilter</a> takes as input a binary image and produces a signed distance map. Each pixel value in the output contains the approximate distance from that pixel to the nearest "object" in the binary image. This filter differs from the <a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html" title="This filter computes the distance map of the input image as an approximation with pixel accuracy to t...">DanielssonDistanceMapImageFilter</a> in that it calculates the distance to the "object edge" for pixels within the object.</p>
+<p>Negative values in the output indicate that the pixel at that position is within an object in the input image. The absolute value of a negative pixel represents the approximate distance to the nearest object boundary pixel.</p>
+<p>WARNING: This filter requires that the output type be floating-point. Otherwise internal calculations will not be performed to the appropriate precision, resulting in completely incorrect (read: zero-valued) output.</p>
+<p>The distances computed by this filter are Chamfer distances, which are only an approximation to Euclidean distances, and are not as exact approximations as those calculated by the <a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html" title="This filter computes the distance map of the input image as an approximation with pixel accuracy to t...">DanielssonDistanceMapImageFilter</a> . On the other hand, this filter is faster.</p>
+<p>This filter requires that an "inside value" and "outside value" be set as parameters. The "inside value" is the intensity value of the binary image which corresponds to objects, and the "outside value" is the intensity of the background. (A typical binary image often represents objects as black (0) and background as white (usually 255), or vice-versa.) Note that this filter is slightly faster if the inside value is less than the outside value. Otherwise an extra iteration through the image is required.</p>
+<p>This filter uses the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastChamferDistanceImageFilter.html">FastChamferDistanceImageFilter</a> and the <a class="el" href="classitk_1_1simple_1_1IsoContourDistanceImageFilter.html" title="Compute an approximate distance from an interpolated isocontour to the close grid points.">IsoContourDistanceImageFilter</a> internally to perform the distance calculations.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html" title="This filter computes the distance map of the input image as an approximation with pixel accuracy to t...">DanielssonDistanceMapImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html" title="This filter computes the signed distance map of the input image as an approximation with pixel accura...">SignedDanielssonDistanceMapImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1SignedMaurerDistanceMapImageFilter.html" title="This filter calculates the Euclidean distance transform of a binary image in linear time for arbitrar...">SignedMaurerDistanceMapImageFilter</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastChamferDistanceImageFilter.html">FastChamferDistanceImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1IsoContourDistanceImageFilter.html" title="Compute an approximate distance from an interpolated isocontour to the close grid points.">IsoContourDistanceImageFilter</a></dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Zach Pincus </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afad13fab003e765b7a49366d859b9609" title="Create a map of the approximate signed distance from the boundaries of a binary image.">itk::simple::ApproximateSignedDistanceMap</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ApproximateSignedDistanceMapImageFilter.html">itk::ApproximateSignedDistanceMapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a68c3d3ca6d311da77039b5b2131d88de"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter.html#a68c3d3ca6d311da77039b5b2131d88de">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -302,30 +325,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Create a map of the approximate signed distance from the boundaries of a binary image. </p>
-<p>The <a class="el" href="classitk_1_1simple_1_1ApproximateSignedDistanceMapImageFilter.html" title="Create a map of the approximate signed distance from the boundaries of a binary image.">ApproximateSignedDistanceMapImageFilter</a> takes as input a binary image and produces a signed distance map. Each pixel value in the output contains the approximate distance from that pixel to the nearest "object" in the binary image. This filter differs from the <a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html" title="This filter computes the distance map of the input image as an approximation with pixel accuracy to t...">DanielssonDistanceMapImageFilter</a> in that it calculates the distance to the "object edge" for pixels within the object.</p>
-<p>Negative values in the output indicate that the pixel at that position is within an object in the input image. The absolute value of a negative pixel represents the approximate distance to the nearest object boundary pixel.</p>
-<p>WARNING: This filter requires that the output type be floating-point. Otherwise internal calculations will not be performed to the appropriate precision, resulting in completely incorrect (read: zero-valued) output.</p>
-<p>The distances computed by this filter are Chamfer distances, which are only an approximation to Euclidean distances, and are not as exact approximations as those calculated by the <a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html" title="This filter computes the distance map of the input image as an approximation with pixel accuracy to t...">DanielssonDistanceMapImageFilter</a> . On the other hand, this filter is faster.</p>
-<p>This filter requires that an "inside value" and "outside value" be set as parameters. The "inside value" is the intensity value of the binary image which corresponds to objects, and the "outside value" is the intensity of the background. (A typical binary image often represents objects as black (0) and background as white (usually 255), or vice-versa.) Note that this filter is slightly faster if the inside value is less than the outside value. Otherwise an extra iteration through the image is required.</p>
-<p>This filter uses the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastChamferDistanceImageFilter.html">FastChamferDistanceImageFilter</a> and the <a class="el" href="classitk_1_1simple_1_1IsoContourDistanceImageFilter.html" title="Compute an approximate distance from an interpolated isocontour to the close grid points.">IsoContourDistanceImageFilter</a> internally to perform the distance calculations.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1DanielssonDistanceMapImageFilter.html" title="This filter computes the distance map of the input image as an approximation with pixel accuracy to t...">DanielssonDistanceMapImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter.html" title="This filter computes the signed distance map of the input image as an approximation with pixel accura...">SignedDanielssonDistanceMapImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1SignedMaurerDistanceMapImageFilter.html" title="This filter calculates the Euclidean distance transform of a binary image in linear time for arbitrar...">SignedMaurerDistanceMapImageFilter</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastChamferDistanceImageFilter.html">FastChamferDistanceImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1IsoContourDistanceImageFilter.html" title="Compute an approximate distance from an interpolated isocontour to the close grid points.">IsoContourDistanceImageFilter</a></dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Zach Pincus </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afad13fab003e765b7a49366d859b9609" title="Create a map of the approximate signed distance from the boundaries of a binary image.">itk::simple::ApproximateSignedDistanceMap</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ApproximateSignedDistanceMapImageFilter.html">itk::ApproximateSignedDistanceMapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aab2b9c966c85114331539b8aa0c6379f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab2b9c966c85114331539b8aa0c6379f">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

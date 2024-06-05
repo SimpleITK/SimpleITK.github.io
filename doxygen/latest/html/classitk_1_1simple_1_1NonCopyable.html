@@ -89,7 +89,15 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1NonCopyable__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An inheritable class to disable copying of a class. </p>
+<p>This class disable the implicit implementations of the assignment and copy constructor for derived classes. The instantiation of the default implementation for either method in a derived class will result in a compile-time error because they are private in this class. However, this policy is not absolute for derived classes because explicit implementation of these methods could be implemented.</p>
+<p>An advantage this approach has is the class hierarchy makes it obvious what the intent is, as compared to other approaches.</p>
+<p>For example you should not be able to copy singleton object, because there should only be one of them. To utilize this class just derive from it: </p><div class="fragment"><div class="line"><span class="keyword">class </span><a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#aceab0644a4d06fbe36ed20bd0d3e34f2">Singleton</a></div>
+<div class="line"> : <span class="keyword">protected</span> <a class="code" href="classitk_1_1simple_1_1NonCopyable.html#a553a2d36c86ee3b31cabdc79a393c8d3">NonCopyable</a> {...};</div>
+</div><!-- fragment --> 
+<p class="definition">Definition at line <a class="el" href="sitkNonCopyable_8h_source.html#l00049">49</a> of file <a class="el" href="sitkNonCopyable_8h_source.html">sitkNonCopyable.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa2ef2404319285bbd90ca2369a2118e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1NonCopyable.html#aa2ef2404319285bbd90ca2369a2118e6">NonCopyable</a> (const <a class="el" href="classitk_1_1simple_1_1NonCopyable.html">NonCopyable</a> &amp;)=delete</td></tr>
@@ -102,15 +110,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a553a2d36c86ee3b31cabdc79a393c8d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1NonCopyable.html#a553a2d36c86ee3b31cabdc79a393c8d3">NonCopyable</a> ()=default</td></tr>
 <tr class="separator:a553a2d36c86ee3b31cabdc79a393c8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An inheritable class to disable copying of a class. </p>
-<p>This class disable the implicit implementations of the assignment and copy constructor for derived classes. The instantiation of the default implementation for either method in a derived class will result in a compile-time error because they are private in this class. However, this policy is not absolute for derived classes because explicit implementation of these methods could be implemented.</p>
-<p>An advantage this approach has is the class hierarchy makes it obvious what the intent is, as compared to other approaches.</p>
-<p>For example you should not be able to copy singleton object, because there should only be one of them. To utilize this class just derive from it: </p><div class="fragment"><div class="line"><span class="keyword">class </span><a class="codeRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#aceab0644a4d06fbe36ed20bd0d3e34f2">Singleton</a></div>
-<div class="line"> : <span class="keyword">protected</span> <a class="code" href="classitk_1_1simple_1_1NonCopyable.html#a553a2d36c86ee3b31cabdc79a393c8d3">NonCopyable</a> {...};</div>
-</div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sitkNonCopyable_8h_source.html#l00049">49</a> of file <a class="el" href="sitkNonCopyable_8h_source.html">sitkNonCopyable.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a553a2d36c86ee3b31cabdc79a393c8d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a553a2d36c86ee3b31cabdc79a393c8d3">&#9670;&nbsp;</a></span>NonCopyable() <span class="overload">[1/2]</span></h2>
 

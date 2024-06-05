@@ -101,7 +101,18 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1InverseFFTImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for inverse Fast Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . </p>
+<p>This is a base class for the "inverse" or "reverse" Discrete Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . This is an abstract base class: the actual implementation is provided by the best child available on the system when the object is created via the object factory system.</p>
+<p>This class transforms a full complex image with Hermitian symmetry into its real spatial domain representation. If the input does not have Hermitian symmetry, the imaginary component is discarded.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ForwardFFTImageFilter.html" title="Base class for forward Fast Fourier Transform .">ForwardFFTImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1InverseFFTImageFilter.html" title="Base class for inverse Fast Fourier Transform .">InverseFFTImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a161ea30ad2c62ea4f2a29ef82e053e43" title="Base class for inverse Fast Fourier Transform .">itk::simple::InverseFFT</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InverseFFTImageFilter.html">itk::InverseFFTImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkInverseFFTImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkInverseFFTImageFilter_8h_source.html">sitkInverseFFTImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a2c84fd5227d62983ae7a95e5dded9c21"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1InverseFFTImageFilter.html#a2c84fd5227d62983ae7a95e5dded9c21">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a04b5c4ea11652f9a94862aee75216e13">ComplexPixelIDTypeList</a></td></tr>
@@ -290,18 +301,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for inverse Fast Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . </p>
-<p>This is a base class for the "inverse" or "reverse" Discrete Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . This is an abstract base class: the actual implementation is provided by the best child available on the system when the object is created via the object factory system.</p>
-<p>This class transforms a full complex image with Hermitian symmetry into its real spatial domain representation. If the input does not have Hermitian symmetry, the imaginary component is discarded.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ForwardFFTImageFilter.html" title="Base class for forward Fast Fourier Transform .">ForwardFFTImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1InverseFFTImageFilter.html" title="Base class for inverse Fast Fourier Transform .">InverseFFTImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a161ea30ad2c62ea4f2a29ef82e053e43" title="Base class for inverse Fast Fourier Transform .">itk::simple::InverseFFT</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InverseFFTImageFilter.html">itk::InverseFFTImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkInverseFFTImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkInverseFFTImageFilter_8h_source.html">sitkInverseFFTImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a402d145ecd31601cb4a9ac087510aea3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a402d145ecd31601cb4a9ac087510aea3">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

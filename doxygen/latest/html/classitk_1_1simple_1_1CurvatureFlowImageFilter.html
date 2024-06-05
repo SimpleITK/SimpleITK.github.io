@@ -101,7 +101,37 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1CurvatureFlowImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Denoise an image using curvature driven flow. </p>
+<p><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html" title="Denoise an image using curvature driven flow.">CurvatureFlowImageFilter</a> implements a curvature driven image denoising algorithm. Iso-brightness contours in the grayscale input image are viewed as a level set. The level set is then evolved using a curvature-based speed function:</p>
+<p class="formulaDsp">
+\[ I_t = \kappa |\nabla I| \]
+</p>
+<p> where \( \kappa \) is the curvature.</p>
+<p>The advantage of this approach is that sharp boundaries are preserved with smoothing occurring only within a region. However, it should be noted that continuous application of this scheme will result in the eventual removal of all information as each contour shrinks to zero and disappear.</p>
+<p>Note that unlike level set segmentation algorithms, the image to be denoised is already the level set and can be set directly as the input using the SetInput() method.</p>
+<p>This filter has two parameters: the number of update iterations to be performed and the timestep between each update.</p>
+<p>The timestep should be "small enough" to ensure numerical stability. Stability is guarantee when the timestep meets the CFL (Courant-Friedrichs-Levy) condition. Broadly speaking, this condition ensures that each contour does not move more than one grid position at each timestep. In the literature, the timestep is typically user specified and have to manually tuned to the application.</p>
+<p>This filter make use of the multi-threaded finite difference solver hierarchy. Updates are computed using a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowFunction.html">CurvatureFlowFunction</a> object. A zero flux Neumann boundary condition when computing derivatives near the data boundary.</p>
+<p>This filter may be streamed. To support streaming this filter produces a padded output which takes into account edge effects. The size of the padding is m_NumberOfIterations on each edge. Users of this filter should only make use of the center valid central region.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This filter assumes that the input and output types have the same dimensions. This filter also requires that the output image pixels are of a floating point type. This filter works for any dimensional images.</dd></dl>
+<p>Reference: "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Chapter 16, Second edition, 1999.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DenseFiniteDifferenceImageFilter.html">DenseFiniteDifferenceImageFilter</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowFunction.html">CurvatureFlowFunction</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html" title="Denoise an image using min/max curvature flow.">MinMaxCurvatureFlowImageFilter</a></dd>
+<dd>
+<a class="el" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" title="Denoise a binary image using min/max curvature flow.">BinaryMinMaxCurvatureFlowImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#acc0c8dcbfd1069ed9f5c2bbce6e06a4d" title="Denoise an image using curvature driven flow.">itk::simple::CurvatureFlow</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowImageFilter.html">itk::CurvatureFlowImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a4">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a6">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3f21065b65efc42b0c704a9850462f0b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html#a3f21065b65efc42b0c704a9850462f0b">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -306,37 +336,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Denoise an image using curvature driven flow. </p>
-<p><a class="el" href="classitk_1_1simple_1_1CurvatureFlowImageFilter.html" title="Denoise an image using curvature driven flow.">CurvatureFlowImageFilter</a> implements a curvature driven image denoising algorithm. Iso-brightness contours in the grayscale input image are viewed as a level set. The level set is then evolved using a curvature-based speed function:</p>
-<p class="formulaDsp">
-\[ I_t = \kappa |\nabla I| \]
-</p>
-<p> where \( \kappa \) is the curvature.</p>
-<p>The advantage of this approach is that sharp boundaries are preserved with smoothing occurring only within a region. However, it should be noted that continuous application of this scheme will result in the eventual removal of all information as each contour shrinks to zero and disappear.</p>
-<p>Note that unlike level set segmentation algorithms, the image to be denoised is already the level set and can be set directly as the input using the SetInput() method.</p>
-<p>This filter has two parameters: the number of update iterations to be performed and the timestep between each update.</p>
-<p>The timestep should be "small enough" to ensure numerical stability. Stability is guarantee when the timestep meets the CFL (Courant-Friedrichs-Levy) condition. Broadly speaking, this condition ensures that each contour does not move more than one grid position at each timestep. In the literature, the timestep is typically user specified and have to manually tuned to the application.</p>
-<p>This filter make use of the multi-threaded finite difference solver hierarchy. Updates are computed using a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowFunction.html">CurvatureFlowFunction</a> object. A zero flux Neumann boundary condition when computing derivatives near the data boundary.</p>
-<p>This filter may be streamed. To support streaming this filter produces a padded output which takes into account edge effects. The size of the padding is m_NumberOfIterations on each edge. Users of this filter should only make use of the center valid central region.</p>
-<dl class="section warning"><dt>Warning</dt><dd>This filter assumes that the input and output types have the same dimensions. This filter also requires that the output image pixels are of a floating point type. This filter works for any dimensional images.</dd></dl>
-<p>Reference: "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Chapter 16, Second edition, 1999.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DenseFiniteDifferenceImageFilter.html">DenseFiniteDifferenceImageFilter</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowFunction.html">CurvatureFlowFunction</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1MinMaxCurvatureFlowImageFilter.html" title="Denoise an image using min/max curvature flow.">MinMaxCurvatureFlowImageFilter</a></dd>
-<dd>
-<a class="el" href="classitk_1_1simple_1_1BinaryMinMaxCurvatureFlowImageFilter.html" title="Denoise a binary image using min/max curvature flow.">BinaryMinMaxCurvatureFlowImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#acc0c8dcbfd1069ed9f5c2bbce6e06a4d" title="Denoise an image using curvature driven flow.">itk::simple::CurvatureFlow</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CurvatureFlowImageFilter.html">itk::CurvatureFlowImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a4">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a6">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad40ff5164b98e2db9b11dadf14bf369a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad40ff5164b98e2db9b11dadf14bf369a">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

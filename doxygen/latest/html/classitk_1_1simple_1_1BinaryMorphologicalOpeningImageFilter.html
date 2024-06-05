@@ -101,7 +101,20 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1BinaryMorphologicalOpeningImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>binary morphological opening of an image. </p>
+<p>This filter removes small (i.e., smaller than the structuring element) structures in the interior or at the boundaries of the image. The morphological opening of an image "f" is defined as: Opening(f) = Dilatation(Erosion(f)).</p>
+<p>The structuring element is assumed to be composed of binary values (zero or one). Only elements of the structuring element having values &gt; 0 are candidates for affecting the center pixel.</p>
+<p>This code was contributed in the Insight Journal paper: "Binary morphological closing and opening image filters" by Lehmann G. <a href="https://www.insight-journal.org/browse/publication/58">https://www.insight-journal.org/browse/publication/58</a></p>
+<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologyImageFilter.html">MorphologyImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleDilateImageFilter.html" title="Grayscale dilation of an image.">GrayscaleDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleErodeImageFilter.html" title="Grayscale erosion of an image.">GrayscaleErodeImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a338f84564ae8dd2553c8c028cc03276d" title="binary morphological opening of an image.">itk::simple::BinaryMorphologicalOpening</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMorphologicalOpeningImageFilter.html">itk::BinaryMorphologicalOpeningImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMorphologicalOpeningImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkBinaryMorphologicalOpeningImageFilter_8h_source.html">sitkBinaryMorphologicalOpeningImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae4140a57772dc08833bb1207a405e27a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1BinaryMorphologicalOpeningImageFilter.html#ae4140a57772dc08833bb1207a405e27a">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae54b4f4b49163ee99facd09c17a33646">IntegerPixelIDTypeList</a></td></tr>
@@ -316,20 +329,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>binary morphological opening of an image. </p>
-<p>This filter removes small (i.e., smaller than the structuring element) structures in the interior or at the boundaries of the image. The morphological opening of an image "f" is defined as: Opening(f) = Dilatation(Erosion(f)).</p>
-<p>The structuring element is assumed to be composed of binary values (zero or one). Only elements of the structuring element having values &gt; 0 are candidates for affecting the center pixel.</p>
-<p>This code was contributed in the Insight Journal paper: "Binary morphological closing and opening image filters" by Lehmann G. <a href="https://www.insight-journal.org/browse/publication/58">https://www.insight-journal.org/browse/publication/58</a></p>
-<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MorphologyImageFilter.html">MorphologyImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleDilateImageFilter.html" title="Grayscale dilation of an image.">GrayscaleDilateImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1GrayscaleErodeImageFilter.html" title="Grayscale erosion of an image.">GrayscaleErodeImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a338f84564ae8dd2553c8c028cc03276d" title="binary morphological opening of an image.">itk::simple::BinaryMorphologicalOpening</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMorphologicalOpeningImageFilter.html">itk::BinaryMorphologicalOpeningImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMorphologicalOpeningImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkBinaryMorphologicalOpeningImageFilter_8h_source.html">sitkBinaryMorphologicalOpeningImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aecc19711cf64a64e87f10f6afb96dac8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aecc19711cf64a64e87f10f6afb96dac8">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

@@ -101,7 +101,18 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1IterativeInverseDisplacementFieldImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Computes the inverse of a displacement field. </p>
+<p><a class="el" href="classitk_1_1simple_1_1IterativeInverseDisplacementFieldImageFilter.html" title="Computes the inverse of a displacement field.">IterativeInverseDisplacementFieldImageFilter</a> takes a displacement field as input and computes the displacement field that is its inverse. If the input displacement field was mapping coordinates from a space A into a space B, the output of this filter will map coordinates from the space B into the space A.</p>
+<p>The algorithm implemented in this filter uses an iterative method for progressively refining the values of the inverse field. Starting from the direct field, at every pixel the direct mapping of this point is found, and a the negative of the current displacement is stored in the inverse field at the nearest pixel. Then, subsequent iterations verify if any of the neighbor pixels provide a better return to the current pixel, in which case its value is taken for updating the vector in the inverse field.</p>
+<p>This method was discussed in the users-list during February 2004.</p>
+<dl class="section author"><dt>Author</dt><dd>Corinne Mattmann </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aa5d69cbc41c1173e7130444a0e4e619f" title="Computes the inverse of a displacement field.">itk::simple::IterativeInverseDisplacementField</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IterativeInverseDisplacementFieldImageFilter.html">itk::IterativeInverseDisplacementFieldImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkIterativeInverseDisplacementFieldImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkIterativeInverseDisplacementFieldImageFilter_8h_source.html">sitkIterativeInverseDisplacementFieldImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a866fe07401de8ccdbe602149597d644b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1IterativeInverseDisplacementFieldImageFilter.html#a866fe07401de8ccdbe602149597d644b">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a0dd76198a82c3ea1daaf16c45ef3516e">RealVectorPixelIDTypeList</a></td></tr>
@@ -302,18 +313,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Computes the inverse of a displacement field. </p>
-<p><a class="el" href="classitk_1_1simple_1_1IterativeInverseDisplacementFieldImageFilter.html" title="Computes the inverse of a displacement field.">IterativeInverseDisplacementFieldImageFilter</a> takes a displacement field as input and computes the displacement field that is its inverse. If the input displacement field was mapping coordinates from a space A into a space B, the output of this filter will map coordinates from the space B into the space A.</p>
-<p>The algorithm implemented in this filter uses an iterative method for progressively refining the values of the inverse field. Starting from the direct field, at every pixel the direct mapping of this point is found, and a the negative of the current displacement is stored in the inverse field at the nearest pixel. Then, subsequent iterations verify if any of the neighbor pixels provide a better return to the current pixel, in which case its value is taken for updating the vector in the inverse field.</p>
-<p>This method was discussed in the users-list during February 2004.</p>
-<dl class="section author"><dt>Author</dt><dd>Corinne Mattmann </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aa5d69cbc41c1173e7130444a0e4e619f" title="Computes the inverse of a displacement field.">itk::simple::IterativeInverseDisplacementField</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IterativeInverseDisplacementFieldImageFilter.html">itk::IterativeInverseDisplacementFieldImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkIterativeInverseDisplacementFieldImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkIterativeInverseDisplacementFieldImageFilter_8h_source.html">sitkIterativeInverseDisplacementFieldImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa764a207895caa6be8972e0dcf90a34a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa764a207895caa6be8972e0dcf90a34a">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

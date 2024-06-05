@@ -101,7 +101,23 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1WienerDeconvolutionImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The Wiener deconvolution image filter is designed to restore an image convolved with a blurring kernel while keeping noise enhancement to a minimum. </p>
+<p>The Wiener filter aims to minimize noise enhancement induced by frequencies with low signal-to-noise ratio. The Wiener filter kernel is defined in the frequency domain as \(W(\omega) = H^*(\omega) / (|H(\omega)|^2 + (1 / SNR(\omega)))\) where \(H(\omega)\) is the Fourier transform of the blurring kernel with which the original image was convolved and the signal-to-noise ratio \(SNR(\omega)\) . \(SNR(\omega)\) is defined by \(P_f(\omega) / P_n(\omega)\) where \(P_f(\omega)\) is the power spectral density of the uncorrupted signal and \(P_n(\omega)\) is the power spectral density of the noise. When applied to the input blurred image, this filter produces an estimate \(\hat{f}(x)\) of the true underlying signal \(f(x)\) that minimizes the expected error between \(\hat{f}(x)\) and \(f(x)\) .</p>
+<p>This filter requires two inputs, the image to be deconvolved and the blurring kernel. These two inputs can be set using the methods SetInput() and SetKernelImage(), respectively.</p>
+<p>The power spectral densities of the signal and noise are typically unavailable for a given problem. In particular, \(P_f(\omega)\) cannot be computed from \(f(x)\) because this unknown signal is precisely the signal that this filter aims to recover. Nevertheless, it is common for the noise to have a power spectral density that is flat or decreasing significantly more slowly than the power spectral density of a typical image as the frequency \(\omega\) increases. Hence, \(P_n(\omega)\) can typically be approximated with a constant, and this filter makes this assumption (see the NoiseVariance member variable). \(P_f(\omega)\) , on the other hand, will vary with input. This filter computes the power spectral density of the input blurred image, subtracts the power spectral density of the noise, and uses the result as the estimate of \(P_f(\omega)\) .</p>
+<p>For further information on the Wiener deconvolution filter, please see "Digital Signal Processing" by Kenneth R. Castleman, Prentice Hall, 1995</p>
+<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann, Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France</dd>
+<dd>
+Chris Mullins, The University of North Carolina at Chapel Hill</dd>
+<dd>
+Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2904e5729f78134d2ab60f292a81b70a" title="The Wiener deconvolution image filter is designed to restore an image convolved with a blurring kerne...">itk::simple::WienerDeconvolution</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WienerDeconvolutionImageFilter.html">itk::WienerDeconvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a289cbe50a52d991978643b2869ab6932"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1WienerDeconvolutionImageFilter.html#a289cbe50a52d991978643b2869ab6932">BoundaryConditionType</a> { <br />
@@ -334,23 +350,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Wiener deconvolution image filter is designed to restore an image convolved with a blurring kernel while keeping noise enhancement to a minimum. </p>
-<p>The Wiener filter aims to minimize noise enhancement induced by frequencies with low signal-to-noise ratio. The Wiener filter kernel is defined in the frequency domain as \(W(\omega) = H^*(\omega) / (|H(\omega)|^2 + (1 / SNR(\omega)))\) where \(H(\omega)\) is the Fourier transform of the blurring kernel with which the original image was convolved and the signal-to-noise ratio \(SNR(\omega)\) . \(SNR(\omega)\) is defined by \(P_f(\omega) / P_n(\omega)\) where \(P_f(\omega)\) is the power spectral density of the uncorrupted signal and \(P_n(\omega)\) is the power spectral density of the noise. When applied to the input blurred image, this filter produces an estimate \(\hat{f}(x)\) of the true underlying signal \(f(x)\) that minimizes the expected error between \(\hat{f}(x)\) and \(f(x)\) .</p>
-<p>This filter requires two inputs, the image to be deconvolved and the blurring kernel. These two inputs can be set using the methods SetInput() and SetKernelImage(), respectively.</p>
-<p>The power spectral densities of the signal and noise are typically unavailable for a given problem. In particular, \(P_f(\omega)\) cannot be computed from \(f(x)\) because this unknown signal is precisely the signal that this filter aims to recover. Nevertheless, it is common for the noise to have a power spectral density that is flat or decreasing significantly more slowly than the power spectral density of a typical image as the frequency \(\omega\) increases. Hence, \(P_n(\omega)\) can typically be approximated with a constant, and this filter makes this assumption (see the NoiseVariance member variable). \(P_f(\omega)\) , on the other hand, will vary with input. This filter computes the power spectral density of the input blurred image, subtracts the power spectral density of the noise, and uses the result as the estimate of \(P_f(\omega)\) .</p>
-<p>For further information on the Wiener deconvolution filter, please see "Digital Signal Processing" by Kenneth R. Castleman, Prentice Hall, 1995</p>
-<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann, Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France</dd>
-<dd>
-Chris Mullins, The University of North Carolina at Chapel Hill</dd>
-<dd>
-Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2904e5729f78134d2ab60f292a81b70a" title="The Wiener deconvolution image filter is designed to restore an image convolved with a blurring kerne...">itk::simple::WienerDeconvolution</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WienerDeconvolutionImageFilter.html">itk::WienerDeconvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4bb3660ef02ab61ed39b3f3dfd40adc8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4bb3660ef02ab61ed39b3f3dfd40adc8">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

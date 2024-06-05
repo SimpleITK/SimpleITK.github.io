@@ -101,7 +101,48 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1FastMarchingBaseImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Apply the Fast Marching method to solve an Eikonal equation on an image. </p>
+<p>The speed function can be specified as a speed image or a speed constant. The speed image is set using the method SetInput(). If the speed image is nullptr, a constant speed function is used and is specified using method the SetSpeedConstant() .</p>
+<p>If the speed function is constant and of value one, fast marching results is an approximate distance function from the initial alive points.</p>
+<p>There are two ways to specify the output image information (LargestPossibleRegion, Spacing, Origin):</p>
+<ul>
+<li>it is copied directly from the input speed image</li>
+</ul>
+<ul>
+<li>it is specified by the user. Default values are used if the user does not specify all the information.</li>
+</ul>
+<p>The output information is computed as follows.</p>
+<p>If the speed image is nullptr or if the OverrideOutputInformation is set to true, the output information is set from user specified parameters. These parameters can be specified using methods</p>
+<ul>
+<li><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html#a39bfc27f175431b2c8c0419e67978916">FastMarchingImageFilterBase::SetOutputRegion()</a> ,</li>
+</ul>
+<ul>
+<li><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html#a438b6d1e2af0f8a93fcf491f9b1d0b11">FastMarchingImageFilterBase::SetOutputSpacing()</a> ,</li>
+</ul>
+<ul>
+<li><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html#adbede4d8aee0b88fee866a23648de1df">FastMarchingImageFilterBase::SetOutputDirection()</a> ,</li>
+</ul>
+<ul>
+<li><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html#a753359b2ed89a02ed00a85374df8d0ad">FastMarchingImageFilterBase::SetOutputOrigin()</a> .</li>
+</ul>
+<p>Else the output information is copied from the input speed image.</p>
+<p>Implementation of this class is based on Chapter 8 of "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Second edition, 1999.</p>
+<p>For an alternative implementation, see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilter.html">itk::FastMarchingImageFilter</a> .</p>
+<p>TTraits</p>
+<p>traits</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html" title="Solve an Eikonal equation using Fast Marching.">FastMarchingImageFilter</a></dd>
+<dd>
+ImageFastMarchingTraits</dd>
+<dd>
+ImageFastMarchingTraits2 </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#ad9e703417a9f714ddff10f884f613376" title="Apply the Fast Marching method to solve an Eikonal equation on an image.">itk::simple::FastMarchingBase</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html">itk::FastMarchingImageFilterBase</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ae35012dbdaf9e095aa460b6750d2355e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingBaseImageFilter.html#ae35012dbdaf9e095aa460b6750d2355e">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -336,48 +377,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Apply the Fast Marching method to solve an Eikonal equation on an image. </p>
-<p>The speed function can be specified as a speed image or a speed constant. The speed image is set using the method SetInput(). If the speed image is nullptr, a constant speed function is used and is specified using method the SetSpeedConstant() .</p>
-<p>If the speed function is constant and of value one, fast marching results is an approximate distance function from the initial alive points.</p>
-<p>There are two ways to specify the output image information (LargestPossibleRegion, Spacing, Origin):</p>
-<ul>
-<li>it is copied directly from the input speed image</li>
-</ul>
-<ul>
-<li>it is specified by the user. Default values are used if the user does not specify all the information.</li>
-</ul>
-<p>The output information is computed as follows.</p>
-<p>If the speed image is nullptr or if the OverrideOutputInformation is set to true, the output information is set from user specified parameters. These parameters can be specified using methods</p>
-<ul>
-<li><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html#a39bfc27f175431b2c8c0419e67978916">FastMarchingImageFilterBase::SetOutputRegion()</a> ,</li>
-</ul>
-<ul>
-<li><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html#a438b6d1e2af0f8a93fcf491f9b1d0b11">FastMarchingImageFilterBase::SetOutputSpacing()</a> ,</li>
-</ul>
-<ul>
-<li><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html#adbede4d8aee0b88fee866a23648de1df">FastMarchingImageFilterBase::SetOutputDirection()</a> ,</li>
-</ul>
-<ul>
-<li><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html#a753359b2ed89a02ed00a85374df8d0ad">FastMarchingImageFilterBase::SetOutputOrigin()</a> .</li>
-</ul>
-<p>Else the output information is copied from the input speed image.</p>
-<p>Implementation of this class is based on Chapter 8 of "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Second edition, 1999.</p>
-<p>For an alternative implementation, see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilter.html">itk::FastMarchingImageFilter</a> .</p>
-<p>TTraits</p>
-<p>traits</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html" title="Solve an Eikonal equation using Fast Marching.">FastMarchingImageFilter</a></dd>
-<dd>
-ImageFastMarchingTraits</dd>
-<dd>
-ImageFastMarchingTraits2 </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#ad9e703417a9f714ddff10f884f613376" title="Apply the Fast Marching method to solve an Eikonal equation on an image.">itk::simple::FastMarchingBase</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html">itk::FastMarchingImageFilterBase</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a78f9d1d45d747116a93efa6d540b18b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78f9d1d45d747116a93efa6d540b18b0">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

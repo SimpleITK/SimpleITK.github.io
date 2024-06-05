@@ -101,7 +101,28 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1AtanImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Computes the one-argument inverse tangent of each pixel. </p>
+<p>This filter is templated over the pixel type of the input image and the pixel type of the output image.</p>
+<p>The filter walks over all the pixels in the input image, and for each pixel does the following:</p>
+<ul>
+<li>cast the pixel value to double ,</li>
+</ul>
+<ul>
+<li>apply the std::atan() function to the double value,</li>
+</ul>
+<ul>
+<li>cast the double value resulting from std::atan() to the pixel type of the output image,</li>
+</ul>
+<ul>
+<li>store the cast value into the output image. <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ae07f7e5c7918d02bf5460173db0f2eea" title="Computes the one-argument inverse tangent of each pixel.">itk::simple::Atan</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AtanImageFilter.html">itk::AtanImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+</li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="sitkAtanImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkAtanImageFilter_8h_source.html">sitkAtanImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ab9ad96139c0dac00086c62c26e0509f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1AtanImageFilter.html#ab9ad96139c0dac00086c62c26e0509f1">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -299,28 +320,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Computes the one-argument inverse tangent of each pixel. </p>
-<p>This filter is templated over the pixel type of the input image and the pixel type of the output image.</p>
-<p>The filter walks over all the pixels in the input image, and for each pixel does the following:</p>
-<ul>
-<li>cast the pixel value to double ,</li>
-</ul>
-<ul>
-<li>apply the std::atan() function to the double value,</li>
-</ul>
-<ul>
-<li>cast the double value resulting from std::atan() to the pixel type of the output image,</li>
-</ul>
-<ul>
-<li>store the cast value into the output image. <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ae07f7e5c7918d02bf5460173db0f2eea" title="Computes the one-argument inverse tangent of each pixel.">itk::simple::Atan</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AtanImageFilter.html">itk::AtanImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-</li>
-</ul>
-
-<p class="definition">Definition at line <a class="el" href="sitkAtanImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkAtanImageFilter_8h_source.html">sitkAtanImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab8e2b590a8c24f875821792a26673535"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8e2b590a8c24f875821792a26673535">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

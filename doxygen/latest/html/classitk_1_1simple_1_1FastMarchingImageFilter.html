@@ -101,7 +101,32 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1FastMarchingImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Solve an Eikonal equation using Fast Marching. </p>
+<p>Fast marching solves an Eikonal equation where the speed is always non-negative and depends on the position only. Starting from an initial position on the front, fast marching systematically moves the front forward one grid point at a time.</p>
+<p>Updates are performed using an entropy satisfy scheme where only "upwind" neighborhoods are used. This implementation of Fast Marching uses a std::priority_queue to locate the next proper grid position to update.</p>
+<p>Fast Marching sweeps through N grid points in (N log N) steps to obtain the arrival time value as the front propagates through the grid.</p>
+<p>Implementation of this class is based on Chapter 8 of "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Second edition, 1999.</p>
+<p>This class is templated over the level set image type and the speed image type. The initial front is specified by two containers: one containing the known points and one containing the trial points. Alive points are those that are already part of the object, and trial points are considered for inclusion. In order for the filter to evolve, at least some trial points must be specified. These can for instance be specified as the layer of pixels around the alive points.</p>
+<p>The speed function can be specified as a speed image or a speed constant. The speed image is set using the method SetInput() . If the speed image is nullptr, a constant speed function is used and is specified using method the SetSpeedConstant() .</p>
+<p>If the speed function is constant and of value one, fast marching results in an approximate distance function from the initial alive points. <a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html" title="Solve an Eikonal equation using Fast Marching.">FastMarchingImageFilter</a> is used in the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ReinitializeLevelSetImageFilter.html">ReinitializeLevelSetImageFilter</a> object to create a signed distance function from the zero level set.</p>
+<p>The algorithm can be terminated early by setting an appropriate stopping value. The algorithm terminates when the current arrival time being processed is greater than the stopping value.</p>
+<p>There are two ways to specify the output image information ( LargestPossibleRegion, Spacing, Origin): (a) it is copied directly from the input speed image or (b) it is specified by the user. Default values are used if the user does not specify all the information.</p>
+<p>The output information is computed as follows. If the speed image is nullptr or if the OverrideOutputInformation is set to true, the output information is set from user specified parameters. These parameters can be specified using methods SetOutputRegion() , SetOutputSpacing() , SetOutputDirection() , and SetOutputOrigin() . Else if the speed image is not nullptr, the output information is copied from the input speed image.</p>
+<p>For an alternative implementation, see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilter.html">itk::FastMarchingImageFilter</a> .</p>
+<p>Possible Improvements: In the current implementation, std::priority_queue only allows taking nodes out from the front and putting nodes in from the back. To update a value already on the heap, a new node is added to the heap. The defunct old node is left on the heap. When it is removed from the top, it will be recognized as invalid and not used. Future implementations can implement the heap in a different way allowing the values to be updated. This will generally require some sift-up and sift-down functions and an image of back-pointers going from the image to heap in order to locate the node which is to be updated.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html">FastMarchingImageFilterBase</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LevelSetTypeDefault.html">LevelSetTypeDefault</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#aa71c6ea9957c64d92e3b924cec76dee5" title="Solve an Eikonal equation using Fast Marching.">itk::simple::FastMarching</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilter.html">itk::FastMarchingImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a16">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:af9156418edb5fa267dbea45ed9319c24"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html#af9156418edb5fa267dbea45ed9319c24">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -321,32 +346,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Solve an Eikonal equation using Fast Marching. </p>
-<p>Fast marching solves an Eikonal equation where the speed is always non-negative and depends on the position only. Starting from an initial position on the front, fast marching systematically moves the front forward one grid point at a time.</p>
-<p>Updates are performed using an entropy satisfy scheme where only "upwind" neighborhoods are used. This implementation of Fast Marching uses a std::priority_queue to locate the next proper grid position to update.</p>
-<p>Fast Marching sweeps through N grid points in (N log N) steps to obtain the arrival time value as the front propagates through the grid.</p>
-<p>Implementation of this class is based on Chapter 8 of "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Second edition, 1999.</p>
-<p>This class is templated over the level set image type and the speed image type. The initial front is specified by two containers: one containing the known points and one containing the trial points. Alive points are those that are already part of the object, and trial points are considered for inclusion. In order for the filter to evolve, at least some trial points must be specified. These can for instance be specified as the layer of pixels around the alive points.</p>
-<p>The speed function can be specified as a speed image or a speed constant. The speed image is set using the method SetInput() . If the speed image is nullptr, a constant speed function is used and is specified using method the SetSpeedConstant() .</p>
-<p>If the speed function is constant and of value one, fast marching results in an approximate distance function from the initial alive points. <a class="el" href="classitk_1_1simple_1_1FastMarchingImageFilter.html" title="Solve an Eikonal equation using Fast Marching.">FastMarchingImageFilter</a> is used in the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ReinitializeLevelSetImageFilter.html">ReinitializeLevelSetImageFilter</a> object to create a signed distance function from the zero level set.</p>
-<p>The algorithm can be terminated early by setting an appropriate stopping value. The algorithm terminates when the current arrival time being processed is greater than the stopping value.</p>
-<p>There are two ways to specify the output image information ( LargestPossibleRegion, Spacing, Origin): (a) it is copied directly from the input speed image or (b) it is specified by the user. Default values are used if the user does not specify all the information.</p>
-<p>The output information is computed as follows. If the speed image is nullptr or if the OverrideOutputInformation is set to true, the output information is set from user specified parameters. These parameters can be specified using methods SetOutputRegion() , SetOutputSpacing() , SetOutputDirection() , and SetOutputOrigin() . Else if the speed image is not nullptr, the output information is copied from the input speed image.</p>
-<p>For an alternative implementation, see <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilter.html">itk::FastMarchingImageFilter</a> .</p>
-<p>Possible Improvements: In the current implementation, std::priority_queue only allows taking nodes out from the front and putting nodes in from the back. To update a value already on the heap, a new node is added to the heap. The defunct old node is left on the heap. When it is removed from the top, it will be recognized as invalid and not used. Future implementations can implement the heap in a different way allowing the values to be updated. This will generally require some sift-up and sift-down functions and an image of back-pointers going from the image to heap in order to locate the node which is to be updated.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html">FastMarchingImageFilterBase</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LevelSetTypeDefault.html">LevelSetTypeDefault</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#aa71c6ea9957c64d92e3b924cec76dee5" title="Solve an Eikonal equation using Fast Marching.">itk::simple::FastMarching</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilter.html">itk::FastMarchingImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a16">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkFastMarchingImageFilter_8h_source.html">sitkFastMarchingImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad0af1a2344e25b316d0c1f9531b4df58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0af1a2344e25b316d0c1f9531b4df58">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

@@ -101,7 +101,23 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1PowImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Computes the powers of 2 images. </p>
+<p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
+<p>The output of the pow function will be cast to the pixel type of the output image.</p>
+<p>The total operation over one pixel will be</p><div class="fragment"><div class="line">output_pixel = <span class="keyword">static_cast&lt;</span> TOutput <span class="keyword">&gt;</span>( std::pow(<span class="keyword">static_cast&lt;</span>RealType<span class="keyword">&gt;</span>(A),<span class="keyword">static_cast&lt;</span>RealType<span class="keyword">&gt;</span>(B)) );</div>
+</div><!-- fragment --><p>The pow function can be applied to two images with the following:</p><div class="fragment"><div class="line">SetInput1( image1 );</div>
+<div class="line"> </div>
+<div class="line">SetInput2( image2 );</div>
+</div><!-- fragment --><p>Additionally, this filter can be used to raise every pixel of an image to a power of a constant by using</p><div class="fragment"><div class="line">SetInput1( image1 );</div>
+<div class="line"> </div>
+<div class="line">SetConstant2( constant );</div>
+</div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ae1cea37d9c2f6a6151d44f2b871ef304" title="Computes the powers of 2 images.">itk::simple::Pow</a> for the procedural interface </dd>
+<dd>
+itk::PowImageFilter for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkPowImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkPowImageFilter_8h_source.html">sitkPowImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ad62fc0cb207b01053c9f24eadcc3c286"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1PowImageFilter.html#ad62fc0cb207b01053c9f24eadcc3c286">PixelIDTypeList</a> = typelist2::append&lt; <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a>, <a class="el" href="namespaceitk_1_1simple.html#a04b5c4ea11652f9a94862aee75216e13">ComplexPixelIDTypeList</a> &gt;::type</td></tr>
@@ -318,23 +334,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Computes the powers of 2 images. </p>
-<p>This class is templated over the types of the two input images and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
-<p>The output of the pow function will be cast to the pixel type of the output image.</p>
-<p>The total operation over one pixel will be</p><div class="fragment"><div class="line">output_pixel = <span class="keyword">static_cast&lt;</span> TOutput <span class="keyword">&gt;</span>( std::pow(<span class="keyword">static_cast&lt;</span>RealType<span class="keyword">&gt;</span>(A),<span class="keyword">static_cast&lt;</span>RealType<span class="keyword">&gt;</span>(B)) );</div>
-</div><!-- fragment --><p>The pow function can be applied to two images with the following:</p><div class="fragment"><div class="line">SetInput1( image1 );</div>
-<div class="line"> </div>
-<div class="line">SetInput2( image2 );</div>
-</div><!-- fragment --><p>Additionally, this filter can be used to raise every pixel of an image to a power of a constant by using</p><div class="fragment"><div class="line">SetInput1( image1 );</div>
-<div class="line"> </div>
-<div class="line">SetConstant2( constant );</div>
-</div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ae1cea37d9c2f6a6151d44f2b871ef304" title="Computes the powers of 2 images.">itk::simple::Pow</a> for the procedural interface </dd>
-<dd>
-itk::PowImageFilter for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkPowImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkPowImageFilter_8h_source.html">sitkPowImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2089eb3f320f74c80d77c7dc4aaadf56"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2089eb3f320f74c80d77c7dc4aaadf56">&#9670;&nbsp;</a></span>MemberFunction1Type</h2>
 

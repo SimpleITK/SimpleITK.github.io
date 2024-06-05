@@ -89,7 +89,16 @@ $(function() {
 <div class="center"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1ImageViewer__coll__graph.svg" width="242" height="276"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Display an image in an external viewer (Fiji by default) </p>
+<p>The <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> class displays an image with an external image display application. By default the class will search for a <a href="https://fiji.sc">Fiji</a> executable. The image is written out to a temporary file and then passed to the application.</p>
+<p>When the first <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> object is constructed the following environment variables are queried to set up the external viewer:</p>
+<p>SITK_SHOW_EXTENSION: file format extension of the temporary image file. The default is '.mha', the <a href="https://itk.org/Wiki/ITK/MetaIO">MetaIO</a> file format.</p>
+<p>SITK_SHOW_COMMAND: The user can specify an application other than Fiji to view images.</p>
+<p>The environment variables are not checked for subsequent <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> objects. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00051">51</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab97a90e0d0d7af51568a1c3e2d18f1c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageViewer.html#ab97a90e0d0d7af51568a1c3e2d18f1c0">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image)</td></tr>
@@ -193,16 +202,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a59d0c4f89226826c084b6aace9864cc0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ImageViewer.html#a59d0c4f89226826c084b6aace9864cc0">m_ViewCommand</a></td></tr>
 <tr class="separator:a59d0c4f89226826c084b6aace9864cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Display an image in an external viewer (Fiji by default) </p>
-<p>The <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> class displays an image with an external image display application. By default the class will search for a <a href="https://fiji.sc">Fiji</a> executable. The image is written out to a temporary file and then passed to the application.</p>
-<p>When the first <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> object is constructed the following environment variables are queried to set up the external viewer:</p>
-<p>SITK_SHOW_EXTENSION: file format extension of the temporary image file. The default is '.mha', the <a href="https://itk.org/Wiki/ITK/MetaIO">MetaIO</a> file format.</p>
-<p>SITK_SHOW_COMMAND: The user can specify an application other than Fiji to view images.</p>
-<p>The environment variables are not checked for subsequent <a class="el" href="classitk_1_1simple_1_1ImageViewer.html" title="Display an image in an external viewer (Fiji by default)">ImageViewer</a> objects. </p>
-
-<p class="definition">Definition at line <a class="el" href="sitkImageViewer_8h_source.html#l00051">51</a> of file <a class="el" href="sitkImageViewer_8h_source.html">sitkImageViewer.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1a834696e836ec4df47a4d55099e9596"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a834696e836ec4df47a4d55099e9596">&#9670;&nbsp;</a></span>ImageViewer()</h2>
 

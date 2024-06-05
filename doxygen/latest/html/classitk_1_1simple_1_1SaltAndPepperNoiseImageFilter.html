@@ -101,7 +101,20 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Alter an image with fixed value impulse noise, often called salt and pepper noise. </p>
+<p>Salt (sensor saturation) and pepper (dead pixels) noise is a special kind of impulse noise where the value of the noise is either the maximum possible value in the image or its minimum. This is not necessarily the maximal/minimal possible intensity value based on the pixel type. For example, the native pixel type for CT is a signed 16 bit integer, but only 12 bits used, so we would like to set the salt and pepper values to match this smaller intensity range and not the range the pixel type represents. It can be modeled as:</p>
+<dl class="section user"><dt></dt><dd>\( I = \begin{cases} M, &amp; \quad \text{if } U &lt; p/2 \\ m, &amp; \quad \text{if } U &gt; 1 - p/2 \\ I_0, &amp; \quad \text{if } p/2 \geq U \leq 1 - p/2 \end{cases} \)</dd></dl>
+<dl class="section user"><dt></dt><dd>where \( p \) is the probability of the noise event, \( U \) is a uniformly distributed random variable in the \( [0,1] \) range, \( M \) is the greatest possible pixel value, and \( m \) the smallest possible pixel value.</dd></dl>
+<p>Pixel alteration occurs at a user defined probability. Salt and pepper pixels are equally distributed.</p>
+<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
+<p>This code was contributed in the Insight Journal paper "Noise
+Simulation". <a href="https://www.insight-journal.org/browse/publication/721">https://www.insight-journal.org/browse/publication/721</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3748edae76a63878015ee8347e424978" title="Alter an image with fixed value impulse noise, often called salt and pepper noise.">itk::simple::SaltAndPepperNoise</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SaltAndPepperNoiseImageFilter.html">itk::SaltAndPepperNoiseImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a8fd9ff8f2cf537fa5bafb4c9014bee11"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1SaltAndPepperNoiseImageFilter.html#a8fd9ff8f2cf537fa5bafb4c9014bee11">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -311,20 +324,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Alter an image with fixed value impulse noise, often called salt and pepper noise. </p>
-<p>Salt (sensor saturation) and pepper (dead pixels) noise is a special kind of impulse noise where the value of the noise is either the maximum possible value in the image or its minimum. This is not necessarily the maximal/minimal possible intensity value based on the pixel type. For example, the native pixel type for CT is a signed 16 bit integer, but only 12 bits used, so we would like to set the salt and pepper values to match this smaller intensity range and not the range the pixel type represents. It can be modeled as:</p>
-<dl class="section user"><dt></dt><dd>\( I = \begin{cases} M, &amp; \quad \text{if } U &lt; p/2 \\ m, &amp; \quad \text{if } U &gt; 1 - p/2 \\ I_0, &amp; \quad \text{if } p/2 \geq U \leq 1 - p/2 \end{cases} \)</dd></dl>
-<dl class="section user"><dt></dt><dd>where \( p \) is the probability of the noise event, \( U \) is a uniformly distributed random variable in the \( [0,1] \) range, \( M \) is the greatest possible pixel value, and \( m \) the smallest possible pixel value.</dd></dl>
-<p>Pixel alteration occurs at a user defined probability. Salt and pepper pixels are equally distributed.</p>
-<dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
-<p>This code was contributed in the Insight Journal paper "Noise
-Simulation". <a href="https://www.insight-journal.org/browse/publication/721">https://www.insight-journal.org/browse/publication/721</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3748edae76a63878015ee8347e424978" title="Alter an image with fixed value impulse noise, often called salt and pepper noise.">itk::simple::SaltAndPepperNoise</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SaltAndPepperNoiseImageFilter.html">itk::SaltAndPepperNoiseImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a8dc9e56b0fe7aada4954d235d1f5582d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8dc9e56b0fe7aada4954d235d1f5582d">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

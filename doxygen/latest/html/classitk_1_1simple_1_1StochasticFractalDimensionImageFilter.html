@@ -101,7 +101,19 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1StochasticFractalDimensionImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This filter computes the stochastic fractal dimension of the input image. </p>
+<p>The methodology is based on Mandelbrot's fractal theory and the concept of fractional Brownian motion and yields images which have been used for classification and edge enhancement.</p>
+<p>This class which is templated over the input and output images as well as a mask image type. The input is a scalar image, an optional neighborhood radius (default = 2), and an optional mask. The mask can be specified to decrease computation time since, as the authors point out, calculation is time-consuming.</p>
+<p>This filter was contributed by Nick Tustison and James Gee from the PICSL lab, at the University of Pennsylvania as an paper to the Insight Journal:</p>
+<p>"Stochastic Fractal Dimension Image" <a href="https://hdl.handle.net/1926/1525">https://hdl.handle.net/1926/1525</a> <a href="https://www.insight-journal.org/browse/publication/318">https://www.insight-journal.org/browse/publication/318</a></p>
+<dl class="section author"><dt>Author</dt><dd>Nick Tustison </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2e12c7f4529ebf84c811fb1a1bf90261" title="This filter computes the stochastic fractal dimension of the input image.">itk::simple::StochasticFractalDimension</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1StochasticFractalDimensionImageFilter.html">itk::StochasticFractalDimensionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3026ade1c3ada6b720653d5845d4fac9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1StochasticFractalDimensionImageFilter.html#a3026ade1c3ada6b720653d5845d4fac9">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#ae2afc490313982b43e05c1bee439ce42">RealPixelIDTypeList</a></td></tr>
@@ -300,19 +312,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This filter computes the stochastic fractal dimension of the input image. </p>
-<p>The methodology is based on Mandelbrot's fractal theory and the concept of fractional Brownian motion and yields images which have been used for classification and edge enhancement.</p>
-<p>This class which is templated over the input and output images as well as a mask image type. The input is a scalar image, an optional neighborhood radius (default = 2), and an optional mask. The mask can be specified to decrease computation time since, as the authors point out, calculation is time-consuming.</p>
-<p>This filter was contributed by Nick Tustison and James Gee from the PICSL lab, at the University of Pennsylvania as an paper to the Insight Journal:</p>
-<p>"Stochastic Fractal Dimension Image" <a href="https://hdl.handle.net/1926/1525">https://hdl.handle.net/1926/1525</a> <a href="https://www.insight-journal.org/browse/publication/318">https://www.insight-journal.org/browse/publication/318</a></p>
-<dl class="section author"><dt>Author</dt><dd>Nick Tustison </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2e12c7f4529ebf84c811fb1a1bf90261" title="This filter computes the stochastic fractal dimension of the input image.">itk::simple::StochasticFractalDimension</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1StochasticFractalDimensionImageFilter.html">itk::StochasticFractalDimensionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a10bef0c69429bca3e318593e07ce02ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10bef0c69429bca3e318593e07ce02ae">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

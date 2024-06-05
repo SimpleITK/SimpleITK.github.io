@@ -101,7 +101,16 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1GaborImageSource__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Generate an n-dimensional image of a Gabor filter. </p>
+<p><a class="el" href="classitk_1_1simple_1_1GaborImageSource.html" title="Generate an n-dimensional image of a Gabor filter.">GaborImageSource</a> generates an image of either the real (i.e. symmetric) or complex (i.e. antisymmetric) part of the Gabor filter with the orientation directed along the x-axis. The <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GaborKernelFunction.html">GaborKernelFunction</a> is used to evaluate the contribution along the x-axis whereas a non-normalized 1-D Gaussian envelope provides the contribution in each of the remaining N dimensions. Orientation can be manipulated via the <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> classes of the toolkit.</p>
+<p>The output image may be of any dimension.</p>
+<p>This implementation was contributed as a paper to the Insight Journal <a href="https://www.insight-journal.org/browse/publication/150">https://www.insight-journal.org/browse/publication/150</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ad51df2cef6da0d736a8732438b36c5b1" title="Generate an n-dimensional image of a Gabor filter.">itk::simple::GaborSource</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GaborImageSource.html">itk::GaborImageSource</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00045">45</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:acfb48401b5167336a66495846e229ac5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1GaborImageSource.html#acfb48401b5167336a66495846e229ac5">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -342,16 +351,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Generate an n-dimensional image of a Gabor filter. </p>
-<p><a class="el" href="classitk_1_1simple_1_1GaborImageSource.html" title="Generate an n-dimensional image of a Gabor filter.">GaborImageSource</a> generates an image of either the real (i.e. symmetric) or complex (i.e. antisymmetric) part of the Gabor filter with the orientation directed along the x-axis. The <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GaborKernelFunction.html">GaborKernelFunction</a> is used to evaluate the contribution along the x-axis whereas a non-normalized 1-D Gaussian envelope provides the contribution in each of the remaining N dimensions. Orientation can be manipulated via the <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> classes of the toolkit.</p>
-<p>The output image may be of any dimension.</p>
-<p>This implementation was contributed as a paper to the Insight Journal <a href="https://www.insight-journal.org/browse/publication/150">https://www.insight-journal.org/browse/publication/150</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ad51df2cef6da0d736a8732438b36c5b1" title="Generate an n-dimensional image of a Gabor filter.">itk::simple::GaborSource</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GaborImageSource.html">itk::GaborImageSource</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00045">45</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa553789bad68e2180d46ad649f5130a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa553789bad68e2180d46ad649f5130a4">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

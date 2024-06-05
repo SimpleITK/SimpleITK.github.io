@@ -102,7 +102,30 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1DICOMOrientImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Permute axes and flip images as needed to obtain an approximation to the desired orientation. </p>
+<p>The physical location of all pixels in the image remains the same, but the meta-data and the ordering of the stored pixels may change.</p>
+<p><a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html" title="Permute axes and flip images as needed to obtain an approximation to the desired orientation.">DICOMOrientImageFilter</a> depends on a set of constants that describe all possible labels. Directions are labeled in terms of following pairs:</p>
+<ul>
+<li>Left and Right (Subject's left and right)</li>
+</ul>
+<ul>
+<li>Anterior and Posterior (Subject's front and back)</li>
+</ul>
+<ul>
+<li>Inferior and Superior (Subject's bottom and top, i.e. feet and head)</li>
+</ul>
+<p>The initials of these directions are used in a 3 letter code in the enumerated type OrientationEnum. The initials are given fastest moving index first, second fastest second, third fastest third, where the label's direction indicates increasing values.</p>
+<p>An ITK image with an identity direction cosine matrix is in LPS (Left, Posterior, Superior) orientation as defined by the DICOM standard.</p>
+<p class="formulaDsp">
+\[ LPS = \begin{Bmatrix} from\ right\ to\ \textbf{L}eft \\ from\ anterior\ towards\ \textbf{P}osterior \\ from\ inferior\ towards\ \textbf{S}uperior \end{Bmatrix} \]
+</p>
+<p>The output orientation is specified with SetDesiredCoordinateOrientation. The input coordinate orientation is computed from the input image's direction cosine matrix. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ca62b91b4bb626fd9ef0b2f283660d7" title="Permute axes and flip images as needed to obtain an approximation to the desired orientation.">itk::simple::DICOMOrient</a> for the procedural interface </dd>
+<dd>
+itk::DICOMOrientImageFilter for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkDICOMOrientImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkDICOMOrientImageFilter_8h_source.html">sitkDICOMOrientImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a3bd73744e3e909a18b4f4fd0a8bdfab5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html#a3bd73744e3e909a18b4f4fd0a8bdfab5">PixelIDTypeList</a> = typelist2::append&lt; <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a>, <a class="el" href="namespaceitk_1_1simple.html#a40fe06902d56d1227dbf12e4a347f750">VectorPixelIDTypeList</a> &gt;::type</td></tr>
@@ -312,30 +335,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Permute axes and flip images as needed to obtain an approximation to the desired orientation. </p>
-<p>The physical location of all pixels in the image remains the same, but the meta-data and the ordering of the stored pixels may change.</p>
-<p><a class="el" href="classitk_1_1simple_1_1DICOMOrientImageFilter.html" title="Permute axes and flip images as needed to obtain an approximation to the desired orientation.">DICOMOrientImageFilter</a> depends on a set of constants that describe all possible labels. Directions are labeled in terms of following pairs:</p>
-<ul>
-<li>Left and Right (Subject's left and right)</li>
-</ul>
-<ul>
-<li>Anterior and Posterior (Subject's front and back)</li>
-</ul>
-<ul>
-<li>Inferior and Superior (Subject's bottom and top, i.e. feet and head)</li>
-</ul>
-<p>The initials of these directions are used in a 3 letter code in the enumerated type OrientationEnum. The initials are given fastest moving index first, second fastest second, third fastest third, where the label's direction indicates increasing values.</p>
-<p>An ITK image with an identity direction cosine matrix is in LPS (Left, Posterior, Superior) orientation as defined by the DICOM standard.</p>
-<p class="formulaDsp">
-\[ LPS = \begin{Bmatrix} from\ right\ to\ \textbf{L}eft \\ from\ anterior\ towards\ \textbf{P}osterior \\ from\ inferior\ towards\ \textbf{S}uperior \end{Bmatrix} \]
-</p>
-<p>The output orientation is specified with SetDesiredCoordinateOrientation. The input coordinate orientation is computed from the input image's direction cosine matrix. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ca62b91b4bb626fd9ef0b2f283660d7" title="Permute axes and flip images as needed to obtain an approximation to the desired orientation.">itk::simple::DICOMOrient</a> for the procedural interface </dd>
-<dd>
-itk::DICOMOrientImageFilter for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkDICOMOrientImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkDICOMOrientImageFilter_8h_source.html">sitkDICOMOrientImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a7a27a6e6702abc6e44f0accfd77b9a6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7a27a6e6702abc6e44f0accfd77b9a6e">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

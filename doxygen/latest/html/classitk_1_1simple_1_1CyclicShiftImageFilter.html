@@ -101,7 +101,15 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1CyclicShiftImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Perform a cyclic spatial shift of image intensities on the image grid. </p>
+<p>This filter supports arbitrary cyclic shifts of pixel values on the image grid. If the Shift is set to [xOff, yOff], the value of the pixel at [0, 0] in the input image will be the value of the pixel in the output image at index [xOff modulo xSize, yOff modulo ySize] where xSize and ySize are the sizes of the image in the x and y dimensions, respectively. If a pixel value is moved across a boundary, the pixel value is wrapped around that boundary. For example, if the image is 40-by-40 and the Shift is [13, 47], then the value of the pixel at [0, 0] in the input image will be the value of the pixel in the output image at index [13, 7].</p>
+<p>Negative Shifts are supported. This filter also works with images whose largest possible region starts at a non-zero index. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#acd2db665655b000a908c40866f828e78" title="Perform a cyclic spatial shift of image intensities on the image grid.">itk::simple::CyclicShift</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CyclicShiftImageFilter.html">itk::CyclicShiftImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html">sitkCyclicShiftImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a0b1f890845723c691dda9fd6988ab7d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CyclicShiftImageFilter.html#a0b1f890845723c691dda9fd6988ab7d0">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a26f1fa18c366fbfc2438f387f17fae31">NonLabelPixelIDTypeList</a></td></tr>
@@ -298,15 +306,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Perform a cyclic spatial shift of image intensities on the image grid. </p>
-<p>This filter supports arbitrary cyclic shifts of pixel values on the image grid. If the Shift is set to [xOff, yOff], the value of the pixel at [0, 0] in the input image will be the value of the pixel in the output image at index [xOff modulo xSize, yOff modulo ySize] where xSize and ySize are the sizes of the image in the x and y dimensions, respectively. If a pixel value is moved across a boundary, the pixel value is wrapped around that boundary. For example, if the image is 40-by-40 and the Shift is [13, 47], then the value of the pixel at [0, 0] in the input image will be the value of the pixel in the output image at index [13, 7].</p>
-<p>Negative Shifts are supported. This filter also works with images whose largest possible region starts at a non-zero index. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#acd2db665655b000a908c40866f828e78" title="Perform a cyclic spatial shift of image intensities on the image grid.">itk::simple::CyclicShift</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CyclicShiftImageFilter.html">itk::CyclicShiftImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkCyclicShiftImageFilter_8h_source.html">sitkCyclicShiftImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a5dafc23fe2a23a015be0c5a069754332"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5dafc23fe2a23a015be0c5a069754332">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

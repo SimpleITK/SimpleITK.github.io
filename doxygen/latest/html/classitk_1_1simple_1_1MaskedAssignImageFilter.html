@@ -101,7 +101,28 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1MaskedAssignImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Mask an image with a mask. </p>
+<p>This class is templated over the types of the input image type, the mask image type and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
+<p>The pixel type of the input 2 image must have a valid definition of the operator != with zero. This condition is required because internally this filter will perform the operation</p>
+<div class="fragment"><div class="line"><span class="keywordflow">if</span> pixel_from_mask_image != masking_value</div>
+<div class="line"> </div>
+<div class="line"> pixel_output_image = pixel_input_image</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordflow">else</span></div>
+<div class="line"> </div>
+<div class="line"> pixel_output_image = outside_value</div>
+</div><!-- fragment --><p>The pixel from the input 1 is cast to the pixel type of the output image.</p>
+<p>Note that the input and the mask images must be of the same size.</p>
+<dl class="section warning"><dt>Warning</dt><dd>Any pixel value other than masking value (0 by default) will not be masked out.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html" title="Mask an image with the negation (or logical compliment) of a mask.">MaskNegatedImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a1f0605e2bbb0cf25e4c436e3d0547ecd" title="Mask an image with a mask.">itk::simple::MaskedAssign</a> for the procedural interface </dd>
+<dd>
+itk::MaskedAssignImageFilter for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkMaskedAssignImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkMaskedAssignImageFilter_8h_source.html">sitkMaskedAssignImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ad97b88b0fd6b0ccc0f323f61f3d1e393"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1MaskedAssignImageFilter.html#ad97b88b0fd6b0ccc0f323f61f3d1e393">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a26f1fa18c366fbfc2438f387f17fae31">NonLabelPixelIDTypeList</a></td></tr>
@@ -304,28 +325,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Mask an image with a mask. </p>
-<p>This class is templated over the types of the input image type, the mask image type and the type of the output image. Numeric conversions (castings) are done by the C++ defaults.</p>
-<p>The pixel type of the input 2 image must have a valid definition of the operator != with zero. This condition is required because internally this filter will perform the operation</p>
-<div class="fragment"><div class="line"><span class="keywordflow">if</span> pixel_from_mask_image != masking_value</div>
-<div class="line"> </div>
-<div class="line"> pixel_output_image = pixel_input_image</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordflow">else</span></div>
-<div class="line"> </div>
-<div class="line"> pixel_output_image = outside_value</div>
-</div><!-- fragment --><p>The pixel from the input 1 is cast to the pixel type of the output image.</p>
-<p>Note that the input and the mask images must be of the same size.</p>
-<dl class="section warning"><dt>Warning</dt><dd>Any pixel value other than masking value (0 by default) will not be masked out.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1MaskNegatedImageFilter.html" title="Mask an image with the negation (or logical compliment) of a mask.">MaskNegatedImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a1f0605e2bbb0cf25e4c436e3d0547ecd" title="Mask an image with a mask.">itk::simple::MaskedAssign</a> for the procedural interface </dd>
-<dd>
-itk::MaskedAssignImageFilter for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkMaskedAssignImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkMaskedAssignImageFilter_8h_source.html">sitkMaskedAssignImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aaa2dfa58fc543de80b501961217a96ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa2dfa58fc543de80b501961217a96ec">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

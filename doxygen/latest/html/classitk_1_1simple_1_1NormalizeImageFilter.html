@@ -101,7 +101,18 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1NormalizeImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Normalize an image by setting its mean to zero and variance to one. </p>
+<p><a class="el" href="classitk_1_1simple_1_1NormalizeImageFilter.html" title="Normalize an image by setting its mean to zero and variance to one.">NormalizeImageFilter</a> shifts and scales an image so that the pixels in the image have a zero mean and unit variance. This filter uses <a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a> to compute the mean and variance of the input and then applies <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html" title="Shift and scale the pixels in an image.">ShiftScaleImageFilter</a> to shift and scale the pixels.</p>
+<p>NB: since this filter normalizes the data such that the mean is at 0, and \(-\sigma\) to \(+\sigma\) is mapped to -1.0 to 1.0, output image integral types will produce an image that DOES NOT HAVE a unit variance due to 68% of the intensity values being mapped to the real number range of -1.0 to 1.0 and then cast to the output integral value.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">NormalizeToConstantImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7" title="Normalize an image by setting its mean to zero and variance to one.">itk::simple::Normalize</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NormalizeImageFilter.html">itk::NormalizeImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a4f9d17ba667df4029d5e00f68b620960"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1NormalizeImageFilter.html#a4f9d17ba667df4029d5e00f68b620960">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -295,18 +306,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Normalize an image by setting its mean to zero and variance to one. </p>
-<p><a class="el" href="classitk_1_1simple_1_1NormalizeImageFilter.html" title="Normalize an image by setting its mean to zero and variance to one.">NormalizeImageFilter</a> shifts and scales an image so that the pixels in the image have a zero mean and unit variance. This filter uses <a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a> to compute the mean and variance of the input and then applies <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html" title="Shift and scale the pixels in an image.">ShiftScaleImageFilter</a> to shift and scale the pixels.</p>
-<p>NB: since this filter normalizes the data such that the mean is at 0, and \(-\sigma\) to \(+\sigma\) is mapped to -1.0 to 1.0, output image integral types will produce an image that DOES NOT HAVE a unit variance due to 68% of the intensity values being mapped to the real number range of -1.0 to 1.0 and then cast to the output integral value.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">NormalizeToConstantImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7" title="Normalize an image by setting its mean to zero and variance to one.">itk::simple::Normalize</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NormalizeImageFilter.html">itk::NormalizeImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9f4d0a1424c48db0ecb0469c942fac2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f4d0a1424c48db0ecb0469c942fac2d">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

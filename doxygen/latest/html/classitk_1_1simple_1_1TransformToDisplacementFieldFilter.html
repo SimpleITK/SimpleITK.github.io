@@ -101,7 +101,20 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1TransformToDisplacementFieldFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Generate a displacement field from a coordinate transform. </p>
+<p>Output information (spacing, size and direction) for the output image should be set. This information has the normal defaults of unit spacing, zero origin and identity direction. Optionally, the output information can be obtained from a reference image. If the reference image is provided and UseReferenceImage is On, then the spacing, origin and direction of the reference image will be used.</p>
+<p>Since this filter produces an image which is a different size than its input, it needs to override several of the methods defined in <a class="el" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject.">ProcessObject</a> in order to properly manage the pipeline execution model. In particular, this filter overrides <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#abe61fb6b7de8c443e7af1561bd722736">ProcessObject::GenerateOutputInformation()</a> .</p>
+<p>This filter is implemented as a multithreaded filter. It provides a ThreadedGenerateData() method for its implementation.</p>
+<dl class="section author"><dt>Author</dt><dd>Marius Staring, Leiden University Medical Center, The Netherlands.</dd></dl>
+<p>This class was taken from the Insight Journal paper: <a href="https://www.insight-journal.org/browse/publication/240">https://www.insight-journal.org/browse/publication/240</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1TransformToDisplacementFieldFilter.html" title="Generate a displacement field from a coordinate transform.">itk::simple::TransformToDisplacementFieldFilter</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformToDisplacementFieldFilter.html">itk::TransformToDisplacementFieldFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a17">DemonsRegistration2/DemonsRegistration2.cxx</a>.</dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkTransformToDisplacementFieldFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkTransformToDisplacementFieldFilter_8h_source.html">sitkTransformToDisplacementFieldFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a4ae87753a69d44eebd86a7f06c126d4f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1TransformToDisplacementFieldFilter.html#a4ae87753a69d44eebd86a7f06c126d4f">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a0dd76198a82c3ea1daaf16c45ef3516e">RealVectorPixelIDTypeList</a></td></tr>
@@ -324,20 +337,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Generate a displacement field from a coordinate transform. </p>
-<p>Output information (spacing, size and direction) for the output image should be set. This information has the normal defaults of unit spacing, zero origin and identity direction. Optionally, the output information can be obtained from a reference image. If the reference image is provided and UseReferenceImage is On, then the spacing, origin and direction of the reference image will be used.</p>
-<p>Since this filter produces an image which is a different size than its input, it needs to override several of the methods defined in <a class="el" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject.">ProcessObject</a> in order to properly manage the pipeline execution model. In particular, this filter overrides <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#abe61fb6b7de8c443e7af1561bd722736">ProcessObject::GenerateOutputInformation()</a> .</p>
-<p>This filter is implemented as a multithreaded filter. It provides a ThreadedGenerateData() method for its implementation.</p>
-<dl class="section author"><dt>Author</dt><dd>Marius Staring, Leiden University Medical Center, The Netherlands.</dd></dl>
-<p>This class was taken from the Insight Journal paper: <a href="https://www.insight-journal.org/browse/publication/240">https://www.insight-journal.org/browse/publication/240</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1TransformToDisplacementFieldFilter.html" title="Generate a displacement field from a coordinate transform.">itk::simple::TransformToDisplacementFieldFilter</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformToDisplacementFieldFilter.html">itk::TransformToDisplacementFieldFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a17">DemonsRegistration2/DemonsRegistration2.cxx</a>.</dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkTransformToDisplacementFieldFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkTransformToDisplacementFieldFilter_8h_source.html">sitkTransformToDisplacementFieldFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a2482caf88a229958e25938800aa008b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2482caf88a229958e25938800aa008b2">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

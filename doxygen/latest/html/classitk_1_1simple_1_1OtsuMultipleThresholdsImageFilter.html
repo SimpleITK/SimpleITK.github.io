@@ -101,7 +101,22 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1OtsuMultipleThresholdsImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Threshold an image using multiple Otsu Thresholds. </p>
+<p>This filter creates a labeled image that separates the input image into various classes. The filter computes the thresholds using the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OtsuMultipleThresholdsCalculator.html">OtsuMultipleThresholdsCalculator</a> and applies those thresholds to the input image using the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdLabelerImageFilter.html">ThresholdLabelerImageFilter</a> . The NumberOfHistogramBins and NumberOfThresholds can be set for the Calculator. The LabelOffset can be set for the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdLabelerImageFilter.html">ThresholdLabelerImageFilter</a> .</p>
+<p>This filter also includes an option to use the valley emphasis algorithm from H.F. Ng, "Automatic thresholding for defect detection", Pattern Recognition Letters, (27): 1644-1649, 2006. The valley emphasis algorithm is particularly effective when the object to be thresholded is small. See the following tests for examples: itkOtsuMultipleThresholdsImageFilterTest3 and itkOtsuMultipleThresholdsImageFilterTest4 To use this algorithm, simple call the setter: SetValleyEmphasis(true) It is turned off by default.</p>
+<dl class="section see"><dt>See also</dt><dd>ScalarImageToHistogramGenerator</dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OtsuMultipleThresholdsCalculator.html">OtsuMultipleThresholdsCalculator</a></dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdLabelerImageFilter.html">ThresholdLabelerImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a6d762ce16c2708338b6d99f8300aac3b" title="Threshold an image using multiple Otsu Thresholds.">itk::simple::OtsuMultipleThresholds</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OtsuMultipleThresholdsImageFilter.html">itk::OtsuMultipleThresholdsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkOtsuMultipleThresholdsImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkOtsuMultipleThresholdsImageFilter_8h_source.html">sitkOtsuMultipleThresholdsImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a12b6fe7b8399d3fc4ebdccf2f30dc4e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1OtsuMultipleThresholdsImageFilter.html#a12b6fe7b8399d3fc4ebdccf2f30dc4e7">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a06bcbb179f06b2bed315a3727edb1d07">BasicPixelIDTypeList</a></td></tr>
@@ -332,22 +347,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Threshold an image using multiple Otsu Thresholds. </p>
-<p>This filter creates a labeled image that separates the input image into various classes. The filter computes the thresholds using the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OtsuMultipleThresholdsCalculator.html">OtsuMultipleThresholdsCalculator</a> and applies those thresholds to the input image using the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdLabelerImageFilter.html">ThresholdLabelerImageFilter</a> . The NumberOfHistogramBins and NumberOfThresholds can be set for the Calculator. The LabelOffset can be set for the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdLabelerImageFilter.html">ThresholdLabelerImageFilter</a> .</p>
-<p>This filter also includes an option to use the valley emphasis algorithm from H.F. Ng, "Automatic thresholding for defect detection", Pattern Recognition Letters, (27): 1644-1649, 2006. The valley emphasis algorithm is particularly effective when the object to be thresholded is small. See the following tests for examples: itkOtsuMultipleThresholdsImageFilterTest3 and itkOtsuMultipleThresholdsImageFilterTest4 To use this algorithm, simple call the setter: SetValleyEmphasis(true) It is turned off by default.</p>
-<dl class="section see"><dt>See also</dt><dd>ScalarImageToHistogramGenerator</dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OtsuMultipleThresholdsCalculator.html">OtsuMultipleThresholdsCalculator</a></dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdLabelerImageFilter.html">ThresholdLabelerImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a6d762ce16c2708338b6d99f8300aac3b" title="Threshold an image using multiple Otsu Thresholds.">itk::simple::OtsuMultipleThresholds</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1OtsuMultipleThresholdsImageFilter.html">itk::OtsuMultipleThresholdsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkOtsuMultipleThresholdsImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkOtsuMultipleThresholdsImageFilter_8h_source.html">sitkOtsuMultipleThresholdsImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a9a255104a0ecb2f34e776b085570955f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a255104a0ecb2f34e776b085570955f">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 

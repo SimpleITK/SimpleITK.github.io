@@ -101,7 +101,18 @@ $(function() {
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Extracts the selected index of the vector that is the input pixel type. </p>
+<p>This filter is templated over the input image type and output image type.</p>
+<p>The filter expect the input image pixel type to be a vector and the output image pixel type to be a scalar. The only requirement on the type used for representing the vector is that it must provide an operator[].</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ComposeImageFilter.html" title="ComposeImageFilter combine several scalar images into a multicomponent image.">ComposeImageFilter</a> </dd>
+<dd>
+<a class="el" href="namespaceitk_1_1simple.html#a06ac2837d55572dc1c8b12e622d6d93f" title="Extracts the selected index of the vector that is the input pixel type.">itk::simple::VectorIndexSelectionCast</a> for the procedural interface </dd>
+<dd>
+<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorIndexSelectionCastImageFilter.html">itk::VectorIndexSelectionCastImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:ad6bb91156c3c171503c4132362d24e1b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html#ad6bb91156c3c171503c4132362d24e1b">PixelIDTypeList</a> = <a class="el" href="namespaceitk_1_1simple.html#a40fe06902d56d1227dbf12e4a347f750">VectorPixelIDTypeList</a></td></tr>
@@ -308,18 +319,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memItemLeft" align="right" valign="top">static std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ProcessObject.html#a2ecfdd88b16dd793b6f0b804b8e3d2ab">ToStringHelper</a> (std::ostream &amp;os, const unsigned char &amp;v)</td></tr>
 <tr class="separator:a2ecfdd88b16dd793b6f0b804b8e3d2ab inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Extracts the selected index of the vector that is the input pixel type. </p>
-<p>This filter is templated over the input image type and output image type.</p>
-<p>The filter expect the input image pixel type to be a vector and the output image pixel type to be a scalar. The only requirement on the type used for representing the vector is that it must provide an operator[].</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ComposeImageFilter.html" title="ComposeImageFilter combine several scalar images into a multicomponent image.">ComposeImageFilter</a> </dd>
-<dd>
-<a class="el" href="namespaceitk_1_1simple.html#a06ac2837d55572dc1c8b12e622d6d93f" title="Extracts the selected index of the vector that is the input pixel type.">itk::simple::VectorIndexSelectionCast</a> for the procedural interface </dd>
-<dd>
-<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorIndexSelectionCastImageFilter.html">itk::VectorIndexSelectionCastImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkVectorIndexSelectionCastImageFilter_8h_source.html">sitkVectorIndexSelectionCastImageFilter.h</a>.</p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a094ff2ee52c1303a420a0d796ec74f7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a094ff2ee52c1303a420a0d796ec74f7d">&#9670;&nbsp;</a></span>MemberFunctionType</h2>
 
