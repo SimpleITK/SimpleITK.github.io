@@ -854,7 +854,7 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the arrival time corresponding to the last reached target. If TargetReachedMode is set to NoTargets, TargetValue contains the last (aka largest) Eikonal solution value generated.</p>
+<p>Get the arrival time corresponding to the last reached target. If TargetReachedMode is set to TargetConditionEnum::NoTargets , TargetValue contains the last (aka largest) Eikonal solution value generated.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
@@ -1027,7 +1027,7 @@ template&lt;class TImageType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the container of Target Points. If a target point is reached, the propagation stops. Trial points are represented as a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorContainer.html">VectorContainer</a> of LevelSetNodes. </p>
+<p>Backwards compatibility for enum values Set the container of Target Points. If a target point is reached, the propagation stops. Trial points are represented as a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorContainer.html">VectorContainer</a> of LevelSetNodes. </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 

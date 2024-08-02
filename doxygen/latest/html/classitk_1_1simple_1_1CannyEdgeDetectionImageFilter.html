@@ -114,7 +114,7 @@ to Edge Detection"(IEEE Transactions on Pattern Analysis and Machine Intelligenc
 <dd>
 <a class="el" href="classitk_1_1simple_1_1ZeroCrossingImageFilter.html" title="This filter finds the closest pixel to the zero-crossings (sign changes) in a signed itk::Image .">ZeroCrossingImageFilter</a></dd>
 <dd>
-<a class="el" href="classitk_1_1simple_1_1ThresholdImageFilter.html" title="Set image values to a user-specified value if they are below, above, or between simple threshold valu...">ThresholdImageFilter</a> </dd>
+<a class="el" href="classitk_1_1simple_1_1ThresholdImageFilter.html" title="Set image values to a user-specified value if they are below, above, or outside threshold values.">ThresholdImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#a68b906bdb463b58176a77c126f2ea1d8" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">itk::simple::CannyEdgeDetection</a> for the procedural interface </dd>
 <dd>
@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fcfcad1eabe2f97163d4befc7013a71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a8fcfcad1eabe2f97163d4befc7013a71">SetMaximumError</a> (std::vector&lt; double &gt; MaximumError)</td></tr>
 <tr class="separator:a8fcfcad1eabe2f97163d4befc7013a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacfd873c10ad83f29e30cc6ddb391672"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#aacfd873c10ad83f29e30cc6ddb391672">SetUpperThreshold</a> (double UpperThreshold)</td></tr>
-<tr class="memdesc:aacfd873c10ad83f29e30cc6ddb391672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the upper threshold value for detected edges. TODO: Document in the ITKv4 migration guide that the SetThreshold member function was removed from the <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">CannyEdgeDetectionImageFilter</a> , and that both UpperThreshold and LowerThreshold need to be set. To get the same results as with the SetThreshold method change "myfilter-&gt;SetThrehsold" to "myfilter-&gt;SetUpperThreshold", and add "myfilter-&gt;SetLowerThreshold(GetUpperThreshold()/2.0)".  <a href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#aacfd873c10ad83f29e30cc6ddb391672">More...</a><br /></td></tr>
+<tr class="memdesc:aacfd873c10ad83f29e30cc6ddb391672"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the upper threshold value for detected edges.  <a href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#aacfd873c10ad83f29e30cc6ddb391672">More...</a><br /></td></tr>
 <tr class="separator:aacfd873c10ad83f29e30cc6ddb391672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a045add48d4c87f02bc8980c6288f6413"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1ImageFilter.html#a425df9cfde5122a435e1eedd6086480b">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html#a045add48d4c87f02bc8980c6288f6413">SetVariance</a> (double value)</td></tr>
 <tr class="separator:a045add48d4c87f02bc8980c6288f6413"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -362,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -543,7 +543,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the maximum error of the Gaussian smoothing kernel in each dimensional direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -573,7 +573,7 @@ template&lt;class TImageType &gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +600,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -628,7 +628,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the variance of the Gaussian smoothing filter. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -687,7 +687,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the MaximumError vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -716,7 +716,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the MaximumError parameter used by the Gaussian smoothing filter in this algorithm </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -744,9 +744,9 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set the upper threshold value for detected edges. TODO: Document in the ITKv4 migration guide that the SetThreshold member function was removed from the <a class="el" href="classitk_1_1simple_1_1CannyEdgeDetectionImageFilter.html" title="This filter is an implementation of a Canny edge detector for scalar-valued images.">CannyEdgeDetectionImageFilter</a> , and that both UpperThreshold and LowerThreshold need to be set. To get the same results as with the SetThreshold method change "myfilter-&gt;SetThrehsold" to "myfilter-&gt;SetUpperThreshold", and add "myfilter-&gt;SetLowerThreshold(GetUpperThreshold()/2.0)". </p>
+<p>Set the upper threshold value for detected edges. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -775,7 +775,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the Variance vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -804,7 +804,7 @@ template&lt;class TImageType &gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the variance of the Gaussian smoothing filter. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -857,7 +857,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -882,7 +882,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -906,7 +906,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -930,7 +930,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -954,7 +954,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -978,7 +978,7 @@ template&lt;class TImageType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkCannyEdgeDetectionImageFilter_8h_source.html">sitkCannyEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
