@@ -86,95 +86,103 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">#</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"># =========================================================================</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">import</span> SimpleITK <span class="keyword">as</span> sitk</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">import</span> logging</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">import</span> os</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>SimpleITKLogger(<a class="code" href="classitk_1_1simple_1_1LoggerBase.html">sitk.LoggerBase</a>):</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="stringliteral">    Adapts SimpleITK messages to be handled by a Python Logger object.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="stringliteral">    Allows using the logging module to control the handling of messages coming</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">    from ITK and SimpleTK. Messages such as debug and warnings are handled by</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral">    objects derived from sitk.LoggerBase.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">    The LoggerBase.SetAsGlobalITKLogger method must be called to enable</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">    SimpleITK messages to use the logger.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="stringliteral">&quot;&quot;&quot; A SimpleITK example that demonstrates how to adapt SimpleITK messages</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">    to be handled by a Python Logger object. &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> logging</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> os</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">import</span> SimpleITK <span class="keyword">as</span> sitk</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>SimpleITKLogger(<a class="code" href="classitk_1_1simple_1_1LoggerBase.html">sitk.LoggerBase</a>):</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="stringliteral">    Adapts SimpleITK messages to be handled by a Python Logger object.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="stringliteral">    Allows using the logging module to control the handling of messages coming</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="stringliteral">    from ITK and SimpleTK. Messages such as debug and warnings are handled by</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="stringliteral">    objects derived from sitk.LoggerBase.</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">    The Python logger module adds a second layer of control for the logging</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">    level in addition to the controls already in SimpleITK.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">    The LoggerBase.SetAsGlobalITKLogger method must be called to enable</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">    SimpleITK messages to use the logger.</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">    The &quot;Debug&quot; property of a SimpleITK object must be enabled (if</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">    available) and the support from the Python &quot;logging flow&quot; hierarchy</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral">    to handle debug messages from a SimpleITK object.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral"></span> </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">    Warning messages from SimpleITK are globally disabled with</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">    ProcessObject:GlobalWarningDisplayOff.</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">def </span>__init__(self, logger: logging.Logger = logging.getLogger(<span class="stringliteral">&quot;SimpleITK&quot;</span>)):</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="stringliteral">        Initializes with a Logger object to handle the messages emitted from</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="stringliteral">        SimpleITK/ITK.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="stringliteral">        &quot;&quot;&quot;</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        super(SimpleITKLogger, self).__init__()</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        self._logger = logger</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    @property</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">def </span>logger(self):</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> self._logger</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    @logger.setter</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">def </span>logger(self, logger):</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        self._logger = logger</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">    The Python logger module adds a second layer of control for the logging</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">    level in addition to the controls already in SimpleITK.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="stringliteral">    The &quot;Debug&quot; property of a SimpleITK object must be enabled (if</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="stringliteral">    available) and the support from the Python &quot;logging flow&quot; hierarchy</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="stringliteral">    to handle debug messages from a SimpleITK object.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="stringliteral">    Warning messages from SimpleITK are globally disabled with</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="stringliteral">    ProcessObject:GlobalWarningDisplayOff.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">def </span>__init__(self, logger: logging.Logger = logging.getLogger(<span class="stringliteral">&quot;SimpleITK&quot;</span>)):</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="stringliteral">        Initializes with a Logger object to handle the messages emitted from</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="stringliteral">        SimpleITK/ITK.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        super().__init__()</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        self._logger = logger</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    @property</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">def </span>logger(self):</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="stringliteral">&quot;&quot;&quot; return the logger object &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> self._logger</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">def </span>__enter__(self):</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        self._old_logger = self.SetAsGlobalITKLogger()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> self</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">def </span>__exit__(self, exc_type, exc_val, exc_tb):</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        self._old_logger.SetAsGlobalITKLogger()</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        del self._old_logger</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">def </span>DisplayText(self, s):</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment"># Remove newline endings from SimpleITK/ITK messages since the Python</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment"># logger adds during output.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        self._logger.info(s.rstrip())</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">def </span>DisplayErrorText(self, s):</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        self._logger.error(s.rstrip())</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">def </span>DisplayWarningText(self, s):</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        self._logger.warning(s.rstrip())</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">def </span>DisplayGenericOutputText(self, s):</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        self._logger.info(s.rstrip())</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">def </span>DisplayDebugText(self, s):</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        self._logger.debug(s.rstrip())</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"># Enable all debug messages for all ProcessObjects, and procedures</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;sitk.ProcessObject.GlobalDefaultDebugOn()</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"># Construct a SimpleITK logger to Python Logger adaptor</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;sitkLogger = SimpleITKLogger()</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"># Configure ITK to use the logger adaptor</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;sitkLogger.SetAsGlobalITKLogger()</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"># Configure the Python root logger, enabling debug and info level messages.</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;logging.basicConfig(format=<span class="stringliteral">&quot;%(name)s (%(levelname)s): %(message)s&quot;</span>, level=logging.DEBUG)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;img = <a class="code" href="namespaceitk_1_1simple.html#ad51df2cef6da0d736a8732438b36c5b1">sitk.GaborSource</a>(size=[64, 64, 64], frequency=4.0 / 64)</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">with</span> SimpleITKLogger(logging.getLogger(<span class="stringliteral">&quot;Show&quot;</span>)) <span class="keyword">as</span> showLogger:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    print(f<span class="stringliteral">&quot;Logger name: {showLogger.GetName()}&quot;</span>)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(img, debugOn=<span class="keyword">True</span>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    @logger.setter</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">def </span>logger(self, logger):</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="stringliteral">&quot;&quot;&quot; set the logger object &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        self._logger = logger</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">def </span>__enter__(self):</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="stringliteral">&quot;&quot;&quot; Set this object as the global ITK logger. &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        self._old_logger = self.SetAsGlobalITKLogger()</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> self</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">def </span>__exit__(self, exc_type, exc_val, exc_tb):</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="stringliteral">&quot;&quot;&quot; Restore the previous global ITK logger. &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        self._old_logger.SetAsGlobalITKLogger()</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        del self._old_logger</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">def </span>DisplayText(self, s):</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="stringliteral">&quot;&quot;&quot; Display text message. &quot;&quot;&quot;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment"># Remove newline endings from SimpleITK/ITK messages since the Python</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment"># logger adds during output.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        self._logger.info(s.rstrip())</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">def </span>DisplayErrorText(self, s):</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        self._logger.error(s.rstrip())</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">def </span>DisplayWarningText(self, s):</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        self._logger.warning(s.rstrip())</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">def </span>DisplayGenericOutputText(self, s):</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        self._logger.info(s.rstrip())</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">def </span>DisplayDebugText(self, s):</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        self._logger.debug(s.rstrip())</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"># Enable all debug messages for all ProcessObjects, and procedures</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;sitk.ProcessObject.GlobalDefaultDebugOn()</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"># Construct a SimpleITK logger to Python Logger adaptor</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;sitkLogger = SimpleITKLogger()</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"># Configure ITK to use the logger adaptor</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;sitkLogger.SetAsGlobalITKLogger()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"># Configure the Python root logger, enabling debug and info level messages.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;logging.basicConfig(format=<span class="stringliteral">&quot;%(name)s (%(levelname)s): %(message)s&quot;</span>, level=logging.DEBUG)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;img = <a class="code" href="namespaceitk_1_1simple.html#ad51df2cef6da0d736a8732438b36c5b1">sitk.GaborSource</a>(size=[64, 64, 64], frequency=4.0 / 64)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">with</span> SimpleITKLogger(logging.getLogger(<span class="stringliteral">&quot;Show&quot;</span>)) <span class="keyword">as</span> showLogger:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    print(f<span class="stringliteral">&quot;Logger name: {showLogger.GetName()}&quot;</span>)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span> <span class="stringliteral">&quot;SITK_NOSHOW&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> os.environ:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(img, debugOn=<span class="keyword">True</span>)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1LoggerBase_html"><div class="ttname"><a href="classitk_1_1simple_1_1LoggerBase.html">itk::simple::LoggerBase</a></div><div class="ttdoc">A base class to handle SimpleITK and ITK messages and logging.</div><div class="ttdef"><b>Definition:</b> <a href="sitkLogger_8h_source.html#l00048">sitkLogger.h:48</a></div></div>

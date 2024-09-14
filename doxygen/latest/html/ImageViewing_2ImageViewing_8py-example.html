@@ -86,37 +86,40 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">#</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"># =========================================================================</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">import</span> sys</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">import</span> SimpleITK <span class="keyword">as</span> sitk</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="stringliteral">&quot;&quot;&quot; A SimpleITK example demonstrating image viewing using the Show function</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="stringliteral">    and an external application. &quot;&quot;&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;grid_image = <a class="code" href="namespaceitk_1_1simple.html#a524b7eb3bcc687146f236d2e3fa60884">sitk.GridSource</a>(</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    outputPixelType=sitk.sitkUInt16,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    size=(512, 512),</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    sigma=(0.1, 0.1),</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    gridSpacing=(20.0, 20.0),</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"># Procedural interface, using the default image viewer (Fiji/ImageJ) or</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"># any viewer specified by the SITK_SHOW_COMMAND environment variable.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(grid_image, title=<span class="stringliteral">&quot;grid using Show function&quot;</span>, debugOn=<span class="keyword">True</span>)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"># Object oriented interface:</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;image_viewer = <a class="code" href="classitk_1_1simple_1_1ImageViewer.html">sitk.ImageViewer</a>()</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;image_viewer.SetTitle(<span class="stringliteral">&quot;grid using ImageViewer class&quot;</span>)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"># Use the default image viewer.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;image_viewer.Execute(grid_image)</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> sys</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> SimpleITK <span class="keyword">as</span> sitk</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;grid_image = <a class="code" href="namespaceitk_1_1simple.html#a524b7eb3bcc687146f236d2e3fa60884">sitk.GridSource</a>(</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    outputPixelType=sitk.sitkUInt16,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    size=(512, 512),</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    sigma=(0.1, 0.1),</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    gridSpacing=(20.0, 20.0),</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"># Procedural interface, using the default image viewer (Fiji/ImageJ) or</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"># any viewer specified by the SITK_SHOW_COMMAND environment variable.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">sitk.Show</a>(grid_image, title=<span class="stringliteral">&quot;grid using Show function&quot;</span>, debugOn=<span class="keyword">True</span>)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"># Object oriented interface:</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;image_viewer = <a class="code" href="classitk_1_1simple_1_1ImageViewer.html">sitk.ImageViewer</a>()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;image_viewer.SetTitle(<span class="stringliteral">&quot;grid using ImageViewer class&quot;</span>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"># Change viewer, and display again.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;image_viewer.SetApplication(<span class="stringliteral">&quot;/Applications/ITK-SNAP.app/Contents/MacOS/ITK-SNAP&quot;</span>)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;image_viewer.Execute(grid_image)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"># Change the viewer command, (use ITK-SNAP&#39;s -z option to open the image in</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"># zoomed mode)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;image_viewer.SetCommand(<span class="stringliteral">&quot;/Applications/ITK-SNAP.app/Contents/MacOS/ITK-SNAP -z 2&quot;</span>)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;image_viewer.Execute(grid_image)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;sys.exit(0)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"># Use the default image viewer.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;image_viewer.Execute(grid_image)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"># Change viewer, and display again.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;image_viewer.SetApplication(<span class="stringliteral">&quot;/Applications/ITK-SNAP.app/Contents/MacOS/ITK-SNAP&quot;</span>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;image_viewer.Execute(grid_image)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"># Change the viewer command, (use ITK-SNAP&#39;s -z option to open the image in</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"># zoomed mode)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;image_viewer.SetCommand(<span class="stringliteral">&quot;/Applications/ITK-SNAP.app/Contents/MacOS/ITK-SNAP -z 2&quot;</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;image_viewer.Execute(grid_image)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;sys.exit(0)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <div class="ttc" id="anamespaceitk_1_1simple_html_a524b7eb3bcc687146f236d2e3fa60884"><div class="ttname"><a href="namespaceitk_1_1simple.html#a524b7eb3bcc687146f236d2e3fa60884">itk::simple::GridSource</a></div><div class="ttdeci">Image GridSource(PixelIDValueEnum outputPixelType=itk::simple::sitkFloat32, std::vector&lt; unsigned int &gt; size=std::vector&lt; unsigned int &gt;(3, 64), std::vector&lt; double &gt; sigma=std::vector&lt; double &gt;(3, 0.5), std::vector&lt; double &gt; gridSpacing=std::vector&lt; double &gt;(3, 4.0), std::vector&lt; double &gt; gridOffset=std::vector&lt; double &gt;(3, 0.0), double scale=255.0, std::vector&lt; double &gt; origin=std::vector&lt; double &gt;(3, 0.0), std::vector&lt; double &gt; spacing=std::vector&lt; double &gt;(3, 1.0), std::vector&lt; double &gt; direction=std::vector&lt; double &gt;(), std::vector&lt; bool &gt; whichDimensions=std::vector&lt; bool &gt;(3, true))</div><div class="ttdoc">Generate an n-dimensional image of a grid.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html_a86cb9e226d455efca3ba034dc2154605"><div class="ttname"><a href="namespaceitk_1_1simple.html#a86cb9e226d455efca3ba034dc2154605">itk::simple::Show</a></div><div class="ttdeci">void SITKIO_EXPORT Show(const Image &amp;image, const std::string &amp;title=&quot;&quot;, const bool debugOn=ProcessObject::GetGlobalDefaultDebug())</div></div>
