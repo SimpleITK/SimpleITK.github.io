@@ -1,4 +1,4 @@
 $(function(){
-    document.getElementById("datetime").textContent = "Fri, 27 Sep 2024 06:48:53 +0000"
-    document.getElementById("projectnumber").textContent = "2.4.0.dev"
+    document.getElementById("datetime").textContent = "Wed, 02 Oct 2024 06:47:37 +0000"
+    document.getElementById("projectnumber").textContent = "2.5.0.dev"
 });
