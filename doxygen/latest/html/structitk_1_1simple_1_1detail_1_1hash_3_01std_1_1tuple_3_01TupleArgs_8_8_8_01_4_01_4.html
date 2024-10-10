@@ -69,7 +69,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structitk_1_1simple_1_1detail_1_1hash_3_01std_1_1tuple_3_01TupleArgs_8_8_8_01_4_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">itk::simple::detail::hash&lt; std::tuple&lt; TupleArgs... &gt; &gt; Struct Template Reference</div>  </div>
@@ -84,52 +84,41 @@ struct itk::simple::detail::hash&lt; std::tuple&lt; TupleArgs... &gt; &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactoryBase_8h_source.html#l00069">69</a> of file <a class="el" href="sitkMemberFunctionFactoryBase_8h_source.html">sitkMemberFunctionFactoryBase.h</a>.</p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a26f615a4f82f7e7f39e7b1c7ee5d7e1c"><td class="memTemplParams" colspan="2">template&lt;size_t Idx, typename... TupleTypes&gt; </td></tr>
-<tr class="memitem:a26f615a4f82f7e7f39e7b1c7ee5d7e1c"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; Idx==sizeof...(TupleTypes), void &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1detail_1_1hash_3_01std_1_1tuple_3_01TupleArgs_8_8_8_01_4_01_4.html#a26f615a4f82f7e7f39e7b1c7ee5d7e1c">hash_combine_tup</a> (size_t &amp;, const std::tuple&lt; TupleTypes... &gt; &amp;) const</td></tr>
-<tr class="separator:a26f615a4f82f7e7f39e7b1c7ee5d7e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac243871955d7faf939788118a43ab355"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structitk_1_1simple_1_1detail_1_1hash_3_01std_1_1tuple_3_01TupleArgs_8_8_8_01_4_01_4.html#ac243871955d7faf939788118a43ab355">operator()</a> (std::tuple&lt; TupleArgs... &gt; tupleValue) const</td></tr>
+<tr class="separator:ac243871955d7faf939788118a43ab355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a26f615a4f82f7e7f39e7b1c7ee5d7e1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26f615a4f82f7e7f39e7b1c7ee5d7e1c">&#9670;&nbsp;</a></span>hash_combine_tup()</h2>
+<a id="ac243871955d7faf939788118a43ab355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac243871955d7faf939788118a43ab355">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class... TupleArgs&gt; </div>
-<div class="memtemplate">
-template&lt;size_t Idx, typename... TupleTypes&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;Idx == sizeof...(TupleTypes), void&gt;::type <a class="el" href="structitk_1_1simple_1_1detail_1_1hash.html">itk::simple::detail::hash</a>&lt; std::tuple&lt; TupleArgs... &gt; &gt;::hash_combine_tup </td>
+          <td class="memname">size_t <a class="el" href="structitk_1_1simple_1_1detail_1_1hash.html">itk::simple::detail::hash</a>&lt; std::tuple&lt; TupleArgs... &gt; &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::tuple&lt; TupleTypes... &gt; &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">std::tuple&lt; TupleArgs... &gt;&#160;</td>
+          <td class="paramname"><em>tupleValue</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactoryBase_8h_source.html#l00076">76</a> of file <a class="el" href="sitkMemberFunctionFactoryBase_8h_source.html">sitkMemberFunctionFactoryBase.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactoryBase_8h_source.html#l00074">74</a> of file <a class="el" href="sitkMemberFunctionFactoryBase_8h_source.html">sitkMemberFunctionFactoryBase.h</a>.</p>
+
+<p class="reference">References <a class="el" href="sitkMemberFunctionFactoryBase_8h_source.html#l00046">itk::simple::detail::hash_combine()</a>.</p>
 
 </div>
 </div>
