@@ -909,6 +909,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html">RegionOfInterestImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a region of interest from the input image.  <a href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1ReinitializeLevelSetImageFilter.html">ReinitializeLevelSetImageFilter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reinitialize the level set to the signed distance function.  <a href="classitk_1_1simple_1_1ReinitializeLevelSetImageFilter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1RelabelComponentImageFilter.html">RelabelComponentImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relabel the components in an image such that consecutive labels are used.  <a href="classitk_1_1simple_1_1RelabelComponentImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -22463,6 +22466,56 @@ If the pixel type for the returned image is not specified it is deduced from the
 <p>Extract a region of interest from the input image. </p>
 <p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html" title="Extract a region of interest from the input image.">RegionOfInterestImageFilter</a> in order to support a procedural API</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1RegionOfInterestImageFilter.html" title="Extract a region of interest from the input image.">itk::simple::RegionOfInterestImageFilter</a> for the object oriented interface </dd></dl>
+
+</div>
+</div>
+<a id="afffc16d6b6f92fed95d848407cf0c36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afffc16d6b6f92fed95d848407cf0c36a">&#9670;&nbsp;</a></span>ReinitializeLevelSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::ReinitializeLevelSet </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&#160;</td>
+          <td class="paramname"><em>image1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>levelSetValue</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>narrowBanding</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>inputNarrowBandwidth</em> = <code>12.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>outputNarrowBandwidth</em> = <code>12.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reinitialize the level set to the signed distance function. </p>
+<p>\ This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1ReinitializeLevelSetImageFilter.html" title="Reinitialize the level set to the signed distance function.">ReinitializeLevelSetImageFilter</a> in order to support a procedural API</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ReinitializeLevelSetImageFilter.html" title="Reinitialize the level set to the signed distance function.">itk::simple::ReinitializeLevelSetImageFilter</a> for the object oriented interface </dd></dl>
 
 </div>
 </div>
