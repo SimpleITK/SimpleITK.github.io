@@ -119,7 +119,7 @@ $(function() {
 <div class="line">  <span class="keyword">using</span> FunctionType = std::function&lt;R(ImageArg, Args...)&gt;;</div>
 <div class="line"> </div>
 <div class="line">  <span class="keyword">explicit</span> SliceBySliceDecorator(FunctionType f)</div>
-<div class="line">    : f_(std::move(f))</div>
+<div class="line">    : f_(<a class="code" href="namespacestd.html">std</a>::move(f))</div>
 <div class="line">  {}</div>
 <div class="line"> </div>
 <div class="line">  R</div>
@@ -170,7 +170,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">      <span class="comment">// increment extraction index</span></div>
 <div class="line">      ++extract_index[iter_dim];</div>
-<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a name="a11"></a>e = iter_dim; e + 1 &lt; dim; ++e)</div>
+<div class="line">      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> e = iter_dim; e + 1 &lt; dim; ++e)</div>
 <div class="line">      {</div>
 <div class="line">        <span class="comment">// if the index element is beyond the size, propagate to next element.</span></div>
 <div class="line">        <span class="keywordflow">if</span> (<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(extract_index[e]) &gt; image.<a class="code" href="classitk_1_1simple_1_1Image.html#a18a28fedb230bf4384109405f7120713">GetSize</a>()[e])</div>
@@ -203,7 +203,7 @@ $(function() {
 <div class="line">    <span class="keywordflow">return</span> 1;</div>
 <div class="line">  }</div>
 <div class="line"> </div>
-<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> tempImage = <a name="a12"></a><a class="code" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d">sitk::ReadImage</a>(argv[1]);</div>
+<div class="line">  <a class="code" href="classitk_1_1simple_1_1Image.html">sitk::Image</a> tempImage = <a name="a11"></a><a class="code" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d">sitk::ReadImage</a>(argv[1]);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// The parameters to the filter are hard coded to simplify the example.</span></div>
 <div class="line">  <span class="keywordtype">float</span>                     alpha = 0.3f;</div>
@@ -212,12 +212,12 @@ $(function() {
 <div class="line"> </div>
 <div class="line">  <span class="comment">// The return type of the function decorator is complex, so the auto type is</span></div>
 <div class="line">  <span class="comment">// used for brevity.</span></div>
-<div class="line">  <span class="keyword">auto</span> AdaptiveHistogramEqualization2D = makeSliceBySlice(<a name="a13"></a><a class="code" href="namespaceitk_1_1simple.html#ab5f96def5897bafb8c52e2b7cdec6a68">sitk::AdaptiveHistogramEqualization</a>);</div>
+<div class="line">  <span class="keyword">auto</span> AdaptiveHistogramEqualization2D = makeSliceBySlice(<a name="a12"></a><a class="code" href="namespaceitk_1_1simple.html#ab5f96def5897bafb8c52e2b7cdec6a68">sitk::AdaptiveHistogramEqualization</a>);</div>
 <div class="line"> </div>
 <div class="line">  <span class="comment">// Execute the decorated function.</span></div>
 <div class="line">  tempImage = AdaptiveHistogramEqualization2D(tempImage, radius, alpha, beta);</div>
 <div class="line"> </div>
-<div class="line">  <a name="a14"></a><a class="code" href="namespaceitk_1_1simple.html#aeb82b9d2fae37927cf09d45391070847">sitk::WriteImage</a>(tempImage, argv[2]);</div>
+<div class="line">  <a name="a13"></a><a class="code" href="namespaceitk_1_1simple.html#aeb82b9d2fae37927cf09d45391070847">sitk::WriteImage</a>(tempImage, argv[2]);</div>
 <div class="line"> </div>
 <div class="line">  <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -238,6 +238,7 @@ $(function() {
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_ad8d1f59257e990bbe594f41c25a74304"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#ad8d1f59257e990bbe594f41c25a74304">itk::simple::ExtractImageFilter::SetIndex</a></div><div class="ttdeci">Self &amp; SetIndex(std::vector&lt; int &gt; Index)</div><div class="ttdoc">Set the starting index of the input image to extract.</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00114">sitkExtractImageFilter.h:114</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html_af3c522ffc6b88628a2778caf9c7d48e1"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html#af3c522ffc6b88628a2778caf9c7d48e1">itk::simple::ExtractImageFilter::SetSize</a></div><div class="ttdeci">Self &amp; SetSize(std::vector&lt; unsigned int &gt; Size)</div><div class="ttdoc">Set the size of the region to extract.</div><div class="ttdef"><b>Definition:</b> <a href="sitkExtractImageFilter_8h_source.html#l00095">sitkExtractImageFilter.h:95</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1PasteImageFilter_html_a902d6c883fde7ad27998df8c8151843e"><div class="ttname"><a href="classitk_1_1simple_1_1PasteImageFilter.html#a902d6c883fde7ad27998df8c8151843e">itk::simple::PasteImageFilter::SetSourceSize</a></div><div class="ttdeci">Self &amp; SetSourceSize(std::vector&lt; unsigned int &gt; SourceSize)</div><div class="ttdef"><b>Definition:</b> <a href="sitkPasteImageFilter_8h_source.html#l00074">sitkPasteImageFilter.h:74</a></div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace.</div></div>
 <div class="ttc" id="anamespaceitk_1_1simple_html"><div class="ttname"><a href="namespaceitk_1_1simple.html">itk::simple</a></div><div class="ttdef"><b>Definition:</b> <a href="sitkAdditionalProcedures_8h_source.html#l00028">sitkAdditionalProcedures.h:28</a></div></div>
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

@@ -143,7 +143,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">            <span class="keywordtype">double</span> learningRate = 1;</div>
 <div class="line">            uint  numberOfIterations = 200;</div>
-<div class="line">            <span class="keywordtype">double</span> convergenceMinimumValue = 1<a name="a2"></a>e-4;</div>
+<div class="line">            <span class="keywordtype">double</span> convergenceMinimumValue = 1e-4;</div>
 <div class="line">            uint convergenceWindowSize = 5;</div>
 <div class="line">            </div>
 <div class="line">            R.SetOptimizerAsGradientDescentLineSearch(learningRate,</div>
@@ -152,10 +152,10 @@ $(function() {
 <div class="line">                                                      convergenceWindowSize);</div>
 <div class="line"> </div>
 <div class="line">            R.SetInitialTransform(<span class="keyword">new</span> TranslationTransform(fixedImage.GetDimension()));</div>
-<div class="line">            R.SetInterpolator(<a name="a3"></a><a class="code" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>.sitkLinear);</div>
+<div class="line">            R.SetInterpolator(<a name="a2"></a><a class="code" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>.sitkLinear);</div>
 <div class="line"> </div>
 <div class="line">            IterationUpdate cmd = <span class="keyword">new</span> IterationUpdate(R);</div>
-<div class="line">            R.AddCommand(<a name="a4"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">EventEnum</a>.sitkIterationEvent, cmd);</div>
+<div class="line">            R.AddCommand(<a name="a3"></a><a class="code" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">EventEnum</a>.sitkIterationEvent, cmd);</div>
 <div class="line"> </div>
 <div class="line">            Transform outTx = R.Execute(fixedImage, movingImage);</div>
 <div class="line"> </div>
