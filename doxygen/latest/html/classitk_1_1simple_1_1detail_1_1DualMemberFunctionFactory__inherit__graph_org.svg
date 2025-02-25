@@ -5,78 +5,86 @@
  -->
 <!-- Title: itk::simple::detail::DualMemberFunctionFactory&lt; TMemberFunctionPointer &gt; Pages: 1 -->
 <svg width="1039pt" height="73pt"
- viewBox="0.00 0.00 1039.00 73.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 69)">
+ viewBox="0.00 0.00 1039.00 72.50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 68.5)">
 <title>itk::simple::detail::DualMemberFunctionFactory&lt; TMemberFunctionPointer &gt;</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-69 1035,-69 1035,4 -4,4"/>
 <!-- Node1 -->
-<g id="node1" class="node">
+<g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="A class used to instantiate and generate function objects of templated member functions with two temp...">
-<polygon fill="#bfbfbf" stroke="black" points="541,-11.5 541,-52.5 703,-52.5 703,-11.5 541,-11.5"/>
-<text text-anchor="start" x="549" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::detail</text>
-<text text-anchor="start" x="549" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::DualMemberFunctionFactory</text>
-<text text-anchor="middle" x="622" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TMemberFunctionPointer &gt;</text>
+<g id="a_Node000001"><a xlink:title="A class used to instantiate and generate function objects of templated member functions with two temp...">
+<polygon fill="#999999" stroke="#666666" points="703,-52 541,-52 541,-11 703,-11 703,-52"/>
+<text text-anchor="start" x="549" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::detail</text>
+<text text-anchor="start" x="549" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">::DualMemberFunctionFactory</text>
+<text text-anchor="middle" x="622" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TMemberFunctionPointer &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node4 -->
-<g id="node4" class="node">
+<g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="869,-11.5 869,-52.5 1031,-52.5 1031,-11.5 869,-11.5"/>
-<text text-anchor="start" x="877" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::detail</text>
-<text text-anchor="start" x="877" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">::DualMemberFunctionFactory</text>
-<text text-anchor="middle" x="950" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; MemberFunctionType &gt;</text>
+<g id="a_Node000004"><a xlink:href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="1031,-52 869,-52 869,-11 1031,-11 1031,-52"/>
+<text text-anchor="start" x="877" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::detail</text>
+<text text-anchor="start" x="877" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">::DualMemberFunctionFactory</text>
+<text text-anchor="middle" x="950" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; MemberFunctionType &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
-<g id="edge3" class="edge">
+<g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M713.4,-32C762.14,-32 821.78,-32 868.86,-32"/>
-<polygon fill="orange" stroke="orange" points="713.17,-28.5 703.17,-32 713.17,-35.5 713.17,-28.5"/>
-<text text-anchor="middle" x="786" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; MemberFunctionType &gt;</text>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M713.4,-31.5C762.14,-31.5 821.78,-31.5 868.86,-31.5"/>
+<polygon fill="orange" stroke="orange" points="713.17,-28 703.17,-31.5 713.17,-35 713.17,-28"/>
+</a>
+</g>
+<text text-anchor="middle" x="786" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &lt; MemberFunctionType &gt;</text>
 </g>
 <!-- Node2 -->
-<g id="node2" class="node">
+<g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="340,-0.5 340,-63.5 504,-63.5 504,-0.5 340,-0.5"/>
-<text text-anchor="start" x="348" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::detail</text>
-<text text-anchor="start" x="348" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MemberFunctionFactoryBase</text>
-<text text-anchor="start" x="348" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TMemberFunctionPointer,</text>
-<text text-anchor="start" x="348" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"> std::tuple&lt; unsigned int,</text>
-<text text-anchor="middle" x="422" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int, unsigned int, int &gt; &gt;</text>
+<g id="a_Node000002"><a xlink:href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="504,-63 340,-63 340,0 504,0 504,-63"/>
+<text text-anchor="start" x="348" y="-51" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::detail</text>
+<text text-anchor="start" x="348" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">::MemberFunctionFactoryBase</text>
+<text text-anchor="start" x="348" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TMemberFunctionPointer,</text>
+<text text-anchor="start" x="348" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00"> std::tuple&lt; unsigned int,</text>
+<text text-anchor="middle" x="422" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> int, unsigned int, int &gt; &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
-<g id="edge1" class="edge">
+<g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="darkgreen" d="M514.16,-32C523.11,-32 532.15,-32 540.98,-32"/>
-<polygon fill="darkgreen" stroke="darkgreen" points="514.11,-28.5 504.11,-32 514.11,-35.5 514.11,-28.5"/>
+<g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
+<path fill="none" stroke="darkgreen" d="M514.16,-31.5C523.11,-31.5 532.15,-31.5 540.98,-31.5"/>
+<polygon fill="darkgreen" stroke="darkgreen" points="514.11,-28 504.11,-31.5 514.11,-35 514.11,-28"/>
+</a>
+</g>
 </g>
 <!-- Node3 -->
-<g id="node3" class="node">
+<g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="black" points="0,-6 0,-58 164,-58 164,-6 0,-6"/>
-<text text-anchor="start" x="8" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::detail</text>
-<text text-anchor="start" x="8" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">::MemberFunctionFactoryBase</text>
-<text text-anchor="start" x="8" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TMemberFunctionPointer,</text>
-<text text-anchor="middle" x="82" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00"> TKey &gt;</text>
+<g id="a_Node000003"><a xlink:href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="164,-57.5 0,-57.5 0,-5.5 164,-5.5 164,-57.5"/>
+<text text-anchor="start" x="8" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">itk::simple::detail</text>
+<text text-anchor="start" x="8" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">::MemberFunctionFactoryBase</text>
+<text text-anchor="start" x="8" y="-23.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; TMemberFunctionPointer,</text>
+<text text-anchor="middle" x="82" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00"> TKey &gt;</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
-<g id="edge2" class="edge">
+<g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M174.53,-32C226.1,-32 289.94,-32 339.73,-32"/>
-<polygon fill="orange" stroke="orange" points="174.39,-28.5 164.39,-32 174.39,-35.5 174.39,-28.5"/>
-<text text-anchor="start" x="182" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; TMemberFunctionPointer,</text>
-<text text-anchor="start" x="182" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00"> std::tuple&lt; unsigned int,</text>
-<text text-anchor="middle" x="252" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00"> int, unsigned int, int &gt; &gt;</text>
+<g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
+<path fill="none" stroke="orange" stroke-dasharray="5,2" d="M174.53,-31.5C226.1,-31.5 289.94,-31.5 339.73,-31.5"/>
+<polygon fill="orange" stroke="orange" points="174.39,-28 164.39,-31.5 174.39,-35 174.39,-28"/>
+</a>
+</g>
+<text text-anchor="start" x="182" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &lt; TMemberFunctionPointer,</text>
+<text text-anchor="start" x="182" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> std::tuple&lt; unsigned int,</text>
+<text text-anchor="middle" x="252" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> int, unsigned int, int &gt; &gt;</text>
 </g>
 </g>
 </svg>
