@@ -144,7 +144,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae7fd7cb725a7a8b0d52e34b0383d7f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5df9f3257ddfb2ab07335409db3580a" id="r_aa5df9f3257ddfb2ab07335409db3580a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5df9f3257ddfb2ab07335409db3580a">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image3, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image4, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image5)</td></tr>
 <tr class="separator:aa5df9f3257ddfb2ab07335409db3580a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb8a6e4b77317ee5e353735148d6fa25" id="r_abb8a6e4b77317ee5e353735148d6fa25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb8a6e4b77317ee5e353735148d6fa25">Execute</a> (const std::vector&lt; <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt; &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#afbb92e368d0b365d349483cdae730d35">images</a>)</td></tr>
+<tr class="memitem:abb8a6e4b77317ee5e353735148d6fa25" id="r_abb8a6e4b77317ee5e353735148d6fa25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb8a6e4b77317ee5e353735148d6fa25">Execute</a> (const std::vector&lt; <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt; &amp;images)</td></tr>
 <tr class="separator:abb8a6e4b77317ee5e353735148d6fa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2411fa346a7f1a99845640a253f87ec5" id="r_a2411fa346a7f1a99845640a253f87ec5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2411fa346a7f1a99845640a253f87ec5">GetDefaultPixelValue</a> () const</td></tr>
 <tr class="separator:a2411fa346a7f1a99845640a253f87ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,7 +214,7 @@ Private Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a2d8c895e0d52b0b383788eefeb57c470" id="r_a2d8c895e0d52b0b383788eefeb57c470"><td class="memTemplParams" colspan="2">template&lt;class TImageType&gt; </td></tr>
-<tr class="memitem:a2d8c895e0d52b0b383788eefeb57c470"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2d8c895e0d52b0b383788eefeb57c470">ExecuteInternal</a> (const std::vector&lt; <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt; &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#afbb92e368d0b365d349483cdae730d35">images</a>)</td></tr>
+<tr class="memitem:a2d8c895e0d52b0b383788eefeb57c470"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2d8c895e0d52b0b383788eefeb57c470">ExecuteInternal</a> (const std::vector&lt; <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &gt; &amp;images)</td></tr>
 <tr class="separator:a2d8c895e0d52b0b383788eefeb57c470"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -581,8 +581,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Execute the filter on the input images </p>
 
-<p class="reference">References <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#afbb92e368d0b365d349483cdae730d35">itk::images</a>.</p>
-
 </div>
 </div>
 <a id="a2d8c895e0d52b0b383788eefeb57c470" name="a2d8c895e0d52b0b383788eefeb57c470"></a>
@@ -815,7 +813,7 @@ template&lt;class TImageType&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkTileImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkTileImageFilter_8h_source.html">sitkTileImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="#a2d8c895e0d52b0b383788eefeb57c470">ExecuteInternal()</a>, and <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#afbb92e368d0b365d349483cdae730d35">itk::images</a>.</p>
+<p class="reference">References <a class="el" href="#a2d8c895e0d52b0b383788eefeb57c470">ExecuteInternal()</a>.</p>
 
 </div>
 </div>

@@ -178,9 +178,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ef6cf72ac7f9b00f1a040a77387adef" id="r_a3ef6cf72ac7f9b00f1a040a77387adef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ef6cf72ac7f9b00f1a040a77387adef">Transform</a> (unsigned int dimensions, <a class="el" href="namespaceitk_1_1simple.html#a527cb966ed81d0bdc65999f4d2d4d852">TransformEnum</a> type)</td></tr>
 <tr class="memdesc:a3ef6cf72ac7f9b00f1a040a77387adef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a specific transformation.  <br /></td></tr>
 <tr class="separator:a3ef6cf72ac7f9b00f1a040a77387adef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a101c1c7c8b91bb26397b08fe34b9c774" id="r_a101c1c7c8b91bb26397b08fe34b9c774"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a101c1c7c8b91bb26397b08fe34b9c774">TransformPoint</a> (const std::vector&lt; double &gt; &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a2b1146bed5414748f28fd07fd7cf057e">point</a>) const</td></tr>
+<tr class="memitem:a101c1c7c8b91bb26397b08fe34b9c774" id="r_a101c1c7c8b91bb26397b08fe34b9c774"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a101c1c7c8b91bb26397b08fe34b9c774">TransformPoint</a> (const std::vector&lt; double &gt; &amp;point) const</td></tr>
 <tr class="separator:a101c1c7c8b91bb26397b08fe34b9c774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef512acb7c836d70dcc3aa40323c436" id="r_a5ef512acb7c836d70dcc3aa40323c436"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ef512acb7c836d70dcc3aa40323c436">TransformVector</a> (const std::vector&lt; double &gt; &amp;vector, const std::vector&lt; double &gt; &amp;<a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a2b1146bed5414748f28fd07fd7cf057e">point</a>) const</td></tr>
+<tr class="memitem:a5ef512acb7c836d70dcc3aa40323c436" id="r_a5ef512acb7c836d70dcc3aa40323c436"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ef512acb7c836d70dcc3aa40323c436">TransformVector</a> (const std::vector&lt; double &gt; &amp;vector, const std::vector&lt; double &gt; &amp;point) const</td></tr>
 <tr class="separator:a5ef512acb7c836d70dcc3aa40323c436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78bd20d77ca5564a9a64d57c622d5ed4" id="r_a78bd20d77ca5564a9a64d57c622d5ed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78bd20d77ca5564a9a64d57c622d5ed4">WriteTransform</a> (const std::string &amp;filename) const</td></tr>
 <tr class="separator:a78bd20d77ca5564a9a64d57c622d5ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1037,8 +1037,6 @@ template&lt;class TransformType&gt; </div>
 <p>Apply transform to a point.</p>
 <p>The dimension of the point must match the transform. </p>
 
-<p class="reference">References <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a2b1146bed5414748f28fd07fd7cf057e">itk::point()</a>.</p>
-
 </div>
 </div>
 <a id="a5ef512acb7c836d70dcc3aa40323c436" name="a5ef512acb7c836d70dcc3aa40323c436"></a>
@@ -1063,8 +1061,6 @@ template&lt;class TransformType&gt; </div>
 <p>The ITK concept of a vector is a direction at a specific point, for example the difference between two points is a vector.</p>
 <p>For linear transforms the point does not matter, in general the vector is transformed by the Jacobian with respect to point position.</p>
 <p>The dimension of the vector and point must match the transform. </p>
-
-<p class="reference">References <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a2b1146bed5414748f28fd07fd7cf057e">itk::point()</a>.</p>
 
 </div>
 </div>
