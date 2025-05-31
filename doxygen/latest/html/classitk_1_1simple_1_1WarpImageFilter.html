@@ -121,7 +121,7 @@ $(function(){ initResizable(false); });
 <p class="formulaDsp">
 \[ p_{in} = p_{out} + d \]
 </p>
-<p>Typically the mapped position does not correspond to an integer pixel position in the input image. Interpolation via an image function is used to compute values at non-integer positions. The default interpolation typed used is the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">LinearInterpolateImageFunction</a> . The user can specify a particular interpolation function via <a class="el" href="#a6bfbca076511a104ab05166050c22b78">SetInterpolator()</a> . Note that the input interpolator must derive from base class <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InterpolateImageFunction.html">InterpolateImageFunction</a> .</p>
+<p>Typically the mapped position does not correspond to an integer pixel position in the input image. Interpolation via an image function is used to compute values at non-integer positions. The default interpolation typed used is the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">LinearInterpolateImageFunction</a> . The user can specify a particular interpolation function via <a class="el" href="#a4b5fa67f4c80e84d7247aba832df0f14">SetInterpolator()</a> . Note that the input interpolator must derive from base class <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InterpolateImageFunction.html">InterpolateImageFunction</a> .</p>
 <p>Position mapped to outside of the input image buffer are assigned a edge padding value.</p>
 <p>The LargestPossibleRegion for the output is inherited from the input displacement field. The output image spacing, origin and orientation may be set via SetOutputSpacing, SetOutputOrigin and SetOutputDirection. The default are respectively a vector of 1's, a vector of 0's and an identity matrix.</p>
 <p>This class is templated over the type of the input image, the type of the output image and the type of the displacement field.</p>
@@ -165,20 +165,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd0ba0e299c001255cf724655a6cc032"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e214611f194113bbb8466e6432a833" id="r_a98e214611f194113bbb8466e6432a833"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98e214611f194113bbb8466e6432a833">GetOutputSpacing</a> () const</td></tr>
 <tr class="separator:a98e214611f194113bbb8466e6432a833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace492c1bbbb9ea07aa6ad764e7ccfacd" id="r_ace492c1bbbb9ea07aa6ad764e7ccfacd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace492c1bbbb9ea07aa6ad764e7ccfacd">SetEdgePaddingValue</a> (double EdgePaddingValue)</td></tr>
-<tr class="separator:ace492c1bbbb9ea07aa6ad764e7ccfacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bfbca076511a104ab05166050c22b78" id="r_a6bfbca076511a104ab05166050c22b78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bfbca076511a104ab05166050c22b78">SetInterpolator</a> (<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> Interpolator)</td></tr>
-<tr class="separator:a6bfbca076511a104ab05166050c22b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab23c3b2c9301bf5187ef8223e3d6936c" id="r_ab23c3b2c9301bf5187ef8223e3d6936c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab23c3b2c9301bf5187ef8223e3d6936c">SetOutputDirection</a> (std::vector&lt; double &gt; OutputDirection)</td></tr>
-<tr class="separator:ab23c3b2c9301bf5187ef8223e3d6936c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30d49df255b04664bc92d293920df6f2" id="r_a30d49df255b04664bc92d293920df6f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30d49df255b04664bc92d293920df6f2">SetOutputOrigin</a> (std::vector&lt; double &gt; OutputOrigin)</td></tr>
-<tr class="separator:a30d49df255b04664bc92d293920df6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c907eb6c316f219f406a92d558b91c5" id="r_a6c907eb6c316f219f406a92d558b91c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c907eb6c316f219f406a92d558b91c5">SetEdgePaddingValue</a> (double EdgePaddingValue)</td></tr>
+<tr class="separator:a6c907eb6c316f219f406a92d558b91c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5fa67f4c80e84d7247aba832df0f14" id="r_a4b5fa67f4c80e84d7247aba832df0f14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b5fa67f4c80e84d7247aba832df0f14">SetInterpolator</a> (<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> Interpolator)</td></tr>
+<tr class="separator:a4b5fa67f4c80e84d7247aba832df0f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfaae2da234365a31fe383d616d523e2" id="r_adfaae2da234365a31fe383d616d523e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfaae2da234365a31fe383d616d523e2">SetOutputDirection</a> (std::vector&lt; double &gt; OutputDirection)</td></tr>
+<tr class="separator:adfaae2da234365a31fe383d616d523e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65fe662a470c4aa0a7fca595e9337c12" id="r_a65fe662a470c4aa0a7fca595e9337c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65fe662a470c4aa0a7fca595e9337c12">SetOutputOrigin</a> (std::vector&lt; double &gt; OutputOrigin)</td></tr>
+<tr class="separator:a65fe662a470c4aa0a7fca595e9337c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbfd313367193775e351554430996517" id="r_acbfd313367193775e351554430996517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbfd313367193775e351554430996517">SetOutputParameteresFromImage</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;refImage)</td></tr>
 <tr class="separator:acbfd313367193775e351554430996517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1636707a47b843ac1ec8271fa3f50b2b" id="r_a1636707a47b843ac1ec8271fa3f50b2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1636707a47b843ac1ec8271fa3f50b2b">SetOutputSize</a> (std::vector&lt; uint32_t &gt; OutputSize)</td></tr>
-<tr class="separator:a1636707a47b843ac1ec8271fa3f50b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4874efad27564071328aa757686f3a1d" id="r_a4874efad27564071328aa757686f3a1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4874efad27564071328aa757686f3a1d">SetOutputSpacing</a> (std::vector&lt; double &gt; OutputSpacing)</td></tr>
-<tr class="separator:a4874efad27564071328aa757686f3a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cec06accf392385da2e0cad1a115660" id="r_a6cec06accf392385da2e0cad1a115660"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cec06accf392385da2e0cad1a115660">SetOutputSize</a> (std::vector&lt; uint32_t &gt; OutputSize)</td></tr>
+<tr class="separator:a6cec06accf392385da2e0cad1a115660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752bb7ee9337a9c9c6c3d0223320a7a9" id="r_a752bb7ee9337a9c9c6c3d0223320a7a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a752bb7ee9337a9c9c6c3d0223320a7a9">SetOutputSpacing</a> (std::vector&lt; double &gt; OutputSpacing)</td></tr>
+<tr class="separator:a752bb7ee9337a9c9c6c3d0223320a7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6231f933e8670c7c476d1304d9ac4c" id="r_abd6231f933e8670c7c476d1304d9ac4c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd6231f933e8670c7c476d1304d9ac4c">ToString</a> () const</td></tr>
 <tr class="separator:abd6231f933e8670c7c476d1304d9ac4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3423d918e7d285433aac926c764b4ff7" id="r_a3423d918e7d285433aac926c764b4ff7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3423d918e7d285433aac926c764b4ff7">WarpImageFilter</a> ()</td></tr>
@@ -766,8 +766,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="ace492c1bbbb9ea07aa6ad764e7ccfacd" name="ace492c1bbbb9ea07aa6ad764e7ccfacd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace492c1bbbb9ea07aa6ad764e7ccfacd">&#9670;&#160;</a></span>SetEdgePaddingValue()</h2>
+<a id="a6c907eb6c316f219f406a92d558b91c5" name="a6c907eb6c316f219f406a92d558b91c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c907eb6c316f219f406a92d558b91c5">&#9670;&#160;</a></span>SetEdgePaddingValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -776,7 +776,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp; itk::simple::WarpImageFilter::SetEdgePaddingValue </td>
+          <td class="memname">void itk::simple::WarpImageFilter::SetEdgePaddingValue </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>EdgePaddingValue</em></span></td><td>)</td>
           <td></td>
@@ -796,8 +796,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a6bfbca076511a104ab05166050c22b78" name="a6bfbca076511a104ab05166050c22b78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bfbca076511a104ab05166050c22b78">&#9670;&#160;</a></span>SetInterpolator()</h2>
+<a id="a4b5fa67f4c80e84d7247aba832df0f14" name="a4b5fa67f4c80e84d7247aba832df0f14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5fa67f4c80e84d7247aba832df0f14">&#9670;&#160;</a></span>SetInterpolator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -806,7 +806,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp; itk::simple::WarpImageFilter::SetInterpolator </td>
+          <td class="memname">void itk::simple::WarpImageFilter::SetInterpolator </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a></td>          <td class="paramname"><span class="paramname"><em>Interpolator</em></span></td><td>)</td>
           <td></td>
@@ -826,8 +826,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="ab23c3b2c9301bf5187ef8223e3d6936c" name="ab23c3b2c9301bf5187ef8223e3d6936c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab23c3b2c9301bf5187ef8223e3d6936c">&#9670;&#160;</a></span>SetOutputDirection()</h2>
+<a id="adfaae2da234365a31fe383d616d523e2" name="adfaae2da234365a31fe383d616d523e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfaae2da234365a31fe383d616d523e2">&#9670;&#160;</a></span>SetOutputDirection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -836,7 +836,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp; itk::simple::WarpImageFilter::SetOutputDirection </td>
+          <td class="memname">void itk::simple::WarpImageFilter::SetOutputDirection </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>OutputDirection</em></span></td><td>)</td>
           <td></td>
@@ -856,8 +856,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a30d49df255b04664bc92d293920df6f2" name="a30d49df255b04664bc92d293920df6f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30d49df255b04664bc92d293920df6f2">&#9670;&#160;</a></span>SetOutputOrigin()</h2>
+<a id="a65fe662a470c4aa0a7fca595e9337c12" name="a65fe662a470c4aa0a7fca595e9337c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65fe662a470c4aa0a7fca595e9337c12">&#9670;&#160;</a></span>SetOutputOrigin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -866,7 +866,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp; itk::simple::WarpImageFilter::SetOutputOrigin </td>
+          <td class="memname">void itk::simple::WarpImageFilter::SetOutputOrigin </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>OutputOrigin</em></span></td><td>)</td>
           <td></td>
@@ -906,8 +906,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a1636707a47b843ac1ec8271fa3f50b2b" name="a1636707a47b843ac1ec8271fa3f50b2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1636707a47b843ac1ec8271fa3f50b2b">&#9670;&#160;</a></span>SetOutputSize()</h2>
+<a id="a6cec06accf392385da2e0cad1a115660" name="a6cec06accf392385da2e0cad1a115660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cec06accf392385da2e0cad1a115660">&#9670;&#160;</a></span>SetOutputSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -916,7 +916,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp; itk::simple::WarpImageFilter::SetOutputSize </td>
+          <td class="memname">void itk::simple::WarpImageFilter::SetOutputSize </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; uint32_t &gt;</td>          <td class="paramname"><span class="paramname"><em>OutputSize</em></span></td><td>)</td>
           <td></td>
@@ -936,8 +936,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a4874efad27564071328aa757686f3a1d" name="a4874efad27564071328aa757686f3a1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4874efad27564071328aa757686f3a1d">&#9670;&#160;</a></span>SetOutputSpacing()</h2>
+<a id="a752bb7ee9337a9c9c6c3d0223320a7a9" name="a752bb7ee9337a9c9c6c3d0223320a7a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752bb7ee9337a9c9c6c3d0223320a7a9">&#9670;&#160;</a></span>SetOutputSpacing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -946,7 +946,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2a2404b11132374aa840212f3930956">Self</a> &amp; itk::simple::WarpImageFilter::SetOutputSpacing </td>
+          <td class="memname">void itk::simple::WarpImageFilter::SetOutputSpacing </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>OutputSpacing</em></span></td><td>)</td>
           <td></td>

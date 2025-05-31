@@ -170,10 +170,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9907a719ee1fc84419fe2ac2db02e866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5945ab0a9cbd8cdd4de94fddb2d0765e" id="r_a5945ab0a9cbd8cdd4de94fddb2d0765e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5945ab0a9cbd8cdd4de94fddb2d0765e">GetTimeStep</a> () const</td></tr>
 <tr class="separator:a5945ab0a9cbd8cdd4de94fddb2d0765e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e76869ad206d874e6693008842afeff" id="r_a2e76869ad206d874e6693008842afeff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa7532ee0628dab08fbf0484cb2624289">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e76869ad206d874e6693008842afeff">SetNumberOfIterations</a> (uint32_t NumberOfIterations)</td></tr>
-<tr class="separator:a2e76869ad206d874e6693008842afeff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a09e5bc9032450afcfe50972dbbbd62" id="r_a5a09e5bc9032450afcfe50972dbbbd62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa7532ee0628dab08fbf0484cb2624289">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a09e5bc9032450afcfe50972dbbbd62">SetTimeStep</a> (double TimeStep)</td></tr>
-<tr class="separator:a5a09e5bc9032450afcfe50972dbbbd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afed879314476cd492c9589266a595093" id="r_afed879314476cd492c9589266a595093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afed879314476cd492c9589266a595093">SetNumberOfIterations</a> (uint32_t NumberOfIterations)</td></tr>
+<tr class="separator:afed879314476cd492c9589266a595093"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab73f65615428154b79eec42dada062b1" id="r_ab73f65615428154b79eec42dada062b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab73f65615428154b79eec42dada062b1">SetTimeStep</a> (double TimeStep)</td></tr>
+<tr class="separator:ab73f65615428154b79eec42dada062b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a524cd96812d60cbb61bfc036b5aa90de" id="r_a524cd96812d60cbb61bfc036b5aa90de"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a524cd96812d60cbb61bfc036b5aa90de">ToString</a> () const</td></tr>
 <tr class="separator:a524cd96812d60cbb61bfc036b5aa90de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5184e10799ae8d5cf25b61c6889482ab" id="r_a5184e10799ae8d5cf25b61c6889482ab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5184e10799ae8d5cf25b61c6889482ab">~CurvatureFlowImageFilter</a> ()</td></tr>
@@ -484,7 +484,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CSharp_2ConnectedThresholdSegmentation_8cs-example.html#a2">CSharp/ConnectedThresholdSegmentation.cs</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a7">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a9">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a7">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a9">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -607,8 +607,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a2e76869ad206d874e6693008842afeff" name="a2e76869ad206d874e6693008842afeff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e76869ad206d874e6693008842afeff">&#9670;&#160;</a></span>SetNumberOfIterations()</h2>
+<a id="afed879314476cd492c9589266a595093" name="afed879314476cd492c9589266a595093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afed879314476cd492c9589266a595093">&#9670;&#160;</a></span>SetNumberOfIterations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,7 +617,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aa7532ee0628dab08fbf0484cb2624289">Self</a> &amp; itk::simple::CurvatureFlowImageFilter::SetNumberOfIterations </td>
+          <td class="memname">void itk::simple::CurvatureFlowImageFilter::SetNumberOfIterations </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>NumberOfIterations</em></span></td><td>)</td>
           <td></td>
@@ -638,8 +638,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a5a09e5bc9032450afcfe50972dbbbd62" name="a5a09e5bc9032450afcfe50972dbbbd62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a09e5bc9032450afcfe50972dbbbd62">&#9670;&#160;</a></span>SetTimeStep()</h2>
+<a id="ab73f65615428154b79eec42dada062b1" name="ab73f65615428154b79eec42dada062b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab73f65615428154b79eec42dada062b1">&#9670;&#160;</a></span>SetTimeStep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -648,7 +648,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aa7532ee0628dab08fbf0484cb2624289">Self</a> &amp; itk::simple::CurvatureFlowImageFilter::SetTimeStep </td>
+          <td class="memname">void itk::simple::CurvatureFlowImageFilter::SetTimeStep </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>TimeStep</em></span></td><td>)</td>
           <td></td>
@@ -661,7 +661,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Set the timestep parameter. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CSharp_2ConnectedThresholdSegmentation_8cs-example.html#a1">CSharp/ConnectedThresholdSegmentation.cs</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a6">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a8">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a6">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a8">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>

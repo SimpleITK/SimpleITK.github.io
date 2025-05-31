@@ -127,7 +127,7 @@ $(function(){ initResizable(false); });
 <p>where \( I \) is image intensity and \( (\nabla * G) \) is the derivative of Gaussian operator.</p>
 <dl class="section user"><dt></dt><dd>See <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> for more information on Inputs.</dd></dl>
 <dl class="section user"><dt>PARAMETERS</dt><dd>The PropagationScaling parameter can be used to switch from propagation outwards (POSITIVE scaling parameter) versus propagating inwards (NEGATIVE scaling parameter).</dd></dl>
-<p>This implementation allows the user to set the weights between the propagation, advection and curvature term using methods <a class="el" href="#ab5e21d32f10a82d3556c99693c215446">SetPropagationScaling()</a> , <a class="el" href="#a421f2030e558faf8ddc8f4d27153d6d2">SetAdvectionScaling()</a> , <a class="el" href="#af158a55561a628caeaee138160625474">SetCurvatureScaling()</a> . In general, the larger the CurvatureScaling, the smoother the resulting contour. To follow the implementation in Caselles et al paper, set the PropagationScaling to \( c \) (the inflation or balloon force) and AdvectionScaling and CurvatureScaling both to 1.0.</p>
+<p>This implementation allows the user to set the weights between the propagation, advection and curvature term using methods <a class="el" href="#a6b964f185716103c2011a99aab3c6fd1">SetPropagationScaling()</a> , <a class="el" href="#adf18c0c78c2a80a5b2cf2645771bdb29">SetAdvectionScaling()</a> , <a class="el" href="#a3887c8673d32f61343f1ab7a9cbb29a0">SetCurvatureScaling()</a> . In general, the larger the CurvatureScaling, the smoother the resulting contour. To follow the implementation in Caselles et al paper, set the PropagationScaling to \( c \) (the inflation or balloon force) and AdvectionScaling and CurvatureScaling both to 1.0.</p>
 <dl class="section user"><dt>OUTPUTS</dt><dd>The filter outputs a single, scalar, real-valued image. Negative values in the output image represent the inside of the segmented region and positive values in the image represent the outside of the segmented region. The zero crossings of the image correspond to the position of the propagating front.</dd></dl>
 <dl class="section user"><dt></dt><dd>See <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SparseFieldLevelSetImageFilter.html">SparseFieldLevelSetImageFilter</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SegmentationLevelSetImageFilter.html">SegmentationLevelSetImageFilter</a> for more information.</dd></dl>
 <dl class="section user"><dt>REFERENCES</dt><dd></dd></dl>
@@ -185,22 +185,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a066f2f4e39c1e86f8c28f8c352ed5b1b" id="r_a066f2f4e39c1e86f8c28f8c352ed5b1b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066f2f4e39c1e86f8c28f8c352ed5b1b">GetRMSChange</a> () const</td></tr>
 <tr class="memdesc:a066f2f4e39c1e86f8c28f8c352ed5b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Root Mean Square of the levelset upon termination.  <br /></td></tr>
 <tr class="separator:a066f2f4e39c1e86f8c28f8c352ed5b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a21124e0f10ccd6eed6f6bd291c7b8d" id="r_a4a21124e0f10ccd6eed6f6bd291c7b8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a21124e0f10ccd6eed6f6bd291c7b8d">ReverseExpansionDirectionOff</a> ()</td></tr>
-<tr class="separator:a4a21124e0f10ccd6eed6f6bd291c7b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a495e2b49e2612d0a0105baf804d3b8ea" id="r_a495e2b49e2612d0a0105baf804d3b8ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a495e2b49e2612d0a0105baf804d3b8ea">ReverseExpansionDirectionOn</a> ()</td></tr>
-<tr class="separator:a495e2b49e2612d0a0105baf804d3b8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a421f2030e558faf8ddc8f4d27153d6d2" id="r_a421f2030e558faf8ddc8f4d27153d6d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a421f2030e558faf8ddc8f4d27153d6d2">SetAdvectionScaling</a> (double AdvectionScaling)</td></tr>
-<tr class="separator:a421f2030e558faf8ddc8f4d27153d6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af158a55561a628caeaee138160625474" id="r_af158a55561a628caeaee138160625474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af158a55561a628caeaee138160625474">SetCurvatureScaling</a> (double CurvatureScaling)</td></tr>
-<tr class="separator:af158a55561a628caeaee138160625474"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af162de7f042fff686ae6a8f5cb2cd0e9" id="r_af162de7f042fff686ae6a8f5cb2cd0e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af162de7f042fff686ae6a8f5cb2cd0e9">SetMaximumRMSError</a> (double MaximumRMSError)</td></tr>
-<tr class="separator:af162de7f042fff686ae6a8f5cb2cd0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5109830653d735bd9758a181c0e0e398" id="r_a5109830653d735bd9758a181c0e0e398"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5109830653d735bd9758a181c0e0e398">SetNumberOfIterations</a> (uint32_t NumberOfIterations)</td></tr>
-<tr class="separator:a5109830653d735bd9758a181c0e0e398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5e21d32f10a82d3556c99693c215446" id="r_ab5e21d32f10a82d3556c99693c215446"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5e21d32f10a82d3556c99693c215446">SetPropagationScaling</a> (double PropagationScaling)</td></tr>
-<tr class="separator:ab5e21d32f10a82d3556c99693c215446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bb74a77b841cdf853da938fc38b8bec" id="r_a9bb74a77b841cdf853da938fc38b8bec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bb74a77b841cdf853da938fc38b8bec">SetReverseExpansionDirection</a> (bool ReverseExpansionDirection)</td></tr>
-<tr class="separator:a9bb74a77b841cdf853da938fc38b8bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5b0bfbba8a47de78f0cc20d8e473b7" id="r_a0b5b0bfbba8a47de78f0cc20d8e473b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b5b0bfbba8a47de78f0cc20d8e473b7">ReverseExpansionDirectionOff</a> ()</td></tr>
+<tr class="separator:a0b5b0bfbba8a47de78f0cc20d8e473b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef97046f77c355f4aba2125a4a35f416" id="r_aef97046f77c355f4aba2125a4a35f416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef97046f77c355f4aba2125a4a35f416">ReverseExpansionDirectionOn</a> ()</td></tr>
+<tr class="separator:aef97046f77c355f4aba2125a4a35f416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf18c0c78c2a80a5b2cf2645771bdb29" id="r_adf18c0c78c2a80a5b2cf2645771bdb29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf18c0c78c2a80a5b2cf2645771bdb29">SetAdvectionScaling</a> (double AdvectionScaling)</td></tr>
+<tr class="separator:adf18c0c78c2a80a5b2cf2645771bdb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3887c8673d32f61343f1ab7a9cbb29a0" id="r_a3887c8673d32f61343f1ab7a9cbb29a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3887c8673d32f61343f1ab7a9cbb29a0">SetCurvatureScaling</a> (double CurvatureScaling)</td></tr>
+<tr class="separator:a3887c8673d32f61343f1ab7a9cbb29a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c4288a54ef4a6f33f585bbbf6d9a67" id="r_ac3c4288a54ef4a6f33f585bbbf6d9a67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3c4288a54ef4a6f33f585bbbf6d9a67">SetMaximumRMSError</a> (double MaximumRMSError)</td></tr>
+<tr class="separator:ac3c4288a54ef4a6f33f585bbbf6d9a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0676e4d0ef059ba2e1bbb70be73330a9" id="r_a0676e4d0ef059ba2e1bbb70be73330a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0676e4d0ef059ba2e1bbb70be73330a9">SetNumberOfIterations</a> (uint32_t NumberOfIterations)</td></tr>
+<tr class="separator:a0676e4d0ef059ba2e1bbb70be73330a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b964f185716103c2011a99aab3c6fd1" id="r_a6b964f185716103c2011a99aab3c6fd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b964f185716103c2011a99aab3c6fd1">SetPropagationScaling</a> (double PropagationScaling)</td></tr>
+<tr class="separator:a6b964f185716103c2011a99aab3c6fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0b29af02dbccbdce341708e892f7d77" id="r_af0b29af02dbccbdce341708e892f7d77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0b29af02dbccbdce341708e892f7d77">SetReverseExpansionDirection</a> (bool ReverseExpansionDirection)</td></tr>
+<tr class="separator:af0b29af02dbccbdce341708e892f7d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6d9f8da3b14ef10649acb7d1a89309" id="r_abd6d9f8da3b14ef10649acb7d1a89309"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd6d9f8da3b14ef10649acb7d1a89309">ToString</a> () const</td></tr>
 <tr class="separator:abd6d9f8da3b14ef10649acb7d1a89309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd86652e1db059c7e1c97bc265e5d14a" id="r_afd86652e1db059c7e1c97bc265e5d14a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd86652e1db059c7e1c97bc265e5d14a">~GeodesicActiveContourLevelSetImageFilter</a> ()</td></tr>
@@ -835,8 +835,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a4a21124e0f10ccd6eed6f6bd291c7b8d" name="a4a21124e0f10ccd6eed6f6bd291c7b8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a21124e0f10ccd6eed6f6bd291c7b8d">&#9670;&#160;</a></span>ReverseExpansionDirectionOff()</h2>
+<a id="a0b5b0bfbba8a47de78f0cc20d8e473b7" name="a0b5b0bfbba8a47de78f0cc20d8e473b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5b0bfbba8a47de78f0cc20d8e473b7">&#9670;&#160;</a></span>ReverseExpansionDirectionOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -845,7 +845,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp; itk::simple::GeodesicActiveContourLevelSetImageFilter::ReverseExpansionDirectionOff </td>
+          <td class="memname">void itk::simple::GeodesicActiveContourLevelSetImageFilter::ReverseExpansionDirectionOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -864,8 +864,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a495e2b49e2612d0a0105baf804d3b8ea" name="a495e2b49e2612d0a0105baf804d3b8ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a495e2b49e2612d0a0105baf804d3b8ea">&#9670;&#160;</a></span>ReverseExpansionDirectionOn()</h2>
+<a id="aef97046f77c355f4aba2125a4a35f416" name="aef97046f77c355f4aba2125a4a35f416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef97046f77c355f4aba2125a4a35f416">&#9670;&#160;</a></span>ReverseExpansionDirectionOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -874,7 +874,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp; itk::simple::GeodesicActiveContourLevelSetImageFilter::ReverseExpansionDirectionOn </td>
+          <td class="memname">void itk::simple::GeodesicActiveContourLevelSetImageFilter::ReverseExpansionDirectionOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -894,8 +894,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a421f2030e558faf8ddc8f4d27153d6d2" name="a421f2030e558faf8ddc8f4d27153d6d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a421f2030e558faf8ddc8f4d27153d6d2">&#9670;&#160;</a></span>SetAdvectionScaling()</h2>
+<a id="adf18c0c78c2a80a5b2cf2645771bdb29" name="adf18c0c78c2a80a5b2cf2645771bdb29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf18c0c78c2a80a5b2cf2645771bdb29">&#9670;&#160;</a></span>SetAdvectionScaling()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -904,7 +904,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp; itk::simple::GeodesicActiveContourLevelSetImageFilter::SetAdvectionScaling </td>
+          <td class="memname">void itk::simple::GeodesicActiveContourLevelSetImageFilter::SetAdvectionScaling </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>AdvectionScaling</em></span></td><td>)</td>
           <td></td>
@@ -923,8 +923,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="af158a55561a628caeaee138160625474" name="af158a55561a628caeaee138160625474"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af158a55561a628caeaee138160625474">&#9670;&#160;</a></span>SetCurvatureScaling()</h2>
+<a id="a3887c8673d32f61343f1ab7a9cbb29a0" name="a3887c8673d32f61343f1ab7a9cbb29a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3887c8673d32f61343f1ab7a9cbb29a0">&#9670;&#160;</a></span>SetCurvatureScaling()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -933,7 +933,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp; itk::simple::GeodesicActiveContourLevelSetImageFilter::SetCurvatureScaling </td>
+          <td class="memname">void itk::simple::GeodesicActiveContourLevelSetImageFilter::SetCurvatureScaling </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>CurvatureScaling</em></span></td><td>)</td>
           <td></td>
@@ -952,8 +952,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="af162de7f042fff686ae6a8f5cb2cd0e9" name="af162de7f042fff686ae6a8f5cb2cd0e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af162de7f042fff686ae6a8f5cb2cd0e9">&#9670;&#160;</a></span>SetMaximumRMSError()</h2>
+<a id="ac3c4288a54ef4a6f33f585bbbf6d9a67" name="ac3c4288a54ef4a6f33f585bbbf6d9a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c4288a54ef4a6f33f585bbbf6d9a67">&#9670;&#160;</a></span>SetMaximumRMSError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -962,7 +962,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp; itk::simple::GeodesicActiveContourLevelSetImageFilter::SetMaximumRMSError </td>
+          <td class="memname">void itk::simple::GeodesicActiveContourLevelSetImageFilter::SetMaximumRMSError </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>MaximumRMSError</em></span></td><td>)</td>
           <td></td>
@@ -981,8 +981,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a5109830653d735bd9758a181c0e0e398" name="a5109830653d735bd9758a181c0e0e398"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5109830653d735bd9758a181c0e0e398">&#9670;&#160;</a></span>SetNumberOfIterations()</h2>
+<a id="a0676e4d0ef059ba2e1bbb70be73330a9" name="a0676e4d0ef059ba2e1bbb70be73330a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0676e4d0ef059ba2e1bbb70be73330a9">&#9670;&#160;</a></span>SetNumberOfIterations()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -991,7 +991,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp; itk::simple::GeodesicActiveContourLevelSetImageFilter::SetNumberOfIterations </td>
+          <td class="memname">void itk::simple::GeodesicActiveContourLevelSetImageFilter::SetNumberOfIterations </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>NumberOfIterations</em></span></td><td>)</td>
           <td></td>
@@ -1010,8 +1010,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ab5e21d32f10a82d3556c99693c215446" name="ab5e21d32f10a82d3556c99693c215446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5e21d32f10a82d3556c99693c215446">&#9670;&#160;</a></span>SetPropagationScaling()</h2>
+<a id="a6b964f185716103c2011a99aab3c6fd1" name="a6b964f185716103c2011a99aab3c6fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b964f185716103c2011a99aab3c6fd1">&#9670;&#160;</a></span>SetPropagationScaling()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1020,7 +1020,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp; itk::simple::GeodesicActiveContourLevelSetImageFilter::SetPropagationScaling </td>
+          <td class="memname">void itk::simple::GeodesicActiveContourLevelSetImageFilter::SetPropagationScaling </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>PropagationScaling</em></span></td><td>)</td>
           <td></td>
@@ -1039,8 +1039,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a9bb74a77b841cdf853da938fc38b8bec" name="a9bb74a77b841cdf853da938fc38b8bec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bb74a77b841cdf853da938fc38b8bec">&#9670;&#160;</a></span>SetReverseExpansionDirection()</h2>
+<a id="af0b29af02dbccbdce341708e892f7d77" name="af0b29af02dbccbdce341708e892f7d77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b29af02dbccbdce341708e892f7d77">&#9670;&#160;</a></span>SetReverseExpansionDirection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1049,7 +1049,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab8fda8cb159617a3c9433292f2930fa8">Self</a> &amp; itk::simple::GeodesicActiveContourLevelSetImageFilter::SetReverseExpansionDirection </td>
+          <td class="memname">void itk::simple::GeodesicActiveContourLevelSetImageFilter::SetReverseExpansionDirection </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>ReverseExpansionDirection</em></span></td><td>)</td>
           <td></td>

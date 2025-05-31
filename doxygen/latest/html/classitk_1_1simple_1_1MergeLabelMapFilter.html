@@ -115,7 +115,7 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Merges several <a class="elRef" href="https://www.itk.org/Doxygen/html/classLabel.html">Label</a> Maps. </p>
 <p>This filter takes one or more input <a class="elRef" href="https://www.itk.org/Doxygen/html/classLabel.html">Label</a> Map and merges them.</p>
-<p><a class="el" href="#af84206ef8376986efac643f485e20a65">SetMethod()</a> can be used to change how the filter manage the labels from the different label maps. KEEP (0): <a class="el" href="classitk_1_1simple_1_1MergeLabelMapFilter.html" title="Merges several Label Maps.">MergeLabelMapFilter</a> do its best to keep the label unchanged, but if a label is already used in a previous label map, a new label is assigned. AGGREGATE (1): If the same label is found several times in the label maps, the label objects with the same label are merged. PACK (2): <a class="el" href="classitk_1_1simple_1_1MergeLabelMapFilter.html" title="Merges several Label Maps.">MergeLabelMapFilter</a> relabel all the label objects by order of processing. No conflict can occur. STRICT (3): <a class="el" href="classitk_1_1simple_1_1MergeLabelMapFilter.html" title="Merges several Label Maps.">MergeLabelMapFilter</a> keeps the labels unchanged and raises an exception if the same label is found in several images.</p>
+<p><a class="el" href="#adf434cc652c801e483a8e9903c229962">SetMethod()</a> can be used to change how the filter manage the labels from the different label maps. KEEP (0): <a class="el" href="classitk_1_1simple_1_1MergeLabelMapFilter.html" title="Merges several Label Maps.">MergeLabelMapFilter</a> do its best to keep the label unchanged, but if a label is already used in a previous label map, a new label is assigned. AGGREGATE (1): If the same label is found several times in the label maps, the label objects with the same label are merged. PACK (2): <a class="el" href="classitk_1_1simple_1_1MergeLabelMapFilter.html" title="Merges several Label Maps.">MergeLabelMapFilter</a> relabel all the label objects by order of processing. No conflict can occur. STRICT (3): <a class="el" href="classitk_1_1simple_1_1MergeLabelMapFilter.html" title="Merges several Label Maps.">MergeLabelMapFilter</a> keeps the labels unchanged and raises an exception if the same label is found in several images.</p>
 <p>This implementation was taken from the Insight Journal paper: <a href="https://doi.org/10.54294/q6auw4">https://doi.org/10.54294/q6auw4</a></p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShapeLabelObject.html">ShapeLabelObject</a> , <a class="el" href="classitk_1_1simple_1_1RelabelComponentImageFilter.html" title="Relabel the components in an image such that consecutive labels are used.">RelabelComponentImageFilter</a></dd>
@@ -168,8 +168,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a013d65fa39482f9425c58744fdc9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade86a438f6407b2b39a4bc4d64648ce2" id="r_ade86a438f6407b2b39a4bc4d64648ce2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade86a438f6407b2b39a4bc4d64648ce2">MergeLabelMapFilter</a> ()</td></tr>
 <tr class="separator:ade86a438f6407b2b39a4bc4d64648ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af84206ef8376986efac643f485e20a65" id="r_af84206ef8376986efac643f485e20a65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0ecd4434ab824242a215202dc1067b35">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af84206ef8376986efac643f485e20a65">SetMethod</a> (<a class="el" href="#a62e4b170e015b060f7a69a5ae7187772">MethodType</a> Method)</td></tr>
-<tr class="separator:af84206ef8376986efac643f485e20a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf434cc652c801e483a8e9903c229962" id="r_adf434cc652c801e483a8e9903c229962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf434cc652c801e483a8e9903c229962">SetMethod</a> (<a class="el" href="#a62e4b170e015b060f7a69a5ae7187772">MethodType</a> Method)</td></tr>
+<tr class="separator:adf434cc652c801e483a8e9903c229962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6678abe3592ec627d1fcc01093ec1b5" id="r_ac6678abe3592ec627d1fcc01093ec1b5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6678abe3592ec627d1fcc01093ec1b5">ToString</a> () const</td></tr>
 <tr class="separator:ac6678abe3592ec627d1fcc01093ec1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae82ef2f193f23ffbfef8d69f447ac7f0" id="r_ae82ef2f193f23ffbfef8d69f447ac7f0"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae82ef2f193f23ffbfef8d69f447ac7f0">~MergeLabelMapFilter</a> ()</td></tr>
@@ -707,8 +707,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="af84206ef8376986efac643f485e20a65" name="af84206ef8376986efac643f485e20a65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af84206ef8376986efac643f485e20a65">&#9670;&#160;</a></span>SetMethod()</h2>
+<a id="adf434cc652c801e483a8e9903c229962" name="adf434cc652c801e483a8e9903c229962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf434cc652c801e483a8e9903c229962">&#9670;&#160;</a></span>SetMethod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,7 +717,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a0ecd4434ab824242a215202dc1067b35">Self</a> &amp; itk::simple::MergeLabelMapFilter::SetMethod </td>
+          <td class="memname">void itk::simple::MergeLabelMapFilter::SetMethod </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a62e4b170e015b060f7a69a5ae7187772">MethodType</a></td>          <td class="paramname"><span class="paramname"><em>Method</em></span></td><td>)</td>
           <td></td>

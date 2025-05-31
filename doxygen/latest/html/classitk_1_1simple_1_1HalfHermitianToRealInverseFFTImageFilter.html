@@ -115,7 +115,7 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for specialized complex-to-real inverse Fast Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . </p>
 <p>This is a base class for the "inverse" or "reverse" Discrete Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> . This is an abstract base class: the actual implementation is provided by the best child class available on the system when the object is created via the object factory system.</p>
-<p>The input to this filter is assumed to have the same format as the output of the <a class="el" href="classitk_1_1simple_1_1RealToHalfHermitianForwardFFTImageFilter.html" title="Base class for specialized real-to-complex forward Fast Fourier Transform .">RealToHalfHermitianForwardFFTImageFilter</a> . That is, the input is assumed to consist of roughly half the full complex image resulting from a real-to-complex discrete Fourier transform. This half is expected to be the first half of the image in the X-dimension. Because this filter assumes that the input stores only about half of the non-redundant complex pixels, the output is larger in the X-dimension than it is in the input. To determine the actual size of the output image, this filter needs additional information in the form of a flag indicating whether the output image has an odd size in the X-dimension. Use <a class="el" href="#a645e47e1636b49a8dd0f8907eba16b1f">SetActualXDimensionIsOdd()</a> to set this flag.</p>
+<p>The input to this filter is assumed to have the same format as the output of the <a class="el" href="classitk_1_1simple_1_1RealToHalfHermitianForwardFFTImageFilter.html" title="Base class for specialized real-to-complex forward Fast Fourier Transform .">RealToHalfHermitianForwardFFTImageFilter</a> . That is, the input is assumed to consist of roughly half the full complex image resulting from a real-to-complex discrete Fourier transform. This half is expected to be the first half of the image in the X-dimension. Because this filter assumes that the input stores only about half of the non-redundant complex pixels, the output is larger in the X-dimension than it is in the input. To determine the actual size of the output image, this filter needs additional information in the form of a flag indicating whether the output image has an odd size in the X-dimension. Use <a class="el" href="#a41e6f93693b6b0e2d0a9ad6caddd41e2">SetActualXDimensionIsOdd()</a> to set this flag.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ForwardFFTImageFilter.html" title="Base class for forward Fast Fourier Transform .">ForwardFFTImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1HalfHermitianToRealInverseFFTImageFilter.html" title="Base class for specialized complex-to-real inverse Fast Fourier Transform .">HalfHermitianToRealInverseFFTImageFilter</a> </dd>
 <dd>
 <a class="el" href="namespaceitk_1_1simple.html#affbb06bb7f298ed994e0f8bdf7fcf0a5" title="Base class for specialized complex-to-real inverse Fast Fourier Transform .">itk::simple::HalfHermitianToRealInverseFFT</a> for the procedural interface </dd>
@@ -139,10 +139,10 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a70ea296a3d5b1f608b95b56090f52c25" id="r_a70ea296a3d5b1f608b95b56090f52c25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a35b6550b66550a89ee6ce03e2d16c367">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70ea296a3d5b1f608b95b56090f52c25">ActualXDimensionIsOddOff</a> ()</td></tr>
-<tr class="separator:a70ea296a3d5b1f608b95b56090f52c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb3c579e9af7a1f08a9b16adeea90c55" id="r_adb3c579e9af7a1f08a9b16adeea90c55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a35b6550b66550a89ee6ce03e2d16c367">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb3c579e9af7a1f08a9b16adeea90c55">ActualXDimensionIsOddOn</a> ()</td></tr>
-<tr class="separator:adb3c579e9af7a1f08a9b16adeea90c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77d8d403f76932f53fc054ebe94870ca" id="r_a77d8d403f76932f53fc054ebe94870ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77d8d403f76932f53fc054ebe94870ca">ActualXDimensionIsOddOff</a> ()</td></tr>
+<tr class="separator:a77d8d403f76932f53fc054ebe94870ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5a6c4787ec0ecf775599bfbfbed81b3" id="r_af5a6c4787ec0ecf775599bfbfbed81b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5a6c4787ec0ecf775599bfbfbed81b3">ActualXDimensionIsOddOn</a> ()</td></tr>
+<tr class="separator:af5a6c4787ec0ecf775599bfbfbed81b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85585943142db45ac09a2fe147ffb66f" id="r_a85585943142db45ac09a2fe147ffb66f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85585943142db45ac09a2fe147ffb66f">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a85585943142db45ac09a2fe147ffb66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab249e0b809e7e1bb6fda0fcb911c658e" id="r_ab249e0b809e7e1bb6fda0fcb911c658e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab249e0b809e7e1bb6fda0fcb911c658e">GetActualXDimensionIsOdd</a> () const</td></tr>
@@ -151,8 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87b6141d63a8c21d9b272f85a848b6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42682bfeb9a7b1c5f59150d87a1fdb8f" id="r_a42682bfeb9a7b1c5f59150d87a1fdb8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42682bfeb9a7b1c5f59150d87a1fdb8f">HalfHermitianToRealInverseFFTImageFilter</a> ()</td></tr>
 <tr class="separator:a42682bfeb9a7b1c5f59150d87a1fdb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a645e47e1636b49a8dd0f8907eba16b1f" id="r_a645e47e1636b49a8dd0f8907eba16b1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a35b6550b66550a89ee6ce03e2d16c367">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a645e47e1636b49a8dd0f8907eba16b1f">SetActualXDimensionIsOdd</a> (bool ActualXDimensionIsOdd)</td></tr>
-<tr class="separator:a645e47e1636b49a8dd0f8907eba16b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e6f93693b6b0e2d0a9ad6caddd41e2" id="r_a41e6f93693b6b0e2d0a9ad6caddd41e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41e6f93693b6b0e2d0a9ad6caddd41e2">SetActualXDimensionIsOdd</a> (bool ActualXDimensionIsOdd)</td></tr>
+<tr class="separator:a41e6f93693b6b0e2d0a9ad6caddd41e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eac7f1a8dfdccfbc4a71a5e79440b4e" id="r_a2eac7f1a8dfdccfbc4a71a5e79440b4e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eac7f1a8dfdccfbc4a71a5e79440b4e">ToString</a> () const</td></tr>
 <tr class="separator:a2eac7f1a8dfdccfbc4a71a5e79440b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91d8fdf0c1d3ec7faed2380e26f4e172" id="r_a91d8fdf0c1d3ec7faed2380e26f4e172"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91d8fdf0c1d3ec7faed2380e26f4e172">~HalfHermitianToRealInverseFFTImageFilter</a> ()</td></tr>
@@ -427,8 +427,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a70ea296a3d5b1f608b95b56090f52c25" name="a70ea296a3d5b1f608b95b56090f52c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70ea296a3d5b1f608b95b56090f52c25">&#9670;&#160;</a></span>ActualXDimensionIsOddOff()</h2>
+<a id="a77d8d403f76932f53fc054ebe94870ca" name="a77d8d403f76932f53fc054ebe94870ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77d8d403f76932f53fc054ebe94870ca">&#9670;&#160;</a></span>ActualXDimensionIsOddOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -437,7 +437,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a35b6550b66550a89ee6ce03e2d16c367">Self</a> &amp; itk::simple::HalfHermitianToRealInverseFFTImageFilter::ActualXDimensionIsOddOff </td>
+          <td class="memname">void itk::simple::HalfHermitianToRealInverseFFTImageFilter::ActualXDimensionIsOddOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -456,8 +456,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="adb3c579e9af7a1f08a9b16adeea90c55" name="adb3c579e9af7a1f08a9b16adeea90c55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb3c579e9af7a1f08a9b16adeea90c55">&#9670;&#160;</a></span>ActualXDimensionIsOddOn()</h2>
+<a id="af5a6c4787ec0ecf775599bfbfbed81b3" name="af5a6c4787ec0ecf775599bfbfbed81b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5a6c4787ec0ecf775599bfbfbed81b3">&#9670;&#160;</a></span>ActualXDimensionIsOddOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +466,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a35b6550b66550a89ee6ce03e2d16c367">Self</a> &amp; itk::simple::HalfHermitianToRealInverseFFTImageFilter::ActualXDimensionIsOddOn </td>
+          <td class="memname">void itk::simple::HalfHermitianToRealInverseFFTImageFilter::ActualXDimensionIsOddOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -593,8 +593,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a645e47e1636b49a8dd0f8907eba16b1f" name="a645e47e1636b49a8dd0f8907eba16b1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a645e47e1636b49a8dd0f8907eba16b1f">&#9670;&#160;</a></span>SetActualXDimensionIsOdd()</h2>
+<a id="a41e6f93693b6b0e2d0a9ad6caddd41e2" name="a41e6f93693b6b0e2d0a9ad6caddd41e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e6f93693b6b0e2d0a9ad6caddd41e2">&#9670;&#160;</a></span>SetActualXDimensionIsOdd()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -603,7 +603,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a35b6550b66550a89ee6ce03e2d16c367">Self</a> &amp; itk::simple::HalfHermitianToRealInverseFFTImageFilter::SetActualXDimensionIsOdd </td>
+          <td class="memname">void itk::simple::HalfHermitianToRealInverseFFTImageFilter::SetActualXDimensionIsOdd </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>ActualXDimensionIsOdd</em></span></td><td>)</td>
           <td></td>

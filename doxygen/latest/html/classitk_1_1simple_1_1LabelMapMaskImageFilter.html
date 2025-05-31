@@ -114,7 +114,7 @@ $(function(){ initResizable(false); });
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Mask and image with a <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LabelMap.html">LabelMap</a> . </p>
-<p><a class="el" href="classitk_1_1simple_1_1LabelMapMaskImageFilter.html" title="Mask and image with a LabelMap .">LabelMapMaskImageFilter</a> mask the content of an input image according to the content of the input <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LabelMap.html">LabelMap</a> . The masked pixel of the input image are set to the BackgroundValue. <a class="el" href="classitk_1_1simple_1_1LabelMapMaskImageFilter.html" title="Mask and image with a LabelMap .">LabelMapMaskImageFilter</a> can keep the input image for one label only, with Negated = false (the default) or it can mask the input image for a single label, when Negated equals true. In Both cases, the label is set with <a class="el" href="#a43dff8c094747c6c0936a88d800fabf2">SetLabel()</a> .</p>
+<p><a class="el" href="classitk_1_1simple_1_1LabelMapMaskImageFilter.html" title="Mask and image with a LabelMap .">LabelMapMaskImageFilter</a> mask the content of an input image according to the content of the input <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LabelMap.html">LabelMap</a> . The masked pixel of the input image are set to the BackgroundValue. <a class="el" href="classitk_1_1simple_1_1LabelMapMaskImageFilter.html" title="Mask and image with a LabelMap .">LabelMapMaskImageFilter</a> can keep the input image for one label only, with Negated = false (the default) or it can mask the input image for a single label, when Negated equals true. In Both cases, the label is set with <a class="el" href="#aba792fed975c158b9b044e1cd4a012bb">SetLabel()</a> .</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
 <p>This implementation was taken from the Insight Journal paper: <a href="https://doi.org/10.54294/q6auw4">https://doi.org/10.54294/q6auw4</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1LabelMapToBinaryImageFilter.html" title="Convert a LabelMap to a binary image.">LabelMapToBinaryImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1LabelMapToLabelImageFilter.html" title="Converts a LabelMap to a labeled image.">LabelMapToLabelImageFilter</a> </dd>
@@ -140,10 +140,10 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aca4fcc65d3e061438e9eb60681be6c37" id="r_aca4fcc65d3e061438e9eb60681be6c37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca4fcc65d3e061438e9eb60681be6c37">CropOff</a> ()</td></tr>
-<tr class="separator:aca4fcc65d3e061438e9eb60681be6c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3303aa97657df6d3f66d332f355cfd9f" id="r_a3303aa97657df6d3f66d332f355cfd9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3303aa97657df6d3f66d332f355cfd9f">CropOn</a> ()</td></tr>
-<tr class="separator:a3303aa97657df6d3f66d332f355cfd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da58dfa4cd5ed577de36cb33411d004" id="r_a8da58dfa4cd5ed577de36cb33411d004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8da58dfa4cd5ed577de36cb33411d004">CropOff</a> ()</td></tr>
+<tr class="separator:a8da58dfa4cd5ed577de36cb33411d004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d9b01deae51bc5d6981e57969feabad" id="r_a1d9b01deae51bc5d6981e57969feabad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d9b01deae51bc5d6981e57969feabad">CropOn</a> ()</td></tr>
+<tr class="separator:a1d9b01deae51bc5d6981e57969feabad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5371654ed9d2a5a3dd35d9599aa6e474" id="r_a5371654ed9d2a5a3dd35d9599aa6e474"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5371654ed9d2a5a3dd35d9599aa6e474">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;labelMapImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;featureImage)</td></tr>
 <tr class="separator:a5371654ed9d2a5a3dd35d9599aa6e474"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae759c7b5f2b70728c7e04a34ac808b7a" id="r_ae759c7b5f2b70728c7e04a34ac808b7a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae759c7b5f2b70728c7e04a34ac808b7a">GetBackgroundValue</a> () const</td></tr>
@@ -160,22 +160,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a416d670230077325c9be52d2da84aa19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6fd647410b8a6598fdd3bc6af049757" id="r_aa6fd647410b8a6598fdd3bc6af049757"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6fd647410b8a6598fdd3bc6af049757">LabelMapMaskImageFilter</a> ()</td></tr>
 <tr class="separator:aa6fd647410b8a6598fdd3bc6af049757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5326d6e39f0e99410e6764576302bf30" id="r_a5326d6e39f0e99410e6764576302bf30"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5326d6e39f0e99410e6764576302bf30">NegatedOff</a> ()</td></tr>
-<tr class="separator:a5326d6e39f0e99410e6764576302bf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50b2b3c5e219f1f2266f84c89618726" id="r_aa50b2b3c5e219f1f2266f84c89618726"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa50b2b3c5e219f1f2266f84c89618726">NegatedOn</a> ()</td></tr>
-<tr class="separator:aa50b2b3c5e219f1f2266f84c89618726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc3451f2c27b848f26286884665402a" id="r_a4fc3451f2c27b848f26286884665402a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc3451f2c27b848f26286884665402a">SetBackgroundValue</a> (double BackgroundValue)</td></tr>
-<tr class="separator:a4fc3451f2c27b848f26286884665402a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367efc285cccbf276912c8c819c9e9d4" id="r_a367efc285cccbf276912c8c819c9e9d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a367efc285cccbf276912c8c819c9e9d4">SetCrop</a> (bool <a class="el" href="namespaceitk_1_1simple.html#a0427db78361b5f99dc4cbb155619dc48">Crop</a>)</td></tr>
-<tr class="separator:a367efc285cccbf276912c8c819c9e9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bb87bc9656c1f0025c4cb6405ca3342" id="r_a8bb87bc9656c1f0025c4cb6405ca3342"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bb87bc9656c1f0025c4cb6405ca3342">SetCropBorder</a> (std::vector&lt; unsigned int &gt; CropBorder)</td></tr>
-<tr class="separator:a8bb87bc9656c1f0025c4cb6405ca3342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5763a0052ce42136f87600c2dca6b6ee" id="r_a5763a0052ce42136f87600c2dca6b6ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5763a0052ce42136f87600c2dca6b6ee">SetCropBorder</a> (unsigned int value)</td></tr>
-<tr class="separator:a5763a0052ce42136f87600c2dca6b6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43dff8c094747c6c0936a88d800fabf2" id="r_a43dff8c094747c6c0936a88d800fabf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43dff8c094747c6c0936a88d800fabf2">SetLabel</a> (uint64_t <a class="elRef" href="https://www.itk.org/Doxygen/html/classLabel.html">Label</a>)</td></tr>
-<tr class="separator:a43dff8c094747c6c0936a88d800fabf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46e4c2634ceb54bc04992b14a11115c8" id="r_a46e4c2634ceb54bc04992b14a11115c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46e4c2634ceb54bc04992b14a11115c8">SetNegated</a> (bool Negated)</td></tr>
-<tr class="separator:a46e4c2634ceb54bc04992b14a11115c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4760e1f79b95f4c042dc6d0b9bfdad27" id="r_a4760e1f79b95f4c042dc6d0b9bfdad27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4760e1f79b95f4c042dc6d0b9bfdad27">NegatedOff</a> ()</td></tr>
+<tr class="separator:a4760e1f79b95f4c042dc6d0b9bfdad27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc668b128ab2697f8f96ceeaab242b9" id="r_a6bc668b128ab2697f8f96ceeaab242b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bc668b128ab2697f8f96ceeaab242b9">NegatedOn</a> ()</td></tr>
+<tr class="separator:a6bc668b128ab2697f8f96ceeaab242b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97cdd5ef364e9c765621ab9b9c2da3e5" id="r_a97cdd5ef364e9c765621ab9b9c2da3e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97cdd5ef364e9c765621ab9b9c2da3e5">SetBackgroundValue</a> (double BackgroundValue)</td></tr>
+<tr class="separator:a97cdd5ef364e9c765621ab9b9c2da3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ece3254625c58e0f5500be301dec07b" id="r_a1ece3254625c58e0f5500be301dec07b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ece3254625c58e0f5500be301dec07b">SetCrop</a> (bool <a class="el" href="namespaceitk_1_1simple.html#a0427db78361b5f99dc4cbb155619dc48">Crop</a>)</td></tr>
+<tr class="separator:a1ece3254625c58e0f5500be301dec07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a556a6c5dca66bf34b448cacfd587c3" id="r_a3a556a6c5dca66bf34b448cacfd587c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a556a6c5dca66bf34b448cacfd587c3">SetCropBorder</a> (std::vector&lt; unsigned int &gt; CropBorder)</td></tr>
+<tr class="separator:a3a556a6c5dca66bf34b448cacfd587c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6cb41bef81fe67504c4546c6c90e97" id="r_aec6cb41bef81fe67504c4546c6c90e97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec6cb41bef81fe67504c4546c6c90e97">SetCropBorder</a> (unsigned int value)</td></tr>
+<tr class="separator:aec6cb41bef81fe67504c4546c6c90e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba792fed975c158b9b044e1cd4a012bb" id="r_aba792fed975c158b9b044e1cd4a012bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba792fed975c158b9b044e1cd4a012bb">SetLabel</a> (uint64_t <a class="elRef" href="https://www.itk.org/Doxygen/html/classLabel.html">Label</a>)</td></tr>
+<tr class="separator:aba792fed975c158b9b044e1cd4a012bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a76842654b6eef710a739806135033" id="r_a00a76842654b6eef710a739806135033"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00a76842654b6eef710a739806135033">SetNegated</a> (bool Negated)</td></tr>
+<tr class="separator:a00a76842654b6eef710a739806135033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac363a93fb116109848342a57e72e8e9" id="r_aac363a93fb116109848342a57e72e8e9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac363a93fb116109848342a57e72e8e9">ToString</a> () const</td></tr>
 <tr class="separator:aac363a93fb116109848342a57e72e8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53a983d4e14b485962c09b2a28f6c96" id="r_ad53a983d4e14b485962c09b2a28f6c96"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad53a983d4e14b485962c09b2a28f6c96">~LabelMapMaskImageFilter</a> ()</td></tr>
@@ -458,8 +458,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aca4fcc65d3e061438e9eb60681be6c37" name="aca4fcc65d3e061438e9eb60681be6c37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca4fcc65d3e061438e9eb60681be6c37">&#9670;&#160;</a></span>CropOff()</h2>
+<a id="a8da58dfa4cd5ed577de36cb33411d004" name="a8da58dfa4cd5ed577de36cb33411d004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da58dfa4cd5ed577de36cb33411d004">&#9670;&#160;</a></span>CropOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::CropOff </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::CropOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -487,8 +487,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a3303aa97657df6d3f66d332f355cfd9f" name="a3303aa97657df6d3f66d332f355cfd9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3303aa97657df6d3f66d332f355cfd9f">&#9670;&#160;</a></span>CropOn()</h2>
+<a id="a1d9b01deae51bc5d6981e57969feabad" name="a1d9b01deae51bc5d6981e57969feabad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d9b01deae51bc5d6981e57969feabad">&#9670;&#160;</a></span>CropOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -497,7 +497,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::CropOn </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::CropOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -752,8 +752,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a5326d6e39f0e99410e6764576302bf30" name="a5326d6e39f0e99410e6764576302bf30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5326d6e39f0e99410e6764576302bf30">&#9670;&#160;</a></span>NegatedOff()</h2>
+<a id="a4760e1f79b95f4c042dc6d0b9bfdad27" name="a4760e1f79b95f4c042dc6d0b9bfdad27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4760e1f79b95f4c042dc6d0b9bfdad27">&#9670;&#160;</a></span>NegatedOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -762,7 +762,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::NegatedOff </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::NegatedOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -781,8 +781,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="aa50b2b3c5e219f1f2266f84c89618726" name="aa50b2b3c5e219f1f2266f84c89618726"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa50b2b3c5e219f1f2266f84c89618726">&#9670;&#160;</a></span>NegatedOn()</h2>
+<a id="a6bc668b128ab2697f8f96ceeaab242b9" name="a6bc668b128ab2697f8f96ceeaab242b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc668b128ab2697f8f96ceeaab242b9">&#9670;&#160;</a></span>NegatedOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -791,7 +791,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::NegatedOn </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::NegatedOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -811,8 +811,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a4fc3451f2c27b848f26286884665402a" name="a4fc3451f2c27b848f26286884665402a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fc3451f2c27b848f26286884665402a">&#9670;&#160;</a></span>SetBackgroundValue()</h2>
+<a id="a97cdd5ef364e9c765621ab9b9c2da3e5" name="a97cdd5ef364e9c765621ab9b9c2da3e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97cdd5ef364e9c765621ab9b9c2da3e5">&#9670;&#160;</a></span>SetBackgroundValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -821,7 +821,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::SetBackgroundValue </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::SetBackgroundValue </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>BackgroundValue</em></span></td><td>)</td>
           <td></td>
@@ -841,8 +841,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a367efc285cccbf276912c8c819c9e9d4" name="a367efc285cccbf276912c8c819c9e9d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a367efc285cccbf276912c8c819c9e9d4">&#9670;&#160;</a></span>SetCrop()</h2>
+<a id="a1ece3254625c58e0f5500be301dec07b" name="a1ece3254625c58e0f5500be301dec07b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ece3254625c58e0f5500be301dec07b">&#9670;&#160;</a></span>SetCrop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -851,7 +851,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::SetCrop </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::SetCrop </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>Crop</em></span></td><td>)</td>
           <td></td>
@@ -873,8 +873,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a8bb87bc9656c1f0025c4cb6405ca3342" name="a8bb87bc9656c1f0025c4cb6405ca3342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bb87bc9656c1f0025c4cb6405ca3342">&#9670;&#160;</a></span>SetCropBorder() <span class="overload">[1/2]</span></h2>
+<a id="a3a556a6c5dca66bf34b448cacfd587c3" name="a3a556a6c5dca66bf34b448cacfd587c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a556a6c5dca66bf34b448cacfd587c3">&#9670;&#160;</a></span>SetCropBorder() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -883,7 +883,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::SetCropBorder </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::SetCropBorder </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; unsigned int &gt;</td>          <td class="paramname"><span class="paramname"><em>CropBorder</em></span></td><td>)</td>
           <td></td>
@@ -903,8 +903,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a5763a0052ce42136f87600c2dca6b6ee" name="a5763a0052ce42136f87600c2dca6b6ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5763a0052ce42136f87600c2dca6b6ee">&#9670;&#160;</a></span>SetCropBorder() <span class="overload">[2/2]</span></h2>
+<a id="aec6cb41bef81fe67504c4546c6c90e97" name="aec6cb41bef81fe67504c4546c6c90e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6cb41bef81fe67504c4546c6c90e97">&#9670;&#160;</a></span>SetCropBorder() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -913,7 +913,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::SetCropBorder </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::SetCropBorder </td>
           <td>(</td>
           <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
@@ -933,8 +933,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a43dff8c094747c6c0936a88d800fabf2" name="a43dff8c094747c6c0936a88d800fabf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43dff8c094747c6c0936a88d800fabf2">&#9670;&#160;</a></span>SetLabel()</h2>
+<a id="aba792fed975c158b9b044e1cd4a012bb" name="aba792fed975c158b9b044e1cd4a012bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba792fed975c158b9b044e1cd4a012bb">&#9670;&#160;</a></span>SetLabel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -943,7 +943,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::SetLabel </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::SetLabel </td>
           <td>(</td>
           <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>Label</em></span></td><td>)</td>
           <td></td>
@@ -963,8 +963,8 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 </div>
 </div>
-<a id="a46e4c2634ceb54bc04992b14a11115c8" name="a46e4c2634ceb54bc04992b14a11115c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46e4c2634ceb54bc04992b14a11115c8">&#9670;&#160;</a></span>SetNegated()</h2>
+<a id="a00a76842654b6eef710a739806135033" name="a00a76842654b6eef710a739806135033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00a76842654b6eef710a739806135033">&#9670;&#160;</a></span>SetNegated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -973,7 +973,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#af2ba1d19a964d6c7a379404c69c14750">Self</a> &amp; itk::simple::LabelMapMaskImageFilter::SetNegated </td>
+          <td class="memname">void itk::simple::LabelMapMaskImageFilter::SetNegated </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>Negated</em></span></td><td>)</td>
           <td></td>

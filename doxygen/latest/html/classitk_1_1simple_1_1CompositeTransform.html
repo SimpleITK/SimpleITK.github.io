@@ -115,7 +115,7 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class contains a stack of transforms and concatenates them by composition. </p>
 <p>The transforms are composed in <b>reverse</b> order with the back being applied first: \( T_0 o T_1 = T_0(T_1(x)) \) Transforms are stored in a queue, in the following order: \( T_0, T_1, ... , T_N-1 \)</p>
-<p>Transforms are added via <a class="el" href="#a40b831b54c8cced8ec9d4665b4660438" title="Add a transform to the back of the stack.">AddTransform()</a>. This adds the transforms to the back of the queue.</p>
+<p>Transforms are added via <a class="el" href="#abf1921cdb9438b34e167758fc44aef82" title="Add a transform to the back of the stack.">AddTransform()</a>. This adds the transforms to the back of the queue.</p>
 <p>The only parameters of the transform at the back of the queue are exposed and optimizable for registration.</p>
 <p>Inverse: The inverse transform is created by retrieving the inverse from each sub transform and adding them to a composite transform in reverse order. The m_TransformsToOptimizeFlags is copied in reverse for the inverse.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CompositeTransform.html">itk::CompositeTransform</a> </dd></dl>
@@ -141,9 +141,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a40b831b54c8cced8ec9d4665b4660438" id="r_a40b831b54c8cced8ec9d4665b4660438"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad60e2639560d211fdd2fb49f7219f23c">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40b831b54c8cced8ec9d4665b4660438">AddTransform</a> (<a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> t)</td></tr>
-<tr class="memdesc:a40b831b54c8cced8ec9d4665b4660438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a transform to the back of the stack.  <br /></td></tr>
-<tr class="separator:a40b831b54c8cced8ec9d4665b4660438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1921cdb9438b34e167758fc44aef82" id="r_abf1921cdb9438b34e167758fc44aef82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf1921cdb9438b34e167758fc44aef82">AddTransform</a> (<a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> t)</td></tr>
+<tr class="memdesc:abf1921cdb9438b34e167758fc44aef82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a transform to the back of the stack.  <br /></td></tr>
+<tr class="separator:abf1921cdb9438b34e167758fc44aef82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0470d86bc3250a258b89d423729075bc" id="r_a0470d86bc3250a258b89d423729075bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0470d86bc3250a258b89d423729075bc">ClearTransforms</a> ()</td></tr>
 <tr class="memdesc:a0470d86bc3250a258b89d423729075bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all transforms from the stack.  <br /></td></tr>
 <tr class="separator:a0470d86bc3250a258b89d423729075bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,9 +159,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b94998ed062009351d2af7d7d222973" id="r_a5b94998ed062009351d2af7d7d222973"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b94998ed062009351d2af7d7d222973">CompositeTransform</a> (unsigned int dimensions)</td></tr>
 <tr class="memdesc:a5b94998ed062009351d2af7d7d222973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an empty <a class="el" href="classitk_1_1simple_1_1CompositeTransform.html" title="This class contains a stack of transforms and concatenates them by composition.">CompositeTransform</a>.  <br /></td></tr>
 <tr class="separator:a5b94998ed062009351d2af7d7d222973"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828c415a26cdb79d110e1a4f99fe0301" id="r_a828c415a26cdb79d110e1a4f99fe0301"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad60e2639560d211fdd2fb49f7219f23c">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a828c415a26cdb79d110e1a4f99fe0301">FlattenTransform</a> ()</td></tr>
-<tr class="memdesc:a828c415a26cdb79d110e1a4f99fe0301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes nested composite transforms.  <br /></td></tr>
-<tr class="separator:a828c415a26cdb79d110e1a4f99fe0301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a462d32327a475c97d0c9d6797f13e753" id="r_a462d32327a475c97d0c9d6797f13e753"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a462d32327a475c97d0c9d6797f13e753">FlattenTransform</a> ()</td></tr>
+<tr class="memdesc:a462d32327a475c97d0c9d6797f13e753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes nested composite transforms.  <br /></td></tr>
+<tr class="separator:a462d32327a475c97d0c9d6797f13e753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c3c62faba446c1a8d9c3bf5cc8cf766" id="r_a7c3c62faba446c1a8d9c3bf5cc8cf766"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c3c62faba446c1a8d9c3bf5cc8cf766">GetBackTransform</a> ()</td></tr>
 <tr class="memdesc:a7c3c62faba446c1a8d9c3bf5cc8cf766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a copy of the back transform.  <br /></td></tr>
 <tr class="separator:a7c3c62faba446c1a8d9c3bf5cc8cf766"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,14 +448,14 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a40b831b54c8cced8ec9d4665b4660438" name="a40b831b54c8cced8ec9d4665b4660438"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40b831b54c8cced8ec9d4665b4660438">&#9670;&#160;</a></span>AddTransform()</h2>
+<a id="abf1921cdb9438b34e167758fc44aef82" name="abf1921cdb9438b34e167758fc44aef82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf1921cdb9438b34e167758fc44aef82">&#9670;&#160;</a></span>AddTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ad60e2639560d211fdd2fb49f7219f23c">Self</a> &amp; itk::simple::CompositeTransform::AddTransform </td>
+          <td class="memname">void itk::simple::CompositeTransform::AddTransform </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a></td>          <td class="paramname"><span class="paramname"><em>t</em></span></td><td>)</td>
           <td></td>
@@ -489,14 +489,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a828c415a26cdb79d110e1a4f99fe0301" name="a828c415a26cdb79d110e1a4f99fe0301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a828c415a26cdb79d110e1a4f99fe0301">&#9670;&#160;</a></span>FlattenTransform()</h2>
+<a id="a462d32327a475c97d0c9d6797f13e753" name="a462d32327a475c97d0c9d6797f13e753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a462d32327a475c97d0c9d6797f13e753">&#9670;&#160;</a></span>FlattenTransform()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ad60e2639560d211fdd2fb49f7219f23c">Self</a> &amp; itk::simple::CompositeTransform::FlattenTransform </td>
+          <td class="memname">void itk::simple::CompositeTransform::FlattenTransform </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

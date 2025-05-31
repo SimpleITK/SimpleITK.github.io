@@ -115,7 +115,7 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Convolve a given image with an arbitrary image kernel. </p>
 <p>This filter operates by centering the flipped kernel at each pixel in the image and computing the inner product between pixel values in the image and pixel values in the kernel. The center of the kernel is defined as \( \lfloor (2*i+s-1)/2 \rfloor \) where \(i\) is the index and \(s\) is the size of the largest possible region of the kernel image. For kernels with odd sizes in all dimensions, this corresponds to the center pixel. If a dimension of the kernel image has an even size, then the center index of the kernel in that dimension will be the largest integral index that is less than the continuous index of the image center.</p>
-<p>The kernel can optionally be normalized to sum to 1 using <a class="el" href="#a595fdfd679b06d81ac160ca94949ef05">NormalizeOn()</a> . Normalization is off by default.</p>
+<p>The kernel can optionally be normalized to sum to 1 using <a class="el" href="#acc8fff4958438f0ed65e2f621eed2998">NormalizeOn()</a> . Normalization is off by default.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This filter ignores the spacing, origin, and orientation of the kernel image and treats them as identical to those in the input image.</dd></dl>
 <p>This code was contributed in the Insight Journal paper:</p>
 <p>"Image Kernel Convolution" by Tustison N., Gee J. <a href="https://doi.org/10.54294/e292kx">https://doi.org/10.54294/e292kx</a></p>
@@ -171,16 +171,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca1dc56707fe929011c07b9e98f06422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad43c6d97d3d16af700427abf09569ee2" id="r_ad43c6d97d3d16af700427abf09569ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a2a187e106cf06af679ec67230e4a40ab">OutputRegionModeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad43c6d97d3d16af700427abf09569ee2">GetOutputRegionMode</a> () const</td></tr>
 <tr class="separator:ad43c6d97d3d16af700427abf09569ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbd6c352925a8c6ff871d4500017f2cc" id="r_acbd6c352925a8c6ff871d4500017f2cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbd6c352925a8c6ff871d4500017f2cc">NormalizeOff</a> ()</td></tr>
-<tr class="separator:acbd6c352925a8c6ff871d4500017f2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a595fdfd679b06d81ac160ca94949ef05" id="r_a595fdfd679b06d81ac160ca94949ef05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a595fdfd679b06d81ac160ca94949ef05">NormalizeOn</a> ()</td></tr>
-<tr class="separator:a595fdfd679b06d81ac160ca94949ef05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a151f265ed4049dbd0c211d0288e03d8b" id="r_a151f265ed4049dbd0c211d0288e03d8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a151f265ed4049dbd0c211d0288e03d8b">SetBoundaryCondition</a> (<a class="el" href="#a554b83360d6ae7a805bc3a510889631e">BoundaryConditionType</a> BoundaryCondition)</td></tr>
-<tr class="separator:a151f265ed4049dbd0c211d0288e03d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade471213e75cd83872768c2bbf9a2b10" id="r_ade471213e75cd83872768c2bbf9a2b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade471213e75cd83872768c2bbf9a2b10">SetNormalize</a> (bool <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">Normalize</a>)</td></tr>
-<tr class="separator:ade471213e75cd83872768c2bbf9a2b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c37f6b991dc01d5d96466ad66a523c1" id="r_a6c37f6b991dc01d5d96466ad66a523c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c37f6b991dc01d5d96466ad66a523c1">SetOutputRegionMode</a> (<a class="el" href="#a2a187e106cf06af679ec67230e4a40ab">OutputRegionModeType</a> OutputRegionMode)</td></tr>
-<tr class="separator:a6c37f6b991dc01d5d96466ad66a523c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a059db8e5838660424dd7893a1ec87e" id="r_a0a059db8e5838660424dd7893a1ec87e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a059db8e5838660424dd7893a1ec87e">NormalizeOff</a> ()</td></tr>
+<tr class="separator:a0a059db8e5838660424dd7893a1ec87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8fff4958438f0ed65e2f621eed2998" id="r_acc8fff4958438f0ed65e2f621eed2998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc8fff4958438f0ed65e2f621eed2998">NormalizeOn</a> ()</td></tr>
+<tr class="separator:acc8fff4958438f0ed65e2f621eed2998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f80a39e7b8173b793ec58b33f1c001" id="r_a99f80a39e7b8173b793ec58b33f1c001"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99f80a39e7b8173b793ec58b33f1c001">SetBoundaryCondition</a> (<a class="el" href="#a554b83360d6ae7a805bc3a510889631e">BoundaryConditionType</a> BoundaryCondition)</td></tr>
+<tr class="separator:a99f80a39e7b8173b793ec58b33f1c001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad18e7e9b160f131a444a06dc05a9daf7" id="r_ad18e7e9b160f131a444a06dc05a9daf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad18e7e9b160f131a444a06dc05a9daf7">SetNormalize</a> (bool <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">Normalize</a>)</td></tr>
+<tr class="separator:ad18e7e9b160f131a444a06dc05a9daf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ca4eb470c603f96890e63f80582a0f" id="r_ae2ca4eb470c603f96890e63f80582a0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2ca4eb470c603f96890e63f80582a0f">SetOutputRegionMode</a> (<a class="el" href="#a2a187e106cf06af679ec67230e4a40ab">OutputRegionModeType</a> OutputRegionMode)</td></tr>
+<tr class="separator:ae2ca4eb470c603f96890e63f80582a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1e9dc80b317f94ddd6080f975a11aa9" id="r_ae1e9dc80b317f94ddd6080f975a11aa9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1e9dc80b317f94ddd6080f975a11aa9">ToString</a> () const</td></tr>
 <tr class="separator:ae1e9dc80b317f94ddd6080f975a11aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d3d446950486c1203d7e639780d54b8" id="r_a2d3d446950486c1203d7e639780d54b8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d3d446950486c1203d7e639780d54b8">~ConvolutionImageFilter</a> ()</td></tr>
@@ -673,8 +673,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="acbd6c352925a8c6ff871d4500017f2cc" name="acbd6c352925a8c6ff871d4500017f2cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbd6c352925a8c6ff871d4500017f2cc">&#9670;&#160;</a></span>NormalizeOff()</h2>
+<a id="a0a059db8e5838660424dd7893a1ec87e" name="a0a059db8e5838660424dd7893a1ec87e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a059db8e5838660424dd7893a1ec87e">&#9670;&#160;</a></span>NormalizeOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -683,7 +683,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp; itk::simple::ConvolutionImageFilter::NormalizeOff </td>
+          <td class="memname">void itk::simple::ConvolutionImageFilter::NormalizeOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -702,8 +702,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a595fdfd679b06d81ac160ca94949ef05" name="a595fdfd679b06d81ac160ca94949ef05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a595fdfd679b06d81ac160ca94949ef05">&#9670;&#160;</a></span>NormalizeOn()</h2>
+<a id="acc8fff4958438f0ed65e2f621eed2998" name="acc8fff4958438f0ed65e2f621eed2998"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8fff4958438f0ed65e2f621eed2998">&#9670;&#160;</a></span>NormalizeOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -712,7 +712,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp; itk::simple::ConvolutionImageFilter::NormalizeOn </td>
+          <td class="memname">void itk::simple::ConvolutionImageFilter::NormalizeOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -732,8 +732,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a151f265ed4049dbd0c211d0288e03d8b" name="a151f265ed4049dbd0c211d0288e03d8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a151f265ed4049dbd0c211d0288e03d8b">&#9670;&#160;</a></span>SetBoundaryCondition()</h2>
+<a id="a99f80a39e7b8173b793ec58b33f1c001" name="a99f80a39e7b8173b793ec58b33f1c001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99f80a39e7b8173b793ec58b33f1c001">&#9670;&#160;</a></span>SetBoundaryCondition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -742,7 +742,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp; itk::simple::ConvolutionImageFilter::SetBoundaryCondition </td>
+          <td class="memname">void itk::simple::ConvolutionImageFilter::SetBoundaryCondition </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a554b83360d6ae7a805bc3a510889631e">BoundaryConditionType</a></td>          <td class="paramname"><span class="paramname"><em>BoundaryCondition</em></span></td><td>)</td>
           <td></td>
@@ -761,8 +761,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ade471213e75cd83872768c2bbf9a2b10" name="ade471213e75cd83872768c2bbf9a2b10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade471213e75cd83872768c2bbf9a2b10">&#9670;&#160;</a></span>SetNormalize()</h2>
+<a id="ad18e7e9b160f131a444a06dc05a9daf7" name="ad18e7e9b160f131a444a06dc05a9daf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad18e7e9b160f131a444a06dc05a9daf7">&#9670;&#160;</a></span>SetNormalize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -771,7 +771,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp; itk::simple::ConvolutionImageFilter::SetNormalize </td>
+          <td class="memname">void itk::simple::ConvolutionImageFilter::SetNormalize </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>Normalize</em></span></td><td>)</td>
           <td></td>
@@ -793,8 +793,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a6c37f6b991dc01d5d96466ad66a523c1" name="a6c37f6b991dc01d5d96466ad66a523c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c37f6b991dc01d5d96466ad66a523c1">&#9670;&#160;</a></span>SetOutputRegionMode()</h2>
+<a id="ae2ca4eb470c603f96890e63f80582a0f" name="ae2ca4eb470c603f96890e63f80582a0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ca4eb470c603f96890e63f80582a0f">&#9670;&#160;</a></span>SetOutputRegionMode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -803,7 +803,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a057d59eb65e91a4161bf13ed1a6cc69f">Self</a> &amp; itk::simple::ConvolutionImageFilter::SetOutputRegionMode </td>
+          <td class="memname">void itk::simple::ConvolutionImageFilter::SetOutputRegionMode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="#a2a187e106cf06af679ec67230e4a40ab">OutputRegionModeType</a></td>          <td class="paramname"><span class="paramname"><em>OutputRegionMode</em></span></td><td>)</td>
           <td></td>

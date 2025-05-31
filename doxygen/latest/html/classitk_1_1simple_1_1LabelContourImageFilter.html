@@ -115,7 +115,7 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Labels the pixels on the border of the objects in a labeled image. </p>
 <p><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html" title="Labels the pixels on the border of the objects in a labeled image.">LabelContourImageFilter</a> takes a labeled image as input, where the pixels in the objects are the pixels with a value different of the BackgroundValue. Only the pixels on the contours of the objects are kept. The pixels not on the border are changed to BackgroundValue. The labels of the object are the same in the input and in the output image.</p>
-<p>The connectivity can be changed to minimum or maximum connectivity with <a class="el" href="#a5b3590fc4f5660e34740beb0c4a58aed">SetFullyConnected()</a> . Full connectivity produces thicker contours.</p>
+<p>The connectivity can be changed to minimum or maximum connectivity with <a class="el" href="#aeb6bc838c2fbe425d2ffca24afcb4764">SetFullyConnected()</a> . Full connectivity produces thicker contours.</p>
 <p><a href="https://doi.org/10.54294/c7d3gv">https://doi.org/10.54294/c7d3gv</a></p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1BinaryContourImageFilter.html" title="Labels the pixels on the border of the objects in a binary image.">BinaryContourImageFilter</a> </dd>
@@ -145,10 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b7dc6fa2fe5f1de7057d852a647b22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6779f3129563e1ed56486f761e8f5c44" id="r_a6779f3129563e1ed56486f761e8f5c44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6779f3129563e1ed56486f761e8f5c44">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
 <tr class="separator:a6779f3129563e1ed56486f761e8f5c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c25fddb50894192757fcf03db1ce568" id="r_a9c25fddb50894192757fcf03db1ce568"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a445578a5438854daa61e12407922d6e1">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c25fddb50894192757fcf03db1ce568">FullyConnectedOff</a> ()</td></tr>
-<tr class="separator:a9c25fddb50894192757fcf03db1ce568"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac45a65ec801c9e81ce4aff368ef3a78b" id="r_ac45a65ec801c9e81ce4aff368ef3a78b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a445578a5438854daa61e12407922d6e1">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac45a65ec801c9e81ce4aff368ef3a78b">FullyConnectedOn</a> ()</td></tr>
-<tr class="separator:ac45a65ec801c9e81ce4aff368ef3a78b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72edfdbe12c36be2fef18d538ae8348f" id="r_a72edfdbe12c36be2fef18d538ae8348f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72edfdbe12c36be2fef18d538ae8348f">FullyConnectedOff</a> ()</td></tr>
+<tr class="separator:a72edfdbe12c36be2fef18d538ae8348f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa904b100d419aebbc7743cd92a05b1" id="r_a0aa904b100d419aebbc7743cd92a05b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0aa904b100d419aebbc7743cd92a05b1">FullyConnectedOn</a> ()</td></tr>
+<tr class="separator:a0aa904b100d419aebbc7743cd92a05b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f587d4991a2dd3d481596f17112ebc" id="r_a81f587d4991a2dd3d481596f17112ebc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81f587d4991a2dd3d481596f17112ebc">GetBackgroundValue</a> () const</td></tr>
 <tr class="separator:a81f587d4991a2dd3d481596f17112ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf9b9b7b30541761191c5a84d7b2409a" id="r_adf9b9b7b30541761191c5a84d7b2409a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf9b9b7b30541761191c5a84d7b2409a">GetFullyConnected</a> () const</td></tr>
@@ -157,10 +157,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a393d7c5b2da60730423fcb104e74a009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36e441b4813e60625f809ab6164858f1" id="r_a36e441b4813e60625f809ab6164858f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36e441b4813e60625f809ab6164858f1">LabelContourImageFilter</a> ()</td></tr>
 <tr class="separator:a36e441b4813e60625f809ab6164858f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72e13f985e0ad1a96d2d49f7e2c36530" id="r_a72e13f985e0ad1a96d2d49f7e2c36530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a445578a5438854daa61e12407922d6e1">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72e13f985e0ad1a96d2d49f7e2c36530">SetBackgroundValue</a> (double BackgroundValue)</td></tr>
-<tr class="separator:a72e13f985e0ad1a96d2d49f7e2c36530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b3590fc4f5660e34740beb0c4a58aed" id="r_a5b3590fc4f5660e34740beb0c4a58aed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a445578a5438854daa61e12407922d6e1">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b3590fc4f5660e34740beb0c4a58aed">SetFullyConnected</a> (bool FullyConnected)</td></tr>
-<tr class="separator:a5b3590fc4f5660e34740beb0c4a58aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90da73bec4fcfb0acde1fe3647ab9dc" id="r_ab90da73bec4fcfb0acde1fe3647ab9dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab90da73bec4fcfb0acde1fe3647ab9dc">SetBackgroundValue</a> (double BackgroundValue)</td></tr>
+<tr class="separator:ab90da73bec4fcfb0acde1fe3647ab9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6bc838c2fbe425d2ffca24afcb4764" id="r_aeb6bc838c2fbe425d2ffca24afcb4764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb6bc838c2fbe425d2ffca24afcb4764">SetFullyConnected</a> (bool FullyConnected)</td></tr>
+<tr class="separator:aeb6bc838c2fbe425d2ffca24afcb4764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abacb69186ebd2e8fb8750f8dd6abf39e" id="r_abacb69186ebd2e8fb8750f8dd6abf39e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abacb69186ebd2e8fb8750f8dd6abf39e">ToString</a> () const</td></tr>
 <tr class="separator:abacb69186ebd2e8fb8750f8dd6abf39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3ebad27e5b5413da0a396d596dbf7ab" id="r_aa3ebad27e5b5413da0a396d596dbf7ab"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3ebad27e5b5413da0a396d596dbf7ab">~LabelContourImageFilter</a> ()</td></tr>
@@ -503,8 +503,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a9c25fddb50894192757fcf03db1ce568" name="a9c25fddb50894192757fcf03db1ce568"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c25fddb50894192757fcf03db1ce568">&#9670;&#160;</a></span>FullyConnectedOff()</h2>
+<a id="a72edfdbe12c36be2fef18d538ae8348f" name="a72edfdbe12c36be2fef18d538ae8348f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72edfdbe12c36be2fef18d538ae8348f">&#9670;&#160;</a></span>FullyConnectedOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,7 +513,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a445578a5438854daa61e12407922d6e1">Self</a> &amp; itk::simple::LabelContourImageFilter::FullyConnectedOff </td>
+          <td class="memname">void itk::simple::LabelContourImageFilter::FullyConnectedOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -532,8 +532,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ac45a65ec801c9e81ce4aff368ef3a78b" name="ac45a65ec801c9e81ce4aff368ef3a78b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac45a65ec801c9e81ce4aff368ef3a78b">&#9670;&#160;</a></span>FullyConnectedOn()</h2>
+<a id="a0aa904b100d419aebbc7743cd92a05b1" name="a0aa904b100d419aebbc7743cd92a05b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa904b100d419aebbc7743cd92a05b1">&#9670;&#160;</a></span>FullyConnectedOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,7 +542,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a445578a5438854daa61e12407922d6e1">Self</a> &amp; itk::simple::LabelContourImageFilter::FullyConnectedOn </td>
+          <td class="memname">void itk::simple::LabelContourImageFilter::FullyConnectedOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -652,8 +652,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a72e13f985e0ad1a96d2d49f7e2c36530" name="a72e13f985e0ad1a96d2d49f7e2c36530"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72e13f985e0ad1a96d2d49f7e2c36530">&#9670;&#160;</a></span>SetBackgroundValue()</h2>
+<a id="ab90da73bec4fcfb0acde1fe3647ab9dc" name="ab90da73bec4fcfb0acde1fe3647ab9dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90da73bec4fcfb0acde1fe3647ab9dc">&#9670;&#160;</a></span>SetBackgroundValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,7 +662,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a445578a5438854daa61e12407922d6e1">Self</a> &amp; itk::simple::LabelContourImageFilter::SetBackgroundValue </td>
+          <td class="memname">void itk::simple::LabelContourImageFilter::SetBackgroundValue </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>BackgroundValue</em></span></td><td>)</td>
           <td></td>
@@ -682,8 +682,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a5b3590fc4f5660e34740beb0c4a58aed" name="a5b3590fc4f5660e34740beb0c4a58aed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b3590fc4f5660e34740beb0c4a58aed">&#9670;&#160;</a></span>SetFullyConnected()</h2>
+<a id="aeb6bc838c2fbe425d2ffca24afcb4764" name="aeb6bc838c2fbe425d2ffca24afcb4764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6bc838c2fbe425d2ffca24afcb4764">&#9670;&#160;</a></span>SetFullyConnected()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -692,7 +692,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a445578a5438854daa61e12407922d6e1">Self</a> &amp; itk::simple::LabelContourImageFilter::SetFullyConnected </td>
+          <td class="memname">void itk::simple::LabelContourImageFilter::SetFullyConnected </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>FullyConnected</em></span></td><td>)</td>
           <td></td>

@@ -114,7 +114,7 @@ $(function(){ initResizable(false); });
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Paste an image (or a constant value) into another image. </p>
-<p><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html" title="Paste an image (or a constant value) into another image.">PasteImageFilter</a> allows a region in a destination image to be filled with a source image or a constant pixel value. The <a class="el" href="#a842168320df8f6ac719642c56374eaf4">SetDestinationIndex()</a> method prescribes where in the destination input to start pasting data from the source input. The SetSourceRegion method prescribes the section of the second image to paste into the first. When a constant pixel value is set, the SourceRegion describes the size of the region filled. If the output requested region does not include the SourceRegion after it has been repositioned to DestinationIndex, then the output will just be a copy of the input.</p>
+<p><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html" title="Paste an image (or a constant value) into another image.">PasteImageFilter</a> allows a region in a destination image to be filled with a source image or a constant pixel value. The <a class="el" href="#a9820dfd64e547f4d1dfed53d6da851de">SetDestinationIndex()</a> method prescribes where in the destination input to start pasting data from the source input. The SetSourceRegion method prescribes the section of the second image to paste into the first. When a constant pixel value is set, the SourceRegion describes the size of the region filled. If the output requested region does not include the SourceRegion after it has been repositioned to DestinationIndex, then the output will just be a copy of the input.</p>
 <p>This filter supports running "InPlace" to efficiently reuses the destination image buffer for the output, removing the need to copy the destination pixels to the output.</p>
 <p>When the source image is a lower dimension than the destination image then the DestinationSkipAxes parameter specifies which axes in the destination image are set to 1 when copying the region or filling with a constant. </p>
 
@@ -155,14 +155,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a58efb18351ab01e268d4777683c11ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f892d9ac49fae55a3182baf83100e8c" id="r_a5f892d9ac49fae55a3182baf83100e8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f892d9ac49fae55a3182baf83100e8c">PasteImageFilter</a> ()</td></tr>
 <tr class="separator:a5f892d9ac49fae55a3182baf83100e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a842168320df8f6ac719642c56374eaf4" id="r_a842168320df8f6ac719642c56374eaf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a28ff0f709e396435ad36b576ade81ade">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a842168320df8f6ac719642c56374eaf4">SetDestinationIndex</a> (std::vector&lt; int &gt; DestinationIndex)</td></tr>
-<tr class="separator:a842168320df8f6ac719642c56374eaf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2eae67d7bb81bac385377d6dd012ac1" id="r_ab2eae67d7bb81bac385377d6dd012ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a28ff0f709e396435ad36b576ade81ade">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2eae67d7bb81bac385377d6dd012ac1">SetDestinationSkipAxes</a> (std::vector&lt; bool &gt; DestinationSkipAxes)</td></tr>
-<tr class="separator:ab2eae67d7bb81bac385377d6dd012ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13a05b3f88329c73a22c72e2fa4560bd" id="r_a13a05b3f88329c73a22c72e2fa4560bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a28ff0f709e396435ad36b576ade81ade">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13a05b3f88329c73a22c72e2fa4560bd">SetSourceIndex</a> (std::vector&lt; int &gt; SourceIndex)</td></tr>
-<tr class="separator:a13a05b3f88329c73a22c72e2fa4560bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a252808fbf7414c49ad4550ef68dc7c88" id="r_a252808fbf7414c49ad4550ef68dc7c88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a28ff0f709e396435ad36b576ade81ade">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a252808fbf7414c49ad4550ef68dc7c88">SetSourceSize</a> (std::vector&lt; unsigned int &gt; SourceSize)</td></tr>
-<tr class="separator:a252808fbf7414c49ad4550ef68dc7c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9820dfd64e547f4d1dfed53d6da851de" id="r_a9820dfd64e547f4d1dfed53d6da851de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9820dfd64e547f4d1dfed53d6da851de">SetDestinationIndex</a> (std::vector&lt; int &gt; DestinationIndex)</td></tr>
+<tr class="separator:a9820dfd64e547f4d1dfed53d6da851de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb6a79a30806b6a1cd45c1be3580c6e" id="r_adcb6a79a30806b6a1cd45c1be3580c6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcb6a79a30806b6a1cd45c1be3580c6e">SetDestinationSkipAxes</a> (std::vector&lt; bool &gt; DestinationSkipAxes)</td></tr>
+<tr class="separator:adcb6a79a30806b6a1cd45c1be3580c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad19fc63b8a5173edc8e5c5676583e10f" id="r_ad19fc63b8a5173edc8e5c5676583e10f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad19fc63b8a5173edc8e5c5676583e10f">SetSourceIndex</a> (std::vector&lt; int &gt; SourceIndex)</td></tr>
+<tr class="separator:ad19fc63b8a5173edc8e5c5676583e10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795bd35cd45276960fd3cfa8a3d7573b" id="r_a795bd35cd45276960fd3cfa8a3d7573b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a795bd35cd45276960fd3cfa8a3d7573b">SetSourceSize</a> (std::vector&lt; unsigned int &gt; SourceSize)</td></tr>
+<tr class="separator:a795bd35cd45276960fd3cfa8a3d7573b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c49ba314f3d3b588111f4a47a60a57f" id="r_a8c49ba314f3d3b588111f4a47a60a57f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c49ba314f3d3b588111f4a47a60a57f">ToString</a> () const</td></tr>
 <tr class="separator:a8c49ba314f3d3b588111f4a47a60a57f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeca83068fa996479f91b8b926f908bba" id="r_aeca83068fa996479f91b8b926f908bba"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeca83068fa996479f91b8b926f908bba">~PasteImageFilter</a> ()</td></tr>
@@ -376,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -600,7 +600,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00208">detail::MemberFunctionAddressor&lt; MemberFunction2Type &gt;</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00200">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00204">detail::MemberFunctionAddressor&lt; MemberFunction2Type &gt;</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00196">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -731,9 +731,9 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the destination index (where in the first input the second input will be pasted. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00216">m_DestinationIndex</a>.</p>
+<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00212">m_DestinationIndex</a>.</p>
 
 </div>
 </div>
@@ -763,9 +763,9 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 <p>The axes with true values are set to 1, to fill the difference between the dimension of the input and source image. The number of true values in DestinationSkipAxes plus the DestinationImageDimension must equal the InputImageDimension.</p>
 <p>By default this array contains SourceImageDimension false values followed by true values for the remainder. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00218">m_DestinationSkipAxes</a>.</p>
+<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00214">m_DestinationSkipAxes</a>.</p>
 
 </div>
 </div>
@@ -795,7 +795,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -822,9 +822,9 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00214">m_SourceIndex</a>.</p>
+<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00210">m_SourceIndex</a>.</p>
 
 </div>
 </div>
@@ -851,14 +851,14 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00212">m_SourceSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00208">m_SourceSize</a>.</p>
 
 </div>
 </div>
-<a id="a842168320df8f6ac719642c56374eaf4" name="a842168320df8f6ac719642c56374eaf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a842168320df8f6ac719642c56374eaf4">&#9670;&#160;</a></span>SetDestinationIndex()</h2>
+<a id="a9820dfd64e547f4d1dfed53d6da851de" name="a9820dfd64e547f4d1dfed53d6da851de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9820dfd64e547f4d1dfed53d6da851de">&#9670;&#160;</a></span>SetDestinationIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -867,7 +867,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a28ff0f709e396435ad36b576ade81ade">Self</a> &amp; itk::simple::PasteImageFilter::SetDestinationIndex </td>
+          <td class="memname">void itk::simple::PasteImageFilter::SetDestinationIndex </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>DestinationIndex</em></span></td><td>)</td>
           <td></td>
@@ -883,14 +883,14 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a7">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00216">m_DestinationIndex</a>.</p>
+<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00212">m_DestinationIndex</a>.</p>
 
 </div>
 </div>
-<a id="ab2eae67d7bb81bac385377d6dd012ac1" name="ab2eae67d7bb81bac385377d6dd012ac1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2eae67d7bb81bac385377d6dd012ac1">&#9670;&#160;</a></span>SetDestinationSkipAxes()</h2>
+<a id="adcb6a79a30806b6a1cd45c1be3580c6e" name="adcb6a79a30806b6a1cd45c1be3580c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb6a79a30806b6a1cd45c1be3580c6e">&#9670;&#160;</a></span>SetDestinationSkipAxes()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -899,7 +899,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a28ff0f709e396435ad36b576ade81ade">Self</a> &amp; itk::simple::PasteImageFilter::SetDestinationSkipAxes </td>
+          <td class="memname">void itk::simple::PasteImageFilter::SetDestinationSkipAxes </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; bool &gt;</td>          <td class="paramname"><span class="paramname"><em>DestinationSkipAxes</em></span></td><td>)</td>
           <td></td>
@@ -915,14 +915,14 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 <p>The axes with true values are set to 1, to fill the difference between the dimension of the input and source image. The number of true value in DestinationSkipAxes plus the DestinationImageDimension must equal the InputImageDimension.</p>
 <p>By default this array contains SourceImageDimension false values followed by true values for the remainder. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00218">m_DestinationSkipAxes</a>.</p>
+<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00214">m_DestinationSkipAxes</a>.</p>
 
 </div>
 </div>
-<a id="a13a05b3f88329c73a22c72e2fa4560bd" name="a13a05b3f88329c73a22c72e2fa4560bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13a05b3f88329c73a22c72e2fa4560bd">&#9670;&#160;</a></span>SetSourceIndex()</h2>
+<a id="ad19fc63b8a5173edc8e5c5676583e10f" name="ad19fc63b8a5173edc8e5c5676583e10f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad19fc63b8a5173edc8e5c5676583e10f">&#9670;&#160;</a></span>SetSourceIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -931,7 +931,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a28ff0f709e396435ad36b576ade81ade">Self</a> &amp; itk::simple::PasteImageFilter::SetSourceIndex </td>
+          <td class="memname">void itk::simple::PasteImageFilter::SetSourceIndex </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>SourceIndex</em></span></td><td>)</td>
           <td></td>
@@ -944,14 +944,14 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00214">m_SourceIndex</a>.</p>
+<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00210">m_SourceIndex</a>.</p>
 
 </div>
 </div>
-<a id="a252808fbf7414c49ad4550ef68dc7c88" name="a252808fbf7414c49ad4550ef68dc7c88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a252808fbf7414c49ad4550ef68dc7c88">&#9670;&#160;</a></span>SetSourceSize()</h2>
+<a id="a795bd35cd45276960fd3cfa8a3d7573b" name="a795bd35cd45276960fd3cfa8a3d7573b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795bd35cd45276960fd3cfa8a3d7573b">&#9670;&#160;</a></span>SetSourceSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -960,7 +960,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a28ff0f709e396435ad36b576ade81ade">Self</a> &amp; itk::simple::PasteImageFilter::SetSourceSize </td>
+          <td class="memname">void itk::simple::PasteImageFilter::SetSourceSize </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; unsigned int &gt;</td>          <td class="paramname"><span class="paramname"><em>SourceSize</em></span></td><td>)</td>
           <td></td>
@@ -977,7 +977,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00212">m_SourceSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkPasteImageFilter_8h_source.html#l00208">m_SourceSize</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1030,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#afd8b95c68b55a49395ae0109667d6659">ExecuteInternal()</a>.</p>
 
@@ -1056,7 +1056,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#afd8b95c68b55a49395ae0109667d6659">ExecuteInternal()</a>.</p>
 
@@ -1083,9 +1083,9 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00216">216</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00212">212</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00119">GetDestinationIndex()</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00109">SetDestinationIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00116">GetDestinationIndex()</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00107">SetDestinationIndex()</a>.</p>
 
 </div>
 </div>
@@ -1109,9 +1109,9 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00218">218</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00214">214</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00149">GetDestinationSkipAxes()</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00134">SetDestinationSkipAxes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00145">GetDestinationSkipAxes()</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00131">SetDestinationSkipAxes()</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1135,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00220">220</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00216">216</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1159,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1183,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1207,9 +1207,9 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00214">214</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00210">210</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00100">GetSourceIndex()</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00091">SetSourceIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00098">GetSourceIndex()</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00090">SetSourceIndex()</a>.</p>
 
 </div>
 </div>
@@ -1233,9 +1233,9 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00212">212</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00208">208</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00083">GetSourceSize()</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00074">SetSourceSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPasteImageFilter_8h_source.html#l00082">GetSourceSize()</a>, and <a class="el" href="sitkPasteImageFilter_8h_source.html#l00074">SetSourceSize()</a>.</p>
 
 </div>
 </div>

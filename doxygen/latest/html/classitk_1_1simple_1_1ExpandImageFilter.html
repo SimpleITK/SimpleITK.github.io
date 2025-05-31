@@ -116,7 +116,7 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p>Expand the size of an image by an integer factor in each dimension. </p>
 <p><a class="el" href="classitk_1_1simple_1_1ExpandImageFilter.html" title="Expand the size of an image by an integer factor in each dimension.">ExpandImageFilter</a> increases the size of an image by an integer factor in each dimension using a interpolation method. The output image size in each dimension is given by:</p>
 <p>OutputSize[j] = InputSize[j] * ExpandFactors[j]</p>
-<p>The output values are obtained by interpolating the input image. The default interpolation type used is the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">LinearInterpolateImageFunction</a> . The user can specify a particular interpolation function via <a class="el" href="#ae60603d08ab226ee8ffd01cfc3e453f4">SetInterpolator()</a> . Note that the input interpolator must derive from base class <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InterpolateImageFunction.html">InterpolateImageFunction</a> .</p>
+<p>The output values are obtained by interpolating the input image. The default interpolation type used is the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">LinearInterpolateImageFunction</a> . The user can specify a particular interpolation function via <a class="el" href="#a082f98fc8db389c94952d3bd391fb4b4">SetInterpolator()</a> . Note that the input interpolator must derive from base class <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InterpolateImageFunction.html">InterpolateImageFunction</a> .</p>
 <p>This filter will produce an output with different pixel spacing that its input image such that:</p>
 <p>OutputSpacing[j] = InputSpacing[j] / ExpandFactors[j]</p>
 <p>The filter is templated over the input image type and the output image type.</p>
@@ -157,14 +157,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae1fe1ee0387964e255b22e5e8aea4fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aaf2a9a4fbf6573ce8b7cc799b9ce32" id="r_a1aaf2a9a4fbf6573ce8b7cc799b9ce32"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aaf2a9a4fbf6573ce8b7cc799b9ce32">GetName</a> () const</td></tr>
 <tr class="separator:a1aaf2a9a4fbf6573ce8b7cc799b9ce32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace26928a2742610472372ad1f38c9cbb" id="r_ace26928a2742610472372ad1f38c9cbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0db5c11670a326b686963a9a6af4010d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace26928a2742610472372ad1f38c9cbb">SetExpandFactor</a> (unsigned int e)</td></tr>
-<tr class="separator:ace26928a2742610472372ad1f38c9cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe778821c099640df1cd7ee7ce55764b" id="r_afe778821c099640df1cd7ee7ce55764b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0db5c11670a326b686963a9a6af4010d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe778821c099640df1cd7ee7ce55764b">SetExpandFactors</a> (std::vector&lt; unsigned int &gt; ExpandFactors)</td></tr>
-<tr class="separator:afe778821c099640df1cd7ee7ce55764b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eae5f5ae73884011e38f5cb357577a6" id="r_a9eae5f5ae73884011e38f5cb357577a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0db5c11670a326b686963a9a6af4010d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eae5f5ae73884011e38f5cb357577a6">SetExpandFactors</a> (unsigned int value)</td></tr>
-<tr class="separator:a9eae5f5ae73884011e38f5cb357577a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae60603d08ab226ee8ffd01cfc3e453f4" id="r_ae60603d08ab226ee8ffd01cfc3e453f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0db5c11670a326b686963a9a6af4010d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae60603d08ab226ee8ffd01cfc3e453f4">SetInterpolator</a> (<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> Interpolator)</td></tr>
-<tr class="separator:ae60603d08ab226ee8ffd01cfc3e453f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99980e0f2e83af19a5bf71c71d4fec12" id="r_a99980e0f2e83af19a5bf71c71d4fec12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99980e0f2e83af19a5bf71c71d4fec12">SetExpandFactor</a> (unsigned int e)</td></tr>
+<tr class="separator:a99980e0f2e83af19a5bf71c71d4fec12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97e5d35f5af6ce54f671737a90b2882" id="r_ab97e5d35f5af6ce54f671737a90b2882"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab97e5d35f5af6ce54f671737a90b2882">SetExpandFactors</a> (std::vector&lt; unsigned int &gt; ExpandFactors)</td></tr>
+<tr class="separator:ab97e5d35f5af6ce54f671737a90b2882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81303a25baeebecd300cba8318610b7d" id="r_a81303a25baeebecd300cba8318610b7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81303a25baeebecd300cba8318610b7d">SetExpandFactors</a> (unsigned int value)</td></tr>
+<tr class="separator:a81303a25baeebecd300cba8318610b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082f98fc8db389c94952d3bd391fb4b4" id="r_a082f98fc8db389c94952d3bd391fb4b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a082f98fc8db389c94952d3bd391fb4b4">SetInterpolator</a> (<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> Interpolator)</td></tr>
+<tr class="separator:a082f98fc8db389c94952d3bd391fb4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd733aaca7ee9361bfdf72fddf35c8d1" id="r_acd733aaca7ee9361bfdf72fddf35c8d1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd733aaca7ee9361bfdf72fddf35c8d1">ToString</a> () const</td></tr>
 <tr class="separator:acd733aaca7ee9361bfdf72fddf35c8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4412e64057eed6499d4857e51d93cc59" id="r_a4412e64057eed6499d4857e51d93cc59"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4412e64057eed6499d4857e51d93cc59">~ExpandImageFilter</a> ()</td></tr>
@@ -611,8 +611,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ace26928a2742610472372ad1f38c9cbb" name="ace26928a2742610472372ad1f38c9cbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace26928a2742610472372ad1f38c9cbb">&#9670;&#160;</a></span>SetExpandFactor()</h2>
+<a id="a99980e0f2e83af19a5bf71c71d4fec12" name="a99980e0f2e83af19a5bf71c71d4fec12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99980e0f2e83af19a5bf71c71d4fec12">&#9670;&#160;</a></span>SetExpandFactor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -621,7 +621,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a0db5c11670a326b686963a9a6af4010d">Self</a> &amp; itk::simple::ExpandImageFilter::SetExpandFactor </td>
+          <td class="memname">void itk::simple::ExpandImageFilter::SetExpandFactor </td>
           <td>(</td>
           <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>e</em></span></td><td>)</td>
           <td></td>
@@ -641,8 +641,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="afe778821c099640df1cd7ee7ce55764b" name="afe778821c099640df1cd7ee7ce55764b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe778821c099640df1cd7ee7ce55764b">&#9670;&#160;</a></span>SetExpandFactors() <span class="overload">[1/2]</span></h2>
+<a id="ab97e5d35f5af6ce54f671737a90b2882" name="ab97e5d35f5af6ce54f671737a90b2882"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab97e5d35f5af6ce54f671737a90b2882">&#9670;&#160;</a></span>SetExpandFactors() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -651,7 +651,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a0db5c11670a326b686963a9a6af4010d">Self</a> &amp; itk::simple::ExpandImageFilter::SetExpandFactors </td>
+          <td class="memname">void itk::simple::ExpandImageFilter::SetExpandFactors </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; unsigned int &gt;</td>          <td class="paramname"><span class="paramname"><em>ExpandFactors</em></span></td><td>)</td>
           <td></td>
@@ -671,8 +671,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a9eae5f5ae73884011e38f5cb357577a6" name="a9eae5f5ae73884011e38f5cb357577a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9eae5f5ae73884011e38f5cb357577a6">&#9670;&#160;</a></span>SetExpandFactors() <span class="overload">[2/2]</span></h2>
+<a id="a81303a25baeebecd300cba8318610b7d" name="a81303a25baeebecd300cba8318610b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81303a25baeebecd300cba8318610b7d">&#9670;&#160;</a></span>SetExpandFactors() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,7 +681,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a0db5c11670a326b686963a9a6af4010d">Self</a> &amp; itk::simple::ExpandImageFilter::SetExpandFactors </td>
+          <td class="memname">void itk::simple::ExpandImageFilter::SetExpandFactors </td>
           <td>(</td>
           <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
           <td></td>
@@ -701,8 +701,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ae60603d08ab226ee8ffd01cfc3e453f4" name="ae60603d08ab226ee8ffd01cfc3e453f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae60603d08ab226ee8ffd01cfc3e453f4">&#9670;&#160;</a></span>SetInterpolator()</h2>
+<a id="a082f98fc8db389c94952d3bd391fb4b4" name="a082f98fc8db389c94952d3bd391fb4b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082f98fc8db389c94952d3bd391fb4b4">&#9670;&#160;</a></span>SetInterpolator()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -711,7 +711,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a0db5c11670a326b686963a9a6af4010d">Self</a> &amp; itk::simple::ExpandImageFilter::SetInterpolator </td>
+          <td class="memname">void itk::simple::ExpandImageFilter::SetInterpolator </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a></td>          <td class="paramname"><span class="paramname"><em>Interpolator</em></span></td><td>)</td>
           <td></td>

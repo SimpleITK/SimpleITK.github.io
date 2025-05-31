@@ -114,7 +114,7 @@ $(function(){ initResizable(false); });
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="elRef" href="https://www.itk.org/Doxygen/html/classLabel.html">Label</a> pixels that are connected to one set of seeds but not another. </p>
-<p><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html" title="Label pixels that are connected to one set of seeds but not another.">IsolatedConnectedImageFilter</a> finds the optimal threshold to separate two regions. It has two modes, one to separate dark regions surrounded by bright regions by automatically finding a minimum isolating upper threshold, and another to separate bright regions surrounded by dark regions by automatically finding a maximum lower isolating threshold. The mode can be chosen by setting <a class="el" href="#a2ca4d108f4052def302781ed7e1b22bb">FindUpperThresholdOn()</a> /Off(). In both cases, the isolating threshold is retrieved with <a class="el" href="#a4cba44b9bc8718b844dadda7624dc01c">GetIsolatedValue()</a> .</p>
+<p><a class="el" href="classitk_1_1simple_1_1IsolatedConnectedImageFilter.html" title="Label pixels that are connected to one set of seeds but not another.">IsolatedConnectedImageFilter</a> finds the optimal threshold to separate two regions. It has two modes, one to separate dark regions surrounded by bright regions by automatically finding a minimum isolating upper threshold, and another to separate bright regions surrounded by dark regions by automatically finding a maximum lower isolating threshold. The mode can be chosen by setting <a class="el" href="#aa0162c104b469fab54a3ee7329752b64">FindUpperThresholdOn()</a> /Off(). In both cases, the isolating threshold is retrieved with <a class="el" href="#a4cba44b9bc8718b844dadda7624dc01c">GetIsolatedValue()</a> .</p>
 <p>The algorithm labels pixels with ReplaceValue that are connected to Seeds1 AND NOT connected to Seeds2. When finding the threshold to separate two dark regions surrounded by bright regions, given a fixed lower threshold, the filter adjusts the upper threshold until the two sets of seeds are not connected. The algorithm uses a binary search to adjust the upper threshold, starting at Upper. The reverse is true for finding the threshold to separate two bright regions. Lower defaults to the smallest possible value for the InputImagePixelType, and Upper defaults to the largest possible value for the InputImagePixelType.</p>
 <p>The user can also supply the Lower and Upper values to restrict the search. However, if the range is too restrictive, it could happen that no isolating threshold can be found between the user specified Lower and Upper values. Therefore, unless the user is sure of the bounds to set, it is recommended that the user set these values to the lowest and highest intensity values in the image, respectively.</p>
 <p>The user can specify more than one seed for both regions to separate. The algorithm will try find the threshold that ensures that all of the first seeds are contained in the resulting segmentation and all of the second seeds are not contained in the segmentation.</p>
@@ -141,10 +141,10 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a005fe9790f5b36d527133908984f95d5" id="r_a005fe9790f5b36d527133908984f95d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a005fe9790f5b36d527133908984f95d5">Execute</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a005fe9790f5b36d527133908984f95d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab57b49a6c54588b071250957ad97cbe8" id="r_ab57b49a6c54588b071250957ad97cbe8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab57b49a6c54588b071250957ad97cbe8">FindUpperThresholdOff</a> ()</td></tr>
-<tr class="separator:ab57b49a6c54588b071250957ad97cbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ca4d108f4052def302781ed7e1b22bb" id="r_a2ca4d108f4052def302781ed7e1b22bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ca4d108f4052def302781ed7e1b22bb">FindUpperThresholdOn</a> ()</td></tr>
-<tr class="separator:a2ca4d108f4052def302781ed7e1b22bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d795035b2c66853aef5164393a6d4e" id="r_ac8d795035b2c66853aef5164393a6d4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8d795035b2c66853aef5164393a6d4e">FindUpperThresholdOff</a> ()</td></tr>
+<tr class="separator:ac8d795035b2c66853aef5164393a6d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0162c104b469fab54a3ee7329752b64" id="r_aa0162c104b469fab54a3ee7329752b64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0162c104b469fab54a3ee7329752b64">FindUpperThresholdOn</a> ()</td></tr>
+<tr class="separator:aa0162c104b469fab54a3ee7329752b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22261d8fcc04b2c40975523372e31ae1" id="r_a22261d8fcc04b2c40975523372e31ae1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22261d8fcc04b2c40975523372e31ae1">GetFindUpperThreshold</a> () const</td></tr>
 <tr class="separator:a22261d8fcc04b2c40975523372e31ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cba44b9bc8718b844dadda7624dc01c" id="r_a4cba44b9bc8718b844dadda7624dc01c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cba44b9bc8718b844dadda7624dc01c">GetIsolatedValue</a> () const</td></tr>
@@ -167,20 +167,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a319fd4d8e7139f41de7f1f833388a77d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab37099d3413b05f619acd05190963bc7" id="r_ab37099d3413b05f619acd05190963bc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab37099d3413b05f619acd05190963bc7">IsolatedConnectedImageFilter</a> ()</td></tr>
 <tr class="separator:ab37099d3413b05f619acd05190963bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a002a9ec2e57785b3228f4991bc46c0d5" id="r_a002a9ec2e57785b3228f4991bc46c0d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a002a9ec2e57785b3228f4991bc46c0d5">SetFindUpperThreshold</a> (bool FindUpperThreshold)</td></tr>
-<tr class="separator:a002a9ec2e57785b3228f4991bc46c0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af95b2052bab4208872b834d64010eed4" id="r_af95b2052bab4208872b834d64010eed4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af95b2052bab4208872b834d64010eed4">SetIsolatedValueTolerance</a> (double IsolatedValueTolerance)</td></tr>
-<tr class="separator:af95b2052bab4208872b834d64010eed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a86621794986718de122024b0656af9" id="r_a4a86621794986718de122024b0656af9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a86621794986718de122024b0656af9">SetLower</a> (double Lower)</td></tr>
-<tr class="separator:a4a86621794986718de122024b0656af9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a771f5bededb3846ab3643501b98c7bb3" id="r_a771f5bededb3846ab3643501b98c7bb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a771f5bededb3846ab3643501b98c7bb3">SetReplaceValue</a> (uint8_t ReplaceValue)</td></tr>
-<tr class="separator:a771f5bededb3846ab3643501b98c7bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade857007e7a78875113c847fc195999c" id="r_ade857007e7a78875113c847fc195999c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade857007e7a78875113c847fc195999c">SetSeed1</a> (std::vector&lt; unsigned int &gt; Seed1)</td></tr>
-<tr class="separator:ade857007e7a78875113c847fc195999c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb4bffeeb90bc9206f4eac31b46da507" id="r_adb4bffeeb90bc9206f4eac31b46da507"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb4bffeeb90bc9206f4eac31b46da507">SetSeed2</a> (std::vector&lt; unsigned int &gt; Seed2)</td></tr>
-<tr class="separator:adb4bffeeb90bc9206f4eac31b46da507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d42697e25eb02ed15ebc67c53e20c5" id="r_a61d42697e25eb02ed15ebc67c53e20c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61d42697e25eb02ed15ebc67c53e20c5">SetUpper</a> (double Upper)</td></tr>
-<tr class="separator:a61d42697e25eb02ed15ebc67c53e20c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32186022281750d5643f1022f5cb91e5" id="r_a32186022281750d5643f1022f5cb91e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32186022281750d5643f1022f5cb91e5">SetFindUpperThreshold</a> (bool FindUpperThreshold)</td></tr>
+<tr class="separator:a32186022281750d5643f1022f5cb91e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362bdb7c5c3fcf692939989fe5ae37cd" id="r_a362bdb7c5c3fcf692939989fe5ae37cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a362bdb7c5c3fcf692939989fe5ae37cd">SetIsolatedValueTolerance</a> (double IsolatedValueTolerance)</td></tr>
+<tr class="separator:a362bdb7c5c3fcf692939989fe5ae37cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da01e7a2be61e26715f3faa242110e1" id="r_a8da01e7a2be61e26715f3faa242110e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8da01e7a2be61e26715f3faa242110e1">SetLower</a> (double Lower)</td></tr>
+<tr class="separator:a8da01e7a2be61e26715f3faa242110e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27de230c5347b93b7c246fc8ab230fc" id="r_ab27de230c5347b93b7c246fc8ab230fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab27de230c5347b93b7c246fc8ab230fc">SetReplaceValue</a> (uint8_t ReplaceValue)</td></tr>
+<tr class="separator:ab27de230c5347b93b7c246fc8ab230fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7356eaefbe4a4b3c3924acec497b69" id="r_a5b7356eaefbe4a4b3c3924acec497b69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b7356eaefbe4a4b3c3924acec497b69">SetSeed1</a> (std::vector&lt; unsigned int &gt; Seed1)</td></tr>
+<tr class="separator:a5b7356eaefbe4a4b3c3924acec497b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0609f92d20e24a4d7a8bf0884dab0be" id="r_ab0609f92d20e24a4d7a8bf0884dab0be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0609f92d20e24a4d7a8bf0884dab0be">SetSeed2</a> (std::vector&lt; unsigned int &gt; Seed2)</td></tr>
+<tr class="separator:ab0609f92d20e24a4d7a8bf0884dab0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef26bdeab3c5b620ae41e3fd83d13ac5" id="r_aef26bdeab3c5b620ae41e3fd83d13ac5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef26bdeab3c5b620ae41e3fd83d13ac5">SetUpper</a> (double Upper)</td></tr>
+<tr class="separator:aef26bdeab3c5b620ae41e3fd83d13ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acec815745fc494270395e64a3f760548" id="r_acec815745fc494270395e64a3f760548"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acec815745fc494270395e64a3f760548">ToString</a> () const</td></tr>
 <tr class="separator:acec815745fc494270395e64a3f760548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80624be96a7d628a1d0afae98a724807" id="r_a80624be96a7d628a1d0afae98a724807"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80624be96a7d628a1d0afae98a724807">~IsolatedConnectedImageFilter</a> ()</td></tr>
@@ -518,8 +518,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ab57b49a6c54588b071250957ad97cbe8" name="ab57b49a6c54588b071250957ad97cbe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab57b49a6c54588b071250957ad97cbe8">&#9670;&#160;</a></span>FindUpperThresholdOff()</h2>
+<a id="ac8d795035b2c66853aef5164393a6d4e" name="ac8d795035b2c66853aef5164393a6d4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d795035b2c66853aef5164393a6d4e">&#9670;&#160;</a></span>FindUpperThresholdOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,7 +528,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::FindUpperThresholdOff </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::FindUpperThresholdOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -547,8 +547,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a2ca4d108f4052def302781ed7e1b22bb" name="a2ca4d108f4052def302781ed7e1b22bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ca4d108f4052def302781ed7e1b22bb">&#9670;&#160;</a></span>FindUpperThresholdOn()</h2>
+<a id="aa0162c104b469fab54a3ee7329752b64" name="aa0162c104b469fab54a3ee7329752b64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0162c104b469fab54a3ee7329752b64">&#9670;&#160;</a></span>FindUpperThresholdOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -557,7 +557,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::FindUpperThresholdOn </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::FindUpperThresholdOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -877,8 +877,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a002a9ec2e57785b3228f4991bc46c0d5" name="a002a9ec2e57785b3228f4991bc46c0d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a002a9ec2e57785b3228f4991bc46c0d5">&#9670;&#160;</a></span>SetFindUpperThreshold()</h2>
+<a id="a32186022281750d5643f1022f5cb91e5" name="a32186022281750d5643f1022f5cb91e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32186022281750d5643f1022f5cb91e5">&#9670;&#160;</a></span>SetFindUpperThreshold()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -887,7 +887,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::SetFindUpperThreshold </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::SetFindUpperThreshold </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>FindUpperThreshold</em></span></td><td>)</td>
           <td></td>
@@ -909,8 +909,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="af95b2052bab4208872b834d64010eed4" name="af95b2052bab4208872b834d64010eed4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af95b2052bab4208872b834d64010eed4">&#9670;&#160;</a></span>SetIsolatedValueTolerance()</h2>
+<a id="a362bdb7c5c3fcf692939989fe5ae37cd" name="a362bdb7c5c3fcf692939989fe5ae37cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362bdb7c5c3fcf692939989fe5ae37cd">&#9670;&#160;</a></span>SetIsolatedValueTolerance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -919,7 +919,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::SetIsolatedValueTolerance </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::SetIsolatedValueTolerance </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>IsolatedValueTolerance</em></span></td><td>)</td>
           <td></td>
@@ -939,8 +939,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a4a86621794986718de122024b0656af9" name="a4a86621794986718de122024b0656af9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a86621794986718de122024b0656af9">&#9670;&#160;</a></span>SetLower()</h2>
+<a id="a8da01e7a2be61e26715f3faa242110e1" name="a8da01e7a2be61e26715f3faa242110e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da01e7a2be61e26715f3faa242110e1">&#9670;&#160;</a></span>SetLower()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -949,7 +949,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::SetLower </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::SetLower </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>Lower</em></span></td><td>)</td>
           <td></td>
@@ -969,8 +969,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a771f5bededb3846ab3643501b98c7bb3" name="a771f5bededb3846ab3643501b98c7bb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a771f5bededb3846ab3643501b98c7bb3">&#9670;&#160;</a></span>SetReplaceValue()</h2>
+<a id="ab27de230c5347b93b7c246fc8ab230fc" name="ab27de230c5347b93b7c246fc8ab230fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27de230c5347b93b7c246fc8ab230fc">&#9670;&#160;</a></span>SetReplaceValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -979,7 +979,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::SetReplaceValue </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::SetReplaceValue </td>
           <td>(</td>
           <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>ReplaceValue</em></span></td><td>)</td>
           <td></td>
@@ -999,8 +999,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ade857007e7a78875113c847fc195999c" name="ade857007e7a78875113c847fc195999c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade857007e7a78875113c847fc195999c">&#9670;&#160;</a></span>SetSeed1()</h2>
+<a id="a5b7356eaefbe4a4b3c3924acec497b69" name="a5b7356eaefbe4a4b3c3924acec497b69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b7356eaefbe4a4b3c3924acec497b69">&#9670;&#160;</a></span>SetSeed1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1009,7 +1009,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::SetSeed1 </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::SetSeed1 </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; unsigned int &gt;</td>          <td class="paramname"><span class="paramname"><em>Seed1</em></span></td><td>)</td>
           <td></td>
@@ -1030,8 +1030,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="adb4bffeeb90bc9206f4eac31b46da507" name="adb4bffeeb90bc9206f4eac31b46da507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb4bffeeb90bc9206f4eac31b46da507">&#9670;&#160;</a></span>SetSeed2()</h2>
+<a id="ab0609f92d20e24a4d7a8bf0884dab0be" name="ab0609f92d20e24a4d7a8bf0884dab0be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0609f92d20e24a4d7a8bf0884dab0be">&#9670;&#160;</a></span>SetSeed2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1040,7 +1040,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::SetSeed2 </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::SetSeed2 </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; unsigned int &gt;</td>          <td class="paramname"><span class="paramname"><em>Seed2</em></span></td><td>)</td>
           <td></td>
@@ -1061,8 +1061,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a61d42697e25eb02ed15ebc67c53e20c5" name="a61d42697e25eb02ed15ebc67c53e20c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61d42697e25eb02ed15ebc67c53e20c5">&#9670;&#160;</a></span>SetUpper()</h2>
+<a id="aef26bdeab3c5b620ae41e3fd83d13ac5" name="aef26bdeab3c5b620ae41e3fd83d13ac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef26bdeab3c5b620ae41e3fd83d13ac5">&#9670;&#160;</a></span>SetUpper()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1071,7 +1071,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#ab049e3cbd5c1ce83f5cba341ed6e2904">Self</a> &amp; itk::simple::IsolatedConnectedImageFilter::SetUpper </td>
+          <td class="memname">void itk::simple::IsolatedConnectedImageFilter::SetUpper </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>Upper</em></span></td><td>)</td>
           <td></td>

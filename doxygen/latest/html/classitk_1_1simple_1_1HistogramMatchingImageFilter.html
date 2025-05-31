@@ -115,9 +115,9 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Normalize the grayscale values for a source image by matching the shape of the source image histogram to a reference histogram. </p>
 <p><a class="el" href="classitk_1_1simple_1_1HistogramMatchingImageFilter.html" title="Normalize the grayscale values for a source image by matching the shape of the source image histogram...">HistogramMatchingImageFilter</a> normalizes the grayscale values of a source image based on the grayscale values of either a reference image or a reference histogram. This filter uses a histogram matching technique where the histograms of the are matched only at a specified number of quantile values.</p>
-<p>This filter was originally designed to normalize MR images of the same MR protocol and same body part. The algorithm works best if background pixels are excluded from both the source and reference histograms. A simple background exclusion method is to exclude all pixels whose grayscale values are smaller than the mean grayscale value. <a class="el" href="#aaeb0f4e4853604d2282e22b0c8563f4f">ThresholdAtMeanIntensityOn()</a> switches on this simple background exclusion method. With <a class="el" href="#aaeb0f4e4853604d2282e22b0c8563f4f">ThresholdAtMeanIntensityOn()</a> , The reference histogram returned from this filter will expand the first and last bin bounds to include the minimum and maximum intensity values of the entire reference image, but only intensity values greater than the mean will be used to populate the histogram.</p>
+<p>This filter was originally designed to normalize MR images of the same MR protocol and same body part. The algorithm works best if background pixels are excluded from both the source and reference histograms. A simple background exclusion method is to exclude all pixels whose grayscale values are smaller than the mean grayscale value. <a class="el" href="#a1e6647479e1fbbdddc8039fac348b9f4">ThresholdAtMeanIntensityOn()</a> switches on this simple background exclusion method. With <a class="el" href="#a1e6647479e1fbbdddc8039fac348b9f4">ThresholdAtMeanIntensityOn()</a> , The reference histogram returned from this filter will expand the first and last bin bounds to include the minimum and maximum intensity values of the entire reference image, but only intensity values greater than the mean will be used to populate the histogram.</p>
 <p>The source image can be set via either SetInput() or SetSourceImage(). The reference object used is selected with can be set via SetReferenceImage() or SetReferenceHistogram().</p>
-<p><a class="el" href="#a47b8d06b65f649e4d302c9d76394e09d">SetNumberOfHistogramLevels()</a> sets the number of bins used when creating histograms of the source and reference images. <a class="el" href="#a73e76307d79be597daea74faa8adc10f">SetNumberOfMatchPoints()</a> governs the number of quantile values to be matched.</p>
+<p><a class="el" href="#a21778a3c711c48d7d13b7b131f5e3da7">SetNumberOfHistogramLevels()</a> sets the number of bins used when creating histograms of the source and reference images. <a class="el" href="#a912a5b0669541acd025c8b36057e7585">SetNumberOfMatchPoints()</a> governs the number of quantile values to be matched.</p>
 <p>This filter assumes that both the source and reference are of the same type and that the input and output image type have the same number of dimension and have scalar pixel types.</p>
 <dl class="section user"><dt>REFERENCE</dt><dd>Laszlo G. Nyul, Jayaram K. Udupa, and Xuan Zhang, "New Variants of a Method
 of MRI Scale Standardization", IEEE Transactions on Medical Imaging, 19(2):143-150, 2000. </dd></dl>
@@ -156,16 +156,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2490f927a46b4784b67ce89f0741788e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdc126ad402dd102b56d782bbbf9bf0" id="r_a4bdc126ad402dd102b56d782bbbf9bf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bdc126ad402dd102b56d782bbbf9bf0">HistogramMatchingImageFilter</a> ()</td></tr>
 <tr class="separator:a4bdc126ad402dd102b56d782bbbf9bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47b8d06b65f649e4d302c9d76394e09d" id="r_a47b8d06b65f649e4d302c9d76394e09d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47b8d06b65f649e4d302c9d76394e09d">SetNumberOfHistogramLevels</a> (uint32_t NumberOfHistogramLevels)</td></tr>
-<tr class="separator:a47b8d06b65f649e4d302c9d76394e09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73e76307d79be597daea74faa8adc10f" id="r_a73e76307d79be597daea74faa8adc10f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73e76307d79be597daea74faa8adc10f">SetNumberOfMatchPoints</a> (uint32_t NumberOfMatchPoints)</td></tr>
-<tr class="separator:a73e76307d79be597daea74faa8adc10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7962e80927a2b721d234f60919ed97e" id="r_ab7962e80927a2b721d234f60919ed97e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7962e80927a2b721d234f60919ed97e">SetThresholdAtMeanIntensity</a> (bool ThresholdAtMeanIntensity)</td></tr>
-<tr class="separator:ab7962e80927a2b721d234f60919ed97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f752c998d280b50d87c92e384a8575d" id="r_a7f752c998d280b50d87c92e384a8575d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f752c998d280b50d87c92e384a8575d">ThresholdAtMeanIntensityOff</a> ()</td></tr>
-<tr class="separator:a7f752c998d280b50d87c92e384a8575d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaeb0f4e4853604d2282e22b0c8563f4f" id="r_aaeb0f4e4853604d2282e22b0c8563f4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaeb0f4e4853604d2282e22b0c8563f4f">ThresholdAtMeanIntensityOn</a> ()</td></tr>
-<tr class="separator:aaeb0f4e4853604d2282e22b0c8563f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21778a3c711c48d7d13b7b131f5e3da7" id="r_a21778a3c711c48d7d13b7b131f5e3da7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21778a3c711c48d7d13b7b131f5e3da7">SetNumberOfHistogramLevels</a> (uint32_t NumberOfHistogramLevels)</td></tr>
+<tr class="separator:a21778a3c711c48d7d13b7b131f5e3da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912a5b0669541acd025c8b36057e7585" id="r_a912a5b0669541acd025c8b36057e7585"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a912a5b0669541acd025c8b36057e7585">SetNumberOfMatchPoints</a> (uint32_t NumberOfMatchPoints)</td></tr>
+<tr class="separator:a912a5b0669541acd025c8b36057e7585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa02b0e2d500906bac306085a2ab15e9" id="r_afa02b0e2d500906bac306085a2ab15e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa02b0e2d500906bac306085a2ab15e9">SetThresholdAtMeanIntensity</a> (bool ThresholdAtMeanIntensity)</td></tr>
+<tr class="separator:afa02b0e2d500906bac306085a2ab15e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83146e8b2d1c98a5a70ba06988d5ed93" id="r_a83146e8b2d1c98a5a70ba06988d5ed93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83146e8b2d1c98a5a70ba06988d5ed93">ThresholdAtMeanIntensityOff</a> ()</td></tr>
+<tr class="separator:a83146e8b2d1c98a5a70ba06988d5ed93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6647479e1fbbdddc8039fac348b9f4" id="r_a1e6647479e1fbbdddc8039fac348b9f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e6647479e1fbbdddc8039fac348b9f4">ThresholdAtMeanIntensityOn</a> ()</td></tr>
+<tr class="separator:a1e6647479e1fbbdddc8039fac348b9f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a570f4f92cc202ba78b1f8f7f431ec9a1" id="r_a570f4f92cc202ba78b1f8f7f431ec9a1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a570f4f92cc202ba78b1f8f7f431ec9a1">ToString</a> () const</td></tr>
 <tr class="separator:a570f4f92cc202ba78b1f8f7f431ec9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d8b8e934fe3862f805e7d2c896cc6e2" id="r_a9d8b8e934fe3862f805e7d2c896cc6e2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d8b8e934fe3862f805e7d2c896cc6e2">~HistogramMatchingImageFilter</a> ()</td></tr>
@@ -621,8 +621,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a47b8d06b65f649e4d302c9d76394e09d" name="a47b8d06b65f649e4d302c9d76394e09d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47b8d06b65f649e4d302c9d76394e09d">&#9670;&#160;</a></span>SetNumberOfHistogramLevels()</h2>
+<a id="a21778a3c711c48d7d13b7b131f5e3da7" name="a21778a3c711c48d7d13b7b131f5e3da7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21778a3c711c48d7d13b7b131f5e3da7">&#9670;&#160;</a></span>SetNumberOfHistogramLevels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -631,7 +631,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp; itk::simple::HistogramMatchingImageFilter::SetNumberOfHistogramLevels </td>
+          <td class="memname">void itk::simple::HistogramMatchingImageFilter::SetNumberOfHistogramLevels </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>NumberOfHistogramLevels</em></span></td><td>)</td>
           <td></td>
@@ -653,8 +653,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a73e76307d79be597daea74faa8adc10f" name="a73e76307d79be597daea74faa8adc10f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73e76307d79be597daea74faa8adc10f">&#9670;&#160;</a></span>SetNumberOfMatchPoints()</h2>
+<a id="a912a5b0669541acd025c8b36057e7585" name="a912a5b0669541acd025c8b36057e7585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912a5b0669541acd025c8b36057e7585">&#9670;&#160;</a></span>SetNumberOfMatchPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -663,7 +663,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp; itk::simple::HistogramMatchingImageFilter::SetNumberOfMatchPoints </td>
+          <td class="memname">void itk::simple::HistogramMatchingImageFilter::SetNumberOfMatchPoints </td>
           <td>(</td>
           <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>NumberOfMatchPoints</em></span></td><td>)</td>
           <td></td>
@@ -685,8 +685,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ab7962e80927a2b721d234f60919ed97e" name="ab7962e80927a2b721d234f60919ed97e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7962e80927a2b721d234f60919ed97e">&#9670;&#160;</a></span>SetThresholdAtMeanIntensity()</h2>
+<a id="afa02b0e2d500906bac306085a2ab15e9" name="afa02b0e2d500906bac306085a2ab15e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa02b0e2d500906bac306085a2ab15e9">&#9670;&#160;</a></span>SetThresholdAtMeanIntensity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -695,7 +695,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp; itk::simple::HistogramMatchingImageFilter::SetThresholdAtMeanIntensity </td>
+          <td class="memname">void itk::simple::HistogramMatchingImageFilter::SetThresholdAtMeanIntensity </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>ThresholdAtMeanIntensity</em></span></td><td>)</td>
           <td></td>
@@ -717,8 +717,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a7f752c998d280b50d87c92e384a8575d" name="a7f752c998d280b50d87c92e384a8575d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f752c998d280b50d87c92e384a8575d">&#9670;&#160;</a></span>ThresholdAtMeanIntensityOff()</h2>
+<a id="a83146e8b2d1c98a5a70ba06988d5ed93" name="a83146e8b2d1c98a5a70ba06988d5ed93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83146e8b2d1c98a5a70ba06988d5ed93">&#9670;&#160;</a></span>ThresholdAtMeanIntensityOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -727,7 +727,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp; itk::simple::HistogramMatchingImageFilter::ThresholdAtMeanIntensityOff </td>
+          <td class="memname">void itk::simple::HistogramMatchingImageFilter::ThresholdAtMeanIntensityOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -746,8 +746,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="aaeb0f4e4853604d2282e22b0c8563f4f" name="aaeb0f4e4853604d2282e22b0c8563f4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeb0f4e4853604d2282e22b0c8563f4f">&#9670;&#160;</a></span>ThresholdAtMeanIntensityOn()</h2>
+<a id="a1e6647479e1fbbdddc8039fac348b9f4" name="a1e6647479e1fbbdddc8039fac348b9f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6647479e1fbbdddc8039fac348b9f4">&#9670;&#160;</a></span>ThresholdAtMeanIntensityOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -756,7 +756,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#aa56198db4e9041f853b81ba43a90f50d">Self</a> &amp; itk::simple::HistogramMatchingImageFilter::ThresholdAtMeanIntensityOn </td>
+          <td class="memname">void itk::simple::HistogramMatchingImageFilter::ThresholdAtMeanIntensityOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

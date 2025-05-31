@@ -119,7 +119,7 @@ $(function(){ initResizable(false); });
 <dl class="section user"><dt>Template Parameters (Input and Output)</dt><dd>This filter has one required template parameter which defines the input image type. The pixel type of the input image is assumed to be a vector (e.g., <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RGBPixel.html">itk::RGBPixel</a> , <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FixedArray.html">itk::FixedArray</a> ). The scalar type of the vector components must be castable to floating point. Instantiating with an image of <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RGBPixel.html">RGBPixel&lt;unsigned short&gt;</a>, for example, is allowed, but the filter will convert it to an image of <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">Vector&lt;float,3&gt;</a> for processing.</dd></dl>
 <p>The second template parameter, TRealType, can be optionally specified to define the scalar numerical type used in calculations. This is the component type of the output image, which will be of <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">itk::Vector&lt;TRealType, N&gt;</a>, where N is the number of channels in the multiple component input image. The default type of TRealType is float. For extra precision, you may safely change this parameter to double.</p>
 <p>The third template parameter is the output image type. The third parameter will be automatically constructed from the first and second parameters, so it is not necessary (or advisable) to set this parameter explicitly. Given an M-channel input image with dimensionality N, and a numerical type specified as TRealType, the output image will be of type <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image&lt;TRealType, N&gt;</a>.</p>
-<dl class="section user"><dt>Filter Parameters</dt><dd>The method UseImageSpacingOn will cause derivatives in the image to be scaled (inversely) with the pixel size of the input image, effectively taking derivatives in world coordinates (versus isotropic image space). UseImageSpacingOff turns this functionality off. Default is UseImageSpacingOn. The parameter UseImageSpacing can be set directly with the method <a class="el" href="#a685e873910d69f54a555ecb8134b1166">SetUseImageSpacing(bool)</a> .</dd></dl>
+<dl class="section user"><dt>Filter Parameters</dt><dd>The method UseImageSpacingOn will cause derivatives in the image to be scaled (inversely) with the pixel size of the input image, effectively taking derivatives in world coordinates (versus isotropic image space). UseImageSpacingOff turns this functionality off. Default is UseImageSpacingOn. The parameter UseImageSpacing can be set directly with the method <a class="el" href="#aadc9f5fc4a969c63f291da6d94570ef5">SetUseImageSpacing(bool)</a> .</dd></dl>
 <p>Weights can be applied to the derivatives directly using the SetDerivativeWeights method. Note that if UseImageSpacing is set to TRUE (ON), then these weights will be overridden by weights derived from the image spacing when the filter is updated. The argument to this method is a C array of TRealValue type.</p>
 <dl class="section user"><dt>Constraints</dt><dd>We use vnl_det for determinant computation, which only supports square matrices. So the vector dimension of the input image values must be equal to the image dimensions, which is trivially true for a deformation field that maps an n-dimensional space onto itself.</dd></dl>
 <p>Currently, dimensions up to and including 4 are supported. This limitation comes from the presence of vnl_det() functions for matrices of dimension up to 4x4.</p>
@@ -168,16 +168,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a70d91f09c72d2303c7fba57110d6e77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe009519cc04f234e2d30b3b5a030c0c" id="r_afe009519cc04f234e2d30b3b5a030c0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe009519cc04f234e2d30b3b5a030c0c">GetUseImageSpacing</a> () const</td></tr>
 <tr class="separator:afe009519cc04f234e2d30b3b5a030c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacaf5ed61fb7b96223b93ca8b24aba38" id="r_aacaf5ed61fb7b96223b93ca8b24aba38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a26ada298d6f2173d5d0353b897d2e511">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacaf5ed61fb7b96223b93ca8b24aba38">SetDerivativeWeights</a> (std::vector&lt; double &gt; DerivativeWeights)</td></tr>
-<tr class="separator:aacaf5ed61fb7b96223b93ca8b24aba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a685e873910d69f54a555ecb8134b1166" id="r_a685e873910d69f54a555ecb8134b1166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a26ada298d6f2173d5d0353b897d2e511">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a685e873910d69f54a555ecb8134b1166">SetUseImageSpacing</a> (bool UseImageSpacing)</td></tr>
-<tr class="separator:a685e873910d69f54a555ecb8134b1166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67542c2649c9acb7633c5d565524ff3" id="r_ad67542c2649c9acb7633c5d565524ff3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad67542c2649c9acb7633c5d565524ff3">SetDerivativeWeights</a> (std::vector&lt; double &gt; DerivativeWeights)</td></tr>
+<tr class="separator:ad67542c2649c9acb7633c5d565524ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadc9f5fc4a969c63f291da6d94570ef5" id="r_aadc9f5fc4a969c63f291da6d94570ef5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadc9f5fc4a969c63f291da6d94570ef5">SetUseImageSpacing</a> (bool UseImageSpacing)</td></tr>
+<tr class="separator:aadc9f5fc4a969c63f291da6d94570ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79d2bf4f29e28c518428fd701b2cc6e4" id="r_a79d2bf4f29e28c518428fd701b2cc6e4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79d2bf4f29e28c518428fd701b2cc6e4">ToString</a> () const</td></tr>
 <tr class="separator:a79d2bf4f29e28c518428fd701b2cc6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2997be132f51774af84e7ed36f62e9f8" id="r_a2997be132f51774af84e7ed36f62e9f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a26ada298d6f2173d5d0353b897d2e511">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2997be132f51774af84e7ed36f62e9f8">UseImageSpacingOff</a> ()</td></tr>
-<tr class="separator:a2997be132f51774af84e7ed36f62e9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad2ce2119d55c1f53baf2c5f298a03d4" id="r_aad2ce2119d55c1f53baf2c5f298a03d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a26ada298d6f2173d5d0353b897d2e511">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad2ce2119d55c1f53baf2c5f298a03d4">UseImageSpacingOn</a> ()</td></tr>
-<tr class="separator:aad2ce2119d55c1f53baf2c5f298a03d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0daffb5957c07b633a1b2aaf187c8ed2" id="r_a0daffb5957c07b633a1b2aaf187c8ed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0daffb5957c07b633a1b2aaf187c8ed2">UseImageSpacingOff</a> ()</td></tr>
+<tr class="separator:a0daffb5957c07b633a1b2aaf187c8ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad85d78e150ea0e8313ebf24922f2c6b" id="r_aad85d78e150ea0e8313ebf24922f2c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad85d78e150ea0e8313ebf24922f2c6b">UseImageSpacingOn</a> ()</td></tr>
+<tr class="separator:aad85d78e150ea0e8313ebf24922f2c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaafba006a7bdbf2bcf68cfa82bddf17" id="r_abaafba006a7bdbf2bcf68cfa82bddf17"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abaafba006a7bdbf2bcf68cfa82bddf17">~DisplacementFieldJacobianDeterminantFilter</a> ()</td></tr>
 <tr class="separator:abaafba006a7bdbf2bcf68cfa82bddf17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classitk_1_1simple_1_1ImageFilter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classitk_1_1simple_1_1ImageFilter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></td></tr>
@@ -589,8 +589,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="aacaf5ed61fb7b96223b93ca8b24aba38" name="aacaf5ed61fb7b96223b93ca8b24aba38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacaf5ed61fb7b96223b93ca8b24aba38">&#9670;&#160;</a></span>SetDerivativeWeights()</h2>
+<a id="ad67542c2649c9acb7633c5d565524ff3" name="ad67542c2649c9acb7633c5d565524ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad67542c2649c9acb7633c5d565524ff3">&#9670;&#160;</a></span>SetDerivativeWeights()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -599,7 +599,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a26ada298d6f2173d5d0353b897d2e511">Self</a> &amp; itk::simple::DisplacementFieldJacobianDeterminantFilter::SetDerivativeWeights </td>
+          <td class="memname">void itk::simple::DisplacementFieldJacobianDeterminantFilter::SetDerivativeWeights </td>
           <td>(</td>
           <td class="paramtype">std::vector&lt; double &gt;</td>          <td class="paramname"><span class="paramname"><em>DerivativeWeights</em></span></td><td>)</td>
           <td></td>
@@ -619,8 +619,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a685e873910d69f54a555ecb8134b1166" name="a685e873910d69f54a555ecb8134b1166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a685e873910d69f54a555ecb8134b1166">&#9670;&#160;</a></span>SetUseImageSpacing()</h2>
+<a id="aadc9f5fc4a969c63f291da6d94570ef5" name="aadc9f5fc4a969c63f291da6d94570ef5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc9f5fc4a969c63f291da6d94570ef5">&#9670;&#160;</a></span>SetUseImageSpacing()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -629,7 +629,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a26ada298d6f2173d5d0353b897d2e511">Self</a> &amp; itk::simple::DisplacementFieldJacobianDeterminantFilter::SetUseImageSpacing </td>
+          <td class="memname">void itk::simple::DisplacementFieldJacobianDeterminantFilter::SetUseImageSpacing </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>UseImageSpacing</em></span></td><td>)</td>
           <td></td>
@@ -679,8 +679,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a2997be132f51774af84e7ed36f62e9f8" name="a2997be132f51774af84e7ed36f62e9f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2997be132f51774af84e7ed36f62e9f8">&#9670;&#160;</a></span>UseImageSpacingOff()</h2>
+<a id="a0daffb5957c07b633a1b2aaf187c8ed2" name="a0daffb5957c07b633a1b2aaf187c8ed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0daffb5957c07b633a1b2aaf187c8ed2">&#9670;&#160;</a></span>UseImageSpacingOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -689,7 +689,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a26ada298d6f2173d5d0353b897d2e511">Self</a> &amp; itk::simple::DisplacementFieldJacobianDeterminantFilter::UseImageSpacingOff </td>
+          <td class="memname">void itk::simple::DisplacementFieldJacobianDeterminantFilter::UseImageSpacingOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -708,8 +708,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="aad2ce2119d55c1f53baf2c5f298a03d4" name="aad2ce2119d55c1f53baf2c5f298a03d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad2ce2119d55c1f53baf2c5f298a03d4">&#9670;&#160;</a></span>UseImageSpacingOn()</h2>
+<a id="aad85d78e150ea0e8313ebf24922f2c6b" name="aad85d78e150ea0e8313ebf24922f2c6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad85d78e150ea0e8313ebf24922f2c6b">&#9670;&#160;</a></span>UseImageSpacingOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -718,7 +718,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a26ada298d6f2173d5d0353b897d2e511">Self</a> &amp; itk::simple::DisplacementFieldJacobianDeterminantFilter::UseImageSpacingOn </td>
+          <td class="memname">void itk::simple::DisplacementFieldJacobianDeterminantFilter::UseImageSpacingOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

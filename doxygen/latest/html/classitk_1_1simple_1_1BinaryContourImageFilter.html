@@ -115,7 +115,7 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Labels the pixels on the border of the objects in a binary image. </p>
 <p><a class="el" href="classitk_1_1simple_1_1BinaryContourImageFilter.html" title="Labels the pixels on the border of the objects in a binary image.">BinaryContourImageFilter</a> takes a binary image as input, where the pixels in the objects are the pixels with a value equal to ForegroundValue. Only the pixels on the contours of the objects are kept. The pixels not on the border are changed to BackgroundValue.</p>
-<p>The connectivity can be changed to minimum or maximum connectivity with <a class="el" href="#ab7f3125a78a0eca958930fe78d7fff95">SetFullyConnected()</a> . Full connectivity produces thicker contours.</p>
+<p>The connectivity can be changed to minimum or maximum connectivity with <a class="el" href="#aba1f7f35106312549f9a3862a7b1bf0e">SetFullyConnected()</a> . Full connectivity produces thicker contours.</p>
 <p><a href="https://doi.org/10.54294/c7d3gv">https://doi.org/10.54294/c7d3gv</a></p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1LabelContourImageFilter.html" title="Labels the pixels on the border of the objects in a labeled image.">LabelContourImageFilter</a> <a class="el" href="classitk_1_1simple_1_1BinaryErodeImageFilter.html" title="Fast binary erosion of a single intensity value in the image.">BinaryErodeImageFilter</a> <a class="el" href="classitk_1_1simple_1_1SimpleContourExtractorImageFilter.html" title="Computes an image of contours which will be the contour of the first image.">SimpleContourExtractorImageFilter</a> </dd>
@@ -147,10 +147,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd665ca544aaabba7db8e387a85839f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35416a9d379620bb2df590a59759fd88" id="r_a35416a9d379620bb2df590a59759fd88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35416a9d379620bb2df590a59759fd88">Execute</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1)</td></tr>
 <tr class="separator:a35416a9d379620bb2df590a59759fd88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae45e91be03d5b93e74d3c600f956d349" id="r_ae45e91be03d5b93e74d3c600f956d349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae45e91be03d5b93e74d3c600f956d349">FullyConnectedOff</a> ()</td></tr>
-<tr class="separator:ae45e91be03d5b93e74d3c600f956d349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cfe8e90dcd34617a52ade4b6d85250a" id="r_a8cfe8e90dcd34617a52ade4b6d85250a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cfe8e90dcd34617a52ade4b6d85250a">FullyConnectedOn</a> ()</td></tr>
-<tr class="separator:a8cfe8e90dcd34617a52ade4b6d85250a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4051efb5b3ce0367c3f6f98466652bd6" id="r_a4051efb5b3ce0367c3f6f98466652bd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4051efb5b3ce0367c3f6f98466652bd6">FullyConnectedOff</a> ()</td></tr>
+<tr class="separator:a4051efb5b3ce0367c3f6f98466652bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a781aa555d51e9d8c5e156e18eea6e7ca" id="r_a781aa555d51e9d8c5e156e18eea6e7ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a781aa555d51e9d8c5e156e18eea6e7ca">FullyConnectedOn</a> ()</td></tr>
+<tr class="separator:a781aa555d51e9d8c5e156e18eea6e7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affed83bde675ca4787158e7f4fa6bf2f" id="r_affed83bde675ca4787158e7f4fa6bf2f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affed83bde675ca4787158e7f4fa6bf2f">GetBackgroundValue</a> () const</td></tr>
 <tr class="separator:affed83bde675ca4787158e7f4fa6bf2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ed41bd507ef4253c2394715b5b8473" id="r_a00ed41bd507ef4253c2394715b5b8473"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00ed41bd507ef4253c2394715b5b8473">GetForegroundValue</a> () const</td></tr>
@@ -159,12 +159,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a839f815270bf9ca62a17a4971a8957cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af511f2d801debe516b4f2a99acc9df53" id="r_af511f2d801debe516b4f2a99acc9df53"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af511f2d801debe516b4f2a99acc9df53">GetName</a> () const</td></tr>
 <tr class="separator:af511f2d801debe516b4f2a99acc9df53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83b1c372c7da01ff3eabb4142d5e0e12" id="r_a83b1c372c7da01ff3eabb4142d5e0e12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83b1c372c7da01ff3eabb4142d5e0e12">SetBackgroundValue</a> (double BackgroundValue)</td></tr>
-<tr class="separator:a83b1c372c7da01ff3eabb4142d5e0e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6530452721f1d41d6bab4f5b9ad6eee3" id="r_a6530452721f1d41d6bab4f5b9ad6eee3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6530452721f1d41d6bab4f5b9ad6eee3">SetForegroundValue</a> (double ForegroundValue)</td></tr>
-<tr class="separator:a6530452721f1d41d6bab4f5b9ad6eee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7f3125a78a0eca958930fe78d7fff95" id="r_ab7f3125a78a0eca958930fe78d7fff95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7f3125a78a0eca958930fe78d7fff95">SetFullyConnected</a> (bool FullyConnected)</td></tr>
-<tr class="separator:ab7f3125a78a0eca958930fe78d7fff95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496dc7f4db47406fec41ba2659fcf803" id="r_a496dc7f4db47406fec41ba2659fcf803"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a496dc7f4db47406fec41ba2659fcf803">SetBackgroundValue</a> (double BackgroundValue)</td></tr>
+<tr class="separator:a496dc7f4db47406fec41ba2659fcf803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa235791ee35ca623eacf8e6451c96699" id="r_aa235791ee35ca623eacf8e6451c96699"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa235791ee35ca623eacf8e6451c96699">SetForegroundValue</a> (double ForegroundValue)</td></tr>
+<tr class="separator:aa235791ee35ca623eacf8e6451c96699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1f7f35106312549f9a3862a7b1bf0e" id="r_aba1f7f35106312549f9a3862a7b1bf0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba1f7f35106312549f9a3862a7b1bf0e">SetFullyConnected</a> (bool FullyConnected)</td></tr>
+<tr class="separator:aba1f7f35106312549f9a3862a7b1bf0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab362b5a6bc1be55221ea0128d1f0ceae" id="r_ab362b5a6bc1be55221ea0128d1f0ceae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab362b5a6bc1be55221ea0128d1f0ceae">ToString</a> () const</td></tr>
 <tr class="separator:ab362b5a6bc1be55221ea0128d1f0ceae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af031f0fef360f8089be742bba8099e03" id="r_af031f0fef360f8089be742bba8099e03"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af031f0fef360f8089be742bba8099e03">~BinaryContourImageFilter</a> ()</td></tr>
@@ -509,8 +509,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ae45e91be03d5b93e74d3c600f956d349" name="ae45e91be03d5b93e74d3c600f956d349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae45e91be03d5b93e74d3c600f956d349">&#9670;&#160;</a></span>FullyConnectedOff()</h2>
+<a id="a4051efb5b3ce0367c3f6f98466652bd6" name="a4051efb5b3ce0367c3f6f98466652bd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4051efb5b3ce0367c3f6f98466652bd6">&#9670;&#160;</a></span>FullyConnectedOff()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -519,7 +519,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp; itk::simple::BinaryContourImageFilter::FullyConnectedOff </td>
+          <td class="memname">void itk::simple::BinaryContourImageFilter::FullyConnectedOff </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -538,8 +538,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a8cfe8e90dcd34617a52ade4b6d85250a" name="a8cfe8e90dcd34617a52ade4b6d85250a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cfe8e90dcd34617a52ade4b6d85250a">&#9670;&#160;</a></span>FullyConnectedOn()</h2>
+<a id="a781aa555d51e9d8c5e156e18eea6e7ca" name="a781aa555d51e9d8c5e156e18eea6e7ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a781aa555d51e9d8c5e156e18eea6e7ca">&#9670;&#160;</a></span>FullyConnectedOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -548,7 +548,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp; itk::simple::BinaryContourImageFilter::FullyConnectedOn </td>
+          <td class="memname">void itk::simple::BinaryContourImageFilter::FullyConnectedOn </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -688,8 +688,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a83b1c372c7da01ff3eabb4142d5e0e12" name="a83b1c372c7da01ff3eabb4142d5e0e12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83b1c372c7da01ff3eabb4142d5e0e12">&#9670;&#160;</a></span>SetBackgroundValue()</h2>
+<a id="a496dc7f4db47406fec41ba2659fcf803" name="a496dc7f4db47406fec41ba2659fcf803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496dc7f4db47406fec41ba2659fcf803">&#9670;&#160;</a></span>SetBackgroundValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -698,7 +698,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp; itk::simple::BinaryContourImageFilter::SetBackgroundValue </td>
+          <td class="memname">void itk::simple::BinaryContourImageFilter::SetBackgroundValue </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>BackgroundValue</em></span></td><td>)</td>
           <td></td>
@@ -718,8 +718,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="a6530452721f1d41d6bab4f5b9ad6eee3" name="a6530452721f1d41d6bab4f5b9ad6eee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6530452721f1d41d6bab4f5b9ad6eee3">&#9670;&#160;</a></span>SetForegroundValue()</h2>
+<a id="aa235791ee35ca623eacf8e6451c96699" name="aa235791ee35ca623eacf8e6451c96699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa235791ee35ca623eacf8e6451c96699">&#9670;&#160;</a></span>SetForegroundValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -728,7 +728,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp; itk::simple::BinaryContourImageFilter::SetForegroundValue </td>
+          <td class="memname">void itk::simple::BinaryContourImageFilter::SetForegroundValue </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>ForegroundValue</em></span></td><td>)</td>
           <td></td>
@@ -748,8 +748,8 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
-<a id="ab7f3125a78a0eca958930fe78d7fff95" name="ab7f3125a78a0eca958930fe78d7fff95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7f3125a78a0eca958930fe78d7fff95">&#9670;&#160;</a></span>SetFullyConnected()</h2>
+<a id="aba1f7f35106312549f9a3862a7b1bf0e" name="aba1f7f35106312549f9a3862a7b1bf0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba1f7f35106312549f9a3862a7b1bf0e">&#9670;&#160;</a></span>SetFullyConnected()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -758,7 +758,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a314ae26598e9cdf0a71bc1e3b3ed3244">Self</a> &amp; itk::simple::BinaryContourImageFilter::SetFullyConnected </td>
+          <td class="memname">void itk::simple::BinaryContourImageFilter::SetFullyConnected </td>
           <td>(</td>
           <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>FullyConnected</em></span></td><td>)</td>
           <td></td>
