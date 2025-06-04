@@ -834,6 +834,10 @@ template&lt;class TImageType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Get the bounding box of a labeled object. The bounding box is returned following the common convention for returning an <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageRegion.html">itk::ImageRegion</a> as a 1 dimensional array containing the index values followed by the size values. For example, a 2D image region would have the array </p><p class="formulaDsp">
+\[[x, y, width, height]\]
+</p>
+<p>.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
 <p class="definition">Definition at line <a class="el" href="sitkLabelShapeStatisticsImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkLabelShapeStatisticsImageFilter_8h_source.html">sitkLabelShapeStatisticsImageFilter.h</a>.</p>
