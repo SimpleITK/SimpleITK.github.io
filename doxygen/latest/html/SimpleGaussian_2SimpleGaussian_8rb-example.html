@@ -110,7 +110,7 @@ $(function(){ initResizable(false); });
 <div class="line">image = reader.execute</div>
 <div class="line"> </div>
 <div class="line">inputPixelType = image.get_pixel_idvalue</div>
-<div class="line">  </div>
+<div class="line"> </div>
 <div class="line">gaussian = Simpleitk::SmoothingRecursiveGaussianImageFilter.new</div>
 <div class="line">gaussian.set_sigma ARGV[1].to_f</div>
 <div class="line">image = gaussian.execute image;</div>
@@ -120,9 +120,8 @@ $(function(){ initResizable(false); });
 <div class="line">image = caster.execute image</div>
 <div class="line"> </div>
 <div class="line">writer = Simpleitk::ImageFileWriter.new</div>
-<div class="line">writer.set_file_name ARGV[2] </div>
+<div class="line">writer.set_file_name ARGV[2]</div>
 <div class="line">writer.execute image</div>
-<div class="line"> </div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->
