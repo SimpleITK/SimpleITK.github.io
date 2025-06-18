@@ -121,7 +121,7 @@ $(function(){ initResizable(false); });
 </ul>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LabelStatisticsImageFilter.html">itk::LabelStatisticsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -228,8 +228,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aa9318e3909f1ac25c6a8cfef4be0c752" id="r_aa9318e3909f1ac25c6a8cfef4be0c752"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9318e3909f1ac25c6a8cfef4be0c752">MemberFunctionType</a> = void (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * labelImage )</td></tr>
-<tr class="separator:aa9318e3909f1ac25c6a8cfef4be0c752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24878d34d93a4f3a6e8166d56af1f5c0" id="r_a24878d34d93a4f3a6e8166d56af1f5c0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24878d34d93a4f3a6e8166d56af1f5c0">MemberFunctionType</a> = void (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *labelImage)</td></tr>
+<tr class="separator:a24878d34d93a4f3a6e8166d56af1f5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -239,11 +239,11 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a4795e7881950916cbf01674ae386e252" id="r_a4795e7881950916cbf01674ae386e252"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt; <a class="el" href="#aa9318e3909f1ac25c6a8cfef4be0c752">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4795e7881950916cbf01674ae386e252">m_DualMemberFactory</a></td></tr>
+<tr class="memitem:a4795e7881950916cbf01674ae386e252" id="r_a4795e7881950916cbf01674ae386e252"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt; <a class="el" href="#a24878d34d93a4f3a6e8166d56af1f5c0">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4795e7881950916cbf01674ae386e252">m_DualMemberFactory</a></td></tr>
 <tr class="separator:a4795e7881950916cbf01674ae386e252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a428103b0ab6180b9301659bff6cbdb55" id="r_a428103b0ab6180b9301659bff6cbdb55"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a428103b0ab6180b9301659bff6cbdb55">m_Filter</a> {nullptr}</td></tr>
 <tr class="separator:a428103b0ab6180b9301659bff6cbdb55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0915e1f6f7679d09dc7a69a68386bfe" id="r_af0915e1f6f7679d09dc7a69a68386bfe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0915e1f6f7679d09dc7a69a68386bfe">m_Labels</a> {std::vector&lt;int64_t&gt;()}</td></tr>
+<tr class="memitem:af0915e1f6f7679d09dc7a69a68386bfe" id="r_af0915e1f6f7679d09dc7a69a68386bfe"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0915e1f6f7679d09dc7a69a68386bfe">m_Labels</a> { std::vector&lt;int64_t&gt;() }</td></tr>
 <tr class="separator:af0915e1f6f7679d09dc7a69a68386bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc20c1f0d681f5aa6216b59baedc99b" id="r_a5bc20c1f0d681f5aa6216b59baedc99b"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::vector&lt; int &gt;(int64_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bc20c1f0d681f5aa6216b59baedc99b">m_pfGetBoundingBox</a></td></tr>
 <tr class="separator:a5bc20c1f0d681f5aa6216b59baedc99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,7 +265,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0d0ff4042ce77be8dc9d3bf23d7febf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f04f5ef78c98dfae46a82e69f7a5c9" id="r_a66f04f5ef78c98dfae46a82e69f7a5c9"><td class="memItemLeft" align="right" valign="top">std::function&lt; double(int64_t)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66f04f5ef78c98dfae46a82e69f7a5c9">m_pfGetVariance</a></td></tr>
 <tr class="separator:a66f04f5ef78c98dfae46a82e69f7a5c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab59eec8fd833b19c2675e823de0f2bcc" id="r_ab59eec8fd833b19c2675e823de0f2bcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab59eec8fd833b19c2675e823de0f2bcc">m_UseHistograms</a> {true}</td></tr>
+<tr class="memitem:ab59eec8fd833b19c2675e823de0f2bcc" id="r_ab59eec8fd833b19c2675e823de0f2bcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab59eec8fd833b19c2675e823de0f2bcc">m_UseHistograms</a> { true }</td></tr>
 <tr class="separator:ab59eec8fd833b19c2675e823de0f2bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -372,8 +372,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa9318e3909f1ac25c6a8cfef4be0c752" name="aa9318e3909f1ac25c6a8cfef4be0c752"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9318e3909f1ac25c6a8cfef4be0c752">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a24878d34d93a4f3a6e8166d56af1f5c0" name="a24878d34d93a4f3a6e8166d56af1f5c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24878d34d93a4f3a6e8166d56af1f5c0">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#aa9318e3909f1ac25c6a8cfef4be0c752">itk::simple::LabelStatisticsImageFilter::MemberFunctionType</a> = void (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * labelImage )</td>
+          <td class="memname">using <a class="el" href="#a24878d34d93a4f3a6e8166d56af1f5c0">itk::simple::LabelStatisticsImageFilter::MemberFunctionType</a> = void (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *labelImage)</td>
         </tr>
       </table>
   </td>
@@ -393,7 +393,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +410,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +426,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -554,9 +554,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the computed bounding box for a label. A vector of minIndex, maxIndex pairs for each axis. The intervals include the endpoints.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00223">m_pfGetBoundingBox</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00225">m_pfGetBoundingBox</a>.</p>
 
 </div>
 </div>
@@ -585,9 +585,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the number of pixels for a label.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00221">m_pfGetCount</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00224">m_pfGetCount</a>.</p>
 
 </div>
 </div>
@@ -615,7 +615,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00227">m_Labels</a>.</p>
 
@@ -646,9 +646,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the computed Maximum for a label.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00209">m_pfGetMaximum</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00218">m_pfGetMaximum</a>.</p>
 
 </div>
 </div>
@@ -677,9 +677,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the computed Mean for a label.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00211">m_pfGetMean</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00219">m_pfGetMean</a>.</p>
 
 </div>
 </div>
@@ -708,9 +708,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the computed Median for a label. Requires histograms to be enabled!</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00213">m_pfGetMedian</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00220">m_pfGetMedian</a>.</p>
 
 </div>
 </div>
@@ -739,9 +739,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the computed Minimum for a label.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00207">m_pfGetMinimum</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00217">m_pfGetMinimum</a>.</p>
 
 </div>
 </div>
@@ -771,7 +771,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -791,7 +791,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Return the number of labels after execution . </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00196">detail::DualExecuteInternalAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00205">detail::DualExecuteInternalAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -820,9 +820,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the computed region.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00225">m_pfGetRegion</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00226">m_pfGetRegion</a>.</p>
 
 </div>
 </div>
@@ -851,9 +851,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the computed Standard Deviation for a label.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00215">m_pfGetSigma</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00221">m_pfGetSigma</a>.</p>
 
 </div>
 </div>
@@ -882,9 +882,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the compute Sum for a label.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00219">m_pfGetSum</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00223">m_pfGetSum</a>.</p>
 
 </div>
 </div>
@@ -911,9 +911,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00204">m_UseHistograms</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00213">m_UseHistograms</a>.</p>
 
 </div>
 </div>
@@ -942,9 +942,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 <p>Return the computed Variance for a label.</p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00217">m_pfGetVariance</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00222">m_pfGetVariance</a>.</p>
 
 </div>
 </div>
@@ -989,11 +989,11 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00204">m_UseHistograms</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00213">m_UseHistograms</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00069">UseHistogramsOff()</a>, and <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00068">UseHistogramsOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00077">UseHistogramsOff()</a>, and <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00075">UseHistogramsOn()</a>.</p>
 
 </div>
 </div>
@@ -1048,9 +1048,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00065">SetUseHistograms()</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00070">SetUseHistograms()</a>.</p>
 
 </div>
 </div>
@@ -1078,9 +1078,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of UseHistograms to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00065">SetUseHistograms()</a>.</p>
+<p class="reference">References <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00070">SetUseHistograms()</a>.</p>
 
 </div>
 </div>
@@ -1095,7 +1095,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1DualExecuteInternalAddressor.html">detail::DualExecuteInternalAddressor</a>&lt; <a class="el" href="#aa9318e3909f1ac25c6a8cfef4be0c752">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1DualExecuteInternalAddressor.html">detail::DualExecuteInternalAddressor</a>&lt; <a class="el" href="#a24878d34d93a4f3a6e8166d56af1f5c0">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -1105,7 +1105,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a60f1985e818b40b75e8e5025070c70d7">GetNumberOfLabels()</a>.</p>
 
@@ -1122,7 +1122,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt;<a class="el" href="#aa9318e3909f1ac25c6a8cfef4be0c752">MemberFunctionType</a>&gt; &gt; itk::simple::LabelStatisticsImageFilter::m_DualMemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt;<a class="el" href="#a24878d34d93a4f3a6e8166d56af1f5c0">MemberFunctionType</a>&gt; &gt; itk::simple::LabelStatisticsImageFilter::m_DualMemberFactory</td>
         </tr>
       </table>
   </td>
@@ -1132,7 +1132,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1170,7 +1170,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int64_t&gt; itk::simple::LabelStatisticsImageFilter::m_Labels {std::vector&lt;int64_t&gt;()}</td>
+          <td class="memname">std::vector&lt;int64_t&gt; itk::simple::LabelStatisticsImageFilter::m_Labels { std::vector&lt;int64_t&gt;() }</td>
         </tr>
       </table>
   </td>
@@ -1182,7 +1182,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00227">227</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00170">GetLabels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00179">GetLabels()</a>.</p>
 
 </div>
 </div>
@@ -1206,9 +1206,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00223">223</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00225">225</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00153">GetBoundingBox()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00163">GetBoundingBox()</a>.</p>
 
 </div>
 </div>
@@ -1232,9 +1232,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00221">221</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00224">224</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00144">GetCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00154">GetCount()</a>.</p>
 
 </div>
 </div>
@@ -1258,9 +1258,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00218">218</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00090">GetMaximum()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00100">GetMaximum()</a>.</p>
 
 </div>
 </div>
@@ -1284,9 +1284,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00211">211</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00219">219</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00099">GetMean()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00109">GetMean()</a>.</p>
 
 </div>
 </div>
@@ -1310,9 +1310,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00213">213</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00220">220</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00108">GetMedian()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00118">GetMedian()</a>.</p>
 
 </div>
 </div>
@@ -1336,9 +1336,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00217">217</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00081">GetMinimum()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00091">GetMinimum()</a>.</p>
 
 </div>
 </div>
@@ -1362,9 +1362,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00225">225</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00226">226</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00162">GetRegion()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00172">GetRegion()</a>.</p>
 
 </div>
 </div>
@@ -1388,9 +1388,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00215">215</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00221">221</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00117">GetSigma()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00127">GetSigma()</a>.</p>
 
 </div>
 </div>
@@ -1414,9 +1414,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00219">219</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00223">223</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00135">GetSum()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00145">GetSum()</a>.</p>
 
 </div>
 </div>
@@ -1440,9 +1440,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00217">217</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00222">222</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00126">GetVariance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00136">GetVariance()</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1456,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::LabelStatisticsImageFilter::m_UseHistograms {true}</td>
+          <td class="memname">bool itk::simple::LabelStatisticsImageFilter::m_UseHistograms { true }</td>
         </tr>
       </table>
   </td>
@@ -1466,9 +1466,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00213">213</a> of file <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html">sitkLabelStatisticsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00073">GetUseHistograms()</a>, and <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00065">SetUseHistograms()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00081">GetUseHistograms()</a>, and <a class="el" href="sitkLabelStatisticsImageFilter_8h_source.html#l00070">SetUseHistograms()</a>.</p>
 
 </div>
 </div>

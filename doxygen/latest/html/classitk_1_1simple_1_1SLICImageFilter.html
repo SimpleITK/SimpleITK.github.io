@@ -119,11 +119,12 @@ $(function(){ initResizable(false); });
 <p>The distance between a pixel and a cluster is the sum of squares of the difference between their joint range and domains ( index and value ). The computation is done in index space with scales provided by the SpatialProximityWeight parameters.</p>
 <p>The output is a label image with each label representing a superpixel cluster. Every pixel in the output is labeled, and the starting label id is zero.</p>
 <p>This code was contributed in the Insight Journal paper: "Scalable Simple Linear Iterative Clustering (SSLIC) Using a
-Generic and Parallel Approach" by Lowekamp B. C., Chen D. T., Yaniv Z., Yoo T. S. <a href="https://doi.org/10.54294/8hic7f">https://doi.org/10.54294/8hic7f</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aae628fab608d59771a8e075247ed22dd" title="Simple Linear Iterative Clustering (SLIC) super-pixel segmentation.">itk::simple::SLIC</a> for the procedural interface </dd>
+Generic and Parallel Approach" by Lowekamp B. C., Chen D. T., Yaniv Z., Yoo T. S. <a href="https://doi.org/10.54294/8hic7f">https://doi.org/10.54294/8hic7f</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aae628fab608d59771a8e075247ed22dd" title="Simple Linear Iterative Clustering (SLIC) super-pixel segmentation.">itk::simple::SLIC</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SLICImageFilter.html">itk::SLICImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -231,8 +232,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a98b39e7f3f15052559e487f3868743d0" id="r_a98b39e7f3f15052559e487f3868743d0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98b39e7f3f15052559e487f3868743d0">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a98b39e7f3f15052559e487f3868743d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b2f793754e43d85776f8a22f613efd" id="r_af5b2f793754e43d85776f8a22f613efd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5b2f793754e43d85776f8a22f613efd">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:af5b2f793754e43d85776f8a22f613efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -242,21 +243,21 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aea821404aef591d7a6306e7ce819f454" id="r_aea821404aef591d7a6306e7ce819f454"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea821404aef591d7a6306e7ce819f454">m_EnforceConnectivity</a> {true}</td></tr>
+<tr class="memitem:aea821404aef591d7a6306e7ce819f454" id="r_aea821404aef591d7a6306e7ce819f454"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea821404aef591d7a6306e7ce819f454">m_EnforceConnectivity</a> { true }</td></tr>
 <tr class="separator:aea821404aef591d7a6306e7ce819f454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881376d277214673752c38ed605f7c0c" id="r_a881376d277214673752c38ed605f7c0c"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a881376d277214673752c38ed605f7c0c">m_Filter</a> {nullptr}</td></tr>
 <tr class="separator:a881376d277214673752c38ed605f7c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af767db65d4438d307be70fba4c68ade2" id="r_af767db65d4438d307be70fba4c68ade2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af767db65d4438d307be70fba4c68ade2">m_InitializationPerturbation</a> {true}</td></tr>
+<tr class="memitem:af767db65d4438d307be70fba4c68ade2" id="r_af767db65d4438d307be70fba4c68ade2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af767db65d4438d307be70fba4c68ade2">m_InitializationPerturbation</a> { true }</td></tr>
 <tr class="separator:af767db65d4438d307be70fba4c68ade2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15adddb592022a16cdc9927712882517" id="r_a15adddb592022a16cdc9927712882517"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15adddb592022a16cdc9927712882517">m_MaximumNumberOfIterations</a> {5u}</td></tr>
+<tr class="memitem:a15adddb592022a16cdc9927712882517" id="r_a15adddb592022a16cdc9927712882517"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15adddb592022a16cdc9927712882517">m_MaximumNumberOfIterations</a> { 5u }</td></tr>
 <tr class="separator:a15adddb592022a16cdc9927712882517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a553cf6bb89e08dccd539c6fafdd6b4e8" id="r_a553cf6bb89e08dccd539c6fafdd6b4e8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a98b39e7f3f15052559e487f3868743d0">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a553cf6bb89e08dccd539c6fafdd6b4e8">m_MemberFactory</a></td></tr>
+<tr class="memitem:a553cf6bb89e08dccd539c6fafdd6b4e8" id="r_a553cf6bb89e08dccd539c6fafdd6b4e8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#af5b2f793754e43d85776f8a22f613efd">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a553cf6bb89e08dccd539c6fafdd6b4e8">m_MemberFactory</a></td></tr>
 <tr class="separator:a553cf6bb89e08dccd539c6fafdd6b4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14a73980fa670d463ed49bdf9156bb95" id="r_a14a73980fa670d463ed49bdf9156bb95"><td class="memItemLeft" align="right" valign="top">std::function&lt; double()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14a73980fa670d463ed49bdf9156bb95">m_pfGetAverageResidual</a></td></tr>
 <tr class="separator:a14a73980fa670d463ed49bdf9156bb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af68240fdda3ac6d7ea6a294f2b73f455" id="r_af68240fdda3ac6d7ea6a294f2b73f455"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af68240fdda3ac6d7ea6a294f2b73f455">m_SpatialProximityWeight</a> {10.0}</td></tr>
+<tr class="memitem:af68240fdda3ac6d7ea6a294f2b73f455" id="r_af68240fdda3ac6d7ea6a294f2b73f455"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af68240fdda3ac6d7ea6a294f2b73f455">m_SpatialProximityWeight</a> { 10.0 }</td></tr>
 <tr class="separator:af68240fdda3ac6d7ea6a294f2b73f455"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53fe413e978ed53dd2afd79906afc52a" id="r_a53fe413e978ed53dd2afd79906afc52a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53fe413e978ed53dd2afd79906afc52a">m_SuperGridSize</a> {std::vector&lt;unsigned int&gt;(3, 50)}</td></tr>
+<tr class="memitem:a53fe413e978ed53dd2afd79906afc52a" id="r_a53fe413e978ed53dd2afd79906afc52a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53fe413e978ed53dd2afd79906afc52a">m_SuperGridSize</a> { std::vector&lt;unsigned int&gt;(3, 50) }</td></tr>
 <tr class="separator:a53fe413e978ed53dd2afd79906afc52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -363,8 +364,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a98b39e7f3f15052559e487f3868743d0" name="a98b39e7f3f15052559e487f3868743d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98b39e7f3f15052559e487f3868743d0">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="af5b2f793754e43d85776f8a22f613efd" name="af5b2f793754e43d85776f8a22f613efd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b2f793754e43d85776f8a22f613efd">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a98b39e7f3f15052559e487f3868743d0">itk::simple::SLICImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#af5b2f793754e43d85776f8a22f613efd">itk::simple::SLICImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -384,7 +385,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -401,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -417,7 +418,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -490,9 +491,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00097">SetEnforceConnectivity()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00111">SetEnforceConnectivity()</a>.</p>
 
 </div>
 </div>
@@ -520,9 +521,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Set the value of EnforceConnectivity to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00097">SetEnforceConnectivity()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00111">SetEnforceConnectivity()</a>.</p>
 
 </div>
 </div>
@@ -569,7 +570,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00149">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00167">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -599,9 +600,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the current average cluster residual. After each iteration the residual is computed as the distance between the current clusters and the previous. This is averaged so that the value is independent of the number of clusters. </p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00167">m_pfGetAverageResidual</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00184">m_pfGetAverageResidual</a>.</p>
 
 </div>
 </div>
@@ -628,9 +629,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00162">m_EnforceConnectivity</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00178">m_EnforceConnectivity</a>.</p>
 
 </div>
 </div>
@@ -657,9 +658,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00164">m_InitializationPerturbation</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00180">m_InitializationPerturbation</a>.</p>
 
 </div>
 </div>
@@ -686,9 +687,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00160">m_MaximumNumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00176">m_MaximumNumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -718,7 +719,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -745,9 +746,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00157">m_SpatialProximityWeight</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00173">m_SpatialProximityWeight</a>.</p>
 
 </div>
 </div>
@@ -774,9 +775,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00155">m_SuperGridSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00171">m_SuperGridSize</a>.</p>
 
 </div>
 </div>
@@ -803,9 +804,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00111">SetInitializationPerturbation()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00129">SetInitializationPerturbation()</a>.</p>
 
 </div>
 </div>
@@ -833,9 +834,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of InitializationPerturbation to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00111">SetInitializationPerturbation()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00129">SetInitializationPerturbation()</a>.</p>
 
 </div>
 </div>
@@ -864,11 +865,11 @@ template&lt;class TImageType&gt; </div>
 
 <p>Post processing step to enforce superpixel morphology. Enable an additional computation which ensures all label pixels of the same value are spatially connected. Disconnected labeled components are assigned a new value if of sufficient size, or are relabeled to the previously encountered value if small. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00162">m_EnforceConnectivity</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00178">m_EnforceConnectivity</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00101">EnforceConnectivityOff()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00100">EnforceConnectivityOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00118">EnforceConnectivityOff()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00116">EnforceConnectivityOn()</a>.</p>
 
 </div>
 </div>
@@ -897,11 +898,11 @@ template&lt;class TImageType&gt; </div>
 
 <p>Enable perturbation of initial cluster center location. After grid based initialization, this option enables moving the initial cluster center location to the minimum gradient in a small neighborhood. If the grid size is less than three this is automatically disabled. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00164">m_InitializationPerturbation</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00180">m_InitializationPerturbation</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00115">InitializationPerturbationOff()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00114">InitializationPerturbationOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00136">InitializationPerturbationOff()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00134">InitializationPerturbationOn()</a>.</p>
 
 </div>
 </div>
@@ -930,9 +931,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>Number of iterations to run. Specify the number of iterations to run when optimizing the clusters. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00160">m_MaximumNumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00176">m_MaximumNumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -961,9 +962,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>The spatial weight for the distance function. Increasing this value makes the superpixel shape more regular, but more varied in image values. The range of the pixel values and image dimension can effect the appropriate value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00157">m_SpatialProximityWeight</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00173">m_SpatialProximityWeight</a>.</p>
 
 </div>
 </div>
@@ -990,9 +991,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00155">m_SuperGridSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkSLICImageFilter_8h_source.html#l00171">m_SuperGridSize</a>.</p>
 
 </div>
 </div>
@@ -1035,7 +1036,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a98b39e7f3f15052559e487f3868743d0">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#af5b2f793754e43d85776f8a22f613efd">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -1045,7 +1046,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a2096ca3746f7bb444870c4353d6c92a2">ExecuteInternal()</a>.</p>
 
@@ -1062,7 +1063,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::SLICImageFilter::m_EnforceConnectivity {true}</td>
+          <td class="memname">bool itk::simple::SLICImageFilter::m_EnforceConnectivity { true }</td>
         </tr>
       </table>
   </td>
@@ -1072,9 +1073,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00105">GetEnforceConnectivity()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00097">SetEnforceConnectivity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00122">GetEnforceConnectivity()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00111">SetEnforceConnectivity()</a>.</p>
 
 </div>
 </div>
@@ -1098,7 +1099,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00187">187</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1113,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::SLICImageFilter::m_InitializationPerturbation {true}</td>
+          <td class="memname">bool itk::simple::SLICImageFilter::m_InitializationPerturbation { true }</td>
         </tr>
       </table>
   </td>
@@ -1122,9 +1123,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00119">GetInitializationPerturbation()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00111">SetInitializationPerturbation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00140">GetInitializationPerturbation()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00129">SetInitializationPerturbation()</a>.</p>
 
 </div>
 </div>
@@ -1138,7 +1139,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t itk::simple::SLICImageFilter::m_MaximumNumberOfIterations {5u}</td>
+          <td class="memname">uint32_t itk::simple::SLICImageFilter::m_MaximumNumberOfIterations { 5u }</td>
         </tr>
       </table>
   </td>
@@ -1148,9 +1149,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00091">GetMaximumNumberOfIterations()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00087">SetMaximumNumberOfIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00104">GetMaximumNumberOfIterations()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00099">SetMaximumNumberOfIterations()</a>.</p>
 
 </div>
 </div>
@@ -1164,7 +1165,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a98b39e7f3f15052559e487f3868743d0">MemberFunctionType</a>&gt; &gt; itk::simple::SLICImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#af5b2f793754e43d85776f8a22f613efd">MemberFunctionType</a>&gt; &gt; itk::simple::SLICImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -1174,7 +1175,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1198,9 +1199,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00127">GetAverageResidual()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00150">GetAverageResidual()</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1215,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::SLICImageFilter::m_SpatialProximityWeight {10.0}</td>
+          <td class="memname">double itk::simple::SLICImageFilter::m_SpatialProximityWeight { 10.0 }</td>
         </tr>
       </table>
   </td>
@@ -1224,9 +1225,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00081">GetSpatialProximityWeight()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00077">SetSpatialProximityWeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00092">GetSpatialProximityWeight()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00087">SetSpatialProximityWeight()</a>.</p>
 
 </div>
 </div>
@@ -1240,7 +1241,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::SLICImageFilter::m_SuperGridSize {std::vector&lt;unsigned int&gt;(3, 50)}</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::SLICImageFilter::m_SuperGridSize { std::vector&lt;unsigned int&gt;(3, 50) }</td>
         </tr>
       </table>
   </td>
@@ -1250,9 +1251,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSLICImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkSLICImageFilter_8h_source.html">sitkSLICImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00071">GetSuperGridSize()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00067">SetSuperGridSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSLICImageFilter_8h_source.html#l00080">GetSuperGridSize()</a>, and <a class="el" href="sitkSLICImageFilter_8h_source.html#l00075">SetSuperGridSize()</a>.</p>
 
 </div>
 </div>

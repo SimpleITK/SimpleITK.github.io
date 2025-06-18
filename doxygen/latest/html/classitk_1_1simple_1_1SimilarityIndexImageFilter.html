@@ -124,7 +124,7 @@ Validation", A. P. Zijdenbos, B. M. Dawant, R. A. Margolin and A. C. Palmer, IEE
 <p>This filter is templated over the two input image type. It assume both image have the same number of dimensions.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SimilarityIndexImageFilter.html">itk::SimilarityIndexImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -199,8 +199,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a6a8eb05f0afe97ed5acb5afeab709412" id="r_a6a8eb05f0afe97ed5acb5afeab709412"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a8eb05f0afe97ed5acb5afeab709412">MemberFunctionType</a> = void (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td></tr>
-<tr class="separator:a6a8eb05f0afe97ed5acb5afeab709412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac191e238af59c447b6306be4cb4f7456" id="r_ac191e238af59c447b6306be4cb4f7456"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac191e238af59c447b6306be4cb4f7456">MemberFunctionType</a> = void (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
+<tr class="separator:ac191e238af59c447b6306be4cb4f7456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -210,9 +210,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aacf167dfe0f9c4f39adf9b549f30b81c" id="r_aacf167dfe0f9c4f39adf9b549f30b81c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a6a8eb05f0afe97ed5acb5afeab709412">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacf167dfe0f9c4f39adf9b549f30b81c">m_MemberFactory</a></td></tr>
+<tr class="memitem:aacf167dfe0f9c4f39adf9b549f30b81c" id="r_aacf167dfe0f9c4f39adf9b549f30b81c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac191e238af59c447b6306be4cb4f7456">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacf167dfe0f9c4f39adf9b549f30b81c">m_MemberFactory</a></td></tr>
 <tr class="separator:aacf167dfe0f9c4f39adf9b549f30b81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f134c9966c1e7545a2091f475bfe64" id="r_a02f134c9966c1e7545a2091f475bfe64"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02f134c9966c1e7545a2091f475bfe64">m_SimilarityIndex</a> {0.0}</td></tr>
+<tr class="memitem:a02f134c9966c1e7545a2091f475bfe64" id="r_a02f134c9966c1e7545a2091f475bfe64"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02f134c9966c1e7545a2091f475bfe64">m_SimilarityIndex</a> { 0.0 }</td></tr>
 <tr class="separator:a02f134c9966c1e7545a2091f475bfe64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -319,8 +319,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a6a8eb05f0afe97ed5acb5afeab709412" name="a6a8eb05f0afe97ed5acb5afeab709412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8eb05f0afe97ed5acb5afeab709412">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="ac191e238af59c447b6306be4cb4f7456" name="ac191e238af59c447b6306be4cb4f7456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac191e238af59c447b6306be4cb4f7456">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +329,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a6a8eb05f0afe97ed5acb5afeab709412">itk::simple::SimilarityIndexImageFilter::MemberFunctionType</a> = void (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td>
+          <td class="memname">using <a class="el" href="#ac191e238af59c447b6306be4cb4f7456">itk::simple::SimilarityIndexImageFilter::MemberFunctionType</a> = void (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td>
         </tr>
       </table>
   </td>
@@ -340,7 +340,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -357,7 +357,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -474,7 +474,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00090">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00092">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -504,7 +504,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -533,9 +533,9 @@ template&lt;class TImageType&gt; </div>
 <p>Return the computed similarity index.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00096">m_SimilarityIndex</a>.</p>
+<p class="reference">References <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00098">m_SimilarityIndex</a>.</p>
 
 </div>
 </div>
@@ -578,7 +578,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a6a8eb05f0afe97ed5acb5afeab709412">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#ac191e238af59c447b6306be4cb4f7456">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -588,7 +588,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#acba2a9ffef5d4c9b46e1638b6df49cf7">ExecuteInternal()</a>.</p>
 
@@ -605,7 +605,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a6a8eb05f0afe97ed5acb5afeab709412">MemberFunctionType</a>&gt; &gt; itk::simple::SimilarityIndexImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ac191e238af59c447b6306be4cb4f7456">MemberFunctionType</a>&gt; &gt; itk::simple::SimilarityIndexImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -615,7 +615,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -629,7 +629,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::SimilarityIndexImageFilter::m_SimilarityIndex {0.0}</td>
+          <td class="memname">double itk::simple::SimilarityIndexImageFilter::m_SimilarityIndex { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -639,9 +639,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html">sitkSimilarityIndexImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00068">GetSimilarityIndex()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSimilarityIndexImageFilter_8h_source.html#l00075">GetSimilarityIndex()</a>.</p>
 
 </div>
 </div>

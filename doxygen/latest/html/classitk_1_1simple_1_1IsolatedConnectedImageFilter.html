@@ -118,11 +118,12 @@ $(function(){ initResizable(false); });
 <p>The algorithm labels pixels with ReplaceValue that are connected to Seeds1 AND NOT connected to Seeds2. When finding the threshold to separate two dark regions surrounded by bright regions, given a fixed lower threshold, the filter adjusts the upper threshold until the two sets of seeds are not connected. The algorithm uses a binary search to adjust the upper threshold, starting at Upper. The reverse is true for finding the threshold to separate two bright regions. Lower defaults to the smallest possible value for the InputImagePixelType, and Upper defaults to the largest possible value for the InputImagePixelType.</p>
 <p>The user can also supply the Lower and Upper values to restrict the search. However, if the range is too restrictive, it could happen that no isolating threshold can be found between the user specified Lower and Upper values. Therefore, unless the user is sure of the bounds to set, it is recommended that the user set these values to the lowest and highest intensity values in the image, respectively.</p>
 <p>The user can specify more than one seed for both regions to separate. The algorithm will try find the threshold that ensures that all of the first seeds are contained in the resulting segmentation and all of the second seeds are not contained in the segmentation.</p>
-<p>It is possible that the algorithm may not be able to find the isolating threshold because no such threshold exists. The user can check for this by querying the <a class="el" href="#af9b9e8e62e8efe355a42785c2c19e296">GetThresholdingFailed()</a> flag. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4b59093835cec2d332bf0e5fb3c1dd54" title="Label pixels that are connected to one set of seeds but not another.">itk::simple::IsolatedConnected</a> for the procedural interface </dd>
+<p>It is possible that the algorithm may not be able to find the isolating threshold because no such threshold exists. The user can check for this by querying the <a class="el" href="#af9b9e8e62e8efe355a42785c2c19e296">GetThresholdingFailed()</a> flag.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4b59093835cec2d332bf0e5fb3c1dd54" title="Label pixels that are connected to one set of seeds but not another.">itk::simple::IsolatedConnected</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsolatedConnectedImageFilter.html">itk::IsolatedConnectedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -231,8 +232,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:af8e62e9965d800d153f71ab77c624f12" id="r_af8e62e9965d800d153f71ab77c624f12"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8e62e9965d800d153f71ab77c624f12">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:af8e62e9965d800d153f71ab77c624f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb5e11b028363ca2fea4bbda41f2072" id="r_a1eb5e11b028363ca2fea4bbda41f2072"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1eb5e11b028363ca2fea4bbda41f2072">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a1eb5e11b028363ca2fea4bbda41f2072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -242,25 +243,25 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a5b9ae3fce2a051d628e4cdb7d2488f19" id="r_a5b9ae3fce2a051d628e4cdb7d2488f19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b9ae3fce2a051d628e4cdb7d2488f19">m_FindUpperThreshold</a> {true}</td></tr>
+<tr class="memitem:a5b9ae3fce2a051d628e4cdb7d2488f19" id="r_a5b9ae3fce2a051d628e4cdb7d2488f19"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b9ae3fce2a051d628e4cdb7d2488f19">m_FindUpperThreshold</a> { true }</td></tr>
 <tr class="separator:a5b9ae3fce2a051d628e4cdb7d2488f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2557e7ba4f4630f46830b2d2e18f90f" id="r_aa2557e7ba4f4630f46830b2d2e18f90f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2557e7ba4f4630f46830b2d2e18f90f">m_IsolatedValue</a> {0.0}</td></tr>
+<tr class="memitem:aa2557e7ba4f4630f46830b2d2e18f90f" id="r_aa2557e7ba4f4630f46830b2d2e18f90f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2557e7ba4f4630f46830b2d2e18f90f">m_IsolatedValue</a> { 0.0 }</td></tr>
 <tr class="separator:aa2557e7ba4f4630f46830b2d2e18f90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287cc60f23aaef91500cc5c40cc465d2" id="r_a287cc60f23aaef91500cc5c40cc465d2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a287cc60f23aaef91500cc5c40cc465d2">m_IsolatedValueTolerance</a> {1.0}</td></tr>
+<tr class="memitem:a287cc60f23aaef91500cc5c40cc465d2" id="r_a287cc60f23aaef91500cc5c40cc465d2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a287cc60f23aaef91500cc5c40cc465d2">m_IsolatedValueTolerance</a> { 1.0 }</td></tr>
 <tr class="separator:a287cc60f23aaef91500cc5c40cc465d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1b047bd74d15a4df38561cdd3062b9" id="r_a8e1b047bd74d15a4df38561cdd3062b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e1b047bd74d15a4df38561cdd3062b9">m_Lower</a> {0}</td></tr>
+<tr class="memitem:a8e1b047bd74d15a4df38561cdd3062b9" id="r_a8e1b047bd74d15a4df38561cdd3062b9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e1b047bd74d15a4df38561cdd3062b9">m_Lower</a> { 0 }</td></tr>
 <tr class="separator:a8e1b047bd74d15a4df38561cdd3062b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51db3ce3624a09e32a64ee170cbcca10" id="r_a51db3ce3624a09e32a64ee170cbcca10"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#af8e62e9965d800d153f71ab77c624f12">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51db3ce3624a09e32a64ee170cbcca10">m_MemberFactory</a></td></tr>
+<tr class="memitem:a51db3ce3624a09e32a64ee170cbcca10" id="r_a51db3ce3624a09e32a64ee170cbcca10"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1eb5e11b028363ca2fea4bbda41f2072">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51db3ce3624a09e32a64ee170cbcca10">m_MemberFactory</a></td></tr>
 <tr class="separator:a51db3ce3624a09e32a64ee170cbcca10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4257da60b422fd3eac38f0a9a847079" id="r_aa4257da60b422fd3eac38f0a9a847079"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4257da60b422fd3eac38f0a9a847079">m_ReplaceValue</a> {1u}</td></tr>
+<tr class="memitem:aa4257da60b422fd3eac38f0a9a847079" id="r_aa4257da60b422fd3eac38f0a9a847079"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4257da60b422fd3eac38f0a9a847079">m_ReplaceValue</a> { 1u }</td></tr>
 <tr class="separator:aa4257da60b422fd3eac38f0a9a847079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6379ce254c455ec2ef0099a5926a0c4" id="r_ae6379ce254c455ec2ef0099a5926a0c4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6379ce254c455ec2ef0099a5926a0c4">m_Seed1</a> {std::vector&lt;unsigned int&gt;(3, 0)}</td></tr>
+<tr class="memitem:ae6379ce254c455ec2ef0099a5926a0c4" id="r_ae6379ce254c455ec2ef0099a5926a0c4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6379ce254c455ec2ef0099a5926a0c4">m_Seed1</a> { std::vector&lt;unsigned int&gt;(3, 0) }</td></tr>
 <tr class="separator:ae6379ce254c455ec2ef0099a5926a0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04586b00465ad040daca9d555c2de88a" id="r_a04586b00465ad040daca9d555c2de88a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04586b00465ad040daca9d555c2de88a">m_Seed2</a> {std::vector&lt;unsigned int&gt;(3, 0)}</td></tr>
+<tr class="memitem:a04586b00465ad040daca9d555c2de88a" id="r_a04586b00465ad040daca9d555c2de88a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04586b00465ad040daca9d555c2de88a">m_Seed2</a> { std::vector&lt;unsigned int&gt;(3, 0) }</td></tr>
 <tr class="separator:a04586b00465ad040daca9d555c2de88a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd5224ef8876e37e69f76217e89d9d91" id="r_acd5224ef8876e37e69f76217e89d9d91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd5224ef8876e37e69f76217e89d9d91">m_ThresholdingFailed</a> {false}</td></tr>
+<tr class="memitem:acd5224ef8876e37e69f76217e89d9d91" id="r_acd5224ef8876e37e69f76217e89d9d91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd5224ef8876e37e69f76217e89d9d91">m_ThresholdingFailed</a> { false }</td></tr>
 <tr class="separator:acd5224ef8876e37e69f76217e89d9d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf13f12fec35b97dcacc81dbe486ee21" id="r_acf13f12fec35b97dcacc81dbe486ee21"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf13f12fec35b97dcacc81dbe486ee21">m_Upper</a> {1}</td></tr>
+<tr class="memitem:acf13f12fec35b97dcacc81dbe486ee21" id="r_acf13f12fec35b97dcacc81dbe486ee21"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf13f12fec35b97dcacc81dbe486ee21">m_Upper</a> { 1 }</td></tr>
 <tr class="separator:acf13f12fec35b97dcacc81dbe486ee21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -367,8 +368,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="af8e62e9965d800d153f71ab77c624f12" name="af8e62e9965d800d153f71ab77c624f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8e62e9965d800d153f71ab77c624f12">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a1eb5e11b028363ca2fea4bbda41f2072" name="a1eb5e11b028363ca2fea4bbda41f2072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb5e11b028363ca2fea4bbda41f2072">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#af8e62e9965d800d153f71ab77c624f12">itk::simple::IsolatedConnectedImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a1eb5e11b028363ca2fea4bbda41f2072">itk::simple::IsolatedConnectedImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -388,7 +389,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -421,7 +422,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -514,7 +515,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00175">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00195">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -541,9 +542,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00129">SetFindUpperThreshold()</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00149">SetFindUpperThreshold()</a>.</p>
 
 </div>
 </div>
@@ -571,9 +572,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FindUpperThreshold to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00129">SetFindUpperThreshold()</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00149">SetFindUpperThreshold()</a>.</p>
 
 </div>
 </div>
@@ -601,9 +602,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether to find an upper threshold (separating two dark regions) or a lower threshold (separating two bright regions). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00193">m_FindUpperThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00211">m_FindUpperThreshold</a>.</p>
 
 </div>
 </div>
@@ -632,9 +633,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get value that isolates the two seeds.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00198">m_IsolatedValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00216">m_IsolatedValue</a>.</p>
 
 </div>
 </div>
@@ -662,9 +663,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the precision required for the intensity threshold value. The default is 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00190">m_IsolatedValueTolerance</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00209">m_IsolatedValueTolerance</a>.</p>
 
 </div>
 </div>
@@ -692,9 +693,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the limit on the lower threshold value. The default is the NonpositiveMin() for the InputPixelType. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00184">m_Lower</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00203">m_Lower</a>.</p>
 
 </div>
 </div>
@@ -724,7 +725,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00181">181</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -752,9 +753,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace thresholded pixels. Pixels that lie within the thresholds will be replaced with this value. The default is 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00188">m_ReplaceValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00207">m_ReplaceValue</a>.</p>
 
 </div>
 </div>
@@ -781,9 +782,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00180">m_Seed1</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00199">m_Seed1</a>.</p>
 
 </div>
 </div>
@@ -810,9 +811,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00182">m_Seed2</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00201">m_Seed2</a>.</p>
 
 </div>
 </div>
@@ -841,9 +842,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the flag that tells whether the algorithm failed to find a threshold.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00196">m_ThresholdingFailed</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00215">m_ThresholdingFailed</a>.</p>
 
 </div>
 </div>
@@ -871,9 +872,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the limit on the upper threshold value. The default is the max() for the InputPixelType. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00186">m_Upper</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00205">m_Upper</a>.</p>
 
 </div>
 </div>
@@ -901,11 +902,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether to find an upper threshold (separating two dark regions) or a lower threshold (separating two bright regions). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00193">m_FindUpperThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00211">m_FindUpperThreshold</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00133">FindUpperThresholdOff()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00132">FindUpperThresholdOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00156">FindUpperThresholdOff()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00154">FindUpperThresholdOn()</a>.</p>
 
 </div>
 </div>
@@ -933,9 +934,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the precision required for the intensity threshold value. The default is 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00190">m_IsolatedValueTolerance</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00209">m_IsolatedValueTolerance</a>.</p>
 
 </div>
 </div>
@@ -963,9 +964,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the limit on the lower threshold value. The default is the NonpositiveMin() for the InputPixelType. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00184">m_Lower</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00203">m_Lower</a>.</p>
 
 </div>
 </div>
@@ -993,9 +994,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace thresholded pixels. Pixels that lie within the thresholds will be replaced with this value. The default is 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00188">m_ReplaceValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00207">m_ReplaceValue</a>.</p>
 
 </div>
 </div>
@@ -1021,12 +1022,12 @@ template&lt;class TImageType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">     Set a single seed point 1.
+<pre class="fragment"> Set a single seed point 1.
 </pre><p>This seed will be isolated from Seed2 (if possible). All pixels connected to this seed will be replaced with ReplaceValue. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00180">m_Seed1</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00199">m_Seed1</a>.</p>
 
 </div>
 </div>
@@ -1052,12 +1053,12 @@ template&lt;class TImageType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">     Set a single seed point 2.
+<pre class="fragment"> Set a single seed point 2.
 </pre><p>This seed will be isolated from Seed1 (if possible). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00182">m_Seed2</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00201">m_Seed2</a>.</p>
 
 </div>
 </div>
@@ -1085,9 +1086,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the limit on the upper threshold value. The default is the max() for the InputPixelType. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00186">m_Upper</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00205">m_Upper</a>.</p>
 
 </div>
 </div>
@@ -1130,7 +1131,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#af8e62e9965d800d153f71ab77c624f12">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a1eb5e11b028363ca2fea4bbda41f2072">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -1140,7 +1141,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a3ed078064756d9ed8cb74b0fd92b6d1c">ExecuteInternal()</a>.</p>
 
@@ -1157,7 +1158,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::IsolatedConnectedImageFilter::m_FindUpperThreshold {true}</td>
+          <td class="memname">bool itk::simple::IsolatedConnectedImageFilter::m_FindUpperThreshold { true }</td>
         </tr>
       </table>
   </td>
@@ -1167,9 +1168,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00211">211</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00138">GetFindUpperThreshold()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00129">SetFindUpperThreshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00161">GetFindUpperThreshold()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00149">SetFindUpperThreshold()</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1184,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IsolatedConnectedImageFilter::m_IsolatedValue {0.0}</td>
+          <td class="memname">double itk::simple::IsolatedConnectedImageFilter::m_IsolatedValue { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -1193,9 +1194,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00216">216</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00153">GetIsolatedValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00178">GetIsolatedValue()</a>.</p>
 
 </div>
 </div>
@@ -1209,7 +1210,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IsolatedConnectedImageFilter::m_IsolatedValueTolerance {1.0}</td>
+          <td class="memname">double itk::simple::IsolatedConnectedImageFilter::m_IsolatedValueTolerance { 1.0 }</td>
         </tr>
       </table>
   </td>
@@ -1219,9 +1220,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00124">GetIsolatedValueTolerance()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00119">SetIsolatedValueTolerance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00143">GetIsolatedValueTolerance()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00137">SetIsolatedValueTolerance()</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1236,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IsolatedConnectedImageFilter::m_Lower {0}</td>
+          <td class="memname">double itk::simple::IsolatedConnectedImageFilter::m_Lower { 0 }</td>
         </tr>
       </table>
   </td>
@@ -1245,9 +1246,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00094">GetLower()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00089">SetLower()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00107">GetLower()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00101">SetLower()</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1262,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#af8e62e9965d800d153f71ab77c624f12">MemberFunctionType</a>&gt; &gt; itk::simple::IsolatedConnectedImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a1eb5e11b028363ca2fea4bbda41f2072">MemberFunctionType</a>&gt; &gt; itk::simple::IsolatedConnectedImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -1271,7 +1272,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1285,7 +1286,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t itk::simple::IsolatedConnectedImageFilter::m_ReplaceValue {1u}</td>
+          <td class="memname">uint8_t itk::simple::IsolatedConnectedImageFilter::m_ReplaceValue { 1u }</td>
         </tr>
       </table>
   </td>
@@ -1295,9 +1296,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00188">188</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00114">GetReplaceValue()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00109">SetReplaceValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00131">GetReplaceValue()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00125">SetReplaceValue()</a>.</p>
 
 </div>
 </div>
@@ -1311,7 +1312,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::IsolatedConnectedImageFilter::m_Seed1 {std::vector&lt;unsigned int&gt;(3, 0)}</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::IsolatedConnectedImageFilter::m_Seed1 { std::vector&lt;unsigned int&gt;(3, 0) }</td>
         </tr>
       </table>
   </td>
@@ -1321,9 +1322,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00073">GetSeed1()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00069">SetSeed1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00082">GetSeed1()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00077">SetSeed1()</a>.</p>
 
 </div>
 </div>
@@ -1337,7 +1338,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::IsolatedConnectedImageFilter::m_Seed2 {std::vector&lt;unsigned int&gt;(3, 0)}</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::IsolatedConnectedImageFilter::m_Seed2 { std::vector&lt;unsigned int&gt;(3, 0) }</td>
         </tr>
       </table>
   </td>
@@ -1347,9 +1348,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00084">GetSeed2()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00080">SetSeed2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00095">GetSeed2()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00090">SetSeed2()</a>.</p>
 
 </div>
 </div>
@@ -1363,7 +1364,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::IsolatedConnectedImageFilter::m_ThresholdingFailed {false}</td>
+          <td class="memname">bool itk::simple::IsolatedConnectedImageFilter::m_ThresholdingFailed { false }</td>
         </tr>
       </table>
   </td>
@@ -1373,9 +1374,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00215">215</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00145">GetThresholdingFailed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00170">GetThresholdingFailed()</a>.</p>
 
 </div>
 </div>
@@ -1389,7 +1390,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IsolatedConnectedImageFilter::m_Upper {1}</td>
+          <td class="memname">double itk::simple::IsolatedConnectedImageFilter::m_Upper { 1 }</td>
         </tr>
       </table>
   </td>
@@ -1399,9 +1400,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html">sitkIsolatedConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00104">GetUpper()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00099">SetUpper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00119">GetUpper()</a>, and <a class="el" href="sitkIsolatedConnectedImageFilter_8h_source.html#l00113">SetUpper()</a>.</p>
 
 </div>
 </div>

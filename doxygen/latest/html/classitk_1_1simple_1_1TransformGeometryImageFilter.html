@@ -166,11 +166,12 @@ $(function(){ initResizable(false); });
 </ul>
 <p>The TransformPhysicalPointToContinuousIndex method performs then: \begin{eqnarray*} \mathbf{ci} &amp;= \mathbf{S}^{-1}\mathbf{D}^{-1}( \mathbf{m}_{p} - \mathbf{o} ) \ \mathbf{m}_{p} &amp;= \mathbf{R}(\mathbf{f}_{p} - \mathbf{c}) + \mathbf{c} + \mathbf{t} \end{eqnarray*}</p>
 <p>After substitution:</p>
-<p>\begin{eqnarray*} \mathbf{m}_{c} &amp;= \underbrace{\mathbf{R}^{-1}\mathbf{D}}_\text{new cosine}\mathbf{S} * \mathbf{i} + \underbrace{\mathbf{R}^{-1} * \mathbf{o} - \mathbf{R}^{-1} * \mathbf{c} - \mathbf{R}^{-1}*t}_\text{new origin} + \mathbf{c} \ \ \mathbf{D}^{'} &amp;= \mathbf{R}^{-1}\mathbf{D} \ \mathbf{o}^{'} &amp;= \mathbf{R}^{-1} * ( \mathbf{o} - \mathbf{c} - \mathbf{t} ) + \mathbf{c} \end{eqnarray*} </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a04ad561182689674c27bd53041e25ec5" title="Modify an image&#39;s geometric meta-data, changing its &quot;physical&quot; extent.">itk::simple::TransformGeometry</a> for the procedural interface </dd>
+<p>\begin{eqnarray*} \mathbf{m}_{c} &amp;= \underbrace{\mathbf{R}^{-1}\mathbf{D}}_\text{new cosine}\mathbf{S} * \mathbf{i} + \underbrace{\mathbf{R}^{-1} * \mathbf{o} - \mathbf{R}^{-1} * \mathbf{c} - \mathbf{R}^{-1}*t}_\text{new origin} + \mathbf{c} \ \ \mathbf{D}^{'} &amp;= \mathbf{R}^{-1}\mathbf{D} \ \mathbf{o}^{'} &amp;= \mathbf{R}^{-1} * ( \mathbf{o} - \mathbf{c} - \mathbf{t} ) + \mathbf{c} \end{eqnarray*}</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a04ad561182689674c27bd53041e25ec5" title="Modify an image&#39;s geometric meta-data, changing its &quot;physical&quot; extent.">itk::simple::TransformGeometry</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TransformGeometryImageFilter.html">itk::TransformGeometryImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -245,8 +246,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aac00adccfe10e557462dd08e887acb81" id="r_aac00adccfe10e557462dd08e887acb81"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac00adccfe10e557462dd08e887acb81">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * image, const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> * transform )</td></tr>
-<tr class="separator:aac00adccfe10e557462dd08e887acb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ed4a5f15a3db1f7ec7bf19fcd4c5c0" id="r_a54ed4a5f15a3db1f7ec7bf19fcd4c5c0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54ed4a5f15a3db1f7ec7bf19fcd4c5c0">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> *transform)</td></tr>
+<tr class="separator:a54ed4a5f15a3db1f7ec7bf19fcd4c5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -258,7 +259,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac68676b7885b5c191f6d45cac79a10d8" id="r_ac68676b7885b5c191f6d45cac79a10d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac68676b7885b5c191f6d45cac79a10d8">m_InPlace</a> {false}</td></tr>
 <tr class="separator:ac68676b7885b5c191f6d45cac79a10d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7f6d7abbd6e9bc8eec1613ad117ce9" id="r_adf7f6d7abbd6e9bc8eec1613ad117ce9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aac00adccfe10e557462dd08e887acb81">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf7f6d7abbd6e9bc8eec1613ad117ce9">m_MemberFactory</a></td></tr>
+<tr class="memitem:adf7f6d7abbd6e9bc8eec1613ad117ce9" id="r_adf7f6d7abbd6e9bc8eec1613ad117ce9"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a54ed4a5f15a3db1f7ec7bf19fcd4c5c0">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf7f6d7abbd6e9bc8eec1613ad117ce9">m_MemberFactory</a></td></tr>
 <tr class="separator:adf7f6d7abbd6e9bc8eec1613ad117ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -365,8 +366,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aac00adccfe10e557462dd08e887acb81" name="aac00adccfe10e557462dd08e887acb81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac00adccfe10e557462dd08e887acb81">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a54ed4a5f15a3db1f7ec7bf19fcd4c5c0" name="a54ed4a5f15a3db1f7ec7bf19fcd4c5c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54ed4a5f15a3db1f7ec7bf19fcd4c5c0">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#aac00adccfe10e557462dd08e887acb81">itk::simple::TransformGeometryImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * image, const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> * transform )</td>
+          <td class="memname">using <a class="el" href="#a54ed4a5f15a3db1f7ec7bf19fcd4c5c0">itk::simple::TransformGeometryImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> *transform)</td>
         </tr>
       </table>
   </td>
@@ -386,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +404,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +420,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -541,7 +542,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00135">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00140">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -571,7 +572,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -614,7 +615,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#aac00adccfe10e557462dd08e887acb81">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a54ed4a5f15a3db1f7ec7bf19fcd4c5c0">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -624,7 +625,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#afd2b0436ee1dd3a4dfdead7f2a649efc">ExecuteInternal()</a>.</p>
 
@@ -651,7 +652,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -665,7 +666,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aac00adccfe10e557462dd08e887acb81">MemberFunctionType</a>&gt; &gt; itk::simple::TransformGeometryImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a54ed4a5f15a3db1f7ec7bf19fcd4c5c0">MemberFunctionType</a>&gt; &gt; itk::simple::TransformGeometryImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -675,7 +676,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkTransformGeometryImageFilter_8h_source.html">sitkTransformGeometryImageFilter.h</a>.</p>
 
 </div>
 </div>

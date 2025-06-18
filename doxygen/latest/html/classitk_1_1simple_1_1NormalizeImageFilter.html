@@ -116,13 +116,13 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p>Normalize an image by setting its mean to zero and variance to one. </p>
 <p><a class="el" href="classitk_1_1simple_1_1NormalizeImageFilter.html" title="Normalize an image by setting its mean to zero and variance to one.">NormalizeImageFilter</a> shifts and scales an image so that the pixels in the image have a zero mean and unit variance. This filter uses <a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a> to compute the mean and variance of the input and then applies <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html" title="Shift and scale the pixels in an image.">ShiftScaleImageFilter</a> to shift and scale the pixels.</p>
 <p>NB: since this filter normalizes the data such that the mean is at 0, and \(-\sigma\) to \(+\sigma\) is mapped to -1.0 to 1.0, output image integral types will produce an image that DOES NOT HAVE a unit variance due to 68% of the intensity values being mapped to the real number range of -1.0 to 1.0 and then cast to the output integral value.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">NormalizeToConstantImageFilter</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">NormalizeToConstantImageFilter</a></dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7" title="Normalize an image by setting its mean to zero and variance to one.">itk::simple::Normalize</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7" title="Normalize an image by setting its mean to zero and variance to one.">itk::simple::Normalize</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NormalizeImageFilter.html">itk::NormalizeImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -195,8 +195,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a9f4d0a1424c48db0ecb0469c942fac2d" id="r_a9f4d0a1424c48db0ecb0469c942fac2d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f4d0a1424c48db0ecb0469c942fac2d">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a9f4d0a1424c48db0ecb0469c942fac2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168a989d7babcfc3a9ac1094962e9b2b" id="r_a168a989d7babcfc3a9ac1094962e9b2b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a168a989d7babcfc3a9ac1094962e9b2b">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a168a989d7babcfc3a9ac1094962e9b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -209,7 +209,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1f94650c1bb307bb7b321c5f46571173" id="r_a1f94650c1bb307bb7b321c5f46571173"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a9f4d0a1424c48db0ecb0469c942fac2d">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f94650c1bb307bb7b321c5f46571173">m_MemberFactory</a></td></tr>
+<tr class="memitem:a1f94650c1bb307bb7b321c5f46571173" id="r_a1f94650c1bb307bb7b321c5f46571173"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a168a989d7babcfc3a9ac1094962e9b2b">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f94650c1bb307bb7b321c5f46571173">m_MemberFactory</a></td></tr>
 <tr class="separator:a1f94650c1bb307bb7b321c5f46571173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -318,8 +318,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a9f4d0a1424c48db0ecb0469c942fac2d" name="a9f4d0a1424c48db0ecb0469c942fac2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f4d0a1424c48db0ecb0469c942fac2d">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a168a989d7babcfc3a9ac1094962e9b2b" name="a168a989d7babcfc3a9ac1094962e9b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a168a989d7babcfc3a9ac1094962e9b2b">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +328,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a9f4d0a1424c48db0ecb0469c942fac2d">itk::simple::NormalizeImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a168a989d7babcfc3a9ac1094962e9b2b">itk::simple::NormalizeImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -339,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +493,7 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Dispatched methods which calls ExecuteInternal on each component </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00081">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00086">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -523,7 +523,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -566,7 +566,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt; <a class="el" href="#a9f4d0a1424c48db0ecb0469c942fac2d">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt; <a class="el" href="#a168a989d7babcfc3a9ac1094962e9b2b">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -576,7 +576,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a0d22971017bd41bd41ccfa63553c528e">ExecuteInternalVectorImage()</a>.</p>
 
@@ -592,7 +592,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a9f4d0a1424c48db0ecb0469c942fac2d">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a168a989d7babcfc3a9ac1094962e9b2b">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -602,7 +602,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -617,7 +617,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a9f4d0a1424c48db0ecb0469c942fac2d">MemberFunctionType</a>&gt; &gt; itk::simple::NormalizeImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a168a989d7babcfc3a9ac1094962e9b2b">MemberFunctionType</a>&gt; &gt; itk::simple::NormalizeImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -627,7 +627,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>

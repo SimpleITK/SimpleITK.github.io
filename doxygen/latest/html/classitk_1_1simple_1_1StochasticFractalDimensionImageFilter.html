@@ -118,12 +118,12 @@ $(function(){ initResizable(false); });
 <p>This class which is templated over the input and output images as well as a mask image type. The input is a scalar image, an optional neighborhood radius (default = 2), and an optional mask. The mask can be specified to decrease computation time since, as the authors point out, calculation is time-consuming.</p>
 <p>This filter was contributed by Nick Tustison and James Gee from the PICSL lab, at the University of Pennsylvania as an paper to the Insight Journal:</p>
 <p>"Stochastic Fractal Dimension Image" <a href="https://doi.org/10.54294/ne109t">https://doi.org/10.54294/ne109t</a></p>
-<dl class="section author"><dt>Author</dt><dd>Nick Tustison </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2e12c7f4529ebf84c811fb1a1bf90261" title="This filter computes the stochastic fractal dimension of the input image.">itk::simple::StochasticFractalDimension</a> for the procedural interface </dd>
+<dl class="section author"><dt>Author</dt><dd>Nick Tustison</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2e12c7f4529ebf84c811fb1a1bf90261" title="This filter computes the stochastic fractal dimension of the input image.">itk::simple::StochasticFractalDimension</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1StochasticFractalDimensionImageFilter.html">itk::StochasticFractalDimensionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -204,8 +204,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a10bef0c69429bca3e318593e07ce02ae" id="r_a10bef0c69429bca3e318593e07ce02ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10bef0c69429bca3e318593e07ce02ae">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * maskImage )</td></tr>
-<tr class="separator:a10bef0c69429bca3e318593e07ce02ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9beddbf6ab5165691d2c0f14fef28b90" id="r_a9beddbf6ab5165691d2c0f14fef28b90"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9beddbf6ab5165691d2c0f14fef28b90">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *maskImage)</td></tr>
+<tr class="separator:a9beddbf6ab5165691d2c0f14fef28b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -215,9 +215,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a58ec2dbc7571e2945bc0a2677ee76f2c" id="r_a58ec2dbc7571e2945bc0a2677ee76f2c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a10bef0c69429bca3e318593e07ce02ae">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58ec2dbc7571e2945bc0a2677ee76f2c">m_MemberFactory</a></td></tr>
+<tr class="memitem:a58ec2dbc7571e2945bc0a2677ee76f2c" id="r_a58ec2dbc7571e2945bc0a2677ee76f2c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a9beddbf6ab5165691d2c0f14fef28b90">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58ec2dbc7571e2945bc0a2677ee76f2c">m_MemberFactory</a></td></tr>
 <tr class="separator:a58ec2dbc7571e2945bc0a2677ee76f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ee5925f2a670e0c2e4dc185e01eba2" id="r_ad3ee5925f2a670e0c2e4dc185e01eba2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3ee5925f2a670e0c2e4dc185e01eba2">m_NeighborhoodRadius</a> {std::vector&lt;unsigned int&gt;(3, 2u)}</td></tr>
+<tr class="memitem:ad3ee5925f2a670e0c2e4dc185e01eba2" id="r_ad3ee5925f2a670e0c2e4dc185e01eba2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3ee5925f2a670e0c2e4dc185e01eba2">m_NeighborhoodRadius</a> { std::vector&lt;unsigned int&gt;(3, 2u) }</td></tr>
 <tr class="separator:ad3ee5925f2a670e0c2e4dc185e01eba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -324,8 +324,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a10bef0c69429bca3e318593e07ce02ae" name="a10bef0c69429bca3e318593e07ce02ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10bef0c69429bca3e318593e07ce02ae">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a9beddbf6ab5165691d2c0f14fef28b90" name="a9beddbf6ab5165691d2c0f14fef28b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9beddbf6ab5165691d2c0f14fef28b90">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -334,7 +334,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a10bef0c69429bca3e318593e07ce02ae">itk::simple::StochasticFractalDimensionImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * maskImage )</td>
+          <td class="memname">using <a class="el" href="#a9beddbf6ab5165691d2c0f14fef28b90">itk::simple::StochasticFractalDimensionImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *maskImage)</td>
         </tr>
       </table>
   </td>
@@ -345,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -362,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00097">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00104">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -526,7 +526,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -554,9 +554,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Manhattan radius used for evaluating the fractal dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00102">m_NeighborhoodRadius</a>.</p>
+<p class="reference">References <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00108">m_NeighborhoodRadius</a>.</p>
 
 </div>
 </div>
@@ -584,9 +584,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Manhattan radius used for evaluating the fractal dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00102">m_NeighborhoodRadius</a>.</p>
+<p class="reference">References <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00108">m_NeighborhoodRadius</a>.</p>
 
 </div>
 </div>
@@ -614,9 +614,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the NeighborhoodRadius vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00102">m_NeighborhoodRadius</a>.</p>
+<p class="reference">References <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00108">m_NeighborhoodRadius</a>.</p>
 
 </div>
 </div>
@@ -659,7 +659,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a10bef0c69429bca3e318593e07ce02ae">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a9beddbf6ab5165691d2c0f14fef28b90">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -669,7 +669,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a95b4614cb32016d3e94af7ef4f3db80a">ExecuteInternal()</a>.</p>
 
@@ -686,7 +686,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a10bef0c69429bca3e318593e07ce02ae">MemberFunctionType</a>&gt; &gt; itk::simple::StochasticFractalDimensionImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a9beddbf6ab5165691d2c0f14fef28b90">MemberFunctionType</a>&gt; &gt; itk::simple::StochasticFractalDimensionImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -696,7 +696,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +710,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::StochasticFractalDimensionImageFilter::m_NeighborhoodRadius {std::vector&lt;unsigned int&gt;(3, 2u)}</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::StochasticFractalDimensionImageFilter::m_NeighborhoodRadius { std::vector&lt;unsigned int&gt;(3, 2u) }</td>
         </tr>
       </table>
   </td>
@@ -720,9 +720,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html">sitkStochasticFractalDimensionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00075">GetNeighborhoodRadius()</a>, <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00067">SetNeighborhoodRadius()</a>, and <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00070">SetNeighborhoodRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00085">GetNeighborhoodRadius()</a>, <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00075">SetNeighborhoodRadius()</a>, and <a class="el" href="sitkStochasticFractalDimensionImageFilter_8h_source.html#l00080">SetNeighborhoodRadius()</a>.</p>
 
 </div>
 </div>

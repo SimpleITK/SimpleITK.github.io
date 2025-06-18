@@ -135,11 +135,12 @@ $(function(){ initResizable(false); });
 <ul>
 <li>Store the casted value into the output image.</li>
 </ul>
-<p>The filter expects all images to have the same dimension (e.g. all 2D, or all 3D, or all ND). </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#acdf0744e37d4f8e521affcea2a67e8e4" title="Implements pixel-wise the computation of absolute value difference.">itk::simple::AbsoluteValueDifference</a> for the procedural interface </dd>
+<p>The filter expects all images to have the same dimension (e.g. all 2D, or all 3D, or all ND).</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#acdf0744e37d4f8e521affcea2a67e8e4" title="Implements pixel-wise the computation of absolute value difference.">itk::simple::AbsoluteValueDifference</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AbsoluteValueDifferenceImageFilter.html">itk::AbsoluteValueDifferenceImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -220,12 +221,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a64be28cab9316612e2be05db0ba0e062" id="r_a64be28cab9316612e2be05db0ba0e062"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64be28cab9316612e2be05db0ba0e062">MemberFunction1Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td></tr>
-<tr class="separator:a64be28cab9316612e2be05db0ba0e062"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a852a01efada81c0c4fb690d737ead80a" id="r_a852a01efada81c0c4fb690d737ead80a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a852a01efada81c0c4fb690d737ead80a">MemberFunction2Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, double constant )</td></tr>
-<tr class="separator:a852a01efada81c0c4fb690d737ead80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab50a70012c5102ec66430cad5fcea4cd" id="r_ab50a70012c5102ec66430cad5fcea4cd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab50a70012c5102ec66430cad5fcea4cd">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td></tr>
-<tr class="separator:ab50a70012c5102ec66430cad5fcea4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e36f2f7da00d39ef69756d74f854cc6" id="r_a7e36f2f7da00d39ef69756d74f854cc6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e36f2f7da00d39ef69756d74f854cc6">MemberFunction1Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2)</td></tr>
+<tr class="separator:a7e36f2f7da00d39ef69756d74f854cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80715acdc16ee64ab6c6ca091ae40c7" id="r_ad80715acdc16ee64ab6c6ca091ae40c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad80715acdc16ee64ab6c6ca091ae40c7">MemberFunction2Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, double constant)</td></tr>
+<tr class="separator:ad80715acdc16ee64ab6c6ca091ae40c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15a39425198cc9a2c5acd4a1cb509f4" id="r_af15a39425198cc9a2c5acd4a1cb509f4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af15a39425198cc9a2c5acd4a1cb509f4">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
+<tr class="separator:af15a39425198cc9a2c5acd4a1cb509f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -243,11 +244,11 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a139245c28d1f8d00fed8073b4bd42831" id="r_a139245c28d1f8d00fed8073b4bd42831"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a139245c28d1f8d00fed8073b4bd42831">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a139245c28d1f8d00fed8073b4bd42831"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951d1fbff24f33cb3334af40159e81ff" id="r_a951d1fbff24f33cb3334af40159e81ff"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab50a70012c5102ec66430cad5fcea4cd">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a951d1fbff24f33cb3334af40159e81ff">m_MemberFactory</a></td></tr>
+<tr class="memitem:a951d1fbff24f33cb3334af40159e81ff" id="r_a951d1fbff24f33cb3334af40159e81ff"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#af15a39425198cc9a2c5acd4a1cb509f4">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a951d1fbff24f33cb3334af40159e81ff">m_MemberFactory</a></td></tr>
 <tr class="separator:a951d1fbff24f33cb3334af40159e81ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27b70f72285fa034d6df78de938442ea" id="r_a27b70f72285fa034d6df78de938442ea"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a64be28cab9316612e2be05db0ba0e062">MemberFunction1Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27b70f72285fa034d6df78de938442ea">m_MemberFactory1</a></td></tr>
+<tr class="memitem:a27b70f72285fa034d6df78de938442ea" id="r_a27b70f72285fa034d6df78de938442ea"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a7e36f2f7da00d39ef69756d74f854cc6">MemberFunction1Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27b70f72285fa034d6df78de938442ea">m_MemberFactory1</a></td></tr>
 <tr class="separator:a27b70f72285fa034d6df78de938442ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95446634df583ca94d70bcd7df159e45" id="r_a95446634df583ca94d70bcd7df159e45"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a852a01efada81c0c4fb690d737ead80a">MemberFunction2Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95446634df583ca94d70bcd7df159e45">m_MemberFactory2</a></td></tr>
+<tr class="memitem:a95446634df583ca94d70bcd7df159e45" id="r_a95446634df583ca94d70bcd7df159e45"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ad80715acdc16ee64ab6c6ca091ae40c7">MemberFunction2Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95446634df583ca94d70bcd7df159e45">m_MemberFactory2</a></td></tr>
 <tr class="separator:a95446634df583ca94d70bcd7df159e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -358,8 +359,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a64be28cab9316612e2be05db0ba0e062" name="a64be28cab9316612e2be05db0ba0e062"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64be28cab9316612e2be05db0ba0e062">&#9670;&#160;</a></span>MemberFunction1Type</h2>
+<a id="a7e36f2f7da00d39ef69756d74f854cc6" name="a7e36f2f7da00d39ef69756d74f854cc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e36f2f7da00d39ef69756d74f854cc6">&#9670;&#160;</a></span>MemberFunction1Type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a64be28cab9316612e2be05db0ba0e062">itk::simple::AbsoluteValueDifferenceImageFilter::MemberFunction1Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td>
+          <td class="memname">using <a class="el" href="#a7e36f2f7da00d39ef69756d74f854cc6">itk::simple::AbsoluteValueDifferenceImageFilter::MemberFunction1Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2)</td>
         </tr>
       </table>
   </td>
@@ -378,12 +379,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
-<a id="a852a01efada81c0c4fb690d737ead80a" name="a852a01efada81c0c4fb690d737ead80a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a852a01efada81c0c4fb690d737ead80a">&#9670;&#160;</a></span>MemberFunction2Type</h2>
+<a id="ad80715acdc16ee64ab6c6ca091ae40c7" name="ad80715acdc16ee64ab6c6ca091ae40c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80715acdc16ee64ab6c6ca091ae40c7">&#9670;&#160;</a></span>MemberFunction2Type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +393,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a852a01efada81c0c4fb690d737ead80a">itk::simple::AbsoluteValueDifferenceImageFilter::MemberFunction2Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, double constant )</td>
+          <td class="memname">using <a class="el" href="#ad80715acdc16ee64ab6c6ca091ae40c7">itk::simple::AbsoluteValueDifferenceImageFilter::MemberFunction2Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, double constant)</td>
         </tr>
       </table>
   </td>
@@ -402,12 +403,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
-<a id="ab50a70012c5102ec66430cad5fcea4cd" name="ab50a70012c5102ec66430cad5fcea4cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab50a70012c5102ec66430cad5fcea4cd">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="af15a39425198cc9a2c5acd4a1cb509f4" name="af15a39425198cc9a2c5acd4a1cb509f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15a39425198cc9a2c5acd4a1cb509f4">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,7 +417,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ab50a70012c5102ec66430cad5fcea4cd">itk::simple::AbsoluteValueDifferenceImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td>
+          <td class="memname">using <a class="el" href="#af15a39425198cc9a2c5acd4a1cb509f4">itk::simple::AbsoluteValueDifferenceImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td>
         </tr>
       </table>
   </td>
@@ -427,7 +428,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -444,7 +445,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -460,7 +461,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -646,7 +647,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00118">detail::MemberFunctionAddressor&lt; MemberFunction1Type &gt;</a>, <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00123">detail::MemberFunctionAddressor&lt; MemberFunction2Type &gt;</a>, and <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00113">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00124">detail::MemberFunctionAddressor&lt; MemberFunction1Type &gt;</a>, and <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00129">detail::MemberFunctionAddressor&lt; MemberFunction2Type &gt;</a>.</p>
 
 </div>
 </div>
@@ -738,7 +739,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -781,7 +782,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a64be28cab9316612e2be05db0ba0e062">MemberFunction1Type</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a7e36f2f7da00d39ef69756d74f854cc6">MemberFunction1Type</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -791,7 +792,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ac957f715f9375a5689110501e84f6465">ExecuteInternal()</a>.</p>
 
@@ -807,7 +808,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a852a01efada81c0c4fb690d737ead80a">MemberFunction2Type</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#ad80715acdc16ee64ab6c6ca091ae40c7">MemberFunction2Type</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -817,7 +818,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ac957f715f9375a5689110501e84f6465">ExecuteInternal()</a>.</p>
 
@@ -833,7 +834,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#ab50a70012c5102ec66430cad5fcea4cd">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#af15a39425198cc9a2c5acd4a1cb509f4">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -843,9 +844,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="#ac957f715f9375a5689110501e84f6465">ExecuteInternal()</a>.</p>
+<p class="reference">References <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00130">m_MemberFactory2</a>.</p>
 
 </div>
 </div>
@@ -870,7 +871,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -884,7 +885,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ab50a70012c5102ec66430cad5fcea4cd">MemberFunctionType</a>&gt; &gt; itk::simple::AbsoluteValueDifferenceImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#af15a39425198cc9a2c5acd4a1cb509f4">MemberFunctionType</a>&gt; &gt; itk::simple::AbsoluteValueDifferenceImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -894,7 +895,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -908,7 +909,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a64be28cab9316612e2be05db0ba0e062">MemberFunction1Type</a>&gt; &gt; itk::simple::AbsoluteValueDifferenceImageFilter::m_MemberFactory1</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a7e36f2f7da00d39ef69756d74f854cc6">MemberFunction1Type</a>&gt; &gt; itk::simple::AbsoluteValueDifferenceImageFilter::m_MemberFactory1</td>
         </tr>
       </table>
   </td>
@@ -918,7 +919,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -932,7 +933,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a852a01efada81c0c4fb690d737ead80a">MemberFunction2Type</a>&gt; &gt; itk::simple::AbsoluteValueDifferenceImageFilter::m_MemberFactory2</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ad80715acdc16ee64ab6c6ca091ae40c7">MemberFunction2Type</a>&gt; &gt; itk::simple::AbsoluteValueDifferenceImageFilter::m_MemberFactory2</td>
         </tr>
       </table>
   </td>
@@ -942,7 +943,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html">sitkAbsoluteValueDifferenceImageFilter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sitkAbsoluteValueDifferenceImageFilter_8h_source.html#l00132">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>

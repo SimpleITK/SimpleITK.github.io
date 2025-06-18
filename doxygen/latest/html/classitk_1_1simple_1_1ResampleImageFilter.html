@@ -122,7 +122,7 @@ $(function(){ initResizable(false); });
 <p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section warning"><dt>Warning</dt><dd>For multithreading, the TransformPoint method of the user-designated coordinate transform must be threadsafe.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ResampleImageFilter.html">itk::ResampleImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -240,8 +240,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a9863a78a8663856d9950bcf21355fadb" id="r_a9863a78a8663856d9950bcf21355fadb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9863a78a8663856d9950bcf21355fadb">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a9863a78a8663856d9950bcf21355fadb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f38a69274c914201cce89957d65ee1" id="r_a74f38a69274c914201cce89957d65ee1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74f38a69274c914201cce89957d65ee1">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a74f38a69274c914201cce89957d65ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -254,25 +254,25 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:afc34cb5731549ee57f2af509f37dbac6" id="r_afc34cb5731549ee57f2af509f37dbac6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc34cb5731549ee57f2af509f37dbac6">m_DefaultPixelValue</a> {0.0}</td></tr>
+<tr class="memitem:afc34cb5731549ee57f2af509f37dbac6" id="r_afc34cb5731549ee57f2af509f37dbac6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc34cb5731549ee57f2af509f37dbac6">m_DefaultPixelValue</a> { 0.0 }</td></tr>
 <tr class="separator:afc34cb5731549ee57f2af509f37dbac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6348d695708455bd4dfb2d20c4d4acb2" id="r_a6348d695708455bd4dfb2d20c4d4acb2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt; <a class="el" href="#a9863a78a8663856d9950bcf21355fadb">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6348d695708455bd4dfb2d20c4d4acb2">m_DualMemberFactory</a></td></tr>
+<tr class="memitem:a6348d695708455bd4dfb2d20c4d4acb2" id="r_a6348d695708455bd4dfb2d20c4d4acb2"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt; <a class="el" href="#a74f38a69274c914201cce89957d65ee1">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6348d695708455bd4dfb2d20c4d4acb2">m_DualMemberFactory</a></td></tr>
 <tr class="separator:a6348d695708455bd4dfb2d20c4d4acb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ab19b10e6626916f2ce1c823f478777" id="r_a5ab19b10e6626916f2ce1c823f478777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ab19b10e6626916f2ce1c823f478777">m_Interpolator</a> {<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">itk::simple::sitkLinear</a>}</td></tr>
+<tr class="memitem:a5ab19b10e6626916f2ce1c823f478777" id="r_a5ab19b10e6626916f2ce1c823f478777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ab19b10e6626916f2ce1c823f478777">m_Interpolator</a> { <a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">itk::simple::sitkLinear</a> }</td></tr>
 <tr class="separator:a5ab19b10e6626916f2ce1c823f478777"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1e07862b081cd0343ab1802a6f376d0" id="r_ad1e07862b081cd0343ab1802a6f376d0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1e07862b081cd0343ab1802a6f376d0">m_OutputDirection</a> {std::vector&lt;double&gt;()}</td></tr>
+<tr class="memitem:ad1e07862b081cd0343ab1802a6f376d0" id="r_ad1e07862b081cd0343ab1802a6f376d0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1e07862b081cd0343ab1802a6f376d0">m_OutputDirection</a> { std::vector&lt;double&gt;() }</td></tr>
 <tr class="separator:ad1e07862b081cd0343ab1802a6f376d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f7681904456dd517c96008d910b8ca3" id="r_a9f7681904456dd517c96008d910b8ca3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f7681904456dd517c96008d910b8ca3">m_OutputOrigin</a> {std::vector&lt;double&gt;(3, 0.0)}</td></tr>
+<tr class="memitem:a9f7681904456dd517c96008d910b8ca3" id="r_a9f7681904456dd517c96008d910b8ca3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f7681904456dd517c96008d910b8ca3">m_OutputOrigin</a> { std::vector&lt;double&gt;(3, 0.0) }</td></tr>
 <tr class="separator:a9f7681904456dd517c96008d910b8ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016daff6a2ce1e34a85988a6f156d6ca" id="r_a016daff6a2ce1e34a85988a6f156d6ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a016daff6a2ce1e34a85988a6f156d6ca">m_OutputPixelType</a> {<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a>}</td></tr>
+<tr class="memitem:a016daff6a2ce1e34a85988a6f156d6ca" id="r_a016daff6a2ce1e34a85988a6f156d6ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a016daff6a2ce1e34a85988a6f156d6ca">m_OutputPixelType</a> { <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a> }</td></tr>
 <tr class="separator:a016daff6a2ce1e34a85988a6f156d6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7821667b9b3e68634d62561d5f4fb1be" id="r_a7821667b9b3e68634d62561d5f4fb1be"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7821667b9b3e68634d62561d5f4fb1be">m_OutputSpacing</a> {std::vector&lt;double&gt;(3, 1.0)}</td></tr>
+<tr class="memitem:a7821667b9b3e68634d62561d5f4fb1be" id="r_a7821667b9b3e68634d62561d5f4fb1be"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7821667b9b3e68634d62561d5f4fb1be">m_OutputSpacing</a> { std::vector&lt;double&gt;(3, 1.0) }</td></tr>
 <tr class="separator:a7821667b9b3e68634d62561d5f4fb1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ca1048b7c7bc9f4cd71d336051aacb5" id="r_a6ca1048b7c7bc9f4cd71d336051aacb5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ca1048b7c7bc9f4cd71d336051aacb5">m_Size</a> {std::vector&lt;uint32_t&gt;(3, 0)}</td></tr>
+<tr class="memitem:a6ca1048b7c7bc9f4cd71d336051aacb5" id="r_a6ca1048b7c7bc9f4cd71d336051aacb5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ca1048b7c7bc9f4cd71d336051aacb5">m_Size</a> { std::vector&lt;uint32_t&gt;(3, 0) }</td></tr>
 <tr class="separator:a6ca1048b7c7bc9f4cd71d336051aacb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a816984c1c8a86c9343137b78ee5fae" id="r_a3a816984c1c8a86c9343137b78ee5fae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a816984c1c8a86c9343137b78ee5fae">m_Transform</a> {<a class="el" href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a>()}</td></tr>
+<tr class="memitem:a3a816984c1c8a86c9343137b78ee5fae" id="r_a3a816984c1c8a86c9343137b78ee5fae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a816984c1c8a86c9343137b78ee5fae">m_Transform</a> { <a class="el" href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a>() }</td></tr>
 <tr class="separator:a3a816984c1c8a86c9343137b78ee5fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a012943a39adf5d84fd53443c983d3741" id="r_a012943a39adf5d84fd53443c983d3741"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a012943a39adf5d84fd53443c983d3741">m_UseNearestNeighborExtrapolator</a> {false}</td></tr>
+<tr class="memitem:a012943a39adf5d84fd53443c983d3741" id="r_a012943a39adf5d84fd53443c983d3741"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a012943a39adf5d84fd53443c983d3741">m_UseNearestNeighborExtrapolator</a> { false }</td></tr>
 <tr class="separator:a012943a39adf5d84fd53443c983d3741"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -381,8 +381,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a9863a78a8663856d9950bcf21355fadb" name="a9863a78a8663856d9950bcf21355fadb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9863a78a8663856d9950bcf21355fadb">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a74f38a69274c914201cce89957d65ee1" name="a74f38a69274c914201cce89957d65ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f38a69274c914201cce89957d65ee1">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -391,7 +391,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a9863a78a8663856d9950bcf21355fadb">itk::simple::ResampleImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a74f38a69274c914201cce89957d65ee1">itk::simple::ResampleImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -402,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -510,7 +510,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00181">detail::DualExecuteInternalVectorAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00207">detail::DualExecuteInternalVectorAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -583,9 +583,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the pixel value when a transformed pixel is outside of the image. The default default pixel value is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00205">m_DefaultPixelValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00228">m_DefaultPixelValue</a>.</p>
 
 </div>
 </div>
@@ -613,9 +613,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the interpolator function. The default is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">LinearInterpolateImageFunction</a> &lt;InputImageType, TInterpolatorPrecisionType&gt;. Some other options are <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NearestNeighborInterpolateImageFunction.html">NearestNeighborInterpolateImageFunction</a> (useful for binary masks and other images with a small number of possible pixel values), and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BSplineInterpolateImageFunction.html">BSplineInterpolateImageFunction</a> (which provides a higher order of interpolation). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00194">m_Interpolator</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00219">m_Interpolator</a>.</p>
 
 </div>
 </div>
@@ -645,7 +645,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00185">185</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -673,9 +673,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Set the output direction cosine matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00203">m_OutputDirection</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00226">m_OutputDirection</a>.</p>
 
 </div>
 </div>
@@ -703,9 +703,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Get the output image origin. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00197">m_OutputOrigin</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00221">m_OutputOrigin</a>.</p>
 
 </div>
 </div>
@@ -734,9 +734,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 <p>Get the ouput pixel type. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00207">m_OutputPixelType</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00230">m_OutputPixelType</a>.</p>
 
 </div>
 </div>
@@ -764,9 +764,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Get the output image spacing. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00200">m_OutputSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00223">m_OutputSpacing</a>.</p>
 
 </div>
 </div>
@@ -794,9 +794,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the size of the output image. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00189">m_Size</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00215">m_Size</a>.</p>
 
 </div>
 </div>
@@ -823,9 +823,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00191">m_Transform</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00217">m_Transform</a>.</p>
 
 </div>
 </div>
@@ -852,9 +852,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00181">181</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00209">m_UseNearestNeighborExtrapolator</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00232">m_UseNearestNeighborExtrapolator</a>.</p>
 
 </div>
 </div>
@@ -882,9 +882,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the pixel value when a transformed pixel is outside of the image. The default default pixel value is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00205">m_DefaultPixelValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00228">m_DefaultPixelValue</a>.</p>
 
 </div>
 </div>
@@ -912,9 +912,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the interpolator function. The default is <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LinearInterpolateImageFunction.html">LinearInterpolateImageFunction</a> &lt;InputImageType, TInterpolatorPrecisionType&gt;. Some other options are <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NearestNeighborInterpolateImageFunction.html">NearestNeighborInterpolateImageFunction</a> (useful for binary masks and other images with a small number of possible pixel values), and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BSplineInterpolateImageFunction.html">BSplineInterpolateImageFunction</a> (which provides a higher order of interpolation). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00194">m_Interpolator</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00219">m_Interpolator</a>.</p>
 
 </div>
 </div>
@@ -942,9 +942,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Set the output direction cosine matrix. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00203">m_OutputDirection</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00226">m_OutputDirection</a>.</p>
 
 </div>
 </div>
@@ -972,9 +972,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Set the output image origin. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00197">m_OutputOrigin</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00221">m_OutputOrigin</a>.</p>
 
 </div>
 </div>
@@ -1003,9 +1003,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 <p>Set the output pixel type, if sitkUnknown then the input type is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00207">m_OutputPixelType</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00230">m_OutputPixelType</a>.</p>
 
 </div>
 </div>
@@ -1033,9 +1033,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Set the output image spacing. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00200">m_OutputSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00223">m_OutputSpacing</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1055,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>This methods sets the output size, origin, spacing and direction to that of the provided image </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00179">detail::DualExecuteInternalAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00204">detail::DualExecuteInternalAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -1083,9 +1083,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the size of the output image. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00189">m_Size</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00215">m_Size</a>.</p>
 
 </div>
 </div>
@@ -1112,9 +1112,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00191">m_Transform</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00217">m_Transform</a>.</p>
 
 </div>
 </div>
@@ -1143,11 +1143,11 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 
 <p>Enables the nearest neighbor extrapolator as opposed to the constant pixel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00209">m_UseNearestNeighborExtrapolator</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00232">m_UseNearestNeighborExtrapolator</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00153">UseNearestNeighborExtrapolatorOff()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00152">UseNearestNeighborExtrapolatorOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00177">UseNearestNeighborExtrapolatorOff()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00175">UseNearestNeighborExtrapolatorOn()</a>.</p>
 
 </div>
 </div>
@@ -1202,9 +1202,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00149">SetUseNearestNeighborExtrapolator()</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00170">SetUseNearestNeighborExtrapolator()</a>.</p>
 
 </div>
 </div>
@@ -1232,9 +1232,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of UseNearestNeighborExtrapolator to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00149">SetUseNearestNeighborExtrapolator()</a>.</p>
+<p class="reference">References <a class="el" href="sitkResampleImageFilter_8h_source.html#l00170">SetUseNearestNeighborExtrapolator()</a>.</p>
 
 </div>
 </div>
@@ -1249,7 +1249,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1DualExecuteInternalAddressor.html">detail::DualExecuteInternalAddressor</a>&lt; <a class="el" href="#a9863a78a8663856d9950bcf21355fadb">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1DualExecuteInternalAddressor.html">detail::DualExecuteInternalAddressor</a>&lt; <a class="el" href="#a74f38a69274c914201cce89957d65ee1">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -1259,7 +1259,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a850affc7fc3ce420c04f754d5d7773a5">SetReferenceImage()</a>.</p>
 
@@ -1275,7 +1275,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1DualExecuteInternalVectorAddressor.html">detail::DualExecuteInternalVectorAddressor</a>&lt; <a class="el" href="#a9863a78a8663856d9950bcf21355fadb">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1DualExecuteInternalVectorAddressor.html">detail::DualExecuteInternalVectorAddressor</a>&lt; <a class="el" href="#a74f38a69274c914201cce89957d65ee1">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -1285,7 +1285,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#aaeea66c70e8a8a04514c7b84abedc855">DualExecuteInternal()</a>.</p>
 
@@ -1302,7 +1302,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ResampleImageFilter::m_DefaultPixelValue {0.0}</td>
+          <td class="memname">double itk::simple::ResampleImageFilter::m_DefaultPixelValue { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -1312,9 +1312,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00228">228</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00134">GetDefaultPixelValue()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00129">SetDefaultPixelValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00152">GetDefaultPixelValue()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00146">SetDefaultPixelValue()</a>.</p>
 
 </div>
 </div>
@@ -1328,7 +1328,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt;<a class="el" href="#a9863a78a8663856d9950bcf21355fadb">MemberFunctionType</a>&gt; &gt; itk::simple::ResampleImageFilter::m_DualMemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1DualMemberFunctionFactory.html">detail::DualMemberFunctionFactory</a>&lt;<a class="el" href="#a74f38a69274c914201cce89957d65ee1">MemberFunctionType</a>&gt; &gt; itk::simple::ResampleImageFilter::m_DualMemberFactory</td>
         </tr>
       </table>
   </td>
@@ -1338,7 +1338,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00211">211</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1352,7 +1352,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> itk::simple::ResampleImageFilter::m_Interpolator {<a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">itk::simple::sitkLinear</a>}</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5">InterpolatorEnum</a> itk::simple::ResampleImageFilter::m_Interpolator { <a class="el" href="namespaceitk_1_1simple.html#a7cb1ef8bd02c669c02ea2f9f5aa374e5ab1d3c20fe43968ed72c71ae2a59d860a">itk::simple::sitkLinear</a> }</td>
         </tr>
       </table>
   </td>
@@ -1362,9 +1362,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00219">219</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00094">GetInterpolator()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00089">SetInterpolator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00104">GetInterpolator()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00098">SetInterpolator()</a>.</p>
 
 </div>
 </div>
@@ -1378,7 +1378,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::ResampleImageFilter::m_OutputDirection {std::vector&lt;double&gt;()}</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::ResampleImageFilter::m_OutputDirection { std::vector&lt;double&gt;() }</td>
         </tr>
       </table>
   </td>
@@ -1388,9 +1388,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00226">226</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00124">GetOutputDirection()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00119">SetOutputDirection()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00140">GetOutputDirection()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00134">SetOutputDirection()</a>.</p>
 
 </div>
 </div>
@@ -1404,7 +1404,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::ResampleImageFilter::m_OutputOrigin {std::vector&lt;double&gt;(3, 0.0)}</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::ResampleImageFilter::m_OutputOrigin { std::vector&lt;double&gt;(3, 0.0) }</td>
         </tr>
       </table>
   </td>
@@ -1414,9 +1414,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00221">221</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00104">GetOutputOrigin()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00099">SetOutputOrigin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00116">GetOutputOrigin()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00110">SetOutputOrigin()</a>.</p>
 
 </div>
 </div>
@@ -1430,7 +1430,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::ResampleImageFilter::m_OutputPixelType {<a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a>}</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::ResampleImageFilter::m_OutputPixelType { <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a> }</td>
         </tr>
       </table>
   </td>
@@ -1440,9 +1440,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00230">230</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00144">GetOutputPixelType()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00139">SetOutputPixelType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00164">GetOutputPixelType()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00158">SetOutputPixelType()</a>.</p>
 
 </div>
 </div>
@@ -1456,7 +1456,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::ResampleImageFilter::m_OutputSpacing {std::vector&lt;double&gt;(3, 1.0)}</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::ResampleImageFilter::m_OutputSpacing { std::vector&lt;double&gt;(3, 1.0) }</td>
         </tr>
       </table>
   </td>
@@ -1466,9 +1466,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00223">223</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00114">GetOutputSpacing()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00109">SetOutputSpacing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00128">GetOutputSpacing()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00122">SetOutputSpacing()</a>.</p>
 
 </div>
 </div>
@@ -1482,7 +1482,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint32_t&gt; itk::simple::ResampleImageFilter::m_Size {std::vector&lt;uint32_t&gt;(3, 0)}</td>
+          <td class="memname">std::vector&lt;uint32_t&gt; itk::simple::ResampleImageFilter::m_Size { std::vector&lt;uint32_t&gt;(3, 0) }</td>
         </tr>
       </table>
   </td>
@@ -1492,9 +1492,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00215">215</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00076">GetSize()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00071">SetSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00082">GetSize()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00076">SetSize()</a>.</p>
 
 </div>
 </div>
@@ -1508,7 +1508,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> itk::simple::ResampleImageFilter::m_Transform {<a class="el" href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a>()}</td>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Transform.html">Transform</a> itk::simple::ResampleImageFilter::m_Transform { <a class="el" href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a>() }</td>
         </tr>
       </table>
   </td>
@@ -1518,9 +1518,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00217">217</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00084">GetTransform()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00080">SetTransform()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00092">GetTransform()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00087">SetTransform()</a>.</p>
 
 </div>
 </div>
@@ -1534,7 +1534,7 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::ResampleImageFilter::m_UseNearestNeighborExtrapolator {false}</td>
+          <td class="memname">bool itk::simple::ResampleImageFilter::m_UseNearestNeighborExtrapolator { false }</td>
         </tr>
       </table>
   </td>
@@ -1544,9 +1544,9 @@ template&lt;class TImageType1, class TImageType2&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00209">209</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00232">232</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00157">GetUseNearestNeighborExtrapolator()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00149">SetUseNearestNeighborExtrapolator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkResampleImageFilter_8h_source.html#l00181">GetUseNearestNeighborExtrapolator()</a>, and <a class="el" href="sitkResampleImageFilter_8h_source.html#l00170">SetUseNearestNeighborExtrapolator()</a>.</p>
 
 </div>
 </div>

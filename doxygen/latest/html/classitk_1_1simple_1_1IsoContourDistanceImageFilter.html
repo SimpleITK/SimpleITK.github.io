@@ -115,11 +115,12 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compute an approximate distance from an interpolated isocontour to the close grid points. </p>
 <p>For standard level set algorithms, it is useful to periodically reinitialize the evolving image to prevent numerical accuracy problems in computing derivatives. This reinitialization is done by computing a signed distance map to the current level set. This class provides the first step in this reinitialization by computing an estimate of the distance from the interpolated isocontour to the pixels (or voxels) that are close to it, i.e. for which the isocontour crosses a segment between them and one of their direct neighbors. This class supports narrowbanding. If the input narrowband is provided, the algorithm will only locate the level set within the input narrowband.</p>
-<p>Implementation of this class is based on Fast and Accurate Redistancing for Level Set Methods Krissian K. and Westin C.F., EUROCAST NeuroImaging Workshop Las Palmas Spain, Ninth International Conference on Computer Aided Systems Theory , pages 48-51, Feb 2003. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a18df15aeab5647dfe80ecc70f3df7c16" title="Compute an approximate distance from an interpolated isocontour to the close grid points.">itk::simple::IsoContourDistance</a> for the procedural interface </dd>
+<p>Implementation of this class is based on Fast and Accurate Redistancing for Level Set Methods Krissian K. and Westin C.F., EUROCAST NeuroImaging Workshop Las Palmas Spain, Ninth International Conference on Computer Aided Systems Theory , pages 48-51, Feb 2003.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a18df15aeab5647dfe80ecc70f3df7c16" title="Compute an approximate distance from an interpolated isocontour to the close grid points.">itk::simple::IsoContourDistance</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsoContourDistanceImageFilter.html">itk::IsoContourDistanceImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -200,8 +201,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:ac23d4645b83c1bd07a335fe9498b8499" id="r_ac23d4645b83c1bd07a335fe9498b8499"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac23d4645b83c1bd07a335fe9498b8499">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:ac23d4645b83c1bd07a335fe9498b8499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf6bf2a115d2b77b273b2ea14f6ff091" id="r_abf6bf2a115d2b77b273b2ea14f6ff091"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf6bf2a115d2b77b273b2ea14f6ff091">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:abf6bf2a115d2b77b273b2ea14f6ff091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -211,11 +212,11 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6edbd3552d2daba97fb603abf20f6b85" id="r_a6edbd3552d2daba97fb603abf20f6b85"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6edbd3552d2daba97fb603abf20f6b85">m_FarValue</a> {10}</td></tr>
+<tr class="memitem:a6edbd3552d2daba97fb603abf20f6b85" id="r_a6edbd3552d2daba97fb603abf20f6b85"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6edbd3552d2daba97fb603abf20f6b85">m_FarValue</a> { 10 }</td></tr>
 <tr class="separator:a6edbd3552d2daba97fb603abf20f6b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1b1228512d612338cee74771d70eea9" id="r_ab1b1228512d612338cee74771d70eea9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1b1228512d612338cee74771d70eea9">m_LevelSetValue</a> {0.0}</td></tr>
+<tr class="memitem:ab1b1228512d612338cee74771d70eea9" id="r_ab1b1228512d612338cee74771d70eea9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1b1228512d612338cee74771d70eea9">m_LevelSetValue</a> { 0.0 }</td></tr>
 <tr class="separator:ab1b1228512d612338cee74771d70eea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9edcfe0f8f3578eb649c0a58b2356e7" id="r_aa9edcfe0f8f3578eb649c0a58b2356e7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac23d4645b83c1bd07a335fe9498b8499">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9edcfe0f8f3578eb649c0a58b2356e7">m_MemberFactory</a></td></tr>
+<tr class="memitem:aa9edcfe0f8f3578eb649c0a58b2356e7" id="r_aa9edcfe0f8f3578eb649c0a58b2356e7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#abf6bf2a115d2b77b273b2ea14f6ff091">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9edcfe0f8f3578eb649c0a58b2356e7">m_MemberFactory</a></td></tr>
 <tr class="separator:aa9edcfe0f8f3578eb649c0a58b2356e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -322,8 +323,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ac23d4645b83c1bd07a335fe9498b8499" name="ac23d4645b83c1bd07a335fe9498b8499"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac23d4645b83c1bd07a335fe9498b8499">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="abf6bf2a115d2b77b273b2ea14f6ff091" name="abf6bf2a115d2b77b273b2ea14f6ff091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf6bf2a115d2b77b273b2ea14f6ff091">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,7 +333,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ac23d4645b83c1bd07a335fe9498b8499">itk::simple::IsoContourDistanceImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#abf6bf2a115d2b77b273b2ea14f6ff091">itk::simple::IsoContourDistanceImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -343,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -360,7 +361,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +377,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +470,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00097">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00105">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -497,9 +498,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of the level set to be located. The default value is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00104">m_FarValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00111">m_FarValue</a>.</p>
 
 </div>
 </div>
@@ -527,9 +528,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of the level set to be located. The default value is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00102">m_LevelSetValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00109">m_LevelSetValue</a>.</p>
 
 </div>
 </div>
@@ -559,7 +560,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -587,9 +588,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of the level set to be located. The default value is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00104">m_FarValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00111">m_FarValue</a>.</p>
 
 </div>
 </div>
@@ -617,9 +618,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of the level set to be located. The default value is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00102">m_LevelSetValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00109">m_LevelSetValue</a>.</p>
 
 </div>
 </div>
@@ -662,7 +663,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#ac23d4645b83c1bd07a335fe9498b8499">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#abf6bf2a115d2b77b273b2ea14f6ff091">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -672,7 +673,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a969e9657446ade9fe753e64c3e16d24e">ExecuteInternal()</a>.</p>
 
@@ -689,7 +690,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IsoContourDistanceImageFilter::m_FarValue {10}</td>
+          <td class="memname">double itk::simple::IsoContourDistanceImageFilter::m_FarValue { 10 }</td>
         </tr>
       </table>
   </td>
@@ -699,9 +700,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00076">GetFarValue()</a>, and <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00071">SetFarValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00087">GetFarValue()</a>, and <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00081">SetFarValue()</a>.</p>
 
 </div>
 </div>
@@ -715,7 +716,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::IsoContourDistanceImageFilter::m_LevelSetValue {0.0}</td>
+          <td class="memname">double itk::simple::IsoContourDistanceImageFilter::m_LevelSetValue { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -725,9 +726,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00066">GetLevelSetValue()</a>, and <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00061">SetLevelSetValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00075">GetLevelSetValue()</a>, and <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00069">SetLevelSetValue()</a>.</p>
 
 </div>
 </div>
@@ -741,7 +742,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ac23d4645b83c1bd07a335fe9498b8499">MemberFunctionType</a>&gt; &gt; itk::simple::IsoContourDistanceImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#abf6bf2a115d2b77b273b2ea14f6ff091">MemberFunctionType</a>&gt; &gt; itk::simple::IsoContourDistanceImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -751,7 +752,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkIsoContourDistanceImageFilter_8h_source.html">sitkIsoContourDistanceImageFilter.h</a>.</p>
 
 </div>
 </div>

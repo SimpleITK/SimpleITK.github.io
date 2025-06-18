@@ -120,9 +120,9 @@ $(function(){ initResizable(false); });
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShapeLabelObject.html">ShapeLabelObject</a> , <a class="el" href="classitk_1_1simple_1_1RelabelComponentImageFilter.html" title="Relabel the components in an image such that consecutive labels are used.">RelabelComponentImageFilter</a></dd>
 <dd>
-<a class="el" href="classitk_1_1simple_1_1MergeLabelMapFilter.html" title="Merges several Label Maps.">itk::simple::MergeLabelMapFilter</a> for the procedural interface </dd></dl>
+<a class="el" href="namespaceitk_1_1simple.html#add438982060cb9250a68d7f274e1227b" title="Merges several Label Maps.">itk::simple::MergeLabelMap</a> for the procedural interface </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -220,8 +220,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:ab179f607a7586907e68662d295096e44" id="r_ab179f607a7586907e68662d295096e44"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab179f607a7586907e68662d295096e44">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const std::vector&lt;<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&gt; &amp; )</td></tr>
-<tr class="separator:ab179f607a7586907e68662d295096e44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adec794a58319588f6455a7748d69587b" id="r_adec794a58319588f6455a7748d69587b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adec794a58319588f6455a7748d69587b">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const std::vector&lt;<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&gt; &amp;)</td></tr>
+<tr class="separator:adec794a58319588f6455a7748d69587b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -233,9 +233,9 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aba250e3ef34a3458024423361326004a" id="r_aba250e3ef34a3458024423361326004a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba250e3ef34a3458024423361326004a">m_InPlace</a> {false}</td></tr>
 <tr class="separator:aba250e3ef34a3458024423361326004a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd5bee2f0b4df1252d2c0d3765ca3ca4" id="r_afd5bee2f0b4df1252d2c0d3765ca3ca4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab179f607a7586907e68662d295096e44">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd5bee2f0b4df1252d2c0d3765ca3ca4">m_MemberFactory</a></td></tr>
+<tr class="memitem:afd5bee2f0b4df1252d2c0d3765ca3ca4" id="r_afd5bee2f0b4df1252d2c0d3765ca3ca4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#adec794a58319588f6455a7748d69587b">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd5bee2f0b4df1252d2c0d3765ca3ca4">m_MemberFactory</a></td></tr>
 <tr class="separator:afd5bee2f0b4df1252d2c0d3765ca3ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9950e404cb47c5bf7f216d1e8f080f38" id="r_a9950e404cb47c5bf7f216d1e8f080f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a62e4b170e015b060f7a69a5ae7187772">MethodType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9950e404cb47c5bf7f216d1e8f080f38">m_Method</a> {<a class="el" href="#a62e4b170e015b060f7a69a5ae7187772aeed9e75b0dda833a3ab0cdf9c68fb6d4">itk::simple::MergeLabelMapFilter::Keep</a>}</td></tr>
+<tr class="memitem:a9950e404cb47c5bf7f216d1e8f080f38" id="r_a9950e404cb47c5bf7f216d1e8f080f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a62e4b170e015b060f7a69a5ae7187772">MethodType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9950e404cb47c5bf7f216d1e8f080f38">m_Method</a> { <a class="el" href="#a62e4b170e015b060f7a69a5ae7187772aeed9e75b0dda833a3ab0cdf9c68fb6d4">itk::simple::MergeLabelMapFilter::Keep</a> }</td></tr>
 <tr class="separator:a9950e404cb47c5bf7f216d1e8f080f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -342,8 +342,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ab179f607a7586907e68662d295096e44" name="ab179f607a7586907e68662d295096e44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab179f607a7586907e68662d295096e44">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="adec794a58319588f6455a7748d69587b" name="adec794a58319588f6455a7748d69587b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adec794a58319588f6455a7748d69587b">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +352,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ab179f607a7586907e68662d295096e44">itk::simple::MergeLabelMapFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const std::vector&lt;<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&gt; &amp; )</td>
+          <td class="memname">using <a class="el" href="#adec794a58319588f6455a7748d69587b">itk::simple::MergeLabelMapFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const std::vector&lt;<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&gt; &amp;)</td>
         </tr>
       </table>
   </td>
@@ -363,7 +363,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -643,7 +643,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00109">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00116">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -671,9 +671,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the method used to merge the label maps </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00114">m_Method</a>.</p>
+<p class="reference">References <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00120">m_Method</a>.</p>
 
 </div>
 </div>
@@ -703,7 +703,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -733,7 +733,7 @@ template&lt;class TImageType&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00114">m_Method</a>.</p>
+<p class="reference">References <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00120">m_Method</a>.</p>
 
 </div>
 </div>
@@ -776,7 +776,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#ab179f607a7586907e68662d295096e44">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#adec794a58319588f6455a7748d69587b">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -786,7 +786,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a3c7b537926fb55186ac848716d1926b3">ExecuteInternal()</a>.</p>
 
@@ -813,7 +813,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -827,7 +827,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ab179f607a7586907e68662d295096e44">MemberFunctionType</a>&gt; &gt; itk::simple::MergeLabelMapFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#adec794a58319588f6455a7748d69587b">MemberFunctionType</a>&gt; &gt; itk::simple::MergeLabelMapFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -837,7 +837,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -851,7 +851,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a62e4b170e015b060f7a69a5ae7187772">MethodType</a> itk::simple::MergeLabelMapFilter::m_Method {<a class="el" href="#a62e4b170e015b060f7a69a5ae7187772aeed9e75b0dda833a3ab0cdf9c68fb6d4">itk::simple::MergeLabelMapFilter::Keep</a>}</td>
+          <td class="memname"><a class="el" href="#a62e4b170e015b060f7a69a5ae7187772">MethodType</a> itk::simple::MergeLabelMapFilter::m_Method { <a class="el" href="#a62e4b170e015b060f7a69a5ae7187772aeed9e75b0dda833a3ab0cdf9c68fb6d4">itk::simple::MergeLabelMapFilter::Keep</a> }</td>
         </tr>
       </table>
   </td>
@@ -861,9 +861,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkMergeLabelMapFilter_8h_source.html">sitkMergeLabelMapFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00081">GetMethod()</a>, and <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00076">SetMethod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00082">GetMethod()</a>, and <a class="el" href="sitkMergeLabelMapFilter_8h_source.html#l00076">SetMethod()</a>.</p>
 
 </div>
 </div>

@@ -114,13 +114,14 @@ $(function(){ initResizable(false); });
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Computes the Magnitude of the Gradient of an image by convolution with the first derivative of a Gaussian. </p>
-<p>This filter is implemented using the recursive gaussian filters </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a28f6b1f75dc1666f3a9818002187f77f" title="Computes the Magnitude of the Gradient of an image by convolution with the first derivative of a Gaus...">itk::simple::GradientMagnitudeRecursiveGaussian</a> for the procedural interface </dd>
+<p>This filter is implemented using the recursive gaussian filters</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a28f6b1f75dc1666f3a9818002187f77f" title="Computes the Magnitude of the Gradient of an image by convolution with the first derivative of a Gaus...">itk::simple::GradientMagnitudeRecursiveGaussian</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GradientMagnitudeRecursiveGaussianImageFilter.html">itk::GradientMagnitudeRecursiveGaussianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a7">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00041">41</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -207,8 +208,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a2e053da170866ef67d9d747eb3877184" id="r_a2e053da170866ef67d9d747eb3877184"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e053da170866ef67d9d747eb3877184">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a2e053da170866ef67d9d747eb3877184"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a299b2cfbde39dc2e712ecda35fbc5aa9" id="r_a299b2cfbde39dc2e712ecda35fbc5aa9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a299b2cfbde39dc2e712ecda35fbc5aa9">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a299b2cfbde39dc2e712ecda35fbc5aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -220,11 +221,11 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa4fecebb43a2d571503c7b5daf16c686" id="r_aa4fecebb43a2d571503c7b5daf16c686"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4fecebb43a2d571503c7b5daf16c686">m_InPlace</a> {false}</td></tr>
 <tr class="separator:aa4fecebb43a2d571503c7b5daf16c686"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f77a8380b1ce076f5ebf8850c34ba50" id="r_a0f77a8380b1ce076f5ebf8850c34ba50"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a2e053da170866ef67d9d747eb3877184">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f77a8380b1ce076f5ebf8850c34ba50">m_MemberFactory</a></td></tr>
+<tr class="memitem:a0f77a8380b1ce076f5ebf8850c34ba50" id="r_a0f77a8380b1ce076f5ebf8850c34ba50"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a299b2cfbde39dc2e712ecda35fbc5aa9">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f77a8380b1ce076f5ebf8850c34ba50">m_MemberFactory</a></td></tr>
 <tr class="separator:a0f77a8380b1ce076f5ebf8850c34ba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d437946c912a70abf3404aa2276e6a5" id="r_a7d437946c912a70abf3404aa2276e6a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d437946c912a70abf3404aa2276e6a5">m_NormalizeAcrossScale</a> {false}</td></tr>
+<tr class="memitem:a7d437946c912a70abf3404aa2276e6a5" id="r_a7d437946c912a70abf3404aa2276e6a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d437946c912a70abf3404aa2276e6a5">m_NormalizeAcrossScale</a> { false }</td></tr>
 <tr class="separator:a7d437946c912a70abf3404aa2276e6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f0c0285842ee670a73f1147f5c3fef4" id="r_a2f0c0285842ee670a73f1147f5c3fef4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f0c0285842ee670a73f1147f5c3fef4">m_Sigma</a> {1.0}</td></tr>
+<tr class="memitem:a2f0c0285842ee670a73f1147f5c3fef4" id="r_a2f0c0285842ee670a73f1147f5c3fef4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f0c0285842ee670a73f1147f5c3fef4">m_Sigma</a> { 1.0 }</td></tr>
 <tr class="separator:a2f0c0285842ee670a73f1147f5c3fef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -331,8 +332,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a2e053da170866ef67d9d747eb3877184" name="a2e053da170866ef67d9d747eb3877184"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e053da170866ef67d9d747eb3877184">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a299b2cfbde39dc2e712ecda35fbc5aa9" name="a299b2cfbde39dc2e712ecda35fbc5aa9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299b2cfbde39dc2e712ecda35fbc5aa9">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +342,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a2e053da170866ef67d9d747eb3877184">itk::simple::GradientMagnitudeRecursiveGaussianImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a299b2cfbde39dc2e712ecda35fbc5aa9">itk::simple::GradientMagnitudeRecursiveGaussianImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -352,7 +353,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +370,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -385,7 +386,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -497,7 +498,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00101">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00112">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -527,7 +528,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -555,9 +556,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the normalization factor that will be used for the Gaussian. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#abcdb58e8b85af7463edb3ebd8e01c5ca">RecursiveGaussianImageFilter::SetNormalizeAcrossScale</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00110">m_NormalizeAcrossScale</a>.</p>
+<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00118">m_NormalizeAcrossScale</a>.</p>
 
 </div>
 </div>
@@ -585,9 +586,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get Sigma value. Sigma is measured in the units of image spacing. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00107">m_Sigma</a>.</p>
+<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00116">m_Sigma</a>.</p>
 
 </div>
 </div>
@@ -614,9 +615,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00069">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00079">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -644,9 +645,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of NormalizeAcrossScale to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00069">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00079">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -674,11 +675,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the normalization factor that will be used for the Gaussian. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html#abcdb58e8b85af7463edb3ebd8e01c5ca">RecursiveGaussianImageFilter::SetNormalizeAcrossScale</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00110">m_NormalizeAcrossScale</a>.</p>
+<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00118">m_NormalizeAcrossScale</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00073">NormalizeAcrossScaleOff()</a>, and <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00072">NormalizeAcrossScaleOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00086">NormalizeAcrossScaleOff()</a>, and <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00084">NormalizeAcrossScaleOn()</a>.</p>
 
 </div>
 </div>
@@ -708,9 +709,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a8">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00107">m_Sigma</a>.</p>
+<p class="reference">References <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00116">m_Sigma</a>.</p>
 
 </div>
 </div>
@@ -753,7 +754,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a2e053da170866ef67d9d747eb3877184">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a299b2cfbde39dc2e712ecda35fbc5aa9">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -763,7 +764,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a261b029b759712d9a6d9aa46c29844f0">ExecuteInternal()</a>.</p>
 
@@ -790,7 +791,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -804,7 +805,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a2e053da170866ef67d9d747eb3877184">MemberFunctionType</a>&gt; &gt; itk::simple::GradientMagnitudeRecursiveGaussianImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a299b2cfbde39dc2e712ecda35fbc5aa9">MemberFunctionType</a>&gt; &gt; itk::simple::GradientMagnitudeRecursiveGaussianImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -814,7 +815,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -828,7 +829,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::GradientMagnitudeRecursiveGaussianImageFilter::m_NormalizeAcrossScale {false}</td>
+          <td class="memname">bool itk::simple::GradientMagnitudeRecursiveGaussianImageFilter::m_NormalizeAcrossScale { false }</td>
         </tr>
       </table>
   </td>
@@ -838,9 +839,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00078">GetNormalizeAcrossScale()</a>, and <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00069">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00091">GetNormalizeAcrossScale()</a>, and <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00079">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -854,7 +855,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::GradientMagnitudeRecursiveGaussianImageFilter::m_Sigma {1.0}</td>
+          <td class="memname">double itk::simple::GradientMagnitudeRecursiveGaussianImageFilter::m_Sigma { 1.0 }</td>
         </tr>
       </table>
   </td>
@@ -864,9 +865,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html">sitkGradientMagnitudeRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00064">GetSigma()</a>, and <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00059">SetSigma()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00073">GetSigma()</a>, and <a class="el" href="sitkGradientMagnitudeRecursiveGaussianImageFilter_8h_source.html#l00067">SetSigma()</a>.</p>
 
 </div>
 </div>

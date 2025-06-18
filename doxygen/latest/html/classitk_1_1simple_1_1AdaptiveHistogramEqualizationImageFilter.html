@@ -121,11 +121,12 @@ $(function(){ initResizable(false); });
 <p>By altering alpha, beta and window, a host of equalization and unsharp masking filters is available.</p>
 <p>The boundary condition ignores the part of the neighborhood outside the image, and over-weights the valid part of the neighborhood.</p>
 <p>For detail description, reference "Adaptive Image Contrast
-Enhancement using Generalizations of Histogram Equalization." J.Alex Stark. IEEE Transactions on <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Processing, May 2000. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab5f96def5897bafb8c52e2b7cdec6a68" title="Power Law Adaptive Histogram Equalization.">itk::simple::AdaptiveHistogramEqualization</a> for the procedural interface </dd>
+Enhancement using Generalizations of Histogram Equalization." J.Alex Stark. IEEE Transactions on <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Processing, May 2000.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab5f96def5897bafb8c52e2b7cdec6a68" title="Power Law Adaptive Histogram Equalization.">itk::simple::AdaptiveHistogramEqualization</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AdaptiveHistogramEqualizationImageFilter.html">itk::AdaptiveHistogramEqualizationImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -212,8 +213,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a0a1f045bb46a351f247cb891da6eb10c" id="r_a0a1f045bb46a351f247cb891da6eb10c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a1f045bb46a351f247cb891da6eb10c">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a0a1f045bb46a351f247cb891da6eb10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eca1f23e452a875cdc9a19118a20289" id="r_a8eca1f23e452a875cdc9a19118a20289"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8eca1f23e452a875cdc9a19118a20289">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a8eca1f23e452a875cdc9a19118a20289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -223,13 +224,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae51f45bab754f082f0093afbb356efe7" id="r_ae51f45bab754f082f0093afbb356efe7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51f45bab754f082f0093afbb356efe7">m_Alpha</a> {0.3f}</td></tr>
+<tr class="memitem:ae51f45bab754f082f0093afbb356efe7" id="r_ae51f45bab754f082f0093afbb356efe7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae51f45bab754f082f0093afbb356efe7">m_Alpha</a> { 0.3f }</td></tr>
 <tr class="separator:ae51f45bab754f082f0093afbb356efe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82edc9ecd651cf67dfbc82e168951d28" id="r_a82edc9ecd651cf67dfbc82e168951d28"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82edc9ecd651cf67dfbc82e168951d28">m_Beta</a> {0.3f}</td></tr>
+<tr class="memitem:a82edc9ecd651cf67dfbc82e168951d28" id="r_a82edc9ecd651cf67dfbc82e168951d28"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82edc9ecd651cf67dfbc82e168951d28">m_Beta</a> { 0.3f }</td></tr>
 <tr class="separator:a82edc9ecd651cf67dfbc82e168951d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6852b46cfeba4eb556b777e7397fdb54" id="r_a6852b46cfeba4eb556b777e7397fdb54"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a0a1f045bb46a351f247cb891da6eb10c">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6852b46cfeba4eb556b777e7397fdb54">m_MemberFactory</a></td></tr>
+<tr class="memitem:a6852b46cfeba4eb556b777e7397fdb54" id="r_a6852b46cfeba4eb556b777e7397fdb54"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a8eca1f23e452a875cdc9a19118a20289">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6852b46cfeba4eb556b777e7397fdb54">m_MemberFactory</a></td></tr>
 <tr class="separator:a6852b46cfeba4eb556b777e7397fdb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d113c7c1c2d3447324e231c611897aa" id="r_a1d113c7c1c2d3447324e231c611897aa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d113c7c1c2d3447324e231c611897aa">m_Radius</a> {std::vector&lt;unsigned int&gt;(3, 5)}</td></tr>
+<tr class="memitem:a1d113c7c1c2d3447324e231c611897aa" id="r_a1d113c7c1c2d3447324e231c611897aa"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d113c7c1c2d3447324e231c611897aa">m_Radius</a> { std::vector&lt;unsigned int&gt;(3, 5) }</td></tr>
 <tr class="separator:a1d113c7c1c2d3447324e231c611897aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -336,8 +337,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a0a1f045bb46a351f247cb891da6eb10c" name="a0a1f045bb46a351f247cb891da6eb10c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a1f045bb46a351f247cb891da6eb10c">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a8eca1f23e452a875cdc9a19118a20289" name="a8eca1f23e452a875cdc9a19118a20289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eca1f23e452a875cdc9a19118a20289">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -346,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a0a1f045bb46a351f247cb891da6eb10c">itk::simple::AdaptiveHistogramEqualizationImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a8eca1f23e452a875cdc9a19118a20289">itk::simple::AdaptiveHistogramEqualizationImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -357,7 +358,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +391,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -483,7 +484,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00119">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00130">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -511,9 +512,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of alpha. Alpha = 0 produces the adaptive histogram equalization (provided beta=0). Alpha = 1 produces an unsharp mask. Default is 0.3. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00126">m_Alpha</a>.</p>
+<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00136">m_Alpha</a>.</p>
 
 </div>
 </div>
@@ -541,9 +542,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of beta. If beta = 1 (and alpha = 1), then the output image matches the input image. As beta approaches 0, the filter behaves as an unsharp mask. Default is 0.3. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00128">m_Beta</a>.</p>
+<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00138">m_Beta</a>.</p>
 
 </div>
 </div>
@@ -573,7 +574,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -600,9 +601,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00124">m_Radius</a>.</p>
+<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00134">m_Radius</a>.</p>
 
 </div>
 </div>
@@ -630,9 +631,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of alpha. Alpha = 0 produces the adaptive histogram equalization (provided beta=0). Alpha = 1 produces an unsharp mask. Default is 0.3. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00126">m_Alpha</a>.</p>
+<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00136">m_Alpha</a>.</p>
 
 </div>
 </div>
@@ -660,9 +661,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of beta. If beta = 1 (and alpha = 1), then the output image matches the input image. As beta approaches 0, the filter behaves as an unsharp mask. Default is 0.3. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00128">m_Beta</a>.</p>
+<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00138">m_Beta</a>.</p>
 
 </div>
 </div>
@@ -689,9 +690,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00124">m_Radius</a>.</p>
+<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00134">m_Radius</a>.</p>
 
 </div>
 </div>
@@ -719,9 +720,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the Radius vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00124">m_Radius</a>.</p>
+<p class="reference">References <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00134">m_Radius</a>.</p>
 
 </div>
 </div>
@@ -764,7 +765,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a0a1f045bb46a351f247cb891da6eb10c">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a8eca1f23e452a875cdc9a19118a20289">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -774,7 +775,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a5ca21ab78ea0dff563994f214539d318">ExecuteInternal()</a>.</p>
 
@@ -791,7 +792,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float itk::simple::AdaptiveHistogramEqualizationImageFilter::m_Alpha {0.3f}</td>
+          <td class="memname">float itk::simple::AdaptiveHistogramEqualizationImageFilter::m_Alpha { 0.3f }</td>
         </tr>
       </table>
   </td>
@@ -801,9 +802,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00088">GetAlpha()</a>, and <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00083">SetAlpha()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00100">GetAlpha()</a>, and <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00094">SetAlpha()</a>.</p>
 
 </div>
 </div>
@@ -817,7 +818,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float itk::simple::AdaptiveHistogramEqualizationImageFilter::m_Beta {0.3f}</td>
+          <td class="memname">float itk::simple::AdaptiveHistogramEqualizationImageFilter::m_Beta { 0.3f }</td>
         </tr>
       </table>
   </td>
@@ -827,9 +828,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00098">GetBeta()</a>, and <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00093">SetBeta()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00112">GetBeta()</a>, and <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00106">SetBeta()</a>.</p>
 
 </div>
 </div>
@@ -843,7 +844,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a0a1f045bb46a351f247cb891da6eb10c">MemberFunctionType</a>&gt; &gt; itk::simple::AdaptiveHistogramEqualizationImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a8eca1f23e452a875cdc9a19118a20289">MemberFunctionType</a>&gt; &gt; itk::simple::AdaptiveHistogramEqualizationImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -853,7 +854,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -867,7 +868,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::AdaptiveHistogramEqualizationImageFilter::m_Radius {std::vector&lt;unsigned int&gt;(3, 5)}</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::AdaptiveHistogramEqualizationImageFilter::m_Radius { std::vector&lt;unsigned int&gt;(3, 5) }</td>
         </tr>
       </table>
   </td>
@@ -877,9 +878,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html">sitkAdaptiveHistogramEqualizationImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00078">GetRadius()</a>, <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00071">SetRadius()</a>, and <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00074">SetRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00088">GetRadius()</a>, <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00079">SetRadius()</a>, and <a class="el" href="sitkAdaptiveHistogramEqualizationImageFilter_8h_source.html#l00084">SetRadius()</a>.</p>
 
 </div>
 </div>

@@ -114,11 +114,12 @@ $(function(){ initResizable(false); });
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generate an image of the physical locations of each pixel. </p>
-<p>This image source supports image which have a multi-component pixel equal to the image dimension, and variable length VectorImages. It is recommended that the component type be a real valued type. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab608c8e5765be087a35eb1c96aa53f64" title="Generate an image of the physical locations of each pixel.">itk::simple::PhysicalPointSource</a> for the procedural interface </dd>
+<p>This image source supports image which have a multi-component pixel equal to the image dimension, and variable length VectorImages. It is recommended that the component type be a real valued type.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ab608c8e5765be087a35eb1c96aa53f64" title="Generate an image of the physical locations of each pixel.">itk::simple::PhysicalPointSource</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1PhysicalPointImageSource.html">itk::PhysicalPointImageSource</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00041">41</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00048">48</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -213,8 +214,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a5849e7382b9610bfba4a66d08431b750" id="r_a5849e7382b9610bfba4a66d08431b750"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5849e7382b9610bfba4a66d08431b750">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( )</td></tr>
-<tr class="separator:a5849e7382b9610bfba4a66d08431b750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6809079f6dfe565e67bc4cf8b54e3164" id="r_a6809079f6dfe565e67bc4cf8b54e3164"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6809079f6dfe565e67bc4cf8b54e3164">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)()</td></tr>
+<tr class="separator:a6809079f6dfe565e67bc4cf8b54e3164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -224,17 +225,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:adf42a4b602aaa35b405ac0170e7839d9" id="r_adf42a4b602aaa35b405ac0170e7839d9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf42a4b602aaa35b405ac0170e7839d9">m_Direction</a> {std::vector&lt;double&gt;()}</td></tr>
+<tr class="memitem:adf42a4b602aaa35b405ac0170e7839d9" id="r_adf42a4b602aaa35b405ac0170e7839d9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf42a4b602aaa35b405ac0170e7839d9">m_Direction</a> { std::vector&lt;double&gt;() }</td></tr>
 <tr class="separator:adf42a4b602aaa35b405ac0170e7839d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8c5e8b03a8ab8dd2ae2b18d702fa91" id="r_a7c8c5e8b03a8ab8dd2ae2b18d702fa91"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a5849e7382b9610bfba4a66d08431b750">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c8c5e8b03a8ab8dd2ae2b18d702fa91">m_MemberFactory</a></td></tr>
+<tr class="memitem:a7c8c5e8b03a8ab8dd2ae2b18d702fa91" id="r_a7c8c5e8b03a8ab8dd2ae2b18d702fa91"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a6809079f6dfe565e67bc4cf8b54e3164">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c8c5e8b03a8ab8dd2ae2b18d702fa91">m_MemberFactory</a></td></tr>
 <tr class="separator:a7c8c5e8b03a8ab8dd2ae2b18d702fa91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d2b9e40efd3cd4e3fbd6f4ef9748f19" id="r_a4d2b9e40efd3cd4e3fbd6f4ef9748f19"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2b9e40efd3cd4e3fbd6f4ef9748f19">m_Origin</a> {std::vector&lt;double&gt;(3, 0.0)}</td></tr>
+<tr class="memitem:a4d2b9e40efd3cd4e3fbd6f4ef9748f19" id="r_a4d2b9e40efd3cd4e3fbd6f4ef9748f19"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d2b9e40efd3cd4e3fbd6f4ef9748f19">m_Origin</a> { std::vector&lt;double&gt;(3, 0.0) }</td></tr>
 <tr class="separator:a4d2b9e40efd3cd4e3fbd6f4ef9748f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07863d1e13b18918397749edb844ee2" id="r_ac07863d1e13b18918397749edb844ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07863d1e13b18918397749edb844ee2">m_OutputPixelType</a> {itk::simple::sitkVectorFloat32}</td></tr>
+<tr class="memitem:ac07863d1e13b18918397749edb844ee2" id="r_ac07863d1e13b18918397749edb844ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07863d1e13b18918397749edb844ee2">m_OutputPixelType</a> { itk::simple::sitkVectorFloat32 }</td></tr>
 <tr class="separator:ac07863d1e13b18918397749edb844ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28b64812fee4b45a0b6a95f4cc75a4b7" id="r_a28b64812fee4b45a0b6a95f4cc75a4b7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28b64812fee4b45a0b6a95f4cc75a4b7">m_Size</a> {std::vector&lt;unsigned int&gt;(3, 64)}</td></tr>
+<tr class="memitem:a28b64812fee4b45a0b6a95f4cc75a4b7" id="r_a28b64812fee4b45a0b6a95f4cc75a4b7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28b64812fee4b45a0b6a95f4cc75a4b7">m_Size</a> { std::vector&lt;unsigned int&gt;(3, 64) }</td></tr>
 <tr class="separator:a28b64812fee4b45a0b6a95f4cc75a4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b5cf5947af5bfd75dd728618915d4bf" id="r_a3b5cf5947af5bfd75dd728618915d4bf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b5cf5947af5bfd75dd728618915d4bf">m_Spacing</a> {std::vector&lt;double&gt;(3, 1.0)}</td></tr>
+<tr class="memitem:a3b5cf5947af5bfd75dd728618915d4bf" id="r_a3b5cf5947af5bfd75dd728618915d4bf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b5cf5947af5bfd75dd728618915d4bf">m_Spacing</a> { std::vector&lt;double&gt;(3, 1.0) }</td></tr>
 <tr class="separator:a3b5cf5947af5bfd75dd728618915d4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -341,8 +342,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a5849e7382b9610bfba4a66d08431b750" name="a5849e7382b9610bfba4a66d08431b750"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5849e7382b9610bfba4a66d08431b750">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a6809079f6dfe565e67bc4cf8b54e3164" name="a6809079f6dfe565e67bc4cf8b54e3164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6809079f6dfe565e67bc4cf8b54e3164">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,7 +352,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a5849e7382b9610bfba4a66d08431b750">itk::simple::PhysicalPointImageSource::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( )</td>
+          <td class="memname">using <a class="el" href="#a6809079f6dfe565e67bc4cf8b54e3164">itk::simple::PhysicalPointImageSource::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)()</td>
         </tr>
       </table>
   </td>
@@ -362,7 +363,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00119">119</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00136">136</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +380,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00053">53</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00060">60</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00043">43</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00050">50</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -488,7 +489,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00123">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00139">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -515,9 +516,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00097">97</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00114">114</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00137">m_Direction</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00153">m_Direction</a>.</p>
 
 </div>
 </div>
@@ -547,7 +548,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00100">100</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00118">118</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -574,9 +575,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00081">81</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00094">94</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00132">m_Origin</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00148">m_Origin</a>.</p>
 
 </div>
 </div>
@@ -603,9 +604,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00065">65</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00074">74</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00128">m_OutputPixelType</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00144">m_OutputPixelType</a>.</p>
 
 </div>
 </div>
@@ -632,9 +633,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00073">73</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00084">84</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00130">m_Size</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00146">m_Size</a>.</p>
 
 </div>
 </div>
@@ -661,9 +662,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00089">89</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00104">104</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00134">m_Spacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00150">m_Spacing</a>.</p>
 
 </div>
 </div>
@@ -690,9 +691,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00093">93</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00109">109</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00137">m_Direction</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00153">m_Direction</a>.</p>
 
 </div>
 </div>
@@ -719,9 +720,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00077">77</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00089">89</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00132">m_Origin</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00148">m_Origin</a>.</p>
 
 </div>
 </div>
@@ -748,9 +749,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00061">61</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00069">69</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00128">m_OutputPixelType</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00144">m_OutputPixelType</a>.</p>
 
 </div>
 </div>
@@ -795,9 +796,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00069">69</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00079">79</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00130">m_Size</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00146">m_Size</a>.</p>
 
 </div>
 </div>
@@ -824,9 +825,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00085">85</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00099">99</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00134">m_Spacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00150">m_Spacing</a>.</p>
 
 </div>
 </div>
@@ -869,7 +870,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a5849e7382b9610bfba4a66d08431b750">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a6809079f6dfe565e67bc4cf8b54e3164">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -879,7 +880,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00120">120</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00137">137</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a53d5294a69e251fe40296c28b8b395cd">ExecuteInternal()</a>.</p>
 
@@ -896,7 +897,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::PhysicalPointImageSource::m_Direction {std::vector&lt;double&gt;()}</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::PhysicalPointImageSource::m_Direction { std::vector&lt;double&gt;() }</td>
         </tr>
       </table>
   </td>
@@ -906,9 +907,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00137">137</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00153">153</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00097">GetDirection()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00093">SetDirection()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00114">GetDirection()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00109">SetDirection()</a>.</p>
 
 </div>
 </div>
@@ -922,7 +923,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a5849e7382b9610bfba4a66d08431b750">MemberFunctionType</a>&gt; &gt; itk::simple::PhysicalPointImageSource::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a6809079f6dfe565e67bc4cf8b54e3164">MemberFunctionType</a>&gt; &gt; itk::simple::PhysicalPointImageSource::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -932,7 +933,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00125">125</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00140">140</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -946,7 +947,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::PhysicalPointImageSource::m_Origin {std::vector&lt;double&gt;(3, 0.0)}</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::PhysicalPointImageSource::m_Origin { std::vector&lt;double&gt;(3, 0.0) }</td>
         </tr>
       </table>
   </td>
@@ -956,9 +957,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00132">132</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00148">148</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00081">GetOrigin()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00077">SetOrigin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00094">GetOrigin()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00089">SetOrigin()</a>.</p>
 
 </div>
 </div>
@@ -972,7 +973,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::PhysicalPointImageSource::m_OutputPixelType {itk::simple::sitkVectorFloat32}</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::PhysicalPointImageSource::m_OutputPixelType { itk::simple::sitkVectorFloat32 }</td>
         </tr>
       </table>
   </td>
@@ -982,9 +983,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00128">128</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00144">144</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00065">GetOutputPixelType()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00061">SetOutputPixelType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00074">GetOutputPixelType()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00069">SetOutputPixelType()</a>.</p>
 
 </div>
 </div>
@@ -998,7 +999,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::PhysicalPointImageSource::m_Size {std::vector&lt;unsigned int&gt;(3, 64)}</td>
+          <td class="memname">std::vector&lt;unsigned int&gt; itk::simple::PhysicalPointImageSource::m_Size { std::vector&lt;unsigned int&gt;(3, 64) }</td>
         </tr>
       </table>
   </td>
@@ -1008,9 +1009,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00130">130</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00146">146</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00073">GetSize()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00069">SetSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00084">GetSize()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00079">SetSize()</a>.</p>
 
 </div>
 </div>
@@ -1024,7 +1025,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::PhysicalPointImageSource::m_Spacing {std::vector&lt;double&gt;(3, 1.0)}</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::PhysicalPointImageSource::m_Spacing { std::vector&lt;double&gt;(3, 1.0) }</td>
         </tr>
       </table>
   </td>
@@ -1034,9 +1035,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00134">134</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00150">150</a> of file <a class="el" href="sitkPhysicalPointImageSource_8h_source.html">sitkPhysicalPointImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00089">GetSpacing()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00085">SetSpacing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00104">GetSpacing()</a>, and <a class="el" href="sitkPhysicalPointImageSource_8h_source.html#l00099">SetSpacing()</a>.</p>
 
 </div>
 </div>

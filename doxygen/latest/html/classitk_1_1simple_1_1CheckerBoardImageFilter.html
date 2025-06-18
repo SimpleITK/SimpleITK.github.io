@@ -115,11 +115,12 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Combines two images in a checkerboard pattern. </p>
 <p><a class="el" href="classitk_1_1simple_1_1CheckerBoardImageFilter.html" title="Combines two images in a checkerboard pattern.">CheckerBoardImageFilter</a> takes two input images that must have the same dimension, size, origin and spacing and produces an output image of the same size by combining the pixels from the two input images in a checkerboard pattern. This filter is commonly used for visually comparing two images, in particular for evaluating the results of an image registration process.</p>
-<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afd3b56dbbf02dfaac4fcf0f245f3b696" title="Combines two images in a checkerboard pattern.">itk::simple::CheckerBoard</a> for the procedural interface </dd>
+<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afd3b56dbbf02dfaac4fcf0f245f3b696" title="Combines two images in a checkerboard pattern.">itk::simple::CheckerBoard</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CheckerBoardImageFilter.html">itk::CheckerBoardImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -198,8 +199,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a4665ef748e53a8be2a1d0e305a3d6747" id="r_a4665ef748e53a8be2a1d0e305a3d6747"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4665ef748e53a8be2a1d0e305a3d6747">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td></tr>
-<tr class="separator:a4665ef748e53a8be2a1d0e305a3d6747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd365d42dfdd7e05761dfb9b52ee902" id="r_a1fd365d42dfdd7e05761dfb9b52ee902"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fd365d42dfdd7e05761dfb9b52ee902">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
+<tr class="separator:a1fd365d42dfdd7e05761dfb9b52ee902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -209,9 +210,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad9e0702ede651677dea854c8402a232d" id="r_ad9e0702ede651677dea854c8402a232d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9e0702ede651677dea854c8402a232d">m_CheckerPattern</a> {std::vector&lt;uint32_t&gt;(3, 4)}</td></tr>
+<tr class="memitem:ad9e0702ede651677dea854c8402a232d" id="r_ad9e0702ede651677dea854c8402a232d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9e0702ede651677dea854c8402a232d">m_CheckerPattern</a> { std::vector&lt;uint32_t&gt;(3, 4) }</td></tr>
 <tr class="separator:ad9e0702ede651677dea854c8402a232d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a63b66dc621b8315faf620fa54cd974" id="r_a3a63b66dc621b8315faf620fa54cd974"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a4665ef748e53a8be2a1d0e305a3d6747">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a63b66dc621b8315faf620fa54cd974">m_MemberFactory</a></td></tr>
+<tr class="memitem:a3a63b66dc621b8315faf620fa54cd974" id="r_a3a63b66dc621b8315faf620fa54cd974"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1fd365d42dfdd7e05761dfb9b52ee902">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a63b66dc621b8315faf620fa54cd974">m_MemberFactory</a></td></tr>
 <tr class="separator:a3a63b66dc621b8315faf620fa54cd974"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -318,8 +319,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a4665ef748e53a8be2a1d0e305a3d6747" name="a4665ef748e53a8be2a1d0e305a3d6747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4665ef748e53a8be2a1d0e305a3d6747">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a1fd365d42dfdd7e05761dfb9b52ee902" name="a1fd365d42dfdd7e05761dfb9b52ee902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd365d42dfdd7e05761dfb9b52ee902">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +329,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a4665ef748e53a8be2a1d0e305a3d6747">itk::simple::CheckerBoardImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td>
+          <td class="memname">using <a class="el" href="#a1fd365d42dfdd7e05761dfb9b52ee902">itk::simple::CheckerBoardImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td>
         </tr>
       </table>
   </td>
@@ -339,7 +340,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +357,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -473,7 +474,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00090">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00097">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -501,9 +502,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the checker pattern array, i.e. the number of checker boxes per image dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00095">m_CheckerPattern</a>.</p>
+<p class="reference">References <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00101">m_CheckerPattern</a>.</p>
 
 </div>
 </div>
@@ -533,7 +534,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -561,9 +562,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the checker pattern array, i.e. the number of checker boxes per image dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00095">m_CheckerPattern</a>.</p>
+<p class="reference">References <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00101">m_CheckerPattern</a>.</p>
 
 </div>
 </div>
@@ -591,9 +592,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the CheckerPattern vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00095">m_CheckerPattern</a>.</p>
+<p class="reference">References <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00101">m_CheckerPattern</a>.</p>
 
 </div>
 </div>
@@ -636,7 +637,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a4665ef748e53a8be2a1d0e305a3d6747">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a1fd365d42dfdd7e05761dfb9b52ee902">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -646,7 +647,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a3ac8c47071cc7e3920f58a0864c64dda">ExecuteInternal()</a>.</p>
 
@@ -663,7 +664,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;uint32_t&gt; itk::simple::CheckerBoardImageFilter::m_CheckerPattern {std::vector&lt;uint32_t&gt;(3, 4)}</td>
+          <td class="memname">std::vector&lt;uint32_t&gt; itk::simple::CheckerBoardImageFilter::m_CheckerPattern { std::vector&lt;uint32_t&gt;(3, 4) }</td>
         </tr>
       </table>
   </td>
@@ -673,9 +674,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00069">GetCheckerPattern()</a>, <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00061">SetCheckerPattern()</a>, and <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00064">SetCheckerPattern()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00079">GetCheckerPattern()</a>, <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00069">SetCheckerPattern()</a>, and <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00074">SetCheckerPattern()</a>.</p>
 
 </div>
 </div>
@@ -689,7 +690,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a4665ef748e53a8be2a1d0e305a3d6747">MemberFunctionType</a>&gt; &gt; itk::simple::CheckerBoardImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a1fd365d42dfdd7e05761dfb9b52ee902">MemberFunctionType</a>&gt; &gt; itk::simple::CheckerBoardImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -699,7 +700,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkCheckerBoardImageFilter_8h_source.html">sitkCheckerBoardImageFilter.h</a>.</p>
 
 </div>
 </div>

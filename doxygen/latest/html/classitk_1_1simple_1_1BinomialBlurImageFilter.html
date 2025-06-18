@@ -114,11 +114,12 @@ $(function(){ initResizable(false); });
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Performs a separable blur on each dimension of an image. </p>
-<p>The binomial blur consists of a nearest neighbor average along each image dimension. The net result after n-iterations approaches convolution with a gaussian. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aa70a54ebfa75d624f06c11a436a8990f" title="Performs a separable blur on each dimension of an image.">itk::simple::BinomialBlur</a> for the procedural interface </dd>
+<p>The binomial blur consists of a nearest neighbor average along each image dimension. The net result after n-iterations approaches convolution with a gaussian.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aa70a54ebfa75d624f06c11a436a8990f" title="Performs a separable blur on each dimension of an image.">itk::simple::BinomialBlur</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinomialBlurImageFilter.html">itk::BinomialBlurImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00041">41</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -195,8 +196,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a9c15ceffce01fe3ca9f5d6856b2ab73a" id="r_a9c15ceffce01fe3ca9f5d6856b2ab73a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c15ceffce01fe3ca9f5d6856b2ab73a">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a9c15ceffce01fe3ca9f5d6856b2ab73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47251f4763535e1a17a4ed2eb439e6ce" id="r_a47251f4763535e1a17a4ed2eb439e6ce"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47251f4763535e1a17a4ed2eb439e6ce">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a47251f4763535e1a17a4ed2eb439e6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -209,9 +210,9 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a86927bf94a0caf329cdb11d386dc86ff" id="r_a86927bf94a0caf329cdb11d386dc86ff"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a9c15ceffce01fe3ca9f5d6856b2ab73a">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86927bf94a0caf329cdb11d386dc86ff">m_MemberFactory</a></td></tr>
+<tr class="memitem:a86927bf94a0caf329cdb11d386dc86ff" id="r_a86927bf94a0caf329cdb11d386dc86ff"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a47251f4763535e1a17a4ed2eb439e6ce">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86927bf94a0caf329cdb11d386dc86ff">m_MemberFactory</a></td></tr>
 <tr class="separator:a86927bf94a0caf329cdb11d386dc86ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a716301fa671329edd335ecec0c70f3ed" id="r_a716301fa671329edd335ecec0c70f3ed"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a716301fa671329edd335ecec0c70f3ed">m_Repetitions</a> {1u}</td></tr>
+<tr class="memitem:a716301fa671329edd335ecec0c70f3ed" id="r_a716301fa671329edd335ecec0c70f3ed"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a716301fa671329edd335ecec0c70f3ed">m_Repetitions</a> { 1u }</td></tr>
 <tr class="separator:a716301fa671329edd335ecec0c70f3ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -320,8 +321,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a9c15ceffce01fe3ca9f5d6856b2ab73a" name="a9c15ceffce01fe3ca9f5d6856b2ab73a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c15ceffce01fe3ca9f5d6856b2ab73a">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a47251f4763535e1a17a4ed2eb439e6ce" name="a47251f4763535e1a17a4ed2eb439e6ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47251f4763535e1a17a4ed2eb439e6ce">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,7 +331,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a9c15ceffce01fe3ca9f5d6856b2ab73a">itk::simple::BinomialBlurImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a47251f4763535e1a17a4ed2eb439e6ce">itk::simple::BinomialBlurImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -341,7 +342,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -358,7 +359,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -374,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -495,7 +496,7 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Dispatched methods which calls ExecuteInternal on each component </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00087">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00094">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -525,7 +526,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -553,9 +554,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get and set the number of times to repeat the filter. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00092">m_Repetitions</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00098">m_Repetitions</a>.</p>
 
 </div>
 </div>
@@ -583,9 +584,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get and set the number of times to repeat the filter. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00092">m_Repetitions</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00098">m_Repetitions</a>.</p>
 
 </div>
 </div>
@@ -628,7 +629,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt; <a class="el" href="#a9c15ceffce01fe3ca9f5d6856b2ab73a">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt; <a class="el" href="#a47251f4763535e1a17a4ed2eb439e6ce">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -638,7 +639,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#af4d9773ed9ce81277f3d69b4bec0ac49">ExecuteInternalVectorImage()</a>.</p>
 
@@ -654,7 +655,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a9c15ceffce01fe3ca9f5d6856b2ab73a">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a47251f4763535e1a17a4ed2eb439e6ce">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -664,7 +665,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -679,7 +680,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a9c15ceffce01fe3ca9f5d6856b2ab73a">MemberFunctionType</a>&gt; &gt; itk::simple::BinomialBlurImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a47251f4763535e1a17a4ed2eb439e6ce">MemberFunctionType</a>&gt; &gt; itk::simple::BinomialBlurImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -689,7 +690,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -703,7 +704,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::BinomialBlurImageFilter::m_Repetitions {1u}</td>
+          <td class="memname">unsigned int itk::simple::BinomialBlurImageFilter::m_Repetitions { 1u }</td>
         </tr>
       </table>
   </td>
@@ -713,9 +714,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html">sitkBinomialBlurImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00064">GetRepetitions()</a>, and <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00059">SetRepetitions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00073">GetRepetitions()</a>, and <a class="el" href="sitkBinomialBlurImageFilter_8h_source.html#l00067">SetRepetitions()</a>.</p>
 
 </div>
 </div>

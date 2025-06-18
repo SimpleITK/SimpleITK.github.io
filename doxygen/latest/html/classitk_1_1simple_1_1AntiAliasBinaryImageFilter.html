@@ -130,12 +130,12 @@ Volumes" IEEE Volume Visualization and Graphics Symposium, October 2000, pp.23-3
 <dl class="section user"><dt>OUTPUT</dt><dd>The filter will output a level set image of real, signed values. The zero crossings of this (N-dimensional) image represent the position of the isosurface value of interest. Values outside the zero level set are negative and values inside the zero level set are positive values.</dd></dl>
 <dl class="section user"><dt>IMPORTANT!</dt><dd>The output image type you use to instantiate this filter should be a real valued scalar type. In other words: doubles or floats.</dd></dl>
 <dl class="section user"><dt>USING THIS FILTER</dt><dd>The filter is relatively straightforward to use. Tests and examples exist to illustrate. The important thing is to understand the input and output types so you can properly interpret your results.</dd></dl>
-<dl class="section user"><dt></dt><dd>In the common case, the only parameter that will need to be set is the MaximumRMSChange parameter, which determines when the solver halts. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a13fe5d2ad19c55c4ac54edb1d279aee5" title="A method for estimation of a surface from a binary volume.">itk::simple::AntiAliasBinary</a> for the procedural interface </dd>
+<dl class="section user"><dt></dt><dd>In the common case, the only parameter that will need to be set is the MaximumRMSChange parameter, which determines when the solver halts.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a13fe5d2ad19c55c4ac54edb1d279aee5" title="A method for estimation of a surface from a binary volume.">itk::simple::AntiAliasBinary</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1AntiAliasBinaryImageFilter.html">itk::AntiAliasBinaryImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -224,8 +224,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:ad27df047b3227a73afa9ee80e0ede17c" id="r_ad27df047b3227a73afa9ee80e0ede17c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad27df047b3227a73afa9ee80e0ede17c">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:ad27df047b3227a73afa9ee80e0ede17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a295d65a0626170f5710e4cbfafa40797" id="r_a295d65a0626170f5710e4cbfafa40797"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a295d65a0626170f5710e4cbfafa40797">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a295d65a0626170f5710e4cbfafa40797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -235,17 +235,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6d02b10165c40306250d86cf47bcfbb6" id="r_a6d02b10165c40306250d86cf47bcfbb6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d02b10165c40306250d86cf47bcfbb6">m_ElapsedIterations</a> {0}</td></tr>
+<tr class="memitem:a6d02b10165c40306250d86cf47bcfbb6" id="r_a6d02b10165c40306250d86cf47bcfbb6"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d02b10165c40306250d86cf47bcfbb6">m_ElapsedIterations</a> { 0 }</td></tr>
 <tr class="separator:a6d02b10165c40306250d86cf47bcfbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e3a255bc31d67b482bcef19f12803e5" id="r_a6e3a255bc31d67b482bcef19f12803e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e3a255bc31d67b482bcef19f12803e5">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a6e3a255bc31d67b482bcef19f12803e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad84ed4b1e1558e053a3ce18760315e7" id="r_aad84ed4b1e1558e053a3ce18760315e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad84ed4b1e1558e053a3ce18760315e7">m_MaximumRMSError</a> {0.07}</td></tr>
+<tr class="memitem:aad84ed4b1e1558e053a3ce18760315e7" id="r_aad84ed4b1e1558e053a3ce18760315e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad84ed4b1e1558e053a3ce18760315e7">m_MaximumRMSError</a> { 0.07 }</td></tr>
 <tr class="separator:aad84ed4b1e1558e053a3ce18760315e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53bef5e122909ea51fbb54eab0916966" id="r_a53bef5e122909ea51fbb54eab0916966"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ad27df047b3227a73afa9ee80e0ede17c">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53bef5e122909ea51fbb54eab0916966">m_MemberFactory</a></td></tr>
+<tr class="memitem:a53bef5e122909ea51fbb54eab0916966" id="r_a53bef5e122909ea51fbb54eab0916966"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a295d65a0626170f5710e4cbfafa40797">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53bef5e122909ea51fbb54eab0916966">m_MemberFactory</a></td></tr>
 <tr class="separator:a53bef5e122909ea51fbb54eab0916966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1f8bcee56ea8a6cc68533453c3d4242" id="r_aa1f8bcee56ea8a6cc68533453c3d4242"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1f8bcee56ea8a6cc68533453c3d4242">m_NumberOfIterations</a> {1000u}</td></tr>
+<tr class="memitem:aa1f8bcee56ea8a6cc68533453c3d4242" id="r_aa1f8bcee56ea8a6cc68533453c3d4242"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1f8bcee56ea8a6cc68533453c3d4242">m_NumberOfIterations</a> { 1000u }</td></tr>
 <tr class="separator:aa1f8bcee56ea8a6cc68533453c3d4242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3d28d092e60a2c5db7e397464496e0" id="r_a1f3d28d092e60a2c5db7e397464496e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f3d28d092e60a2c5db7e397464496e0">m_RMSChange</a> {0.0}</td></tr>
+<tr class="memitem:a1f3d28d092e60a2c5db7e397464496e0" id="r_a1f3d28d092e60a2c5db7e397464496e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f3d28d092e60a2c5db7e397464496e0">m_RMSChange</a> { 0.0 }</td></tr>
 <tr class="separator:a1f3d28d092e60a2c5db7e397464496e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -352,8 +352,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ad27df047b3227a73afa9ee80e0ede17c" name="ad27df047b3227a73afa9ee80e0ede17c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad27df047b3227a73afa9ee80e0ede17c">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a295d65a0626170f5710e4cbfafa40797" name="a295d65a0626170f5710e4cbfafa40797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a295d65a0626170f5710e4cbfafa40797">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -362,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#ad27df047b3227a73afa9ee80e0ede17c">itk::simple::AntiAliasBinaryImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a295d65a0626170f5710e4cbfafa40797">itk::simple::AntiAliasBinaryImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -373,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00159">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00166">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -546,9 +546,9 @@ template&lt;class TImageType&gt; </div>
 <p>Number of iterations run. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00171">m_ElapsedIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00178">m_ElapsedIterations</a>.</p>
 
 </div>
 </div>
@@ -575,9 +575,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00165">m_MaximumRMSError</a>.</p>
+<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00171">m_MaximumRMSError</a>.</p>
 
 </div>
 </div>
@@ -607,7 +607,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -634,9 +634,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00168">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00174">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -666,9 +666,9 @@ template&lt;class TImageType&gt; </div>
 <p>The Root Mean Square of the levelset upon termination. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00173">m_RMSChange</a>.</p>
+<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00179">m_RMSChange</a>.</p>
 
 </div>
 </div>
@@ -695,9 +695,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00165">m_MaximumRMSError</a>.</p>
+<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00171">m_MaximumRMSError</a>.</p>
 
 </div>
 </div>
@@ -724,9 +724,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00168">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00174">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -769,7 +769,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#ad27df047b3227a73afa9ee80e0ede17c">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a295d65a0626170f5710e4cbfafa40797">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -779,7 +779,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a4294d7b6e0586b09b19812d165568d6c">ExecuteInternal()</a>.</p>
 
@@ -796,7 +796,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t itk::simple::AntiAliasBinaryImageFilter::m_ElapsedIterations {0}</td>
+          <td class="memname">uint32_t itk::simple::AntiAliasBinaryImageFilter::m_ElapsedIterations { 0 }</td>
         </tr>
       </table>
   </td>
@@ -806,9 +806,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00127">GetElapsedIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00139">GetElapsedIterations()</a>.</p>
 
 </div>
 </div>
@@ -832,7 +832,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -846,7 +846,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::AntiAliasBinaryImageFilter::m_MaximumRMSError {0.07}</td>
+          <td class="memname">double itk::simple::AntiAliasBinaryImageFilter::m_MaximumRMSError { 0.07 }</td>
         </tr>
       </table>
   </td>
@@ -856,9 +856,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00112">GetMaximumRMSError()</a>, and <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00108">SetMaximumRMSError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00121">GetMaximumRMSError()</a>, and <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00116">SetMaximumRMSError()</a>.</p>
 
 </div>
 </div>
@@ -872,7 +872,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ad27df047b3227a73afa9ee80e0ede17c">MemberFunctionType</a>&gt; &gt; itk::simple::AntiAliasBinaryImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a295d65a0626170f5710e4cbfafa40797">MemberFunctionType</a>&gt; &gt; itk::simple::AntiAliasBinaryImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -882,7 +882,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -896,7 +896,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t itk::simple::AntiAliasBinaryImageFilter::m_NumberOfIterations {1000u}</td>
+          <td class="memname">uint32_t itk::simple::AntiAliasBinaryImageFilter::m_NumberOfIterations { 1000u }</td>
         </tr>
       </table>
   </td>
@@ -906,9 +906,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00120">GetNumberOfIterations()</a>, and <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00116">SetNumberOfIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00131">GetNumberOfIterations()</a>, and <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00126">SetNumberOfIterations()</a>.</p>
 
 </div>
 </div>
@@ -922,7 +922,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::AntiAliasBinaryImageFilter::m_RMSChange {0.0}</td>
+          <td class="memname">double itk::simple::AntiAliasBinaryImageFilter::m_RMSChange { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -932,9 +932,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html">sitkAntiAliasBinaryImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00135">GetRMSChange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkAntiAliasBinaryImageFilter_8h_source.html#l00146">GetRMSChange()</a>.</p>
 
 </div>
 </div>

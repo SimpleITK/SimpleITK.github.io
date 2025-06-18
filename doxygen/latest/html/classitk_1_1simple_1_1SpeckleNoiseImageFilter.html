@@ -121,11 +121,12 @@ $(function(){ initResizable(false); });
 <dl class="section user"><dt></dt><dd>\( G \sim \Gamma(\frac{1}{\sigma^2}, \sigma^2) \)</dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
 <p>This code was contributed in the Insight Journal paper "Noise
-Simulation". <a href="https://doi.org/10.54294/vh6vbw">https://doi.org/10.54294/vh6vbw</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a6c9592b83b239d364dae9466ab368095" title="Alter an image with speckle (multiplicative) noise.">itk::simple::SpeckleNoise</a> for the procedural interface </dd>
+Simulation". <a href="https://doi.org/10.54294/vh6vbw">https://doi.org/10.54294/vh6vbw</a></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a6c9592b83b239d364dae9466ab368095" title="Alter an image with speckle (multiplicative) noise.">itk::simple::SpeckleNoise</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SpeckleNoiseImageFilter.html">itk::SpeckleNoiseImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -208,8 +209,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a2ad3f23bd49f73a31d60d65efff9fa0e" id="r_a2ad3f23bd49f73a31d60d65efff9fa0e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ad3f23bd49f73a31d60d65efff9fa0e">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a2ad3f23bd49f73a31d60d65efff9fa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1dd3ad3fa1b9f9893a04a79259317f7" id="r_ae1dd3ad3fa1b9f9893a04a79259317f7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1dd3ad3fa1b9f9893a04a79259317f7">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:ae1dd3ad3fa1b9f9893a04a79259317f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -224,11 +225,11 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1b9d9c101665f27e943a0db79e78fa46" id="r_a1b9d9c101665f27e943a0db79e78fa46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b9d9c101665f27e943a0db79e78fa46">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a1b9d9c101665f27e943a0db79e78fa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a431f8c8858af7ef840b628ca62e32907" id="r_a431f8c8858af7ef840b628ca62e32907"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a2ad3f23bd49f73a31d60d65efff9fa0e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a431f8c8858af7ef840b628ca62e32907">m_MemberFactory</a></td></tr>
+<tr class="memitem:a431f8c8858af7ef840b628ca62e32907" id="r_a431f8c8858af7ef840b628ca62e32907"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ae1dd3ad3fa1b9f9893a04a79259317f7">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a431f8c8858af7ef840b628ca62e32907">m_MemberFactory</a></td></tr>
 <tr class="separator:a431f8c8858af7ef840b628ca62e32907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2c9ddf4b146a29708b74c6c6015f454" id="r_af2c9ddf4b146a29708b74c6c6015f454"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2c9ddf4b146a29708b74c6c6015f454">m_Seed</a> {(uint32_t) <a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a>}</td></tr>
+<tr class="memitem:af2c9ddf4b146a29708b74c6c6015f454" id="r_af2c9ddf4b146a29708b74c6c6015f454"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2c9ddf4b146a29708b74c6c6015f454">m_Seed</a> { (uint32_t) <a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a> }</td></tr>
 <tr class="separator:af2c9ddf4b146a29708b74c6c6015f454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a223ea9cec4055e8ec4ea1bd66a4b6b0e" id="r_a223ea9cec4055e8ec4ea1bd66a4b6b0e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a223ea9cec4055e8ec4ea1bd66a4b6b0e">m_StandardDeviation</a> {1.0}</td></tr>
+<tr class="memitem:a223ea9cec4055e8ec4ea1bd66a4b6b0e" id="r_a223ea9cec4055e8ec4ea1bd66a4b6b0e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a223ea9cec4055e8ec4ea1bd66a4b6b0e">m_StandardDeviation</a> { 1.0 }</td></tr>
 <tr class="separator:a223ea9cec4055e8ec4ea1bd66a4b6b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -337,8 +338,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a2ad3f23bd49f73a31d60d65efff9fa0e" name="a2ad3f23bd49f73a31d60d65efff9fa0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad3f23bd49f73a31d60d65efff9fa0e">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="ae1dd3ad3fa1b9f9893a04a79259317f7" name="ae1dd3ad3fa1b9f9893a04a79259317f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1dd3ad3fa1b9f9893a04a79259317f7">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a2ad3f23bd49f73a31d60d65efff9fa0e">itk::simple::SpeckleNoiseImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#ae1dd3ad3fa1b9f9893a04a79259317f7">itk::simple::SpeckleNoiseImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -358,7 +359,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +392,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -529,7 +530,7 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Dispatched methods which calls ExecuteInternal on each component </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00117">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00127">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -559,7 +560,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -586,9 +587,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00123">m_Seed</a>.</p>
+<p class="reference">References <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00133">m_Seed</a>.</p>
 
 </div>
 </div>
@@ -616,9 +617,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the standard deviation of the gamma distribution. Defaults to 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00121">m_StandardDeviation</a>.</p>
+<p class="reference">References <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00131">m_StandardDeviation</a>.</p>
 
 </div>
 </div>
@@ -645,9 +646,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00123">m_Seed</a>.</p>
+<p class="reference">References <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00133">m_Seed</a>.</p>
 
 </div>
 </div>
@@ -675,9 +676,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the standard deviation of the gamma distribution. Defaults to 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00121">m_StandardDeviation</a>.</p>
+<p class="reference">References <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00131">m_StandardDeviation</a>.</p>
 
 </div>
 </div>
@@ -720,7 +721,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt; <a class="el" href="#a2ad3f23bd49f73a31d60d65efff9fa0e">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt; <a class="el" href="#ae1dd3ad3fa1b9f9893a04a79259317f7">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -730,7 +731,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a88f5ff7f9b50f685fa873905d2b8e4eb">ExecuteInternalVectorImage()</a>.</p>
 
@@ -746,7 +747,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a2ad3f23bd49f73a31d60d65efff9fa0e">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#ae1dd3ad3fa1b9f9893a04a79259317f7">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -756,7 +757,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -781,7 +782,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -795,7 +796,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a2ad3f23bd49f73a31d60d65efff9fa0e">MemberFunctionType</a>&gt; &gt; itk::simple::SpeckleNoiseImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ae1dd3ad3fa1b9f9893a04a79259317f7">MemberFunctionType</a>&gt; &gt; itk::simple::SpeckleNoiseImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -805,7 +806,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -819,7 +820,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t itk::simple::SpeckleNoiseImageFilter::m_Seed {(uint32_t) <a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a>}</td>
+          <td class="memname">uint32_t itk::simple::SpeckleNoiseImageFilter::m_Seed { (uint32_t) <a class="el" href="namespaceitk_1_1simple.html#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a> }</td>
         </tr>
       </table>
   </td>
@@ -829,9 +830,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00092">GetSeed()</a>, and <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00088">SetSeed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00103">GetSeed()</a>, and <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00098">SetSeed()</a>.</p>
 
 </div>
 </div>
@@ -845,7 +846,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::SpeckleNoiseImageFilter::m_StandardDeviation {1.0}</td>
+          <td class="memname">double itk::simple::SpeckleNoiseImageFilter::m_StandardDeviation { 1.0 }</td>
         </tr>
       </table>
   </td>
@@ -855,9 +856,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html">sitkSpeckleNoiseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00084">GetStandardDeviation()</a>, and <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00079">SetStandardDeviation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00093">GetStandardDeviation()</a>, and <a class="el" href="sitkSpeckleNoiseImageFilter_8h_source.html#l00087">SetStandardDeviation()</a>.</p>
 
 </div>
 </div>

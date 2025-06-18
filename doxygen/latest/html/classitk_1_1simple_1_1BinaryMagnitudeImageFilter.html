@@ -135,11 +135,12 @@ $(function(){ initResizable(false); });
 <ul>
 <li>store the cast value into the output image.</li>
 </ul>
-<p>The filter expects all images to have the same dimension (e.g. all 2D, or all 3D, or all ND) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5a3ecb885ac12da3d80e596cc94e92fd" title="Computes the square root of the sum of squares of corresponding input pixels.">itk::simple::BinaryMagnitude</a> for the procedural interface </dd>
+<p>The filter expects all images to have the same dimension (e.g. all 2D, or all 3D, or all ND)</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a5a3ecb885ac12da3d80e596cc94e92fd" title="Computes the square root of the sum of squares of corresponding input pixels.">itk::simple::BinaryMagnitude</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMagnitudeImageFilter.html">itk::BinaryMagnitudeImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -214,8 +215,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a189dd518c9ed5f8678b8f7dacf30088f" id="r_a189dd518c9ed5f8678b8f7dacf30088f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a189dd518c9ed5f8678b8f7dacf30088f">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td></tr>
-<tr class="separator:a189dd518c9ed5f8678b8f7dacf30088f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507ae01c88e7f181895edcf3511dab83" id="r_a507ae01c88e7f181895edcf3511dab83"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a507ae01c88e7f181895edcf3511dab83">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
+<tr class="separator:a507ae01c88e7f181895edcf3511dab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -227,7 +228,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a594c21d401277a5d4cb6bd23eda7e98b" id="r_a594c21d401277a5d4cb6bd23eda7e98b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a594c21d401277a5d4cb6bd23eda7e98b">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a594c21d401277a5d4cb6bd23eda7e98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7555f867dd954d492391e2d27b70b03" id="r_ab7555f867dd954d492391e2d27b70b03"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a189dd518c9ed5f8678b8f7dacf30088f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7555f867dd954d492391e2d27b70b03">m_MemberFactory</a></td></tr>
+<tr class="memitem:ab7555f867dd954d492391e2d27b70b03" id="r_ab7555f867dd954d492391e2d27b70b03"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a507ae01c88e7f181895edcf3511dab83">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7555f867dd954d492391e2d27b70b03">m_MemberFactory</a></td></tr>
 <tr class="separator:ab7555f867dd954d492391e2d27b70b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -334,8 +335,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a189dd518c9ed5f8678b8f7dacf30088f" name="a189dd518c9ed5f8678b8f7dacf30088f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a189dd518c9ed5f8678b8f7dacf30088f">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a507ae01c88e7f181895edcf3511dab83" name="a507ae01c88e7f181895edcf3511dab83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a507ae01c88e7f181895edcf3511dab83">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a189dd518c9ed5f8678b8f7dacf30088f">itk::simple::BinaryMagnitudeImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td>
+          <td class="memname">using <a class="el" href="#a507ae01c88e7f181895edcf3511dab83">itk::simple::BinaryMagnitudeImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td>
         </tr>
       </table>
   </td>
@@ -355,7 +356,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +389,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -510,7 +511,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00104">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00109">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -540,7 +541,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -583,7 +584,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a189dd518c9ed5f8678b8f7dacf30088f">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a507ae01c88e7f181895edcf3511dab83">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -593,7 +594,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#afec2038d2198dfc29fd13a4a8caf1057">ExecuteInternal()</a>.</p>
 
@@ -620,7 +621,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -634,7 +635,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a189dd518c9ed5f8678b8f7dacf30088f">MemberFunctionType</a>&gt; &gt; itk::simple::BinaryMagnitudeImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a507ae01c88e7f181895edcf3511dab83">MemberFunctionType</a>&gt; &gt; itk::simple::BinaryMagnitudeImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -644,7 +645,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkBinaryMagnitudeImageFilter_8h_source.html">sitkBinaryMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>

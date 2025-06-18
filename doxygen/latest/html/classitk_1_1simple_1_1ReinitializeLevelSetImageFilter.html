@@ -118,11 +118,12 @@ $(function(){ initResizable(false); });
 <p>For some level set algorithms, it is useful to periodically reinitialize the level set function to prevent numerical accuracy problems in computing derivatives and curvature values where level sets are densely bunched together.</p>
 <p>This class is templated over the image type which represents the level set.</p>
 <p>This class supports narrowbanding. If the input narrowband is provided, the algorithm will only locate the level set within the input narrowband. For the output, the reinitialize level set is only valid for a distance of OutputNarrowBandwidth / 2 of either side of the level set of interest.</p>
-<p>Implementation of this class is based on Chapter 11 of "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Second edition, 1999. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afffc16d6b6f92fed95d848407cf0c36a" title="Reinitialize the level set to the signed distance function.">itk::simple::ReinitializeLevelSet</a> for the procedural interface </dd>
+<p>Implementation of this class is based on Chapter 11 of "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Second edition, 1999.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afffc16d6b6f92fed95d848407cf0c36a" title="Reinitialize the level set to the signed distance function.">itk::simple::ReinitializeLevelSet</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ReinitializeLevelSetImageFilter.html">itk::ReinitializeLevelSetImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -217,8 +218,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a00cd40a4492c74c1d58f71c68132eb1f" id="r_a00cd40a4492c74c1d58f71c68132eb1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00cd40a4492c74c1d58f71c68132eb1f">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a00cd40a4492c74c1d58f71c68132eb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e8136e9091f702c9456432f2331d1f" id="r_aa6e8136e9091f702c9456432f2331d1f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6e8136e9091f702c9456432f2331d1f">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:aa6e8136e9091f702c9456432f2331d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -228,15 +229,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a6ec971f38a57f740bbdd14f0e30d1e6b" id="r_a6ec971f38a57f740bbdd14f0e30d1e6b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ec971f38a57f740bbdd14f0e30d1e6b">m_InputNarrowBandwidth</a> {12.0}</td></tr>
+<tr class="memitem:a6ec971f38a57f740bbdd14f0e30d1e6b" id="r_a6ec971f38a57f740bbdd14f0e30d1e6b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ec971f38a57f740bbdd14f0e30d1e6b">m_InputNarrowBandwidth</a> { 12.0 }</td></tr>
 <tr class="separator:a6ec971f38a57f740bbdd14f0e30d1e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba0f0ce23e772eab8ba591255b310609" id="r_aba0f0ce23e772eab8ba591255b310609"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba0f0ce23e772eab8ba591255b310609">m_LevelSetValue</a> {0.0}</td></tr>
+<tr class="memitem:aba0f0ce23e772eab8ba591255b310609" id="r_aba0f0ce23e772eab8ba591255b310609"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba0f0ce23e772eab8ba591255b310609">m_LevelSetValue</a> { 0.0 }</td></tr>
 <tr class="separator:aba0f0ce23e772eab8ba591255b310609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a169dfecedd56e940c19535c7dd605964" id="r_a169dfecedd56e940c19535c7dd605964"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a00cd40a4492c74c1d58f71c68132eb1f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a169dfecedd56e940c19535c7dd605964">m_MemberFactory</a></td></tr>
+<tr class="memitem:a169dfecedd56e940c19535c7dd605964" id="r_a169dfecedd56e940c19535c7dd605964"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aa6e8136e9091f702c9456432f2331d1f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a169dfecedd56e940c19535c7dd605964">m_MemberFactory</a></td></tr>
 <tr class="separator:a169dfecedd56e940c19535c7dd605964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a551977ebd5d94b5b05c1a91a089e9b01" id="r_a551977ebd5d94b5b05c1a91a089e9b01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a551977ebd5d94b5b05c1a91a089e9b01">m_NarrowBanding</a> {false}</td></tr>
+<tr class="memitem:a551977ebd5d94b5b05c1a91a089e9b01" id="r_a551977ebd5d94b5b05c1a91a089e9b01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a551977ebd5d94b5b05c1a91a089e9b01">m_NarrowBanding</a> { false }</td></tr>
 <tr class="separator:a551977ebd5d94b5b05c1a91a089e9b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dd56ae5fac3d7bef49ffe8611deed6d" id="r_a4dd56ae5fac3d7bef49ffe8611deed6d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dd56ae5fac3d7bef49ffe8611deed6d">m_OutputNarrowBandwidth</a> {12.0}</td></tr>
+<tr class="memitem:a4dd56ae5fac3d7bef49ffe8611deed6d" id="r_a4dd56ae5fac3d7bef49ffe8611deed6d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dd56ae5fac3d7bef49ffe8611deed6d">m_OutputNarrowBandwidth</a> { 12.0 }</td></tr>
 <tr class="separator:a4dd56ae5fac3d7bef49ffe8611deed6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -343,8 +344,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a00cd40a4492c74c1d58f71c68132eb1f" name="a00cd40a4492c74c1d58f71c68132eb1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00cd40a4492c74c1d58f71c68132eb1f">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="aa6e8136e9091f702c9456432f2331d1f" name="aa6e8136e9091f702c9456432f2331d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e8136e9091f702c9456432f2331d1f">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a00cd40a4492c74c1d58f71c68132eb1f">itk::simple::ReinitializeLevelSetImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#aa6e8136e9091f702c9456432f2331d1f">itk::simple::ReinitializeLevelSetImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -364,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -490,7 +491,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00131">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00146">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -518,9 +519,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the input narrow bandwidth. The default value is 12. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00143">m_InputNarrowBandwidth</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00157">m_InputNarrowBandwidth</a>.</p>
 
 </div>
 </div>
@@ -548,9 +549,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of the level set to be located. The default value is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00137">m_LevelSetValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00151">m_LevelSetValue</a>.</p>
 
 </div>
 </div>
@@ -580,7 +581,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -608,9 +609,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the narrowbanding flag. By default, narrowbanding is switched off. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00140">m_NarrowBanding</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00154">m_NarrowBanding</a>.</p>
 
 </div>
 </div>
@@ -638,9 +639,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the output narrow bandwidth. The default value is 12. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00146">m_OutputNarrowBandwidth</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00160">m_OutputNarrowBandwidth</a>.</p>
 
 </div>
 </div>
@@ -667,9 +668,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00077">SetNarrowBanding()</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00087">SetNarrowBanding()</a>.</p>
 
 </div>
 </div>
@@ -697,9 +698,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of NarrowBanding to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00077">SetNarrowBanding()</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00087">SetNarrowBanding()</a>.</p>
 
 </div>
 </div>
@@ -745,9 +746,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the input narrow bandwidth. The default value is 12. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00143">m_InputNarrowBandwidth</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00157">m_InputNarrowBandwidth</a>.</p>
 
 </div>
 </div>
@@ -775,9 +776,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value of the level set to be located. The default value is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00137">m_LevelSetValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00151">m_LevelSetValue</a>.</p>
 
 </div>
 </div>
@@ -805,11 +806,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the narrowbanding flag. By default, narrowbanding is switched off. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00140">m_NarrowBanding</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00154">m_NarrowBanding</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00081">NarrowBandingOff()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00080">NarrowBandingOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00094">NarrowBandingOff()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00092">NarrowBandingOn()</a>.</p>
 
 </div>
 </div>
@@ -837,9 +838,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the output narrow bandwidth. The default value is 12. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00146">m_OutputNarrowBandwidth</a>.</p>
+<p class="reference">References <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00160">m_OutputNarrowBandwidth</a>.</p>
 
 </div>
 </div>
@@ -882,7 +883,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a00cd40a4492c74c1d58f71c68132eb1f">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#aa6e8136e9091f702c9456432f2331d1f">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -892,7 +893,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a72b95e376c95288efa6fe8f091b2136e">ExecuteInternal()</a>.</p>
 
@@ -909,7 +910,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ReinitializeLevelSetImageFilter::m_InputNarrowBandwidth {12.0}</td>
+          <td class="memname">double itk::simple::ReinitializeLevelSetImageFilter::m_InputNarrowBandwidth { 12.0 }</td>
         </tr>
       </table>
   </td>
@@ -919,9 +920,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00096">GetInputNarrowBandwidth()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00091">SetInputNarrowBandwidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00111">GetInputNarrowBandwidth()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00105">SetInputNarrowBandwidth()</a>.</p>
 
 </div>
 </div>
@@ -935,7 +936,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ReinitializeLevelSetImageFilter::m_LevelSetValue {0.0}</td>
+          <td class="memname">double itk::simple::ReinitializeLevelSetImageFilter::m_LevelSetValue { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -945,9 +946,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00072">GetLevelSetValue()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00067">SetLevelSetValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00081">GetLevelSetValue()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00075">SetLevelSetValue()</a>.</p>
 
 </div>
 </div>
@@ -961,7 +962,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a00cd40a4492c74c1d58f71c68132eb1f">MemberFunctionType</a>&gt; &gt; itk::simple::ReinitializeLevelSetImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aa6e8136e9091f702c9456432f2331d1f">MemberFunctionType</a>&gt; &gt; itk::simple::ReinitializeLevelSetImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -971,7 +972,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -985,7 +986,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::ReinitializeLevelSetImageFilter::m_NarrowBanding {false}</td>
+          <td class="memname">bool itk::simple::ReinitializeLevelSetImageFilter::m_NarrowBanding { false }</td>
         </tr>
       </table>
   </td>
@@ -995,9 +996,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00086">GetNarrowBanding()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00077">SetNarrowBanding()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00099">GetNarrowBanding()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00087">SetNarrowBanding()</a>.</p>
 
 </div>
 </div>
@@ -1011,7 +1012,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ReinitializeLevelSetImageFilter::m_OutputNarrowBandwidth {12.0}</td>
+          <td class="memname">double itk::simple::ReinitializeLevelSetImageFilter::m_OutputNarrowBandwidth { 12.0 }</td>
         </tr>
       </table>
   </td>
@@ -1021,9 +1022,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html">sitkReinitializeLevelSetImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00106">GetOutputNarrowBandwidth()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00101">SetOutputNarrowBandwidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00123">GetOutputNarrowBandwidth()</a>, and <a class="el" href="sitkReinitializeLevelSetImageFilter_8h_source.html#l00117">SetOutputNarrowBandwidth()</a>.</p>
 
 </div>
 </div>

@@ -121,12 +121,12 @@ $(function(){ initResizable(false); });
 <p>"Image Kernel Convolution" by Tustison N., Gee J. <a href="https://doi.org/10.54294/e292kx">https://doi.org/10.54294/e292kx</a></p>
 <dl class="section author"><dt>Author</dt><dd>Nicholas J. Tustison</dd>
 <dd>
-James C. Gee </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a55c2905c56f7529bd342b84173256485" title="Convolve a given image with an arbitrary image kernel.">itk::simple::Convolution</a> for the procedural interface </dd>
+James C. Gee</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a55c2905c56f7529bd342b84173256485" title="Convolve a given image with an arbitrary image kernel.">itk::simple::Convolution</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ConvolutionImageFilter.html">itk::ConvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -231,8 +231,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a79d228d3defe925edfbb73f9af7b3fb1" id="r_a79d228d3defe925edfbb73f9af7b3fb1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79d228d3defe925edfbb73f9af7b3fb1">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * kernelImage )</td></tr>
-<tr class="separator:a79d228d3defe925edfbb73f9af7b3fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8190e5512e809951e593fe235c110d13" id="r_a8190e5512e809951e593fe235c110d13"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8190e5512e809951e593fe235c110d13">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *kernelImage)</td></tr>
+<tr class="separator:a8190e5512e809951e593fe235c110d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -242,13 +242,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:addeece524c7d683b8b9eec5c6ae9e92c" id="r_addeece524c7d683b8b9eec5c6ae9e92c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a554b83360d6ae7a805bc3a510889631e">BoundaryConditionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addeece524c7d683b8b9eec5c6ae9e92c">m_BoundaryCondition</a> {<a class="el" href="#a554b83360d6ae7a805bc3a510889631eaa534e7671190b86579a1ccb86255ca9b">itk::simple::ConvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a>}</td></tr>
+<tr class="memitem:addeece524c7d683b8b9eec5c6ae9e92c" id="r_addeece524c7d683b8b9eec5c6ae9e92c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a554b83360d6ae7a805bc3a510889631e">BoundaryConditionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addeece524c7d683b8b9eec5c6ae9e92c">m_BoundaryCondition</a> { <a class="el" href="#a554b83360d6ae7a805bc3a510889631eaa534e7671190b86579a1ccb86255ca9b">itk::simple::ConvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a> }</td></tr>
 <tr class="separator:addeece524c7d683b8b9eec5c6ae9e92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8ac374c08708689bd516a013e05e249" id="r_ad8ac374c08708689bd516a013e05e249"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a79d228d3defe925edfbb73f9af7b3fb1">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8ac374c08708689bd516a013e05e249">m_MemberFactory</a></td></tr>
+<tr class="memitem:ad8ac374c08708689bd516a013e05e249" id="r_ad8ac374c08708689bd516a013e05e249"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a8190e5512e809951e593fe235c110d13">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8ac374c08708689bd516a013e05e249">m_MemberFactory</a></td></tr>
 <tr class="separator:ad8ac374c08708689bd516a013e05e249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21f32f003c7ffa856df025176a0ec08b" id="r_a21f32f003c7ffa856df025176a0ec08b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21f32f003c7ffa856df025176a0ec08b">m_Normalize</a> {false}</td></tr>
+<tr class="memitem:a21f32f003c7ffa856df025176a0ec08b" id="r_a21f32f003c7ffa856df025176a0ec08b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21f32f003c7ffa856df025176a0ec08b">m_Normalize</a> { false }</td></tr>
 <tr class="separator:a21f32f003c7ffa856df025176a0ec08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f00ea07199d14736565303adb77f7a2" id="r_a2f00ea07199d14736565303adb77f7a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a2a187e106cf06af679ec67230e4a40ab">OutputRegionModeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f00ea07199d14736565303adb77f7a2">m_OutputRegionMode</a> {<a class="el" href="#a2a187e106cf06af679ec67230e4a40aba27b01d9e7960cfc607ac40631100575b">itk::simple::ConvolutionImageFilter::SAME</a>}</td></tr>
+<tr class="memitem:a2f00ea07199d14736565303adb77f7a2" id="r_a2f00ea07199d14736565303adb77f7a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a2a187e106cf06af679ec67230e4a40ab">OutputRegionModeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f00ea07199d14736565303adb77f7a2">m_OutputRegionMode</a> { <a class="el" href="#a2a187e106cf06af679ec67230e4a40aba27b01d9e7960cfc607ac40631100575b">itk::simple::ConvolutionImageFilter::SAME</a> }</td></tr>
 <tr class="separator:a2f00ea07199d14736565303adb77f7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -355,8 +355,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a79d228d3defe925edfbb73f9af7b3fb1" name="a79d228d3defe925edfbb73f9af7b3fb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79d228d3defe925edfbb73f9af7b3fb1">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a8190e5512e809951e593fe235c110d13" name="a8190e5512e809951e593fe235c110d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8190e5512e809951e593fe235c110d13">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a79d228d3defe925edfbb73f9af7b3fb1">itk::simple::ConvolutionImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> * kernelImage )</td>
+          <td class="memname">using <a class="el" href="#a8190e5512e809951e593fe235c110d13">itk::simple::ConvolutionImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *kernelImage)</td>
         </tr>
       </table>
   </td>
@@ -376,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +409,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -431,7 +431,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a554b83360d6ae7a805bc3a510889631ea8a853e287d0ee066012f7f42d0528e33" name="a554b83360d6ae7a805bc3a510889631ea8a853e287d0ee066012f7f42d0528e33"></a>PERIODIC_PAD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +451,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a2a187e106cf06af679ec67230e4a40abad0b6bf9d0a737e88065565681e8e622a" name="a2a187e106cf06af679ec67230e4a40abad0b6bf9d0a737e88065565681e8e622a"></a>VALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00123">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00133">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -579,9 +579,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00131">m_BoundaryCondition</a>.</p>
+<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00139">m_BoundaryCondition</a>.</p>
 
 </div>
 </div>
@@ -611,7 +611,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -638,9 +638,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00129">m_Normalize</a>.</p>
+<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00137">m_Normalize</a>.</p>
 
 </div>
 </div>
@@ -667,9 +667,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00133">m_OutputRegionMode</a>.</p>
+<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00141">m_OutputRegionMode</a>.</p>
 
 </div>
 </div>
@@ -696,9 +696,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00074">SetNormalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00082">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -726,9 +726,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of Normalize to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00074">SetNormalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00082">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -755,9 +755,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00131">m_BoundaryCondition</a>.</p>
+<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00139">m_BoundaryCondition</a>.</p>
 
 </div>
 </div>
@@ -785,11 +785,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Normalize the output image by the sum of the kernel components </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00129">m_Normalize</a>, and <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00137">m_Normalize</a>, and <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00078">NormalizeOff()</a>, and <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00077">NormalizeOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00089">NormalizeOff()</a>, and <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00087">NormalizeOn()</a>.</p>
 
 </div>
 </div>
@@ -816,9 +816,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00133">m_OutputRegionMode</a>.</p>
+<p class="reference">References <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00141">m_OutputRegionMode</a>.</p>
 
 </div>
 </div>
@@ -861,7 +861,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a79d228d3defe925edfbb73f9af7b3fb1">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a8190e5512e809951e593fe235c110d13">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -871,7 +871,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ad3bd742378d5618b5661c1d2831cd1e7">ExecuteInternal()</a>.</p>
 
@@ -888,7 +888,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a554b83360d6ae7a805bc3a510889631e">BoundaryConditionType</a> itk::simple::ConvolutionImageFilter::m_BoundaryCondition {<a class="el" href="#a554b83360d6ae7a805bc3a510889631eaa534e7671190b86579a1ccb86255ca9b">itk::simple::ConvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a>}</td>
+          <td class="memname"><a class="el" href="#a554b83360d6ae7a805bc3a510889631e">BoundaryConditionType</a> itk::simple::ConvolutionImageFilter::m_BoundaryCondition { <a class="el" href="#a554b83360d6ae7a805bc3a510889631eaa534e7671190b86579a1ccb86255ca9b">itk::simple::ConvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a> }</td>
         </tr>
       </table>
   </td>
@@ -898,9 +898,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00092">GetBoundaryCondition()</a>, and <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00088">SetBoundaryCondition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00104">GetBoundaryCondition()</a>, and <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00099">SetBoundaryCondition()</a>.</p>
 
 </div>
 </div>
@@ -914,7 +914,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a79d228d3defe925edfbb73f9af7b3fb1">MemberFunctionType</a>&gt; &gt; itk::simple::ConvolutionImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a8190e5512e809951e593fe235c110d13">MemberFunctionType</a>&gt; &gt; itk::simple::ConvolutionImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -924,7 +924,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -938,7 +938,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::ConvolutionImageFilter::m_Normalize {false}</td>
+          <td class="memname">bool itk::simple::ConvolutionImageFilter::m_Normalize { false }</td>
         </tr>
       </table>
   </td>
@@ -948,9 +948,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00082">GetNormalize()</a>, and <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00074">SetNormalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00093">GetNormalize()</a>, and <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00082">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -964,7 +964,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a2a187e106cf06af679ec67230e4a40ab">OutputRegionModeType</a> itk::simple::ConvolutionImageFilter::m_OutputRegionMode {<a class="el" href="#a2a187e106cf06af679ec67230e4a40aba27b01d9e7960cfc607ac40631100575b">itk::simple::ConvolutionImageFilter::SAME</a>}</td>
+          <td class="memname"><a class="el" href="#a2a187e106cf06af679ec67230e4a40ab">OutputRegionModeType</a> itk::simple::ConvolutionImageFilter::m_OutputRegionMode { <a class="el" href="#a2a187e106cf06af679ec67230e4a40aba27b01d9e7960cfc607ac40631100575b">itk::simple::ConvolutionImageFilter::SAME</a> }</td>
         </tr>
       </table>
   </td>
@@ -974,9 +974,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkConvolutionImageFilter_8h_source.html">sitkConvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00102">GetOutputRegionMode()</a>, and <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00098">SetOutputRegionMode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00115">GetOutputRegionMode()</a>, and <a class="el" href="sitkConvolutionImageFilter_8h_source.html#l00110">SetOutputRegionMode()</a>.</p>
 
 </div>
 </div>

@@ -126,11 +126,12 @@ $(function(){ initResizable(false); });
 <div class="line"> }</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordflow">return</span> this-&gt;m_BackgroundValue;</div>
-</div><!-- fragment --><p>Where "!" is the unary Logical NOT operator in C++. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a63311bca8b602f74f4aed3186ba822ac" title="Implements the NOT logical operator pixel-wise on an image.">itk::simple::Not</a> for the procedural interface </dd>
+</div><!-- fragment --><p>Where "!" is the unary Logical NOT operator in C++.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a63311bca8b602f74f4aed3186ba822ac" title="Implements the NOT logical operator pixel-wise on an image.">itk::simple::Not</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NotImageFilter.html">itk::NotImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -205,8 +206,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a90f06529525fe22487106402f9443202" id="r_a90f06529525fe22487106402f9443202"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90f06529525fe22487106402f9443202">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a90f06529525fe22487106402f9443202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a266b46c0981d79ad61e0a736e9628ed6" id="r_a266b46c0981d79ad61e0a736e9628ed6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a266b46c0981d79ad61e0a736e9628ed6">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a266b46c0981d79ad61e0a736e9628ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -218,7 +219,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad5cd976dc43591e9ad1644f7e9e799f9" id="r_ad5cd976dc43591e9ad1644f7e9e799f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5cd976dc43591e9ad1644f7e9e799f9">m_InPlace</a> {false}</td></tr>
 <tr class="separator:ad5cd976dc43591e9ad1644f7e9e799f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a76437e7ce5984c39bf57b6cb38493" id="r_a60a76437e7ce5984c39bf57b6cb38493"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a90f06529525fe22487106402f9443202">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60a76437e7ce5984c39bf57b6cb38493">m_MemberFactory</a></td></tr>
+<tr class="memitem:a60a76437e7ce5984c39bf57b6cb38493" id="r_a60a76437e7ce5984c39bf57b6cb38493"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a266b46c0981d79ad61e0a736e9628ed6">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60a76437e7ce5984c39bf57b6cb38493">m_MemberFactory</a></td></tr>
 <tr class="separator:a60a76437e7ce5984c39bf57b6cb38493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -325,8 +326,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a90f06529525fe22487106402f9443202" name="a90f06529525fe22487106402f9443202"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90f06529525fe22487106402f9443202">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a266b46c0981d79ad61e0a736e9628ed6" name="a266b46c0981d79ad61e0a736e9628ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a266b46c0981d79ad61e0a736e9628ed6">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +336,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a90f06529525fe22487106402f9443202">itk::simple::NotImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a266b46c0981d79ad61e0a736e9628ed6">itk::simple::NotImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -346,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +364,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +380,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +490,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkNotImageFilter_8h_source.html#l00097">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkNotImageFilter_8h_source.html#l00102">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -519,7 +520,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -562,7 +563,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a90f06529525fe22487106402f9443202">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a266b46c0981d79ad61e0a736e9628ed6">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -572,7 +573,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a4b71374ed26b26bb6dbf87dc32febd7c">ExecuteInternal()</a>.</p>
 
@@ -599,7 +600,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -613,7 +614,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a90f06529525fe22487106402f9443202">MemberFunctionType</a>&gt; &gt; itk::simple::NotImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a266b46c0981d79ad61e0a736e9628ed6">MemberFunctionType</a>&gt; &gt; itk::simple::NotImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -623,7 +624,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkNotImageFilter_8h_source.html">sitkNotImageFilter.h</a>.</p>
 
 </div>
 </div>

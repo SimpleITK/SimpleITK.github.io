@@ -114,11 +114,12 @@ $(function(){ initResizable(false); });
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>toboggan image segmentation The Toboggan segmentation takes a gradient magnitude image as input and produces an (over-)segmentation of the image based on connecting each pixel to a local minimum of gradient. It is roughly equivalent to a watershed segmentation of the lowest level. </p>
-<p>The output is a 4 connected labeled map of the image. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ac3d5e0994dab0665f585d520b31e0175" title="toboggan image segmentation The Toboggan segmentation takes a gradient magnitude image as input and p...">itk::simple::Toboggan</a> for the procedural interface </dd>
+<p>The output is a 4 connected labeled map of the image.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ac3d5e0994dab0665f585d520b31e0175" title="toboggan image segmentation The Toboggan segmentation takes a gradient magnitude image as input and p...">itk::simple::Toboggan</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TobogganImageFilter.html">itk::TobogganImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00041">41</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -191,8 +192,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a5f64931847a9acc5af26212e49e50905" id="r_a5f64931847a9acc5af26212e49e50905"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f64931847a9acc5af26212e49e50905">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a5f64931847a9acc5af26212e49e50905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71c0256ffc34c3a90356a277ae4d17b" id="r_af71c0256ffc34c3a90356a277ae4d17b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af71c0256ffc34c3a90356a277ae4d17b">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:af71c0256ffc34c3a90356a277ae4d17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -202,7 +203,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a02f25ac5ae232eae95549e7f21aa88d5" id="r_a02f25ac5ae232eae95549e7f21aa88d5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a5f64931847a9acc5af26212e49e50905">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02f25ac5ae232eae95549e7f21aa88d5">m_MemberFactory</a></td></tr>
+<tr class="memitem:a02f25ac5ae232eae95549e7f21aa88d5" id="r_a02f25ac5ae232eae95549e7f21aa88d5"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#af71c0256ffc34c3a90356a277ae4d17b">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02f25ac5ae232eae95549e7f21aa88d5">m_MemberFactory</a></td></tr>
 <tr class="separator:a02f25ac5ae232eae95549e7f21aa88d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -309,8 +310,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a5f64931847a9acc5af26212e49e50905" name="a5f64931847a9acc5af26212e49e50905"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f64931847a9acc5af26212e49e50905">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="af71c0256ffc34c3a90356a277ae4d17b" name="af71c0256ffc34c3a90356a277ae4d17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71c0256ffc34c3a90356a277ae4d17b">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -319,7 +320,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a5f64931847a9acc5af26212e49e50905">itk::simple::TobogganImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#af71c0256ffc34c3a90356a277ae4d17b">itk::simple::TobogganImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -330,7 +331,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -347,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +364,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -456,7 +457,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00075">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00079">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -486,7 +487,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -529,7 +530,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a5f64931847a9acc5af26212e49e50905">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#af71c0256ffc34c3a90356a277ae4d17b">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -539,7 +540,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a084e7a4886e675832bb7303a5da6ee31">ExecuteInternal()</a>.</p>
 
@@ -556,7 +557,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a5f64931847a9acc5af26212e49e50905">MemberFunctionType</a>&gt; &gt; itk::simple::TobogganImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#af71c0256ffc34c3a90356a277ae4d17b">MemberFunctionType</a>&gt; &gt; itk::simple::TobogganImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -566,7 +567,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTobogganImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkTobogganImageFilter_8h_source.html">sitkTobogganImageFilter.h</a>.</p>
 
 </div>
 </div>

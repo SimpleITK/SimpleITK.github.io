@@ -116,13 +116,13 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p>Invert the intensity of an image. </p>
 <p><a class="el" href="classitk_1_1simple_1_1InvertIntensityImageFilter.html" title="Invert the intensity of an image.">InvertIntensityImageFilter</a> inverts intensity of pixels by subtracting pixel value to a maximum value. The maximum value can be set with SetMaximum and defaults the maximum of input pixel type. This filter can be used to invert, for example, a binary image, a distance map, etc.</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html" title="Applies a linear transformation to the intensity levels of the input Image that are inside a user-def...">IntensityWindowingImageFilter</a> <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html" title="Shift and scale the pixels in an image.">ShiftScaleImageFilter</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1IntensityWindowingImageFilter.html" title="Applies a linear transformation to the intensity levels of the input Image that are inside a user-def...">IntensityWindowingImageFilter</a> <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html" title="Shift and scale the pixels in an image.">ShiftScaleImageFilter</a></dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a18d3139a1d2ba9846ef5a2a8ac82f6ae" title="Invert the intensity of an image.">itk::simple::InvertIntensity</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a18d3139a1d2ba9846ef5a2a8ac82f6ae" title="Invert the intensity of an image.">itk::simple::InvertIntensity</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InvertIntensityImageFilter.html">itk::InvertIntensityImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -201,8 +201,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:af17b010cb128ef626cff87953b622c8e" id="r_af17b010cb128ef626cff87953b622c8e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af17b010cb128ef626cff87953b622c8e">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:af17b010cb128ef626cff87953b622c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f1db387a98326eda8dee3b72be80b3" id="r_a95f1db387a98326eda8dee3b72be80b3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95f1db387a98326eda8dee3b72be80b3">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a95f1db387a98326eda8dee3b72be80b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -217,9 +217,9 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1e9cfbe8ba5c0a0feeb2bd1c35de226c" id="r_a1e9cfbe8ba5c0a0feeb2bd1c35de226c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e9cfbe8ba5c0a0feeb2bd1c35de226c">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a1e9cfbe8ba5c0a0feeb2bd1c35de226c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36d848a56818714e7c1610303d946262" id="r_a36d848a56818714e7c1610303d946262"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36d848a56818714e7c1610303d946262">m_Maximum</a> {255}</td></tr>
+<tr class="memitem:a36d848a56818714e7c1610303d946262" id="r_a36d848a56818714e7c1610303d946262"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36d848a56818714e7c1610303d946262">m_Maximum</a> { 255 }</td></tr>
 <tr class="separator:a36d848a56818714e7c1610303d946262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab91770be49dc5de194a10aef1633ce89" id="r_ab91770be49dc5de194a10aef1633ce89"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#af17b010cb128ef626cff87953b622c8e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab91770be49dc5de194a10aef1633ce89">m_MemberFactory</a></td></tr>
+<tr class="memitem:ab91770be49dc5de194a10aef1633ce89" id="r_ab91770be49dc5de194a10aef1633ce89"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a95f1db387a98326eda8dee3b72be80b3">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab91770be49dc5de194a10aef1633ce89">m_MemberFactory</a></td></tr>
 <tr class="separator:ab91770be49dc5de194a10aef1633ce89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -328,8 +328,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="af17b010cb128ef626cff87953b622c8e" name="af17b010cb128ef626cff87953b622c8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af17b010cb128ef626cff87953b622c8e">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a95f1db387a98326eda8dee3b72be80b3" name="a95f1db387a98326eda8dee3b72be80b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95f1db387a98326eda8dee3b72be80b3">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +338,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#af17b010cb128ef626cff87953b622c8e">itk::simple::InvertIntensityImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a95f1db387a98326eda8dee3b72be80b3">itk::simple::InvertIntensityImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -349,7 +349,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +520,7 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Dispatched methods which calls ExecuteInternal on each component </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00094">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00102">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -548,9 +548,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the maximum intensity value for the inversion. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00099">m_Maximum</a>.</p>
+<p class="reference">References <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00107">m_Maximum</a>.</p>
 
 </div>
 </div>
@@ -580,7 +580,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -608,9 +608,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the maximum intensity value for the inversion. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00099">m_Maximum</a>, and <a class="el" href="namespaceitk_1_1simple.html#a9dff13ffc07ed66c0cbd7856feda628a">itk::simple::Maximum()</a>.</p>
+<p class="reference">References <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00107">m_Maximum</a>, and <a class="el" href="namespaceitk_1_1simple.html#a9dff13ffc07ed66c0cbd7856feda628a">itk::simple::Maximum()</a>.</p>
 
 </div>
 </div>
@@ -653,7 +653,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt; <a class="el" href="#af17b010cb128ef626cff87953b622c8e">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1ExecuteInternalVectorImageAddressor.html">detail::ExecuteInternalVectorImageAddressor</a>&lt; <a class="el" href="#a95f1db387a98326eda8dee3b72be80b3">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -663,7 +663,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a1e41d8e5a9b2cb91a6003e8e4f5132e4">ExecuteInternalVectorImage()</a>.</p>
 
@@ -679,7 +679,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#af17b010cb128ef626cff87953b622c8e">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a95f1db387a98326eda8dee3b72be80b3">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -689,7 +689,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -714,7 +714,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -728,7 +728,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::InvertIntensityImageFilter::m_Maximum {255}</td>
+          <td class="memname">double itk::simple::InvertIntensityImageFilter::m_Maximum { 255 }</td>
         </tr>
       </table>
   </td>
@@ -738,9 +738,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00069">GetMaximum()</a>, and <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00064">SetMaximum()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00078">GetMaximum()</a>, and <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00072">SetMaximum()</a>.</p>
 
 </div>
 </div>
@@ -754,7 +754,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#af17b010cb128ef626cff87953b622c8e">MemberFunctionType</a>&gt; &gt; itk::simple::InvertIntensityImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a95f1db387a98326eda8dee3b72be80b3">MemberFunctionType</a>&gt; &gt; itk::simple::InvertIntensityImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -764,7 +764,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkInvertIntensityImageFilter_8h_source.html">sitkInvertIntensityImageFilter.h</a>.</p>
 
 </div>
 </div>

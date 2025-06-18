@@ -118,12 +118,12 @@ $(function(){ initResizable(false); });
 <p>The input and output image must be of the same dimension.</p>
 <p>The input parameters are a starting and stopping index as well as a stepping size. The starting index indicates the first pixels to be used and for each dimension the index is incremented by the step until the index is equal to or "beyond" the stopping index. If the step is negative then the image will be reversed in the dimension, and the stopping index is expected to be less then the starting index. If the stopping index is already beyond the starting index then an image of size zero will be returned.</p>
 <p>The output image's starting index is always zero. The origin is the physical location of the starting index. The output directions cosine matrix is that of the input but with sign changes matching that of the step's sign.</p>
-<dl class="section note"><dt>Note</dt><dd>In certain combinations such as with start=1, and step&gt;1 while the physical location of the center of the pixel remains the same, the extent (edge to edge space) of the output image will be beyond the extent of the original image. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ad51d5db96be65e836def8e69b6efc79b" title="Slices an image based on a starting index and a stopping index, and a step size.">itk::simple::Slice</a> for the procedural interface </dd>
+<dl class="section note"><dt>Note</dt><dd>In certain combinations such as with start=1, and step&gt;1 while the physical location of the center of the pixel remains the same, the extent (edge to edge space) of the output image will be beyond the extent of the original image.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ad51d5db96be65e836def8e69b6efc79b" title="Slices an image based on a starting index and a stopping index, and a step size.">itk::simple::Slice</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SliceImageFilter.html">itk::SliceImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -210,8 +210,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a8f60d62d2d8fb585dd9f19868f7cee4e" id="r_a8f60d62d2d8fb585dd9f19868f7cee4e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f60d62d2d8fb585dd9f19868f7cee4e">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a8f60d62d2d8fb585dd9f19868f7cee4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de4ed4ef8936776e90e16175eddb2b7" id="r_a6de4ed4ef8936776e90e16175eddb2b7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6de4ed4ef8936776e90e16175eddb2b7">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a6de4ed4ef8936776e90e16175eddb2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -221,13 +221,13 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae1f2c62a936bcb34a516a7a342e14d18" id="r_ae1f2c62a936bcb34a516a7a342e14d18"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a8f60d62d2d8fb585dd9f19868f7cee4e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1f2c62a936bcb34a516a7a342e14d18">m_MemberFactory</a></td></tr>
+<tr class="memitem:ae1f2c62a936bcb34a516a7a342e14d18" id="r_ae1f2c62a936bcb34a516a7a342e14d18"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a6de4ed4ef8936776e90e16175eddb2b7">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1f2c62a936bcb34a516a7a342e14d18">m_MemberFactory</a></td></tr>
 <tr class="separator:ae1f2c62a936bcb34a516a7a342e14d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76b2ceba49250478c031ab24223eea6c" id="r_a76b2ceba49250478c031ab24223eea6c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76b2ceba49250478c031ab24223eea6c">m_Start</a> {std::vector&lt;int32_t&gt;(3, 0)}</td></tr>
+<tr class="memitem:a76b2ceba49250478c031ab24223eea6c" id="r_a76b2ceba49250478c031ab24223eea6c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76b2ceba49250478c031ab24223eea6c">m_Start</a> { std::vector&lt;int32_t&gt;(3, 0) }</td></tr>
 <tr class="separator:a76b2ceba49250478c031ab24223eea6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44625b0e6fe02906d24f524a6ed0ede2" id="r_a44625b0e6fe02906d24f524a6ed0ede2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44625b0e6fe02906d24f524a6ed0ede2">m_Step</a> {std::vector&lt;int&gt;(3, 1)}</td></tr>
+<tr class="memitem:a44625b0e6fe02906d24f524a6ed0ede2" id="r_a44625b0e6fe02906d24f524a6ed0ede2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44625b0e6fe02906d24f524a6ed0ede2">m_Step</a> { std::vector&lt;int&gt;(3, 1) }</td></tr>
 <tr class="separator:a44625b0e6fe02906d24f524a6ed0ede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c035cb35574edcbca4a8b1fa50ae131" id="r_a9c035cb35574edcbca4a8b1fa50ae131"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c035cb35574edcbca4a8b1fa50ae131">m_Stop</a> {std::vector&lt;int32_t&gt;(3, std::numeric_limits&lt;int32_t&gt;::max())}</td></tr>
+<tr class="memitem:a9c035cb35574edcbca4a8b1fa50ae131" id="r_a9c035cb35574edcbca4a8b1fa50ae131"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c035cb35574edcbca4a8b1fa50ae131">m_Stop</a> { std::vector&lt;int32_t&gt;(3, std::numeric_limits&lt;int32_t&gt;::max()) }</td></tr>
 <tr class="separator:a9c035cb35574edcbca4a8b1fa50ae131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -334,8 +334,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a8f60d62d2d8fb585dd9f19868f7cee4e" name="a8f60d62d2d8fb585dd9f19868f7cee4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f60d62d2d8fb585dd9f19868f7cee4e">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a6de4ed4ef8936776e90e16175eddb2b7" name="a6de4ed4ef8936776e90e16175eddb2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de4ed4ef8936776e90e16175eddb2b7">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -344,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a8f60d62d2d8fb585dd9f19868f7cee4e">itk::simple::SliceImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a6de4ed4ef8936776e90e16175eddb2b7">itk::simple::SliceImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -355,7 +355,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -388,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -481,7 +481,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkSliceImageFilter_8h_source.html#l00116">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSliceImageFilter_8h_source.html#l00127">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -511,7 +511,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -539,9 +539,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the first index extracted from the input image </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00121">m_Start</a>.</p>
+<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00131">m_Start</a>.</p>
 
 </div>
 </div>
@@ -569,9 +569,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the stride of indexes extracted An exception will be generated if 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00125">m_Step</a>.</p>
+<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00135">m_Step</a>.</p>
 
 </div>
 </div>
@@ -599,9 +599,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the excluded end of the range </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00123">m_Stop</a>.</p>
+<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00133">m_Stop</a>.</p>
 
 </div>
 </div>
@@ -629,9 +629,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the first index extracted from the input image </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00121">m_Start</a>.</p>
+<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00131">m_Start</a>.</p>
 
 </div>
 </div>
@@ -659,9 +659,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the Step vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00125">m_Step</a>.</p>
+<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00135">m_Step</a>.</p>
 
 </div>
 </div>
@@ -689,9 +689,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the stride of indexes extracted An exception will be generated if 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00125">m_Step</a>.</p>
+<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00135">m_Step</a>.</p>
 
 </div>
 </div>
@@ -719,9 +719,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the excluded end of the range </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00123">m_Stop</a>.</p>
+<p class="reference">References <a class="el" href="sitkSliceImageFilter_8h_source.html#l00133">m_Stop</a>.</p>
 
 </div>
 </div>
@@ -764,7 +764,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a8f60d62d2d8fb585dd9f19868f7cee4e">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a6de4ed4ef8936776e90e16175eddb2b7">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -774,7 +774,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#afb8d35e0fe4bb90170ee8c23e60cdd77">ExecuteInternal()</a>.</p>
 
@@ -791,7 +791,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a8f60d62d2d8fb585dd9f19868f7cee4e">MemberFunctionType</a>&gt; &gt; itk::simple::SliceImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a6de4ed4ef8936776e90e16175eddb2b7">MemberFunctionType</a>&gt; &gt; itk::simple::SliceImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -801,7 +801,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -815,7 +815,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int32_t&gt; itk::simple::SliceImageFilter::m_Start {std::vector&lt;int32_t&gt;(3, 0)}</td>
+          <td class="memname">std::vector&lt;int32_t&gt; itk::simple::SliceImageFilter::m_Start { std::vector&lt;int32_t&gt;(3, 0) }</td>
         </tr>
       </table>
   </td>
@@ -825,9 +825,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSliceImageFilter_8h_source.html#l00072">GetStart()</a>, and <a class="el" href="sitkSliceImageFilter_8h_source.html#l00067">SetStart()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSliceImageFilter_8h_source.html#l00081">GetStart()</a>, and <a class="el" href="sitkSliceImageFilter_8h_source.html#l00075">SetStart()</a>.</p>
 
 </div>
 </div>
@@ -841,7 +841,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; itk::simple::SliceImageFilter::m_Step {std::vector&lt;int&gt;(3, 1)}</td>
+          <td class="memname">std::vector&lt;int&gt; itk::simple::SliceImageFilter::m_Step { std::vector&lt;int&gt;(3, 1) }</td>
         </tr>
       </table>
   </td>
@@ -851,9 +851,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSliceImageFilter_8h_source.html#l00095">GetStep()</a>, <a class="el" href="sitkSliceImageFilter_8h_source.html#l00090">SetStep()</a>, and <a class="el" href="sitkSliceImageFilter_8h_source.html#l00087">SetStep()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSliceImageFilter_8h_source.html#l00109">GetStep()</a>, <a class="el" href="sitkSliceImageFilter_8h_source.html#l00104">SetStep()</a>, and <a class="el" href="sitkSliceImageFilter_8h_source.html#l00099">SetStep()</a>.</p>
 
 </div>
 </div>
@@ -867,7 +867,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int32_t&gt; itk::simple::SliceImageFilter::m_Stop {std::vector&lt;int32_t&gt;(3, std::numeric_limits&lt;int32_t&gt;::max())}</td>
+          <td class="memname">std::vector&lt;int32_t&gt; itk::simple::SliceImageFilter::m_Stop { std::vector&lt;int32_t&gt;(3, std::numeric_limits&lt;int32_t&gt;::max()) }</td>
         </tr>
       </table>
   </td>
@@ -877,9 +877,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSliceImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkSliceImageFilter_8h_source.html">sitkSliceImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSliceImageFilter_8h_source.html#l00082">GetStop()</a>, and <a class="el" href="sitkSliceImageFilter_8h_source.html#l00077">SetStop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSliceImageFilter_8h_source.html#l00093">GetStop()</a>, and <a class="el" href="sitkSliceImageFilter_8h_source.html#l00087">SetStop()</a>.</p>
 
 </div>
 </div>

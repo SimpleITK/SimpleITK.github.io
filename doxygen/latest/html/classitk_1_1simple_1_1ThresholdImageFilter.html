@@ -120,11 +120,12 @@ $(function(){ initResizable(false); });
 <p><a class="el" href="#a28338617c085ba4a1bb893016189f952">ThresholdBelow()</a> : The values less than the threshold value are set to OutsideValue</p>
 <p><a class="el" href="#abc99066031793621cd68db8ba3080495">ThresholdOutside()</a> : The values outside the threshold range (less than lower or greater than upper) are set to OutsideValue</p>
 <p>Note that these definitions indicate that pixels equal to the threshold value are not set to OutsideValue in any of these methods</p>
-<p>The pixels must support the operators &gt;= and &lt;=. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4441b751c680531cd91dc7eb329573e1" title="Set image values to a user-specified value if they are below, above, or outside threshold values.">itk::simple::Threshold</a> for the procedural interface </dd>
+<p>The pixels must support the operators &gt;= and &lt;=.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4441b751c680531cd91dc7eb329573e1" title="Set image values to a user-specified value if they are below, above, or outside threshold values.">itk::simple::Threshold</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdImageFilter.html">itk::ThresholdImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -217,8 +218,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aa4162a14f4c8c21dba403b28ef92d0a2" id="r_aa4162a14f4c8c21dba403b28ef92d0a2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4162a14f4c8c21dba403b28ef92d0a2">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:aa4162a14f4c8c21dba403b28ef92d0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebdef7fbd07484ae60dff5f3c701b5e" id="r_abebdef7fbd07484ae60dff5f3c701b5e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abebdef7fbd07484ae60dff5f3c701b5e">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:abebdef7fbd07484ae60dff5f3c701b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -230,13 +231,13 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a462a57c9392b1d8b982e23bad1a9f0eb" id="r_a462a57c9392b1d8b982e23bad1a9f0eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a462a57c9392b1d8b982e23bad1a9f0eb">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a462a57c9392b1d8b982e23bad1a9f0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07727e5856164cdd85605d2dc86e6961" id="r_a07727e5856164cdd85605d2dc86e6961"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07727e5856164cdd85605d2dc86e6961">m_Lower</a> {0.0}</td></tr>
+<tr class="memitem:a07727e5856164cdd85605d2dc86e6961" id="r_a07727e5856164cdd85605d2dc86e6961"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07727e5856164cdd85605d2dc86e6961">m_Lower</a> { 0.0 }</td></tr>
 <tr class="separator:a07727e5856164cdd85605d2dc86e6961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8487c5b0c13c7ba5eadb94669819bb8f" id="r_a8487c5b0c13c7ba5eadb94669819bb8f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aa4162a14f4c8c21dba403b28ef92d0a2">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8487c5b0c13c7ba5eadb94669819bb8f">m_MemberFactory</a></td></tr>
+<tr class="memitem:a8487c5b0c13c7ba5eadb94669819bb8f" id="r_a8487c5b0c13c7ba5eadb94669819bb8f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#abebdef7fbd07484ae60dff5f3c701b5e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8487c5b0c13c7ba5eadb94669819bb8f">m_MemberFactory</a></td></tr>
 <tr class="separator:a8487c5b0c13c7ba5eadb94669819bb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab80dad054f305c027f5b7b2741180f54" id="r_ab80dad054f305c027f5b7b2741180f54"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab80dad054f305c027f5b7b2741180f54">m_OutsideValue</a> {0.0}</td></tr>
+<tr class="memitem:ab80dad054f305c027f5b7b2741180f54" id="r_ab80dad054f305c027f5b7b2741180f54"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab80dad054f305c027f5b7b2741180f54">m_OutsideValue</a> { 0.0 }</td></tr>
 <tr class="separator:ab80dad054f305c027f5b7b2741180f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e6582065711bd78019a40d7af36652" id="r_a79e6582065711bd78019a40d7af36652"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79e6582065711bd78019a40d7af36652">m_Upper</a> {1.0}</td></tr>
+<tr class="memitem:a79e6582065711bd78019a40d7af36652" id="r_a79e6582065711bd78019a40d7af36652"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79e6582065711bd78019a40d7af36652">m_Upper</a> { 1.0 }</td></tr>
 <tr class="separator:a79e6582065711bd78019a40d7af36652"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -343,8 +344,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa4162a14f4c8c21dba403b28ef92d0a2" name="aa4162a14f4c8c21dba403b28ef92d0a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4162a14f4c8c21dba403b28ef92d0a2">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="abebdef7fbd07484ae60dff5f3c701b5e" name="abebdef7fbd07484ae60dff5f3c701b5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abebdef7fbd07484ae60dff5f3c701b5e">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -353,7 +354,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#aa4162a14f4c8c21dba403b28ef92d0a2">itk::simple::ThresholdImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#abebdef7fbd07484ae60dff5f3c701b5e">itk::simple::ThresholdImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -364,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -397,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -507,7 +508,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00126">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00143">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -535,9 +536,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get methods to set the lower threshold. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00131">m_Lower</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00147">m_Lower</a>.</p>
 
 </div>
 </div>
@@ -567,7 +568,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -595,9 +596,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the "outside" pixel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00135">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00151">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -625,9 +626,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get methods to set the upper threshold. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00133">m_Upper</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00149">m_Upper</a>.</p>
 
 </div>
 </div>
@@ -655,9 +656,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get methods to set the lower threshold. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00131">m_Lower</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00147">m_Lower</a>.</p>
 
 </div>
 </div>
@@ -685,9 +686,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The pixel type must support comparison operators. Set the "outside" pixel value. The default value <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a2a78b68c2a6ed8fe843b298265e5dd7a">NumericTraits&lt;PixelType&gt;::ZeroValue()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00135">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00151">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -715,9 +716,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get methods to set the upper threshold. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00133">m_Upper</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00149">m_Upper</a>.</p>
 
 </div>
 </div>
@@ -815,7 +816,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#aa4162a14f4c8c21dba403b28ef92d0a2">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#abebdef7fbd07484ae60dff5f3c701b5e">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -825,7 +826,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a666fdf71a442283a26d70c7499c84aad">ExecuteInternal()</a>.</p>
 
@@ -852,7 +853,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -866,7 +867,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdImageFilter::m_Lower {0.0}</td>
+          <td class="memname">double itk::simple::ThresholdImageFilter::m_Lower { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -876,9 +877,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00076">GetLower()</a>, and <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00071">SetLower()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00085">GetLower()</a>, and <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00079">SetLower()</a>.</p>
 
 </div>
 </div>
@@ -892,7 +893,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aa4162a14f4c8c21dba403b28ef92d0a2">MemberFunctionType</a>&gt; &gt; itk::simple::ThresholdImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#abebdef7fbd07484ae60dff5f3c701b5e">MemberFunctionType</a>&gt; &gt; itk::simple::ThresholdImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -902,7 +903,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -916,7 +917,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdImageFilter::m_OutsideValue {0.0}</td>
+          <td class="memname">double itk::simple::ThresholdImageFilter::m_OutsideValue { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -926,9 +927,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00096">GetOutsideValue()</a>, and <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00091">SetOutsideValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00109">GetOutsideValue()</a>, and <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00103">SetOutsideValue()</a>.</p>
 
 </div>
 </div>
@@ -942,7 +943,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ThresholdImageFilter::m_Upper {1.0}</td>
+          <td class="memname">double itk::simple::ThresholdImageFilter::m_Upper { 1.0 }</td>
         </tr>
       </table>
   </td>
@@ -952,9 +953,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkThresholdImageFilter_8h_source.html">sitkThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00086">GetUpper()</a>, and <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00081">SetUpper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00097">GetUpper()</a>, and <a class="el" href="sitkThresholdImageFilter_8h_source.html#l00091">SetUpper()</a>.</p>
 
 </div>
 </div>

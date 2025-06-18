@@ -115,11 +115,12 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements pixel-wise conversion of magnitude and phase data into complex voxels. </p>
 <p>This filter is parameterized over the types of the two input images and the type of the output image.</p>
-<p>The filter expect all images to have the same dimension (e.g. all 2D, or all 3D, or all ND) </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ae37676082f66753a69555df8595efbbe" title="Implements pixel-wise conversion of magnitude and phase data into complex voxels.">itk::simple::MagnitudeAndPhaseToComplex</a> for the procedural interface </dd>
+<p>The filter expect all images to have the same dimension (e.g. all 2D, or all 3D, or all ND)</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ae37676082f66753a69555df8595efbbe" title="Implements pixel-wise conversion of magnitude and phase data into complex voxels.">itk::simple::MagnitudeAndPhaseToComplex</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MagnitudeAndPhaseToComplexImageFilter.html">itk::MagnitudeAndPhaseToComplexImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00043">43</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -200,12 +201,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a908ffb464227a0f3a0bc0adbc1d04736" id="r_a908ffb464227a0f3a0bc0adbc1d04736"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a908ffb464227a0f3a0bc0adbc1d04736">MemberFunction1Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td></tr>
-<tr class="separator:a908ffb464227a0f3a0bc0adbc1d04736"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04181bdb0c1355d9f521ad6f67de0868" id="r_a04181bdb0c1355d9f521ad6f67de0868"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04181bdb0c1355d9f521ad6f67de0868">MemberFunction2Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, double constant )</td></tr>
-<tr class="separator:a04181bdb0c1355d9f521ad6f67de0868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17885368ca5463d0af2ed86a63e22f4d" id="r_a17885368ca5463d0af2ed86a63e22f4d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17885368ca5463d0af2ed86a63e22f4d">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td></tr>
-<tr class="separator:a17885368ca5463d0af2ed86a63e22f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f719fa9a2792184a016040b8ee460b" id="r_ac0f719fa9a2792184a016040b8ee460b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0f719fa9a2792184a016040b8ee460b">MemberFunction1Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2)</td></tr>
+<tr class="separator:ac0f719fa9a2792184a016040b8ee460b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0715479a068669df0bcca5eb72b72da4" id="r_a0715479a068669df0bcca5eb72b72da4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0715479a068669df0bcca5eb72b72da4">MemberFunction2Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, double constant)</td></tr>
+<tr class="separator:a0715479a068669df0bcca5eb72b72da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec76a548863e35d320fd3817f837a826" id="r_aec76a548863e35d320fd3817f837a826"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec76a548863e35d320fd3817f837a826">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
+<tr class="separator:aec76a548863e35d320fd3817f837a826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -223,11 +224,11 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a73c75384d5598263f2afc8f9950902d0" id="r_a73c75384d5598263f2afc8f9950902d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73c75384d5598263f2afc8f9950902d0">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a73c75384d5598263f2afc8f9950902d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad468842610f0c8e7b93aa42c1ab0f63c" id="r_ad468842610f0c8e7b93aa42c1ab0f63c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a17885368ca5463d0af2ed86a63e22f4d">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad468842610f0c8e7b93aa42c1ab0f63c">m_MemberFactory</a></td></tr>
+<tr class="memitem:ad468842610f0c8e7b93aa42c1ab0f63c" id="r_ad468842610f0c8e7b93aa42c1ab0f63c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aec76a548863e35d320fd3817f837a826">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad468842610f0c8e7b93aa42c1ab0f63c">m_MemberFactory</a></td></tr>
 <tr class="separator:ad468842610f0c8e7b93aa42c1ab0f63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a579b4c42ce6077722afd97f5c0fe235e" id="r_a579b4c42ce6077722afd97f5c0fe235e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a908ffb464227a0f3a0bc0adbc1d04736">MemberFunction1Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a579b4c42ce6077722afd97f5c0fe235e">m_MemberFactory1</a></td></tr>
+<tr class="memitem:a579b4c42ce6077722afd97f5c0fe235e" id="r_a579b4c42ce6077722afd97f5c0fe235e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac0f719fa9a2792184a016040b8ee460b">MemberFunction1Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a579b4c42ce6077722afd97f5c0fe235e">m_MemberFactory1</a></td></tr>
 <tr class="separator:a579b4c42ce6077722afd97f5c0fe235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b9bfa536fe1f2f5e9b52b0a668800cc" id="r_a3b9bfa536fe1f2f5e9b52b0a668800cc"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a04181bdb0c1355d9f521ad6f67de0868">MemberFunction2Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b9bfa536fe1f2f5e9b52b0a668800cc">m_MemberFactory2</a></td></tr>
+<tr class="memitem:a3b9bfa536fe1f2f5e9b52b0a668800cc" id="r_a3b9bfa536fe1f2f5e9b52b0a668800cc"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a0715479a068669df0bcca5eb72b72da4">MemberFunction2Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b9bfa536fe1f2f5e9b52b0a668800cc">m_MemberFactory2</a></td></tr>
 <tr class="separator:a3b9bfa536fe1f2f5e9b52b0a668800cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -338,8 +339,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a908ffb464227a0f3a0bc0adbc1d04736" name="a908ffb464227a0f3a0bc0adbc1d04736"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a908ffb464227a0f3a0bc0adbc1d04736">&#9670;&#160;</a></span>MemberFunction1Type</h2>
+<a id="ac0f719fa9a2792184a016040b8ee460b" name="ac0f719fa9a2792184a016040b8ee460b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f719fa9a2792184a016040b8ee460b">&#9670;&#160;</a></span>MemberFunction1Type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +349,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a908ffb464227a0f3a0bc0adbc1d04736">itk::simple::MagnitudeAndPhaseToComplexImageFilter::MemberFunction1Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td>
+          <td class="memname">using <a class="el" href="#ac0f719fa9a2792184a016040b8ee460b">itk::simple::MagnitudeAndPhaseToComplexImageFilter::MemberFunction1Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2)</td>
         </tr>
       </table>
   </td>
@@ -358,12 +359,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
-<a id="a04181bdb0c1355d9f521ad6f67de0868" name="a04181bdb0c1355d9f521ad6f67de0868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04181bdb0c1355d9f521ad6f67de0868">&#9670;&#160;</a></span>MemberFunction2Type</h2>
+<a id="a0715479a068669df0bcca5eb72b72da4" name="a0715479a068669df0bcca5eb72b72da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0715479a068669df0bcca5eb72b72da4">&#9670;&#160;</a></span>MemberFunction2Type</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a04181bdb0c1355d9f521ad6f67de0868">itk::simple::MagnitudeAndPhaseToComplexImageFilter::MemberFunction2Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, double constant )</td>
+          <td class="memname">using <a class="el" href="#a0715479a068669df0bcca5eb72b72da4">itk::simple::MagnitudeAndPhaseToComplexImageFilter::MemberFunction2Type</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, double constant)</td>
         </tr>
       </table>
   </td>
@@ -382,12 +383,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
-<a id="a17885368ca5463d0af2ed86a63e22f4d" name="a17885368ca5463d0af2ed86a63e22f4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17885368ca5463d0af2ed86a63e22f4d">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="aec76a548863e35d320fd3817f837a826" name="aec76a548863e35d320fd3817f837a826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec76a548863e35d320fd3817f837a826">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +397,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a17885368ca5463d0af2ed86a63e22f4d">itk::simple::MagnitudeAndPhaseToComplexImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td>
+          <td class="memname">using <a class="el" href="#aec76a548863e35d320fd3817f837a826">itk::simple::MagnitudeAndPhaseToComplexImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td>
         </tr>
       </table>
   </td>
@@ -407,7 +408,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +425,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +441,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -626,7 +627,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00093">detail::MemberFunctionAddressor&lt; MemberFunction1Type &gt;</a>, <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00098">detail::MemberFunctionAddressor&lt; MemberFunction2Type &gt;</a>, and <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00088">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00099">detail::MemberFunctionAddressor&lt; MemberFunction1Type &gt;</a>, and <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00104">detail::MemberFunctionAddressor&lt; MemberFunction2Type &gt;</a>.</p>
 
 </div>
 </div>
@@ -718,7 +719,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -761,7 +762,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a908ffb464227a0f3a0bc0adbc1d04736">MemberFunction1Type</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#ac0f719fa9a2792184a016040b8ee460b">MemberFunction1Type</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -771,7 +772,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a398739b14aec2c0425e8e671da5be8a9">ExecuteInternal()</a>.</p>
 
@@ -787,7 +788,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a04181bdb0c1355d9f521ad6f67de0868">MemberFunction2Type</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a0715479a068669df0bcca5eb72b72da4">MemberFunction2Type</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -797,7 +798,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a398739b14aec2c0425e8e671da5be8a9">ExecuteInternal()</a>.</p>
 
@@ -813,7 +814,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a17885368ca5463d0af2ed86a63e22f4d">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#aec76a548863e35d320fd3817f837a826">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -823,9 +824,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="#a398739b14aec2c0425e8e671da5be8a9">ExecuteInternal()</a>.</p>
+<p class="reference">References <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00105">m_MemberFactory2</a>.</p>
 
 </div>
 </div>
@@ -850,7 +851,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -864,7 +865,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a17885368ca5463d0af2ed86a63e22f4d">MemberFunctionType</a>&gt; &gt; itk::simple::MagnitudeAndPhaseToComplexImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aec76a548863e35d320fd3817f837a826">MemberFunctionType</a>&gt; &gt; itk::simple::MagnitudeAndPhaseToComplexImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -874,7 +875,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -888,7 +889,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a908ffb464227a0f3a0bc0adbc1d04736">MemberFunction1Type</a>&gt; &gt; itk::simple::MagnitudeAndPhaseToComplexImageFilter::m_MemberFactory1</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ac0f719fa9a2792184a016040b8ee460b">MemberFunction1Type</a>&gt; &gt; itk::simple::MagnitudeAndPhaseToComplexImageFilter::m_MemberFactory1</td>
         </tr>
       </table>
   </td>
@@ -898,7 +899,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -912,7 +913,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a04181bdb0c1355d9f521ad6f67de0868">MemberFunction2Type</a>&gt; &gt; itk::simple::MagnitudeAndPhaseToComplexImageFilter::m_MemberFactory2</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a0715479a068669df0bcca5eb72b72da4">MemberFunction2Type</a>&gt; &gt; itk::simple::MagnitudeAndPhaseToComplexImageFilter::m_MemberFactory2</td>
         </tr>
       </table>
   </td>
@@ -922,7 +923,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html">sitkMagnitudeAndPhaseToComplexImageFilter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sitkMagnitudeAndPhaseToComplexImageFilter_8h_source.html#l00107">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>

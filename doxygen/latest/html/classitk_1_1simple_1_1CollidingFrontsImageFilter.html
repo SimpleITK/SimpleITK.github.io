@@ -119,12 +119,12 @@ $(function(){ initResizable(false); });
 <p>The filter works on the following basic idea. In the regions where the dot product between the two gradient fields is negative, the two fronts propagate in opposite directions. In the regions where the dot product is positive, the two fronts propagate in the same direction. This can be used to extract the region of space between two sets of points.</p>
 <p>If StopOnTargets is On, then each front will stop as soon as all seeds of the other front have been reached. This can markedly speed up the execution of the filter, since wave propagation does not take place on the complete image.</p>
 <p>Optionally, a connectivity criterion can be applied to the resulting dot product image. In this case, the only negative region in the output image is the one connected to the seeds.</p>
-<dl class="section author"><dt>Author</dt><dd>Luca Antiga Ph.D. Biomedical Technologies Laboratory, Bioengineering Department, Mario Negri Institute, Italy. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ba7b947a2e9654bb7ebfbab7be70c5b" title="Selects a region of space where two independent fronts run towards each other.">itk::simple::CollidingFronts</a> for the procedural interface </dd>
+<dl class="section author"><dt>Author</dt><dd>Luca Antiga Ph.D. Biomedical Technologies Laboratory, Bioengineering Department, Mario Negri Institute, Italy.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ba7b947a2e9654bb7ebfbab7be70c5b" title="Selects a region of space where two independent fronts run towards each other.">itk::simple::CollidingFronts</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CollidingFrontsImageFilter.html">itk::CollidingFrontsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -237,8 +237,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a40e308cb207377ed6ab1350454b54177" id="r_a40e308cb207377ed6ab1350454b54177"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40e308cb207377ed6ab1350454b54177">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a40e308cb207377ed6ab1350454b54177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f4eda39bd37506ab85e092648b0e3f6" id="r_a8f4eda39bd37506ab85e092648b0e3f6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f4eda39bd37506ab85e092648b0e3f6">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a8f4eda39bd37506ab85e092648b0e3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -248,17 +248,17 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abb9cf72ca9aaea3dbaef13f451dbca3e" id="r_abb9cf72ca9aaea3dbaef13f451dbca3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb9cf72ca9aaea3dbaef13f451dbca3e">m_ApplyConnectivity</a> {true}</td></tr>
+<tr class="memitem:abb9cf72ca9aaea3dbaef13f451dbca3e" id="r_abb9cf72ca9aaea3dbaef13f451dbca3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb9cf72ca9aaea3dbaef13f451dbca3e">m_ApplyConnectivity</a> { true }</td></tr>
 <tr class="separator:abb9cf72ca9aaea3dbaef13f451dbca3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06664ceb8ad192320462bfe276c6c9c3" id="r_a06664ceb8ad192320462bfe276c6c9c3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a40e308cb207377ed6ab1350454b54177">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06664ceb8ad192320462bfe276c6c9c3">m_MemberFactory</a></td></tr>
+<tr class="memitem:a06664ceb8ad192320462bfe276c6c9c3" id="r_a06664ceb8ad192320462bfe276c6c9c3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a8f4eda39bd37506ab85e092648b0e3f6">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06664ceb8ad192320462bfe276c6c9c3">m_MemberFactory</a></td></tr>
 <tr class="separator:a06664ceb8ad192320462bfe276c6c9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dd2079af857e6e6d372f324e4e1927b" id="r_a7dd2079af857e6e6d372f324e4e1927b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dd2079af857e6e6d372f324e4e1927b">m_NegativeEpsilon</a> {-1e-6}</td></tr>
+<tr class="memitem:a7dd2079af857e6e6d372f324e4e1927b" id="r_a7dd2079af857e6e6d372f324e4e1927b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dd2079af857e6e6d372f324e4e1927b">m_NegativeEpsilon</a> { -1e-6 }</td></tr>
 <tr class="separator:a7dd2079af857e6e6d372f324e4e1927b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a121543db12f5f88bc32a4928966edb9c" id="r_a121543db12f5f88bc32a4928966edb9c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a121543db12f5f88bc32a4928966edb9c">m_SeedPoints1</a> {std::vector&lt; std::vector&lt;unsigned int &gt; &gt;()}</td></tr>
+<tr class="memitem:a121543db12f5f88bc32a4928966edb9c" id="r_a121543db12f5f88bc32a4928966edb9c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a121543db12f5f88bc32a4928966edb9c">m_SeedPoints1</a> { std::vector&lt; std::vector&lt;unsigned int &gt; &gt;() }</td></tr>
 <tr class="separator:a121543db12f5f88bc32a4928966edb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4af548c094ac0cb82998ab93b3d72e6" id="r_ab4af548c094ac0cb82998ab93b3d72e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4af548c094ac0cb82998ab93b3d72e6">m_SeedPoints2</a> {std::vector&lt; std::vector&lt;unsigned int &gt; &gt;()}</td></tr>
+<tr class="memitem:ab4af548c094ac0cb82998ab93b3d72e6" id="r_ab4af548c094ac0cb82998ab93b3d72e6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4af548c094ac0cb82998ab93b3d72e6">m_SeedPoints2</a> { std::vector&lt; std::vector&lt;unsigned int &gt; &gt;() }</td></tr>
 <tr class="separator:ab4af548c094ac0cb82998ab93b3d72e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1e2a1ada8a5bd80354b0d01a0ef4f9f" id="r_ab1e2a1ada8a5bd80354b0d01a0ef4f9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1e2a1ada8a5bd80354b0d01a0ef4f9f">m_StopOnTargets</a> {false}</td></tr>
+<tr class="memitem:ab1e2a1ada8a5bd80354b0d01a0ef4f9f" id="r_ab1e2a1ada8a5bd80354b0d01a0ef4f9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1e2a1ada8a5bd80354b0d01a0ef4f9f">m_StopOnTargets</a> { false }</td></tr>
 <tr class="separator:ab1e2a1ada8a5bd80354b0d01a0ef4f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -365,8 +365,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a40e308cb207377ed6ab1350454b54177" name="a40e308cb207377ed6ab1350454b54177"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40e308cb207377ed6ab1350454b54177">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a8f4eda39bd37506ab85e092648b0e3f6" name="a8f4eda39bd37506ab85e092648b0e3f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f4eda39bd37506ab85e092648b0e3f6">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a40e308cb207377ed6ab1350454b54177">itk::simple::CollidingFrontsImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a8f4eda39bd37506ab85e092648b0e3f6">itk::simple::CollidingFrontsImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -386,7 +386,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -419,7 +419,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -494,9 +494,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add SeedPoints1 point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00152">m_SeedPoints1</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00171">m_SeedPoints1</a>.</p>
 
 </div>
 </div>
@@ -525,9 +525,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add SeedPoints2 point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00154">m_SeedPoints2</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00173">m_SeedPoints2</a>.</p>
 
 </div>
 </div>
@@ -554,9 +554,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00098">SetApplyConnectivity()</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00112">SetApplyConnectivity()</a>.</p>
 
 </div>
 </div>
@@ -584,9 +584,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Set the value of ApplyConnectivity to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00098">SetApplyConnectivity()</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00112">SetApplyConnectivity()</a>.</p>
 
 </div>
 </div>
@@ -615,9 +615,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all SeedPoints1 points. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00152">m_SeedPoints1</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00171">m_SeedPoints1</a>.</p>
 
 </div>
 </div>
@@ -646,9 +646,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all SeedPoints2 points. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00154">m_SeedPoints2</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00173">m_SeedPoints2</a>.</p>
 
 </div>
 </div>
@@ -695,7 +695,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00147">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00167">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -722,9 +722,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00156">m_ApplyConnectivity</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00175">m_ApplyConnectivity</a>.</p>
 
 </div>
 </div>
@@ -754,7 +754,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -781,9 +781,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00158">m_NegativeEpsilon</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00177">m_NegativeEpsilon</a>.</p>
 
 </div>
 </div>
@@ -811,9 +811,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the container of Seed Points representing the first initial front. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00152">m_SeedPoints1</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00171">m_SeedPoints1</a>.</p>
 
 </div>
 </div>
@@ -841,9 +841,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the container of Seed Points representing the second initial front. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00154">m_SeedPoints2</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00173">m_SeedPoints2</a>.</p>
 
 </div>
 </div>
@@ -870,9 +870,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00160">m_StopOnTargets</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00179">m_StopOnTargets</a>.</p>
 
 </div>
 </div>
@@ -899,11 +899,11 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00156">m_ApplyConnectivity</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00175">m_ApplyConnectivity</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00102">ApplyConnectivityOff()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00101">ApplyConnectivityOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00119">ApplyConnectivityOff()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00117">ApplyConnectivityOn()</a>.</p>
 
 </div>
 </div>
@@ -930,9 +930,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00158">m_NegativeEpsilon</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00177">m_NegativeEpsilon</a>.</p>
 
 </div>
 </div>
@@ -960,9 +960,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the container of Seed Points representing the first initial front. Seed points are represented as a <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a365f3ead2b935a9a6f6a032eb859db36">VectorContainer</a> of LevelSetNodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00152">m_SeedPoints1</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00171">m_SeedPoints1</a>.</p>
 
 </div>
 </div>
@@ -990,9 +990,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the container of Seed Points representing the second initial front. Seed points are represented as a <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a365f3ead2b935a9a6f6a032eb859db36">VectorContainer</a> of LevelSetNodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00154">m_SeedPoints2</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00173">m_SeedPoints2</a>.</p>
 
 </div>
 </div>
@@ -1019,11 +1019,11 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00160">m_StopOnTargets</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00179">m_StopOnTargets</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00122">StopOnTargetsOff()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00121">StopOnTargetsOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00145">StopOnTargetsOff()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00143">StopOnTargetsOn()</a>.</p>
 
 </div>
 </div>
@@ -1050,9 +1050,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00118">SetStopOnTargets()</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00138">SetStopOnTargets()</a>.</p>
 
 </div>
 </div>
@@ -1080,9 +1080,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of StopOnTargets to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00118">SetStopOnTargets()</a>.</p>
+<p class="reference">References <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00138">SetStopOnTargets()</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1125,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a40e308cb207377ed6ab1350454b54177">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a8f4eda39bd37506ab85e092648b0e3f6">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -1135,7 +1135,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#abed2b25edae9b7adafc72f426d89a9f9">ExecuteInternal()</a>.</p>
 
@@ -1152,7 +1152,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::CollidingFrontsImageFilter::m_ApplyConnectivity {true}</td>
+          <td class="memname">bool itk::simple::CollidingFrontsImageFilter::m_ApplyConnectivity { true }</td>
         </tr>
       </table>
   </td>
@@ -1162,9 +1162,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00106">GetApplyConnectivity()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00098">SetApplyConnectivity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00123">GetApplyConnectivity()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00112">SetApplyConnectivity()</a>.</p>
 
 </div>
 </div>
@@ -1178,7 +1178,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a40e308cb207377ed6ab1350454b54177">MemberFunctionType</a>&gt; &gt; itk::simple::CollidingFrontsImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a8f4eda39bd37506ab85e092648b0e3f6">MemberFunctionType</a>&gt; &gt; itk::simple::CollidingFrontsImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -1188,7 +1188,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1202,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::CollidingFrontsImageFilter::m_NegativeEpsilon {-1e-6}</td>
+          <td class="memname">double itk::simple::CollidingFrontsImageFilter::m_NegativeEpsilon { -1e-6 }</td>
         </tr>
       </table>
   </td>
@@ -1212,9 +1212,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00114">GetNegativeEpsilon()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00110">SetNegativeEpsilon()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00133">GetNegativeEpsilon()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00128">SetNegativeEpsilon()</a>.</p>
 
 </div>
 </div>
@@ -1228,7 +1228,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;unsigned int&gt; &gt; itk::simple::CollidingFrontsImageFilter::m_SeedPoints1 {std::vector&lt; std::vector&lt;unsigned int &gt; &gt;()}</td>
+          <td class="memname">std::vector&lt; std::vector&lt;unsigned int&gt; &gt; itk::simple::CollidingFrontsImageFilter::m_SeedPoints1 { std::vector&lt; std::vector&lt;unsigned int &gt; &gt;() }</td>
         </tr>
       </table>
   </td>
@@ -1238,9 +1238,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00076">AddSeedPoint1()</a>, <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00078">ClearSeedPoints1()</a>, <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00074">GetSeedPoints1()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00069">SetSeedPoints1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00086">AddSeedPoint1()</a>, <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00089">ClearSeedPoints1()</a>, <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00083">GetSeedPoints1()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00077">SetSeedPoints1()</a>.</p>
 
 </div>
 </div>
@@ -1254,7 +1254,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;unsigned int&gt; &gt; itk::simple::CollidingFrontsImageFilter::m_SeedPoints2 {std::vector&lt; std::vector&lt;unsigned int &gt; &gt;()}</td>
+          <td class="memname">std::vector&lt; std::vector&lt;unsigned int&gt; &gt; itk::simple::CollidingFrontsImageFilter::m_SeedPoints2 { std::vector&lt; std::vector&lt;unsigned int &gt; &gt;() }</td>
         </tr>
       </table>
   </td>
@@ -1264,9 +1264,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00091">AddSeedPoint2()</a>, <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00093">ClearSeedPoints2()</a>, <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00089">GetSeedPoints2()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00084">SetSeedPoints2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00104">AddSeedPoint2()</a>, <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00107">ClearSeedPoints2()</a>, <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00101">GetSeedPoints2()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00095">SetSeedPoints2()</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1280,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::CollidingFrontsImageFilter::m_StopOnTargets {false}</td>
+          <td class="memname">bool itk::simple::CollidingFrontsImageFilter::m_StopOnTargets { false }</td>
         </tr>
       </table>
   </td>
@@ -1290,9 +1290,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html">sitkCollidingFrontsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00126">GetStopOnTargets()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00118">SetStopOnTargets()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00149">GetStopOnTargets()</a>, and <a class="el" href="sitkCollidingFrontsImageFilter_8h_source.html#l00138">SetStopOnTargets()</a>.</p>
 
 </div>
 </div>

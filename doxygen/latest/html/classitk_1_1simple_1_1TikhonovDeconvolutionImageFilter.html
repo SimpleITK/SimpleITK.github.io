@@ -121,12 +121,12 @@ $(function(){ initResizable(false); });
 <p>The filter applies a kernel described in the Fourier domain as \(H^*(\omega) / (|H(\omega)|^2 + \mu)\) where \(H(\omega)\) is the Fourier transform of \(h\) . The term \(\mu\) is called RegularizationConstant in this filter. If \(\mu\) is set to zero, this filter is equivalent to the <a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a> .</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann, Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France</dd>
 <dd>
-Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2325a404da90ddc416ddab6d37c1be29" title="An inverse deconvolution filter regularized in the Tikhonov sense.">itk::simple::TikhonovDeconvolution</a> for the procedural interface </dd>
+Cory Quammen, The University of North Carolina at Chapel Hill</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2325a404da90ddc416ddab6d37c1be29" title="An inverse deconvolution filter regularized in the Tikhonov sense.">itk::simple::TikhonovDeconvolution</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1TikhonovDeconvolutionImageFilter.html">itk::TikhonovDeconvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -235,8 +235,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a534641140509cf90d99d403e656bbca3" id="r_a534641140509cf90d99d403e656bbca3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a534641140509cf90d99d403e656bbca3">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td></tr>
-<tr class="separator:a534641140509cf90d99d403e656bbca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af947073a0da69f80adc507f8be6c642e" id="r_af947073a0da69f80adc507f8be6c642e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af947073a0da69f80adc507f8be6c642e">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
+<tr class="separator:af947073a0da69f80adc507f8be6c642e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -246,15 +246,15 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2ef91265c95af0767ca63071d9ca1899" id="r_a2ef91265c95af0767ca63071d9ca1899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0e5646e58b07e6a02458b815122a6e54">BoundaryConditionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ef91265c95af0767ca63071d9ca1899">m_BoundaryCondition</a> {<a class="el" href="#a0e5646e58b07e6a02458b815122a6e54a102cd4dd587ef9f7753e7da641c00388">itk::simple::TikhonovDeconvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a>}</td></tr>
+<tr class="memitem:a2ef91265c95af0767ca63071d9ca1899" id="r_a2ef91265c95af0767ca63071d9ca1899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a0e5646e58b07e6a02458b815122a6e54">BoundaryConditionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ef91265c95af0767ca63071d9ca1899">m_BoundaryCondition</a> { <a class="el" href="#a0e5646e58b07e6a02458b815122a6e54a102cd4dd587ef9f7753e7da641c00388">itk::simple::TikhonovDeconvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a> }</td></tr>
 <tr class="separator:a2ef91265c95af0767ca63071d9ca1899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a863651cd3007a66aef103046d7cb492e" id="r_a863651cd3007a66aef103046d7cb492e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a534641140509cf90d99d403e656bbca3">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a863651cd3007a66aef103046d7cb492e">m_MemberFactory</a></td></tr>
+<tr class="memitem:a863651cd3007a66aef103046d7cb492e" id="r_a863651cd3007a66aef103046d7cb492e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#af947073a0da69f80adc507f8be6c642e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a863651cd3007a66aef103046d7cb492e">m_MemberFactory</a></td></tr>
 <tr class="separator:a863651cd3007a66aef103046d7cb492e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc8c94b4b534dbb728add654aaa2bde2" id="r_adc8c94b4b534dbb728add654aaa2bde2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc8c94b4b534dbb728add654aaa2bde2">m_Normalize</a> {false}</td></tr>
+<tr class="memitem:adc8c94b4b534dbb728add654aaa2bde2" id="r_adc8c94b4b534dbb728add654aaa2bde2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc8c94b4b534dbb728add654aaa2bde2">m_Normalize</a> { false }</td></tr>
 <tr class="separator:adc8c94b4b534dbb728add654aaa2bde2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a137016b88f8761beb2bd77d53f2f314a" id="r_a137016b88f8761beb2bd77d53f2f314a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abaeedbc2c457acf0db4cae4a2020a2af">OutputRegionModeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a137016b88f8761beb2bd77d53f2f314a">m_OutputRegionMode</a> {<a class="el" href="#abaeedbc2c457acf0db4cae4a2020a2afa2298a8001c1cb195c1cda4894fbd76bc">itk::simple::TikhonovDeconvolutionImageFilter::SAME</a>}</td></tr>
+<tr class="memitem:a137016b88f8761beb2bd77d53f2f314a" id="r_a137016b88f8761beb2bd77d53f2f314a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abaeedbc2c457acf0db4cae4a2020a2af">OutputRegionModeType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a137016b88f8761beb2bd77d53f2f314a">m_OutputRegionMode</a> { <a class="el" href="#abaeedbc2c457acf0db4cae4a2020a2afa2298a8001c1cb195c1cda4894fbd76bc">itk::simple::TikhonovDeconvolutionImageFilter::SAME</a> }</td></tr>
 <tr class="separator:a137016b88f8761beb2bd77d53f2f314a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1500c8d16f6b6eb832f27c8f03b94d12" id="r_a1500c8d16f6b6eb832f27c8f03b94d12"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1500c8d16f6b6eb832f27c8f03b94d12">m_RegularizationConstant</a> {0.0}</td></tr>
+<tr class="memitem:a1500c8d16f6b6eb832f27c8f03b94d12" id="r_a1500c8d16f6b6eb832f27c8f03b94d12"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1500c8d16f6b6eb832f27c8f03b94d12">m_RegularizationConstant</a> { 0.0 }</td></tr>
 <tr class="separator:a1500c8d16f6b6eb832f27c8f03b94d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -361,8 +361,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a534641140509cf90d99d403e656bbca3" name="a534641140509cf90d99d403e656bbca3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a534641140509cf90d99d403e656bbca3">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="af947073a0da69f80adc507f8be6c642e" name="af947073a0da69f80adc507f8be6c642e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af947073a0da69f80adc507f8be6c642e">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,7 +371,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a534641140509cf90d99d403e656bbca3">itk::simple::TikhonovDeconvolutionImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image2 )</td>
+          <td class="memname">using <a class="el" href="#af947073a0da69f80adc507f8be6c642e">itk::simple::TikhonovDeconvolutionImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td>
         </tr>
       </table>
   </td>
@@ -382,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -399,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -415,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -437,7 +437,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a0e5646e58b07e6a02458b815122a6e54a327c67f803e5fc098a92d0d2afdacd14" name="a0e5646e58b07e6a02458b815122a6e54a327c67f803e5fc098a92d0d2afdacd14"></a>PERIODIC_PAD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -457,7 +457,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="abaeedbc2c457acf0db4cae4a2020a2afa93be8c21d7ca4b3570f0cfe5afa3870f" name="abaeedbc2c457acf0db4cae4a2020a2afa93be8c21d7ca4b3570f0cfe5afa3870f"></a>VALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -558,7 +558,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00126">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00138">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -585,9 +585,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00136">m_BoundaryCondition</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00146">m_BoundaryCondition</a>.</p>
 
 </div>
 </div>
@@ -617,7 +617,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -644,9 +644,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00134">m_Normalize</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00144">m_Normalize</a>.</p>
 
 </div>
 </div>
@@ -673,9 +673,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00138">m_OutputRegionMode</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00148">m_OutputRegionMode</a>.</p>
 
 </div>
 </div>
@@ -703,9 +703,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The regularization factor. Larger values reduce the dominance of noise in the solution, but results in higher approximation error in the deblurred image. Default value is 0.0, yielding the same results as the <a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00131">m_RegularizationConstant</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00142">m_RegularizationConstant</a>.</p>
 
 </div>
 </div>
@@ -732,9 +732,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00077">SetNormalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00087">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -762,9 +762,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of Normalize to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00077">SetNormalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00087">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -791,9 +791,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00136">m_BoundaryCondition</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00146">m_BoundaryCondition</a>.</p>
 
 </div>
 </div>
@@ -821,11 +821,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Normalize the output image by the sum of the kernel components </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00134">m_Normalize</a>, and <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00144">m_Normalize</a>, and <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00081">NormalizeOff()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00080">NormalizeOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00094">NormalizeOff()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00092">NormalizeOn()</a>.</p>
 
 </div>
 </div>
@@ -852,9 +852,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00138">m_OutputRegionMode</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00148">m_OutputRegionMode</a>.</p>
 
 </div>
 </div>
@@ -882,9 +882,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The regularization factor. Larger values reduce the dominance of noise in the solution, but results in higher approximation error in the deblurred image. Default value is 0.0, yielding the same results as the <a class="el" href="classitk_1_1simple_1_1InverseDeconvolutionImageFilter.html" title="The direct linear inverse deconvolution filter.">InverseDeconvolutionImageFilter</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00131">m_RegularizationConstant</a>.</p>
+<p class="reference">References <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00142">m_RegularizationConstant</a>.</p>
 
 </div>
 </div>
@@ -927,7 +927,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a534641140509cf90d99d403e656bbca3">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#af947073a0da69f80adc507f8be6c642e">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -937,7 +937,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a468b0b9e7d2e661df6a3b230748ed36a">ExecuteInternal()</a>.</p>
 
@@ -954,7 +954,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#a0e5646e58b07e6a02458b815122a6e54">BoundaryConditionType</a> itk::simple::TikhonovDeconvolutionImageFilter::m_BoundaryCondition {<a class="el" href="#a0e5646e58b07e6a02458b815122a6e54a102cd4dd587ef9f7753e7da641c00388">itk::simple::TikhonovDeconvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a>}</td>
+          <td class="memname"><a class="el" href="#a0e5646e58b07e6a02458b815122a6e54">BoundaryConditionType</a> itk::simple::TikhonovDeconvolutionImageFilter::m_BoundaryCondition { <a class="el" href="#a0e5646e58b07e6a02458b815122a6e54a102cd4dd587ef9f7753e7da641c00388">itk::simple::TikhonovDeconvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a> }</td>
         </tr>
       </table>
   </td>
@@ -964,9 +964,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00095">GetBoundaryCondition()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00091">SetBoundaryCondition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00109">GetBoundaryCondition()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00104">SetBoundaryCondition()</a>.</p>
 
 </div>
 </div>
@@ -980,7 +980,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a534641140509cf90d99d403e656bbca3">MemberFunctionType</a>&gt; &gt; itk::simple::TikhonovDeconvolutionImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#af947073a0da69f80adc507f8be6c642e">MemberFunctionType</a>&gt; &gt; itk::simple::TikhonovDeconvolutionImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -990,7 +990,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1004,7 +1004,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::TikhonovDeconvolutionImageFilter::m_Normalize {false}</td>
+          <td class="memname">bool itk::simple::TikhonovDeconvolutionImageFilter::m_Normalize { false }</td>
         </tr>
       </table>
   </td>
@@ -1014,9 +1014,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00085">GetNormalize()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00077">SetNormalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00098">GetNormalize()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00087">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -1030,7 +1030,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="#abaeedbc2c457acf0db4cae4a2020a2af">OutputRegionModeType</a> itk::simple::TikhonovDeconvolutionImageFilter::m_OutputRegionMode {<a class="el" href="#abaeedbc2c457acf0db4cae4a2020a2afa2298a8001c1cb195c1cda4894fbd76bc">itk::simple::TikhonovDeconvolutionImageFilter::SAME</a>}</td>
+          <td class="memname"><a class="el" href="#abaeedbc2c457acf0db4cae4a2020a2af">OutputRegionModeType</a> itk::simple::TikhonovDeconvolutionImageFilter::m_OutputRegionMode { <a class="el" href="#abaeedbc2c457acf0db4cae4a2020a2afa2298a8001c1cb195c1cda4894fbd76bc">itk::simple::TikhonovDeconvolutionImageFilter::SAME</a> }</td>
         </tr>
       </table>
   </td>
@@ -1040,9 +1040,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00105">GetOutputRegionMode()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00101">SetOutputRegionMode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00120">GetOutputRegionMode()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00115">SetOutputRegionMode()</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1056,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::TikhonovDeconvolutionImageFilter::m_RegularizationConstant {0.0}</td>
+          <td class="memname">double itk::simple::TikhonovDeconvolutionImageFilter::m_RegularizationConstant { 0.0 }</td>
         </tr>
       </table>
   </td>
@@ -1066,9 +1066,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html">sitkTikhonovDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00071">GetRegularizationConstant()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00066">SetRegularizationConstant()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00080">GetRegularizationConstant()</a>, and <a class="el" href="sitkTikhonovDeconvolutionImageFilter_8h_source.html#l00074">SetRegularizationConstant()</a>.</p>
 
 </div>
 </div>

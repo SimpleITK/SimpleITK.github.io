@@ -116,11 +116,12 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p>Segment pixels with similar statistics using connectivity. </p>
 <p>This filter extracts a connected set of pixels whose pixel intensities are consistent with the pixel statistics of a seed point. The mean and variance across a neighborhood (8-connected, 26-connected, etc.) are calculated for a seed point. Then pixels connected to this seed point whose values are within the confidence interval for the seed point are grouped. The width of the confidence interval is controlled by the "Multiplier" variable (the confidence interval is the mean plus or minus the "Multiplier" times the standard deviation). If the intensity variations across a segment were gaussian, a "Multiplier" setting of 2.5 would define a confidence interval wide enough to capture 99% of samples in the segment.</p>
 <p>After this initial segmentation is calculated, the mean and variance are re-calculated. All the pixels in the previous segmentation are used to calculate the mean the standard deviation (as opposed to using the pixels in the neighborhood of the seed point). The segmentation is then recalculated using these refined estimates for the mean and variance of the pixel values. This process is repeated for the specified number of iterations. Setting the "NumberOfIterations" to zero stops the algorithm after the initial segmentation from the seed point.</p>
-<p>NOTE: the lower and upper threshold are restricted to lie within the valid numeric limits of the input data pixel type. Also, the limits may be adjusted to contain the seed point's intensity. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4c06ed5a6f409a78f141c458cefd8edc" title="Segment pixels with similar statistics using connectivity.">itk::simple::VectorConfidenceConnected</a> for the procedural interface </dd>
+<p>NOTE: the lower and upper threshold are restricted to lie within the valid numeric limits of the input data pixel type. Also, the limits may be adjusted to contain the seed point's intensity.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a4c06ed5a6f409a78f141c458cefd8edc" title="Segment pixels with similar statistics using connectivity.">itk::simple::VectorConfidenceConnected</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1VectorConfidenceConnectedImageFilter.html">itk::VectorConfidenceConnectedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -225,8 +226,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aa67a2613f8045241ce97fba2c1341e48" id="r_aa67a2613f8045241ce97fba2c1341e48"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa67a2613f8045241ce97fba2c1341e48">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:aa67a2613f8045241ce97fba2c1341e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521245b54bdc3ad072875607b69b6811" id="r_a521245b54bdc3ad072875607b69b6811"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a521245b54bdc3ad072875607b69b6811">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a521245b54bdc3ad072875607b69b6811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -236,21 +237,21 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:accccce0b39e77e067229b26f4989998c" id="r_accccce0b39e77e067229b26f4989998c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accccce0b39e77e067229b26f4989998c">m_Covariance</a> {std::vector&lt;double&gt;()}</td></tr>
+<tr class="memitem:accccce0b39e77e067229b26f4989998c" id="r_accccce0b39e77e067229b26f4989998c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accccce0b39e77e067229b26f4989998c">m_Covariance</a> { std::vector&lt;double&gt;() }</td></tr>
 <tr class="separator:accccce0b39e77e067229b26f4989998c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954c43cc9e1e57f929ffbe9db2440e43" id="r_a954c43cc9e1e57f929ffbe9db2440e43"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a954c43cc9e1e57f929ffbe9db2440e43">m_InitialNeighborhoodRadius</a> {1u}</td></tr>
+<tr class="memitem:a954c43cc9e1e57f929ffbe9db2440e43" id="r_a954c43cc9e1e57f929ffbe9db2440e43"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a954c43cc9e1e57f929ffbe9db2440e43">m_InitialNeighborhoodRadius</a> { 1u }</td></tr>
 <tr class="separator:a954c43cc9e1e57f929ffbe9db2440e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f3f91e888b17b510cf9a4be32757ac" id="r_a07f3f91e888b17b510cf9a4be32757ac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07f3f91e888b17b510cf9a4be32757ac">m_Mean</a> {std::vector&lt;double&gt;()}</td></tr>
+<tr class="memitem:a07f3f91e888b17b510cf9a4be32757ac" id="r_a07f3f91e888b17b510cf9a4be32757ac"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07f3f91e888b17b510cf9a4be32757ac">m_Mean</a> { std::vector&lt;double&gt;() }</td></tr>
 <tr class="separator:a07f3f91e888b17b510cf9a4be32757ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e4902254acd06ea9dd34b65373b519d" id="r_a0e4902254acd06ea9dd34b65373b519d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aa67a2613f8045241ce97fba2c1341e48">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e4902254acd06ea9dd34b65373b519d">m_MemberFactory</a></td></tr>
+<tr class="memitem:a0e4902254acd06ea9dd34b65373b519d" id="r_a0e4902254acd06ea9dd34b65373b519d"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a521245b54bdc3ad072875607b69b6811">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e4902254acd06ea9dd34b65373b519d">m_MemberFactory</a></td></tr>
 <tr class="separator:a0e4902254acd06ea9dd34b65373b519d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03549a31762a8358a82f33a4b5de6a66" id="r_a03549a31762a8358a82f33a4b5de6a66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03549a31762a8358a82f33a4b5de6a66">m_Multiplier</a> {4.5}</td></tr>
+<tr class="memitem:a03549a31762a8358a82f33a4b5de6a66" id="r_a03549a31762a8358a82f33a4b5de6a66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03549a31762a8358a82f33a4b5de6a66">m_Multiplier</a> { 4.5 }</td></tr>
 <tr class="separator:a03549a31762a8358a82f33a4b5de6a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4966e5493942650313cbf34c0207de7f" id="r_a4966e5493942650313cbf34c0207de7f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4966e5493942650313cbf34c0207de7f">m_NumberOfIterations</a> {4u}</td></tr>
+<tr class="memitem:a4966e5493942650313cbf34c0207de7f" id="r_a4966e5493942650313cbf34c0207de7f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4966e5493942650313cbf34c0207de7f">m_NumberOfIterations</a> { 4u }</td></tr>
 <tr class="separator:a4966e5493942650313cbf34c0207de7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a009e80922e70254ef6cb8a4533905e3f" id="r_a009e80922e70254ef6cb8a4533905e3f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a009e80922e70254ef6cb8a4533905e3f">m_ReplaceValue</a> {1u}</td></tr>
+<tr class="memitem:a009e80922e70254ef6cb8a4533905e3f" id="r_a009e80922e70254ef6cb8a4533905e3f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a009e80922e70254ef6cb8a4533905e3f">m_ReplaceValue</a> { 1u }</td></tr>
 <tr class="separator:a009e80922e70254ef6cb8a4533905e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5475d5ad659dfadea418822edb39eb52" id="r_a5475d5ad659dfadea418822edb39eb52"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5475d5ad659dfadea418822edb39eb52">m_SeedList</a> {std::vector&lt; std::vector&lt;unsigned int &gt; &gt;()}</td></tr>
+<tr class="memitem:a5475d5ad659dfadea418822edb39eb52" id="r_a5475d5ad659dfadea418822edb39eb52"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; unsigned int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5475d5ad659dfadea418822edb39eb52">m_SeedList</a> { std::vector&lt; std::vector&lt;unsigned int &gt; &gt;() }</td></tr>
 <tr class="separator:a5475d5ad659dfadea418822edb39eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -357,8 +358,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa67a2613f8045241ce97fba2c1341e48" name="aa67a2613f8045241ce97fba2c1341e48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa67a2613f8045241ce97fba2c1341e48">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a521245b54bdc3ad072875607b69b6811" name="a521245b54bdc3ad072875607b69b6811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a521245b54bdc3ad072875607b69b6811">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -367,7 +368,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#aa67a2613f8045241ce97fba2c1341e48">itk::simple::VectorConfidenceConnectedImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a521245b54bdc3ad072875607b69b6811">itk::simple::VectorConfidenceConnectedImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -378,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +396,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -486,9 +487,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add SeedList point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00155">m_SeedList</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00169">m_SeedList</a>.</p>
 
 </div>
 </div>
@@ -517,9 +518,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all SeedList points. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00155">m_SeedList</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00169">m_SeedList</a>.</p>
 
 </div>
 </div>
@@ -566,7 +567,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00150">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00165">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -595,9 +596,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the Covariance matrix computed during the segmentation</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00168">m_Covariance</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00182">m_Covariance</a>.</p>
 
 </div>
 </div>
@@ -625,9 +626,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the radius of the neighborhood over which the statistics are evaluated </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00161">m_InitialNeighborhoodRadius</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00175">m_InitialNeighborhoodRadius</a>.</p>
 
 </div>
 </div>
@@ -656,9 +657,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the Mean <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Vector.html">Vector</a> computed during the segmentation</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00166">m_Mean</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00181">m_Mean</a>.</p>
 
 </div>
 </div>
@@ -686,9 +687,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the multiplier to define the confidence interval. Multiplier can be anything greater than zero. A typical value is 2.5 </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00159">m_Multiplier</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00173">m_Multiplier</a>.</p>
 
 </div>
 </div>
@@ -718,7 +719,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -746,9 +747,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the number of iterations </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00157">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00171">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -776,9 +777,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace thresholded pixels </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00163">m_ReplaceValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00177">m_ReplaceValue</a>.</p>
 
 </div>
 </div>
@@ -807,9 +808,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>Get list of seeds. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00155">m_SeedList</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00169">m_SeedList</a>.</p>
 
 </div>
 </div>
@@ -837,9 +838,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the radius of the neighborhood over which the statistics are evaluated </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00161">m_InitialNeighborhoodRadius</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00175">m_InitialNeighborhoodRadius</a>.</p>
 
 </div>
 </div>
@@ -867,9 +868,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the multiplier to define the confidence interval. Multiplier can be anything greater than zero. A typical value is 2.5 </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00159">m_Multiplier</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00173">m_Multiplier</a>.</p>
 
 </div>
 </div>
@@ -897,9 +898,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the number of iterations </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00157">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00171">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -927,9 +928,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace thresholded pixels </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00163">m_ReplaceValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00177">m_ReplaceValue</a>.</p>
 
 </div>
 </div>
@@ -958,9 +959,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>Set list of image indexes for seeds. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00155">m_SeedList</a>.</p>
+<p class="reference">References <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00169">m_SeedList</a>.</p>
 
 </div>
 </div>
@@ -1003,7 +1004,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#aa67a2613f8045241ce97fba2c1341e48">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a521245b54bdc3ad072875607b69b6811">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -1013,7 +1014,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#aa49c87228d3000c2eb13275834e2614c">ExecuteInternal()</a>.</p>
 
@@ -1030,7 +1031,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::VectorConfidenceConnectedImageFilter::m_Covariance {std::vector&lt;double&gt;()}</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::VectorConfidenceConnectedImageFilter::m_Covariance { std::vector&lt;double&gt;() }</td>
         </tr>
       </table>
   </td>
@@ -1040,9 +1041,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00128">GetCovariance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00148">GetCovariance()</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1057,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::VectorConfidenceConnectedImageFilter::m_InitialNeighborhoodRadius {1u}</td>
+          <td class="memname">unsigned int itk::simple::VectorConfidenceConnectedImageFilter::m_InitialNeighborhoodRadius { 1u }</td>
         </tr>
       </table>
   </td>
@@ -1066,9 +1067,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00103">GetInitialNeighborhoodRadius()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00098">SetInitialNeighborhoodRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00119">GetInitialNeighborhoodRadius()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00113">SetInitialNeighborhoodRadius()</a>.</p>
 
 </div>
 </div>
@@ -1082,7 +1083,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::VectorConfidenceConnectedImageFilter::m_Mean {std::vector&lt;double&gt;()}</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::VectorConfidenceConnectedImageFilter::m_Mean { std::vector&lt;double&gt;() }</td>
         </tr>
       </table>
   </td>
@@ -1092,9 +1093,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00181">181</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00120">GetMean()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00140">GetMean()</a>.</p>
 
 </div>
 </div>
@@ -1108,7 +1109,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aa67a2613f8045241ce97fba2c1341e48">MemberFunctionType</a>&gt; &gt; itk::simple::VectorConfidenceConnectedImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a521245b54bdc3ad072875607b69b6811">MemberFunctionType</a>&gt; &gt; itk::simple::VectorConfidenceConnectedImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -1118,7 +1119,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1132,7 +1133,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::VectorConfidenceConnectedImageFilter::m_Multiplier {4.5}</td>
+          <td class="memname">double itk::simple::VectorConfidenceConnectedImageFilter::m_Multiplier { 4.5 }</td>
         </tr>
       </table>
   </td>
@@ -1142,9 +1143,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00093">GetMultiplier()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00088">SetMultiplier()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00107">GetMultiplier()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00101">SetMultiplier()</a>.</p>
 
 </div>
 </div>
@@ -1158,7 +1159,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::VectorConfidenceConnectedImageFilter::m_NumberOfIterations {4u}</td>
+          <td class="memname">unsigned int itk::simple::VectorConfidenceConnectedImageFilter::m_NumberOfIterations { 4u }</td>
         </tr>
       </table>
   </td>
@@ -1168,9 +1169,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00083">GetNumberOfIterations()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00078">SetNumberOfIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00095">GetNumberOfIterations()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00089">SetNumberOfIterations()</a>.</p>
 
 </div>
 </div>
@@ -1184,7 +1185,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t itk::simple::VectorConfidenceConnectedImageFilter::m_ReplaceValue {1u}</td>
+          <td class="memname">uint8_t itk::simple::VectorConfidenceConnectedImageFilter::m_ReplaceValue { 1u }</td>
         </tr>
       </table>
   </td>
@@ -1194,9 +1195,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00113">GetReplaceValue()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00108">SetReplaceValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00131">GetReplaceValue()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00125">SetReplaceValue()</a>.</p>
 
 </div>
 </div>
@@ -1210,7 +1211,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; std::vector&lt;unsigned int&gt; &gt; itk::simple::VectorConfidenceConnectedImageFilter::m_SeedList {std::vector&lt; std::vector&lt;unsigned int &gt; &gt;()}</td>
+          <td class="memname">std::vector&lt; std::vector&lt;unsigned int&gt; &gt; itk::simple::VectorConfidenceConnectedImageFilter::m_SeedList { std::vector&lt; std::vector&lt;unsigned int &gt; &gt;() }</td>
         </tr>
       </table>
   </td>
@@ -1220,9 +1221,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html">sitkVectorConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00070">AddSeed()</a>, <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00072">ClearSeeds()</a>, <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00068">GetSeedList()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00063">SetSeedList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00080">AddSeed()</a>, <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00083">ClearSeeds()</a>, <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00077">GetSeedList()</a>, and <a class="el" href="sitkVectorConfidenceConnectedImageFilter_8h_source.html#l00071">SetSeedList()</a>.</p>
 
 </div>
 </div>

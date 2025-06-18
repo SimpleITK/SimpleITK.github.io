@@ -129,12 +129,12 @@ $(function(){ initResizable(false); });
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastChamferDistanceImageFilter.html">FastChamferDistanceImageFilter</a></dd>
 <dd>
 <a class="el" href="classitk_1_1simple_1_1IsoContourDistanceImageFilter.html" title="Compute an approximate distance from an interpolated isocontour to the close grid points.">IsoContourDistanceImageFilter</a></dd></dl>
-<dl class="section author"><dt>Author</dt><dd>Zach Pincus </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afad13fab003e765b7a49366d859b9609" title="Create a map of the approximate signed distance from the boundaries of a binary image.">itk::simple::ApproximateSignedDistanceMap</a> for the procedural interface </dd>
+<dl class="section author"><dt>Author</dt><dd>Zach Pincus</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afad13fab003e765b7a49366d859b9609" title="Create a map of the approximate signed distance from the boundaries of a binary image.">itk::simple::ApproximateSignedDistanceMap</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ApproximateSignedDistanceMapImageFilter.html">itk::ApproximateSignedDistanceMapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -215,8 +215,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:aab2b9c966c85114331539b8aa0c6379f" id="r_aab2b9c966c85114331539b8aa0c6379f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab2b9c966c85114331539b8aa0c6379f">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:aab2b9c966c85114331539b8aa0c6379f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78300848ca1ae9be1ff4bb95d7c89ee9" id="r_a78300848ca1ae9be1ff4bb95d7c89ee9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78300848ca1ae9be1ff4bb95d7c89ee9">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a78300848ca1ae9be1ff4bb95d7c89ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -226,11 +226,11 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae21d0db13f7017565ca877da784fcd48" id="r_ae21d0db13f7017565ca877da784fcd48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae21d0db13f7017565ca877da784fcd48">m_InsideValue</a> {1u}</td></tr>
+<tr class="memitem:ae21d0db13f7017565ca877da784fcd48" id="r_ae21d0db13f7017565ca877da784fcd48"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae21d0db13f7017565ca877da784fcd48">m_InsideValue</a> { 1u }</td></tr>
 <tr class="separator:ae21d0db13f7017565ca877da784fcd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b72791adec64c471436142c18865e45" id="r_a3b72791adec64c471436142c18865e45"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aab2b9c966c85114331539b8aa0c6379f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b72791adec64c471436142c18865e45">m_MemberFactory</a></td></tr>
+<tr class="memitem:a3b72791adec64c471436142c18865e45" id="r_a3b72791adec64c471436142c18865e45"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a78300848ca1ae9be1ff4bb95d7c89ee9">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b72791adec64c471436142c18865e45">m_MemberFactory</a></td></tr>
 <tr class="separator:a3b72791adec64c471436142c18865e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a374e6a694e29b8f46ce98ddc6a951c95" id="r_a374e6a694e29b8f46ce98ddc6a951c95"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a374e6a694e29b8f46ce98ddc6a951c95">m_OutsideValue</a> {0u}</td></tr>
+<tr class="memitem:a374e6a694e29b8f46ce98ddc6a951c95" id="r_a374e6a694e29b8f46ce98ddc6a951c95"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a374e6a694e29b8f46ce98ddc6a951c95">m_OutsideValue</a> { 0u }</td></tr>
 <tr class="separator:a374e6a694e29b8f46ce98ddc6a951c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -337,8 +337,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aab2b9c966c85114331539b8aa0c6379f" name="aab2b9c966c85114331539b8aa0c6379f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab2b9c966c85114331539b8aa0c6379f">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a78300848ca1ae9be1ff4bb95d7c89ee9" name="a78300848ca1ae9be1ff4bb95d7c89ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78300848ca1ae9be1ff4bb95d7c89ee9">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,7 +347,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#aab2b9c966c85114331539b8aa0c6379f">itk::simple::ApproximateSignedDistanceMapImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a78300848ca1ae9be1ff4bb95d7c89ee9">itk::simple::ApproximateSignedDistanceMapImageFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -358,7 +358,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -375,7 +375,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -484,7 +484,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00122">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00130">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -512,9 +512,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get intensity value representing the interior of objects in the mask. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00127">m_InsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00134">m_InsideValue</a>.</p>
 
 </div>
 </div>
@@ -544,7 +544,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -572,9 +572,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get intensity value representing non-objects in the mask. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00129">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00136">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -602,9 +602,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get intensity value representing the interior of objects in the mask. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00127">m_InsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00134">m_InsideValue</a>.</p>
 
 </div>
 </div>
@@ -632,9 +632,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get intensity value representing non-objects in the mask. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00129">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00136">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -677,7 +677,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#aab2b9c966c85114331539b8aa0c6379f">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a78300848ca1ae9be1ff4bb95d7c89ee9">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -687,7 +687,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ad8e8927e20dcea1162b906f89d20f382">ExecuteInternal()</a>.</p>
 
@@ -704,7 +704,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ApproximateSignedDistanceMapImageFilter::m_InsideValue {1u}</td>
+          <td class="memname">double itk::simple::ApproximateSignedDistanceMapImageFilter::m_InsideValue { 1u }</td>
         </tr>
       </table>
   </td>
@@ -714,9 +714,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00091">GetInsideValue()</a>, and <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00086">SetInsideValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00100">GetInsideValue()</a>, and <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00094">SetInsideValue()</a>.</p>
 
 </div>
 </div>
@@ -730,7 +730,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aab2b9c966c85114331539b8aa0c6379f">MemberFunctionType</a>&gt; &gt; itk::simple::ApproximateSignedDistanceMapImageFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a78300848ca1ae9be1ff4bb95d7c89ee9">MemberFunctionType</a>&gt; &gt; itk::simple::ApproximateSignedDistanceMapImageFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -740,7 +740,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -754,7 +754,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double itk::simple::ApproximateSignedDistanceMapImageFilter::m_OutsideValue {0u}</td>
+          <td class="memname">double itk::simple::ApproximateSignedDistanceMapImageFilter::m_OutsideValue { 0u }</td>
         </tr>
       </table>
   </td>
@@ -764,9 +764,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html">sitkApproximateSignedDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00101">GetOutsideValue()</a>, and <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00096">SetOutsideValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00112">GetOutsideValue()</a>, and <a class="el" href="sitkApproximateSignedDistanceMapImageFilter_8h_source.html#l00106">SetOutsideValue()</a>.</p>
 
 </div>
 </div>

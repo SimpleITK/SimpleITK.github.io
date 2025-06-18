@@ -118,13 +118,13 @@ $(function(){ initResizable(false); });
 <p>Labels that are relabeled to the same label Id are automatically merged and optimized into a single <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LabelObject.html">LabelObject</a> . The background label can also be changed. Any object relabeled to the output background will automatically be removed.</p>
 <p>This implementation was taken from the Insight Journal paper: <a href="https://doi.org/10.54294/q6auw4">https://doi.org/10.54294/q6auw4</a></p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann. Biologie du Developpement et de la Reproduction, INRA de Jouy-en-Josas, France.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShapeLabelObject.html">ShapeLabelObject</a> , <a class="el" href="classitk_1_1simple_1_1RelabelComponentImageFilter.html" title="Relabel the components in an image such that consecutive labels are used.">RelabelComponentImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html" title="Change Sets of Labels.">ChangeLabelImageFilter</a> </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShapeLabelObject.html">ShapeLabelObject</a> , <a class="el" href="classitk_1_1simple_1_1RelabelComponentImageFilter.html" title="Relabel the components in an image such that consecutive labels are used.">RelabelComponentImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ChangeLabelImageFilter.html" title="Change Sets of Labels.">ChangeLabelImageFilter</a></dd>
 <dd>
-<a class="el" href="classitk_1_1simple_1_1ChangeLabelLabelMapFilter.html" title="Replace the label Ids of selected LabelObjects with new label Ids.">itk::simple::ChangeLabelLabelMapFilter</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a10ae229ffcea7b6ad0b914b762469bc7" title="Replace the label Ids of selected LabelObjects with new label Ids.">itk::simple::ChangeLabelLabelMap</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ChangeLabelLabelMapFilter.html">itk::ChangeLabelLabelMapFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -203,8 +203,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
-<tr class="memitem:a1e6ece09448c27dfadbacc3d1c805152" id="r_a1e6ece09448c27dfadbacc3d1c805152"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e6ece09448c27dfadbacc3d1c805152">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td></tr>
-<tr class="separator:a1e6ece09448c27dfadbacc3d1c805152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a177b08c0f5dbf55c049fe80da4db1c39" id="r_a177b08c0f5dbf55c049fe80da4db1c39"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a177b08c0f5dbf55c049fe80da4db1c39">MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
+<tr class="separator:a177b08c0f5dbf55c049fe80da4db1c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -214,11 +214,11 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:abc438e9e0201666b8697b02e40af3bd7" id="r_abc438e9e0201666b8697b02e40af3bd7"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc438e9e0201666b8697b02e40af3bd7">m_ChangeMap</a> {std::map&lt;double,double&gt;()}</td></tr>
+<tr class="memitem:abc438e9e0201666b8697b02e40af3bd7" id="r_abc438e9e0201666b8697b02e40af3bd7"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc438e9e0201666b8697b02e40af3bd7">m_ChangeMap</a> { std::map&lt;double,double&gt;() }</td></tr>
 <tr class="separator:abc438e9e0201666b8697b02e40af3bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8bc92e94c6debc4a2eb18ff66a95bc7" id="r_ab8bc92e94c6debc4a2eb18ff66a95bc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8bc92e94c6debc4a2eb18ff66a95bc7">m_InPlace</a> {false}</td></tr>
 <tr class="separator:ab8bc92e94c6debc4a2eb18ff66a95bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac81aba8ad3dcfcc330e16c3ea3246429" id="r_ac81aba8ad3dcfcc330e16c3ea3246429"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1e6ece09448c27dfadbacc3d1c805152">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac81aba8ad3dcfcc330e16c3ea3246429">m_MemberFactory</a></td></tr>
+<tr class="memitem:ac81aba8ad3dcfcc330e16c3ea3246429" id="r_ac81aba8ad3dcfcc330e16c3ea3246429"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a177b08c0f5dbf55c049fe80da4db1c39">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac81aba8ad3dcfcc330e16c3ea3246429">m_MemberFactory</a></td></tr>
 <tr class="separator:ac81aba8ad3dcfcc330e16c3ea3246429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -325,8 +325,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3eb3230c2f493b586716f58fb913f101 inherit pro_static_methods_classitk_1_1simple_1_1ProcessObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a1e6ece09448c27dfadbacc3d1c805152" name="a1e6ece09448c27dfadbacc3d1c805152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e6ece09448c27dfadbacc3d1c805152">&#9670;&#160;</a></span>MemberFunctionType</h2>
+<a id="a177b08c0f5dbf55c049fe80da4db1c39" name="a177b08c0f5dbf55c049fe80da4db1c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a177b08c0f5dbf55c049fe80da4db1c39">&#9670;&#160;</a></span>MemberFunctionType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,7 +335,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="#a1e6ece09448c27dfadbacc3d1c805152">itk::simple::ChangeLabelLabelMapFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)( const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&amp; image1 )</td>
+          <td class="memname">using <a class="el" href="#a177b08c0f5dbf55c049fe80da4db1c39">itk::simple::ChangeLabelLabelMapFilter::MemberFunctionType</a> = <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> (Self::*)(const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td>
         </tr>
       </table>
   </td>
@@ -346,7 +346,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +363,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +489,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00094">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00101">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -516,9 +516,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00099">m_ChangeMap</a>.</p>
+<p class="reference">References <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00105">m_ChangeMap</a>.</p>
 
 </div>
 </div>
@@ -548,7 +548,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -575,9 +575,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00099">m_ChangeMap</a>.</p>
+<p class="reference">References <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00105">m_ChangeMap</a>.</p>
 
 </div>
 </div>
@@ -620,7 +620,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a1e6ece09448c27dfadbacc3d1c805152">MemberFunctionType</a> &gt;</td>
+          <td class="memname">friend struct <a class="el" href="structitk_1_1simple_1_1detail_1_1MemberFunctionAddressor.html">detail::MemberFunctionAddressor</a>&lt; <a class="el" href="#a177b08c0f5dbf55c049fe80da4db1c39">MemberFunctionType</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -630,7 +630,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ab24ff038ce8ba6affbf7c3918977e2cf">ExecuteInternal()</a>.</p>
 
@@ -647,7 +647,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;double,double&gt; itk::simple::ChangeLabelLabelMapFilter::m_ChangeMap {std::map&lt;double,double&gt;()}</td>
+          <td class="memname">std::map&lt;double,double&gt; itk::simple::ChangeLabelLabelMapFilter::m_ChangeMap { std::map&lt;double,double&gt;() }</td>
         </tr>
       </table>
   </td>
@@ -657,9 +657,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00071">GetChangeMap()</a>, and <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00067">SetChangeMap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00080">GetChangeMap()</a>, and <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00075">SetChangeMap()</a>.</p>
 
 </div>
 </div>
@@ -683,7 +683,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -697,7 +697,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a1e6ece09448c27dfadbacc3d1c805152">MemberFunctionType</a>&gt; &gt; itk::simple::ChangeLabelLabelMapFilter::m_MemberFactory</td>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a177b08c0f5dbf55c049fe80da4db1c39">MemberFunctionType</a>&gt; &gt; itk::simple::ChangeLabelLabelMapFilter::m_MemberFactory</td>
         </tr>
       </table>
   </td>
@@ -707,7 +707,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkChangeLabelLabelMapFilter_8h_source.html">sitkChangeLabelLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
