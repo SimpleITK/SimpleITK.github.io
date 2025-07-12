@@ -85,7 +85,6 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">itk::simple::detail::MemberFunctionFactory&lt; TMemberFunctionPointer &gt; Class Template Reference</div></div>
 </div><!--header-->
@@ -142,15 +141,14 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a87da320fb91b2c472ad95c776e6b007d" id="r_a87da320fb91b2c472ad95c776e6b007d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a659b0b1809fcadc0608727f8e6dec6c8">FunctionObjectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87da320fb91b2c472ad95c776e6b007d">GetMemberFunction</a> (<a class="el" href="namespaceitk_1_1simple.html#aaf027344ec3011c3ac6fcfd77271bb75">PixelIDValueType</a> pixelID, unsigned int imageDimension)</td></tr>
-<tr class="memdesc:a87da320fb91b2c472ad95c776e6b007d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function object for the PixelIndex, and image dimension.  <br /></td></tr>
-<tr class="separator:a87da320fb91b2c472ad95c776e6b007d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac913c0fe31a7ab334f98d46d3248e82e" id="r_ac913c0fe31a7ab334f98d46d3248e82e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a659b0b1809fcadc0608727f8e6dec6c8">FunctionObjectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac913c0fe31a7ab334f98d46d3248e82e">GetMemberFunction</a> (<a class="el" href="namespaceitk_1_1simple.html#aaf027344ec3011c3ac6fcfd77271bb75">PixelIDValueType</a> pixelID, unsigned int imageDimension, <a class="el" href="#a14acd04604cd5b9312c9087b6958091a">ObjectType</a> *objectPointer) const</td></tr>
+<tr class="memdesc:ac913c0fe31a7ab334f98d46d3248e82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function object for the PixelID and image dimension.  <br /></td></tr>
+<tr class="separator:ac913c0fe31a7ab334f98d46d3248e82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb04a5c57661876076101329e1c55e55" id="r_afb04a5c57661876076101329e1c55e55"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb04a5c57661876076101329e1c55e55">HasMemberFunction</a> (<a class="el" href="namespaceitk_1_1simple.html#aaf027344ec3011c3ac6fcfd77271bb75">PixelIDValueType</a> pixelID, unsigned int imageDimension) const noexcept</td></tr>
 <tr class="memdesc:afb04a5c57661876076101329e1c55e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query to determine if an member function has been registered for pixelID and imageDimension.  <br /></td></tr>
 <tr class="separator:afb04a5c57661876076101329e1c55e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a678fe2aead7cdc732ed934de47d70f" id="r_a2a678fe2aead7cdc732ed934de47d70f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a678fe2aead7cdc732ed934de47d70f">MemberFunctionFactory</a> (<a class="el" href="#a14acd04604cd5b9312c9087b6958091a">ObjectType</a> *pObject)</td></tr>
-<tr class="memdesc:a2a678fe2aead7cdc732ed934de47d70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor which permanently binds the constructed object to pObject.  <br /></td></tr>
-<tr class="separator:a2a678fe2aead7cdc732ed934de47d70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66449daef3e02bf143086ce64d7e92b" id="r_ae66449daef3e02bf143086ce64d7e92b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66449daef3e02bf143086ce64d7e92b">MemberFunctionFactory</a> ()=default</td></tr>
+<tr class="separator:ae66449daef3e02bf143086ce64d7e92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ec2d33538635d66a2ff7bce45ee6dec" id="r_a8ec2d33538635d66a2ff7bce45ee6dec"><td class="memTemplParams" colspan="2">template&lt;typename TImageType&gt; </td></tr>
 <tr class="memitem:a8ec2d33538635d66a2ff7bce45ee6dec"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a8ec2d33538635d66a2ff7bce45ee6dec">Register</a> (<a class="el" href="#ac1966e20ec8d3f92671bf20f6395ff02">MemberFunctionType</a> pfunc, TImageType *)</td></tr>
 <tr class="memdesc:a8ec2d33538635d66a2ff7bce45ee6dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a specific member function.  <br /></td></tr>
@@ -173,23 +171,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adb04126eb505b84f821d6986c10332ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers all member functions in TPixelIDTypeList and <a class="el" href="namespaceitk_1_1simple.html#a057fc8eb0e35e5f8b135fa943bbfbfa7">simple::InstantiatedPixelIDTypeList</a> over <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Image.html">itk::Image</a>&lt;Pixel, ImageDimension&gt;  <br /></td></tr>
 <tr class="separator:adb04126eb505b84f821d6986c10332ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a20d6399eaa5548d9b93c21e20be615ea" id="r_a20d6399eaa5548d9b93c21e20be615ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a14acd04604cd5b9312c9087b6958091a">ObjectType</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20d6399eaa5548d9b93c21e20be615ea">m_ObjectPointer</a></td></tr>
-<tr class="separator:a20d6399eaa5548d9b93c21e20be615ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">itk::simple::detail::MemberFunctionFactoryBase&lt; TMemberFunctionPointer, std::pair&lt; unsigned int, int &gt; &gt;</a></td></tr>
-<tr class="memitem:ac30903ed6b4fdfc325cc4e260d682ec5 inherit pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_ac30903ed6b4fdfc325cc4e260d682ec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a1471bf11e6df25957d2c290246cfd2ee">FunctionMapType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#ac30903ed6b4fdfc325cc4e260d682ec5">m_PFunction</a></td></tr>
-<tr class="separator:ac30903ed6b4fdfc325cc4e260d682ec5 inherit pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30903ed6b4fdfc325cc4e260d682ec5 inherit pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_ac30903ed6b4fdfc325cc4e260d682ec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a1471bf11e6df25957d2c290246cfd2ee">FunctionMapType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#ac30903ed6b4fdfc325cc4e260d682ec5">m_PFunction</a></td></tr>
-<tr class="separator:ac30903ed6b4fdfc325cc4e260d682ec5 inherit pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">itk::simple::detail::MemberFunctionFactoryBase&lt; TMemberFunctionPointer, std::pair&lt; unsigned int, int &gt; &gt;</a></td></tr>
-<tr class="memitem:a1471bf11e6df25957d2c290246cfd2ee inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_a1471bf11e6df25957d2c290246cfd2ee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a1471bf11e6df25957d2c290246cfd2ee">FunctionMapType</a></td></tr>
-<tr class="separator:a1471bf11e6df25957d2c290246cfd2ee inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1471bf11e6df25957d2c290246cfd2ee inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_a1471bf11e6df25957d2c290246cfd2ee"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a1471bf11e6df25957d2c290246cfd2ee">FunctionMapType</a></td></tr>
-<tr class="separator:a1471bf11e6df25957d2c290246cfd2ee inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6349ff15407caf647fe852e9c9236a1 inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_af6349ff15407caf647fe852e9c9236a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#af6349ff15407caf647fe852e9c9236a1">FunctionMapType</a></td></tr>
+<tr class="separator:af6349ff15407caf647fe852e9c9236a1 inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6349ff15407caf647fe852e9c9236a1 inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_af6349ff15407caf647fe852e9c9236a1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#af6349ff15407caf647fe852e9c9236a1">FunctionMapType</a></td></tr>
+<tr class="separator:af6349ff15407caf647fe852e9c9236a1 inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02baf76db61f1ae68eb5d4f9e5c8bbc8 inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_a02baf76db61f1ae68eb5d4f9e5c8bbc8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a02baf76db61f1ae68eb5d4f9e5c8bbc8">KeyType</a></td></tr>
 <tr class="separator:a02baf76db61f1ae68eb5d4f9e5c8bbc8 inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02baf76db61f1ae68eb5d4f9e5c8bbc8 inherit pro_types_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_a02baf76db61f1ae68eb5d4f9e5c8bbc8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a02baf76db61f1ae68eb5d4f9e5c8bbc8">KeyType</a></td></tr>
@@ -220,6 +208,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a21ee862c7579cca8379b5abfbaf066ed inherit pro_static_methods_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21ee862c7579cca8379b5abfbaf066ed inherit pro_static_methods_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_a21ee862c7579cca8379b5abfbaf066ed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a99c8cecac0e7dcd4ac3b554542dcb67e">FunctionObjectType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a21ee862c7579cca8379b5abfbaf066ed">BindObject</a> (<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a8c570b8f9d57b9bd462382a054d8e52b">MemberFunctionResultType</a>(<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a89586149adc4661f548a8728d76060d3">ObjectType</a> ::*pfunc)(Args...), <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#a89586149adc4661f548a8728d76060d3">ObjectType</a> *objectPointer)</td></tr>
 <tr class="separator:a21ee862c7579cca8379b5abfbaf066ed inherit pro_static_methods_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html">itk::simple::detail::MemberFunctionFactoryBase&lt; TMemberFunctionPointer, std::pair&lt; unsigned int, int &gt; &gt;</a></td></tr>
+<tr class="memitem:ac30903ed6b4fdfc325cc4e260d682ec5 inherit pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_ac30903ed6b4fdfc325cc4e260d682ec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#af6349ff15407caf647fe852e9c9236a1">FunctionMapType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#ac30903ed6b4fdfc325cc4e260d682ec5">m_PFunction</a></td></tr>
+<tr class="separator:ac30903ed6b4fdfc325cc4e260d682ec5 inherit pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30903ed6b4fdfc325cc4e260d682ec5 inherit pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase" id="r_ac30903ed6b4fdfc325cc4e260d682ec5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#af6349ff15407caf647fe852e9c9236a1">FunctionMapType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase.html#ac30903ed6b4fdfc325cc4e260d682ec5">m_PFunction</a></td></tr>
+<tr class="separator:ac30903ed6b4fdfc325cc4e260d682ec5 inherit pro_attribs_classitk_1_1simple_1_1detail_1_1MemberFunctionFactoryBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a659b0b1809fcadc0608727f8e6dec6c8" name="a659b0b1809fcadc0608727f8e6dec6c8"></a>
@@ -313,30 +306,36 @@ template&lt;typename TMemberFunctionPointer&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2a678fe2aead7cdc732ed934de47d70f" name="a2a678fe2aead7cdc732ed934de47d70f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a678fe2aead7cdc732ed934de47d70f">&#9670;&#160;</a></span>MemberFunctionFactory()</h2>
+<a id="ae66449daef3e02bf143086ce64d7e92b" name="ae66449daef3e02bf143086ce64d7e92b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66449daef3e02bf143086ce64d7e92b">&#9670;&#160;</a></span>MemberFunctionFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename TMemberFunctionPointer&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">itk::simple::detail::MemberFunctionFactory</a>&lt; TMemberFunctionPointer &gt;::MemberFunctionFactory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="#a14acd04604cd5b9312c9087b6958091a">ObjectType</a> *</td>          <td class="paramname"><span class="paramname"><em>pObject</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Constructor which permanently binds the constructed object to pObject. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a87da320fb91b2c472ad95c776e6b007d" name="a87da320fb91b2c472ad95c776e6b007d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87da320fb91b2c472ad95c776e6b007d">&#9670;&#160;</a></span>GetMemberFunction()</h2>
+<a id="ac913c0fe31a7ab334f98d46d3248e82e" name="ac913c0fe31a7ab334f98d46d3248e82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac913c0fe31a7ab334f98d46d3248e82e">&#9670;&#160;</a></span>GetMemberFunction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,12 +350,17 @@ template&lt;typename TMemberFunctionPointer&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>imageDimension</em></span>&#160;)</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>imageDimension</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#a14acd04604cd5b9312c9087b6958091a">ObjectType</a> *</td>          <td class="paramname"><span class="paramname"><em>objectPointer</em></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns a function object for the PixelIndex, and image dimension. </p>
+<p>Returns a function object for the PixelID and image dimension. </p>
 <p>pixelID is the value of <a class="el" href="classitk_1_1simple_1_1Image.html#a3c27e845c3327ae8cf133db1750fd18b">Image::GetPixelIDValue()</a>, or <a class="el" href="structitk_1_1simple_1_1PixelIDToPixelIDValue.html#a8f6eff6414eedb60badd1d3ee3aec1e8ac696bf8bb317078421fb0ae6e360a01b">PixelIDToPixelIDValue&lt;PixelIDType&gt;::Result</a></p>
 <p>imageDimension is the value returned by <a class="el" href="classitk_1_1simple_1_1Image.html#a43163c72ca1a49abf615b3dc71e01a36">Image::GetDimension()</a></p>
 <p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_typedef" href="namespaceitk_1_1simple.html#aaf027344ec3011c3ac6fcfd77271bb75">PixelIDValueType</a> pixelID = image-&gt;GetPixelIDValue();</div>
@@ -474,7 +478,7 @@ template&lt;typename TPixelIDTypeList, unsigned int VImageDimension, typename TA
 <div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2 &gt; ();</div>
 </div><!-- fragment --><p>A range can also be used: </p><div class="fragment"><div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2, 3 &gt; ();</div>
 </div><!-- fragment --> 
-<p class="reference">Referenced by <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00120">RegisterMemberFunctions()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00118">RegisterMemberFunctions()</a>.</p>
 
 </div>
 </div>
@@ -531,7 +535,7 @@ template&lt;typename TPixelIDTypeList, unsigned int VImageDimension&gt; </div>
 <div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2 &gt; ();</div>
 </div><!-- fragment --><p>A range can also be used: </p><div class="fragment"><div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2, 3 &gt; ();</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00120">120</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00118">118</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#acf1dd8b1249050542a9903359d781047">RegisterMemberFunctions()</a>.</p>
 
@@ -590,7 +594,7 @@ template&lt;typename TPixelIDTypeList, unsigned int VImageDimension, unsigned in
 <div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2 &gt; ();</div>
 </div><!-- fragment --><p>A range can also be used: </p><div class="fragment"><div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2, 3 &gt; ();</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00128">128</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00126">126</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#acf1dd8b1249050542a9903359d781047">RegisterMemberFunctions()</a>.</p>
 
@@ -649,36 +653,9 @@ template&lt;typename TPixelIDTypeList, unsigned int VImageDimension, unsigned in
 <div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2 &gt; ();</div>
 </div><!-- fragment --><p>A range can also be used: </p><div class="fragment"><div class="line">this-&gt;m_MemberFactory-&gt;RegisterMemberFunctions&lt; PixelIDTypeList, 2, 3 &gt; ();</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00138">138</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00136">136</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#acf1dd8b1249050542a9903359d781047">RegisterMemberFunctions()</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a20d6399eaa5548d9b93c21e20be615ea" name="a20d6399eaa5548d9b93c21e20be615ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20d6399eaa5548d9b93c21e20be615ea">&#9670;&#160;</a></span>m_ObjectPointer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename TMemberFunctionPointer&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="#a14acd04604cd5b9312c9087b6958091a">ObjectType</a>* <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">itk::simple::detail::MemberFunctionFactory</a>&lt; TMemberFunctionPointer &gt;::m_ObjectPointer</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkMemberFunctionFactory_8h_source.html#l00177">177</a> of file <a class="el" href="sitkMemberFunctionFactory_8h_source.html">sitkMemberFunctionFactory.h</a>.</p>
 
 </div>
 </div>

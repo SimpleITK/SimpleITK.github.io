@@ -121,6 +121,8 @@ $(function(){ initResizable(false); });
 <p>Since this filter produces an image which is a different size than its input, it needs to override several of the methods defined in <a class="el" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject.">ProcessObject</a> in order to properly manage the pipeline execution model. In particular, this filter overrides <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#ade67a54c973bfaf739184c906da7c77a">ProcessObject::GenerateInputRequestedRegion()</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#abe61fb6b7de8c443e7af1561bd722736">ProcessObject::GenerateOutputInformation()</a> .</p>
 <p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section warning"><dt>Warning</dt><dd>For multithreading, the TransformPoint method of the user-designated coordinate transform must be threadsafe.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ResampleImageFilter.html">itk::ResampleImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cs-example.html#_a8">DemonsRegistration2/DemonsRegistration2.cs</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkResampleImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkResampleImageFilter_8h_source.html">sitkResampleImageFilter.h</a>.</p>
 </div><table class="memberdecls">

@@ -111,7 +111,7 @@ $(function(){ initResizable(false); });
 <div class="line">## [ruby director command]</div>
 <div class="line">class MyCommand &lt; Simpleitk::Command</div>
 <div class="line">  def initialize(po)</div>
-<div class="line">    # Explicit call to supoer class initlaizer is required to</div>
+<div class="line">    # Explicit call to super class initializer is required to</div>
 <div class="line">    # initialize the SWIG director class to enable overloaded methods</div>
 <div class="line">    super()</div>
 <div class="line">    @po = po</div>
@@ -135,7 +135,7 @@ $(function(){ initResizable(false); });
 <div class="line">gaussian.set_variance ARGV[1].to_f</div>
 <div class="line"> </div>
 <div class="line"># create a new MyCommand class, the references between the objects is</div>
-<div class="line"># automatically taked care of. The connection will automatically be</div>
+<div class="line"># automatically taken care of. The connection will automatically be</div>
 <div class="line"># removed when either object is deleted.</div>
 <div class="line">cmd = MyCommand.new gaussian</div>
 <div class="line">gaussian.add_command Simpleitk::SitkProgressEvent, cmd</div>

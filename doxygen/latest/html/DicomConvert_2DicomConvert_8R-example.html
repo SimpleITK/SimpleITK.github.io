@@ -139,17 +139,10 @@ $(function(){ initResizable(false); });
 <div class="line">                      image$GetOrigin(), new_spacing, image$GetDirection(),0,</div>
 <div class="line">                      image$GetPixelID())</div>
 <div class="line">  }</div>
-<div class="line">  # If a single channel image, rescale to [0,255]. Also modify the intensity values based</div>
-<div class="line">  # on the photomertic interpretation. If MONOCHROME2 (minimum should be displayed as black) we</div>
-<div class="line">  # don&#39;t need to do anything, if image has MONOCRHOME1 (minimum should be displayed as white) we flip</div>
-<div class="line">  # the intensities. This is a constraint imposed by ITK which always assumes MONOCHROME2.</div>
+<div class="line">  # If a single channel image, rescale to [0,255] and cast to UInt8.</div>
 <div class="line">  if(image$GetNumberOfComponentsPerPixel() == 1)</div>
 <div class="line">  {</div>
 <div class="line">    image &lt;- RescaleIntensity(image, 0, 255)</div>
-<div class="line">    if(trimws(image_file_reader$GetMetaData(&#39;0028|0004&#39;)) == &#39;MONOCHROME1&#39;)</div>
-<div class="line">    {</div>
-<div class="line">      image &lt;-  InvertIntensity(image, maximum=255)</div>
-<div class="line">    }</div>
 <div class="line">    image &lt;- Cast(image, &#39;sitkUInt8&#39;)</div>
 <div class="line">  }</div>
 <div class="line">  WriteImage(image, output_file_name)</div>
