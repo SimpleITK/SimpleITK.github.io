@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1IsolatedWatershedImageFilter-members.html">List of all members</a>  </div>
@@ -119,7 +120,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1IsolatedWatershedImageFilter.html">itk::IsolatedWatershedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -229,12 +230,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aae714327d35d20061f2ea9107ed10cdf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aae714327d35d20061f2ea9107ed10cdf">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:aae714327d35d20061f2ea9107ed10cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a393b203c0ed6bf6c19f9f65c86d48c91" id="r_a393b203c0ed6bf6c19f9f65c86d48c91"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1e0440b85b15777ef15288cb424ec773">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a393b203c0ed6bf6c19f9f65c86d48c91">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a393b203c0ed6bf6c19f9f65c86d48c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a64cb222dbd05cb441176bf832599e509" id="r_a64cb222dbd05cb441176bf832599e509"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64cb222dbd05cb441176bf832599e509">m_IsolatedValueTolerance</a> { 0.001 }</td></tr>
 <tr class="separator:a64cb222dbd05cb441176bf832599e509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2490e5ac89dab3eef5b62ea76fbca103" id="r_a2490e5ac89dab3eef5b62ea76fbca103"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1e0440b85b15777ef15288cb424ec773">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2490e5ac89dab3eef5b62ea76fbca103">m_MemberFactory</a></td></tr>
-<tr class="separator:a2490e5ac89dab3eef5b62ea76fbca103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b498898b32cfb218ce88b328c504ab9" id="r_a8b498898b32cfb218ce88b328c504ab9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b498898b32cfb218ce88b328c504ab9">m_ReplaceValue1</a> { 1u }</td></tr>
 <tr class="separator:a8b498898b32cfb218ce88b328c504ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae284ca8783490d40e954d7e8bfaf0f9c" id="r_ae284ca8783490d40e954d7e8bfaf0f9c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae284ca8783490d40e954d7e8bfaf0f9c">m_ReplaceValue2</a> { 2u }</td></tr>
@@ -373,7 +377,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +394,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -406,7 +410,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -499,7 +503,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00163">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00164">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -527,9 +531,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the precision required for the intensity threshold value. The default is .001. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00175">m_IsolatedValueTolerance</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00176">m_IsolatedValueTolerance</a>.</p>
+
+</div>
+</div>
+<a id="a393b203c0ed6bf6c19f9f65c86d48c91" name="a393b203c0ed6bf6c19f9f65c86d48c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a393b203c0ed6bf6c19f9f65c86d48c91">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1e0440b85b15777ef15288cb424ec773">MemberFunctionType</a> &gt; &amp; itk::simple::IsolatedWatershedImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -559,7 +588,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -587,9 +616,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace Seed1(Seed2) pixels, pixels that are within the basin that contains Seed1(Seed2) this value. The default is 1(0). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00177">m_ReplaceValue1</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00178">m_ReplaceValue1</a>.</p>
 
 </div>
 </div>
@@ -617,9 +646,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace Seed1(Seed2) pixels, pixels that are within the basin that contains Seed1(Seed2) this value. The default is 1(0). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00179">m_ReplaceValue2</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00180">m_ReplaceValue2</a>.</p>
 
 </div>
 </div>
@@ -647,9 +676,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set seed point 1. This seed will be isolated from Seed2 (if possible). All pixels connected to this seed will be replaced with ReplaceValue1. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00167">m_Seed1</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00168">m_Seed1</a>.</p>
 
 </div>
 </div>
@@ -677,9 +706,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set seed point 2. This seed will be isolated from Seed1 (if possible). All pixels connected to this seed will be replaced with ReplaceValue2. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00169">m_Seed2</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00170">m_Seed2</a>.</p>
 
 </div>
 </div>
@@ -707,9 +736,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Watershed threshold. The default is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00171">m_Threshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00172">m_Threshold</a>.</p>
 
 </div>
 </div>
@@ -737,9 +766,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the limit on the upper waterlevel value. The default is 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00173">m_UpperValueLimit</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00174">m_UpperValueLimit</a>.</p>
 
 </div>
 </div>
@@ -767,9 +796,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the precision required for the intensity threshold value. The default is .001. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00175">m_IsolatedValueTolerance</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00176">m_IsolatedValueTolerance</a>.</p>
 
 </div>
 </div>
@@ -797,9 +826,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace Seed1(Seed2) pixels, pixels that are within the basin that contains Seed1(Seed2) this value. The default is 1(0). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00177">m_ReplaceValue1</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00178">m_ReplaceValue1</a>.</p>
 
 </div>
 </div>
@@ -827,9 +856,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace Seed1(Seed2) pixels, pixels that are within the basin that contains Seed1(Seed2) this value. The default is 1(0). </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00179">m_ReplaceValue2</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00180">m_ReplaceValue2</a>.</p>
 
 </div>
 </div>
@@ -857,9 +886,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set seed point 1. This seed will be isolated from Seed2 (if possible). All pixels connected to this seed will be replaced with ReplaceValue1. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00167">m_Seed1</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00168">m_Seed1</a>.</p>
 
 </div>
 </div>
@@ -887,9 +916,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set seed point 2. This seed will be isolated from Seed1 (if possible). All pixels connected to this seed will be replaced with ReplaceValue2. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00169">m_Seed2</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00170">m_Seed2</a>.</p>
 
 </div>
 </div>
@@ -917,9 +946,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Watershed threshold. The default is 0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00171">m_Threshold</a>, and <a class="el" href="namespaceitk_1_1simple.html#a4441b751c680531cd91dc7eb329573e1">itk::simple::Threshold()</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00172">m_Threshold</a>, and <a class="el" href="namespaceitk_1_1simple.html#a4441b751c680531cd91dc7eb329573e1">itk::simple::Threshold()</a>.</p>
 
 </div>
 </div>
@@ -947,9 +976,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the limit on the upper waterlevel value. The default is 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00173">m_UpperValueLimit</a>.</p>
+<p class="reference">References <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00174">m_UpperValueLimit</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1031,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#aae714327d35d20061f2ea9107ed10cdf">ExecuteInternal()</a>.</p>
 
@@ -1029,33 +1058,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00121">GetIsolatedValueTolerance()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00115">SetIsolatedValueTolerance()</a>.</p>
-
-</div>
-</div>
-<a id="a2490e5ac89dab3eef5b62ea76fbca103" name="a2490e5ac89dab3eef5b62ea76fbca103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2490e5ac89dab3eef5b62ea76fbca103">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a1e0440b85b15777ef15288cb424ec773">MemberFunctionType</a>&gt; &gt; itk::simple::IsolatedWatershedImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00122">GetIsolatedValueTolerance()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00116">SetIsolatedValueTolerance()</a>.</p>
 
 </div>
 </div>
@@ -1079,9 +1084,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00133">GetReplaceValue1()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00127">SetReplaceValue1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00134">GetReplaceValue1()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00128">SetReplaceValue1()</a>.</p>
 
 </div>
 </div>
@@ -1105,9 +1110,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00145">GetReplaceValue2()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00139">SetReplaceValue2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00146">GetReplaceValue2()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00140">SetReplaceValue2()</a>.</p>
 
 </div>
 </div>
@@ -1131,9 +1136,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00073">GetSeed1()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00067">SetSeed1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00074">GetSeed1()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00068">SetSeed1()</a>.</p>
 
 </div>
 </div>
@@ -1157,9 +1162,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00085">GetSeed2()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00079">SetSeed2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00086">GetSeed2()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00080">SetSeed2()</a>.</p>
 
 </div>
 </div>
@@ -1183,9 +1188,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00097">GetThreshold()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00091">SetThreshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00098">GetThreshold()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00092">SetThreshold()</a>.</p>
 
 </div>
 </div>
@@ -1209,9 +1214,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html">sitkIsolatedWatershedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00109">GetUpperValueLimit()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00103">SetUpperValueLimit()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00110">GetUpperValueLimit()</a>, and <a class="el" href="sitkIsolatedWatershedImageFilter_8h_source.html#l00104">SetUpperValueLimit()</a>.</p>
 
 </div>
 </div>

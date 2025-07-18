@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1BinaryMedianImageFilter-members.html">List of all members</a>  </div>
@@ -129,7 +130,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryMedianImageFilter.html">itk::BinaryMedianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -225,14 +226,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a0da93dffafe06cfb30fb7f570d38cbc7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0da93dffafe06cfb30fb7f570d38cbc7">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a0da93dffafe06cfb30fb7f570d38cbc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a0e7c8415481b9ddc56db8a0d106ec429" id="r_a0e7c8415481b9ddc56db8a0d106ec429"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a0e8a944699f1854bd248dc33f1282b61">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e7c8415481b9ddc56db8a0d106ec429">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a0e7c8415481b9ddc56db8a0d106ec429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a751baa1d674ed3bd7d620ed5ad544396" id="r_a751baa1d674ed3bd7d620ed5ad544396"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a751baa1d674ed3bd7d620ed5ad544396">m_BackgroundValue</a> { 0.0 }</td></tr>
 <tr class="separator:a751baa1d674ed3bd7d620ed5ad544396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47102e017c81f58f30b191f99d3cb9ad" id="r_a47102e017c81f58f30b191f99d3cb9ad"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47102e017c81f58f30b191f99d3cb9ad">m_ForegroundValue</a> { 1.0 }</td></tr>
 <tr class="separator:a47102e017c81f58f30b191f99d3cb9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ead950970ee17e068b906c186fd5a99" id="r_a0ead950970ee17e068b906c186fd5a99"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a0e8a944699f1854bd248dc33f1282b61">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ead950970ee17e068b906c186fd5a99">m_MemberFactory</a></td></tr>
-<tr class="separator:a0ead950970ee17e068b906c186fd5a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb3c329b79ac54131a66c9b9b8ded6ab" id="r_afb3c329b79ac54131a66c9b9b8ded6ab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb3c329b79ac54131a66c9b9b8ded6ab">m_Radius</a> { std::vector&lt;unsigned int&gt;(3, 1) }</td></tr>
 <tr class="separator:afb3c329b79ac54131a66c9b9b8ded6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -361,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +491,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00134">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00135">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -515,9 +519,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the value associated with the Foreground (or the object) on the binary input image and the Background . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00142">m_BackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00143">m_BackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -545,9 +549,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the value associated with the Foreground (or the object) on the binary input image and the Background . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00140">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00141">m_ForegroundValue</a>.</p>
+
+</div>
+</div>
+<a id="a0e7c8415481b9ddc56db8a0d106ec429" name="a0e7c8415481b9ddc56db8a0d106ec429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e7c8415481b9ddc56db8a0d106ec429">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a0e8a944699f1854bd248dc33f1282b61">MemberFunctionType</a> &gt; &amp; itk::simple::BinaryMedianImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -577,7 +606,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -605,9 +634,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the radius of the neighborhood used to compute the median </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00138">m_Radius</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00139">m_Radius</a>.</p>
 
 </div>
 </div>
@@ -635,9 +664,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value associated with the Foreground (or the object) on the binary input image and the Background . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00142">m_BackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00143">m_BackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -665,9 +694,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value associated with the Foreground (or the object) on the binary input image and the Background . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00140">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00141">m_ForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -695,9 +724,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the radius of the neighborhood used to compute the median. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00138">m_Radius</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00139">m_Radius</a>.</p>
 
 </div>
 </div>
@@ -725,9 +754,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the Radius vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00138">m_Radius</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00139">m_Radius</a>.</p>
 
 </div>
 </div>
@@ -780,7 +809,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a0da93dffafe06cfb30fb7f570d38cbc7">ExecuteInternal()</a>.</p>
 
@@ -807,9 +836,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00116">GetBackgroundValue()</a>, and <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00110">SetBackgroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00117">GetBackgroundValue()</a>, and <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00111">SetBackgroundValue()</a>.</p>
 
 </div>
 </div>
@@ -833,33 +862,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00104">GetForegroundValue()</a>, and <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00098">SetForegroundValue()</a>.</p>
-
-</div>
-</div>
-<a id="a0ead950970ee17e068b906c186fd5a99" name="a0ead950970ee17e068b906c186fd5a99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ead950970ee17e068b906c186fd5a99">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a0e8a944699f1854bd248dc33f1282b61">MemberFunctionType</a>&gt; &gt; itk::simple::BinaryMedianImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00105">GetForegroundValue()</a>, and <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00099">SetForegroundValue()</a>.</p>
 
 </div>
 </div>
@@ -883,9 +888,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html">sitkBinaryMedianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00092">GetRadius()</a>, <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00082">SetRadius()</a>, and <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00087">SetRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00093">GetRadius()</a>, <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00083">SetRadius()</a>, and <a class="el" href="sitkBinaryMedianImageFilter_8h_source.html#l00088">SetRadius()</a>.</p>
 
 </div>
 </div>

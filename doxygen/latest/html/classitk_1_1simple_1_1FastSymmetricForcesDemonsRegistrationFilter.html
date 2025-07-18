@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1FastSymmetricForcesDemonsRegistrationFilter-members.html">List of all members</a>  </div>
@@ -132,7 +133,7 @@ $(function(){ initResizable(false); });
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cs-example.html#_a1">DemonsRegistration2/DemonsRegistration2.cs</a>, and <a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#_a1">DemonsRegistration2/DemonsRegistration2.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -301,10 +302,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a9d7791bc3b5a9ebadd523b32deb60703"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9d7791bc3b5a9ebadd523b32deb60703">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *fixedImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *movingImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *initialDisplacementField)</td></tr>
 <tr class="separator:a9d7791bc3b5a9ebadd523b32deb60703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ac5ec724d91bdb7cfb8c21c7e01044a04" id="r_ac5ec724d91bdb7cfb8c21c7e01044a04"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a4b2b85761b2a098ac4e35bb287ac9096">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5ec724d91bdb7cfb8c21c7e01044a04">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:ac5ec724d91bdb7cfb8c21c7e01044a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1a1130a8a89a54c11e2c4ff37ad3c68f" id="r_a1a1130a8a89a54c11e2c4ff37ad3c68f"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a1130a8a89a54c11e2c4ff37ad3c68f">m_Filter</a> {nullptr}</td></tr>
-<tr class="separator:a1a1130a8a89a54c11e2c4ff37ad3c68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22475941d5efd6ceaaab459b03c65b4" id="r_ab22475941d5efd6ceaaab459b03c65b4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a>, <a class="el" href="structitk_1_1simple_1_1ProcessObjectDeleter.html">ProcessObjectDeleter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab22475941d5efd6ceaaab459b03c65b4">m_Filter</a> {nullptr}</td></tr>
+<tr class="separator:ab22475941d5efd6ceaaab459b03c65b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec45998fed4c68f537b29ec62e772508" id="r_aec45998fed4c68f537b29ec62e772508"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec45998fed4c68f537b29ec62e772508">m_IntensityDifferenceThreshold</a> { 0.001 }</td></tr>
 <tr class="separator:aec45998fed4c68f537b29ec62e772508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00385e91bb8fa5b57de646e77d1440c2" id="r_a00385e91bb8fa5b57de646e77d1440c2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00385e91bb8fa5b57de646e77d1440c2">m_MaximumError</a> { 0.1 }</td></tr>
@@ -315,8 +321,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afba9aba89d698faaa59c9b01f6e08b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdfbe96a2049556f9d0ad769a3105da7" id="r_acdfbe96a2049556f9d0ad769a3105da7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdfbe96a2049556f9d0ad769a3105da7">m_MaximumUpdateStepLength</a> { 0.5 }</td></tr>
 <tr class="separator:acdfbe96a2049556f9d0ad769a3105da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab454383704861b22e93fbe594242b874" id="r_ab454383704861b22e93fbe594242b874"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a4b2b85761b2a098ac4e35bb287ac9096">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab454383704861b22e93fbe594242b874">m_MemberFactory</a></td></tr>
-<tr class="separator:ab454383704861b22e93fbe594242b874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a4f7f97b45ada5313c07e113ef6d792" id="r_a1a4f7f97b45ada5313c07e113ef6d792"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a4f7f97b45ada5313c07e113ef6d792">m_NumberOfIterations</a> { 10u }</td></tr>
 <tr class="separator:a1a4f7f97b45ada5313c07e113ef6d792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2be0186244c16809e012c9990e105dd8" id="r_a2be0186244c16809e012c9990e105dd8"><td class="memItemLeft" align="right" valign="top">std::function&lt; uint32_t()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2be0186244c16809e012c9990e105dd8">m_pfGetElapsedIterations</a></td></tr>
@@ -467,11 +471,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">    fixedImage, <span class="keyword">const</span> <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> *</div>
 <div class="line">    movingImage, <span class="keyword">const</span> <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> *</div>
 <div class="line">    initialDisplacementField)</div>
-<div class="ttc" id="aclassitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter_html_ad2c554f9e00e403e1de2d5840e208d54"><div class="ttname"><a href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter.html#ad2c554f9e00e403e1de2d5840e208d54">itk::simple::BinaryReconstructionByDilationImageFilter::Self</a></div><div class="ttdeci">BinaryReconstructionByDilationImageFilter Self</div><div class="ttdef"><b>Definition</b> <a href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00058">sitkBinaryReconstructionByDilationImageFilter.h:58</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter_html_ad2c554f9e00e403e1de2d5840e208d54"><div class="ttname"><a href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter.html#ad2c554f9e00e403e1de2d5840e208d54">itk::simple::BinaryReconstructionByDilationImageFilter::Self</a></div><div class="ttdeci">BinaryReconstructionByDilationImageFilter Self</div><div class="ttdef"><b>Definition</b> <a href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00059">sitkBinaryReconstructionByDilationImageFilter.h:59</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition</b> <a href="sitkImage_8h_source.html#l00076">sitkImage.h:77</a></div></div>
 </div><!-- fragment --><p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00295">295</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00296">296</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -488,7 +492,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +508,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -527,7 +531,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a54b8db5764e8f57b9126d26828f07ed0af6448978faa4468d8753848147994b25" name="a54b8db5764e8f57b9126d26828f07ed0af6448978faa4468d8753848147994b25"></a>MappedMoving&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -661,7 +665,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00303">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00304">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -693,9 +697,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cs-example.html#a2">DemonsRegistration2/DemonsRegistration2.cs</a>, and <a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#a20">DemonsRegistration2/DemonsRegistration2.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00254">254</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00255">255</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00335">m_pfGetElapsedIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00336">m_pfGetElapsedIterations</a>.</p>
 
 </div>
 </div>
@@ -722,9 +726,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00229">229</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00230">230</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00329">m_IntensityDifferenceThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00330">m_IntensityDifferenceThreshold</a>.</p>
 
 </div>
 </div>
@@ -752,9 +756,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the desired maximum error of the Guassian kernel approximate. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00218">218</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00219">219</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00327">m_MaximumError</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00328">m_MaximumError</a>.</p>
 
 </div>
 </div>
@@ -782,9 +786,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the desired limits of the Gaussian kernel width. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00206">206</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00207">207</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00325">m_MaximumKernelWidth</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00326">m_MaximumKernelWidth</a>.</p>
 
 </div>
 </div>
@@ -811,9 +815,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00313">m_MaximumRMSError</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00314">m_MaximumRMSError</a>.</p>
 
 </div>
 </div>
@@ -840,9 +844,34 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00317">m_MaximumUpdateStepLength</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00318">m_MaximumUpdateStepLength</a>.</p>
+
+</div>
+</div>
+<a id="ac5ec724d91bdb7cfb8c21c7e01044a04" name="ac5ec724d91bdb7cfb8c21c7e01044a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ec724d91bdb7cfb8c21c7e01044a04">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a4b2b85761b2a098ac4e35bb287ac9096">MemberFunctionType</a> &gt; &amp; itk::simple::FastSymmetricForcesDemonsRegistrationFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -873,9 +902,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cs-example.html#a3">DemonsRegistration2/DemonsRegistration2.cs</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00271">271</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00272">272</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00337">m_pfGetMetric</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00338">m_pfGetMetric</a>.</p>
 
 </div>
 </div>
@@ -905,7 +934,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00282">282</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00283">283</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -932,9 +961,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00310">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00311">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -965,9 +994,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#a21">DemonsRegistration2/DemonsRegistration2.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00262">262</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00263">263</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00336">m_RMSChange</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00337">m_RMSChange</a>.</p>
 
 </div>
 </div>
@@ -995,9 +1024,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the displacement field is smoothed (regularized). Smoothing the displacement yields a solution elastic in nature. If SmoothDisplacementField is on, then the displacement field is smoothed with a Gaussian whose standard deviations are specified with <a class="el" href="#a4390967c43dad4a974f78ecb415571f7">SetStandardDeviations()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00319">m_SmoothDisplacementField</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00320">m_SmoothDisplacementField</a>.</p>
 
 </div>
 </div>
@@ -1025,9 +1054,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the update field is smoothed (regularized). Smoothing the update field yields a solution viscous in nature. If SmoothUpdateField is on, then the update field is smoothed with a Gaussian whose standard deviations are specified with <a class="el" href="#a68fc4cf8bf575514e06473914b58a305">SetUpdateFieldStandardDeviations()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00321">m_SmoothUpdateField</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00322">m_SmoothUpdateField</a>.</p>
 
 </div>
 </div>
@@ -1055,9 +1084,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Gaussian smoothing standard deviations for the displacement field. The values are set with respect to pixel coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00307">m_StandardDeviations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00308">m_StandardDeviations</a>.</p>
 
 </div>
 </div>
@@ -1085,9 +1114,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the Gaussian smoothing standard deviations for the update field. The values are set with respect to pixel coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00323">m_UpdateFieldStandardDeviations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00324">m_UpdateFieldStandardDeviations</a>.</p>
 
 </div>
 </div>
@@ -1114,9 +1143,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00315">m_UseGradientType</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00316">m_UseGradientType</a>.</p>
 
 </div>
 </div>
@@ -1143,9 +1172,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00245">245</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00246">246</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00331">m_UseImageSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00332">m_UseImageSpacing</a>.</p>
 
 </div>
 </div>
@@ -1173,9 +1202,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the threshold below which the absolute difference of intensity yields a match. When the intensities match between a moving and fixed image pixel, the update vector (for that iteration) will be the zero vector. Default is 0.001. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00224">224</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00225">225</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00329">m_IntensityDifferenceThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00330">m_IntensityDifferenceThreshold</a>.</p>
 
 </div>
 </div>
@@ -1203,9 +1232,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the desired maximum error of the Guassian kernel approximate. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00212">212</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00213">213</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00327">m_MaximumError</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00328">m_MaximumError</a>.</p>
 
 </div>
 </div>
@@ -1233,9 +1262,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the desired limits of the Gaussian kernel width. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00325">m_MaximumKernelWidth</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00326">m_MaximumKernelWidth</a>.</p>
 
 </div>
 </div>
@@ -1262,9 +1291,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00313">m_MaximumRMSError</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00314">m_MaximumRMSError</a>.</p>
 
 </div>
 </div>
@@ -1292,9 +1321,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the maximum update step length. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00317">m_MaximumUpdateStepLength</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00318">m_MaximumUpdateStepLength</a>.</p>
 
 </div>
 </div>
@@ -1323,9 +1352,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#a12">DemonsRegistration2/DemonsRegistration2.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00310">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00311">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -1353,11 +1382,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the displacement field is smoothed (regularized). Smoothing the displacement yields a solution elastic in nature. If SmoothDisplacementField is on, then the displacement field is smoothed with a Gaussian whose standard deviations are specified with <a class="el" href="#a4390967c43dad4a974f78ecb415571f7">SetStandardDeviations()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00319">m_SmoothDisplacementField</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00320">m_SmoothDisplacementField</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00155">SmoothDisplacementFieldOff()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00153">SmoothDisplacementFieldOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00156">SmoothDisplacementFieldOff()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00154">SmoothDisplacementFieldOn()</a>.</p>
 
 </div>
 </div>
@@ -1385,11 +1414,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the update field is smoothed (regularized). Smoothing the update field yields a solution viscous in nature. If SmoothUpdateField is on, then the update field is smoothed with a Gaussian whose standard deviations are specified with <a class="el" href="#a68fc4cf8bf575514e06473914b58a305">SetUpdateFieldStandardDeviations()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00321">m_SmoothUpdateField</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00322">m_SmoothUpdateField</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00173">SmoothUpdateFieldOff()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00171">SmoothUpdateFieldOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00174">SmoothUpdateFieldOff()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00172">SmoothUpdateFieldOn()</a>.</p>
 
 </div>
 </div>
@@ -1417,9 +1446,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the StandardDeviations vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00307">m_StandardDeviations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00308">m_StandardDeviations</a>.</p>
 
 </div>
 </div>
@@ -1449,9 +1478,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DemonsRegistration2_2DemonsRegistration2_8cxx-example.html#a13">DemonsRegistration2/DemonsRegistration2.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00307">m_StandardDeviations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00308">m_StandardDeviations</a>.</p>
 
 </div>
 </div>
@@ -1479,9 +1508,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the UpdateFieldStandardDeviations vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00323">m_UpdateFieldStandardDeviations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00324">m_UpdateFieldStandardDeviations</a>.</p>
 
 </div>
 </div>
@@ -1509,9 +1538,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the Gaussian smoothing standard deviations for the update field. The values are set with respect to pixel coordinates. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00185">185</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00323">m_UpdateFieldStandardDeviations</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00324">m_UpdateFieldStandardDeviations</a>.</p>
 
 </div>
 </div>
@@ -1538,9 +1567,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00315">m_UseGradientType</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00316">m_UseGradientType</a>.</p>
 
 </div>
 </div>
@@ -1567,11 +1596,11 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00234">234</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00235">235</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00331">m_UseImageSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00332">m_UseImageSpacing</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00241">UseImageSpacingOff()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00239">UseImageSpacingOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00242">UseImageSpacingOff()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00240">UseImageSpacingOn()</a>.</p>
 
 </div>
 </div>
@@ -1598,9 +1627,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00148">SetSmoothDisplacementField()</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00149">SetSmoothDisplacementField()</a>.</p>
 
 </div>
 </div>
@@ -1628,9 +1657,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of SmoothDisplacementField to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00148">SetSmoothDisplacementField()</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00149">SetSmoothDisplacementField()</a>.</p>
 
 </div>
 </div>
@@ -1657,9 +1686,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00166">SetSmoothUpdateField()</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00167">SetSmoothUpdateField()</a>.</p>
 
 </div>
 </div>
@@ -1687,9 +1716,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of SmoothUpdateField to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00166">SetSmoothUpdateField()</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00167">SetSmoothUpdateField()</a>.</p>
 
 </div>
 </div>
@@ -1719,9 +1748,9 @@ template&lt;class TImageType&gt; </div>
 <p>Stop the registration after the current iteration. </p>
 <p>This is an active measurement. It may be accessed while the filter is being executing in command call-backs and can be accessed after execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00279">279</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00280">280</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00338">m_pfGetStopRegistration</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00339">m_pfGetStopRegistration</a>.</p>
 
 </div>
 </div>
@@ -1776,9 +1805,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00241">241</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00242">242</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00234">SetUseImageSpacing()</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00235">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -1806,9 +1835,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of UseImageSpacing to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00239">239</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00240">240</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00234">SetUseImageSpacing()</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00235">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -1833,15 +1862,15 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00299">299</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00300">300</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a9d7791bc3b5a9ebadd523b32deb60703">ExecuteInternal()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a1a1130a8a89a54c11e2c4ff37ad3c68f" name="a1a1130a8a89a54c11e2c4ff37ad3c68f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a1130a8a89a54c11e2c4ff37ad3c68f">&#9670;&#160;</a></span>m_Filter</h2>
+<a id="ab22475941d5efd6ceaaab459b03c65b4" name="ab22475941d5efd6ceaaab459b03c65b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab22475941d5efd6ceaaab459b03c65b4">&#9670;&#160;</a></span>m_Filter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1850,7 +1879,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a>* itk::simple::FastSymmetricForcesDemonsRegistrationFilter::m_Filter {nullptr}</td>
+          <td class="memname">std::unique_ptr&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a>, <a class="el" href="structitk_1_1simple_1_1ProcessObjectDeleter.html">ProcessObjectDeleter</a>&gt; itk::simple::FastSymmetricForcesDemonsRegistrationFilter::m_Filter {nullptr}</td>
         </tr>
       </table>
   </td>
@@ -1860,7 +1889,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00341">341</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00343">343</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1884,9 +1913,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00329">329</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00330">330</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00229">GetIntensityDifferenceThreshold()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00224">SetIntensityDifferenceThreshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00230">GetIntensityDifferenceThreshold()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00225">SetIntensityDifferenceThreshold()</a>.</p>
 
 </div>
 </div>
@@ -1910,9 +1939,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00327">327</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00328">328</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00218">GetMaximumError()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00212">SetMaximumError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00219">GetMaximumError()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00213">SetMaximumError()</a>.</p>
 
 </div>
 </div>
@@ -1936,9 +1965,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00325">325</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00326">326</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00206">GetMaximumKernelWidth()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00200">SetMaximumKernelWidth()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00207">GetMaximumKernelWidth()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00201">SetMaximumKernelWidth()</a>.</p>
 
 </div>
 </div>
@@ -1962,9 +1991,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00313">313</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00314">314</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00120">GetMaximumRMSError()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00115">SetMaximumRMSError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00121">GetMaximumRMSError()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00116">SetMaximumRMSError()</a>.</p>
 
 </div>
 </div>
@@ -1988,33 +2017,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00317">317</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00318">318</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00142">GetMaximumUpdateStepLength()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00137">SetMaximumUpdateStepLength()</a>.</p>
-
-</div>
-</div>
-<a id="ab454383704861b22e93fbe594242b874" name="ab454383704861b22e93fbe594242b874"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab454383704861b22e93fbe594242b874">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a4b2b85761b2a098ac4e35bb287ac9096">MemberFunctionType</a>&gt; &gt; itk::simple::FastSymmetricForcesDemonsRegistrationFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00304">304</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00143">GetMaximumUpdateStepLength()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00138">SetMaximumUpdateStepLength()</a>.</p>
 
 </div>
 </div>
@@ -2038,9 +2043,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00310">310</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00311">311</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00110">GetNumberOfIterations()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00105">SetNumberOfIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00111">GetNumberOfIterations()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00106">SetNumberOfIterations()</a>.</p>
 
 </div>
 </div>
@@ -2064,9 +2069,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00335">335</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00336">336</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00254">GetElapsedIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00255">GetElapsedIterations()</a>.</p>
 
 </div>
 </div>
@@ -2090,9 +2095,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00337">337</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00338">338</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00271">GetMetric()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00272">GetMetric()</a>.</p>
 
 </div>
 </div>
@@ -2116,9 +2121,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00338">338</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00339">339</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00279">StopRegistration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00280">StopRegistration()</a>.</p>
 
 </div>
 </div>
@@ -2142,9 +2147,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00336">336</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00337">337</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00262">GetRMSChange()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00263">GetRMSChange()</a>.</p>
 
 </div>
 </div>
@@ -2168,9 +2173,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00319">319</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00320">320</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00160">GetSmoothDisplacementField()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00148">SetSmoothDisplacementField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00161">GetSmoothDisplacementField()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00149">SetSmoothDisplacementField()</a>.</p>
 
 </div>
 </div>
@@ -2194,9 +2199,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00321">321</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00322">322</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00178">GetSmoothUpdateField()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00166">SetSmoothUpdateField()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00179">GetSmoothUpdateField()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00167">SetSmoothUpdateField()</a>.</p>
 
 </div>
 </div>
@@ -2220,9 +2225,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00307">307</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00308">308</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00100">GetStandardDeviations()</a>, <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00095">SetStandardDeviations()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00090">SetStandardDeviations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00101">GetStandardDeviations()</a>, <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00096">SetStandardDeviations()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00091">SetStandardDeviations()</a>.</p>
 
 </div>
 </div>
@@ -2246,9 +2251,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00323">323</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00324">324</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00194">GetUpdateFieldStandardDeviations()</a>, <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00189">SetUpdateFieldStandardDeviations()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00184">SetUpdateFieldStandardDeviations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00195">GetUpdateFieldStandardDeviations()</a>, <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00190">SetUpdateFieldStandardDeviations()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00185">SetUpdateFieldStandardDeviations()</a>.</p>
 
 </div>
 </div>
@@ -2272,9 +2277,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00315">315</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00316">316</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00131">GetUseGradientType()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00126">SetUseGradientType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00132">GetUseGradientType()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00127">SetUseGradientType()</a>.</p>
 
 </div>
 </div>
@@ -2298,9 +2303,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00331">331</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00332">332</a> of file <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html">sitkFastSymmetricForcesDemonsRegistrationFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00245">GetUseImageSpacing()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00234">SetUseImageSpacing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00246">GetUseImageSpacing()</a>, and <a class="el" href="sitkFastSymmetricForcesDemonsRegistrationFilter_8h_source.html#l00235">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>

@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1FastMarchingBaseImageFilter-members.html">List of all members</a>  </div>
@@ -152,7 +153,7 @@ ImageFastMarchingTraits2</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingImageFilterBase.html">itk::FastMarchingImageFilterBase</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -270,12 +271,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a57fc57ffc02b831f48112d83de021460"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a57fc57ffc02b831f48112d83de021460">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a57fc57ffc02b831f48112d83de021460"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a85ef630b48b3dbe6c79be258a45dc09f" id="r_a85ef630b48b3dbe6c79be258a45dc09f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aa82b4dc5c9b27042f69599b307fbdc3c">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85ef630b48b3dbe6c79be258a45dc09f">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a85ef630b48b3dbe6c79be258a45dc09f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a4811db8fa0686db62b3537c02391853e" id="r_a4811db8fa0686db62b3537c02391853e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4811db8fa0686db62b3537c02391853e">m_InitialTrialValues</a> { std::vector&lt;double&gt;() }</td></tr>
 <tr class="separator:a4811db8fa0686db62b3537c02391853e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8ed4d5fe6bde34fa2a3d3f5330d7584" id="r_af8ed4d5fe6bde34fa2a3d3f5330d7584"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aa82b4dc5c9b27042f69599b307fbdc3c">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8ed4d5fe6bde34fa2a3d3f5330d7584">m_MemberFactory</a></td></tr>
-<tr class="separator:af8ed4d5fe6bde34fa2a3d3f5330d7584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addbcf2d9e68dc1797716d8a3a64a6201" id="r_addbcf2d9e68dc1797716d8a3a64a6201"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addbcf2d9e68dc1797716d8a3a64a6201">m_NormalizationFactor</a> { 1.0 }</td></tr>
 <tr class="separator:addbcf2d9e68dc1797716d8a3a64a6201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a731dc06dfe587a3b76cc8d351c05f854" id="r_a731dc06dfe587a3b76cc8d351c05f854"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a731dc06dfe587a3b76cc8d351c05f854">m_StoppingValue</a> { std::numeric_limits&lt;float&gt;::max()/2.0 }</td></tr>
@@ -410,7 +414,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -427,7 +431,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -443,7 +447,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -465,7 +469,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a83cd698e35155e5ad06eaf0656a2225fa9f6e3b9a48793b5863785efe9787372d" name="a83cd698e35155e5ad06eaf0656a2225fa9f6e3b9a48793b5863785efe9787372d"></a>Strict&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -540,9 +544,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add TrialPoints point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00197">m_TrialPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00198">m_TrialPoints</a>.</p>
 
 </div>
 </div>
@@ -571,9 +575,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all TrialPoints points. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00197">m_TrialPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00198">m_TrialPoints</a>.</p>
 
 </div>
 </div>
@@ -620,7 +624,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00193">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00194">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -647,9 +651,34 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00205">m_InitialTrialValues</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00206">m_InitialTrialValues</a>.</p>
+
+</div>
+</div>
+<a id="a85ef630b48b3dbe6c79be258a45dc09f" name="a85ef630b48b3dbe6c79be258a45dc09f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85ef630b48b3dbe6c79be258a45dc09f">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aa82b4dc5c9b27042f69599b307fbdc3c">MemberFunctionType</a> &gt; &amp; itk::simple::FastMarchingBaseImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -679,7 +708,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -707,9 +736,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Normalization Factor for the Speed <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> . The values in the Speed <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> is divided by this factor. This allows the use of images with integer pixel types to represent the speed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00199">m_NormalizationFactor</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00200">m_NormalizationFactor</a>.</p>
 
 </div>
 </div>
@@ -737,9 +766,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the Fast Marching algorithm Stopping Value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00201">m_StoppingValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00202">m_StoppingValue</a>.</p>
 
 </div>
 </div>
@@ -766,9 +795,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00203">m_TopologyCheck</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00204">m_TopologyCheck</a>.</p>
 
 </div>
 </div>
@@ -796,9 +825,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the container of Trial Points representing the initial front. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00197">m_TrialPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00198">m_TrialPoints</a>.</p>
 
 </div>
 </div>
@@ -827,9 +856,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>Set the initial seed values for corresponding trial point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00205">m_InitialTrialValues</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00206">m_InitialTrialValues</a>.</p>
 
 </div>
 </div>
@@ -857,9 +886,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Normalization Factor for the Speed <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> . The values in the Speed <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> is divided by this factor. This allows the use of images with integer pixel types to represent the speed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00199">m_NormalizationFactor</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00200">m_NormalizationFactor</a>.</p>
 
 </div>
 </div>
@@ -887,9 +916,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the Fast Marching algorithm Stopping Value. The Fast Marching algorithm is terminated when the value of the smallest trial point is greater than the stopping value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00201">m_StoppingValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00202">m_StoppingValue</a>.</p>
 
 </div>
 </div>
@@ -916,9 +945,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00203">m_TopologyCheck</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00204">m_TopologyCheck</a>.</p>
 
 </div>
 </div>
@@ -946,9 +975,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the container of Trial Points representing the initial front. Trial points are represented as a <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a365f3ead2b935a9a6f6a032eb859db36">VectorContainer</a> of LevelSetNodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00197">m_TrialPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00198">m_TrialPoints</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1030,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a57fc57ffc02b831f48112d83de021460">ExecuteInternal()</a>.</p>
 
@@ -1028,33 +1057,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00206">206</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00175">GetInitialTrialValues()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00170">SetInitialTrialValues()</a>.</p>
-
-</div>
-</div>
-<a id="af8ed4d5fe6bde34fa2a3d3f5330d7584" name="af8ed4d5fe6bde34fa2a3d3f5330d7584"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8ed4d5fe6bde34fa2a3d3f5330d7584">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aa82b4dc5c9b27042f69599b307fbdc3c">MemberFunctionType</a>&gt; &gt; itk::simple::FastMarchingBaseImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00176">GetInitialTrialValues()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00171">SetInitialTrialValues()</a>.</p>
 
 </div>
 </div>
@@ -1078,9 +1083,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00141">GetNormalizationFactor()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00135">SetNormalizationFactor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00142">GetNormalizationFactor()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00136">SetNormalizationFactor()</a>.</p>
 
 </div>
 </div>
@@ -1104,9 +1109,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00153">GetStoppingValue()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00147">SetStoppingValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00154">GetStoppingValue()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00148">SetStoppingValue()</a>.</p>
 
 </div>
 </div>
@@ -1130,9 +1135,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00164">GetTopologyCheck()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00159">SetTopologyCheck()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00165">GetTopologyCheck()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00160">SetTopologyCheck()</a>.</p>
 
 </div>
 </div>
@@ -1156,9 +1161,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html">sitkFastMarchingBaseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00126">AddTrialPoint()</a>, <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00129">ClearTrialPoints()</a>, <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00123">GetTrialPoints()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00117">SetTrialPoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00127">AddTrialPoint()</a>, <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00130">ClearTrialPoints()</a>, <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00124">GetTrialPoints()</a>, and <a class="el" href="sitkFastMarchingBaseImageFilter_8h_source.html#l00118">SetTrialPoints()</a>.</p>
 
 </div>
 </div>

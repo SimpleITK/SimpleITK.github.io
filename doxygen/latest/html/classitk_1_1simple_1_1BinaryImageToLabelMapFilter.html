@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1BinaryImageToLabelMapFilter-members.html">List of all members</a>  </div>
@@ -124,7 +125,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryImageToLabelMapFilter.html">itk::BinaryImageToLabelMapFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -224,14 +225,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a9d2522f239921a00b650010c0c9c61ba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9d2522f239921a00b650010c0c9c61ba">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a9d2522f239921a00b650010c0c9c61ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ad1ee7f502d3900e23398919bb732c81a" id="r_ad1ee7f502d3900e23398919bb732c81a"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab6c5b7c3c99ebe7296604e2fc858455e">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1ee7f502d3900e23398919bb732c81a">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:ad1ee7f502d3900e23398919bb732c81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a8125f11f9f0174612af52d04c58b2a5f" id="r_a8125f11f9f0174612af52d04c58b2a5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8125f11f9f0174612af52d04c58b2a5f">m_FullyConnected</a> { false }</td></tr>
 <tr class="separator:a8125f11f9f0174612af52d04c58b2a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29f7154c4e023d768fb561c581455fa6" id="r_a29f7154c4e023d768fb561c581455fa6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29f7154c4e023d768fb561c581455fa6">m_InputForegroundValue</a> { 1.0 }</td></tr>
 <tr class="separator:a29f7154c4e023d768fb561c581455fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d3ca31a832335e11d4d417df017b70" id="r_ad8d3ca31a832335e11d4d417df017b70"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab6c5b7c3c99ebe7296604e2fc858455e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8d3ca31a832335e11d4d417df017b70">m_MemberFactory</a></td></tr>
-<tr class="separator:ad8d3ca31a832335e11d4d417df017b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef20e7ee811dcb87a8994e3f697a94d0" id="r_aef20e7ee811dcb87a8994e3f697a94d0"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef20e7ee811dcb87a8994e3f697a94d0">m_NumberOfObjects</a> { 0 }</td></tr>
 <tr class="separator:aef20e7ee811dcb87a8994e3f697a94d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a861e7bbed475bd361d087ea578c89393" id="r_a861e7bbed475bd361d087ea578c89393"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a861e7bbed475bd361d087ea578c89393">m_OutputBackgroundValue</a> { 0.0 }</td></tr>
@@ -362,7 +366,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +383,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -488,7 +492,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00137">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00138">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -515,9 +519,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -545,9 +549,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -575,9 +579,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00141">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00142">m_FullyConnected</a>.</p>
 
 </div>
 </div>
@@ -605,9 +609,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value to be consider "foreground" in the input image. Defaults to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;InputPixelType&gt;::max()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00143">m_InputForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00144">m_InputForegroundValue</a>.</p>
+
+</div>
+</div>
+<a id="ad1ee7f502d3900e23398919bb732c81a" name="ad1ee7f502d3900e23398919bb732c81a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ee7f502d3900e23398919bb732c81a">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab6c5b7c3c99ebe7296604e2fc858455e">MemberFunctionType</a> &gt; &amp; itk::simple::BinaryImageToLabelMapFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -637,7 +666,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
 </div>
 </div>
@@ -665,9 +694,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00149">m_NumberOfObjects</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00150">m_NumberOfObjects</a>.</p>
 
 </div>
 </div>
@@ -695,9 +724,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used as "background" in the output image. Defaults to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;OutputPixelType&gt;::NonpositiveMin()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00145">m_OutputBackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00146">m_OutputBackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -725,11 +754,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00141">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00142">m_FullyConnected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00083">FullyConnectedOff()</a>, and <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00081">FullyConnectedOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00084">FullyConnectedOff()</a>, and <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00082">FullyConnectedOn()</a>.</p>
 
 </div>
 </div>
@@ -757,9 +786,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value to be consider "foreground" in the input image. Defaults to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;InputPixelType&gt;::max()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00143">m_InputForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00144">m_InputForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -787,9 +816,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used as "background" in the output image. Defaults to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;OutputPixelType&gt;::NonpositiveMin()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00145">m_OutputBackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00146">m_OutputBackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -842,7 +871,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a9d2522f239921a00b650010c0c9c61ba">ExecuteInternal()</a>.</p>
 
@@ -869,9 +898,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00088">GetFullyConnected()</a>, and <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00089">GetFullyConnected()</a>, and <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -895,33 +924,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00100">GetInputForegroundValue()</a>, and <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00094">SetInputForegroundValue()</a>.</p>
-
-</div>
-</div>
-<a id="ad8d3ca31a832335e11d4d417df017b70" name="ad8d3ca31a832335e11d4d417df017b70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8d3ca31a832335e11d4d417df017b70">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ab6c5b7c3c99ebe7296604e2fc858455e">MemberFunctionType</a>&gt; &gt; itk::simple::BinaryImageToLabelMapFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00101">GetInputForegroundValue()</a>, and <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00095">SetInputForegroundValue()</a>.</p>
 
 </div>
 </div>
@@ -945,9 +950,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00120">GetNumberOfObjects()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00121">GetNumberOfObjects()</a>.</p>
 
 </div>
 </div>
@@ -971,9 +976,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html">sitkBinaryImageToLabelMapFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00112">GetOutputBackgroundValue()</a>, and <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00106">SetOutputBackgroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00113">GetOutputBackgroundValue()</a>, and <a class="el" href="sitkBinaryImageToLabelMapFilter_8h_source.html#l00107">SetOutputBackgroundValue()</a>.</p>
 
 </div>
 </div>

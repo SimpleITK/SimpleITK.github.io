@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1ImportImageFilter-members.html">List of all members</a>  </div>
@@ -293,23 +294,26 @@ Private Types</h2></td></tr>
 <tr class="memitem:a0e2ac65186f1f393dd717c0207cbd2a0" id="r_a0e2ac65186f1f393dd717c0207cbd2a0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>(Self::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e2ac65186f1f393dd717c0207cbd2a0">MemberFunctionType</a>) ()</td></tr>
 <tr class="separator:a0e2ac65186f1f393dd717c0207cbd2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a9854e7bed2156b586501b1e523a571c4" id="r_a9854e7bed2156b586501b1e523a571c4"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a0e2ac65186f1f393dd717c0207cbd2a0">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9854e7bed2156b586501b1e523a571c4">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a9854e7bed2156b586501b1e523a571c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a0dff4b6e2dc32ac6089a65330c5cfb5c" id="r_a0dff4b6e2dc32ac6089a65330c5cfb5c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dff4b6e2dc32ac6089a65330c5cfb5c">m_Buffer</a></td></tr>
+<tr class="memitem:a0dff4b6e2dc32ac6089a65330c5cfb5c" id="r_a0dff4b6e2dc32ac6089a65330c5cfb5c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0dff4b6e2dc32ac6089a65330c5cfb5c">m_Buffer</a> { nullptr }</td></tr>
 <tr class="separator:a0dff4b6e2dc32ac6089a65330c5cfb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d23198d433e5619eab60b0f6b9d580d" id="r_a1d23198d433e5619eab60b0f6b9d580d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d23198d433e5619eab60b0f6b9d580d">m_Direction</a></td></tr>
 <tr class="separator:a1d23198d433e5619eab60b0f6b9d580d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12210a5768acf598d0a33cdc13857503" id="r_a12210a5768acf598d0a33cdc13857503"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a0e2ac65186f1f393dd717c0207cbd2a0">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12210a5768acf598d0a33cdc13857503">m_MemberFactory</a></td></tr>
-<tr class="separator:a12210a5768acf598d0a33cdc13857503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbd7fb4c56e4b3c11dc08a036509efec" id="r_acbd7fb4c56e4b3c11dc08a036509efec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbd7fb4c56e4b3c11dc08a036509efec">m_NumberOfComponentsPerPixel</a></td></tr>
+<tr class="memitem:acbd7fb4c56e4b3c11dc08a036509efec" id="r_acbd7fb4c56e4b3c11dc08a036509efec"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbd7fb4c56e4b3c11dc08a036509efec">m_NumberOfComponentsPerPixel</a> { 0 }</td></tr>
 <tr class="separator:acbd7fb4c56e4b3c11dc08a036509efec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a669f5f5e0fef040b0ea0697e1f2b4a0a" id="r_a669f5f5e0fef040b0ea0697e1f2b4a0a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a669f5f5e0fef040b0ea0697e1f2b4a0a">m_Origin</a></td></tr>
+<tr class="memitem:a669f5f5e0fef040b0ea0697e1f2b4a0a" id="r_a669f5f5e0fef040b0ea0697e1f2b4a0a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a669f5f5e0fef040b0ea0697e1f2b4a0a">m_Origin</a> { std::vector&lt;double&gt;(3, 0.0) }</td></tr>
 <tr class="separator:a669f5f5e0fef040b0ea0697e1f2b4a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c5514a47441997fbfdc3b95ec4504d4" id="r_a5c5514a47441997fbfdc3b95ec4504d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#aaf027344ec3011c3ac6fcfd77271bb75">PixelIDValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c5514a47441997fbfdc3b95ec4504d4">m_PixelIDValue</a></td></tr>
+<tr class="memitem:a5c5514a47441997fbfdc3b95ec4504d4" id="r_a5c5514a47441997fbfdc3b95ec4504d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#aaf027344ec3011c3ac6fcfd77271bb75">PixelIDValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c5514a47441997fbfdc3b95ec4504d4">m_PixelIDValue</a> { <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">sitkUnknown</a> }</td></tr>
 <tr class="separator:a5c5514a47441997fbfdc3b95ec4504d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9e42f9d428c7c36989a57a5852fc30b" id="r_aa9e42f9d428c7c36989a57a5852fc30b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9e42f9d428c7c36989a57a5852fc30b">m_Size</a></td></tr>
 <tr class="separator:aa9e42f9d428c7c36989a57a5852fc30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25c7ad87ae485987582a9a146e6d7a6" id="r_aa25c7ad87ae485987582a9a146e6d7a6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa25c7ad87ae485987582a9a146e6d7a6">m_Spacing</a></td></tr>
+<tr class="memitem:aa25c7ad87ae485987582a9a146e6d7a6" id="r_aa25c7ad87ae485987582a9a146e6d7a6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa25c7ad87ae485987582a9a146e6d7a6">m_Spacing</a> { std::vector&lt;double&gt;(3, 1.0) }</td></tr>
 <tr class="separator:aa25c7ad87ae485987582a9a146e6d7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -544,6 +548,31 @@ template&lt;class TImageType&gt; </div>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9854e7bed2156b586501b1e523a571c4" name="a9854e7bed2156b586501b1e523a571c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9854e7bed2156b586501b1e523a571c4">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a0e2ac65186f1f393dd717c0207cbd2a0">MemberFunctionType</a> &gt; &amp; itk::simple::ImportImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -979,7 +1008,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void* itk::simple::ImportImageFilter::m_Buffer</td>
+          <td class="memname">void* itk::simple::ImportImageFilter::m_Buffer { nullptr }</td>
         </tr>
       </table>
   </td>
@@ -989,7 +1018,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1013,31 +1042,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a12210a5768acf598d0a33cdc13857503" name="a12210a5768acf598d0a33cdc13857503"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12210a5768acf598d0a33cdc13857503">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a0e2ac65186f1f393dd717c0207cbd2a0">MemberFunctionType</a>&gt; &gt; itk::simple::ImportImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1056,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::ImportImageFilter::m_NumberOfComponentsPerPixel</td>
+          <td class="memname">unsigned int itk::simple::ImportImageFilter::m_NumberOfComponentsPerPixel { 0 }</td>
         </tr>
       </table>
   </td>
@@ -1061,7 +1066,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1075,7 +1080,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::ImportImageFilter::m_Origin</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::ImportImageFilter::m_Origin { std::vector&lt;double&gt;(3, 0.0) }</td>
         </tr>
       </table>
   </td>
@@ -1085,7 +1090,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1099,7 +1104,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#aaf027344ec3011c3ac6fcfd77271bb75">PixelIDValueType</a> itk::simple::ImportImageFilter::m_PixelIDValue</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#aaf027344ec3011c3ac6fcfd77271bb75">PixelIDValueType</a> itk::simple::ImportImageFilter::m_PixelIDValue { <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">sitkUnknown</a> }</td>
         </tr>
       </table>
   </td>
@@ -1109,7 +1114,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1133,7 +1138,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1152,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;double&gt; itk::simple::ImportImageFilter::m_Spacing</td>
+          <td class="memname">std::vector&lt;double&gt; itk::simple::ImportImageFilter::m_Spacing { std::vector&lt;double&gt;(3, 1.0) }</td>
         </tr>
       </table>
   </td>
@@ -1157,7 +1162,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImportImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkImportImageFilter_8h_source.html">sitkImportImageFilter.h</a>.</p>
 
 </div>
 </div>

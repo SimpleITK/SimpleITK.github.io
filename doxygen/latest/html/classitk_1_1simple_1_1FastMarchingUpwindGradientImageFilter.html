@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1FastMarchingUpwindGradientImageFilter-members.html">List of all members</a>  </div>
@@ -124,7 +125,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1FastMarchingUpwindGradientImageFilter.html">itk::FastMarchingUpwindGradientImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -247,14 +248,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac13f6a91bb0fd78ad7b04371c7337ae6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac13f6a91bb0fd78ad7b04371c7337ae6">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:ac13f6a91bb0fd78ad7b04371c7337ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:af507352e86d4ff110d9044c4996f22bb" id="r_af507352e86d4ff110d9044c4996f22bb"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a68f85d81f8ed1786767be7652644cdb5">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af507352e86d4ff110d9044c4996f22bb">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:af507352e86d4ff110d9044c4996f22bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a51a00d86bd60353f01941a64173fc8d6" id="r_a51a00d86bd60353f01941a64173fc8d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51a00d86bd60353f01941a64173fc8d6">m_GradientImage</a> { <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>() }</td></tr>
 <tr class="separator:a51a00d86bd60353f01941a64173fc8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f15bb0a1886846953b989895adaacdd" id="r_a9f15bb0a1886846953b989895adaacdd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f15bb0a1886846953b989895adaacdd">m_InitialTrialValues</a> { std::vector&lt;double&gt;() }</td></tr>
 <tr class="separator:a9f15bb0a1886846953b989895adaacdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adadf5bc0de6118972038ef25402efccf" id="r_adadf5bc0de6118972038ef25402efccf"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a68f85d81f8ed1786767be7652644cdb5">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adadf5bc0de6118972038ef25402efccf">m_MemberFactory</a></td></tr>
-<tr class="separator:adadf5bc0de6118972038ef25402efccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3dc6c6a1784a8973cec70c9696f8458" id="r_ab3dc6c6a1784a8973cec70c9696f8458"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3dc6c6a1784a8973cec70c9696f8458">m_NormalizationFactor</a> { 1.0 }</td></tr>
 <tr class="separator:ab3dc6c6a1784a8973cec70c9696f8458"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39f7b784b533f51c3a6123306ef8aa80" id="r_a39f7b784b533f51c3a6123306ef8aa80"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39f7b784b533f51c3a6123306ef8aa80">m_NumberOfTargets</a> { 0u }</td></tr>
@@ -393,7 +397,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +414,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -426,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -501,9 +505,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add TargetPoints point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00193">m_TargetPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00194">m_TargetPoints</a>.</p>
 
 </div>
 </div>
@@ -532,9 +536,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add TrialPoints point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00189">m_TrialPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00190">m_TrialPoints</a>.</p>
 
 </div>
 </div>
@@ -563,9 +567,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all TargetPoints points. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00193">m_TargetPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00194">m_TargetPoints</a>.</p>
 
 </div>
 </div>
@@ -594,9 +598,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all TrialPoints points. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00189">m_TrialPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00190">m_TrialPoints</a>.</p>
 
 </div>
 </div>
@@ -643,7 +647,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00185">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00186">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -672,9 +676,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the gradient image.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00203">m_GradientImage</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00204">m_GradientImage</a>.</p>
 
 </div>
 </div>
@@ -701,9 +705,34 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00199">m_InitialTrialValues</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00200">m_InitialTrialValues</a>.</p>
+
+</div>
+</div>
+<a id="af507352e86d4ff110d9044c4996f22bb" name="af507352e86d4ff110d9044c4996f22bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af507352e86d4ff110d9044c4996f22bb">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a68f85d81f8ed1786767be7652644cdb5">MemberFunctionType</a> &gt; &amp; itk::simple::FastMarchingUpwindGradientImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -733,7 +762,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -761,9 +790,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Normalization Factor for the Speed <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> . The values in the Speed <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> is divided by this factor. This allows the use of images with integer pixel types to represent the speed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00197">m_NormalizationFactor</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00198">m_NormalizationFactor</a>.</p>
 
 </div>
 </div>
@@ -791,9 +820,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the number of targets. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00191">m_NumberOfTargets</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00192">m_NumberOfTargets</a>.</p>
 
 </div>
 </div>
@@ -821,9 +850,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the TargetOffset ivar. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00195">m_TargetOffset</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00196">m_TargetOffset</a>.</p>
 
 </div>
 </div>
@@ -851,9 +880,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the container of Target Points. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00193">m_TargetPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00194">m_TargetPoints</a>.</p>
 
 </div>
 </div>
@@ -882,9 +911,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the arrival time corresponding to the last reached target. If TargetReachedMode is set to TargetConditionEnum::NoTargets , TargetValue contains the last (aka largest) Eikonal solution value generated.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00204">m_TargetValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00205">m_TargetValue</a>.</p>
 
 </div>
 </div>
@@ -911,9 +940,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00189">m_TrialPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00190">m_TrialPoints</a>.</p>
 
 </div>
 </div>
@@ -942,9 +971,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>Set the initial seed values for corresponding trial point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00199">m_InitialTrialValues</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00200">m_InitialTrialValues</a>.</p>
 
 </div>
 </div>
@@ -972,9 +1001,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Normalization Factor for the Speed <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> . The values in the Speed <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> is divided by this factor. This allows the use of images with integer pixel types to represent the speed. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00197">m_NormalizationFactor</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00198">m_NormalizationFactor</a>.</p>
 
 </div>
 </div>
@@ -1001,9 +1030,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00191">m_NumberOfTargets</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00192">m_NumberOfTargets</a>.</p>
 
 </div>
 </div>
@@ -1031,9 +1060,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set how long (in terms of arrival times) after targets are reached the front must stop. This is useful to ensure that the level set of target arrival time is smooth. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00195">m_TargetOffset</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00196">m_TargetOffset</a>.</p>
 
 </div>
 </div>
@@ -1061,9 +1090,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Backwards compatibility for enum values Set the container of Target Points. If a target point is reached, the propagation stops. Trial points are represented as a <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk.html#a365f3ead2b935a9a6f6a032eb859db36">VectorContainer</a> of LevelSetNodes. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00193">m_TargetPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00194">m_TargetPoints</a>.</p>
 
 </div>
 </div>
@@ -1090,9 +1119,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00189">m_TrialPoints</a>.</p>
+<p class="reference">References <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00190">m_TrialPoints</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1174,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00185">185</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ac13f6a91bb0fd78ad7b04371c7337ae6">ExecuteInternal()</a>.</p>
 
@@ -1172,9 +1201,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00160">GetGradientImage()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00161">GetGradientImage()</a>.</p>
 
 </div>
 </div>
@@ -1198,33 +1227,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00151">GetInitialTrialValues()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00146">SetInitialTrialValues()</a>.</p>
-
-</div>
-</div>
-<a id="adadf5bc0de6118972038ef25402efccf" name="adadf5bc0de6118972038ef25402efccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adadf5bc0de6118972038ef25402efccf">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a68f85d81f8ed1786767be7652644cdb5">MemberFunctionType</a>&gt; &gt; itk::simple::FastMarchingUpwindGradientImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00152">GetInitialTrialValues()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00147">SetInitialTrialValues()</a>.</p>
 
 </div>
 </div>
@@ -1248,9 +1253,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00140">GetNormalizationFactor()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00134">SetNormalizationFactor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00141">GetNormalizationFactor()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00135">SetNormalizationFactor()</a>.</p>
 
 </div>
 </div>
@@ -1274,9 +1279,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00098">GetNumberOfTargets()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00092">SetNumberOfTargets()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00099">GetNumberOfTargets()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00093">SetNumberOfTargets()</a>.</p>
 
 </div>
 </div>
@@ -1300,9 +1305,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00128">GetTargetOffset()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00122">SetTargetOffset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00129">GetTargetOffset()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00123">SetTargetOffset()</a>.</p>
 
 </div>
 </div>
@@ -1326,9 +1331,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00113">AddTargetPoint()</a>, <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00116">ClearTargetPoints()</a>, <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00110">GetTargetPoints()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00104">SetTargetPoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00114">AddTargetPoint()</a>, <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00117">ClearTargetPoints()</a>, <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00111">GetTargetPoints()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00105">SetTargetPoints()</a>.</p>
 
 </div>
 </div>
@@ -1352,9 +1357,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00168">GetTargetValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00169">GetTargetValue()</a>.</p>
 
 </div>
 </div>
@@ -1378,9 +1383,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html">sitkFastMarchingUpwindGradientImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00084">AddTrialPoint()</a>, <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00087">ClearTrialPoints()</a>, <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00081">GetTrialPoints()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00076">SetTrialPoints()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00085">AddTrialPoint()</a>, <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00088">ClearTrialPoints()</a>, <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00082">GetTrialPoints()</a>, and <a class="el" href="sitkFastMarchingUpwindGradientImageFilter_8h_source.html#l00077">SetTrialPoints()</a>.</p>
 
 </div>
 </div>

@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1GaborImageSource-members.html">List of all members</a>  </div>
@@ -121,7 +122,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GaborImageSource.html">itk::GaborImageSource</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00052">52</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00053">53</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -239,6 +240,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a0e49760e47bc3ac1d50304b7d906c90a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0e49760e47bc3ac1d50304b7d906c90a">ExecuteInternal</a> ()</td></tr>
 <tr class="separator:a0e49760e47bc3ac1d50304b7d906c90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:aeaef060f52e77971313b6e620213d16f" id="r_aeaef060f52e77971313b6e620213d16f"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aef42ec439490f233e4e4b04c2b34ff67">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaef060f52e77971313b6e620213d16f">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:aeaef060f52e77971313b6e620213d16f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acdf8318bbabe22c2185ee2ed39f8b34e" id="r_acdf8318bbabe22c2185ee2ed39f8b34e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdf8318bbabe22c2185ee2ed39f8b34e">m_Direction</a> { std::vector&lt;double&gt;() }</td></tr>
@@ -247,8 +253,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ae368afd98f82400874993c2706cf1577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a128c4b64d0fe8d19b0810143248cae4f" id="r_a128c4b64d0fe8d19b0810143248cae4f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a128c4b64d0fe8d19b0810143248cae4f">m_Mean</a> { std::vector&lt;double&gt;(3, 32.0) }</td></tr>
 <tr class="separator:a128c4b64d0fe8d19b0810143248cae4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bf56b301698b6b20141c205262da453" id="r_a3bf56b301698b6b20141c205262da453"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aef42ec439490f233e4e4b04c2b34ff67">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bf56b301698b6b20141c205262da453">m_MemberFactory</a></td></tr>
-<tr class="separator:a3bf56b301698b6b20141c205262da453"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60d8c3d57f88fa61c0fb676c316047e0" id="r_a60d8c3d57f88fa61c0fb676c316047e0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60d8c3d57f88fa61c0fb676c316047e0">m_Origin</a> { std::vector&lt;double&gt;(3, 0.0) }</td></tr>
 <tr class="separator:a60d8c3d57f88fa61c0fb676c316047e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a988509c2911567a042209471a5461c9b" id="r_a988509c2911567a042209471a5461c9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a988509c2911567a042209471a5461c9b">m_OutputPixelType</a> { itk::simple::sitkFloat32 }</td></tr>
@@ -385,7 +389,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00179">179</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00180">180</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00064">64</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00065">65</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +422,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00054">54</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00055">55</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +515,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00182">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00183">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -538,9 +542,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00162">162</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00163">163</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00202">m_Direction</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00203">m_Direction</a>.</p>
 
 </div>
 </div>
@@ -568,9 +572,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the modulation frequency of the sine or cosine component. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00132">132</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00133">133</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00195">m_Frequency</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00196">m_Frequency</a>.</p>
 
 </div>
 </div>
@@ -598,9 +602,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the mean in each direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00120">120</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00121">121</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00193">m_Mean</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00194">m_Mean</a>.</p>
+
+</div>
+</div>
+<a id="aeaef060f52e77971313b6e620213d16f" name="aeaef060f52e77971313b6e620213d16f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaef060f52e77971313b6e620213d16f">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aef42ec439490f233e4e4b04c2b34ff67">MemberFunctionType</a> &gt; &amp; itk::simple::GaborImageSource::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -630,7 +659,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00166">166</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00167">167</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
 </div>
 </div>
@@ -657,9 +686,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00142">142</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00143">143</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00197">m_Origin</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00198">m_Origin</a>.</p>
 
 </div>
 </div>
@@ -686,9 +715,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00078">78</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00079">79</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00187">m_OutputPixelType</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00188">m_OutputPixelType</a>.</p>
 
 </div>
 </div>
@@ -716,9 +745,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the standard deviation in each direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00104">104</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00105">105</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00191">m_Sigma</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00192">m_Sigma</a>.</p>
 
 </div>
 </div>
@@ -745,9 +774,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00088">88</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00089">89</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00189">m_Size</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00190">m_Size</a>.</p>
 
 </div>
 </div>
@@ -774,9 +803,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00152">152</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00153">153</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00199">m_Spacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00200">m_Spacing</a>.</p>
 
 </div>
 </div>
@@ -803,9 +832,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00157">157</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00158">158</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00202">m_Direction</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00203">m_Direction</a>.</p>
 
 </div>
 </div>
@@ -833,9 +862,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the modulation frequency of the sine or cosine component. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00126">126</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00127">127</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00195">m_Frequency</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00196">m_Frequency</a>.</p>
 
 </div>
 </div>
@@ -863,9 +892,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the Mean vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00115">115</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00116">116</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00193">m_Mean</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00194">m_Mean</a>.</p>
 
 </div>
 </div>
@@ -893,9 +922,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the mean in each direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00110">110</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00111">111</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00193">m_Mean</a>, and <a class="el" href="namespaceitk_1_1simple.html#a2f8ee43337d961f544b262c82409a946">itk::simple::Mean()</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00194">m_Mean</a>, and <a class="el" href="namespaceitk_1_1simple.html#a2f8ee43337d961f544b262c82409a946">itk::simple::Mean()</a>.</p>
 
 </div>
 </div>
@@ -922,9 +951,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00137">137</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00138">138</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00197">m_Origin</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00198">m_Origin</a>.</p>
 
 </div>
 </div>
@@ -951,9 +980,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00073">73</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00074">74</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00187">m_OutputPixelType</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00188">m_OutputPixelType</a>.</p>
 
 </div>
 </div>
@@ -981,9 +1010,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the Sigma vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00099">99</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00100">100</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00191">m_Sigma</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00192">m_Sigma</a>.</p>
 
 </div>
 </div>
@@ -1011,9 +1040,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the standard deviation in each direction. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00094">94</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00095">95</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00191">m_Sigma</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00192">m_Sigma</a>.</p>
 
 </div>
 </div>
@@ -1040,9 +1069,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00083">83</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00084">84</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00189">m_Size</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00190">m_Size</a>.</p>
 
 </div>
 </div>
@@ -1069,9 +1098,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00147">147</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00148">148</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00199">m_Spacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkGaborImageSource_8h_source.html#l00200">m_Spacing</a>.</p>
 
 </div>
 </div>
@@ -1124,7 +1153,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00180">180</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00181">181</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a0e49760e47bc3ac1d50304b7d906c90a">ExecuteInternal()</a>.</p>
 
@@ -1151,9 +1180,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00202">202</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00203">203</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00162">GetDirection()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00157">SetDirection()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00163">GetDirection()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00158">SetDirection()</a>.</p>
 
 </div>
 </div>
@@ -1177,9 +1206,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00195">195</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00196">196</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00132">GetFrequency()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00126">SetFrequency()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00133">GetFrequency()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00127">SetFrequency()</a>.</p>
 
 </div>
 </div>
@@ -1203,33 +1232,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00193">193</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00194">194</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00120">GetMean()</a>, <a class="el" href="sitkGaborImageSource_8h_source.html#l00115">SetMean()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00110">SetMean()</a>.</p>
-
-</div>
-</div>
-<a id="a3bf56b301698b6b20141c205262da453" name="a3bf56b301698b6b20141c205262da453"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bf56b301698b6b20141c205262da453">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aef42ec439490f233e4e4b04c2b34ff67">MemberFunctionType</a>&gt; &gt; itk::simple::GaborImageSource::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00183">183</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00121">GetMean()</a>, <a class="el" href="sitkGaborImageSource_8h_source.html#l00116">SetMean()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00111">SetMean()</a>.</p>
 
 </div>
 </div>
@@ -1253,9 +1258,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00197">197</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00198">198</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00142">GetOrigin()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00137">SetOrigin()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00143">GetOrigin()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00138">SetOrigin()</a>.</p>
 
 </div>
 </div>
@@ -1279,9 +1284,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00187">187</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00188">188</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00078">GetOutputPixelType()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00073">SetOutputPixelType()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00079">GetOutputPixelType()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00074">SetOutputPixelType()</a>.</p>
 
 </div>
 </div>
@@ -1305,9 +1310,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00191">191</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00192">192</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00104">GetSigma()</a>, <a class="el" href="sitkGaborImageSource_8h_source.html#l00099">SetSigma()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00094">SetSigma()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00105">GetSigma()</a>, <a class="el" href="sitkGaborImageSource_8h_source.html#l00100">SetSigma()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00095">SetSigma()</a>.</p>
 
 </div>
 </div>
@@ -1331,9 +1336,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00189">189</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00190">190</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00088">GetSize()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00083">SetSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00089">GetSize()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00084">SetSize()</a>.</p>
 
 </div>
 </div>
@@ -1357,9 +1362,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00199">199</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGaborImageSource_8h_source.html#l00200">200</a> of file <a class="el" href="sitkGaborImageSource_8h_source.html">sitkGaborImageSource.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00152">GetSpacing()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00147">SetSpacing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGaborImageSource_8h_source.html#l00153">GetSpacing()</a>, and <a class="el" href="sitkGaborImageSource_8h_source.html#l00148">SetSpacing()</a>.</p>
 
 </div>
 </div>

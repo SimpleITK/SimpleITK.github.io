@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1LandweberDeconvolutionImageFilter-members.html">List of all members</a>  </div>
@@ -133,7 +134,7 @@ Cory Quammen, The University of North Carolina at Chapel Hill</dd></dl>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1LandweberDeconvolutionImageFilter.html">itk::LandweberDeconvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -255,14 +256,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a1153b25681c33274a49dfab497eb3cf9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1153b25681c33274a49dfab497eb3cf9">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
 <tr class="separator:a1153b25681c33274a49dfab497eb3cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a60b87e234a51f4395ef919c4bacf57e2" id="r_a60b87e234a51f4395ef919c4bacf57e2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac1aa3b2df57499d91447ff58e4ee5ea9">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60b87e234a51f4395ef919c4bacf57e2">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a60b87e234a51f4395ef919c4bacf57e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aad8ea1170895c0f6b4e805ac0bc110f0" id="r_aad8ea1170895c0f6b4e805ac0bc110f0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad8ea1170895c0f6b4e805ac0bc110f0">m_Alpha</a> { 0.1 }</td></tr>
 <tr class="separator:aad8ea1170895c0f6b4e805ac0bc110f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c35b42d9d6aebca1efeffc25daa5ba" id="r_ad9c35b42d9d6aebca1efeffc25daa5ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#abc1660f455209b91ee0625353eec74ef">BoundaryConditionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9c35b42d9d6aebca1efeffc25daa5ba">m_BoundaryCondition</a> { <a class="el" href="#abc1660f455209b91ee0625353eec74efae828aca6245a97d5d2d466b00134b7f6">itk::simple::LandweberDeconvolutionImageFilter::ZERO_FLUX_NEUMANN_PAD</a> }</td></tr>
 <tr class="separator:ad9c35b42d9d6aebca1efeffc25daa5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b61d2dbe4ff76b7547925903eef47ac" id="r_a7b61d2dbe4ff76b7547925903eef47ac"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac1aa3b2df57499d91447ff58e4ee5ea9">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b61d2dbe4ff76b7547925903eef47ac">m_MemberFactory</a></td></tr>
-<tr class="separator:a7b61d2dbe4ff76b7547925903eef47ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27c311e25cc6f33d3bffe6e3b909e013" id="r_a27c311e25cc6f33d3bffe6e3b909e013"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27c311e25cc6f33d3bffe6e3b909e013">m_Normalize</a> { false }</td></tr>
 <tr class="separator:a27c311e25cc6f33d3bffe6e3b909e013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45ab60c365f8e35f13a09bb3f261637d" id="r_a45ab60c365f8e35f13a09bb3f261637d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45ab60c365f8e35f13a09bb3f261637d">m_NumberOfIterations</a> { 1 }</td></tr>
@@ -395,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -412,7 +416,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -450,7 +454,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="abc1660f455209b91ee0625353eec74efac4cf7457ca5dedf5c286a106d62afe7a" name="abc1660f455209b91ee0625353eec74efac4cf7457ca5dedf5c286a106d62afe7a"></a>PERIODIC_PAD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -470,7 +474,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="aa4e3c33a34eca54ffecbe812e13e5588ab5c3772fa1d68babeb73136891c43738" name="aa4e3c33a34eca54ffecbe812e13e5588ab5c3772fa1d68babeb73136891c43738"></a>VALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -571,7 +575,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00166">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00167">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -599,9 +603,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/get relaxation factor. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00170">m_Alpha</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00171">m_Alpha</a>.</p>
 
 </div>
 </div>
@@ -628,9 +632,34 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00176">m_BoundaryCondition</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00177">m_BoundaryCondition</a>.</p>
+
+</div>
+</div>
+<a id="a60b87e234a51f4395ef919c4bacf57e2" name="a60b87e234a51f4395ef919c4bacf57e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60b87e234a51f4395ef919c4bacf57e2">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac1aa3b2df57499d91447ff58e4ee5ea9">MemberFunctionType</a> &gt; &amp; itk::simple::LandweberDeconvolutionImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -660,7 +689,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -687,9 +716,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00174">m_Normalize</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00175">m_Normalize</a>.</p>
 
 </div>
 </div>
@@ -717,9 +746,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the number of iterations. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00172">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00173">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -746,9 +775,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00178">m_OutputRegionMode</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00179">m_OutputRegionMode</a>.</p>
 
 </div>
 </div>
@@ -775,9 +804,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00115">SetNormalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00116">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -805,9 +834,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of Normalize to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00115">SetNormalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00116">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -835,9 +864,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/get relaxation factor. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00170">m_Alpha</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00171">m_Alpha</a>.</p>
 
 </div>
 </div>
@@ -864,9 +893,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00176">m_BoundaryCondition</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00177">m_BoundaryCondition</a>.</p>
 
 </div>
 </div>
@@ -894,11 +923,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Normalize the output image by the sum of the kernel components </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00174">m_Normalize</a>, and <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00175">m_Normalize</a>, and <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00122">NormalizeOff()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00120">NormalizeOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00123">NormalizeOff()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00121">NormalizeOn()</a>.</p>
 
 </div>
 </div>
@@ -926,9 +955,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the number of iterations. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00172">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00173">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -955,9 +984,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00178">m_OutputRegionMode</a>.</p>
+<p class="reference">References <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00179">m_OutputRegionMode</a>.</p>
 
 </div>
 </div>
@@ -1010,7 +1039,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a1153b25681c33274a49dfab497eb3cf9">ExecuteInternal()</a>.</p>
 
@@ -1037,9 +1066,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00096">GetAlpha()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00090">SetAlpha()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00097">GetAlpha()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00091">SetAlpha()</a>.</p>
 
 </div>
 </div>
@@ -1063,33 +1092,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00137">GetBoundaryCondition()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00132">SetBoundaryCondition()</a>.</p>
-
-</div>
-</div>
-<a id="a7b61d2dbe4ff76b7547925903eef47ac" name="a7b61d2dbe4ff76b7547925903eef47ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b61d2dbe4ff76b7547925903eef47ac">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ac1aa3b2df57499d91447ff58e4ee5ea9">MemberFunctionType</a>&gt; &gt; itk::simple::LandweberDeconvolutionImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00138">GetBoundaryCondition()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00133">SetBoundaryCondition()</a>.</p>
 
 </div>
 </div>
@@ -1113,9 +1118,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00126">GetNormalize()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00115">SetNormalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00127">GetNormalize()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00116">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -1139,9 +1144,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00108">GetNumberOfIterations()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00102">SetNumberOfIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00109">GetNumberOfIterations()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00103">SetNumberOfIterations()</a>.</p>
 
 </div>
 </div>
@@ -1165,9 +1170,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html">sitkLandweberDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00148">GetOutputRegionMode()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00143">SetOutputRegionMode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00149">GetOutputRegionMode()</a>, and <a class="el" href="sitkLandweberDeconvolutionImageFilter_8h_source.html#l00144">SetOutputRegionMode()</a>.</p>
 
 </div>
 </div>

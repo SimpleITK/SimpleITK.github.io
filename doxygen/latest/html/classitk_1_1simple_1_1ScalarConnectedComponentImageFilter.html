@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1ScalarConnectedComponentImageFilter-members.html">List of all members</a>  </div>
@@ -118,7 +119,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ScalarConnectedComponentImageFilter.html">itk::ScalarConnectedComponentImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00045">45</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00046">46</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -214,14 +215,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aeed78eee81d23ebf30481ae030db9d9b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aeed78eee81d23ebf30481ae030db9d9b">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *image, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *maskImage)</td></tr>
 <tr class="separator:aeed78eee81d23ebf30481ae030db9d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a5fcb060c68788b7531d6193c7bc5517e" id="r_a5fcb060c68788b7531d6193c7bc5517e"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab62829d5b3a2b666946c68f4f76617f5">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fcb060c68788b7531d6193c7bc5517e">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a5fcb060c68788b7531d6193c7bc5517e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a47d14338f44bdf1a14d8a4d4a52522eb" id="r_a47d14338f44bdf1a14d8a4d4a52522eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47d14338f44bdf1a14d8a4d4a52522eb">m_DistanceThreshold</a> { 0.0 }</td></tr>
 <tr class="separator:a47d14338f44bdf1a14d8a4d4a52522eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf6eb4a6f926bc56a0cf8099a90e250" id="r_a0bf6eb4a6f926bc56a0cf8099a90e250"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf6eb4a6f926bc56a0cf8099a90e250">m_FullyConnected</a> { false }</td></tr>
 <tr class="separator:a0bf6eb4a6f926bc56a0cf8099a90e250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e8328e4de732fddc3cbce227f1daec" id="r_a86e8328e4de732fddc3cbce227f1daec"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab62829d5b3a2b666946c68f4f76617f5">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86e8328e4de732fddc3cbce227f1daec">m_MemberFactory</a></td></tr>
-<tr class="separator:a86e8328e4de732fddc3cbce227f1daec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -349,11 +353,11 @@ Additional Inherited Members</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line"> <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code hl_typedef" href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter.html#ad2c554f9e00e403e1de2d5840e208d54">Self</a>::*)(<span class="keyword">const</span> <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> *</div>
 <div class="line">    image, <span class="keyword">const</span> <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> *</div>
 <div class="line">    maskImage)</div>
-<div class="ttc" id="aclassitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter_html_ad2c554f9e00e403e1de2d5840e208d54"><div class="ttname"><a href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter.html#ad2c554f9e00e403e1de2d5840e208d54">itk::simple::BinaryReconstructionByDilationImageFilter::Self</a></div><div class="ttdeci">BinaryReconstructionByDilationImageFilter Self</div><div class="ttdef"><b>Definition</b> <a href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00058">sitkBinaryReconstructionByDilationImageFilter.h:58</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter_html_ad2c554f9e00e403e1de2d5840e208d54"><div class="ttname"><a href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter.html#ad2c554f9e00e403e1de2d5840e208d54">itk::simple::BinaryReconstructionByDilationImageFilter::Self</a></div><div class="ttdeci">BinaryReconstructionByDilationImageFilter Self</div><div class="ttdef"><b>Definition</b> <a href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00059">sitkBinaryReconstructionByDilationImageFilter.h:59</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition</b> <a href="sitkImage_8h_source.html#l00076">sitkImage.h:77</a></div></div>
 </div><!-- fragment --><p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00047">47</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00048">48</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -504,7 +508,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00108">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00109">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -531,9 +535,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00074">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00075">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -561,9 +565,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00074">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00075">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -590,9 +594,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00112">m_DistanceThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00113">m_DistanceThreshold</a>.</p>
 
 </div>
 </div>
@@ -619,9 +623,34 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00114">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00115">m_FullyConnected</a>.</p>
+
+</div>
+</div>
+<a id="a5fcb060c68788b7531d6193c7bc5517e" name="a5fcb060c68788b7531d6193c7bc5517e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fcb060c68788b7531d6193c7bc5517e">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab62829d5b3a2b666946c68f4f76617f5">MemberFunctionType</a> &gt; &amp; itk::simple::ScalarConnectedComponentImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -651,7 +680,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -678,9 +707,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00112">m_DistanceThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00113">m_DistanceThreshold</a>.</p>
 
 </div>
 </div>
@@ -707,11 +736,11 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00114">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00115">m_FullyConnected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00081">FullyConnectedOff()</a>, and <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00079">FullyConnectedOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00082">FullyConnectedOff()</a>, and <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00080">FullyConnectedOn()</a>.</p>
 
 </div>
 </div>
@@ -764,7 +793,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#aeed78eee81d23ebf30481ae030db9d9b">ExecuteInternal()</a>.</p>
 
@@ -791,9 +820,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00069">GetDistanceThreshold()</a>, and <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00064">SetDistanceThreshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00070">GetDistanceThreshold()</a>, and <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00065">SetDistanceThreshold()</a>.</p>
 
 </div>
 </div>
@@ -817,33 +846,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00085">GetFullyConnected()</a>, and <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00074">SetFullyConnected()</a>.</p>
-
-</div>
-</div>
-<a id="a86e8328e4de732fddc3cbce227f1daec" name="a86e8328e4de732fddc3cbce227f1daec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86e8328e4de732fddc3cbce227f1daec">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ab62829d5b3a2b666946c68f4f76617f5">MemberFunctionType</a>&gt; &gt; itk::simple::ScalarConnectedComponentImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html">sitkScalarConnectedComponentImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00086">GetFullyConnected()</a>, and <a class="el" href="sitkScalarConnectedComponentImageFilter_8h_source.html#l00075">SetFullyConnected()</a>.</p>
 
 </div>
 </div>

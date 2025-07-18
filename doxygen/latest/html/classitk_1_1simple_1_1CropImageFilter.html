@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1CropImageFilter-members.html">List of all members</a>  </div>
@@ -120,7 +121,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CropImageFilter.html">itk::CropImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00049">49</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -212,14 +213,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a9101c2551a54c6eb7483a51854b575b4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a9101c2551a54c6eb7483a51854b575b4">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a9101c2551a54c6eb7483a51854b575b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a0ce526564fff237b6df5c62562660326" id="r_a0ce526564fff237b6df5c62562660326"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a050f89f52c5a8f8df8ca922b8c8307f4">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ce526564fff237b6df5c62562660326">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a0ce526564fff237b6df5c62562660326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a098d6895122192a37b9ec4a16569794d" id="r_a098d6895122192a37b9ec4a16569794d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a098d6895122192a37b9ec4a16569794d">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a098d6895122192a37b9ec4a16569794d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a472f6beb7e6bf69af34fdebbc8a83d34" id="r_a472f6beb7e6bf69af34fdebbc8a83d34"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a472f6beb7e6bf69af34fdebbc8a83d34">m_LowerBoundaryCropSize</a> { std::vector&lt;unsigned int&gt;(3, 0) }</td></tr>
 <tr class="separator:a472f6beb7e6bf69af34fdebbc8a83d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeb5917a022bd7a71a1fc6203b710ce8" id="r_abeb5917a022bd7a71a1fc6203b710ce8"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a050f89f52c5a8f8df8ca922b8c8307f4">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abeb5917a022bd7a71a1fc6203b710ce8">m_MemberFactory</a></td></tr>
-<tr class="separator:abeb5917a022bd7a71a1fc6203b710ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6688774764504b7da1430a568d4a7a7" id="r_ac6688774764504b7da1430a568d4a7a7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6688774764504b7da1430a568d4a7a7">m_UpperBoundaryCropSize</a> { std::vector&lt;unsigned int&gt;(3, 0) }</td></tr>
 <tr class="separator:ac6688774764504b7da1430a568d4a7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -348,7 +352,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -365,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -381,7 +385,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -491,7 +495,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkCropImageFilter_8h_source.html#l00108">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCropImageFilter_8h_source.html#l00109">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -519,9 +523,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the cropping sizes for the upper and lower boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCropImageFilter_8h_source.html#l00113">m_LowerBoundaryCropSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkCropImageFilter_8h_source.html#l00114">m_LowerBoundaryCropSize</a>.</p>
+
+</div>
+</div>
+<a id="a0ce526564fff237b6df5c62562660326" name="a0ce526564fff237b6df5c62562660326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce526564fff237b6df5c62562660326">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a050f89f52c5a8f8df8ca922b8c8307f4">MemberFunctionType</a> &gt; &amp; itk::simple::CropImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -551,7 +580,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -579,9 +608,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the cropping sizes for the upper and lower boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCropImageFilter_8h_source.html#l00116">m_UpperBoundaryCropSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkCropImageFilter_8h_source.html#l00117">m_UpperBoundaryCropSize</a>.</p>
 
 </div>
 </div>
@@ -609,9 +638,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the cropping sizes for the upper and lower boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCropImageFilter_8h_source.html#l00113">m_LowerBoundaryCropSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkCropImageFilter_8h_source.html#l00114">m_LowerBoundaryCropSize</a>.</p>
 
 </div>
 </div>
@@ -639,9 +668,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the cropping sizes for the upper and lower boundaries. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCropImageFilter_8h_source.html#l00116">m_UpperBoundaryCropSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkCropImageFilter_8h_source.html#l00117">m_UpperBoundaryCropSize</a>.</p>
 
 </div>
 </div>
@@ -694,7 +723,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a9101c2551a54c6eb7483a51854b575b4">ExecuteInternal()</a>.</p>
 
@@ -721,7 +750,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -745,33 +774,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCropImageFilter_8h_source.html#l00075">GetLowerBoundaryCropSize()</a>, and <a class="el" href="sitkCropImageFilter_8h_source.html#l00069">SetLowerBoundaryCropSize()</a>.</p>
-
-</div>
-</div>
-<a id="abeb5917a022bd7a71a1fc6203b710ce8" name="abeb5917a022bd7a71a1fc6203b710ce8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeb5917a022bd7a71a1fc6203b710ce8">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a050f89f52c5a8f8df8ca922b8c8307f4">MemberFunctionType</a>&gt; &gt; itk::simple::CropImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCropImageFilter_8h_source.html#l00076">GetLowerBoundaryCropSize()</a>, and <a class="el" href="sitkCropImageFilter_8h_source.html#l00070">SetLowerBoundaryCropSize()</a>.</p>
 
 </div>
 </div>
@@ -795,9 +800,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCropImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkCropImageFilter_8h_source.html">sitkCropImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCropImageFilter_8h_source.html#l00087">GetUpperBoundaryCropSize()</a>, and <a class="el" href="sitkCropImageFilter_8h_source.html#l00081">SetUpperBoundaryCropSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCropImageFilter_8h_source.html#l00088">GetUpperBoundaryCropSize()</a>, and <a class="el" href="sitkCropImageFilter_8h_source.html#l00082">SetUpperBoundaryCropSize()</a>.</p>
 
 </div>
 </div>

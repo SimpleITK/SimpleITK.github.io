@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1CurvatureFlowImageFilter-members.html">List of all members</a>  </div>
@@ -141,7 +142,7 @@ $(function(){ initResizable(false); });
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#_a4">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#_a6">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -233,12 +234,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:adeaf79260da1c7970f707ca0c41410bd"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adeaf79260da1c7970f707ca0c41410bd">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:adeaf79260da1c7970f707ca0c41410bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:af717288e389d7b9768ee731f94345ef9" id="r_af717288e389d7b9768ee731f94345ef9"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a4b2777e24021c0cfbc710df55dd2921f">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af717288e389d7b9768ee731f94345ef9">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:af717288e389d7b9768ee731f94345ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a0589fe3b844e88ba10a2820b9a2db675" id="r_a0589fe3b844e88ba10a2820b9a2db675"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0589fe3b844e88ba10a2820b9a2db675">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a0589fe3b844e88ba10a2820b9a2db675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d835207dfe695afa7a53d4cdd38643a" id="r_a9d835207dfe695afa7a53d4cdd38643a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a4b2777e24021c0cfbc710df55dd2921f">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d835207dfe695afa7a53d4cdd38643a">m_MemberFactory</a></td></tr>
-<tr class="separator:a9d835207dfe695afa7a53d4cdd38643a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac98b3b5a37d72bc017201169849be57d" id="r_ac98b3b5a37d72bc017201169849be57d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac98b3b5a37d72bc017201169849be57d">m_NumberOfIterations</a> { 5u }</td></tr>
 <tr class="separator:ac98b3b5a37d72bc017201169849be57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add60a6e2740995410dfbb7de9c7d7f90" id="r_add60a6e2740995410dfbb7de9c7d7f90"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add60a6e2740995410dfbb7de9c7d7f90">m_TimeStep</a> { 0.05 }</td></tr>
@@ -369,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -514,7 +518,32 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00134">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00135">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+
+</div>
+</div>
+<a id="af717288e389d7b9768ee731f94345ef9" name="af717288e389d7b9768ee731f94345ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af717288e389d7b9768ee731f94345ef9">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a4b2777e24021c0cfbc710df55dd2921f">MemberFunctionType</a> &gt; &amp; itk::simple::CurvatureFlowImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -544,7 +573,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -571,9 +600,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00142">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00143">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -601,9 +630,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the timestep parameter. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00139">m_TimeStep</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00140">m_TimeStep</a>.</p>
 
 </div>
 </div>
@@ -632,9 +661,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="CSharp_2ConnectedThresholdSegmentation_8cs-example.html#a0">CSharp/ConnectedThresholdSegmentation.cs</a>, <a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a5">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a7">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00142">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00143">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -664,9 +693,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="Segmentation_2ConnectedThresholdImageFilter_8cxx-example.html#a6">Segmentation/ConnectedThresholdImageFilter.cxx</a>, and <a class="el" href="Segmentation_2NeighborhoodConnectedImageFilter_8cxx-example.html#a8">Segmentation/NeighborhoodConnectedImageFilter.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00139">m_TimeStep</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00140">m_TimeStep</a>.</p>
 
 </div>
 </div>
@@ -719,7 +748,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#adeaf79260da1c7970f707ca0c41410bd">ExecuteInternal()</a>.</p>
 
@@ -746,31 +775,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a9d835207dfe695afa7a53d4cdd38643a" name="a9d835207dfe695afa7a53d4cdd38643a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d835207dfe695afa7a53d4cdd38643a">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a4b2777e24021c0cfbc710df55dd2921f">MemberFunctionType</a>&gt; &gt; itk::simple::CurvatureFlowImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -794,9 +799,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00113">GetNumberOfIterations()</a>, and <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00108">SetNumberOfIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00114">GetNumberOfIterations()</a>, and <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00109">SetNumberOfIterations()</a>.</p>
 
 </div>
 </div>
@@ -820,9 +825,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html">sitkCurvatureFlowImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00103">GetTimeStep()</a>, and <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00097">SetTimeStep()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00104">GetTimeStep()</a>, and <a class="el" href="sitkCurvatureFlowImageFilter_8h_source.html#l00098">SetTimeStep()</a>.</p>
 
 </div>
 </div>

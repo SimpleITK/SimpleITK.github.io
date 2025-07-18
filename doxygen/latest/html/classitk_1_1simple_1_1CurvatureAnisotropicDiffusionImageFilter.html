@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1CurvatureAnisotropicDiffusionImageFilter-members.html">List of all members</a>  </div>
@@ -130,7 +131,7 @@ $(function(){ initResizable(false); });
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a2">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -232,6 +233,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7ec417ce343ab61970f6f2c1a93bb1e0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7ec417ce343ab61970f6f2c1a93bb1e0">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a7ec417ce343ab61970f6f2c1a93bb1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ac9b35e3b231390c7ad0f434e1bb58b11" id="r_ac9b35e3b231390c7ad0f434e1bb58b11"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a9d9a62c2f0ae3b27e9c2f62c3d7e4690">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9b35e3b231390c7ad0f434e1bb58b11">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:ac9b35e3b231390c7ad0f434e1bb58b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a31f22d55101c6615e4b4049da69c8dc1" id="r_a31f22d55101c6615e4b4049da69c8dc1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31f22d55101c6615e4b4049da69c8dc1">m_ConductanceParameter</a> { 3.0 }</td></tr>
@@ -240,8 +246,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:afd3a8280174c9f2451e39df696d74d3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8185b6c77fd2543fdf86774b90c73df7" id="r_a8185b6c77fd2543fdf86774b90c73df7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8185b6c77fd2543fdf86774b90c73df7">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a8185b6c77fd2543fdf86774b90c73df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3eb564a12e4ef1dc7f67a9cd40e7bcb" id="r_ac3eb564a12e4ef1dc7f67a9cd40e7bcb"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a9d9a62c2f0ae3b27e9c2f62c3d7e4690">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3eb564a12e4ef1dc7f67a9cd40e7bcb">m_MemberFactory</a></td></tr>
-<tr class="separator:ac3eb564a12e4ef1dc7f67a9cd40e7bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc89754783ef5e5f61dc570b0ac418e" id="r_a2cc89754783ef5e5f61dc570b0ac418e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cc89754783ef5e5f61dc570b0ac418e">m_NumberOfIterations</a> { 5u }</td></tr>
 <tr class="separator:a2cc89754783ef5e5f61dc570b0ac418e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e6a34669c4567fb4f80953c9b6e93ca" id="r_a7e6a34669c4567fb4f80953c9b6e93ca"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e6a34669c4567fb4f80953c9b6e93ca">m_TimeStep</a> { 0.0625 }</td></tr>
@@ -372,7 +376,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -389,7 +393,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -405,7 +409,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -535,7 +539,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00145">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00146">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -562,9 +566,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00153">m_ConductanceParameter</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00154">m_ConductanceParameter</a>.</p>
 
 </div>
 </div>
@@ -591,9 +595,34 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00156">m_ConductanceScalingUpdateInterval</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00157">m_ConductanceScalingUpdateInterval</a>.</p>
+
+</div>
+</div>
+<a id="ac9b35e3b231390c7ad0f434e1bb58b11" name="ac9b35e3b231390c7ad0f434e1bb58b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b35e3b231390c7ad0f434e1bb58b11">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a9d9a62c2f0ae3b27e9c2f62c3d7e4690">MemberFunctionType</a> &gt; &amp; itk::simple::CurvatureAnisotropicDiffusionImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -623,7 +652,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -650,9 +679,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00159">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00160">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -679,9 +708,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00150">m_TimeStep</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00151">m_TimeStep</a>.</p>
 
 </div>
 </div>
@@ -710,9 +739,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a5">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00153">m_ConductanceParameter</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00154">m_ConductanceParameter</a>.</p>
 
 </div>
 </div>
@@ -739,9 +768,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00156">m_ConductanceScalingUpdateInterval</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00157">m_ConductanceScalingUpdateInterval</a>.</p>
 
 </div>
 </div>
@@ -770,9 +799,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a4">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00159">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00160">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -801,9 +830,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a3">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00150">m_TimeStep</a>.</p>
+<p class="reference">References <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00151">m_TimeStep</a>.</p>
 
 </div>
 </div>
@@ -856,7 +885,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a7ec417ce343ab61970f6f2c1a93bb1e0">ExecuteInternal()</a>.</p>
 
@@ -883,9 +912,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00099">GetConductanceParameter()</a>, and <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00094">SetConductanceParameter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00100">GetConductanceParameter()</a>, and <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00095">SetConductanceParameter()</a>.</p>
 
 </div>
 </div>
@@ -909,9 +938,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00109">GetConductanceScalingUpdateInterval()</a>, and <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00104">SetConductanceScalingUpdateInterval()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00110">GetConductanceScalingUpdateInterval()</a>, and <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00105">SetConductanceScalingUpdateInterval()</a>.</p>
 
 </div>
 </div>
@@ -935,31 +964,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="ac3eb564a12e4ef1dc7f67a9cd40e7bcb" name="ac3eb564a12e4ef1dc7f67a9cd40e7bcb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3eb564a12e4ef1dc7f67a9cd40e7bcb">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a9d9a62c2f0ae3b27e9c2f62c3d7e4690">MemberFunctionType</a>&gt; &gt; itk::simple::CurvatureAnisotropicDiffusionImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -983,9 +988,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00119">GetNumberOfIterations()</a>, and <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00114">SetNumberOfIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00120">GetNumberOfIterations()</a>, and <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00115">SetNumberOfIterations()</a>.</p>
 
 </div>
 </div>
@@ -1009,9 +1014,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html">sitkCurvatureAnisotropicDiffusionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00089">GetTimeStep()</a>, and <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00084">SetTimeStep()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00090">GetTimeStep()</a>, and <a class="el" href="sitkCurvatureAnisotropicDiffusionImageFilter_8h_source.html#l00085">SetTimeStep()</a>.</p>
 
 </div>
 </div>

@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1ScalarToRGBColormapImageFilter-members.html">List of all members</a>  </div>
@@ -135,7 +136,7 @@ $(function(){ initResizable(false); });
 <div class="line"> </div>
 <div class="line">colormap-&gt;SetRedChannel( channel );</div>
 <div class="ttc" id="aclassitk_1_1Function_1_1CustomColormapFunction_html"><div class="ttname"><a href="https://www.itk.org/Doxygen/html/classitk_1_1Function_1_1CustomColormapFunction.html">itk::Function::CustomColormapFunction</a></div></div>
-<div class="ttc" id="aclassitk_1_1simple_1_1ScalarToRGBColormapImageFilter_html_ad6f89e6e076652b4debdfbfd82234c6f"><div class="ttname"><a href="#ad6f89e6e076652b4debdfbfd82234c6f">itk::simple::ScalarToRGBColormapImageFilter::ColormapType</a></div><div class="ttdeci">ColormapType</div><div class="ttdef"><b>Definition</b> <a href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00099">sitkScalarToRGBColormapImageFilter.h:99</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1ScalarToRGBColormapImageFilter_html_ad6f89e6e076652b4debdfbfd82234c6f"><div class="ttname"><a href="#ad6f89e6e076652b4debdfbfd82234c6f">itk::simple::ScalarToRGBColormapImageFilter::ColormapType</a></div><div class="ttdeci">ColormapType</div><div class="ttdef"><b>Definition</b> <a href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00100">sitkScalarToRGBColormapImageFilter.h:100</a></div></div>
 </div><!-- fragment --><p>The range of values present in the input image is the range that is mapped to the entire range of colors.</p>
 <p>This code was contributed in the Insight Journal paper: "Meeting Andy Warhol Somewhere Over the Rainbow: RGB Colormapping and ITK" by Tustison N., Zhang H., Lehmann G., Yushkevich P., Gee J. <a href="https://doi.org/10.54294/tmojbk">https://doi.org/10.54294/tmojbk</a></p>
 <dl class="section see"><dt>See also</dt><dd>BinaryFunctionImageFilter TernaryFunctionImageFilter</dd>
@@ -144,7 +145,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ScalarToRGBColormapImageFilter.html">itk::ScalarToRGBColormapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -269,12 +270,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a0dd3ba3137ee3502d46c1b0a693625e7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0dd3ba3137ee3502d46c1b0a693625e7">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a0dd3ba3137ee3502d46c1b0a693625e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:abd561d20b551fc9b7fea2f04137c58f6" id="r_abd561d20b551fc9b7fea2f04137c58f6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a8333c383a206b2b55ac0260b5f0b6b00">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd561d20b551fc9b7fea2f04137c58f6">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:abd561d20b551fc9b7fea2f04137c58f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab1b76fb60fdf034c970ca054c3516734" id="r_ab1b76fb60fdf034c970ca054c3516734"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ad6f89e6e076652b4debdfbfd82234c6f">ColormapType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1b76fb60fdf034c970ca054c3516734">m_Colormap</a> { <a class="el" href="#ad6f89e6e076652b4debdfbfd82234c6fa51bb9b4e6331d24b2341d9b5eabea708">itk::simple::ScalarToRGBColormapImageFilter::Grey</a> }</td></tr>
 <tr class="separator:ab1b76fb60fdf034c970ca054c3516734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2f15dfee9a3d0a43ba92e623d21f754" id="r_ac2f15dfee9a3d0a43ba92e623d21f754"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a8333c383a206b2b55ac0260b5f0b6b00">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2f15dfee9a3d0a43ba92e623d21f754">m_MemberFactory</a></td></tr>
-<tr class="separator:ac2f15dfee9a3d0a43ba92e623d21f754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55f185cfe4108a46a39f4bc98a7605e1" id="r_a55f185cfe4108a46a39f4bc98a7605e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55f185cfe4108a46a39f4bc98a7605e1">m_UseInputImageExtremaForScaling</a> { true }</td></tr>
 <tr class="separator:a55f185cfe4108a46a39f4bc98a7605e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -403,7 +407,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +424,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -436,7 +440,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +473,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="ad6f89e6e076652b4debdfbfd82234c6fa398a40571ad41cb1b52659959bcf69c7" name="ad6f89e6e076652b4debdfbfd82234c6fa398a40571ad41cb1b52659959bcf69c7"></a>OverUnder&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -562,7 +566,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00145">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00146">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -590,9 +594,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the colormap object. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00149">m_Colormap</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00150">m_Colormap</a>.</p>
+
+</div>
+</div>
+<a id="abd561d20b551fc9b7fea2f04137c58f6" name="abd561d20b551fc9b7fea2f04137c58f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd561d20b551fc9b7fea2f04137c58f6">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a8333c383a206b2b55ac0260b5f0b6b00">MemberFunctionType</a> &gt; &amp; itk::simple::ScalarToRGBColormapImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -622,7 +651,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -650,9 +679,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get UseInputImageExtremaForScaling. If true, the colormap uses the min and max values from the image to scale appropriately. Otherwise, these values can be set in the colormap manually. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00151">m_UseInputImageExtremaForScaling</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00152">m_UseInputImageExtremaForScaling</a>.</p>
 
 </div>
 </div>
@@ -679,9 +708,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00149">m_Colormap</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00150">m_Colormap</a>.</p>
 
 </div>
 </div>
@@ -709,11 +738,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get UseInputImageExtremaForScaling. If true, the colormap uses the min and max values from the image to scale appropriately. Otherwise, these values can be set in the colormap manually. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00151">m_UseInputImageExtremaForScaling</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00152">m_UseInputImageExtremaForScaling</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00122">UseInputImageExtremaForScalingOff()</a>, and <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00120">UseInputImageExtremaForScalingOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00123">UseInputImageExtremaForScalingOff()</a>, and <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00121">UseInputImageExtremaForScalingOn()</a>.</p>
 
 </div>
 </div>
@@ -768,9 +797,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00115">SetUseInputImageExtremaForScaling()</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00116">SetUseInputImageExtremaForScaling()</a>.</p>
 
 </div>
 </div>
@@ -798,9 +827,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of UseInputImageExtremaForScaling to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00115">SetUseInputImageExtremaForScaling()</a>.</p>
+<p class="reference">References <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00116">SetUseInputImageExtremaForScaling()</a>.</p>
 
 </div>
 </div>
@@ -825,7 +854,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a0dd3ba3137ee3502d46c1b0a693625e7">ExecuteInternal()</a>.</p>
 
@@ -852,33 +881,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00109">GetColormap()</a>, and <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00103">SetColormap()</a>.</p>
-
-</div>
-</div>
-<a id="ac2f15dfee9a3d0a43ba92e623d21f754" name="ac2f15dfee9a3d0a43ba92e623d21f754"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2f15dfee9a3d0a43ba92e623d21f754">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a8333c383a206b2b55ac0260b5f0b6b00">MemberFunctionType</a>&gt; &gt; itk::simple::ScalarToRGBColormapImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00110">GetColormap()</a>, and <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00104">SetColormap()</a>.</p>
 
 </div>
 </div>
@@ -902,9 +907,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html">sitkScalarToRGBColormapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00127">GetUseInputImageExtremaForScaling()</a>, and <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00115">SetUseInputImageExtremaForScaling()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00128">GetUseInputImageExtremaForScaling()</a>, and <a class="el" href="sitkScalarToRGBColormapImageFilter_8h_source.html#l00116">SetUseInputImageExtremaForScaling()</a>.</p>
 
 </div>
 </div>

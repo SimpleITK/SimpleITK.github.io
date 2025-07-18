@@ -88,6 +88,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1ImageSeriesReader-members.html">List of all members</a>  </div>
@@ -124,7 +125,7 @@ If the pixel type for the returned image is not specified it is deduced from the
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#_a0">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#_a0">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00068">68</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00069">69</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -356,16 +357,19 @@ Private Types</h2></td></tr>
 <tr class="memitem:a34d50d20dac44afb3adf9e42ae42d356" id="r_a34d50d20dac44afb3adf9e42ae42d356"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>(Self::*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d50d20dac44afb3adf9e42ae42d356">MemberFunctionType</a>) (<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">itk::ImageIOBase</a> *)</td></tr>
 <tr class="separator:a34d50d20dac44afb3adf9e42ae42d356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a9f4b52203397d0d3e269ea6ae3b0b3ac" id="r_a9f4b52203397d0d3e269ea6ae3b0b3ac"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a34d50d20dac44afb3adf9e42ae42d356">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f4b52203397d0d3e269ea6ae3b0b3ac">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a9f4b52203397d0d3e269ea6ae3b0b3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:acc1c7d120691a669a8fa8341eb90747e" id="r_acc1c7d120691a669a8fa8341eb90747e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceitk_1_1simple.html#a291cee3a62184bbfa1beffb4fdeceb49">PathType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc1c7d120691a669a8fa8341eb90747e">m_FileNames</a></td></tr>
 <tr class="separator:acc1c7d120691a669a8fa8341eb90747e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05dfe5a73f3cd54a00a802c7e0f1f058" id="r_a05dfe5a73f3cd54a00a802c7e0f1f058"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05dfe5a73f3cd54a00a802c7e0f1f058">m_Filter</a> { nullptr }</td></tr>
-<tr class="separator:a05dfe5a73f3cd54a00a802c7e0f1f058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92c8ca53b5053c94ac243da70bf65a0" id="r_ad92c8ca53b5053c94ac243da70bf65a0"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a>, <a class="el" href="structitk_1_1simple_1_1ProcessObjectDeleter.html">ProcessObjectDeleter</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad92c8ca53b5053c94ac243da70bf65a0">m_Filter</a></td></tr>
+<tr class="separator:ad92c8ca53b5053c94ac243da70bf65a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acea6b58a7e80263ebffa779bf8f2fe47" id="r_acea6b58a7e80263ebffa779bf8f2fe47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acea6b58a7e80263ebffa779bf8f2fe47">m_ForceOrthogonalDirection</a> { true }</td></tr>
 <tr class="separator:acea6b58a7e80263ebffa779bf8f2fe47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40cb6355b7a10d343925f61f27d9d369" id="r_a40cb6355b7a10d343925f61f27d9d369"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a34d50d20dac44afb3adf9e42ae42d356">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40cb6355b7a10d343925f61f27d9d369">m_MemberFactory</a></td></tr>
-<tr class="separator:a40cb6355b7a10d343925f61f27d9d369"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56ba6b30133ac26b58504492a82994b0" id="r_a56ba6b30133ac26b58504492a82994b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56ba6b30133ac26b58504492a82994b0">m_MetaDataDictionaryArrayUpdate</a> { false }</td></tr>
 <tr class="separator:a56ba6b30133ac26b58504492a82994b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6ea2f9a7677c0947e63fd5e4043d82" id="r_aaf6ea2f9a7677c0947e63fd5e4043d82"><td class="memItemLeft" align="right" valign="top">std::function&lt; std::string(int, const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf6ea2f9a7677c0947e63fd5e4043d82">m_pfGetMetaData</a></td></tr>
@@ -432,7 +436,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00257">257</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00258">258</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +452,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00071">71</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00072">72</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -721,6 +725,31 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
+<a id="a9f4b52203397d0d3e269ea6ae3b0b3ac" name="a9f4b52203397d0d3e269ea6ae3b0b3ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f4b52203397d0d3e269ea6ae3b0b3ac">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a34d50d20dac44afb3adf9e42ae42d356">MemberFunctionType</a> &gt; &amp; itk::simple::ImageSeriesReader::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa9ba914300ff9fe2e63241912cf98b8e" name="aa9ba914300ff9fe2e63241912cf98b8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa9ba914300ff9fe2e63241912cf98b8e">&#9670;&#160;</a></span>GetMetaData()</h2>
 
@@ -752,9 +781,9 @@ template&lt;class TImageType&gt; </div>
 <p>If the key is not in the dictionary then an exception is thrown.</p>
 <p>string types in the dictionary are returned as their native string. Other types are printed to string before returning. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00244">244</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00245">245</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00266">m_pfGetMetaData</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00268">m_pfGetMetaData</a>.</p>
 
 </div>
 </div>
@@ -781,9 +810,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00100">100</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00101">101</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00276">m_MetaDataDictionaryArrayUpdate</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00278">m_MetaDataDictionaryArrayUpdate</a>.</p>
 
 </div>
 </div>
@@ -815,9 +844,9 @@ template&lt;class TImageType&gt; </div>
 <p>If the slice index is out of range, an exception will be thrown.</p>
 <p>Returns a vector of keys to the key/value entries in the file's meta-data dictionary. Iterate through with these keys to get the values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00222">222</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00223">223</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00264">m_pfGetMetaDataKeys</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00266">m_pfGetMetaDataKeys</a>.</p>
 
 </div>
 </div>
@@ -847,7 +876,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00083">83</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00084">84</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -914,9 +943,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>Query a meta-data dictionary for the existence of a key. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00230">230</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00231">231</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00265">m_pfHasMetaDataKey</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00267">m_pfHasMetaDataKey</a>.</p>
 
 </div>
 </div>
@@ -943,9 +972,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00113">113</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00114">114</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00095">SetMetaDataDictionaryArrayUpdate()</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00096">SetMetaDataDictionaryArrayUpdate()</a>.</p>
 
 </div>
 </div>
@@ -973,9 +1002,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of MetaDataDictionaryArrayUpdate to true or false respectively. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00108">108</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00109">109</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00095">SetMetaDataDictionaryArrayUpdate()</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00096">SetMetaDataDictionaryArrayUpdate()</a>.</p>
 
 </div>
 </div>
@@ -1075,11 +1104,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the meta-data dictionaries for the slices should be read. Default value is false, because of the additional computation time. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00095">95</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00096">96</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00276">m_MetaDataDictionaryArrayUpdate</a>.</p>
+<p class="reference">References <a class="el" href="sitkImageSeriesReader_8h_source.html#l00278">m_MetaDataDictionaryArrayUpdate</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00113">MetaDataDictionaryArrayUpdateOff()</a>, and <a class="el" href="sitkImageSeriesReader_8h_source.html#l00108">MetaDataDictionaryArrayUpdateOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00114">MetaDataDictionaryArrayUpdateOff()</a>, and <a class="el" href="sitkImageSeriesReader_8h_source.html#l00109">MetaDataDictionaryArrayUpdateOn()</a>.</p>
 
 </div>
 </div>
@@ -1169,7 +1198,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00257">257</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00258">258</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1194,12 +1223,12 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00272">272</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00274">274</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
-<a id="a05dfe5a73f3cd54a00a802c7e0f1f058" name="a05dfe5a73f3cd54a00a802c7e0f1f058"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05dfe5a73f3cd54a00a802c7e0f1f058">&#9670;&#160;</a></span>m_Filter</h2>
+<a id="ad92c8ca53b5053c94ac243da70bf65a0" name="ad92c8ca53b5053c94ac243da70bf65a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92c8ca53b5053c94ac243da70bf65a0">&#9670;&#160;</a></span>m_Filter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1208,7 +1237,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a>* itk::simple::ImageSeriesReader::m_Filter { nullptr }</td>
+          <td class="memname">std::unique_ptr&lt;<a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html">itk::ProcessObject</a>, <a class="el" href="structitk_1_1simple_1_1ProcessObjectDeleter.html">ProcessObjectDeleter</a>&gt; itk::simple::ImageSeriesReader::m_Filter</td>
         </tr>
       </table>
   </td>
@@ -1218,7 +1247,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00269">269</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00271">271</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1242,31 +1271,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00278">278</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
-
-</div>
-</div>
-<a id="a40cb6355b7a10d343925f61f27d9d369" name="a40cb6355b7a10d343925f61f27d9d369"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40cb6355b7a10d343925f61f27d9d369">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a34d50d20dac44afb3adf9e42ae42d356">MemberFunctionType</a>&gt; &gt; itk::simple::ImageSeriesReader::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00261">261</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00280">280</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1290,9 +1295,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00276">276</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00278">278</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00100">GetMetaDataDictionaryArrayUpdate()</a>, and <a class="el" href="sitkImageSeriesReader_8h_source.html#l00095">SetMetaDataDictionaryArrayUpdate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00101">GetMetaDataDictionaryArrayUpdate()</a>, and <a class="el" href="sitkImageSeriesReader_8h_source.html#l00096">SetMetaDataDictionaryArrayUpdate()</a>.</p>
 
 </div>
 </div>
@@ -1316,9 +1321,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00266">266</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00268">268</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00244">GetMetaData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00245">GetMetaData()</a>.</p>
 
 </div>
 </div>
@@ -1342,9 +1347,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00264">264</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00266">266</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00222">GetMetaDataKeys()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00223">GetMetaDataKeys()</a>.</p>
 
 </div>
 </div>
@@ -1368,9 +1373,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00265">265</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00267">267</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00230">HasMetaDataKey()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkImageSeriesReader_8h_source.html#l00231">HasMetaDataKey()</a>.</p>
 
 </div>
 </div>
@@ -1394,7 +1399,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00280">280</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00282">282</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>
@@ -1418,7 +1423,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00274">274</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00276">276</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
 
 </div>
 </div>

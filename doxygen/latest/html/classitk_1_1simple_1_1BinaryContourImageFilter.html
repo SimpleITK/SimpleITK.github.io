@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1BinaryContourImageFilter-members.html">List of all members</a>  </div>
@@ -124,7 +125,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryContourImageFilter.html">itk::BinaryContourImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -224,6 +225,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac71b2730b67e63d0360f2e621abc62cf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac71b2730b67e63d0360f2e621abc62cf">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:ac71b2730b67e63d0360f2e621abc62cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ac472cf7ab94821d08a42f1f72b20a680" id="r_ac472cf7ab94821d08a42f1f72b20a680"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a2bd4710e4757c319b43c13d2d426350c">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac472cf7ab94821d08a42f1f72b20a680">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:ac472cf7ab94821d08a42f1f72b20a680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a7aac9818024d16853b2d362faf66a6ac" id="r_a7aac9818024d16853b2d362faf66a6ac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7aac9818024d16853b2d362faf66a6ac">m_BackgroundValue</a> { 0.0 }</td></tr>
@@ -234,8 +240,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1a9e467327f338faee95320f077cb64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af79936b9ad4c8ee00188ea957b66c444" id="r_af79936b9ad4c8ee00188ea957b66c444"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af79936b9ad4c8ee00188ea957b66c444">m_InPlace</a> {false}</td></tr>
 <tr class="separator:af79936b9ad4c8ee00188ea957b66c444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeab19993ea3c910dcc54b083a23c2989" id="r_aeab19993ea3c910dcc54b083a23c2989"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a2bd4710e4757c319b43c13d2d426350c">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeab19993ea3c910dcc54b083a23c2989">m_MemberFactory</a></td></tr>
-<tr class="separator:aeab19993ea3c910dcc54b083a23c2989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -362,7 +366,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +383,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -505,7 +509,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00133">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00134">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -532,9 +536,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -562,9 +566,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -592,9 +596,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the background value used to mark the pixels not on the border of the objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00139">m_BackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00140">m_BackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -622,9 +626,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the foreground value used to identify the objects in the input and output images. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00141">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00142">m_ForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -652,9 +656,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00137">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00138">m_FullyConnected</a>.</p>
+
+</div>
+</div>
+<a id="ac472cf7ab94821d08a42f1f72b20a680" name="ac472cf7ab94821d08a42f1f72b20a680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac472cf7ab94821d08a42f1f72b20a680">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a2bd4710e4757c319b43c13d2d426350c">MemberFunctionType</a> &gt; &amp; itk::simple::BinaryContourImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -684,7 +713,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -712,9 +741,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the background value used to mark the pixels not on the border of the objects. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00139">m_BackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00140">m_BackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -742,9 +771,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the foreground value used to identify the objects in the input and output images. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00141">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00142">m_ForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -772,11 +801,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00137">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00138">m_FullyConnected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00083">FullyConnectedOff()</a>, and <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00081">FullyConnectedOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00084">FullyConnectedOff()</a>, and <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00082">FullyConnectedOn()</a>.</p>
 
 </div>
 </div>
@@ -829,7 +858,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ac71b2730b67e63d0360f2e621abc62cf">ExecuteInternal()</a>.</p>
 
@@ -856,9 +885,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00100">GetBackgroundValue()</a>, and <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00094">SetBackgroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00101">GetBackgroundValue()</a>, and <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00095">SetBackgroundValue()</a>.</p>
 
 </div>
 </div>
@@ -882,9 +911,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00112">GetForegroundValue()</a>, and <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00106">SetForegroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00113">GetForegroundValue()</a>, and <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00107">SetForegroundValue()</a>.</p>
 
 </div>
 </div>
@@ -908,9 +937,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00088">GetFullyConnected()</a>, and <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00089">GetFullyConnected()</a>, and <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -934,31 +963,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="aeab19993ea3c910dcc54b083a23c2989" name="aeab19993ea3c910dcc54b083a23c2989"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeab19993ea3c910dcc54b083a23c2989">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a2bd4710e4757c319b43c13d2d426350c">MemberFunctionType</a>&gt; &gt; itk::simple::BinaryContourImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryContourImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkBinaryContourImageFilter_8h_source.html">sitkBinaryContourImageFilter.h</a>.</p>
 
 </div>
 </div>

@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1ValuedRegionalMinimaImageFilter-members.html">List of all members</a>  </div>
@@ -125,7 +126,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ValuedRegionalMinimaImageFilter.html">itk::ValuedRegionalMinimaImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -217,14 +218,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3c3d80a58b01b99d84108d1c9ab9d5aa"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3c3d80a58b01b99d84108d1c9ab9d5aa">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a3c3d80a58b01b99d84108d1c9ab9d5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a2555b9953c501ca3220dfbbed8c6694b" id="r_a2555b9953c501ca3220dfbbed8c6694b"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#acb40f27e0a8a6bc6ba2b53546e160575">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2555b9953c501ca3220dfbbed8c6694b">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a2555b9953c501ca3220dfbbed8c6694b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad5cd80bccdca73a9f4d93aeaae904e9f" id="r_ad5cd80bccdca73a9f4d93aeaae904e9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad5cd80bccdca73a9f4d93aeaae904e9f">m_Flat</a> { false }</td></tr>
 <tr class="separator:ad5cd80bccdca73a9f4d93aeaae904e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf4cd664b46a9620362139879770f0e8" id="r_aaf4cd664b46a9620362139879770f0e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf4cd664b46a9620362139879770f0e8">m_FullyConnected</a> { false }</td></tr>
 <tr class="separator:aaf4cd664b46a9620362139879770f0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac56fcd9ea480b984644df504a1709379" id="r_ac56fcd9ea480b984644df504a1709379"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#acb40f27e0a8a6bc6ba2b53546e160575">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac56fcd9ea480b984644df504a1709379">m_MemberFactory</a></td></tr>
-<tr class="separator:ac56fcd9ea480b984644df504a1709379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -351,7 +355,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -368,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -477,7 +481,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00112">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00113">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -504,9 +508,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -534,9 +538,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -564,9 +568,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00120">m_Flat</a>.</p>
+<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00121">m_Flat</a>.</p>
 
 </div>
 </div>
@@ -593,9 +597,34 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00116">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00117">m_FullyConnected</a>.</p>
+
+</div>
+</div>
+<a id="a2555b9953c501ca3220dfbbed8c6694b" name="a2555b9953c501ca3220dfbbed8c6694b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2555b9953c501ca3220dfbbed8c6694b">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#acb40f27e0a8a6bc6ba2b53546e160575">MemberFunctionType</a> &gt; &amp; itk::simple::ValuedRegionalMinimaImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -625,7 +654,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -652,11 +681,11 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00116">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00117">m_FullyConnected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00083">FullyConnectedOff()</a>, and <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00081">FullyConnectedOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00084">FullyConnectedOff()</a>, and <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00082">FullyConnectedOn()</a>.</p>
 
 </div>
 </div>
@@ -709,7 +738,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a3c3d80a58b01b99d84108d1c9ab9d5aa">ExecuteInternal()</a>.</p>
 
@@ -736,9 +765,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00095">GetFlat()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00096">GetFlat()</a>.</p>
 
 </div>
 </div>
@@ -762,33 +791,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00087">GetFullyConnected()</a>, and <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00076">SetFullyConnected()</a>.</p>
-
-</div>
-</div>
-<a id="ac56fcd9ea480b984644df504a1709379" name="ac56fcd9ea480b984644df504a1709379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac56fcd9ea480b984644df504a1709379">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#acb40f27e0a8a6bc6ba2b53546e160575">MemberFunctionType</a>&gt; &gt; itk::simple::ValuedRegionalMinimaImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html">sitkValuedRegionalMinimaImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00088">GetFullyConnected()</a>, and <a class="el" href="sitkValuedRegionalMinimaImageFilter_8h_source.html#l00077">SetFullyConnected()</a>.</p>
 
 </div>
 </div>

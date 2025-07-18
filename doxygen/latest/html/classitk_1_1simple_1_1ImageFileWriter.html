@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1ImageFileWriter-members.html">List of all members</a>  </div>
@@ -250,9 +251,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a0d98d692e7348314b8ce6a6b3a173672" id="r_a0d98d692e7348314b8ce6a6b3a173672"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">itk::SmartPointer</a>&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ImageIOBase.html">ImageIOBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d98d692e7348314b8ce6a6b3a173672">GetImageIOBase</a> (const <a class="el" href="namespaceitk_1_1simple.html#a291cee3a62184bbfa1beffb4fdeceb49">PathType</a> &amp;fileName)</td></tr>
 <tr class="separator:a0d98d692e7348314b8ce6a6b3a173672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a8bb1d9de6228d24e9057b011e6d99919" id="r_a8bb1d9de6228d24e9057b011e6d99919"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ae056c9c0af821ee6024e91bd6b8aac05">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bb1d9de6228d24e9057b011e6d99919">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a8bb1d9de6228d24e9057b011e6d99919"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a1dad409ae863eb547d27e17dda790c93" id="r_a1dad409ae863eb547d27e17dda790c93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dad409ae863eb547d27e17dda790c93">m_CompressionLevel</a></td></tr>
+<tr class="memitem:a1dad409ae863eb547d27e17dda790c93" id="r_a1dad409ae863eb547d27e17dda790c93"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dad409ae863eb547d27e17dda790c93">m_CompressionLevel</a> { -1 }</td></tr>
 <tr class="separator:a1dad409ae863eb547d27e17dda790c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89e62615adfe52c040d73c3b325b8d5" id="r_af89e62615adfe52c040d73c3b325b8d5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af89e62615adfe52c040d73c3b325b8d5">m_Compressor</a></td></tr>
 <tr class="separator:af89e62615adfe52c040d73c3b325b8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,11 +266,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a61be3877dc9a4fafbe13e2ba791bd87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe52ea43ed9e94d6c2c0f08ff9cdb127" id="r_abe52ea43ed9e94d6c2c0f08ff9cdb127"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe52ea43ed9e94d6c2c0f08ff9cdb127">m_ImageIOName</a></td></tr>
 <tr class="separator:abe52ea43ed9e94d6c2c0f08ff9cdb127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71dd46d56d97ceff15c41bab31217091" id="r_a71dd46d56d97ceff15c41bab31217091"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71dd46d56d97ceff15c41bab31217091">m_KeepOriginalImageUID</a></td></tr>
+<tr class="memitem:a71dd46d56d97ceff15c41bab31217091" id="r_a71dd46d56d97ceff15c41bab31217091"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71dd46d56d97ceff15c41bab31217091">m_KeepOriginalImageUID</a> { false }</td></tr>
 <tr class="separator:a71dd46d56d97ceff15c41bab31217091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc6af66d4f26520cd320903de65a5941" id="r_afc6af66d4f26520cd320903de65a5941"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ae056c9c0af821ee6024e91bd6b8aac05">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc6af66d4f26520cd320903de65a5941">m_MemberFactory</a></td></tr>
-<tr class="separator:afc6af66d4f26520cd320903de65a5941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96eb75319b5809a05761530180a59246" id="r_a96eb75319b5809a05761530180a59246"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96eb75319b5809a05761530180a59246">m_UseCompression</a></td></tr>
+<tr class="memitem:a96eb75319b5809a05761530180a59246" id="r_a96eb75319b5809a05761530180a59246"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96eb75319b5809a05761530180a59246">m_UseCompression</a> { false }</td></tr>
 <tr class="separator:a96eb75319b5809a05761530180a59246"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -666,6 +670,31 @@ template&lt;class T&gt; </div>
 <p>Set/Get name of ImageIO to use. </p>
 <p>An option to override the automatically detected ImageIO used to write the image. The available ImageIOs are listed by the GetRegisteredImageIOs method. If the ImageIO can not be constructed an exception will be generated.</p>
 <p>The default value is an empty string (""). This indicates that the ImageIO will be automatically determined by the ITK ImageIO factory mechanism. </p>
+
+</div>
+</div>
+<a id="a8bb1d9de6228d24e9057b011e6d99919" name="a8bb1d9de6228d24e9057b011e6d99919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb1d9de6228d24e9057b011e6d99919">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ae056c9c0af821ee6024e91bd6b8aac05">MemberFunctionType</a> &gt; &amp; itk::simple::ImageFileWriter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1072,7 +1101,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int itk::simple::ImageFileWriter::m_CompressionLevel</td>
+          <td class="memname">int itk::simple::ImageFileWriter::m_CompressionLevel { -1 }</td>
         </tr>
       </table>
   </td>
@@ -1168,7 +1197,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::ImageFileWriter::m_KeepOriginalImageUID</td>
+          <td class="memname">bool itk::simple::ImageFileWriter::m_KeepOriginalImageUID { false }</td>
         </tr>
       </table>
   </td>
@@ -1182,30 +1211,6 @@ template&lt;class T&gt; </div>
 
 </div>
 </div>
-<a id="afc6af66d4f26520cd320903de65a5941" name="afc6af66d4f26520cd320903de65a5941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc6af66d4f26520cd320903de65a5941">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ae056c9c0af821ee6024e91bd6b8aac05">MemberFunctionType</a>&gt; &gt; itk::simple::ImageFileWriter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkImageFileWriter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkImageFileWriter_8h_source.html">sitkImageFileWriter.h</a>.</p>
-
-</div>
-</div>
 <a id="a96eb75319b5809a05761530180a59246" name="a96eb75319b5809a05761530180a59246"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a96eb75319b5809a05761530180a59246">&#9670;&#160;</a></span>m_UseCompression</h2>
 
@@ -1216,7 +1221,7 @@ template&lt;class T&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool itk::simple::ImageFileWriter::m_UseCompression</td>
+          <td class="memname">bool itk::simple::ImageFileWriter::m_UseCompression { false }</td>
         </tr>
       </table>
   </td>

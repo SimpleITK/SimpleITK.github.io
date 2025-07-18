@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1GrayscaleConnectedClosingImageFilter-members.html">List of all members</a>  </div>
@@ -125,7 +126,7 @@ Analysis: Principles and Applications", Second Edition, Springer, 2003.</p>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GrayscaleConnectedClosingImageFilter.html">itk::GrayscaleConnectedClosingImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -219,12 +220,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a45c1cead687ebb580ccf655b7fe65884"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a45c1cead687ebb580ccf655b7fe65884">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a45c1cead687ebb580ccf655b7fe65884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a2398a11a3eb6fbfc3a3a1329e86ba061" id="r_a2398a11a3eb6fbfc3a3a1329e86ba061"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ae9a90e25ae7d8cc9748ae9513ce282fe">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2398a11a3eb6fbfc3a3a1329e86ba061">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a2398a11a3eb6fbfc3a3a1329e86ba061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a04dc0ab1b1fc0c8d37ea099678b429bb" id="r_a04dc0ab1b1fc0c8d37ea099678b429bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04dc0ab1b1fc0c8d37ea099678b429bb">m_FullyConnected</a> { false }</td></tr>
 <tr class="separator:a04dc0ab1b1fc0c8d37ea099678b429bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2a7a65f9b9aea45b83f44012f130ca1" id="r_af2a7a65f9b9aea45b83f44012f130ca1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ae9a90e25ae7d8cc9748ae9513ce282fe">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2a7a65f9b9aea45b83f44012f130ca1">m_MemberFactory</a></td></tr>
-<tr class="separator:af2a7a65f9b9aea45b83f44012f130ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91bd0dff348bcdeeae4e0846127c42d9" id="r_a91bd0dff348bcdeeae4e0846127c42d9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91bd0dff348bcdeeae4e0846127c42d9">m_Seed</a> { std::vector&lt;uint32_t&gt;(3, 0) }</td></tr>
 <tr class="separator:a91bd0dff348bcdeeae4e0846127c42d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -353,7 +357,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00115">115</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +374,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +390,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +483,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00117">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00118">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -506,9 +510,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00087">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00088">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -536,9 +540,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00087">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00088">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -566,9 +570,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00123">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00124">m_FullyConnected</a>.</p>
+
+</div>
+</div>
+<a id="a2398a11a3eb6fbfc3a3a1329e86ba061" name="a2398a11a3eb6fbfc3a3a1329e86ba061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2398a11a3eb6fbfc3a3a1329e86ba061">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ae9a90e25ae7d8cc9748ae9513ce282fe">MemberFunctionType</a> &gt; &amp; itk::simple::GrayscaleConnectedClosingImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -598,7 +627,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -626,9 +655,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the seed pixel for the segmentation </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00121">m_Seed</a>.</p>
+<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00122">m_Seed</a>.</p>
 
 </div>
 </div>
@@ -656,11 +685,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00123">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00124">m_FullyConnected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00094">FullyConnectedOff()</a>, and <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00092">FullyConnectedOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00095">FullyConnectedOff()</a>, and <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00093">FullyConnectedOn()</a>.</p>
 
 </div>
 </div>
@@ -688,9 +717,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the seed pixel for the segmentation </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00121">m_Seed</a>.</p>
+<p class="reference">References <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00122">m_Seed</a>.</p>
 
 </div>
 </div>
@@ -743,7 +772,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a45c1cead687ebb580ccf655b7fe65884">ExecuteInternal()</a>.</p>
 
@@ -770,33 +799,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00099">GetFullyConnected()</a>, and <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00087">SetFullyConnected()</a>.</p>
-
-</div>
-</div>
-<a id="af2a7a65f9b9aea45b83f44012f130ca1" name="af2a7a65f9b9aea45b83f44012f130ca1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2a7a65f9b9aea45b83f44012f130ca1">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ae9a90e25ae7d8cc9748ae9513ce282fe">MemberFunctionType</a>&gt; &gt; itk::simple::GrayscaleConnectedClosingImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00100">GetFullyConnected()</a>, and <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00088">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -820,9 +825,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html">sitkGrayscaleConnectedClosingImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00081">GetSeed()</a>, and <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00075">SetSeed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00082">GetSeed()</a>, and <a class="el" href="sitkGrayscaleConnectedClosingImageFilter_8h_source.html#l00076">SetSeed()</a>.</p>
 
 </div>
 </div>

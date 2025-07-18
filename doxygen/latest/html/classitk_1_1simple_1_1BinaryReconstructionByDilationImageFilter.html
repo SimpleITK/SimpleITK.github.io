@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter-members.html">List of all members</a>  </div>
@@ -124,7 +125,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryReconstructionByDilationImageFilter.html">itk::BinaryReconstructionByDilationImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -222,6 +223,11 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7eb1207fe738e8eea76011a200a10938"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7eb1207fe738e8eea76011a200a10938">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *markerImage, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> *maskImage)</td></tr>
 <tr class="separator:a7eb1207fe738e8eea76011a200a10938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a554207f3fe4de93a0b8417e6a28305a6" id="r_a554207f3fe4de93a0b8417e6a28305a6"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a530f3dfa892b127f116099c8a6996c57">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a554207f3fe4de93a0b8417e6a28305a6">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a554207f3fe4de93a0b8417e6a28305a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2998edca6c54aa7c0f55d3d772da245c" id="r_a2998edca6c54aa7c0f55d3d772da245c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2998edca6c54aa7c0f55d3d772da245c">m_BackgroundValue</a> { 0.0 }</td></tr>
@@ -230,8 +236,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a9decee8ea9283336129fd0b8c2fa804c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac740f6c12558263f612edf1fbe3f8698" id="r_ac740f6c12558263f612edf1fbe3f8698"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac740f6c12558263f612edf1fbe3f8698">m_FullyConnected</a> { false }</td></tr>
 <tr class="separator:ac740f6c12558263f612edf1fbe3f8698"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d2078b3c390107fe92db5bd27cecdc" id="r_a96d2078b3c390107fe92db5bd27cecdc"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a530f3dfa892b127f116099c8a6996c57">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96d2078b3c390107fe92db5bd27cecdc">m_MemberFactory</a></td></tr>
-<tr class="separator:a96d2078b3c390107fe92db5bd27cecdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -359,11 +363,11 @@ Additional Inherited Members</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line"> <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> (<a class="code hl_typedef" href="#ad2c554f9e00e403e1de2d5840e208d54">Self</a>::*)(<span class="keyword">const</span> <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> *</div>
 <div class="line">    markerImage, <span class="keyword">const</span> <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> *</div>
 <div class="line">    maskImage)</div>
-<div class="ttc" id="aclassitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter_html_ad2c554f9e00e403e1de2d5840e208d54"><div class="ttname"><a href="#ad2c554f9e00e403e1de2d5840e208d54">itk::simple::BinaryReconstructionByDilationImageFilter::Self</a></div><div class="ttdeci">BinaryReconstructionByDilationImageFilter Self</div><div class="ttdef"><b>Definition</b> <a href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00058">sitkBinaryReconstructionByDilationImageFilter.h:58</a></div></div>
+<div class="ttc" id="aclassitk_1_1simple_1_1BinaryReconstructionByDilationImageFilter_html_ad2c554f9e00e403e1de2d5840e208d54"><div class="ttname"><a href="#ad2c554f9e00e403e1de2d5840e208d54">itk::simple::BinaryReconstructionByDilationImageFilter::Self</a></div><div class="ttdeci">BinaryReconstructionByDilationImageFilter Self</div><div class="ttdef"><b>Definition</b> <a href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00059">sitkBinaryReconstructionByDilationImageFilter.h:59</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1Image_html"><div class="ttname"><a href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a></div><div class="ttdoc">The Image class for SimpleITK.</div><div class="ttdef"><b>Definition</b> <a href="sitkImage_8h_source.html#l00076">sitkImage.h:77</a></div></div>
 </div><!-- fragment --><p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -380,7 +384,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -396,7 +400,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -497,7 +501,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00134">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00135">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -524,9 +528,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00100">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00101">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -554,9 +558,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00100">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00101">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -584,9 +588,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used as "background" in the output image. Defaults to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;PixelType&gt;::NonpositiveMin()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00138">m_BackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00139">m_BackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -614,9 +618,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used as "foreground" in the output image. Defaults to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;PixelType&gt;::max()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00140">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00141">m_ForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -644,9 +648,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00142">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00143">m_FullyConnected</a>.</p>
+
+</div>
+</div>
+<a id="a554207f3fe4de93a0b8417e6a28305a6" name="a554207f3fe4de93a0b8417e6a28305a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554207f3fe4de93a0b8417e6a28305a6">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a530f3dfa892b127f116099c8a6996c57">MemberFunctionType</a> &gt; &amp; itk::simple::BinaryReconstructionByDilationImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -676,7 +705,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -704,9 +733,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used as "background" in the output image. Defaults to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;PixelType&gt;::NonpositiveMin()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00138">m_BackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00139">m_BackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -734,9 +763,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used as "foreground" in the output image. Defaults to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;PixelType&gt;::max()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00140">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00141">m_ForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -764,11 +793,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00142">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00143">m_FullyConnected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00107">FullyConnectedOff()</a>, and <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00105">FullyConnectedOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00108">FullyConnectedOff()</a>, and <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00106">FullyConnectedOn()</a>.</p>
 
 </div>
 </div>
@@ -821,7 +850,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a7eb1207fe738e8eea76011a200a10938">ExecuteInternal()</a>.</p>
 
@@ -848,9 +877,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00082">GetBackgroundValue()</a>, and <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00076">SetBackgroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00083">GetBackgroundValue()</a>, and <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00077">SetBackgroundValue()</a>.</p>
 
 </div>
 </div>
@@ -874,9 +903,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00094">GetForegroundValue()</a>, and <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00088">SetForegroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00095">GetForegroundValue()</a>, and <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00089">SetForegroundValue()</a>.</p>
 
 </div>
 </div>
@@ -900,33 +929,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00112">GetFullyConnected()</a>, and <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00100">SetFullyConnected()</a>.</p>
-
-</div>
-</div>
-<a id="a96d2078b3c390107fe92db5bd27cecdc" name="a96d2078b3c390107fe92db5bd27cecdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96d2078b3c390107fe92db5bd27cecdc">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a530f3dfa892b127f116099c8a6996c57">MemberFunctionType</a>&gt; &gt; itk::simple::BinaryReconstructionByDilationImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html">sitkBinaryReconstructionByDilationImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00113">GetFullyConnected()</a>, and <a class="el" href="sitkBinaryReconstructionByDilationImageFilter_8h_source.html#l00101">SetFullyConnected()</a>.</p>
 
 </div>
 </div>

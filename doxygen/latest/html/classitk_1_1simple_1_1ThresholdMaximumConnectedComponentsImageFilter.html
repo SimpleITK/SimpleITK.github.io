@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1ThresholdMaximumConnectedComponentsImageFilter-members.html">List of all members</a>  </div>
@@ -125,7 +126,7 @@ stable-state". Pattern Recognition, 29(5): 829-843, 1996.</dd></dl>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ThresholdMaximumConnectedComponentsImageFilter.html">itk::ThresholdMaximumConnectedComponentsImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -223,12 +224,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac5d795c1ea2a51096f7f5150925257a3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac5d795c1ea2a51096f7f5150925257a3">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:ac5d795c1ea2a51096f7f5150925257a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a35829c40eb7c68be8898374ed040134c" id="r_a35829c40eb7c68be8898374ed040134c"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a754b8fdb4b69a1b0acfbd50acb428aeb">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35829c40eb7c68be8898374ed040134c">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a35829c40eb7c68be8898374ed040134c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a4a71a5ca94629952fb80362e9e2892ff" id="r_a4a71a5ca94629952fb80362e9e2892ff"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a71a5ca94629952fb80362e9e2892ff">m_InsideValue</a> { 1u }</td></tr>
 <tr class="separator:a4a71a5ca94629952fb80362e9e2892ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac694d4864efff80f74ce323fcee90c48" id="r_ac694d4864efff80f74ce323fcee90c48"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a754b8fdb4b69a1b0acfbd50acb428aeb">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac694d4864efff80f74ce323fcee90c48">m_MemberFactory</a></td></tr>
-<tr class="separator:ac694d4864efff80f74ce323fcee90c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abea6370c93f53ec4fbced7244b1f89bb" id="r_abea6370c93f53ec4fbced7244b1f89bb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abea6370c93f53ec4fbced7244b1f89bb">m_MinimumObjectSizeInPixels</a> { 0u }</td></tr>
 <tr class="separator:abea6370c93f53ec4fbced7244b1f89bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2db0c0183f2aa53712c4de4249bf9745" id="r_a2db0c0183f2aa53712c4de4249bf9745"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2db0c0183f2aa53712c4de4249bf9745">m_OutsideValue</a> { 0u }</td></tr>
@@ -361,7 +365,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -378,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +398,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -487,7 +491,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00146">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00147">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -515,9 +519,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The following Set/Get methods are for the binary threshold function. This class automatically calculates the lower threshold boundary. The upper threshold boundary, inside value, and outside value can be defined by the user, however the standard values are used as default if not set by the user. The default value of the: Inside value is the maximum pixel type intensity. Outside value is the minimum pixel type intensity. Upper threshold boundary is the maximum pixel type intensity. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00154">m_InsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00155">m_InsideValue</a>.</p>
+
+</div>
+</div>
+<a id="a35829c40eb7c68be8898374ed040134c" name="a35829c40eb7c68be8898374ed040134c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35829c40eb7c68be8898374ed040134c">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a754b8fdb4b69a1b0acfbd50acb428aeb">MemberFunctionType</a> &gt; &amp; itk::simple::ThresholdMaximumConnectedComponentsImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -545,9 +574,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The pixel type must support comparison operators. Set the minimum pixel area used to count objects on the image. Thus, only objects that have a pixel area greater than the minimum pixel area will be counted as an object in the optimization portion of this filter. Essentially, it eliminates noise from being counted as an object. The default value is zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00150">m_MinimumObjectSizeInPixels</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00151">m_MinimumObjectSizeInPixels</a>.</p>
 
 </div>
 </div>
@@ -577,7 +606,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -605,9 +634,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The following Set/Get methods are for the binary threshold function. This class automatically calculates the lower threshold boundary. The upper threshold boundary, inside value, and outside value can be defined by the user, however the standard values are used as default if not set by the user. The default value of the: Inside value is the maximum pixel type intensity. Outside value is the minimum pixel type intensity. Upper threshold boundary is the maximum pixel type intensity. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00156">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00157">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -635,9 +664,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The following Set/Get methods are for the binary threshold function. This class automatically calculates the lower threshold boundary. The upper threshold boundary, inside value, and outside value can be defined by the user, however the standard values are used as default if not set by the user. The default value of the: Inside value is the maximum pixel type intensity. Outside value is the minimum pixel type intensity. Upper threshold boundary is the maximum pixel type intensity. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00152">m_UpperBoundary</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00153">m_UpperBoundary</a>.</p>
 
 </div>
 </div>
@@ -665,9 +694,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The following Set/Get methods are for the binary threshold function. This class automatically calculates the lower threshold boundary. The upper threshold boundary, inside value, and outside value can be defined by the user, however the standard values are used as default if not set by the user. The default value of the: Inside value is the maximum pixel type intensity. Outside value is the minimum pixel type intensity. Upper threshold boundary is the maximum pixel type intensity. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00154">m_InsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00155">m_InsideValue</a>.</p>
 
 </div>
 </div>
@@ -695,9 +724,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The pixel type must support comparison operators. Set the minimum pixel area used to count objects on the image. Thus, only objects that have a pixel area greater than the minimum pixel area will be counted as an object in the optimization portion of this filter. Essentially, it eliminates noise from being counted as an object. The default value is zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00150">m_MinimumObjectSizeInPixels</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00151">m_MinimumObjectSizeInPixels</a>.</p>
 
 </div>
 </div>
@@ -725,9 +754,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The following Set/Get methods are for the binary threshold function. This class automatically calculates the lower threshold boundary. The upper threshold boundary, inside value, and outside value can be defined by the user, however the standard values are used as default if not set by the user. The default value of the: Inside value is the maximum pixel type intensity. Outside value is the minimum pixel type intensity. Upper threshold boundary is the maximum pixel type intensity. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00156">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00157">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -755,9 +784,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The following Set/Get methods are for the binary threshold function. This class automatically calculates the lower threshold boundary. The upper threshold boundary, inside value, and outside value can be defined by the user, however the standard values are used as default if not set by the user. The default value of the: Inside value is the maximum pixel type intensity. Outside value is the minimum pixel type intensity. Upper threshold boundary is the maximum pixel type intensity. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00152">m_UpperBoundary</a>.</p>
+<p class="reference">References <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00153">m_UpperBoundary</a>.</p>
 
 </div>
 </div>
@@ -810,7 +839,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ac5d795c1ea2a51096f7f5150925257a3">ExecuteInternal()</a>.</p>
 
@@ -837,33 +866,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00116">GetInsideValue()</a>, and <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00110">SetInsideValue()</a>.</p>
-
-</div>
-</div>
-<a id="ac694d4864efff80f74ce323fcee90c48" name="ac694d4864efff80f74ce323fcee90c48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac694d4864efff80f74ce323fcee90c48">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a754b8fdb4b69a1b0acfbd50acb428aeb">MemberFunctionType</a>&gt; &gt; itk::simple::ThresholdMaximumConnectedComponentsImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00117">GetInsideValue()</a>, and <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00111">SetInsideValue()</a>.</p>
 
 </div>
 </div>
@@ -887,9 +892,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00092">GetMinimumObjectSizeInPixels()</a>, and <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00086">SetMinimumObjectSizeInPixels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00093">GetMinimumObjectSizeInPixels()</a>, and <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00087">SetMinimumObjectSizeInPixels()</a>.</p>
 
 </div>
 </div>
@@ -913,9 +918,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00128">GetOutsideValue()</a>, and <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00122">SetOutsideValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00129">GetOutsideValue()</a>, and <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00123">SetOutsideValue()</a>.</p>
 
 </div>
 </div>
@@ -939,9 +944,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html">sitkThresholdMaximumConnectedComponentsImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00104">GetUpperBoundary()</a>, and <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00098">SetUpperBoundary()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00105">GetUpperBoundary()</a>, and <a class="el" href="sitkThresholdMaximumConnectedComponentsImageFilter_8h_source.html#l00099">SetUpperBoundary()</a>.</p>
 
 </div>
 </div>

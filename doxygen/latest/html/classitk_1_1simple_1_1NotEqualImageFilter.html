@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1NotEqualImageFilter-members.html">List of all members</a>  </div>
@@ -124,7 +125,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryFunctorImageFilter.html">itk::BinaryFunctorImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -236,6 +237,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a832f2112a4b83d4cadf9fe17f3d0c476"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a832f2112a4b83d4cadf9fe17f3d0c476">ExecuteInternal</a> (double constant, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image2)</td></tr>
 <tr class="separator:a832f2112a4b83d4cadf9fe17f3d0c476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:aabbdce96b981bc50764b5f230308a2c3" id="r_aabbdce96b981bc50764b5f230308a2c3"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab75a38a3fa0fdea3430a8d8869791e6e">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabbdce96b981bc50764b5f230308a2c3">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:aabbdce96b981bc50764b5f230308a2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620fb56dc03ef5ac0c6139340667aabd" id="r_a620fb56dc03ef5ac0c6139340667aabd"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac37f59735c3d045ec26fc112fb1a7f44">MemberFunction1Type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a620fb56dc03ef5ac0c6139340667aabd">GetMemberFunctionFactory1</a> ()</td></tr>
+<tr class="separator:a620fb56dc03ef5ac0c6139340667aabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d2c433b712bf05bef6bf9f73afee46" id="r_a15d2c433b712bf05bef6bf9f73afee46"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a323883235562c85e2b4562f2a94dd29c">MemberFunction2Type</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15d2c433b712bf05bef6bf9f73afee46">GetMemberFunctionFactory2</a> ()</td></tr>
+<tr class="separator:a15d2c433b712bf05bef6bf9f73afee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:adba3d7b3ead2c479042e836017eefed3" id="r_adba3d7b3ead2c479042e836017eefed3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adba3d7b3ead2c479042e836017eefed3">m_BackgroundValue</a> { 0u }</td></tr>
@@ -244,12 +254,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:add55bd0dfc4dd09d50966ca965e2edf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51aee576250dc846b07b5a4a376bad12" id="r_a51aee576250dc846b07b5a4a376bad12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51aee576250dc846b07b5a4a376bad12">m_InPlace</a> {false}</td></tr>
 <tr class="separator:a51aee576250dc846b07b5a4a376bad12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a138f1461c7b88a28d27ad311d4ab4" id="r_a27a138f1461c7b88a28d27ad311d4ab4"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab75a38a3fa0fdea3430a8d8869791e6e">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27a138f1461c7b88a28d27ad311d4ab4">m_MemberFactory</a></td></tr>
-<tr class="separator:a27a138f1461c7b88a28d27ad311d4ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abccc6789636d3409810fd92604469ce7" id="r_abccc6789636d3409810fd92604469ce7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac37f59735c3d045ec26fc112fb1a7f44">MemberFunction1Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abccc6789636d3409810fd92604469ce7">m_MemberFactory1</a></td></tr>
-<tr class="separator:abccc6789636d3409810fd92604469ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a618c014d65ec105a53ed93307905567f" id="r_a618c014d65ec105a53ed93307905567f"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a323883235562c85e2b4562f2a94dd29c">MemberFunction2Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a618c014d65ec105a53ed93307905567f">m_MemberFactory2</a></td></tr>
-<tr class="separator:a618c014d65ec105a53ed93307905567f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -379,7 +383,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -403,7 +407,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -428,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -445,7 +449,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -461,7 +465,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -710,7 +714,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00136">detail::MemberFunctionAddressor&lt; MemberFunction1Type &gt;</a>, and <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00141">detail::MemberFunctionAddressor&lt; MemberFunction2Type &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00137">detail::MemberFunctionAddressor&lt; MemberFunction1Type &gt;</a>, and <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00142">detail::MemberFunctionAddressor&lt; MemberFunction2Type &gt;</a>.</p>
 
 </div>
 </div>
@@ -800,9 +804,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used to mark the false pixels of the operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00148">m_BackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00149">m_BackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -830,9 +834,86 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used to mark the true pixels of the operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00150">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00151">m_ForegroundValue</a>.</p>
+
+</div>
+</div>
+<a id="aabbdce96b981bc50764b5f230308a2c3" name="aabbdce96b981bc50764b5f230308a2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabbdce96b981bc50764b5f230308a2c3">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ab75a38a3fa0fdea3430a8d8869791e6e">MemberFunctionType</a> &gt; &amp; itk::simple::NotEqualImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a620fb56dc03ef5ac0c6139340667aabd" name="a620fb56dc03ef5ac0c6139340667aabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a620fb56dc03ef5ac0c6139340667aabd">&#9670;&#160;</a></span>GetMemberFunctionFactory1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac37f59735c3d045ec26fc112fb1a7f44">MemberFunction1Type</a> &gt; &amp; itk::simple::NotEqualImageFilter::GetMemberFunctionFactory1 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15d2c433b712bf05bef6bf9f73afee46" name="a15d2c433b712bf05bef6bf9f73afee46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15d2c433b712bf05bef6bf9f73afee46">&#9670;&#160;</a></span>GetMemberFunctionFactory2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a323883235562c85e2b4562f2a94dd29c">MemberFunction2Type</a> &gt; &amp; itk::simple::NotEqualImageFilter::GetMemberFunctionFactory2 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00145">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -862,7 +943,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -890,9 +971,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used to mark the false pixels of the operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00148">m_BackgroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00149">m_BackgroundValue</a>.</p>
 
 </div>
 </div>
@@ -920,9 +1001,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the value used to mark the true pixels of the operator. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00150">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00151">m_ForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -975,7 +1056,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a3594c9366f917a2af1a739edb468149b">ExecuteInternal()</a>.</p>
 
@@ -1001,7 +1082,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a3594c9366f917a2af1a739edb468149b">ExecuteInternal()</a>.</p>
 
@@ -1027,9 +1108,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00142">m_MemberFactory2</a>.</p>
+<p class="reference">References <a class="el" href="#a15d2c433b712bf05bef6bf9f73afee46">GetMemberFunctionFactory2()</a>.</p>
 
 </div>
 </div>
@@ -1054,9 +1135,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00082">GetBackgroundValue()</a>, and <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00075">SetBackgroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00083">GetBackgroundValue()</a>, and <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00076">SetBackgroundValue()</a>.</p>
 
 </div>
 </div>
@@ -1080,9 +1161,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00096">GetForegroundValue()</a>, and <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00089">SetForegroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00097">GetForegroundValue()</a>, and <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00090">SetForegroundValue()</a>.</p>
 
 </div>
 </div>
@@ -1106,81 +1187,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a27a138f1461c7b88a28d27ad311d4ab4" name="a27a138f1461c7b88a28d27ad311d4ab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27a138f1461c7b88a28d27ad311d4ab4">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ab75a38a3fa0fdea3430a8d8869791e6e">MemberFunctionType</a>&gt; &gt; itk::simple::NotEqualImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="abccc6789636d3409810fd92604469ce7" name="abccc6789636d3409810fd92604469ce7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abccc6789636d3409810fd92604469ce7">&#9670;&#160;</a></span>m_MemberFactory1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ac37f59735c3d045ec26fc112fb1a7f44">MemberFunction1Type</a>&gt; &gt; itk::simple::NotEqualImageFilter::m_MemberFactory1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="a618c014d65ec105a53ed93307905567f" name="a618c014d65ec105a53ed93307905567f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a618c014d65ec105a53ed93307905567f">&#9670;&#160;</a></span>m_MemberFactory2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a323883235562c85e2b4562f2a94dd29c">MemberFunction2Type</a>&gt; &gt; itk::simple::NotEqualImageFilter::m_MemberFactory2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00144">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNotEqualImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkNotEqualImageFilter_8h_source.html">sitkNotEqualImageFilter.h</a>.</p>
 
 </div>
 </div>

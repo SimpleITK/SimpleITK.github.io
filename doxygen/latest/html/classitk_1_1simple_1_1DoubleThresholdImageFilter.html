@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1DoubleThresholdImageFilter-members.html">List of all members</a>  </div>
@@ -124,7 +125,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DoubleThresholdImageFilter.html">itk::DoubleThresholdImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -238,14 +239,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aba2c1e1beb4b8dbb520497b524675524"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aba2c1e1beb4b8dbb520497b524675524">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:aba2c1e1beb4b8dbb520497b524675524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:ae10013eaee98b6797d710a00ced85869" id="r_ae10013eaee98b6797d710a00ced85869"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ad7f7273b8f66f0437581e3e40d51e59c">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae10013eaee98b6797d710a00ced85869">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:ae10013eaee98b6797d710a00ced85869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a363ffa4cdafb49f6a4e32bb67dddb344" id="r_a363ffa4cdafb49f6a4e32bb67dddb344"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a363ffa4cdafb49f6a4e32bb67dddb344">m_FullyConnected</a> { false }</td></tr>
 <tr class="separator:a363ffa4cdafb49f6a4e32bb67dddb344"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c53b67895214e0e06b2b0866f06a52c" id="r_a5c53b67895214e0e06b2b0866f06a52c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c53b67895214e0e06b2b0866f06a52c">m_InsideValue</a> { 1u }</td></tr>
 <tr class="separator:a5c53b67895214e0e06b2b0866f06a52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fbe9d3b0f7c59166367b4384f1bb5ee" id="r_a5fbe9d3b0f7c59166367b4384f1bb5ee"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ad7f7273b8f66f0437581e3e40d51e59c">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fbe9d3b0f7c59166367b4384f1bb5ee">m_MemberFactory</a></td></tr>
-<tr class="separator:a5fbe9d3b0f7c59166367b4384f1bb5ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1597c5cfd70996bd1b219e2103a5950" id="r_ab1597c5cfd70996bd1b219e2103a5950"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1597c5cfd70996bd1b219e2103a5950">m_OutsideValue</a> { 0u }</td></tr>
 <tr class="separator:ab1597c5cfd70996bd1b219e2103a5950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6260204603ba53d7370ef58105f495b8" id="r_a6260204603ba53d7370ef58105f495b8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6260204603ba53d7370ef58105f495b8">m_Threshold1</a> { 0.0 }</td></tr>
@@ -382,7 +386,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -399,7 +403,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -415,7 +419,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -508,7 +512,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00176">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00177">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -535,9 +539,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00146">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00147">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -565,9 +569,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of FullyConnected to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00146">SetFullyConnected()</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00147">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -595,9 +599,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00159">159</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00192">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00193">m_FullyConnected</a>.</p>
 
 </div>
 </div>
@@ -625,9 +629,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the "inside" pixel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00188">m_InsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00189">m_InsideValue</a>.</p>
+
+</div>
+</div>
+<a id="ae10013eaee98b6797d710a00ced85869" name="ae10013eaee98b6797d710a00ced85869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10013eaee98b6797d710a00ced85869">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ad7f7273b8f66f0437581e3e40d51e59c">MemberFunctionType</a> &gt; &amp; itk::simple::DoubleThresholdImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -657,7 +686,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -685,9 +714,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the "outside" pixel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00190">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00191">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -715,9 +744,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the threshold values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00180">m_Threshold1</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00181">m_Threshold1</a>.</p>
 
 </div>
 </div>
@@ -745,9 +774,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the threshold values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00182">m_Threshold2</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00183">m_Threshold2</a>.</p>
 
 </div>
 </div>
@@ -775,9 +804,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the threshold values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00184">m_Threshold3</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00185">m_Threshold3</a>.</p>
 
 </div>
 </div>
@@ -805,9 +834,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the threshold values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00186">m_Threshold4</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00187">m_Threshold4</a>.</p>
 
 </div>
 </div>
@@ -835,11 +864,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether the connected components are defined strictly by face connectivity or by face+edge+vertex connectivity. Default is FullyConnectedOff. For objects that are 1 pixel wide, use FullyConnectedOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00192">m_FullyConnected</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00193">m_FullyConnected</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00153">FullyConnectedOff()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00151">FullyConnectedOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00154">FullyConnectedOff()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00152">FullyConnectedOn()</a>.</p>
 
 </div>
 </div>
@@ -867,9 +896,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the "inside" pixel value. The default value <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;OutputPixelType&gt;::max()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00188">m_InsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00189">m_InsideValue</a>.</p>
 
 </div>
 </div>
@@ -897,9 +926,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the "outside" pixel value. The default value <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a2a78b68c2a6ed8fe843b298265e5dd7a">NumericTraits&lt;OutputPixelType&gt;::ZeroValue()</a> . </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00190">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00191">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -927,9 +956,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the thresholds. Four thresholds should be specified. The two lower thresholds default to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;InputPixelType&gt;::NonpositiveMin()</a> . The two upper thresholds default <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;InputPixelType&gt;::max</a> . Threshold1 &lt;= Threshold2 &lt;= Threshold3 &lt;= Threshold4. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00180">m_Threshold1</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00181">m_Threshold1</a>.</p>
 
 </div>
 </div>
@@ -957,9 +986,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the thresholds. Four thresholds should be specified. The two lower thresholds default to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;InputPixelType&gt;::NonpositiveMin()</a> . The two upper thresholds default <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;InputPixelType&gt;::max</a> . Threshold1 &lt;= Threshold2 &lt;= Threshold3 &lt;= Threshold4. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00182">m_Threshold2</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00183">m_Threshold2</a>.</p>
 
 </div>
 </div>
@@ -987,9 +1016,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the thresholds. Four thresholds should be specified. The two lower thresholds default to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;InputPixelType&gt;::NonpositiveMin()</a> . The two upper thresholds default <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;InputPixelType&gt;::max</a> . Threshold1 &lt;= Threshold2 &lt;= Threshold3 &lt;= Threshold4. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00184">m_Threshold3</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00185">m_Threshold3</a>.</p>
 
 </div>
 </div>
@@ -1017,9 +1046,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the thresholds. Four thresholds should be specified. The two lower thresholds default to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;InputPixelType&gt;::NonpositiveMin()</a> . The two upper thresholds default <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;InputPixelType&gt;::max</a> . Threshold1 &lt;= Threshold2 &lt;= Threshold3 &lt;= Threshold4. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00186">m_Threshold4</a>.</p>
+<p class="reference">References <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00187">m_Threshold4</a>.</p>
 
 </div>
 </div>
@@ -1072,7 +1101,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#aba2c1e1beb4b8dbb520497b524675524">ExecuteInternal()</a>.</p>
 
@@ -1099,9 +1128,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00158">GetFullyConnected()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00146">SetFullyConnected()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00159">GetFullyConnected()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00147">SetFullyConnected()</a>.</p>
 
 </div>
 </div>
@@ -1125,33 +1154,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00188">188</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00128">GetInsideValue()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00122">SetInsideValue()</a>.</p>
-
-</div>
-</div>
-<a id="a5fbe9d3b0f7c59166367b4384f1bb5ee" name="a5fbe9d3b0f7c59166367b4384f1bb5ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5fbe9d3b0f7c59166367b4384f1bb5ee">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ad7f7273b8f66f0437581e3e40d51e59c">MemberFunctionType</a>&gt; &gt; itk::simple::DoubleThresholdImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00129">GetInsideValue()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00123">SetInsideValue()</a>.</p>
 
 </div>
 </div>
@@ -1175,9 +1180,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00140">GetOutsideValue()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00134">SetOutsideValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00141">GetOutsideValue()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00135">SetOutsideValue()</a>.</p>
 
 </div>
 </div>
@@ -1201,9 +1206,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00181">181</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00080">GetThreshold1()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00074">SetThreshold1()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00081">GetThreshold1()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00075">SetThreshold1()</a>.</p>
 
 </div>
 </div>
@@ -1227,9 +1232,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00092">GetThreshold2()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00086">SetThreshold2()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00093">GetThreshold2()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00087">SetThreshold2()</a>.</p>
 
 </div>
 </div>
@@ -1253,9 +1258,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00185">185</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00104">GetThreshold3()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00098">SetThreshold3()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00105">GetThreshold3()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00099">SetThreshold3()</a>.</p>
 
 </div>
 </div>
@@ -1279,9 +1284,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00187">187</a> of file <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html">sitkDoubleThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00116">GetThreshold4()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00110">SetThreshold4()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00117">GetThreshold4()</a>, and <a class="el" href="sitkDoubleThresholdImageFilter_8h_source.html#l00111">SetThreshold4()</a>.</p>
 
 </div>
 </div>

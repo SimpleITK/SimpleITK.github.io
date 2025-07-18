@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1DerivativeImageFilter-members.html">List of all members</a>  </div>
@@ -128,7 +129,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DerivativeImageFilter.html">itk::DerivativeImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -229,12 +230,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a5493fa72f857a7b29a04727213836b5f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a5493fa72f857a7b29a04727213836b5f">ExecuteInternalVectorImage</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image)</td></tr>
 <tr class="separator:a5493fa72f857a7b29a04727213836b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a7ec752e98fb7359bc3f9d131fd888bae" id="r_a7ec752e98fb7359bc3f9d131fd888bae"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aff67bbc8a8381f6eace311f3edbc6eb8">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ec752e98fb7359bc3f9d131fd888bae">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a7ec752e98fb7359bc3f9d131fd888bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a9681e79c02b13bd3ad04104c6f65af53" id="r_a9681e79c02b13bd3ad04104c6f65af53"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9681e79c02b13bd3ad04104c6f65af53">m_Direction</a> { 0u }</td></tr>
 <tr class="separator:a9681e79c02b13bd3ad04104c6f65af53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a591ffe5d64351d8e23b307b5af391540" id="r_a591ffe5d64351d8e23b307b5af391540"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aff67bbc8a8381f6eace311f3edbc6eb8">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a591ffe5d64351d8e23b307b5af391540">m_MemberFactory</a></td></tr>
-<tr class="separator:a591ffe5d64351d8e23b307b5af391540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a902b8b15e0fc117e701308de1d474581" id="r_a902b8b15e0fc117e701308de1d474581"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a902b8b15e0fc117e701308de1d474581">m_Order</a> { 1u }</td></tr>
 <tr class="separator:a902b8b15e0fc117e701308de1d474581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cbf7e8a52eca64251e6ca76d3e44860" id="r_a9cbf7e8a52eca64251e6ca76d3e44860"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cbf7e8a52eca64251e6ca76d3e44860">m_UseImageSpacing</a> { true }</td></tr>
@@ -367,7 +371,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -384,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +404,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +525,7 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Dispatched methods which calls ExecuteInternal on each component </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00137">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00138">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -549,9 +553,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The output pixel type must be signed. Standard get/set macros for filter parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00141">m_Direction</a>.</p>
+<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00142">m_Direction</a>.</p>
+
+</div>
+</div>
+<a id="a7ec752e98fb7359bc3f9d131fd888bae" name="a7ec752e98fb7359bc3f9d131fd888bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec752e98fb7359bc3f9d131fd888bae">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#aff67bbc8a8381f6eace311f3edbc6eb8">MemberFunctionType</a> &gt; &amp; itk::simple::DerivativeImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -581,7 +610,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -609,9 +638,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The output pixel type must be signed. Standard get/set macros for filter parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00143">m_Order</a>.</p>
+<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00144">m_Order</a>.</p>
 
 </div>
 </div>
@@ -639,9 +668,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether or not the filter will use the spacing of the input image in its calculations. Use On to compute the derivatives in physical space; use Off to ignore the image spacing and to compute the derivatives in isotropic voxel space. Default is On. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00145">m_UseImageSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00146">m_UseImageSpacing</a>.</p>
 
 </div>
 </div>
@@ -669,9 +698,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The output pixel type must be signed. Standard get/set macros for filter parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00141">m_Direction</a>.</p>
+<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00142">m_Direction</a>.</p>
 
 </div>
 </div>
@@ -699,9 +728,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The output pixel type must be signed. Standard get/set macros for filter parameters. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00143">m_Order</a>.</p>
+<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00144">m_Order</a>.</p>
 
 </div>
 </div>
@@ -729,11 +758,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether or not the filter will use the spacing of the input image in its calculations. Use On to compute the derivatives in physical space; use Off to ignore the image spacing and to compute the derivatives in isotropic voxel space. Default is On. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00145">m_UseImageSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00146">m_UseImageSpacing</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00111">UseImageSpacingOff()</a>, and <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00109">UseImageSpacingOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00112">UseImageSpacingOff()</a>, and <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00110">UseImageSpacingOn()</a>.</p>
 
 </div>
 </div>
@@ -788,9 +817,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00104">SetUseImageSpacing()</a>.</p>
+<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00105">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -818,9 +847,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of UseImageSpacing to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00104">SetUseImageSpacing()</a>.</p>
+<p class="reference">References <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00105">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -845,7 +874,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a5493fa72f857a7b29a04727213836b5f">ExecuteInternalVectorImage()</a>.</p>
 
@@ -871,7 +900,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -896,33 +925,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00086">GetDirection()</a>, and <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00080">SetDirection()</a>.</p>
-
-</div>
-</div>
-<a id="a591ffe5d64351d8e23b307b5af391540" name="a591ffe5d64351d8e23b307b5af391540"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a591ffe5d64351d8e23b307b5af391540">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#aff67bbc8a8381f6eace311f3edbc6eb8">MemberFunctionType</a>&gt; &gt; itk::simple::DerivativeImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00087">GetDirection()</a>, and <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00081">SetDirection()</a>.</p>
 
 </div>
 </div>
@@ -946,9 +951,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00098">GetOrder()</a>, and <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00092">SetOrder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00099">GetOrder()</a>, and <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00093">SetOrder()</a>.</p>
 
 </div>
 </div>
@@ -972,9 +977,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkDerivativeImageFilter_8h_source.html">sitkDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00116">GetUseImageSpacing()</a>, and <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00104">SetUseImageSpacing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00117">GetUseImageSpacing()</a>, and <a class="el" href="sitkDerivativeImageFilter_8h_source.html#l00105">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>

@@ -88,6 +88,7 @@ $(function(){ initResizable(false); });
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1ImageFileReader-members.html">List of all members</a>  </div>
@@ -322,9 +323,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a2b2490b6df4e760a3ca4adc0f73697f5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2b2490b6df4e760a3ca4adc0f73697f5">ExecuteExtract</a> (TInternalImageType *itkImage)</td></tr>
 <tr class="separator:a2b2490b6df4e760a3ca4adc0f73697f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a1b9cd210b09a51a5fdbe78215be9cec2" id="r_a1b9cd210b09a51a5fdbe78215be9cec2"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1cd0dd57d1825480eeeb30a50bddacac">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b9cd210b09a51a5fdbe78215be9cec2">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a1b9cd210b09a51a5fdbe78215be9cec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ad6b762fc182e907f8a5b7fe2e87e8f14" id="r_ad6b762fc182e907f8a5b7fe2e87e8f14"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6b762fc182e907f8a5b7fe2e87e8f14">m_Dimension</a></td></tr>
+<tr class="memitem:ad6b762fc182e907f8a5b7fe2e87e8f14" id="r_ad6b762fc182e907f8a5b7fe2e87e8f14"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6b762fc182e907f8a5b7fe2e87e8f14">m_Dimension</a> { 0 }</td></tr>
 <tr class="separator:ad6b762fc182e907f8a5b7fe2e87e8f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f5a87746b646ab766531313f21d9041" id="r_a5f5a87746b646ab766531313f21d9041"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f5a87746b646ab766531313f21d9041">m_Direction</a></td></tr>
 <tr class="separator:a5f5a87746b646ab766531313f21d9041"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -334,11 +340,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a2a8eac9f2b9d5bd55f38f2c64d9cd017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fc7f4187b7e7359f278859262a82921" id="r_a9fc7f4187b7e7359f278859262a82921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#a291cee3a62184bbfa1beffb4fdeceb49">PathType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fc7f4187b7e7359f278859262a82921">m_FileName</a></td></tr>
 <tr class="separator:a9fc7f4187b7e7359f278859262a82921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab08ce0c4d7a3180121ff5880ac4c9eaa" id="r_ab08ce0c4d7a3180121ff5880ac4c9eaa"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1cd0dd57d1825480eeeb30a50bddacac">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab08ce0c4d7a3180121ff5880ac4c9eaa">m_MemberFactory</a></td></tr>
-<tr class="separator:ab08ce0c4d7a3180121ff5880ac4c9eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92ad2117aa5edc05e9b6f902149112e" id="r_ae92ad2117aa5edc05e9b6f902149112e"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1MetaDataDictionary.html">MetaDataDictionary</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae92ad2117aa5edc05e9b6f902149112e">m_MetaDataDictionary</a></td></tr>
 <tr class="separator:ae92ad2117aa5edc05e9b6f902149112e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15a0012d5f0ea0e200445bd858fd1f3d" id="r_a15a0012d5f0ea0e200445bd858fd1f3d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15a0012d5f0ea0e200445bd858fd1f3d">m_NumberOfComponents</a></td></tr>
+<tr class="memitem:a15a0012d5f0ea0e200445bd858fd1f3d" id="r_a15a0012d5f0ea0e200445bd858fd1f3d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15a0012d5f0ea0e200445bd858fd1f3d">m_NumberOfComponents</a> { 0 }</td></tr>
 <tr class="separator:a15a0012d5f0ea0e200445bd858fd1f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e1b6fba903d4d46b42aa69975d5e6b" id="r_ae8e1b6fba903d4d46b42aa69975d5e6b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8e1b6fba903d4d46b42aa69975d5e6b">m_Origin</a></td></tr>
 <tr class="separator:ae8e1b6fba903d4d46b42aa69975d5e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,7 +352,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a023dafd029d5e64bea4afb3bf95c9ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14b4266060b6f4d281a46cd1050250cd" id="r_a14b4266060b6f4d281a46cd1050250cd"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(const std::string &amp;)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14b4266060b6f4d281a46cd1050250cd">m_pfHasMetaDataKey</a></td></tr>
 <tr class="separator:a14b4266060b6f4d281a46cd1050250cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a689abef95dab7bc14bd5b220351e7020" id="r_a689abef95dab7bc14bd5b220351e7020"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689abef95dab7bc14bd5b220351e7020">m_PixelType</a></td></tr>
+<tr class="memitem:a689abef95dab7bc14bd5b220351e7020" id="r_a689abef95dab7bc14bd5b220351e7020"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689abef95dab7bc14bd5b220351e7020">m_PixelType</a> { <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">sitkUnknown</a> }</td></tr>
 <tr class="separator:a689abef95dab7bc14bd5b220351e7020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a693e06b24274bf83aec4ed1c423e970b" id="r_a693e06b24274bf83aec4ed1c423e970b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a693e06b24274bf83aec4ed1c423e970b">m_Size</a></td></tr>
 <tr class="separator:a693e06b24274bf83aec4ed1c423e970b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -690,6 +694,31 @@ template&lt;class TImageType&gt; </div>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b9cd210b09a51a5fdbe78215be9cec2" name="a1b9cd210b09a51a5fdbe78215be9cec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9cd210b09a51a5fdbe78215be9cec2">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a1cd0dd57d1825480eeeb30a50bddacac">MemberFunctionType</a> &gt; &amp; itk::simple::ImageFileReader::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1097,7 +1126,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::ImageFileReader::m_Dimension</td>
+          <td class="memname">unsigned int itk::simple::ImageFileReader::m_Dimension { 0 }</td>
         </tr>
       </table>
   </td>
@@ -1107,7 +1136,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00255">255</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00256">256</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1131,7 +1160,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00257">257</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00258">258</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1155,7 +1184,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00264">264</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00265">265</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1179,7 +1208,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00263">263</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00264">264</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1203,31 +1232,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00250">250</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
-
-</div>
-</div>
-<a id="ab08ce0c4d7a3180121ff5880ac4c9eaa" name="ab08ce0c4d7a3180121ff5880ac4c9eaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab08ce0c4d7a3180121ff5880ac4c9eaa">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a1cd0dd57d1825480eeeb30a50bddacac">MemberFunctionType</a>&gt; &gt; itk::simple::ImageFileReader::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00243">243</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00251">251</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1251,7 +1256,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00252">252</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00253">253</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1265,7 +1270,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int itk::simple::ImageFileReader::m_NumberOfComponents</td>
+          <td class="memname">unsigned int itk::simple::ImageFileReader::m_NumberOfComponents { 0 }</td>
         </tr>
       </table>
   </td>
@@ -1275,7 +1280,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00256">256</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00257">257</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1299,7 +1304,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00258">258</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00259">259</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1323,7 +1328,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00248">248</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00249">249</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1347,7 +1352,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00246">246</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00247">247</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1371,7 +1376,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00247">247</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00248">248</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1390,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::ImageFileReader::m_PixelType</td>
+          <td class="memname"><a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a> itk::simple::ImageFileReader::m_PixelType { <a class="el" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">sitkUnknown</a> }</td>
         </tr>
       </table>
   </td>
@@ -1395,7 +1400,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00254">254</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00255">255</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1419,7 +1424,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00261">261</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00262">262</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -1443,7 +1448,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00259">259</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkImageFileReader_8h_source.html#l00260">260</a> of file <a class="el" href="sitkImageFileReader_8h_source.html">sitkImageFileReader.h</a>.</p>
 
 </div>
 </div>

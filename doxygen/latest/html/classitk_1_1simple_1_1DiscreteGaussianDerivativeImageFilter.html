@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1DiscreteGaussianDerivativeImageFilter-members.html">List of all members</a>  </div>
@@ -131,7 +132,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DiscreteGaussianDerivativeImageFilter.html">itk::DiscreteGaussianDerivativeImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -249,14 +250,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a08cc96ce04c095a2986d6e513e93ade7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a08cc96ce04c095a2986d6e513e93ade7">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:a08cc96ce04c095a2986d6e513e93ade7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:abf9b2ea770ba2e95dbd7061156428e02" id="r_abf9b2ea770ba2e95dbd7061156428e02"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a2a7622605e5f2542eb0fef3c144ae0ba">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf9b2ea770ba2e95dbd7061156428e02">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:abf9b2ea770ba2e95dbd7061156428e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aefd25740d3b4f32e88d85dabfd533fe4" id="r_aefd25740d3b4f32e88d85dabfd533fe4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefd25740d3b4f32e88d85dabfd533fe4">m_MaximumError</a> { 0.01 }</td></tr>
 <tr class="separator:aefd25740d3b4f32e88d85dabfd533fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9de417327c331ee02038d9ffb220364c" id="r_a9de417327c331ee02038d9ffb220364c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9de417327c331ee02038d9ffb220364c">m_MaximumKernelWidth</a> { 32u }</td></tr>
 <tr class="separator:a9de417327c331ee02038d9ffb220364c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a286104b76766b840937c65e7e5dfd417" id="r_a286104b76766b840937c65e7e5dfd417"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a2a7622605e5f2542eb0fef3c144ae0ba">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a286104b76766b840937c65e7e5dfd417">m_MemberFactory</a></td></tr>
-<tr class="separator:a286104b76766b840937c65e7e5dfd417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae79b39fbc0b29104aae0034a65c3813a" id="r_ae79b39fbc0b29104aae0034a65c3813a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae79b39fbc0b29104aae0034a65c3813a">m_NormalizeAcrossScale</a> { false }</td></tr>
 <tr class="separator:ae79b39fbc0b29104aae0034a65c3813a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09a35f95702953895287df749611ddcf" id="r_a09a35f95702953895287df749611ddcf"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09a35f95702953895287df749611ddcf">m_Order</a> { std::vector&lt;unsigned int&gt;(3, 1) }</td></tr>
@@ -391,7 +395,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00189">189</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -408,7 +412,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +428,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -517,7 +521,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00191">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00192">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -545,9 +549,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The algorithm will size the discrete kernel so that the error resulting from truncation of the kernel is no greater than MaximumError. The default is 0.01 in each dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00201">m_MaximumError</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00202">m_MaximumError</a>.</p>
 
 </div>
 </div>
@@ -575,9 +579,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the kernel to be no wider than MaximumKernelWidth pixels, even if MaximumError demands it. The default is 32 pixels. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00199">m_MaximumKernelWidth</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00200">m_MaximumKernelWidth</a>.</p>
+
+</div>
+</div>
+<a id="abf9b2ea770ba2e95dbd7061156428e02" name="abf9b2ea770ba2e95dbd7061156428e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf9b2ea770ba2e95dbd7061156428e02">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a2a7622605e5f2542eb0fef3c144ae0ba">MemberFunctionType</a> &gt; &amp; itk::simple::DiscreteGaussianDerivativeImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -607,7 +636,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -635,9 +664,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the flag for calculating scale-space normalized derivatives. Normalized derivatives are obtained multiplying by the scale parameter t. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00205">m_NormalizeAcrossScale</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00206">m_NormalizeAcrossScale</a>.</p>
 
 </div>
 </div>
@@ -665,9 +694,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Order of derivatives in each dimension. Sets the derivative order independently for each dimension, but see also <a class="el" href="#a0c7b4947e4e0ad02834bb2b05d03569a">SetOrder(const unsigned int v)</a> . The default is 1 in each dimension. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00197">m_Order</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00198">m_Order</a>.</p>
 
 </div>
 </div>
@@ -695,9 +724,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether or not the filter will use the spacing of the input image in its calculations. Default is ImageSpacingOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00203">m_UseImageSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00204">m_UseImageSpacing</a>.</p>
 
 </div>
 </div>
@@ -725,9 +754,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>The variance for the discrete Gaussian kernel. Sets the variance independently for each dimension, but see also <a class="el" href="#a25fad2b1ebb041146c57f002bd331370">SetVariance(const double v)</a> . The default is 0.0 in each dimension. If UseImageSpacing is true, the units are the physical units of your image. If UseImageSpacing is false then the units are pixels. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00195">m_Variance</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00196">m_Variance</a>.</p>
 
 </div>
 </div>
@@ -754,9 +783,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00161">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00162">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -784,9 +813,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of NormalizeAcrossScale to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00161">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00162">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -814,9 +843,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Convenience Set methods for setting all dimensional parameters to the same values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00201">m_MaximumError</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00202">m_MaximumError</a>.</p>
 
 </div>
 </div>
@@ -844,9 +873,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the kernel to be no wider than MaximumKernelWidth pixels, even if MaximumError demands it. The default is 32 pixels. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00199">m_MaximumKernelWidth</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00200">m_MaximumKernelWidth</a>.</p>
 
 </div>
 </div>
@@ -874,11 +903,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the flag for calculating scale-space normalized derivatives. Normalized derivatives are obtained multiplying by the scale parameter t. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00205">m_NormalizeAcrossScale</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00206">m_NormalizeAcrossScale</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00168">NormalizeAcrossScaleOff()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00166">NormalizeAcrossScaleOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00169">NormalizeAcrossScaleOff()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00167">NormalizeAcrossScaleOn()</a>.</p>
 
 </div>
 </div>
@@ -906,9 +935,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Convenience Set methods for setting all dimensional parameters to the same values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00103">103</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00197">m_Order</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00198">m_Order</a>.</p>
 
 </div>
 </div>
@@ -936,9 +965,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the Order vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00197">m_Order</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00198">m_Order</a>.</p>
 
 </div>
 </div>
@@ -966,11 +995,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get whether or not the filter will use the spacing of the input image in its calculations. Default is ImageSpacingOn. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00203">m_UseImageSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00204">m_UseImageSpacing</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00150">UseImageSpacingOff()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00148">UseImageSpacingOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00151">UseImageSpacingOff()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00149">UseImageSpacingOn()</a>.</p>
 
 </div>
 </div>
@@ -998,9 +1027,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the values of the Variance vector all to value </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00195">m_Variance</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00196">m_Variance</a>.</p>
 
 </div>
 </div>
@@ -1028,9 +1057,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Convenience Set methods for setting all dimensional parameters to the same values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00195">m_Variance</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00196">m_Variance</a>.</p>
 
 </div>
 </div>
@@ -1085,9 +1114,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00151">151</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00143">SetUseImageSpacing()</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00144">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -1115,9 +1144,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of UseImageSpacing to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00143">SetUseImageSpacing()</a>.</p>
+<p class="reference">References <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00144">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1171,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a08cc96ce04c095a2986d6e513e93ade7">ExecuteInternal()</a>.</p>
 
@@ -1169,9 +1198,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00137">GetMaximumError()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00131">SetMaximumError()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00138">GetMaximumError()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00132">SetMaximumError()</a>.</p>
 
 </div>
 </div>
@@ -1195,33 +1224,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00199">199</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00125">GetMaximumKernelWidth()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00119">SetMaximumKernelWidth()</a>.</p>
-
-</div>
-</div>
-<a id="a286104b76766b840937c65e7e5dfd417" name="a286104b76766b840937c65e7e5dfd417"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a286104b76766b840937c65e7e5dfd417">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#a2a7622605e5f2542eb0fef3c144ae0ba">MemberFunctionType</a>&gt; &gt; itk::simple::DiscreteGaussianDerivativeImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00126">GetMaximumKernelWidth()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00120">SetMaximumKernelWidth()</a>.</p>
 
 </div>
 </div>
@@ -1245,9 +1250,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00206">206</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00173">GetNormalizeAcrossScale()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00161">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00174">GetNormalizeAcrossScale()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00162">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -1271,9 +1276,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00198">198</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00113">GetOrder()</a>, <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00103">SetOrder()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00108">SetOrder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00114">GetOrder()</a>, <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00104">SetOrder()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00109">SetOrder()</a>.</p>
 
 </div>
 </div>
@@ -1297,9 +1302,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00203">203</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00204">204</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00155">GetUseImageSpacing()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00143">SetUseImageSpacing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00156">GetUseImageSpacing()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00144">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -1323,9 +1328,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html">sitkDiscreteGaussianDerivativeImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00097">GetVariance()</a>, <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00092">SetVariance()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00087">SetVariance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00098">GetVariance()</a>, <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00093">SetVariance()</a>, and <a class="el" href="sitkDiscreteGaussianDerivativeImageFilter_8h_source.html#l00088">SetVariance()</a>.</p>
 
 </div>
 </div>

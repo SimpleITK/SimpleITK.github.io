@@ -87,6 +87,7 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1SignedDanielssonDistanceMapImageFilter-members.html">List of all members</a>  </div>
@@ -135,7 +136,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SignedDanielssonDistanceMapImageFilter.html">itk::SignedDanielssonDistanceMapImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -245,12 +246,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:af7e6507f76e4b582ff19bdaebec953e6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af7e6507f76e4b582ff19bdaebec953e6">ExecuteInternal</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
 <tr class="separator:af7e6507f76e4b582ff19bdaebec953e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a02137abf028f01784d01221c2a11b25d" id="r_a02137abf028f01784d01221c2a11b25d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac2587f2c5b608b4c66069436e223aa70">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02137abf028f01784d01221c2a11b25d">GetMemberFunctionFactory</a> ()</td></tr>
+<tr class="separator:a02137abf028f01784d01221c2a11b25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a23dc0ecef3732cb7ccee780f492210e5" id="r_a23dc0ecef3732cb7ccee780f492210e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23dc0ecef3732cb7ccee780f492210e5">m_InsideIsPositive</a> { false }</td></tr>
 <tr class="separator:a23dc0ecef3732cb7ccee780f492210e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ead125ad1cbb6efdeadc7d513f4ae14" id="r_a7ead125ad1cbb6efdeadc7d513f4ae14"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac2587f2c5b608b4c66069436e223aa70">MemberFunctionType</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ead125ad1cbb6efdeadc7d513f4ae14">m_MemberFactory</a></td></tr>
-<tr class="separator:a7ead125ad1cbb6efdeadc7d513f4ae14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75863ef614640b82fe9b391665578ba2" id="r_a75863ef614640b82fe9b391665578ba2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75863ef614640b82fe9b391665578ba2">m_SquaredDistance</a> { false }</td></tr>
 <tr class="separator:a75863ef614640b82fe9b391665578ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae54c97c5069cad48b4ee5e448977f90f" id="r_ae54c97c5069cad48b4ee5e448977f90f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae54c97c5069cad48b4ee5e448977f90f">m_UseImageSpacing</a> { false }</td></tr>
@@ -385,7 +389,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +422,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -511,7 +515,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00170">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00171">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -539,9 +543,34 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get if the inside represents positive values in the signed distance map. See <a class="el" href="#a09dfd0284af3ad45a8d962d5a2601185">GetInsideIsPositive()</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00174">m_InsideIsPositive</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00175">m_InsideIsPositive</a>.</p>
+
+</div>
+</div>
+<a id="a02137abf028f01784d01221c2a11b25d" name="a02137abf028f01784d01221c2a11b25d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02137abf028f01784d01221c2a11b25d">&#9670;&#160;</a></span>GetMemberFunctionFactory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#ac2587f2c5b608b4c66069436e223aa70">MemberFunctionType</a> &gt; &amp; itk::simple::SignedDanielssonDistanceMapImageFilter::GetMemberFunctionFactory </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -571,7 +600,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -599,9 +628,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the distance squared. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00176">m_SquaredDistance</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00177">m_SquaredDistance</a>.</p>
 
 </div>
 </div>
@@ -629,9 +658,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get whether spacing is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00178">m_UseImageSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00179">m_UseImageSpacing</a>.</p>
 
 </div>
 </div>
@@ -660,9 +689,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get vector field of distances.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00183">m_VectorDistanceMap</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00184">m_VectorDistanceMap</a>.</p>
 
 </div>
 </div>
@@ -691,9 +720,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get Voronoi Map This map shows for each pixel what object is closest to it. Each object should be labeled by a number (larger than 0), so the map has a value for each pixel corresponding to the label of the closest object.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00146">146</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00182">m_VoronoiMap</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00183">m_VoronoiMap</a>.</p>
 
 </div>
 </div>
@@ -720,9 +749,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00088">SetInsideIsPositive()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00089">SetInsideIsPositive()</a>.</p>
 
 </div>
 </div>
@@ -750,9 +779,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of InsideIsPositive to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00088">SetInsideIsPositive()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00089">SetInsideIsPositive()</a>.</p>
 
 </div>
 </div>
@@ -780,11 +809,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set if the inside represents positive values in the signed distance map. By convention ON pixels are treated as inside pixels. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00174">m_InsideIsPositive</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00175">m_InsideIsPositive</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00095">InsideIsPositiveOff()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00093">InsideIsPositiveOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00096">InsideIsPositiveOff()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00094">InsideIsPositiveOn()</a>.</p>
 
 </div>
 </div>
@@ -812,11 +841,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set if the distance should be squared. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00176">m_SquaredDistance</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00177">m_SquaredDistance</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00113">SquaredDistanceOff()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00111">SquaredDistanceOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00114">SquaredDistanceOff()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00112">SquaredDistanceOn()</a>.</p>
 
 </div>
 </div>
@@ -844,11 +873,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set if image spacing should be used in computing distances. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00124">124</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00178">m_UseImageSpacing</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00179">m_UseImageSpacing</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00131">UseImageSpacingOff()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00129">UseImageSpacingOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00132">UseImageSpacingOff()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00130">UseImageSpacingOn()</a>.</p>
 
 </div>
 </div>
@@ -875,9 +904,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00106">SetSquaredDistance()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00107">SetSquaredDistance()</a>.</p>
 
 </div>
 </div>
@@ -905,9 +934,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of SquaredDistance to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00106">SetSquaredDistance()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00107">SetSquaredDistance()</a>.</p>
 
 </div>
 </div>
@@ -962,9 +991,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00124">SetUseImageSpacing()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00125">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -992,9 +1021,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of UseImageSpacing to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00124">SetUseImageSpacing()</a>.</p>
+<p class="reference">References <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00125">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -1019,7 +1048,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#af7e6507f76e4b582ff19bdaebec953e6">ExecuteInternal()</a>.</p>
 
@@ -1046,33 +1075,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00100">GetInsideIsPositive()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00088">SetInsideIsPositive()</a>.</p>
-
-</div>
-</div>
-<a id="a7ead125ad1cbb6efdeadc7d513f4ae14" name="a7ead125ad1cbb6efdeadc7d513f4ae14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ead125ad1cbb6efdeadc7d513f4ae14">&#9670;&#160;</a></span>m_MemberFactory</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt;<a class="el" href="#ac2587f2c5b608b4c66069436e223aa70">MemberFunctionType</a>&gt; &gt; itk::simple::SignedDanielssonDistanceMapImageFilter::m_MemberFactory</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00171">171</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00101">GetInsideIsPositive()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00089">SetInsideIsPositive()</a>.</p>
 
 </div>
 </div>
@@ -1096,9 +1101,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00118">GetSquaredDistance()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00106">SetSquaredDistance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00119">GetSquaredDistance()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00107">SetSquaredDistance()</a>.</p>
 
 </div>
 </div>
@@ -1122,9 +1127,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00179">179</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00136">GetUseImageSpacing()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00124">SetUseImageSpacing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00137">GetUseImageSpacing()</a>, and <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00125">SetUseImageSpacing()</a>.</p>
 
 </div>
 </div>
@@ -1148,9 +1153,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00153">GetVectorDistanceMap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00154">GetVectorDistanceMap()</a>.</p>
 
 </div>
 </div>
@@ -1174,9 +1179,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html">sitkSignedDanielssonDistanceMapImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00145">GetVoronoiMap()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSignedDanielssonDistanceMapImageFilter_8h_source.html#l00146">GetVoronoiMap()</a>.</p>
 
 </div>
 </div>
