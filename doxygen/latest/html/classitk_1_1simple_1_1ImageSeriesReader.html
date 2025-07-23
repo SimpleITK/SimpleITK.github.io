@@ -122,7 +122,7 @@ $(function(){ initResizable(false); });
 <dd>
 If the pixel type for the returned image is not specified it is deduced from the first image in the series. This approach is computationally efficient and assumes that all images in a series have the same pixel type. In rare situations this is not the case, not all images have the same pixel type. If this leads to a narrowing conversion (e.g. first image pixel type is unsigned int and others are float) the returned image does not represent the data correctly. To resolve such situations, explicitly specify the expected pixel type via the SetOutputPixelType method before reading the series.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d" title="ReadImage is a procedural interface to the ImageFileReader class which is convenient for most image r...">itk::simple::ReadImage</a> for the procedural interface </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#_a0">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#_a0">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cs-example.html#_a11">DicomSeriesFromArray/DicomSeriesFromArray.cs</a>, <a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cxx-example.html#_a13">DicomSeriesFromArray/DicomSeriesFromArray.cxx</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#_a0">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#_a0">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkImageSeriesReader_8h_source.html#l00069">69</a> of file <a class="el" href="sitkImageSeriesReader_8h_source.html">sitkImageSeriesReader.h</a>.</p>
@@ -526,7 +526,7 @@ Additional Inherited Members</h2></td></tr>
 <p>This method is reimplemented in derived classes to perform the actual reading of the image. </p>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ImageReaderBase.html#a01ce8e9187cada5b600a1464ddaad47f">itk::simple::ImageReaderBase</a>.</p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#a4">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a4">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cs-example.html#a16">DicomSeriesFromArray/DicomSeriesFromArray.cs</a>, <a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cxx-example.html#a16">DicomSeriesFromArray/DicomSeriesFromArray.cxx</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#a4">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a4">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -681,7 +681,7 @@ template&lt;class TImageType&gt; </div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GDCMSeriesFileNames.html">itk::GDCMSeriesFileNames</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#a1">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a1">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cs-example.html#a13">DicomSeriesFromArray/DicomSeriesFromArray.cs</a>, <a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cxx-example.html#a12">DicomSeriesFromArray/DicomSeriesFromArray.cxx</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#a1">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a1">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -722,6 +722,8 @@ template&lt;class TImageType&gt; </div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1GDCMSeriesFileNames.html">itk::GDCMSeriesFileNames</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cs-example.html#a12">DicomSeriesFromArray/DicomSeriesFromArray.cs</a>, and <a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cxx-example.html#a11">DicomSeriesFromArray/DicomSeriesFromArray.cxx</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -1056,7 +1058,7 @@ template&lt;class TImageType&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#a2">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a2">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cs-example.html#a14">DicomSeriesFromArray/DicomSeriesFromArray.cs</a>, <a class="el" href="DicomSeriesFromArray_2DicomSeriesFromArray_8cxx-example.html#a14">DicomSeriesFromArray/DicomSeriesFromArray.cxx</a>, <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cs-example.html#a2">DicomSeriesReader/DicomSeriesReader.cs</a>, and <a class="el" href="DicomSeriesReader_2DicomSeriesReader_8cxx-example.html#a2">DicomSeriesReader/DicomSeriesReader.cxx</a>.</dd>
 </dl>
 
 </div>
