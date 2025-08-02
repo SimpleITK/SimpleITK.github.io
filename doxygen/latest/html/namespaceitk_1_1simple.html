@@ -3225,9 +3225,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad870f3fa4ece2461938335bf1604dbc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sine of each pixel.  <br /></td></tr>
 <tr class="separator:ad870f3fa4ece2461938335bf1604dbc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ad51d5db96be65e836def8e69b6efc79b" id="r_ad51d5db96be65e836def8e69b6efc79b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad51d5db96be65e836def8e69b6efc79b">Slice</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, std::vector&lt; int32_t &gt; start=std::vector&lt; int32_t &gt;(3, 0), std::vector&lt; int32_t &gt; stop=std::vector&lt; int32_t &gt;(3, std::numeric_limits&lt; int32_t &gt;::max()), std::vector&lt; int &gt; step=std::vector&lt; int &gt;(3, 1))</td></tr>
-<tr class="memdesc:ad51d5db96be65e836def8e69b6efc79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slices an image based on a starting index and a stopping index, and a step size.  <br /></td></tr>
-<tr class="separator:ad51d5db96be65e836def8e69b6efc79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1e2ba92dd5f93a0dc91cb1a53bd7a3c" id="r_af1e2ba92dd5f93a0dc91cb1a53bd7a3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1e2ba92dd5f93a0dc91cb1a53bd7a3c">Slice</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, std::vector&lt; int32_t &gt; start=std::vector&lt; int32_t &gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0), std::vector&lt; int32_t &gt; stop=std::vector&lt; int32_t &gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, std::numeric_limits&lt; int32_t &gt;::max()), std::vector&lt; int &gt; step=std::vector&lt; int &gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 1))</td></tr>
+<tr class="memdesc:af1e2ba92dd5f93a0dc91cb1a53bd7a3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slices an image based on a starting index and a stopping index, and a step size.  <br /></td></tr>
+<tr class="separator:af1e2ba92dd5f93a0dc91cb1a53bd7a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:aae628fab608d59771a8e075247ed22dd" id="r_aae628fab608d59771a8e075247ed22dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae628fab608d59771a8e075247ed22dd">SLIC</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, std::vector&lt; unsigned int &gt; superGridSize=std::vector&lt; unsigned int &gt;(3, 50), double spatialProximityWeight=10.0, uint32_t maximumNumberOfIterations=5u, bool enforceConnectivity=true, bool initializationPerturbation=true)</td></tr>
 <tr class="memdesc:aae628fab608d59771a8e075247ed22dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple Linear Iterative Clustering (SLIC) super-pixel segmentation.  <br /></td></tr>
@@ -23238,8 +23238,8 @@ template&lt;typename TType, typename TVectorOfITKVector&gt; </div>
 
 </div>
 </div>
-<a id="ad51d5db96be65e836def8e69b6efc79b" name="ad51d5db96be65e836def8e69b6efc79b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad51d5db96be65e836def8e69b6efc79b">&#9670;&#160;</a></span>Slice()</h2>
+<a id="af1e2ba92dd5f93a0dc91cb1a53bd7a3c" name="af1e2ba92dd5f93a0dc91cb1a53bd7a3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e2ba92dd5f93a0dc91cb1a53bd7a3c">&#9670;&#160;</a></span>Slice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -23252,17 +23252,17 @@ template&lt;typename TType, typename TVectorOfITKVector&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int32_t &gt;</td>          <td class="paramname"><span class="paramname"><em>start</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::vector&lt;&#160;int32_t&#160;&gt;(3,&#160;0)</span>, </td>
+          <td class="paramtype">std::vector&lt; int32_t &gt;</td>          <td class="paramname"><span class="paramname"><em>start</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::vector&lt;&#160;int32_t&#160;&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>,&#160;0)</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int32_t &gt;</td>          <td class="paramname"><span class="paramname"><em>stop</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::vector&lt;&#160;int32_t&#160;&gt;(3,&#160;std::numeric_limits&lt;&#160;int32_t&#160;&gt;::max())</span>, </td>
+          <td class="paramtype">std::vector&lt; int32_t &gt;</td>          <td class="paramname"><span class="paramname"><em>stop</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::vector&lt;&#160;int32_t&#160;&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>,&#160;std::numeric_limits&lt;&#160;int32_t&#160;&gt;::max())</span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>step</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::vector&lt;&#160;int&#160;&gt;(3,&#160;1)</span>&#160;)</td>
+          <td class="paramtype">std::vector&lt; int &gt;</td>          <td class="paramname"><span class="paramname"><em>step</em></span><span class="paramdefsep"> = </span><span class="paramdefval">std::vector&lt;&#160;int&#160;&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>,&#160;1)</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -23271,7 +23271,7 @@ template&lt;typename TType, typename TVectorOfITKVector&gt; </div>
 <p>This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1SliceImageFilter.html" title="Slices an image based on a starting index and a stopping index, and a step size.">SliceImageFilter</a> in order to support a procedural API</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1SliceImageFilter.html" title="Slices an image based on a starting index and a stopping index, and a step size.">itk::simple::SliceImageFilter</a> for the object oriented interface </dd></dl>
 
-<p class="reference">References <a class="el" href="sitkBasicFilters_8h_source.html#l00052">SITKBasicFilters_EXPORT</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfigure_8h_source.html#l00030">SITK_MAX_DIMENSION</a>, and <a class="el" href="sitkBasicFilters_8h_source.html#l00052">SITKBasicFilters_EXPORT</a>.</p>
 
 </div>
 </div>

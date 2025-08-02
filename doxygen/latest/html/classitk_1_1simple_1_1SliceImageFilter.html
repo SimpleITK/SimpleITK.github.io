@@ -120,7 +120,7 @@ $(function(){ initResizable(false); });
 <p>The input parameters are a starting and stopping index as well as a stepping size. The starting index indicates the first pixels to be used and for each dimension the index is incremented by the step until the index is equal to or "beyond" the stopping index. If the step is negative then the image will be reversed in the dimension, and the stopping index is expected to be less then the starting index. If the stopping index is already beyond the starting index then an image of size zero will be returned.</p>
 <p>The output image's starting index is always zero. The origin is the physical location of the starting index. The output directions cosine matrix is that of the input but with sign changes matching that of the step's sign.</p>
 <dl class="section note"><dt>Note</dt><dd>In certain combinations such as with start=1, and step&gt;1 while the physical location of the center of the pixel remains the same, the extent (edge to edge space) of the output image will be beyond the extent of the original image.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#ad51d5db96be65e836def8e69b6efc79b" title="Slices an image based on a starting index and a stopping index, and a step size.">itk::simple::Slice</a> for the procedural interface</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#af1e2ba92dd5f93a0dc91cb1a53bd7a3c" title="Slices an image based on a starting index and a stopping index, and a step size.">itk::simple::Slice</a> for the procedural interface</dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SliceImageFilter.html">itk::SliceImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -227,11 +227,11 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a76b2ceba49250478c031ab24223eea6c" id="r_a76b2ceba49250478c031ab24223eea6c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76b2ceba49250478c031ab24223eea6c">m_Start</a> { std::vector&lt;int32_t&gt;(3, 0) }</td></tr>
+<tr class="memitem:a76b2ceba49250478c031ab24223eea6c" id="r_a76b2ceba49250478c031ab24223eea6c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76b2ceba49250478c031ab24223eea6c">m_Start</a> { std::vector&lt;int32_t&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0) }</td></tr>
 <tr class="separator:a76b2ceba49250478c031ab24223eea6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44625b0e6fe02906d24f524a6ed0ede2" id="r_a44625b0e6fe02906d24f524a6ed0ede2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44625b0e6fe02906d24f524a6ed0ede2">m_Step</a> { std::vector&lt;int&gt;(3, 1) }</td></tr>
+<tr class="memitem:a44625b0e6fe02906d24f524a6ed0ede2" id="r_a44625b0e6fe02906d24f524a6ed0ede2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44625b0e6fe02906d24f524a6ed0ede2">m_Step</a> { std::vector&lt;int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 1) }</td></tr>
 <tr class="separator:a44625b0e6fe02906d24f524a6ed0ede2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c035cb35574edcbca4a8b1fa50ae131" id="r_a9c035cb35574edcbca4a8b1fa50ae131"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c035cb35574edcbca4a8b1fa50ae131">m_Stop</a> { std::vector&lt;int32_t&gt;(3, std::numeric_limits&lt;int32_t&gt;::max()) }</td></tr>
+<tr class="memitem:a9c035cb35574edcbca4a8b1fa50ae131" id="r_a9c035cb35574edcbca4a8b1fa50ae131"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c035cb35574edcbca4a8b1fa50ae131">m_Stop</a> { std::vector&lt;int32_t&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, std::numeric_limits&lt;int32_t&gt;::max()) }</td></tr>
 <tr class="separator:a9c035cb35574edcbca4a8b1fa50ae131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -820,7 +820,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int32_t&gt; itk::simple::SliceImageFilter::m_Start { std::vector&lt;int32_t&gt;(3, 0) }</td>
+          <td class="memname">std::vector&lt;int32_t&gt; itk::simple::SliceImageFilter::m_Start { std::vector&lt;int32_t&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 0) }</td>
         </tr>
       </table>
   </td>
@@ -846,7 +846,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int&gt; itk::simple::SliceImageFilter::m_Step { std::vector&lt;int&gt;(3, 1) }</td>
+          <td class="memname">std::vector&lt;int&gt; itk::simple::SliceImageFilter::m_Step { std::vector&lt;int&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, 1) }</td>
         </tr>
       </table>
   </td>
@@ -872,7 +872,7 @@ template&lt;class TImageType&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;int32_t&gt; itk::simple::SliceImageFilter::m_Stop { std::vector&lt;int32_t&gt;(3, std::numeric_limits&lt;int32_t&gt;::max()) }</td>
+          <td class="memname">std::vector&lt;int32_t&gt; itk::simple::SliceImageFilter::m_Stop { std::vector&lt;int32_t&gt;(<a class="el" href="sitkConfigure_8h.html#aede15605722ddda23926e91409b05e52">SITK_MAX_DIMENSION</a>, std::numeric_limits&lt;int32_t&gt;::max()) }</td>
         </tr>
       </table>
   </td>
