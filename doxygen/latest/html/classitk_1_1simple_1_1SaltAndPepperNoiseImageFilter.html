@@ -116,17 +116,17 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Alter an image with fixed value impulse noise, often called salt and pepper noise. </p>
 <p>Salt (sensor saturation) and pepper (dead pixels) noise is a special kind of impulse noise where the value of the noise is either the maximum possible value in the image or its minimum. This is not necessarily the maximal/minimal possible intensity value based on the pixel type. For example, the native pixel type for CT is a signed 16 bit integer, but only 12 bits used, so we would like to set the salt and pepper values to match this smaller intensity range and not the range the pixel type represents. It can be modeled as:</p>
-<dl class="section user"><dt></dt><dd>\( I = \begin{cases} M, &amp; \quad \text{if } U &lt; p/2 \\ m, &amp; \quad \text{if } U &gt; 1 - p/2 \\ I_0, &amp; \quad \text{if } p/2 \geq U \leq 1 - p/2 \end{cases} \)</dd></dl>
+<dl class="section user"><dt></dt><dd>\( I = \begin{cases} M, &amp; \quad \text{if } U &lt; p/2 \\ m, &amp; \quad \text{if } U &gt; 1 - p/2 \\ I_0, &amp; \quad \text{if }
+p/2 \geq U \leq 1 - p/2 \end{cases} \)</dd></dl>
 <dl class="section user"><dt></dt><dd>where \( p \) is the probability of the noise event, \( U \) is a uniformly distributed random variable in the \( [0,1] \) range, \( M \) is the greatest possible pixel value, and \( m \) the smallest possible pixel value.</dd></dl>
 <p>Pixel alteration occurs at a user defined probability. Salt and pepper pixels are equally distributed.</p>
 <dl class="section author"><dt>Author</dt><dd>Gaetan Lehmann</dd></dl>
 <p>This code was contributed in the Insight Journal paper "Noise
-Simulation". <a href="https://doi.org/10.54294/vh6vbw">https://doi.org/10.54294/vh6vbw</a></p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3748edae76a63878015ee8347e424978" title="Alter an image with fixed value impulse noise, often called salt and pepper noise.">itk::simple::SaltAndPepperNoise</a> for the procedural interface</dd>
+Simulation". <a href="https://doi.org/10.54294/vh6vbw">https://doi.org/10.54294/vh6vbw</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a3748edae76a63878015ee8347e424978" title="Alter an image with fixed value impulse noise, often called salt and pepper noise.">itk::simple::SaltAndPepperNoise</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SaltAndPepperNoiseImageFilter.html">itk::SaltAndPepperNoiseImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00065">65</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -362,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +379,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00077">77</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -533,7 +533,7 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Dispatched methods which calls ExecuteInternal on each component </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00124">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00125">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -616,9 +616,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the probability of the salt and pepper noise event. Defaults to 0.01. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00128">m_Probability</a>.</p>
+<p class="reference">References <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00129">m_Probability</a>.</p>
 
 </div>
 </div>
@@ -645,9 +645,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00130">m_Seed</a>.</p>
+<p class="reference">References <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00131">m_Seed</a>.</p>
 
 </div>
 </div>
@@ -675,9 +675,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the probability of the salt and pepper noise event. Defaults to 0.01. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00128">m_Probability</a>.</p>
+<p class="reference">References <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00129">m_Probability</a>.</p>
 
 </div>
 </div>
@@ -704,9 +704,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00130">m_Seed</a>.</p>
+<p class="reference">References <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00131">m_Seed</a>.</p>
 
 </div>
 </div>
@@ -759,7 +759,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a7aab7a2b9cfc806cb110b9e38bb5fb6f">ExecuteInternalVectorImage()</a>.</p>
 
@@ -785,7 +785,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -810,7 +810,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00139">139</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -834,9 +834,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00090">GetProbability()</a>, and <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00084">SetProbability()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00091">GetProbability()</a>, and <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00085">SetProbability()</a>.</p>
 
 </div>
 </div>
@@ -860,9 +860,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00130">130</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html">sitkSaltAndPepperNoiseImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00100">GetSeed()</a>, and <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00095">SetSeed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00101">GetSeed()</a>, and <a class="el" href="sitkSaltAndPepperNoiseImageFilter_8h_source.html#l00096">SetSeed()</a>.</p>
 
 </div>
 </div>

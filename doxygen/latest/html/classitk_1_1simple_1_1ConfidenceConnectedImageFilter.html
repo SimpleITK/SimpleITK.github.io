@@ -117,12 +117,11 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p>Segment pixels with similar statistics using connectivity. </p>
 <p>This filter extracts a connected set of pixels whose pixel intensities are consistent with the pixel statistics of a seed point. The mean and variance across a neighborhood (8-connected, 26-connected, etc.) are calculated for a seed point. Then pixels connected to this seed point whose values are within the confidence interval for the seed point are grouped. The width of the confidence interval is controlled by the "Multiplier" variable (the confidence interval is the mean plus or minus the "Multiplier" times the standard deviation). If the intensity variations across a segment were gaussian, a "Multiplier" setting of 2.5 would define a confidence interval wide enough to capture 99% of samples in the segment.</p>
 <p>After this initial segmentation is calculated, the mean and variance are re-calculated. All the pixels in the previous segmentation are used to calculate the mean the standard deviation (as opposed to using the pixels in the neighborhood of the seed point). The segmentation is then recalculated using these refined estimates for the mean and variance of the pixel values. This process is repeated for the specified number of iterations. Setting the "NumberOfIterations" to zero stops the algorithm after the initial segmentation from the seed point.</p>
-<p>NOTE: the lower and upper threshold are restricted to lie within the valid numeric limits of the input data pixel type. Also, the limits may be adjusted to contain the seed point's intensity.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a6c7cfd79616709df6e8115cbe402043c" title="Segment pixels with similar statistics using connectivity.">itk::simple::ConfidenceConnected</a> for the procedural interface</dd>
+<p>NOTE: the lower and upper threshold are restricted to lie within the valid numeric limits of the input data pixel type. Also, the limits may be adjusted to contain the seed point's intensity. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a6c7cfd79616709df6e8115cbe402043c" title="Segment pixels with similar statistics using connectivity.">itk::simple::ConfidenceConnected</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ConfidenceConnectedImageFilter.html">itk::ConfidenceConnectedImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00058">58</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -383,7 +382,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -416,7 +415,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -491,9 +490,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Add SeedList point. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00087">87</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00170">m_SeedList</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00178">m_SeedList</a>.</p>
 
 </div>
 </div>
@@ -522,9 +521,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Remove all SeedList points. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00170">m_SeedList</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00178">m_SeedList</a>.</p>
 
 </div>
 </div>
@@ -571,7 +570,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00166">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00174">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -599,9 +598,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the radius of the neighborhood over which the statistics are evaluated </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00176">m_InitialNeighborhoodRadius</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00184">m_InitialNeighborhoodRadius</a>.</p>
 
 </div>
 </div>
@@ -630,9 +629,9 @@ template&lt;class TImageType&gt; </div>
 <p>Method to get access to the mean of the pixels accepted in the output region. This method should only be invoked after the filter has been executed using the Update() method.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00182">m_Mean</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00190">m_Mean</a>.</p>
 
 </div>
 </div>
@@ -685,9 +684,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the multiplier to define the confidence interval. Multiplier can be anything greater than zero. A typical value is 2.5 </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00174">m_Multiplier</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00182">m_Multiplier</a>.</p>
 
 </div>
 </div>
@@ -717,7 +716,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -745,9 +744,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the number of iterations </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00172">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00180">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -775,9 +774,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace thresholded pixels </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00178">m_ReplaceValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00186">m_ReplaceValue</a>.</p>
 
 </div>
 </div>
@@ -806,9 +805,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>Get list of seeds. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00170">m_SeedList</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00178">m_SeedList</a>.</p>
 
 </div>
 </div>
@@ -837,9 +836,9 @@ template&lt;class TImageType&gt; </div>
 <p>Method to get access to the variance of the pixels accepted in the output region. This method should only be invoked after the filter has been executed using the Update() method.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00183">m_Variance</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00191">m_Variance</a>.</p>
 
 </div>
 </div>
@@ -867,9 +866,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get/Set the radius of the neighborhood over which the statistics are evaluated </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00176">m_InitialNeighborhoodRadius</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00184">m_InitialNeighborhoodRadius</a>.</p>
 
 </div>
 </div>
@@ -897,9 +896,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the multiplier to define the confidence interval. Multiplier can be anything greater than zero. A typical value is 2.5 </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00174">m_Multiplier</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00182">m_Multiplier</a>.</p>
 
 </div>
 </div>
@@ -927,9 +926,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the number of iterations </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00096">96</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00172">m_NumberOfIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00180">m_NumberOfIterations</a>.</p>
 
 </div>
 </div>
@@ -957,9 +956,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get value to replace thresholded pixels </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00178">m_ReplaceValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00186">m_ReplaceValue</a>.</p>
 
 </div>
 </div>
@@ -988,9 +987,9 @@ template&lt;class TImageType&gt; </div>
 
 <p>Set list of image indexes for seeds. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00170">m_SeedList</a>.</p>
+<p class="reference">References <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00178">m_SeedList</a>.</p>
 
 </div>
 </div>
@@ -1043,7 +1042,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00165">165</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00173">173</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a95c677c19f45d439fb1df8a50ac8e082">ExecuteInternal()</a>.</p>
 
@@ -1070,9 +1069,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00120">GetInitialNeighborhoodRadius()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00114">SetInitialNeighborhoodRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00128">GetInitialNeighborhoodRadius()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00122">SetInitialNeighborhoodRadius()</a>.</p>
 
 </div>
 </div>
@@ -1096,9 +1095,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00190">190</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00141">GetMean()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00149">GetMean()</a>.</p>
 
 </div>
 </div>
@@ -1122,9 +1121,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00108">GetMultiplier()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00102">SetMultiplier()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00116">GetMultiplier()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00109">SetMultiplier()</a>.</p>
 
 </div>
 </div>
@@ -1148,9 +1147,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00172">172</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00096">GetNumberOfIterations()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00090">SetNumberOfIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00102">GetNumberOfIterations()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00096">SetNumberOfIterations()</a>.</p>
 
 </div>
 </div>
@@ -1174,9 +1173,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00132">GetReplaceValue()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00126">SetReplaceValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00140">GetReplaceValue()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00134">SetReplaceValue()</a>.</p>
 
 </div>
 </div>
@@ -1200,9 +1199,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00178">178</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00081">AddSeed()</a>, <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00084">ClearSeeds()</a>, <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00078">GetSeedList()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00072">SetSeedList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00087">AddSeed()</a>, <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00090">ClearSeeds()</a>, <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00084">GetSeedList()</a>, and <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00078">SetSeedList()</a>.</p>
 
 </div>
 </div>
@@ -1226,9 +1225,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html">sitkConfidenceConnectedImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00149">GetVariance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkConfidenceConnectedImageFilter_8h_source.html#l00157">GetVariance()</a>.</p>
 
 </div>
 </div>

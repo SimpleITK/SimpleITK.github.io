@@ -121,13 +121,13 @@ $(function(){ initResizable(false); });
 <p>Once all the objects are relabeled, the application can query the number of objects and the size of each object. <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1Object.html">Object</a> sizes are returned in a vector. The size of the background is not calculated. So the size of object #1 is <a class="el" href="#ac4ca444be13cd3cd0b6702fe72a6e183">GetSizeOfObjectsInPixels()</a> [0], the size of object #2 is <a class="el" href="#ac4ca444be13cd3cd0b6702fe72a6e183">GetSizeOfObjectsInPixels()</a> [1], etc.</p>
 <p>If user sets a minimum object size, all objects with fewer pixels than the minimum will be discarded, so that the number of objects reported will be only those remaining. The GetOriginalNumberOfObjects method can be called to find out how many objects were present before the small ones were discarded.</p>
 <p><a class="el" href="classitk_1_1simple_1_1RelabelComponentImageFilter.html" title="Relabel the components in an image such that consecutive labels are used.">RelabelComponentImageFilter</a> can be run as an "in place" filter, where it will overwrite its output. The default is run out of place (or generate a separate output). "In place" operation can be controlled via methods in the superclass, <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InPlaceImageFilter.html#a579b1ce34d8ed0aca2e4620ce9056501">InPlaceImageFilter::InPlaceOn()</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1InPlaceImageFilter.html#a8d759f2bdeaf360a54524d87c5fc4d14">InPlaceImageFilter::InPlaceOff()</a>.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ConnectedComponentImageFilter.html" title="Label the objects in a binary image.">ConnectedComponentImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html" title="Binarize an input image by thresholding.">BinaryThresholdImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ThresholdImageFilter.html" title="Set image values to a user-specified value if they are below, above, or outside threshold values.">ThresholdImageFilter</a></dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1ConnectedComponentImageFilter.html" title="Label the objects in a binary image.">ConnectedComponentImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1BinaryThresholdImageFilter.html" title="Binarize an input image by thresholding.">BinaryThresholdImageFilter</a> , <a class="el" href="classitk_1_1simple_1_1ThresholdImageFilter.html" title="Set image values to a user-specified value if they are below, above, or outside threshold values.">ThresholdImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a038f0c580e423c436bfda0eae800b326" title="Relabel the components in an image such that consecutive labels are used.">itk::simple::RelabelComponent</a> for the procedural interface</dd>
+<a class="el" href="namespaceitk_1_1simple.html#a038f0c580e423c436bfda0eae800b326" title="Relabel the components in an image such that consecutive labels are used.">itk::simple::RelabelComponent</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RelabelComponentImageFilter.html">itk::RelabelComponentImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00068">68</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -378,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -395,7 +395,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +411,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -521,7 +521,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00157">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00170">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -574,9 +574,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the caller-defined minimum size of an object in pixels. If the caller has not set the minimum, 0 will be returned, which is to be interpreted as meaning that no minimum exists, and all objects in the original label map will be passed through to the output. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00161">m_MinimumObjectSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00174">m_MinimumObjectSize</a>.</p>
 
 </div>
 </div>
@@ -606,7 +606,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00153">153</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -635,9 +635,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the number of objects in the image. This information is only valid after the filter has executed.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00126">126</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00167">m_NumberOfObjects</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00180">m_NumberOfObjects</a>.</p>
 
 </div>
 </div>
@@ -666,9 +666,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the original number of objects in the image before small objects were discarded. This information is only valid after the filter has executed. If the caller has not specified a minimum object size, OriginalNumberOfObjects is the same as NumberOfObjects.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00134">134</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00168">m_OriginalNumberOfObjects</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00181">m_OriginalNumberOfObjects</a>.</p>
 
 </div>
 </div>
@@ -697,9 +697,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the size of each object in physical space (in units of pixel size). This information is only valid after the filter has executed. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">Size</a> of the background is not calculated. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">Size</a> of object #1 is <a class="el" href="#a1706274c34420d145917ac3ef38e482e">GetSizeOfObjectsInPhysicalUnits()</a> [0]. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">Size</a> of object #2 is <a class="el" href="#a1706274c34420d145917ac3ef38e482e">GetSizeOfObjectsInPhysicalUnits()</a> [1]. Etc.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00169">m_SizeOfObjectsInPhysicalUnits</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00182">m_SizeOfObjectsInPhysicalUnits</a>.</p>
 
 </div>
 </div>
@@ -728,9 +728,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the size of each object in pixels. This information is only valid after the filter has executed. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">Size</a> of the background is not calculated. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">Size</a> of object #1 is <a class="el" href="#ac4ca444be13cd3cd0b6702fe72a6e183">GetSizeOfObjectsInPixels()</a> [0]. <a class="elRef" href="https://www.itk.org/Doxygen/html/structitk_1_1Size.html">Size</a> of object #2 is <a class="el" href="#ac4ca444be13cd3cd0b6702fe72a6e183">GetSizeOfObjectsInPixels()</a> [1]. Etc.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00170">m_SizeOfObjectsInPixels</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00183">m_SizeOfObjectsInPixels</a>.</p>
 
 </div>
 </div>
@@ -758,9 +758,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Controls whether the object labels are sorted by size. If false, initial order of labels is kept. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00163">m_SortByObjectSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00176">m_SortByObjectSize</a>.</p>
 
 </div>
 </div>
@@ -788,9 +788,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the minimum size in pixels for an object. All objects smaller than this size will be discarded and will not appear in the output label map. NumberOfObjects will count only the objects whose pixel counts are greater than or equal to the minimum size. Call GetOriginalNumberOfObjects to find out how many objects were present in the original label map. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00091">91</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00161">m_MinimumObjectSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00174">m_MinimumObjectSize</a>.</p>
 
 </div>
 </div>
@@ -818,11 +818,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Controls whether the object labels are sorted by size. If false, initial order of labels is kept. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00163">m_SortByObjectSize</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00176">m_SortByObjectSize</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00099">SortByObjectSizeOff()</a>, and <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00097">SortByObjectSizeOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00112">SortByObjectSizeOff()</a>, and <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00110">SortByObjectSizeOn()</a>.</p>
 
 </div>
 </div>
@@ -849,9 +849,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00092">SetSortByObjectSize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00105">SetSortByObjectSize()</a>.</p>
 
 </div>
 </div>
@@ -879,9 +879,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of SortByObjectSize to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00097">97</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00092">SetSortByObjectSize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00105">SetSortByObjectSize()</a>.</p>
 
 </div>
 </div>
@@ -934,7 +934,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#afbf479332dfc9e0171efa597751dd022">ExecuteInternal()</a>.</p>
 
@@ -961,7 +961,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00175">175</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00188">188</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -985,9 +985,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00174">174</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00086">GetMinimumObjectSize()</a>, and <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00080">SetMinimumObjectSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00099">GetMinimumObjectSize()</a>, and <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00091">SetMinimumObjectSize()</a>.</p>
 
 </div>
 </div>
@@ -1011,9 +1011,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00167">167</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00180">180</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00113">GetNumberOfObjects()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00126">GetNumberOfObjects()</a>.</p>
 
 </div>
 </div>
@@ -1037,9 +1037,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00181">181</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00121">GetOriginalNumberOfObjects()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00134">GetOriginalNumberOfObjects()</a>.</p>
 
 </div>
 </div>
@@ -1063,9 +1063,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00169">169</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00129">GetSizeOfObjectsInPhysicalUnits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00142">GetSizeOfObjectsInPhysicalUnits()</a>.</p>
 
 </div>
 </div>
@@ -1089,9 +1089,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00137">GetSizeOfObjectsInPixels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00150">GetSizeOfObjectsInPixels()</a>.</p>
 
 </div>
 </div>
@@ -1115,9 +1115,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00163">163</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html">sitkRelabelComponentImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00104">GetSortByObjectSize()</a>, and <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00092">SetSortByObjectSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00117">GetSortByObjectSize()</a>, and <a class="el" href="sitkRelabelComponentImageFilter_8h_source.html#l00105">SetSortByObjectSize()</a>.</p>
 
 </div>
 </div>

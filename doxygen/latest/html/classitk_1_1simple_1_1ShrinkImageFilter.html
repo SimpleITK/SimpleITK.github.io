@@ -118,12 +118,11 @@ $(function(){ initResizable(false); });
 <p><a class="el" href="classitk_1_1simple_1_1ShrinkImageFilter.html" title="Reduce the size of an image by an integer factor in each dimension.">ShrinkImageFilter</a> reduces the size of an image by an integer factor in each dimension. The algorithm implemented is a simple subsample. The output image size in each dimension is given by:</p>
 <p>outputSize[j] = max( std::floor(inputSize[j]/shrinkFactor[j]), 1 );</p>
 <p>NOTE: The physical centers of the input and output will be the same. Because of this, the Origin of the output may not be the same as the Origin of the input. Since this filter produces an image which is a different resolution, origin and with different pixel spacing than its input image, it needs to override several of the methods defined in <a class="el" href="classitk_1_1simple_1_1ProcessObject.html" title="Base class for SimpleITK classes based on ProcessObject.">ProcessObject</a> in order to properly manage the pipeline execution model. In particular, this filter overrides <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#ade67a54c973bfaf739184c906da7c77a">ProcessObject::GenerateInputRequestedRegion()</a> and <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ProcessObject.html#abe61fb6b7de8c443e7af1561bd722736">ProcessObject::GenerateOutputInformation()</a> .</p>
-<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa" title="Reduce the size of an image by an integer factor in each dimension.">itk::simple::Shrink</a> for the procedural interface</dd>
+<p>This filter is implemented as a multithreaded filter. It provides a DynamicThreadedGenerateData() method for its implementation. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aaca314de51c97b118c0d6c356dd98efa" title="Reduce the size of an image by an integer factor in each dimension.">itk::simple::Shrink</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ShrinkImageFilter.html">itk::ShrinkImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -346,7 +345,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -363,7 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00066">66</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -379,7 +378,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00057">57</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +471,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00102">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00103">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -527,7 +526,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -555,9 +554,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the shrink factors. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00106">m_ShrinkFactors</a>.</p>
+<p class="reference">References <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00107">m_ShrinkFactors</a>.</p>
 
 </div>
 </div>
@@ -585,9 +584,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Custom public declarations </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00106">m_ShrinkFactors</a>.</p>
+<p class="reference">References <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00107">m_ShrinkFactors</a>.</p>
 
 </div>
 </div>
@@ -615,9 +614,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the shrink factors. Values are clamped to a minimum value of 1. Default is 1 for all dimensions. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00106">m_ShrinkFactors</a>.</p>
+<p class="reference">References <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00107">m_ShrinkFactors</a>.</p>
 
 </div>
 </div>
@@ -670,7 +669,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a270d6181f84b345fd02439220cd5b143">ExecuteInternal()</a>.</p>
 
@@ -697,9 +696,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkShrinkImageFilter_8h_source.html">sitkShrinkImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00084">GetShrinkFactors()</a>, <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00070">SetShrinkFactor()</a>, and <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00078">SetShrinkFactors()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00085">GetShrinkFactors()</a>, <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00071">SetShrinkFactor()</a>, and <a class="el" href="sitkShrinkImageFilter_8h_source.html#l00079">SetShrinkFactors()</a>.</p>
 
 </div>
 </div>

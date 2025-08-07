@@ -116,13 +116,13 @@ $(function(){ initResizable(false); });
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Binarize an input image by thresholding. </p>
 <p>This filter produces an output image whose pixels are either one of two values ( OutsideValue or InsideValue ), depending on whether the corresponding input image pixels lie between the two thresholds ( LowerThreshold and UpperThreshold ). Values equal to either threshold is considered to be between the thresholds.</p>
-<p>More precisely </p><p class="formulaDsp">
-\[ Output(x_i) = \begin{cases} InsideValue &amp; \text{if \f$LowerThreshold \leq x_i \leq UpperThreshold\f$} \\ OutsideValue &amp; \text{otherwise} \end{cases} \]
+<p>More precisely  </p><p class="formulaDsp">
+\[ Output(x_i) = \begin{cases} InsideValue &amp; \text{if \f$LowerThreshold \leq x_i \leq
+UpperThreshold\f$} \\ OutsideValue &amp; \text{otherwise} \end{cases} \]
 </p>
 <p>This filter is templated over the input image type and the output image type.</p>
 <p>The filter expect both images to have the same number of dimensions.</p>
-<p>The default values for LowerThreshold and UpperThreshold are: LowerThreshold = <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;TInput&gt;::NonpositiveMin()</a> ; UpperThreshold = <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;TInput&gt;::max()</a> ; Therefore, generally only one of these needs to be set, depending on whether the user wants to threshold above or below the desired threshold.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aea13be645bbf2b4998a88a9e3f837901" title="Binarize an input image by thresholding.">itk::simple::BinaryThreshold</a> for the procedural interface</dd>
+<p>The default values for LowerThreshold and UpperThreshold are: LowerThreshold = <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a130b93e7399bc5e5d81614cdaf46e4f1">NumericTraits&lt;TInput&gt;::NonpositiveMin()</a> ; UpperThreshold = <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NumericTraits.html#a1341dd4e5b9b45217923f82b9175fb2d">NumericTraits&lt;TInput&gt;::max()</a> ; Therefore, generally only one of these needs to be set, depending on whether the user wants to threshold above or below the desired threshold. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#aea13be645bbf2b4998a88a9e3f837901" title="Binarize an input image by thresholding.">itk::simple::BinaryThreshold</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1BinaryThresholdImageFilter.html">itk::BinaryThresholdImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#_a20">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
@@ -371,7 +371,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00135">135</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00137">137</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -516,7 +516,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00137">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00139">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -544,9 +544,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the "inside" pixel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00104">104</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00145">m_InsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00147">m_InsideValue</a>.</p>
 
 </div>
 </div>
@@ -575,7 +575,7 @@ template&lt;class TImageType&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00080">80</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00141">m_LowerThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00143">m_LowerThreshold</a>.</p>
 
 </div>
 </div>
@@ -630,7 +630,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -658,9 +658,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the "outside" pixel value. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00147">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00149">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -688,9 +688,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Get the threshold values. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00094">94</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00143">m_UpperThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00145">m_UpperThreshold</a>.</p>
 
 </div>
 </div>
@@ -720,9 +720,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a24">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00098">98</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00145">m_InsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00147">m_InsideValue</a>.</p>
 
 </div>
 </div>
@@ -753,7 +753,7 @@ template&lt;class TImageType&gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00141">m_LowerThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00143">m_LowerThreshold</a>.</p>
 
 </div>
 </div>
@@ -783,9 +783,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a23">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00147">m_OutsideValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00149">m_OutsideValue</a>.</p>
 
 </div>
 </div>
@@ -815,9 +815,9 @@ template&lt;class TImageType&gt; </div>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="FastMarchingSegmentation_2FastMarchingSegmentation_8cxx-example.html#a22">FastMarchingSegmentation/FastMarchingSegmentation.cxx</a>.</dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00086">86</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00143">m_UpperThreshold</a>.</p>
+<p class="reference">References <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00145">m_UpperThreshold</a>.</p>
 
 </div>
 </div>
@@ -870,7 +870,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00136">136</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ad7a5b869763edfe8af81d8bd1b6f02a6">ExecuteInternal()</a>.</p>
 
@@ -897,7 +897,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -921,9 +921,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00104">GetInsideValue()</a>, and <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00098">SetInsideValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00106">GetInsideValue()</a>, and <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00100">SetInsideValue()</a>.</p>
 
 </div>
 </div>
@@ -947,7 +947,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00141">141</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00080">GetLowerThreshold()</a>, and <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00075">SetLowerThreshold()</a>.</p>
 
@@ -973,9 +973,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00149">149</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00116">GetOutsideValue()</a>, and <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00110">SetOutsideValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00118">GetOutsideValue()</a>, and <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00112">SetOutsideValue()</a>.</p>
 
 </div>
 </div>
@@ -999,9 +999,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00143">143</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html">sitkBinaryThresholdImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00092">GetUpperThreshold()</a>, and <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00086">SetUpperThreshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00094">GetUpperThreshold()</a>, and <a class="el" href="sitkBinaryThresholdImageFilter_8h_source.html#l00088">SetUpperThreshold()</a>.</p>
 
 </div>
 </div>

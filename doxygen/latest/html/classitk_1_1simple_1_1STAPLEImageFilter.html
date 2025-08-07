@@ -122,16 +122,17 @@ quality with an expectation-maximization algorithm" in MICCAI 2002: Fifth Intern
 <dl class="section user"><dt>INPUTS</dt><dd>Input volumes to the STAPLE filter must be binary segmentations of an image, that is, there must be a single foreground value that represents positively classified pixels (pixels that are considered to belong inside the segmentation). Any number of background pixel values may be present in the input images. You can, for example, input volumes with many different labels as long as the structure you are interested in creating ground truth for is consistently labeled among all input volumes. Pixel type of the input volumes does not matter. Specify the label value for positively classified pixels using SetForegroundValue. All other labels will be considered to be negatively classified pixels (background).</dd></dl>
 <p>Input volumes must all contain the same size RequestedRegions.</p>
 <dl class="section user"><dt>OUTPUTS</dt><dd>The STAPLE filter produces a single output volume with a range of floating point values from zero to one. IT IS VERY IMPORTANT TO INSTANTIATE THIS FILTER WITH A FLOATING POINT OUTPUT TYPE (floats or doubles). You may threshold the output above some probability threshold if you wish to produce a binary ground truth.</dd></dl>
-<dl class="section user"><dt>PARAMETERS</dt><dd>The STAPLE algorithm requires a number of inputs. You may specify any number of input volumes using the SetInput(i, p_i) method, where i ranges from zero to N-1, N is the total number of input segmentations, and p_i is the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">SmartPointer</a> to the i-th segmentation.</dd></dl>
+<dl class="section user"><dt>PARAMETERS</dt><dd>The STAPLE algorithm requires a number of inputs. You may specify any number of input volumes using the SetInput(i,
+p_i) method, where i ranges from zero to N-1, N is the total number of input segmentations, and p_i is the <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SmartPointer.html">SmartPointer</a> to the i-th segmentation.</dd></dl>
 <p>The SetConfidenceWeight parameter is a modifier for the prior probability that any pixel would be classified as inside the target object. This implementation of the STAPLE algorithm automatically calculates prior positive classification probability as the average fraction of the image volume filled by the target object in each input segmentation. The ConfidenceWeight parameter allows for scaling the of this default prior probability: if g_t is the prior probability that a pixel would be classified inside the target object, then g_t is set to g_t * ConfidenceWeight before iterating on the solution. In general ConfidenceWeight should be left to the default of 1.0.</p>
 <p>You must provide a foreground value using SetForegroundValue that the STAPLE algorithm will use to identify positively classified pixels in the input images. All other values in the image will be treated as background values. For example, if your input segmentations consist of 1's everywhere inside the segmented region, then use SetForegroundValue(1).</p>
 <p>The STAPLE algorithm is an iterative E-M algorithm and will converge on a solution after some number of iterations that cannot be known a priori. After updating the filter, the total elapsed iterations taken to converge on the solution can be queried through <a class="el" href="#a75648aa1737d82230d5240cf2823beeb">GetElapsedIterations()</a> . You may also specify a MaximumNumberOfIterations, after which the algorithm will stop iterating regardless of whether or not it has converged. This implementation of the STAPLE algorithm will find the solution to within seven digits of precision unless it is stopped early.</p>
 <p>Once updated, the Sensitivity (true positive fraction, q) and Specificity (true negative fraction, q) for each expert input volume can be queried using GetSensitivity(i) and GetSpecificity(i), where i is the i-th input volume.</p>
 <dl class="section user"><dt>REQUIRED PARAMETERS</dt><dd>The only required parameters for this filter are the ForegroundValue and the input volumes. All other parameters may be safely left to their default values. Please see the paper cited above for more information on the STAPLE algorithm and its parameters. A proper understanding of the algorithm is important for interpreting the results that it produces.</dd></dl>
-<dl class="section user"><dt>EVENTS</dt><dd>This filter invokes IterationEvent() at each iteration of the E-M algorithm. Setting the AbortGenerateData() flag will cause the algorithm to halt after the current iteration and produce results just as if it had converged. The algorithm makes no attempt to report its progress since the number of iterations needed cannot be known in advance.</dd></dl>
+<dl class="section user"><dt>EVENTS</dt><dd>This filter invokes IterationEvent() at each iteration of the E-M algorithm. Setting the AbortGenerateData() flag will cause the algorithm to halt after the current iteration and produce results just as if it had converged. The algorithm makes no attempt to report its progress since the number of iterations needed cannot be known in advance. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a8f31f5380bb007d55391f88579701beb" title="The STAPLE filter implements the Simultaneous Truth and Performance Level Estimation algorithm for ge...">itk::simple::STAPLE</a> for the procedural interface </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00109">109</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -387,7 +388,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00219">219</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +405,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00092">92</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +421,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00111">111</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -644,7 +645,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00188">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00225">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -672,9 +673,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Scales the estimated prior probability that a pixel will be inside the targeted object of segmentation. The default prior probability g_t is calculated automatically as the average fraction of positively classified pixels to the total size of the volume (across all input volumes). ConfidenceWeight will scale this default value as g_t = g_t * ConfidenceWeight. In general, ConfidenceWeight should be left to the default of 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00192">m_ConfidenceWeight</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00229">m_ConfidenceWeight</a>.</p>
 
 </div>
 </div>
@@ -703,9 +704,9 @@ template&lt;class TImageType&gt; </div>
 <p>Get the number of elapsed iterations of the iterative E-M algorithm.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00140">140</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00200">m_ElapsedIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00237">m_ElapsedIterations</a>.</p>
 
 </div>
 </div>
@@ -733,9 +734,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set get the binary ON value of the input image. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00194">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00231">m_ForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -763,9 +764,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the maximum number of iterations after which the STAPLE algorithm will be considered to have converged. In general this SHOULD NOT be set and the algorithm should be allowed to converge on its own. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00131">131</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00168">168</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00196">m_MaximumIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00233">m_MaximumIterations</a>.</p>
 
 </div>
 </div>
@@ -820,7 +821,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00158">158</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -849,9 +850,9 @@ template&lt;class TImageType&gt; </div>
 <p>After the filter is updated, this method returns a std::vector&lt;double&gt; of all Sensitivity (true positive fraction, p) values for the expert input volumes.</p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00185">185</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00201">m_Sensitivity</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00238">m_Sensitivity</a>.</p>
 
 </div>
 </div>
@@ -881,9 +882,9 @@ template&lt;class TImageType&gt; </div>
 <p>After the filter is updated, this method returns the Specificity (true negative fraction, q) value for the i-th expert input volume. </p>
 <p>This is a measurement. Its value is updated in the Execute methods, so the value will only be valid after an execution. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00202">m_Specificity</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00239">m_Specificity</a>.</p>
 
 </div>
 </div>
@@ -911,9 +912,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Scales the estimated prior probability that a pixel will be inside the targeted object of segmentation. The default prior probability g_t is calculated automatically as the average fraction of positively classified pixels to the total size of the volume (across all input volumes). ConfidenceWeight will scale this default value as g_t = g_t * ConfidenceWeight. In general, ConfidenceWeight should be left to the default of 1.0. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00101">101</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00192">m_ConfidenceWeight</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00229">m_ConfidenceWeight</a>.</p>
 
 </div>
 </div>
@@ -941,9 +942,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set get the binary ON value of the input image. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00113">113</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00148">148</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00194">m_ForegroundValue</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00231">m_ForegroundValue</a>.</p>
 
 </div>
 </div>
@@ -971,9 +972,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the maximum number of iterations after which the STAPLE algorithm will be considered to have converged. In general this SHOULD NOT be set and the algorithm should be allowed to converge on its own. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00125">125</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00196">m_MaximumIterations</a>.</p>
+<p class="reference">References <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00233">m_MaximumIterations</a>.</p>
 
 </div>
 </div>
@@ -1026,7 +1027,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00183">183</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00220">220</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a4c5968dd9664c9284c0143fe508f8e08">ExecuteInternal()</a>.</p>
 
@@ -1053,9 +1054,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00192">192</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00229">229</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00107">GetConfidenceWeight()</a>, and <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00101">SetConfidenceWeight()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00142">GetConfidenceWeight()</a>, and <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00133">SetConfidenceWeight()</a>.</p>
 
 </div>
 </div>
@@ -1079,9 +1080,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00200">200</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00237">237</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00140">GetElapsedIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00177">GetElapsedIterations()</a>.</p>
 
 </div>
 </div>
@@ -1105,9 +1106,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00194">194</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00231">231</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00119">GetForegroundValue()</a>, and <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00113">SetForegroundValue()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00154">GetForegroundValue()</a>, and <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00148">SetForegroundValue()</a>.</p>
 
 </div>
 </div>
@@ -1131,9 +1132,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00233">233</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00131">GetMaximumIterations()</a>, and <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00125">SetMaximumIterations()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00168">GetMaximumIterations()</a>, and <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00161">SetMaximumIterations()</a>.</p>
 
 </div>
 </div>
@@ -1157,9 +1158,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00201">201</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00238">238</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00148">GetSensitivity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00185">GetSensitivity()</a>.</p>
 
 </div>
 </div>
@@ -1183,9 +1184,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00202">202</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00239">239</a> of file <a class="el" href="sitkSTAPLEImageFilter_8h_source.html">sitkSTAPLEImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00155">GetSpecificity()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSTAPLEImageFilter_8h_source.html#l00192">GetSpecificity()</a>.</p>
 
 </div>
 </div>

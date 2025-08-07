@@ -119,8 +119,7 @@ $(function(){ initResizable(false); });
 <p>For some level set algorithms, it is useful to periodically reinitialize the level set function to prevent numerical accuracy problems in computing derivatives and curvature values where level sets are densely bunched together.</p>
 <p>This class is templated over the image type which represents the level set.</p>
 <p>This class supports narrowbanding. If the input narrowband is provided, the algorithm will only locate the level set within the input narrowband. For the output, the reinitialize level set is only valid for a distance of OutputNarrowBandwidth / 2 of either side of the level set of interest.</p>
-<p>Implementation of this class is based on Chapter 11 of "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Second edition, 1999.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afffc16d6b6f92fed95d848407cf0c36a" title="Reinitialize the level set to the signed distance function.">itk::simple::ReinitializeLevelSet</a> for the procedural interface</dd>
+<p>Implementation of this class is based on Chapter 11 of "Level Set Methods and Fast Marching Methods", J.A. Sethian, Cambridge Press, Second edition, 1999. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#afffc16d6b6f92fed95d848407cf0c36a" title="Reinitialize the level set to the signed distance function.">itk::simple::ReinitializeLevelSet</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1ReinitializeLevelSetImageFilter.html">itk::ReinitializeLevelSetImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 

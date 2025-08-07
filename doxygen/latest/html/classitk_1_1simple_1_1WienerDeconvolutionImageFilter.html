@@ -115,7 +115,9 @@ $(function(){ initResizable(false); });
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Wiener deconvolution image filter is designed to restore an image convolved with a blurring kernel while keeping noise enhancement to a minimum. </p>
-<p>The Wiener filter aims to minimize noise enhancement induced by frequencies with low signal-to-noise ratio. The Wiener filter kernel is defined in the frequency domain as \(W(\omega) = H^*(\omega) / (|H(\omega)|^2 + (1 / SNR(\omega)))\) where \(H(\omega)\) is the Fourier transform of the blurring kernel with which the original image was convolved and the signal-to-noise ratio \(SNR(\omega)\) . \(SNR(\omega)\) is defined by \(P_f(\omega) / P_n(\omega)\) where \(P_f(\omega)\) is the power spectral density of the uncorrupted signal and \(P_n(\omega)\) is the power spectral density of the noise. When applied to the input blurred image, this filter produces an estimate \(\hat{f}(x)\) of the true underlying signal \(f(x)\) that minimizes the expected error between \(\hat{f}(x)\) and \(f(x)\) .</p>
+<p>The Wiener filter aims to minimize noise enhancement induced by frequencies with low signal-to-noise ratio. The Wiener filter kernel is defined in the frequency domain as  \(W(\omega) = H^*(\omega) / (|H(\omega)|^2 + (1 /
+SNR(\omega)))\) where \(H(\omega)\) is the Fourier transform of the blurring kernel with which the original image was convolved and the signal-to-noise ratio \(SNR(\omega)\) . \(SNR(\omega)\) is defined by  \(P_f(\omega) /
+P_n(\omega)\) where \(P_f(\omega)\) is the power spectral density of the uncorrupted signal and \(P_n(\omega)\) is the power spectral density of the noise. When applied to the input blurred image, this filter produces an estimate \(\hat{f}(x)\) of the true underlying signal \(f(x)\) that minimizes the expected error between \(\hat{f}(x)\) and \(f(x)\) .</p>
 <p>This filter requires two inputs, the image to be deconvolved and the blurring kernel. These two inputs can be set using the methods SetInput() and SetKernelImage(), respectively.</p>
 <p>The power spectral densities of the signal and noise are typically unavailable for a given problem. In particular, \(P_f(\omega)\) cannot be computed from \(f(x)\) because this unknown signal is precisely the signal that this filter aims to recover. Nevertheless, it is common for the noise to have a power spectral density that is flat or decreasing significantly more slowly than the power spectral density of a typical image as the frequency \(\omega\) increases. Hence, \(P_n(\omega)\) can typically be approximated with a constant, and this filter makes this assumption (see the NoiseVariance member variable). \(P_f(\omega)\) , on the other hand, will vary with input. This filter computes the power spectral density of the input blurred image, subtracts the power spectral density of the noise, and uses the result as the estimate of \(P_f(\omega)\) .</p>
 <p>For further information on the Wiener deconvolution filter, please see "Digital Signal Processing" by Kenneth R. Castleman, Prentice Hall, 1995</p>
@@ -123,12 +125,12 @@ $(function(){ initResizable(false); });
 <dd>
 Chris Mullins, The University of North Carolina at Chapel Hill</dd>
 <dd>
-Cory Quammen, The University of North Carolina at Chapel Hill</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2904e5729f78134d2ab60f292a81b70a" title="The Wiener deconvolution image filter is designed to restore an image convolved with a blurring kerne...">itk::simple::WienerDeconvolution</a> for the procedural interface</dd>
+Cory Quammen, The University of North Carolina at Chapel Hill </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a2904e5729f78134d2ab60f292a81b70a" title="The Wiener deconvolution image filter is designed to restore an image convolved with a blurring kerne...">itk::simple::WienerDeconvolution</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1WienerDeconvolutionImageFilter.html">itk::WienerDeconvolutionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00073">73</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -387,7 +389,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00144">144</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -404,7 +406,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -420,7 +422,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00075">75</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -442,7 +444,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a289cbe50a52d991978643b2869ab6932a7fa8c6bcbb0a5268114c672c3ea11817" name="a289cbe50a52d991978643b2869ab6932a7fa8c6bcbb0a5268114c672c3ea11817"></a>PERIODIC_PAD&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00108">108</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +464,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="aad30332dc6b4e7ef55e9efeacdb93fcea08d2eba11afebe623add6555c9d88996" name="aad30332dc6b4e7ef55e9efeacdb93fcea08d2eba11afebe623add6555c9d88996"></a>VALID&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00119">119</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -563,7 +565,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00146">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00156">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -590,9 +592,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00117">117</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00154">m_BoundaryCondition</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00164">m_BoundaryCondition</a>.</p>
 
 </div>
 </div>
@@ -647,7 +649,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00132">132</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -675,9 +677,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/get the variance of the zero-mean Gaussian white noise assumed to be added to the input. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00099">99</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00150">m_NoiseVariance</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00160">m_NoiseVariance</a>.</p>
 
 </div>
 </div>
@@ -704,9 +706,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00152">m_Normalize</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00162">m_Normalize</a>.</p>
 
 </div>
 </div>
@@ -733,9 +735,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00128">128</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00138">138</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00156">m_OutputRegionMode</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00166">m_OutputRegionMode</a>.</p>
 
 </div>
 </div>
@@ -762,9 +764,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00102">102</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00095">SetNormalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00105">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -792,9 +794,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of Normalize to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00100">100</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00110">110</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00095">SetNormalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00105">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -821,9 +823,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00122">122</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00154">m_BoundaryCondition</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00164">m_BoundaryCondition</a>.</p>
 
 </div>
 </div>
@@ -851,9 +853,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/get the variance of the zero-mean Gaussian white noise assumed to be added to the input. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00150">m_NoiseVariance</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00160">m_NoiseVariance</a>.</p>
 
 </div>
 </div>
@@ -881,11 +883,11 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Normalize the output image by the sum of the kernel components </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00095">95</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00152">m_Normalize</a>, and <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00162">m_Normalize</a>, and <a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7">itk::simple::Normalize()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00102">NormalizeOff()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00100">NormalizeOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00112">NormalizeOff()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00110">NormalizeOn()</a>.</p>
 
 </div>
 </div>
@@ -912,9 +914,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00156">m_OutputRegionMode</a>.</p>
+<p class="reference">References <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00166">m_OutputRegionMode</a>.</p>
 
 </div>
 </div>
@@ -967,7 +969,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00145">145</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00155">155</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ab3dd905905b669c46f6ee1b6852c1fc3">ExecuteInternal()</a>.</p>
 
@@ -994,9 +996,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00154">154</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00164">164</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00117">GetBoundaryCondition()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00112">SetBoundaryCondition()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00127">GetBoundaryCondition()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00122">SetBoundaryCondition()</a>.</p>
 
 </div>
 </div>
@@ -1020,9 +1022,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00150">150</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00160">160</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00088">GetNoiseVariance()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00082">SetNoiseVariance()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00099">GetNoiseVariance()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00093">SetNoiseVariance()</a>.</p>
 
 </div>
 </div>
@@ -1046,9 +1048,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00162">162</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00106">GetNormalize()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00095">SetNormalize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00116">GetNormalize()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00105">SetNormalize()</a>.</p>
 
 </div>
 </div>
@@ -1072,9 +1074,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html">sitkWienerDeconvolutionImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00128">GetOutputRegionMode()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00123">SetOutputRegionMode()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00138">GetOutputRegionMode()</a>, and <a class="el" href="sitkWienerDeconvolutionImageFilter_8h_source.html#l00133">SetOutputRegionMode()</a>.</p>
 
 </div>
 </div>

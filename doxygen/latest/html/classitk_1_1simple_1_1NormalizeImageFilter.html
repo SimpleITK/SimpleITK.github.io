@@ -116,13 +116,13 @@ $(function(){ initResizable(false); });
 <div class="textblock"><p>Normalize an image by setting its mean to zero and variance to one. </p>
 <p><a class="el" href="classitk_1_1simple_1_1NormalizeImageFilter.html" title="Normalize an image by setting its mean to zero and variance to one.">NormalizeImageFilter</a> shifts and scales an image so that the pixels in the image have a zero mean and unit variance. This filter uses <a class="el" href="classitk_1_1simple_1_1StatisticsImageFilter.html" title="Compute min, max, variance and mean of an Image .">StatisticsImageFilter</a> to compute the mean and variance of the input and then applies <a class="el" href="classitk_1_1simple_1_1ShiftScaleImageFilter.html" title="Shift and scale the pixels in an image.">ShiftScaleImageFilter</a> to shift and scale the pixels.</p>
 <p>NB: since this filter normalizes the data such that the mean is at 0, and \(-\sigma\) to \(+\sigma\) is mapped to -1.0 to 1.0, output image integral types will produce an image that DOES NOT HAVE a unit variance due to 68% of the intensity values being mapped to the real number range of -1.0 to 1.0 and then cast to the output integral value.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">NormalizeToConstantImageFilter</a></dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1NormalizeToConstantImageFilter.html" title="Scales image pixel intensities to make the sum of all pixels equal a user-defined constant.">NormalizeToConstantImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7" title="Normalize an image by setting its mean to zero and variance to one.">itk::simple::Normalize</a> for the procedural interface</dd>
+<a class="el" href="namespaceitk_1_1simple.html#a603f415c1d5f0475aff976d8d784dba7" title="Normalize an image by setting its mean to zero and variance to one.">itk::simple::Normalize</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NormalizeImageFilter.html">itk::NormalizeImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -339,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00064">64</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00063">63</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -372,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00053">53</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -493,7 +493,7 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Dispatched methods which calls ExecuteInternal on each component </p>
 
-<p class="reference">Referenced by <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00087">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00086">detail::ExecuteInternalVectorImageAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -548,7 +548,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00070">70</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00069">69</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -601,7 +601,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#a0d22971017bd41bd41ccfa63553c528e">ExecuteInternalVectorImage()</a>.</p>
 
@@ -627,7 +627,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkNormalizeImageFilter_8h_source.html#l00084">84</a> of file <a class="el" href="sitkNormalizeImageFilter_8h_source.html">sitkNormalizeImageFilter.h</a>.</p>
 
 </div>
 </div>

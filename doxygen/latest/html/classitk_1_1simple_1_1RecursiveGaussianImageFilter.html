@@ -119,17 +119,19 @@ $(function(){ initResizable(false); });
 \[ \frac{ 1 }{ \sigma \sqrt{ 2 \pi } } \exp{ \left( - \frac{x^2}{ 2 \sigma^2 } \right) } \]
 </p>
 <p><a class="el" href="classitk_1_1simple_1_1RecursiveGaussianImageFilter.html" title="Base class for computing IIR convolution with an approximation of a Gaussian kernel.">RecursiveGaussianImageFilter</a> is the base class for recursive filters that approximate convolution with the Gaussian kernel. This class implements the recursive filtering method proposed by R.Deriche in IEEE-PAMI Vol.12, No.1, January 1990, pp 78-87, "Fast Algorithms for Low-Level Vision"</p>
-<p>Details of the implementation are described in the technical report: R. Deriche, "Recursively Implementing The Gaussian and Its Derivatives", INRIA, 1993, <a href="ftp://ftp.inria.fr/INRIA/tech-reports/RR/RR-1893.ps.gz">ftp://ftp.inria.fr/INRIA/tech-reports/RR/RR-1893.ps.gz</a></p>
-<p>Further improvements of the algorithm are described in: G. Farnebäck &amp; C.-F. Westin, "Improving Deriche-style Recursive Gaussian
+<p>Details of the implementation are described in the technical report: R. Deriche, "Recursively Implementing The
+Gaussian and Its Derivatives", INRIA, 1993, <a href="ftp://ftp.inria.fr/INRIA/tech-reports/RR/RR-1893.ps.gz">ftp://ftp.inria.fr/INRIA/tech-reports/RR/RR-1893.ps.gz</a></p>
+<p>Further improvements of the algorithm are described in: G. Farnebäck &amp; C.-F. Westin, "Improving Deriche-style
+Recursive Gaussian
 Filters". J <a class="elRef" href="https://www.itk.org/Doxygen/html/namespaceitk_1_1Math.html">Math</a> Imaging Vis 26, 293–299 (2006). <a href="https://doi.org/10.1007/s10851-006-8464-z">https://doi.org/10.1007/s10851-006-8464-z</a></p>
 <p>As compared to <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DiscreteGaussianImageFilter.html">itk::DiscreteGaussianImageFilter</a> , this filter tends to be faster for large kernels, and it can take the derivative of the blurred image in one step. Also, note that we have <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RecursiveGaussianImageFilter.html#a4eb60805326e6ee3815c0872d1fc9d6e">itk::RecursiveGaussianImageFilter::SetSigma()</a> , but <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1DiscreteGaussianImageFilter.html#ab15c905b7651d8adf64d0c710d17cead">itk::DiscreteGaussianImageFilter::SetVariance()</a> .</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a></dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1DiscreteGaussianImageFilter.html" title="Blurs an image by separable convolution with discrete gaussian kernels. This filter performs Gaussian...">DiscreteGaussianImageFilter</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a0e9c0db5f951189ea71f388e1744adc2" title="Base class for computing IIR convolution with an approximation of a Gaussian kernel.">itk::simple::RecursiveGaussian</a> for the procedural interface</dd>
+<a class="el" href="namespaceitk_1_1simple.html#a0e9c0db5f951189ea71f388e1744adc2" title="Base class for computing IIR convolution with an approximation of a Gaussian kernel.">itk::simple::RecursiveGaussian</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1RecursiveGaussianImageFilter.html">itk::RecursiveGaussianImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00060">60</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -385,7 +387,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00176">176</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00185">185</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +404,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Define the pixels types supported by this filter </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00071">71</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00072">72</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -418,7 +420,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00061">61</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00062">62</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -440,7 +442,7 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a2581d78ff6ffc9a672aecc6e49b3c1e8adadcc9dfd62eb5a2a048f8180215a064" name="a2581d78ff6ffc9a672aecc6e49b3c1e8adadcc9dfd62eb5a2a048f8180215a064"></a>SecondOrder&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00120">120</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00129">129</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -550,7 +552,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00178">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00187">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -577,9 +579,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00157">157</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00166">166</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00188">m_Direction</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00197">m_Direction</a>.</p>
 
 </div>
 </div>
@@ -634,7 +636,7 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00170">170</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -661,9 +663,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00118">118</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00127">127</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00184">m_NormalizeAcrossScale</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00193">m_NormalizeAcrossScale</a>.</p>
 
 </div>
 </div>
@@ -689,8 +691,8 @@ template&lt;class TImageType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">Set/Get the Order of the Gaussian to convolve with. 
-</pre><ul>
+<p>Set/Get the Order of the Gaussian to convolve with.</p>
+<ul>
 <li>ZeroOrder is equivalent to convolving with a Gaussian. This is the default.</li>
 </ul>
 <ul>
@@ -700,9 +702,9 @@ template&lt;class TImageType&gt; </div>
 <li>SecondOrder is equivalent to convolving with the second derivative of a Gaussian. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00147">147</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00156">156</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00186">m_Order</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00195">m_Order</a>.</p>
 
 </div>
 </div>
@@ -730,9 +732,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Sigma, measured in world coordinates, of the Gaussian kernel. The default is 1.0. An exception will be generated if the Sigma value is less than or equal to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00182">m_Sigma</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00191">m_Sigma</a>.</p>
 
 </div>
 </div>
@@ -759,9 +761,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00114">114</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00123">123</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00107">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00116">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -789,9 +791,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set the value of NormalizeAcrossScale to true or false respectfully. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00121">121</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00107">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00116">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -818,9 +820,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00152">152</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00161">161</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00188">m_Direction</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00197">m_Direction</a>.</p>
 
 </div>
 </div>
@@ -846,16 +848,17 @@ template&lt;class TImageType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment"> Set/Get the flag for normalizing the gaussian over scale-space.
-</pre><p>This flag enables the analysis of the differential shape of features independent of their size ( both pixels and physical size ). Following the notation of Tony Lindeberg:</p>
+<p>Set/Get the flag for normalizing the gaussian over scale-space.</p>
+<p>This flag enables the analysis of the differential shape of features independent of their size ( both pixels and physical size ). Following the notation of Tony Lindeberg:</p>
 <p>Let </p><p class="formulaDsp">
 \[ L(x; t) = g(x; t) \ast f(x) \]
 </p>
 <p> be the scale-space representation of image </p><p class="formulaDsp">
 \[ f(x) \]
 </p>
-<p> where </p><p class="formulaDsp">
-\[ g(x; t) = \frac{1}{ \sqrt{ 2 \pi t} } \exp{ \left( -\frac{x^2}{ 2 t } \right) } \]
+<p> where  </p><p class="formulaDsp">
+\[ g(x; t) =
+\frac{1}{ \sqrt{ 2 \pi t} } \exp{ \left( -\frac{x^2}{ 2 t } \right) } \]
 </p>
 <p> is the Gaussian function and </p><p class="formulaDsp">
 \[\ast\]
@@ -876,11 +879,11 @@ template&lt;class TImageType&gt; </div>
 <p>For analyzing an image across scale-space you want to enable this flag. It is disabled by default.</p>
 <dl class="section note"><dt>Note</dt><dd>Not all scale space axioms are satisfied by this filter, some are only approximated. Particularly, at fine scales ( say less than 1 pixel ) other methods such as a discrete Gaussian kernel should be considered. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00116">116</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00184">m_NormalizeAcrossScale</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00193">m_NormalizeAcrossScale</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00114">NormalizeAcrossScaleOff()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00112">NormalizeAcrossScaleOn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00123">NormalizeAcrossScaleOff()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00121">NormalizeAcrossScaleOn()</a>.</p>
 
 </div>
 </div>
@@ -906,8 +909,8 @@ template&lt;class TImageType&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<pre class="fragment">Set/Get the Order of the Gaussian to convolve with. 
-</pre><ul>
+<p>Set/Get the Order of the Gaussian to convolve with.</p>
+<ul>
 <li>ZeroOrder is equivalent to convolving with a Gaussian. This is the default.</li>
 </ul>
 <ul>
@@ -917,9 +920,9 @@ template&lt;class TImageType&gt; </div>
 <li>SecondOrder is equivalent to convolving with the second derivative of a Gaussian. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00133">133</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00142">142</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00186">m_Order</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00195">m_Order</a>.</p>
 
 </div>
 </div>
@@ -947,9 +950,9 @@ template&lt;class TImageType&gt; </div>
 </div><div class="memdoc">
 <p>Set/Get the Sigma, measured in world coordinates, of the Gaussian kernel. The default is 1.0. An exception will be generated if the Sigma value is less than or equal to zero. </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00079">79</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00081">81</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00182">m_Sigma</a>.</p>
+<p class="reference">References <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00191">m_Sigma</a>.</p>
 
 </div>
 </div>
@@ -1002,7 +1005,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00177">177</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#aec28f9a457bd5a92f76e2e33dbe52901">ExecuteInternal()</a>.</p>
 
@@ -1029,9 +1032,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00188">188</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00197">197</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00157">GetDirection()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00152">SetDirection()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00166">GetDirection()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00161">SetDirection()</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1058,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00196">196</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00205">205</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -1079,9 +1082,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00184">184</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00193">193</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00118">GetNormalizeAcrossScale()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00107">SetNormalizeAcrossScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00127">GetNormalizeAcrossScale()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00116">SetNormalizeAcrossScale()</a>.</p>
 
 </div>
 </div>
@@ -1105,9 +1108,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00186">186</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00195">195</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00147">GetOrder()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00133">SetOrder()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00156">GetOrder()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00142">SetOrder()</a>.</p>
 
 </div>
 </div>
@@ -1131,9 +1134,9 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00182">182</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00191">191</a> of file <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html">sitkRecursiveGaussianImageFilter.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00085">GetSigma()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00079">SetSigma()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00088">GetSigma()</a>, and <a class="el" href="sitkRecursiveGaussianImageFilter_8h_source.html#l00081">SetSigma()</a>.</p>
 
 </div>
 </div>
