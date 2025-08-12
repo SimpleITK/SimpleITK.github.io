@@ -104,6 +104,7 @@ $(function(){ initResizable(false); });
 <div class="line"># change in the line numbers of the code below will break the I/O page.</div>
 <div class="line"> </div>
 <div class="line">proc example1 {inputImageFileName outputImageFileName} {</div>
+<div class="line">  #START_OO_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">  ImageFileReader reader</div>
 <div class="line">  reader SetImageIO &quot;PNGImageIO&quot;</div>
 <div class="line">  reader SetFileName $inputImageFileName</div>
@@ -116,17 +117,21 @@ $(function(){ initResizable(false); });
 <div class="line">  reader -delete</div>
 <div class="line">  writer -delete</div>
 <div class="line">  $image -delete</div>
+<div class="line">  #END_OO_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">proc example2 {inputImageFileName outputImageFileName} {</div>
 <div class="line">  global sitkUnknown</div>
+<div class="line">  #START_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">  set image [ ReadImage $inputImageFileName $sitkUnknown &quot;PNGImageIO&quot; ]</div>
 <div class="line">  WriteImage $image $outputImageFileName</div>
 <div class="line"> </div>
 <div class="line">  $image -delete</div>
+<div class="line">  #END_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">proc example3 {} {</div>
+<div class="line">  #START_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</div>
 <div class="line">  Euler2DTransform basic_transform</div>
 <div class="line">  set trans { 2.0 3.0 }</div>
 <div class="line">  basic_transform SetTranslation $trans</div>
@@ -140,6 +145,7 @@ $(function(){ initResizable(false); });
 <div class="line"> </div>
 <div class="line">  basic_transform -delete</div>
 <div class="line">  $read_result -delete</div>
+<div class="line">  #END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">if { $argc &lt; 2 } {</div>

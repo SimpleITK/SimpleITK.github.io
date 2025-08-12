@@ -106,6 +106,7 @@ $(function(){ initResizable(false); });
 <div class="line">def example1(inputImageFileName, outputImageFileName)</div>
 <div class="line">  require &#39;simpleitk&#39;</div>
 <div class="line"> </div>
+<div class="line">  #START_OO_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">  reader = Simpleitk::ImageFileReader.new</div>
 <div class="line">  reader.set_image_io(&quot;PNGImageIO&quot;)</div>
 <div class="line">  reader.set_file_name(inputImageFileName)</div>
@@ -114,18 +115,22 @@ $(function(){ initResizable(false); });
 <div class="line">  writer = Simpleitk::ImageFileWriter.new</div>
 <div class="line">  writer.set_file_name outputImageFileName</div>
 <div class="line">  writer.execute image</div>
+<div class="line">  #END_OO_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">end</div>
 <div class="line"> </div>
 <div class="line">def example2(inputImageFileName, outputImageFileName)</div>
 <div class="line">  require &#39;simpleitk&#39;</div>
 <div class="line"> </div>
+<div class="line">  #START_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">  image = Simpleitk::read_image(inputImageFileName, Simpleitk::SitkUnknown, &quot;PNGImageIO&quot;)</div>
 <div class="line">  Simpleitk::write_image(image, outputImageFileName)</div>
+<div class="line">  #END_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">end</div>
 <div class="line"> </div>
 <div class="line">def example3()</div>
 <div class="line">  require &#39;simpleitk&#39;</div>
 <div class="line"> </div>
+<div class="line">  #START_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</div>
 <div class="line">  basic_transform = Simpleitk::Euler2DTransform.new</div>
 <div class="line">  trans = Simpleitk::VectorDouble.new</div>
 <div class="line">  trans &lt;&lt; 2.0</div>
@@ -136,6 +141,7 @@ $(function(){ initResizable(false); });
 <div class="line">  read_result = Simpleitk::read_transform(&#39;euler2D.tfm&#39;)</div>
 <div class="line"> </div>
 <div class="line">  raise &quot;This shouldn&#39;t happen.&quot; unless basic_transform.class != read_result.class</div>
+<div class="line">  #END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</div>
 <div class="line">end</div>
 <div class="line"> </div>
 <div class="line">if ARGV.length != 2 then</div>

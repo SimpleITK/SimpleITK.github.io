@@ -111,6 +111,7 @@ $(function(){ initResizable(false); });
 <div class="line">    <span class="keyword">class </span>SimpleIO {</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> example1(<span class="keywordtype">string</span> inputImageFileName, <span class="keywordtype">string</span> outputImageFileName) {</div>
+<div class="line">  <span class="comment">//START_OO_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  <a id="_a0" name="_a0"></a><a class="code hl_class" href="classitk_1_1simple_1_1ImageFileReader.html">ImageFileReader</a> reader = <span class="keyword">new</span> <a class="code hl_class" href="classitk_1_1simple_1_1ImageFileReader.html">ImageFileReader</a>();</div>
 <div class="line">  reader.<a id="a1" name="a1"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageReaderBase.html#ae7639c762c18a7c65b1e9f03e64cad6b">SetImageIO</a>(<span class="stringliteral">&quot;PNGImageIO&quot;</span>);</div>
 <div class="line">  reader.<a id="a2" name="a2"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageFileReader.html#ae91a9489de4017a1bccdcbe126331b01">SetFileName</a>(inputImageFileName);</div>
@@ -119,14 +120,18 @@ $(function(){ initResizable(false); });
 <div class="line">  <a id="_a5" name="_a5"></a><a class="code hl_class" href="classitk_1_1simple_1_1ImageFileWriter.html">ImageFileWriter</a> writer = <span class="keyword">new</span> <a class="code hl_class" href="classitk_1_1simple_1_1ImageFileWriter.html">ImageFileWriter</a>();</div>
 <div class="line">  writer.<a id="a6" name="a6"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageFileWriter.html#ad3bf07b55049aaf96fa70f1f2cba0b0a">SetFileName</a>(outputImageFileName);</div>
 <div class="line">  writer.<a id="a7" name="a7"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageFileWriter.html#a7c2e6162e4a5d60c35ed504cb4726c71">Execute</a>(image);</div>
+<div class="line">  <span class="comment">//END_OO_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> example2(<span class="keywordtype">string</span> inputImageFileName, <span class="keywordtype">string</span> outputImageFileName) {</div>
+<div class="line">  <span class="comment">//START_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">Image</a> image = <a class="code hl_namespace" href="namespaceitk_1_1simple.html">sitk</a>.ReadImage(inputImageFileName, <a class="code hl_enumeration" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98">PixelIDValueEnum</a>.sitkUnknown, <span class="stringliteral">&quot;PNGImageIO&quot;</span>);</div>
 <div class="line">  <a class="code hl_namespace" href="namespaceitk_1_1simple.html">sitk</a>.WriteImage(image, outputImageFileName);</div>
+<div class="line">  <span class="comment">//END_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> example3() {</div>
+<div class="line">  <span class="comment">//START_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  <a id="_a8" name="_a8"></a><a class="code hl_class" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a> basic_transform = <span class="keyword">new</span> <a class="code hl_class" href="classitk_1_1simple_1_1Euler2DTransform.html">Euler2DTransform</a>();</div>
 <div class="line">  VectorDouble trans = <span class="keyword">new</span> VectorDouble( <span class="keyword">new</span> <span class="keywordtype">double</span>[] {2.0, 3.0} );</div>
 <div class="line">  basic_transform.<a id="a9" name="a9"></a><a class="code hl_function" href="classitk_1_1simple_1_1Euler2DTransform.html#aafac87ec107f49979447cfb00c2f1a31">SetTranslation</a>(trans);</div>
@@ -136,6 +141,7 @@ $(function(){ initResizable(false); });
 <div class="line">  <a id="_a10" name="_a10"></a><a class="code hl_class" href="classitk_1_1simple_1_1Transform.html">Transform</a> read_result = <a class="code hl_namespace" href="namespaceitk_1_1simple.html">sitk</a>.ReadTransform(<span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">  Debug.Assert( basic_transform.<a id="a11" name="a11"></a><a class="code hl_function" href="classitk_1_1simple_1_1Euler2DTransform.html#a81f3e891de6e2396f8aafaf5635c4ea2">GetName</a>() != read_result.<a id="a12" name="a12"></a><a class="code hl_function" href="classitk_1_1simple_1_1Transform.html#a55044eb06829e88a8960d53db179de62">GetName</a>() );</div>
+<div class="line">  <span class="comment">//END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> Main(<span class="keywordtype">string</span>[] args) {</div>

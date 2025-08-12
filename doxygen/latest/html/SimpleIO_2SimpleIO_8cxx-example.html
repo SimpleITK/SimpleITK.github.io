@@ -114,6 +114,7 @@ $(function(){ initResizable(false); });
 <div class="line"><span class="keywordtype">void</span></div>
 <div class="line">example1(std::string inputImageFileName, std::string outputImageFileName)</div>
 <div class="line">{</div>
+<div class="line">  <span class="comment">// START_OO_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  <a id="_a0" name="_a0"></a><a class="code hl_class" href="classitk_1_1simple_1_1ImageFileReader.html">itk::simple::ImageFileReader</a> reader;</div>
 <div class="line">  reader.<a id="a1" name="a1"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageReaderBase.html#ae7639c762c18a7c65b1e9f03e64cad6b">SetImageIO</a>(<span class="stringliteral">&quot;PNGImageIO&quot;</span>);</div>
 <div class="line">  reader.<a id="a2" name="a2"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageFileReader.html#ae91a9489de4017a1bccdcbe126331b01">SetFileName</a>(inputImageFileName);</div>
@@ -124,20 +125,24 @@ $(function(){ initResizable(false); });
 <div class="line">  <a id="_a5" name="_a5"></a><a class="code hl_class" href="classitk_1_1simple_1_1ImageFileWriter.html">itk::simple::ImageFileWriter</a> writer;</div>
 <div class="line">  writer.<a id="a6" name="a6"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageFileWriter.html#ad3bf07b55049aaf96fa70f1f2cba0b0a">SetFileName</a>(outputImageFileName);</div>
 <div class="line">  writer.<a id="a7" name="a7"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageFileWriter.html#a7c2e6162e4a5d60c35ed504cb4726c71">Execute</a>(image);</div>
+<div class="line">  <span class="comment">// END_OO_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span></div>
 <div class="line">example2(std::string inputImageFileName, std::string outputImageFileName)</div>
 <div class="line">{</div>
+<div class="line">  <span class="comment">// START_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  <a class="code hl_class" href="classitk_1_1simple_1_1Image.html">itk::simple::Image</a> image;</div>
 <div class="line">  image = <a id="a8" name="a8"></a><a class="code hl_function" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d">itk::simple::ReadImage</a>(inputImageFileName, <a class="code hl_enumvalue" href="namespaceitk_1_1simple.html#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">itk::simple::sitkUnknown</a>, <span class="stringliteral">&quot;PNGImageIO&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">  <a id="a9" name="a9"></a><a class="code hl_function" href="namespaceitk_1_1simple.html#aeb82b9d2fae37927cf09d45391070847">itk::simple::WriteImage</a>(image, outputImageFileName);</div>
+<div class="line">  <span class="comment">// END_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">void</span></div>
 <div class="line">example3()</div>
 <div class="line">{</div>
+<div class="line">  <span class="comment">// START_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  <a id="_a10" name="_a10"></a><a class="code hl_class" href="classitk_1_1simple_1_1Euler2DTransform.html">itk::simple::Euler2DTransform</a> basic_transform;</div>
 <div class="line">  basic_transform.<a id="a11" name="a11"></a><a class="code hl_function" href="classitk_1_1simple_1_1Euler2DTransform.html#aafac87ec107f49979447cfb00c2f1a31">SetTranslation</a>(std::vector&lt;double&gt;{ 2.0, 3.0 });</div>
 <div class="line"> </div>
@@ -145,6 +150,7 @@ $(function(){ initResizable(false); });
 <div class="line">  <a id="_a13" name="_a13"></a><a class="code hl_class" href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a> read_result = <a id="a14" name="a14"></a><a class="code hl_function" href="namespaceitk_1_1simple.html#af81f6f2cfd904a4c06ee64e349ddc1cb">itk::simple::ReadTransform</a>(<span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">  assert(<span class="keyword">typeid</span>(basic_transform) != <span class="keyword">typeid</span>(read_result));</div>
+<div class="line">  <span class="comment">// END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"> </div>

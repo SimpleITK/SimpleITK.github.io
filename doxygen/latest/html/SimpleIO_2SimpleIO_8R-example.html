@@ -111,6 +111,7 @@ $(function(){ initResizable(false); });
 <div class="line">example1 &lt;- function(inputImageFileName, outputImageFileName) {</div>
 <div class="line">  library(SimpleITK)</div>
 <div class="line"> </div>
+<div class="line">  #START_OO_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">  reader &lt;- ImageFileReader()</div>
 <div class="line">  reader$SetImageIO(&quot;PNGImageIO&quot;)</div>
 <div class="line">  reader$SetFileName(inputImageFileName)</div>
@@ -119,18 +120,22 @@ $(function(){ initResizable(false); });
 <div class="line">  writer &lt;- ImageFileWriter()</div>
 <div class="line">  writer$SetFileName(outputImageFileName)</div>
 <div class="line">  writer$Execute(image)</div>
+<div class="line">  #END_OO_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">example2 &lt;- function(inputImageFileName, outputImageFileName) {</div>
 <div class="line">  library(SimpleITK)</div>
 <div class="line"> </div>
+<div class="line">  #START_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">  image &lt;- ReadImage(inputImageFileName)</div>
 <div class="line">  WriteImage(image, outputImageFileName)</div>
+<div class="line">  #END_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">example3 &lt;- function() {</div>
 <div class="line">  library(SimpleITK)</div>
 <div class="line"> </div>
+<div class="line">  #START_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</div>
 <div class="line">  basic_transform &lt;- Euler2DTransform()</div>
 <div class="line">  basic_transform$SetTranslation(c(2,3))</div>
 <div class="line"> </div>
@@ -138,6 +143,7 @@ $(function(){ initResizable(false); });
 <div class="line">  read_result = ReadTransform(&#39;euler2D.tfm&#39;)</div>
 <div class="line"> </div>
 <div class="line">  stopifnot(read_result$GetName() != basic_transform$GetName())</div>
+<div class="line">  #END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line">args &lt;- commandArgs( TRUE )</div>

@@ -109,6 +109,7 @@ $(function(){ initResizable(false); });
 <div class="line"><span class="keyword">class </span>SimpleIO {</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> example1(String inputImageFileName, String outputImageFileName) {</div>
+<div class="line">  <span class="comment">//START_OO_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  ImageFileReader reader = <span class="keyword">new</span> ImageFileReader();</div>
 <div class="line">  reader.setImageIO(<span class="stringliteral">&quot;PNGImageIO&quot;</span>);</div>
 <div class="line">  reader.setFileName(inputImageFileName);</div>
@@ -117,14 +118,18 @@ $(function(){ initResizable(false); });
 <div class="line">  ImageFileWriter writer = <span class="keyword">new</span> ImageFileWriter();</div>
 <div class="line">  writer.setFileName(outputImageFileName);</div>
 <div class="line">  writer.execute(image);</div>
+<div class="line">  <span class="comment">//END_OO_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> example2(String inputImageFileName, String outputImageFileName) {</div>
+<div class="line">  <span class="comment">//START_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  Image image = SimpleITK.readImage(inputImageFileName, PixelIDValueEnum.sitkUnknown, <span class="stringliteral">&quot;PNGImageIO&quot;</span>);</div>
 <div class="line">  SimpleITK.writeImage(image, outputImageFileName);</div>
+<div class="line">  <span class="comment">//END_PROCEDURAL_IMAGE_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> example3() {</div>
+<div class="line">  <span class="comment">//START_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</span></div>
 <div class="line">  Euler2DTransform basic_transform = <span class="keyword">new</span> Euler2DTransform();</div>
 <div class="line">  <span class="keywordtype">double</span>[] t = {2.0, 3.0};</div>
 <div class="line">  VectorDouble trans = <span class="keyword">new</span> VectorDouble(t);</div>
@@ -134,6 +139,7 @@ $(function(){ initResizable(false); });
 <div class="line">  Transform read_result = SimpleITK.readTransform(<span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">  assert basic_transform.getClass() != read_result.getClass();</div>
+<div class="line">  <span class="comment">//END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> main(String argv[]) {</div>

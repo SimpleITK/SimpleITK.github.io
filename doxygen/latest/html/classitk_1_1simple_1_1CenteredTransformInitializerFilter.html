@@ -125,6 +125,8 @@ $(function(){ initResizable(false); });
 <p>In the first mode, the geometrical center of the moving image is passed as initial center of rotation to the transform and the vector from the center of the fixed image to the center of the moving image is passed as the initial translation. This mode basically assumes that the anatomical objects to be registered are centered in their respective images. Hence the best initial guess for the registration is the one that superimposes those two centers.</p>
 <p>In the second mode, the moments of gray level values are computed for both images. The center of mass of the moving image is then used as center of rotation. The vector between the two centers of mass is passes as the initial translation to the transform. This second approach assumes that the moments of the anatomical objects are similar for both images and hence the best initial guess for registration is to superimpose both mass centers. Note that this assumption will probably not hold in multi-modality registration.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1CenteredTransformInitializer.html">itk::CenteredTransformInitializer</a> </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationOptimizerWeights_2ImageRegistrationOptimizerWeights_8cs-example.html#_a3">ImageRegistrationOptimizerWeights/ImageRegistrationOptimizerWeights.cs</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkCenteredTransformInitializerFilter_8h_source.html#l00067">67</a> of file <a class="el" href="sitkCenteredTransformInitializerFilter_8h_source.html">sitkCenteredTransformInitializerFilter.h</a>.</p>
 </div><table class="memberdecls">
@@ -392,6 +394,8 @@ Additional Inherited Members</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af05a71d0cafc026c10b6f44ea3fd5986afc7df7d9e964e899aacb62ee572ebb30" name="af05a71d0cafc026c10b6f44ea3fd5986afc7df7d9e964e899aacb62ee572ebb30"></a>GEOMETRY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="af05a71d0cafc026c10b6f44ea3fd5986a4c1e745383efeab2f28d79cec4db637f" name="af05a71d0cafc026c10b6f44ea3fd5986a4c1e745383efeab2f28d79cec4db637f"></a>MOMENTS&#160;</td><td class="fielddoc"></td></tr>
 </table>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ImageRegistrationOptimizerWeights_2ImageRegistrationOptimizerWeights_8cs-example.html#a4">ImageRegistrationOptimizerWeights/ImageRegistrationOptimizerWeights.cs</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkCenteredTransformInitializerFilter_8h_source.html#l00082">82</a> of file <a class="el" href="sitkCenteredTransformInitializerFilter_8h_source.html">sitkCenteredTransformInitializerFilter.h</a>.</p>
 
