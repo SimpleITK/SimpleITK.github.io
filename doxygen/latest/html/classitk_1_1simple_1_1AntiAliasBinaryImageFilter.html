@@ -119,8 +119,9 @@ $(function(){ initResizable(false); });
 <dl class="section user"><dt></dt><dd>The binary volume (filter input) is used as a set of constraints in an iterative relaxation process of an estimated ND surface. The surface is described implicitly as the zero level set of a volume \( \phi \) and allowed to deform under curvature flow. A set of constraints is imposed on this movement as follows:</dd></dl>
 <dl class="section user"><dt></dt><dd><p class="formulaDsp">
 \[ u_{i,j,k}^{n+1} = \left\{ \begin{array}{ll} \mbox{max} (u_{i,j,k}^{n} + \Delta t H_{i,j,k}^{n}, 0) &amp;
-\mbox{\f$B_{i,j,k} = 1\f$} \\ \mbox{min} (u_{i,j,k}^{n} + \Delta t H_{i,j,k}^{n}, 0) &amp; \mbox{\f$B_{i,j,k} = -1\f$}
-\end{array}\right. \]
+\mbox{\f$B_{i,j,k}
+= 1\f$} \\ \mbox{min} (u_{i,j,k}^{n} + \Delta t H_{i,j,k}^{n}, 0) &amp; \mbox{\f$B_{i,j,k} = -1\f$} \end{array}\right.
+\]
 </p>
 </dd></dl>
 <dl class="section user"><dt></dt><dd>where \( u_{i,j,k}^{n} \) is the value of \( \phi \) at discrete index \( (i,j,k) \) and iteration \( n \) , \( H \) is the gradient magnitude times mean curvature of \( \phi \) , and \( B \) is the binary input volume, with 1 denoting an inside pixel and -1 denoting an outside pixel.</dd></dl>

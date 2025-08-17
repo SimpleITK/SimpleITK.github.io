@@ -126,11 +126,8 @@ $(function(){ initResizable(false); });
 <div class="line"> </div>
 <div class="line">    <span class="keyword">class </span>MultiResolutionIterationUpdate : <a class="code hl_class" href="classitk_1_1simple_1_1Command.html">Command</a></div>
 <div class="line">    {</div>
-<div class="line">        <span class="keyword">private</span> <a class="code hl_class" href="classitk_1_1simple_1_1ImageRegistrationMethod.html">ImageRegistrationMethod</a> m_Method;</div>
-<div class="line"> </div>
-<div class="line">        <span class="keyword">public</span> MultiResolutionIterationUpdate(<a class="code hl_class" href="classitk_1_1simple_1_1ImageRegistrationMethod.html">ImageRegistrationMethod</a> m)</div>
+<div class="line">        <span class="keyword">public</span> MultiResolutionIterationUpdate()</div>
 <div class="line">        {</div>
-<div class="line">            m_Method = m;</div>
 <div class="line">        }</div>
 <div class="line"> </div>
 <div class="line">        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">void</span> Execute()</div>
@@ -193,7 +190,7 @@ $(function(){ initResizable(false); });
 <div class="line">            IterationUpdate cmd1 = <span class="keyword">new</span> IterationUpdate(R);</div>
 <div class="line">            R.<a id="a16" name="a16"></a><a class="code hl_function" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>(<a class="code hl_enumeration" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">EventEnum</a>.sitkIterationEvent, cmd1);</div>
 <div class="line"> </div>
-<div class="line">            MultiResolutionIterationUpdate cmd2 = <span class="keyword">new</span> MultiResolutionIterationUpdate(R);</div>
+<div class="line">            MultiResolutionIterationUpdate cmd2 = <span class="keyword">new</span> MultiResolutionIterationUpdate();</div>
 <div class="line">            R.<a class="code hl_function" href="classitk_1_1simple_1_1ProcessObject.html#a2199e5cca19b45d504676a595e1f6cfd">AddCommand</a>(<a class="code hl_enumeration" href="namespaceitk_1_1simple.html#aa7399868984d99493c5a307cce373ace">EventEnum</a>.sitkMultiResolutionIterationEvent, cmd2);</div>
 <div class="line"> </div>
 <div class="line">            <a class="code hl_class" href="classitk_1_1simple_1_1Transform.html">Transform</a> outTx = R.<a id="a17" name="a17"></a><a class="code hl_function" href="classitk_1_1simple_1_1ImageRegistrationMethod.html#a3ba46dbf038828c8f2952875b8f6e0de">Execute</a>(fixedImage, movingImage);</div>

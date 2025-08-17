@@ -131,9 +131,10 @@ $(function(){ initResizable(false); });
 <p>An ITK image with an identity direction cosine matrix is in LPS (Left, Posterior, Superior) orientation as defined by the DICOM standard.</p>
 <p class="formulaDsp">
 \[ LPS = \begin{Bmatrix} from\ right\ to\ \textbf{L}eft \\ from\ anterior\ towards\ \textbf{P}osterior \\ from\
-inferior\ towards\ \textbf{S}uperior \end{Bmatrix} \]
+inferior\
+towards\ \textbf{S}uperior \end{Bmatrix} \]
 </p>
-<p>The output orientation is specified with SetDesiredCoordinateOrientation. The input coordinate orientation is computed from the input image's direction cosine matrix. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ca62b91b4bb626fd9ef0b2f283660d7" title="Permute axes and flip images as needed to obtain an approximation to the desired orientation.">itk::simple::DICOMOrient</a> for the procedural interface </dd>
+<p> The output orientation is specified with SetDesiredCoordinateOrientation. The input coordinate orientation is computed from the input image's direction cosine matrix. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="namespaceitk_1_1simple.html#a0ca62b91b4bb626fd9ef0b2f283660d7" title="Permute axes and flip images as needed to obtain an approximation to the desired orientation.">itk::simple::DICOMOrient</a> for the procedural interface </dd>
 <dd>
 itk::DICOMOrientImageFilter for the Doxygen on the original ITK class. </dd></dl>
 

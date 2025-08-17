@@ -120,14 +120,15 @@ $(function(){ initResizable(false); });
 <p>The enhancement is based on the eigenvalues of the Hessian matrix. For the Frangi's vesselness case were M=1 and N=3 we have the 3 eigenvalues such that \( | \lambda_1 | &lt; | \lambda_2 | &lt; |\lambda_3 | \) . The formula follows:</p>
 <p class="formulaDsp">
 \[ R_A = \frac{|\lambda_2|}{|\lambda_3|}, \; R_B = \frac{|\lambda_2|}{|\lambda_2\lambda_3|}, \; S =
-\sqrt{\lambda_1^2+\lambda_2^2+\lambda_3^2} \]
+\sqrt{\lambda_1^2+\lambda_2^2+\lambda_3^2}
+\]
 </p>
    <p class="formulaDsp">
-\[ V_{\sigma}= \begin{cases} (1-e^{-\frac{R_A^2}{2\alpha^2}}) \cdot
-e^{\frac{R_B^2}{2\beta^2}} \cdot (1-e^{-\frac{S^2}{2\gamma^2}}) &amp; \text{if } \lambda_2&lt;0 \text{ and } \lambda_3&lt;0
-\text{,}\\ 0 &amp; \text{otherwise} \end{cases} \]
+\[ V_{\sigma}= \begin{cases} (1-e^{-\frac{R_A^2}{2\alpha^2}}) \cdot e^{\frac{R_B^2}{2\beta^2}} \cdot
+(1-e^{-\frac{S^2}{2\gamma^2}}) &amp; \text{if } \lambda_2&lt;0 \text{ and } \lambda_3&lt;0 \text{,}\\ 0 &amp; \text{otherwise}
+\end{cases} \]
 </p>
-<dl class="section user"><dt>References</dt><dd>Antiga, L. Generalizing vesselness with respect to dimensionality and shape. <a href="https://hdl.handle.net/1926/576">https://hdl.handle.net/1926/576</a></dd></dl>
+ <dl class="section user"><dt>References</dt><dd>Antiga, L. Generalizing vesselness with respect to dimensionality and shape. <a href="https://hdl.handle.net/1926/576">https://hdl.handle.net/1926/576</a></dd></dl>
 <dl class="section user"><dt></dt><dd>Frangi, AF, Niessen, WJ, Vincken, KL, &amp; Viergever, MA (1998). Multiscale Vessel Enhancement Filtering. In Wells, WM, Colchester, A, &amp; Delp, S, Editors, MICCAI '98 Medical <a class="el" href="classitk_1_1simple_1_1Image.html" title="The Image class for SimpleITK.">Image</a> Computing and Computer-Assisted Intervention, Lecture Notes in Computer Science, pages 130-137, Springer Verlag, 1998.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1HessianToObjectnessMeasureImageFilter.html">itk::HessianToObjectnessMeasureImageFilter</a> </dd>
 <dd>
