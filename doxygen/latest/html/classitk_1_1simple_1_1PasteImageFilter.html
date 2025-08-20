@@ -118,6 +118,8 @@ $(function(){ initResizable(false); });
 <p><a class="el" href="classitk_1_1simple_1_1PasteImageFilter.html" title="Paste an image (or a constant value) into another image.">PasteImageFilter</a> allows a region in a destination image to be filled with a source image or a constant pixel value. The <a class="el" href="#a9820dfd64e547f4d1dfed53d6da851de">SetDestinationIndex()</a> method prescribes where in the destination input to start pasting data from the source input. The SetSourceRegion method prescribes the section of the second image to paste into the first. When a constant pixel value is set, the SourceRegion describes the size of the region filled. If the output requested region does not include the SourceRegion after it has been repositioned to DestinationIndex, then the output will just be a copy of the input.</p>
 <p>This filter supports running "InPlace" to efficiently reuses the destination image buffer for the output, removing the need to copy the destination pixels to the output.</p>
 <p>When the source image is a lower dimension than the destination image then the DestinationSkipAxes parameter specifies which axes in the destination image are set to 1 when copying the region or filling with a constant. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cs-example.html#_a1">LandmarkRegistration/LandmarkRegistration.cs</a>, and <a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cxx-example.html#_a1">LandmarkRegistration/LandmarkRegistration.cxx</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00055">55</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 </div><table class="memberdecls">
@@ -549,7 +551,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Execute the filter on the input image </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a8">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cs-example.html#a5">LandmarkRegistration/LandmarkRegistration.cs</a>, <a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cxx-example.html#a5">LandmarkRegistration/LandmarkRegistration.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a8">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
 
 </div>
@@ -934,7 +936,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Set/Get the destination index (where in the first input the second input will be pasted. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a7">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cs-example.html#a4">LandmarkRegistration/LandmarkRegistration.cs</a>, <a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cxx-example.html#a4">LandmarkRegistration/LandmarkRegistration.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a7">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00107">107</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
@@ -997,6 +999,8 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cs-example.html#a3">LandmarkRegistration/LandmarkRegistration.cs</a>, and <a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cxx-example.html#a3">LandmarkRegistration/LandmarkRegistration.cxx</a>.</dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00090">90</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
 
@@ -1026,7 +1030,7 @@ template&lt;class TImageType, unsigned int OutputDimension&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a4">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cs-example.html#a2">LandmarkRegistration/LandmarkRegistration.cs</a>, <a class="el" href="LandmarkRegistration_2LandmarkRegistration_8cxx-example.html#a2">LandmarkRegistration/LandmarkRegistration.cxx</a>, and <a class="el" href="SliceBySliceDecorator_2SliceBySliceDecorator_8cxx-example.html#a4">SliceBySliceDecorator/SliceBySliceDecorator.cxx</a>.</dd>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="sitkPasteImageFilter_8h_source.html#l00074">74</a> of file <a class="el" href="sitkPasteImageFilter_8h_source.html">sitkPasteImageFilter.h</a>.</p>
