@@ -125,28 +125,33 @@ $(function(){ initResizable(false); });
 <div class="line"> </div>
 <div class="line"># Extract first three channels of joined image (assuming RGB)</div>
 <div class="line">select &lt;- VectorIndexSelectionCastImageFilter()</div>
-<div class="line">channel1_image &lt;- select$Execute(joined_image, 0, &quot;sitkUInt8&quot;)</div>
-<div class="line">channel2_image &lt;- select$Execute(joined_image, 1, &quot;sitkUInt8&quot;)</div>
-<div class="line">channel3_image &lt;- select$Execute(joined_image, 2, &quot;sitkUInt8&quot;)</div>
+<div class="line">select$SetOutputPixelType(&quot;sitkUInt8&quot;)</div>
+<div class="line"> </div>
+<div class="line">select$SetIndex(0)</div>
+<div class="line">channel1_image &lt;- select$Execute(joined_image)</div>
+<div class="line">select$SetIndex(1)</div>
+<div class="line">channel2_image &lt;- select$Execute(joined_image)</div>
+<div class="line">select$SetIndex(2)</div>
+<div class="line">channel3_image &lt;- select$Execute(joined_image)</div>
 <div class="line"> </div>
 <div class="line"># Recompose image (should be same as joined_image)</div>
 <div class="line">compose &lt;- ComposeImageFilter()</div>
 <div class="line">composed_image &lt;- compose$Execute(channel1_image, channel2_image, channel3_image)</div>
 <div class="line"> </div>
 <div class="line"># Select same subregion using image slicing operator</div>
-<div class="line">sliced_image = composed_image[101:400, 101:400, 1]</div>
+<div class="line">sliced_image = composed_image[11:40, 11:40, 1]</div>
 <div class="line"> </div>
 <div class="line"># Select same subregion using ExtractImageFilter</div>
 <div class="line">extract &lt;- ExtractImageFilter()</div>
-<div class="line">extract$SetSize( list(300, 300, 0) )</div>
-<div class="line">extract$SetIndex( list(100, 100, 0) )</div>
+<div class="line">extract$SetSize( list(30, 30, 0) )</div>
+<div class="line">extract$SetIndex( list(10, 10, 0) )</div>
 <div class="line">extracted_image &lt;- extract$Execute(composed_image)</div>
 <div class="line"> </div>
 <div class="line"># Select same subregion using CropImageFilter (NOTE: CropImageFilter cannot reduce dimensions</div>
 <div class="line"># unlike ExtractImageFilter, so cropped_image is a three dimensional image with depth of 1)</div>
 <div class="line">crop &lt;- CropImageFilter()</div>
-<div class="line">crop$SetLowerBoundaryCropSize( list(100, 100, 0) )</div>
-<div class="line">crop$SetUpperBoundaryCropSize( list(composed_image$GetWidth()-400, composed_image$GetHeight()-400, 1) )</div>
+<div class="line">crop$SetLowerBoundaryCropSize( list(10, 10, 0) )</div>
+<div class="line">crop$SetUpperBoundaryCropSize( list(composed_image$GetWidth()-40, composed_image$GetHeight()-40, 1) )</div>
 <div class="line">cropped_image &lt;- crop$Execute(composed_image)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->

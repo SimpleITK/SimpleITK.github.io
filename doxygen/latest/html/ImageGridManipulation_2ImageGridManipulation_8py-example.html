@@ -110,42 +110,46 @@ $(function(){ initResizable(false); });
 <div class="line"><span class="lineno">   27</span>    print(<span class="stringliteral">&quot;Usage: &quot;</span> + sys.argv[0] + <span class="stringliteral">&quot; &lt;input-1&gt; &lt;input-2&gt;&quot;</span>)</div>
 <div class="line"><span class="lineno">   28</span>    sys.exit(1)</div>
 <div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span><span class="comment"># Two vector images of same pixel type and dimension expected</span></div>
-<div class="line"><span class="lineno">   31</span>image_1 = <a class="code hl_function" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d">sitk.ReadImage</a>(sys.argv[1])</div>
-<div class="line"><span class="lineno">   32</span>image_2 = <a class="code hl_function" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d">sitk.ReadImage</a>(sys.argv[2])</div>
-<div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span><span class="comment"># Join two N-D Vector images to form an (N+1)-D image</span></div>
-<div class="line"><span class="lineno">   35</span>join = <a class="code hl_class" href="classitk_1_1simple_1_1JoinSeriesImageFilter.html">sitk.JoinSeriesImageFilter</a>()</div>
-<div class="line"><span class="lineno">   36</span>joined_image = join.Execute(image_1, image_2)</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span><span class="comment"># Extract first three channels of joined image (assuming RGB)</span></div>
-<div class="line"><span class="lineno">   39</span>select = <a class="code hl_class" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html">sitk.VectorIndexSelectionCastImageFilter</a>()</div>
-<div class="line"><span class="lineno">   40</span>channel1_image = select.Execute(joined_image, 0, sitk.sitkUInt8)</div>
-<div class="line"><span class="lineno">   41</span>channel2_image = select.Execute(joined_image, 1, sitk.sitkUInt8)</div>
-<div class="line"><span class="lineno">   42</span>channel3_image = select.Execute(joined_image, 2, sitk.sitkUInt8)</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span><span class="comment"># Recompose image (should be same as joined_image)</span></div>
-<div class="line"><span class="lineno">   45</span>compose = <a class="code hl_class" href="classitk_1_1simple_1_1ComposeImageFilter.html">sitk.ComposeImageFilter</a>()</div>
-<div class="line"><span class="lineno">   46</span>composed_image = compose.Execute(channel1_image, channel2_image, channel3_image)</div>
+<div class="line"><span class="lineno">   30</span>image_1 = <a class="code hl_function" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d">sitk.ReadImage</a>(sys.argv[1])</div>
+<div class="line"><span class="lineno">   31</span>image_2 = <a class="code hl_function" href="namespaceitk_1_1simple.html#a520fe0602bf207fc44b0f9d5b67ff03d">sitk.ReadImage</a>(sys.argv[2])</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span><span class="comment"># Join two N-D Vector images to form an (N+1)-D image</span></div>
+<div class="line"><span class="lineno">   34</span>join = <a class="code hl_class" href="classitk_1_1simple_1_1JoinSeriesImageFilter.html">sitk.JoinSeriesImageFilter</a>()</div>
+<div class="line"><span class="lineno">   35</span>joined_image = join.Execute(image_1, image_2)</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span><span class="comment"># Extract first three channels of joined image (assuming RGB)</span></div>
+<div class="line"><span class="lineno">   38</span>select = <a class="code hl_class" href="classitk_1_1simple_1_1VectorIndexSelectionCastImageFilter.html">sitk.VectorIndexSelectionCastImageFilter</a>()</div>
+<div class="line"><span class="lineno">   39</span>select.SetOutputPixelType(sitk.sitkUInt8)</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>select.SetIndex(0)</div>
+<div class="line"><span class="lineno">   42</span>channel1_image = select.Execute(joined_image)</div>
+<div class="line"><span class="lineno">   43</span>select.SetIndex(1)</div>
+<div class="line"><span class="lineno">   44</span>channel2_image = select.Execute(joined_image)</div>
+<div class="line"><span class="lineno">   45</span>select.SetIndex(2)</div>
+<div class="line"><span class="lineno">   46</span>channel3_image = select.Execute(joined_image)</div>
 <div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span><span class="comment"># Select same subregion using image slicing operator</span></div>
-<div class="line"><span class="lineno">   49</span>sliced_image = composed_image[100:400, 100:400, 0]</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span><span class="comment"># Select same subregion using ExtractImageFilter</span></div>
-<div class="line"><span class="lineno">   52</span>extract = <a class="code hl_class" href="classitk_1_1simple_1_1ExtractImageFilter.html">sitk.ExtractImageFilter</a>()</div>
-<div class="line"><span class="lineno">   53</span>extract.SetSize([300, 300, 0])</div>
-<div class="line"><span class="lineno">   54</span>extract.SetIndex([100, 100, 0])</div>
-<div class="line"><span class="lineno">   55</span>extracted_image = extract.Execute(composed_image)</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span><span class="comment"># Select same sub-region using CropImageFilter (NOTE: CropImageFilter cannot</span></div>
-<div class="line"><span class="lineno">   58</span><span class="comment"># reduce dimensions unlike ExtractImageFilter, so cropped_image is a three</span></div>
-<div class="line"><span class="lineno">   59</span><span class="comment"># dimensional image with depth of 1)</span></div>
-<div class="line"><span class="lineno">   60</span>crop = <a class="code hl_class" href="classitk_1_1simple_1_1CropImageFilter.html">sitk.CropImageFilter</a>()</div>
-<div class="line"><span class="lineno">   61</span>crop.SetLowerBoundaryCropSize([100, 100, 0])</div>
-<div class="line"><span class="lineno">   62</span>crop.SetUpperBoundaryCropSize(</div>
-<div class="line"><span class="lineno">   63</span>    [composed_image.GetWidth() - 400, composed_image.GetHeight() - 400, 1]</div>
-<div class="line"><span class="lineno">   64</span>)</div>
-<div class="line"><span class="lineno">   65</span>cropped_image = crop.Execute(composed_image)</div>
+<div class="line"><span class="lineno">   48</span><span class="comment"># Recompose image (should be same as joined_image)</span></div>
+<div class="line"><span class="lineno">   49</span>compose = <a class="code hl_class" href="classitk_1_1simple_1_1ComposeImageFilter.html">sitk.ComposeImageFilter</a>()</div>
+<div class="line"><span class="lineno">   50</span>composed_image = compose.Execute(channel1_image, channel2_image, channel3_image)</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span><span class="comment"># Select same subregion using image slicing operator</span></div>
+<div class="line"><span class="lineno">   53</span>sliced_image = composed_image[10:40, 10:40, 0]</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span><span class="comment"># Select same subregion using ExtractImageFilter</span></div>
+<div class="line"><span class="lineno">   56</span>extract = <a class="code hl_class" href="classitk_1_1simple_1_1ExtractImageFilter.html">sitk.ExtractImageFilter</a>()</div>
+<div class="line"><span class="lineno">   57</span>extract.SetSize([30, 30, 0])</div>
+<div class="line"><span class="lineno">   58</span>extract.SetIndex([10, 10, 0])</div>
+<div class="line"><span class="lineno">   59</span>extracted_image = extract.Execute(composed_image)</div>
+<div class="line"><span class="lineno">   60</span> </div>
+<div class="line"><span class="lineno">   61</span><span class="comment"># Select same sub-region using CropImageFilter (NOTE: CropImageFilter cannot</span></div>
+<div class="line"><span class="lineno">   62</span><span class="comment"># reduce dimensions unlike ExtractImageFilter, so cropped_image is a three</span></div>
+<div class="line"><span class="lineno">   63</span><span class="comment"># dimensional image with depth of 1)</span></div>
+<div class="line"><span class="lineno">   64</span>crop = <a class="code hl_class" href="classitk_1_1simple_1_1CropImageFilter.html">sitk.CropImageFilter</a>()</div>
+<div class="line"><span class="lineno">   65</span>crop.SetLowerBoundaryCropSize([10, 10, 0])</div>
+<div class="line"><span class="lineno">   66</span>crop.SetUpperBoundaryCropSize(</div>
+<div class="line"><span class="lineno">   67</span>    [composed_image.GetWidth() - 40, composed_image.GetHeight() - 40, 1]</div>
+<div class="line"><span class="lineno">   68</span>)</div>
+<div class="line"><span class="lineno">   69</span>cropped_image = crop.Execute(composed_image)</div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ComposeImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ComposeImageFilter.html">itk::simple::ComposeImageFilter</a></div><div class="ttdoc">ComposeImageFilter combine several scalar images into a multicomponent image.</div><div class="ttdef"><b>Definition</b> <a href="sitkComposeImageFilter_8h_source.html#l00064">sitkComposeImageFilter.h:64</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1CropImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1CropImageFilter.html">itk::simple::CropImageFilter</a></div><div class="ttdoc">Decrease the image size by cropping the image by an itk::Size at both the upper and lower bounds of t...</div><div class="ttdef"><b>Definition</b> <a href="sitkCropImageFilter_8h_source.html#l00046">sitkCropImageFilter.h:46</a></div></div>
 <div class="ttc" id="aclassitk_1_1simple_1_1ExtractImageFilter_html"><div class="ttname"><a href="classitk_1_1simple_1_1ExtractImageFilter.html">itk::simple::ExtractImageFilter</a></div><div class="ttdoc">Decrease the image size by cropping the image to the selected region bounds.</div><div class="ttdef"><b>Definition</b> <a href="sitkExtractImageFilter_8h_source.html#l00072">sitkExtractImageFilter.h:73</a></div></div>
