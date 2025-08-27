@@ -153,6 +153,11 @@ $(function(){ initResizable(false); });
 <div class="line">crop$SetLowerBoundaryCropSize( list(10, 10, 0) )</div>
 <div class="line">crop$SetUpperBoundaryCropSize( list(composed_image$GetWidth()-40, composed_image$GetHeight()-40, 1) )</div>
 <div class="line">cropped_image &lt;- crop$Execute(composed_image)</div>
+<div class="line"> </div>
+<div class="line"># Print image information to demonstrate variable usage</div>
+<div class="line">cat(&quot;Sliced image size:&quot;, sliced_image$GetWidth(), &quot;x&quot;, sliced_image$GetHeight(), &quot;x&quot;, sliced_image$GetDepth(), &quot;\n&quot;)</div>
+<div class="line">cat(&quot;Extracted image size:&quot;, extracted_image$GetWidth(), &quot;x&quot;, extracted_image$GetHeight(), &quot;x&quot;, extracted_image$GetDepth(), &quot;\n&quot;)</div>
+<div class="line">cat(&quot;Cropped image size:&quot;, cropped_image$GetWidth(), &quot;x&quot;, cropped_image$GetHeight(), &quot;x&quot;, cropped_image$GetDepth(), &quot;\n&quot;)</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.17-->
 <!-- start footer part -->

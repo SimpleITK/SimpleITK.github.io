@@ -595,7 +595,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for inverse Fast Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> .  <a href="classitk_1_1simple_1_1InverseFFTImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html">InvertDisplacementFieldImageFilter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteratively estimate the inverse field of a displacement field.  <a href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteratively estimates the inverse of a displacement field by fixed-point composition.  <a href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classitk_1_1simple_1_1InvertIntensityImageFilter.html">InvertIntensityImageFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert the intensity of an image.  <a href="classitk_1_1simple_1_1InvertIntensityImageFilter.html#details">More...</a><br /></td></tr>
@@ -2576,9 +2576,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:a161ea30ad2c62ea4f2a29ef82e053e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for inverse Fast Fourier <a class="el" href="classitk_1_1simple_1_1Transform.html" title="A simplified wrapper around a variety of ITK transforms.">Transform</a> .  <br /></td></tr>
 <tr class="separator:a161ea30ad2c62ea4f2a29ef82e053e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a8ced60db43f17b940acc27c3577c57c3" id="r_a8ced60db43f17b940acc27c3577c57c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ced60db43f17b940acc27c3577c57c3">InvertDisplacementField</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, uint32_t maximumNumberOfIterations=10u, double maxErrorToleranceThreshold=0.1, double meanErrorToleranceThreshold=0.001, bool enforceBoundaryCondition=true)</td></tr>
-<tr class="memdesc:a8ced60db43f17b940acc27c3577c57c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteratively estimate the inverse field of a displacement field.  <br /></td></tr>
-<tr class="separator:a8ced60db43f17b940acc27c3577c57c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478f5abe4fb9a8a1321d03837df2dca4" id="r_a478f5abe4fb9a8a1321d03837df2dca4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a478f5abe4fb9a8a1321d03837df2dca4">InvertDisplacementField</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;displacementField, const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;inverseFieldInitialEstimate, uint32_t maximumNumberOfIterations=10u, double maxErrorToleranceThreshold=0.1, double meanErrorToleranceThreshold=0.001, bool enforceBoundaryCondition=true)</td></tr>
+<tr class="memdesc:a478f5abe4fb9a8a1321d03837df2dca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteratively estimates the inverse of a displacement field by fixed-point composition.  <br /></td></tr>
+<tr class="separator:a478f5abe4fb9a8a1321d03837df2dca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68efaf15eb380d4f1fe8518909ef8080" id="r_a68efaf15eb380d4f1fe8518909ef8080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68efaf15eb380d4f1fe8518909ef8080">InvertDisplacementField</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;displacementField, uint32_t maximumNumberOfIterations=10u, double maxErrorToleranceThreshold=0.1, double meanErrorToleranceThreshold=0.001, bool enforceBoundaryCondition=true)</td></tr>
+<tr class="memdesc:a68efaf15eb380d4f1fe8518909ef8080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteratively estimates the inverse of a displacement field by fixed-point composition.  <br /></td></tr>
+<tr class="separator:a68efaf15eb380d4f1fe8518909ef8080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a18d3139a1d2ba9846ef5a2a8ac82f6ae" id="r_a18d3139a1d2ba9846ef5a2a8ac82f6ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18d3139a1d2ba9846ef5a2a8ac82f6ae">InvertIntensity</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, double maximum=255)</td></tr>
 <tr class="memdesc:a18d3139a1d2ba9846ef5a2a8ac82f6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invert the intensity of an image.  <br /></td></tr>
@@ -12539,8 +12542,8 @@ template&lt;typename TPixelType, unsigned int ImageDimension&gt; </div>
 
 </div>
 </div>
-<a id="a8ced60db43f17b940acc27c3577c57c3" name="a8ced60db43f17b940acc27c3577c57c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ced60db43f17b940acc27c3577c57c3">&#9670;&#160;</a></span>InvertDisplacementField()</h2>
+<a id="a478f5abe4fb9a8a1321d03837df2dca4" name="a478f5abe4fb9a8a1321d03837df2dca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a478f5abe4fb9a8a1321d03837df2dca4">&#9670;&#160;</a></span>InvertDisplacementField() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -12548,7 +12551,12 @@ template&lt;typename TPixelType, unsigned int ImageDimension&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::InvertDisplacementField </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>image1</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>displacementField</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inverseFieldInitialEstimate</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -12573,9 +12581,51 @@ template&lt;typename TPixelType, unsigned int ImageDimension&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Iteratively estimate the inverse field of a displacement field. </p>
-<p>This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html" title="Iteratively estimate the inverse field of a displacement field.">InvertDisplacementFieldImageFilter</a> in order to support a procedural API</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html" title="Iteratively estimate the inverse field of a displacement field.">itk::simple::InvertDisplacementFieldImageFilter</a> for the object oriented interface </dd></dl>
+<p>Iteratively estimates the inverse of a displacement field by fixed-point composition. </p>
+<p>This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html" title="Iteratively estimates the inverse of a displacement field by fixed-point composition.">InvertDisplacementFieldImageFilter</a> in order to support a procedural API</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html" title="Iteratively estimates the inverse of a displacement field by fixed-point composition.">itk::simple::InvertDisplacementFieldImageFilter</a> for the object oriented interface </dd></dl>
+
+<p class="reference">References <a class="el" href="sitkBasicFilters_8h_source.html#l00052">SITKBasicFilters_EXPORT</a>.</p>
+
+</div>
+</div>
+<a id="a68efaf15eb380d4f1fe8518909ef8080" name="a68efaf15eb380d4f1fe8518909ef8080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68efaf15eb380d4f1fe8518909ef8080">&#9670;&#160;</a></span>InvertDisplacementField() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::InvertDisplacementField </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>displacementField</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>maximumNumberOfIterations</em></span><span class="paramdefsep"> = </span><span class="paramdefval">10u</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>maxErrorToleranceThreshold</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.1</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>meanErrorToleranceThreshold</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.001</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>enforceBoundaryCondition</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Iteratively estimates the inverse of a displacement field by fixed-point composition. </p>
+<p>This function directly calls the execute method of <a class="el" href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html" title="Iteratively estimates the inverse of a displacement field by fixed-point composition.">InvertDisplacementFieldImageFilter</a> in order to support a procedural API</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classitk_1_1simple_1_1InvertDisplacementFieldImageFilter.html" title="Iteratively estimates the inverse of a displacement field by fixed-point composition.">itk::simple::InvertDisplacementFieldImageFilter</a> for the object oriented interface </dd></dl>
 
 <p class="reference">References <a class="el" href="sitkBasicFilters_8h_source.html#l00052">SITKBasicFilters_EXPORT</a>.</p>
 

@@ -159,6 +159,12 @@ $(function(){ initResizable(false); });
 <div class="line">        crop.setLowerBoundaryCropSize(lowerBoundary);</div>
 <div class="line">        crop.setUpperBoundaryCropSize(upperBoundary);</div>
 <div class="line">        Image croppedImage = crop.execute(composedImage);</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// Print image information to demonstrate variable usage</span></div>
+<div class="line">        System.out.println(<span class="stringliteral">&quot;Extracted image size: &quot;</span> + extractedImage.getWidth() + <span class="stringliteral">&quot;x&quot;</span> +</div>
+<div class="line">                          extractedImage.getHeight() + <span class="stringliteral">&quot;x&quot;</span> + extractedImage.getDepth());</div>
+<div class="line">        System.out.println(<span class="stringliteral">&quot;Cropped image size: &quot;</span> + croppedImage.getWidth() + <span class="stringliteral">&quot;x&quot;</span> +</div>
+<div class="line">                          croppedImage.getHeight() + <span class="stringliteral">&quot;x&quot;</span> + croppedImage.getDepth());</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
