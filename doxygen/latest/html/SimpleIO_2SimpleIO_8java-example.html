@@ -135,8 +135,9 @@ $(function(){ initResizable(false); });
 <div class="line">  VectorDouble trans = <span class="keyword">new</span> VectorDouble(t);</div>
 <div class="line">  basic_transform.setTranslation(trans);</div>
 <div class="line"> </div>
-<div class="line">  SimpleITK.writeTransform(basic_transform, <span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
-<div class="line">  Transform read_result = SimpleITK.readTransform(<span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
+<div class="line">  String file_name = <span class="stringliteral">&quot;euler2D_java.tfm&quot;</span>;</div>
+<div class="line">  SimpleITK.writeTransform(basic_transform, file_name);</div>
+<div class="line">  Transform read_result = SimpleITK.readTransform(file_name);</div>
 <div class="line"> </div>
 <div class="line">  assert basic_transform.getClass() != read_result.getClass();</div>
 <div class="line">  <span class="comment">//END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</span></div>

@@ -137,8 +137,9 @@ $(function(){ initResizable(false); });
 <div class="line">  trans &lt;&lt; 3.0</div>
 <div class="line">  basic_transform.set_translation(trans)</div>
 <div class="line"> </div>
-<div class="line">  Simpleitk::write_transform(basic_transform, &#39;euler2D.tfm&#39;)</div>
-<div class="line">  read_result = Simpleitk::read_transform(&#39;euler2D.tfm&#39;)</div>
+<div class="line">  file_name = &#39;euler2D_rb.tfm&#39;</div>
+<div class="line">  Simpleitk::write_transform(basic_transform, file_name)</div>
+<div class="line">  read_result = Simpleitk::read_transform(file_name)</div>
 <div class="line"> </div>
 <div class="line">  raise &quot;This shouldn&#39;t happen.&quot; unless basic_transform.class != read_result.class</div>
 <div class="line">  #END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</div>

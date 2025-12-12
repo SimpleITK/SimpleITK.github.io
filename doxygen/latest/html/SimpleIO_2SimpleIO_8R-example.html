@@ -139,8 +139,9 @@ $(function(){ initResizable(false); });
 <div class="line">  basic_transform &lt;- Euler2DTransform()</div>
 <div class="line">  basic_transform$SetTranslation(c(2,3))</div>
 <div class="line"> </div>
-<div class="line">  WriteTransform(basic_transform, &#39;euler2D.tfm&#39;)</div>
-<div class="line">  read_result = ReadTransform(&#39;euler2D.tfm&#39;)</div>
+<div class="line">  file_name &lt;- &#39;euler2D_r.tfm&#39;</div>
+<div class="line">  WriteTransform(basic_transform, file_name)</div>
+<div class="line">  read_result = ReadTransform(file_name)</div>
 <div class="line"> </div>
 <div class="line">  stopifnot(read_result$GetName() != basic_transform$GetName())</div>
 <div class="line">  #END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</div>

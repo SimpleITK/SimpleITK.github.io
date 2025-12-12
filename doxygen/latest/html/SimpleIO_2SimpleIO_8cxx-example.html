@@ -146,8 +146,9 @@ $(function(){ initResizable(false); });
 <div class="line">  <a id="_a10" name="_a10"></a><a class="code hl_class" href="classitk_1_1simple_1_1Euler2DTransform.html">itk::simple::Euler2DTransform</a> basic_transform;</div>
 <div class="line">  basic_transform.<a id="a11" name="a11"></a><a class="code hl_function" href="classitk_1_1simple_1_1Euler2DTransform.html#aafac87ec107f49979447cfb00c2f1a31">SetTranslation</a>(std::vector&lt;double&gt;{ 2.0, 3.0 });</div>
 <div class="line"> </div>
-<div class="line">  <a id="a12" name="a12"></a><a class="code hl_function" href="namespaceitk_1_1simple.html#af2a634ba9346fcf9c601ff1c676e5ac8">itk::simple::WriteTransform</a>(basic_transform, <span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
-<div class="line">  <a id="_a13" name="_a13"></a><a class="code hl_class" href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a> read_result = <a id="a14" name="a14"></a><a class="code hl_function" href="namespaceitk_1_1simple.html#af81f6f2cfd904a4c06ee64e349ddc1cb">itk::simple::ReadTransform</a>(<span class="stringliteral">&quot;euler2D.tfm&quot;</span>);</div>
+<div class="line">  std::string file_name = <span class="stringliteral">&quot;euler2D_cxx.tfm&quot;</span>;</div>
+<div class="line">  <a id="a12" name="a12"></a><a class="code hl_function" href="namespaceitk_1_1simple.html#af2a634ba9346fcf9c601ff1c676e5ac8">itk::simple::WriteTransform</a>(basic_transform, file_name);</div>
+<div class="line">  <a id="_a13" name="_a13"></a><a class="code hl_class" href="classitk_1_1simple_1_1Transform.html">itk::simple::Transform</a> read_result = <a id="a14" name="a14"></a><a class="code hl_function" href="namespaceitk_1_1simple.html#af81f6f2cfd904a4c06ee64e349ddc1cb">itk::simple::ReadTransform</a>(file_name);</div>
 <div class="line"> </div>
 <div class="line">  assert(<span class="keyword">typeid</span>(basic_transform) != <span class="keyword">typeid</span>(read_result));</div>
 <div class="line">  <span class="comment">// END_PROCEDURAL_TRANSFORM_READER_WRITER_EXAMPLE</span></div>

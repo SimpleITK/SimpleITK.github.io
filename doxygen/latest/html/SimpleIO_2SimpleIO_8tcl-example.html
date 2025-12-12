@@ -136,8 +136,9 @@ $(function(){ initResizable(false); });
 <div class="line">  set trans { 2.0 3.0 }</div>
 <div class="line">  basic_transform SetTranslation $trans</div>
 <div class="line"> </div>
-<div class="line">  WriteTransform basic_transform &quot;euler2D.tfm&quot;</div>
-<div class="line">  set read_result [ ReadTransform &quot;euler2D.tfm&quot; ]</div>
+<div class="line">  set file_name &quot;euler2D_tcl.tfm&quot;</div>
+<div class="line">  WriteTransform basic_transform $file_name</div>
+<div class="line">  set read_result [ ReadTransform $file_name ]</div>
 <div class="line"> </div>
 <div class="line">  if { [basic_transform GetName] == [$read_result GetName] } {</div>
 <div class="line">    error &quot;This should not happen&quot; 1</div>
