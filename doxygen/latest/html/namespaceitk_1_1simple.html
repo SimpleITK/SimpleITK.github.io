@@ -3246,9 +3246,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:a986bf4aaed0b2a8467ce06244921d5da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the smoothing of an image by convolution with the Gaussian kernels implemented as IIR filters.  <br /></td></tr>
 <tr class="separator:a986bf4aaed0b2a8467ce06244921d5da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a26ed8fa90ec9779b66dd5e18e6658914" id="r_a26ed8fa90ec9779b66dd5e18e6658914"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26ed8fa90ec9779b66dd5e18e6658914">SobelEdgeDetection</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1)</td></tr>
-<tr class="memdesc:a26ed8fa90ec9779b66dd5e18e6658914"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2D or 3D edge detection using the Sobel operator.  <br /></td></tr>
-<tr class="separator:a26ed8fa90ec9779b66dd5e18e6658914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117ceb066f8878982aa226d5548e6325" id="r_a117ceb066f8878982aa226d5548e6325"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a117ceb066f8878982aa226d5548e6325">SobelEdgeDetection</a> (const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;image1, bool useLegacyOperatorCoefficients=false)</td></tr>
+<tr class="memdesc:a117ceb066f8878982aa226d5548e6325"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 2D or 3D edge detection using the Sobel operator.  <br /></td></tr>
+<tr class="separator:a117ceb066f8878982aa226d5548e6325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:a6c9592b83b239d364dae9466ab368095" id="r_a6c9592b83b239d364dae9466ab368095"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c9592b83b239d364dae9466ab368095">SpeckleNoise</a> (<a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;&amp;image1, double standardDeviation=1.0, uint32_t seed=(uint32_t) <a class="el" href="#aa044c932b88a9e29176dafbf2a67ed10aa0288037bc3529e2fedbf3881487f38f">itk::simple::sitkWallClock</a>)</td></tr>
 <tr class="memdesc:a6c9592b83b239d364dae9466ab368095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alter an image with speckle (multiplicative) noise.  <br /></td></tr>
@@ -23420,8 +23420,8 @@ template&lt;typename TType, typename TVectorOfITKVector&gt; </div>
 
 </div>
 </div>
-<a id="a26ed8fa90ec9779b66dd5e18e6658914" name="a26ed8fa90ec9779b66dd5e18e6658914"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26ed8fa90ec9779b66dd5e18e6658914">&#9670;&#160;</a></span>SobelEdgeDetection()</h2>
+<a id="a117ceb066f8878982aa226d5548e6325" name="a117ceb066f8878982aa226d5548e6325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117ceb066f8878982aa226d5548e6325">&#9670;&#160;</a></span>SobelEdgeDetection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -23429,8 +23429,12 @@ template&lt;typename TType, typename TVectorOfITKVector&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> itk::simple::SobelEdgeDetection </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>image1</em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classitk_1_1simple_1_1Image.html">Image</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>image1</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>useLegacyOperatorCoefficients</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

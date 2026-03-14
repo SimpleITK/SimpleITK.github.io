@@ -88,6 +88,7 @@ $(function(){ initResizable(false); });
 <a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classitk_1_1simple_1_1SobelEdgeDetectionImageFilter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">itk::simple::SobelEdgeDetectionImageFilter Class Reference</div></div>
@@ -125,7 +126,7 @@ $(function(){ initResizable(false); });
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1NeighborhoodIterator.html">NeighborhoodIterator</a> </dd>
 <dd>
-<a class="el" href="namespaceitk_1_1simple.html#a26ed8fa90ec9779b66dd5e18e6658914" title="A 2D or 3D edge detection using the Sobel operator.">itk::simple::SobelEdgeDetection</a> for the procedural interface </dd>
+<a class="el" href="namespaceitk_1_1simple.html#a117ceb066f8878982aa226d5548e6325" title="A 2D or 3D edge detection using the Sobel operator.">itk::simple::SobelEdgeDetection</a> for the procedural interface </dd>
 <dd>
 <a class="elRef" href="https://www.itk.org/Doxygen/html/classitk_1_1SobelEdgeDetectionImageFilter.html">itk::SobelEdgeDetectionImageFilter</a> for the Doxygen on the original ITK class. </dd></dl>
 
@@ -150,10 +151,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acc8a255ec290323c6c4017a529917744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dc74d715ac75c49ad108ac9d4cfd9cf" id="r_a5dc74d715ac75c49ad108ac9d4cfd9cf"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dc74d715ac75c49ad108ac9d4cfd9cf">GetName</a> () const</td></tr>
 <tr class="separator:a5dc74d715ac75c49ad108ac9d4cfd9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fae59b8eb6849775bba35c573a6c8c" id="r_ad0fae59b8eb6849775bba35c573a6c8c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0fae59b8eb6849775bba35c573a6c8c">GetUseLegacyOperatorCoefficients</a> () const</td></tr>
+<tr class="separator:ad0fae59b8eb6849775bba35c573a6c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ed3309231210ccc38ebe490238b9d9" id="r_a03ed3309231210ccc38ebe490238b9d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03ed3309231210ccc38ebe490238b9d9">SetUseLegacyOperatorCoefficients</a> (bool UseLegacyOperatorCoefficients)</td></tr>
+<tr class="separator:a03ed3309231210ccc38ebe490238b9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0223cb5a0e767204d103f221798f57bb" id="r_a0223cb5a0e767204d103f221798f57bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0223cb5a0e767204d103f221798f57bb">SobelEdgeDetectionImageFilter</a> ()</td></tr>
 <tr class="separator:a0223cb5a0e767204d103f221798f57bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65bde9fc9805745a778701090ad79092" id="r_a65bde9fc9805745a778701090ad79092"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65bde9fc9805745a778701090ad79092">ToString</a> () const</td></tr>
 <tr class="separator:a65bde9fc9805745a778701090ad79092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea0ca8fbc98c17e64a869e662e4e204" id="r_a6ea0ca8fbc98c17e64a869e662e4e204"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ea0ca8fbc98c17e64a869e662e4e204">UseLegacyOperatorCoefficientsOff</a> ()</td></tr>
+<tr class="separator:a6ea0ca8fbc98c17e64a869e662e4e204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d9db1386705214d87eeb0176808138" id="r_a30d9db1386705214d87eeb0176808138"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30d9db1386705214d87eeb0176808138">UseLegacyOperatorCoefficientsOn</a> ()</td></tr>
+<tr class="separator:a30d9db1386705214d87eeb0176808138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27a6f7c436749fe17c2f6f83d412c8cb" id="r_a27a6f7c436749fe17c2f6f83d412c8cb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27a6f7c436749fe17c2f6f83d412c8cb">~SobelEdgeDetectionImageFilter</a> ()</td></tr>
 <tr class="separator:a27a6f7c436749fe17c2f6f83d412c8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classitk_1_1simple_1_1ImageFilter"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classitk_1_1simple_1_1ImageFilter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classitk_1_1simple_1_1ImageFilter.html">itk::simple::ImageFilter</a></td></tr>
@@ -215,6 +224,11 @@ Private Member Functions</h2></td></tr>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a71f2e3874f48f542de8d403e50eabfb0" id="r_a71f2e3874f48f542de8d403e50eabfb0"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="classitk_1_1simple_1_1detail_1_1MemberFunctionFactory.html">detail::MemberFunctionFactory</a>&lt; <a class="el" href="#a12609bae27cc23a42cb6a410c028b9a6">MemberFunctionType</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71f2e3874f48f542de8d403e50eabfb0">GetMemberFunctionFactory</a> ()</td></tr>
 <tr class="separator:a71f2e3874f48f542de8d403e50eabfb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1e52995f9ce1237aabf78a45748482c5" id="r_a1e52995f9ce1237aabf78a45748482c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e52995f9ce1237aabf78a45748482c5">m_UseLegacyOperatorCoefficients</a> { false }</td></tr>
+<tr class="separator:a1e52995f9ce1237aabf78a45748482c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -341,7 +355,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Setup for member function dispatching </p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00088">88</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00105">105</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
 
 </div>
 </div>
@@ -467,7 +481,7 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00090">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
+<p class="reference">Referenced by <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00107">detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</a>.</p>
 
 </div>
 </div>
@@ -522,7 +536,67 @@ template&lt;class TImageType&gt; </div>
 
 <p>Implements <a class="el" href="classitk_1_1simple_1_1ProcessObject.html#ac8ab837a83ee6ad83c2e2e71b1e98386">itk::simple::ProcessObject</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00076">76</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00093">93</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+
+</div>
+</div>
+<a id="ad0fae59b8eb6849775bba35c573a6c8c" name="ad0fae59b8eb6849775bba35c573a6c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0fae59b8eb6849775bba35c573a6c8c">&#9670;&#160;</a></span>GetUseLegacyOperatorCoefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::SobelEdgeDetectionImageFilter::GetUseLegacyOperatorCoefficients </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+
+<p class="reference">References <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00112">m_UseLegacyOperatorCoefficients</a>.</p>
+
+</div>
+</div>
+<a id="a03ed3309231210ccc38ebe490238b9d9" name="a03ed3309231210ccc38ebe490238b9d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ed3309231210ccc38ebe490238b9d9">&#9670;&#160;</a></span>SetUseLegacyOperatorCoefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::SobelEdgeDetectionImageFilter::SetUseLegacyOperatorCoefficients </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>UseLegacyOperatorCoefficients</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00078">78</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+
+<p class="reference">References <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00112">m_UseLegacyOperatorCoefficients</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00085">UseLegacyOperatorCoefficientsOff()</a>, and <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00083">UseLegacyOperatorCoefficientsOn()</a>.</p>
 
 </div>
 </div>
@@ -554,6 +628,65 @@ template&lt;class TImageType&gt; </div>
 
 </div>
 </div>
+<a id="a6ea0ca8fbc98c17e64a869e662e4e204" name="a6ea0ca8fbc98c17e64a869e662e4e204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ea0ca8fbc98c17e64a869e662e4e204">&#9670;&#160;</a></span>UseLegacyOperatorCoefficientsOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::SobelEdgeDetectionImageFilter::UseLegacyOperatorCoefficientsOff </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00085">85</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+
+<p class="reference">References <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00078">SetUseLegacyOperatorCoefficients()</a>.</p>
+
+</div>
+</div>
+<a id="a30d9db1386705214d87eeb0176808138" name="a30d9db1386705214d87eeb0176808138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30d9db1386705214d87eeb0176808138">&#9670;&#160;</a></span>UseLegacyOperatorCoefficientsOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void itk::simple::SobelEdgeDetectionImageFilter::UseLegacyOperatorCoefficientsOn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the value of UseLegacyOperatorCoefficients to true or false respectfully. </p>
+
+<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00083">83</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+
+<p class="reference">References <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00078">SetUseLegacyOperatorCoefficients()</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Friends And Related Symbol Documentation</h2>
 <a id="af82f64823e6df0f5b2063b8fc7dd0c26" name="af82f64823e6df0f5b2063b8fc7dd0c26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af82f64823e6df0f5b2063b8fc7dd0c26">&#9670;&#160;</a></span>detail::MemberFunctionAddressor&lt; MemberFunctionType &gt;</h2>
@@ -575,9 +708,36 @@ template&lt;class TImageType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00089">89</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00106">106</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
 
 <p class="reference">References <a class="el" href="#ada89cd596790a81fffb10f862904caf4">ExecuteInternal()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a1e52995f9ce1237aabf78a45748482c5" name="a1e52995f9ce1237aabf78a45748482c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e52995f9ce1237aabf78a45748482c5">&#9670;&#160;</a></span>m_UseLegacyOperatorCoefficients</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool itk::simple::SobelEdgeDetectionImageFilter::m_UseLegacyOperatorCoefficients { false }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00112">112</a> of file <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html">sitkSobelEdgeDetectionImageFilter.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00089">GetUseLegacyOperatorCoefficients()</a>, and <a class="el" href="sitkSobelEdgeDetectionImageFilter_8h_source.html#l00078">SetUseLegacyOperatorCoefficients()</a>.</p>
 
 </div>
 </div>
