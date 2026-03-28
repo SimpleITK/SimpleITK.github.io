@@ -4184,7 +4184,7 @@ template&lt;unsigned int Start, unsigned int Stop&gt; </div>
 
 <p>Enumerated values of pixelIDs. </p>
 <p>Each PixelID's value corresponds to the index of the PixelID type, in the type list "InstantiatedPixelIDTypeList". It is possible that different configurations for SimpleITK could result in different values for pixelID. So these enumerated values should be used.</p>
-<p>Additionally, not all PixelID an instantiated in for the tool kit. If a PixelID is not instantiated then it's value is -1. Therefore it is likely that multiple elements in the enumeration will have a zero value. Therefore the first preferred method is to use "if" statements, with the first branch checking for the Unknown value.</p>
+<p>Additionally, not all PixelIDs are instantiated in all toolkit configurations. If a PixelID is not instantiated then it's value is -1. Therefore it is likely that multiple elements in the enumeration will have a zero value. Therefore the first preferred method is to use "if" statements, with the first branch checking for the Unknown value.</p>
 <p>If a switch case statement is needed the <a class="el" href="structitk_1_1simple_1_1ConditionalValue.html">ConditionalValue</a> meta-programming object can be used as follows: </p><div class="fragment"><div class="line"><span class="keywordflow">switch</span>( pixelIDValue )</div>
 <div class="line">   {</div>
 <div class="line"> <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="#ae40bd64640f4014fba1a8a872ab4df98a25f496c19c2388217b9fede6686144ac">sitk::sitkUnknown</a>:</div>
