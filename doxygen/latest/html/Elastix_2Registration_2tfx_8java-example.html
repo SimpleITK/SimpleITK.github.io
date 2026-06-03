@@ -16,7 +16,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SimpleITK: Elastix/elx.java</title>
+<title>SimpleITK: Elastix/Registration/tfx.java</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,7 +78,7 @@ $(function(){ initResizable(false); });
 /* @license-end */
 </script>
 <div class="header">
-  <div class="headertitle"><div class="title">Elastix/elx.java</div></div>
+  <div class="headertitle"><div class="title">Elastix/Registration/tfx.java</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="comment">/*=========================================================================</span></div>
@@ -101,30 +101,26 @@ $(function(){ initResizable(false); });
 <div class="line"> </div>
 <div class="line"><span class="keyword">import</span> org.itk.simple.*;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>elx {</div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>tfx {</div>
 <div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keywordtype">void</span> main(String[] args) {</div>
-<div class="line">        <span class="keywordflow">if</span> (args.length &lt; 5) {</div>
-<div class="line">            System.out.println(<span class="stringliteral">&quot;Usage: elx &lt;fixedImage&gt; &lt;movingImage&gt; &lt;parameterFile&gt; &lt;outputImage&gt; &lt;outputParameterFile&gt;&quot;</span>);</div>
+<div class="line">        <span class="keywordflow">if</span> (args.length &lt; 3) {</div>
+<div class="line">            System.out.println(<span class="stringliteral">&quot;Usage: tfx &lt;inputImage&gt; &lt;parameterFile&gt; &lt;outputImage&gt;&quot;</span>);</div>
 <div class="line">            System.exit(1);</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <span class="comment">// Instantiate SimpleElastix</span></div>
-<div class="line">        ElastixImageFilter elastixImageFilter = <span class="keyword">new</span> ElastixImageFilter();</div>
+<div class="line">        <span class="comment">// Instantiate transformix</span></div>
+<div class="line">        TransformixImageFilter transformixImageFilter = <span class="keyword">new</span> TransformixImageFilter();</div>
+<div class="line">        transformixImageFilter.logToConsoleOn();</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// Read input</span></div>
-<div class="line">        elastixImageFilter.setFixedImage(SimpleITK.readImage(args[0]));</div>
-<div class="line">        elastixImageFilter.setMovingImage(SimpleITK.readImage(args[1]));</div>
-<div class="line">        elastixImageFilter.setParameterMap(SimpleITK.readParameterFile(args[2]));</div>
-<div class="line">        elastixImageFilter.logToConsoleOn();</div>
+<div class="line">        transformixImageFilter.setMovingImage(SimpleITK.readImage(args[0]));</div>
+<div class="line">        transformixImageFilter.setTransformParameterMap(SimpleITK.readParameterFile(args[1]));</div>
 <div class="line"> </div>
-<div class="line">        <span class="comment">// Run registration</span></div>
-<div class="line">        elastixImageFilter.execute();</div>
+<div class="line">        <span class="comment">// Run warp</span></div>
+<div class="line">        transformixImageFilter.execute();</div>
 <div class="line"> </div>
 <div class="line">        <span class="comment">// Write result image</span></div>
-<div class="line">        SimpleITK.writeImage(elastixImageFilter.getResultImage(), args[3]);</div>
-<div class="line"> </div>
-<div class="line">        <span class="comment">// Write parameter file. This example only supports one parameter map and one transform parameter map.</span></div>
-<div class="line">        SimpleITK.writeParameterFile(elastixImageFilter.getTransformParameterMaps().get(0), args[4]);</div>
+<div class="line">        SimpleITK.writeImage(transformixImageFilter.getResultImage(), args[2]);</div>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
