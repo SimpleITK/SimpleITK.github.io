@@ -162,10 +162,10 @@ $(function(){ initResizable(false); });
 <div class="line">                <span class="keywordtype">string</span> outputPrefix = args[2];</div>
 <div class="line">                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; transformParameterMaps.Count; i++)</div>
 <div class="line">                {</div>
-<div class="line">                    <span class="keywordtype">string</span> filename = $<span class="stringliteral">&quot;{outputPrefix}_TransformParameters_{i}.txt&quot;</span>;</div>
+<div class="line">                    <span class="keywordtype">string</span> filename = <span class="keywordtype">string</span>.Format(<span class="stringliteral">&quot;{0}_TransformParameters_{1}.txt&quot;</span>, outputPrefix, i);</div>
 <div class="line">                    SimpleITK.WriteParameterFile(transformParameterMaps[i], filename);</div>
 <div class="line">                }</div>
-<div class="line">                SimpleITK.WriteImage(resultImage, $<span class="stringliteral">&quot;{outputPrefix}.nii&quot;</span>);</div>
+<div class="line">                SimpleITK.WriteImage(resultImage, <span class="keywordtype">string</span>.Format(<span class="stringliteral">&quot;{0}.nii&quot;</span>, outputPrefix));</div>
 <div class="line">            }</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
